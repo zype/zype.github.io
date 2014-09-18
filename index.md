@@ -4,5 +4,4 @@ title: Index
 permalink: /index/
 ---
 
-
-This uses page
+**INDEX PAGE**
