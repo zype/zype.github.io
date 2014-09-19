@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Categories</title>
+    <meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+">
+
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="canonical" href="http://yourdomain.com/categories/">
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+
+
+  <body>
+
+    <header>
+  <h1 id="title"><a href="/">Zype Dev Portal</a></h1>
+  <p>a knowledge base</p>
+  <br>
+  <p><a href="/about">About</a></p>
+  <p><a href="/videos">Videos</a></p>
+  <p><a href="/playlists">Playlists</a></p>
+  <p><a href="/categories">Categories</a></p>
+  <p><a href="/about">Page5</a></p>
+  <p><a href="/about">Page6</a></p>
+
+
+</header>
+
+
+    <section>
+      <h2 id="categories-collection">Categories Collection</h2>
+
+<p>Lists all Categories.</p>
+<hr />
+
+<h3 id="list-all-categories">List all Categories</h3>
+<hr />
+
+<pre><code>
+GET - http://zype.apiary-mock.com/categories?page=page&amp;per_page=per_page
+</code></pre>
+
+<h4 id="parameters">Parameters</h4>
+
+<h5 id="page">page</h5>
+<p>The page number of records to return (zero indexed). Example: 0. (Number)</p>
+
+<h5 id="perpage">per_page</h5>
+<p>The number of records to return. Example: 10. (Number)</p>
+
+<h4 id="request">Request</h4>
+<p>Content-Type: application/json</p>
+
+<h4 id="response">Response</h4>
+<p>200
+Content-Type: application/json</p>
+<pre><code>
+{
+    response : [
+        {
+            _id: "540731274c616e047a000000",
+            _keywords: [
+                "type",
+                "video"
+            ],
+            created_at: "2014-08-05T16:17:29.670Z",
+            site_id: "53fe307f4c616e914e000000",
+            title: "video_type",
+            updated_at: "2014-08-26T18:26:54.461Z",
+            values: [
+                "Film",
+                "TV",
+                "Originals"
+            ]
+        }
+    ],
+    pagination: {
+        current: 1,
+        previous: null,
+        next: 2,
+        per_page: 10,
+        pages: 1
+    }
+}_
+</code></pre>
+
+<hr />
+
+<h3 id="create-a-category">Create a Category</h3>
+<hr />
+
+<pre><code>
+POST - http://zype.apiary-mock.com/categories?page=page&amp;per_page=per_page
+</code></pre>
+
+<h4 id="parameters-1">Parameters</h4>
+
+<h5 id="category">Category</h5>
+<p>A set of key value pairs that describe the Category (Hash)</p>
+
+<h4 id="request-1">Request</h4>
+<p>Content-Type: application/json</p>
+
+<h4 id="response-1">Response</h4>
+<p>201
+Content-Type: application/json</p>
+<pre><code>
+{
+    response: {
+        _id: "540731274c616e047a000000",
+        _keywords: [
+            "type",
+            "video"
+        ],
+        created_at: "2014-08-05T16:17:29.670Z",
+        site_id: "53fe307f4c616e914e000000",
+        title: "video_type",
+        updated_at: "2014-08-26T18:26:54.461Z",
+        values: [
+            "Film",
+            "TV",
+            "Originals"
+        ]
+    }
+}_
+</code></pre>
+
+<h2 id="category-1">Category</h2>
+
+<p>Lists descriptive information about a Category.</p>
+<hr />
+
+<h3 id="retrieve-a-category">Retrieve a Category</h3>
+<hr />
+
+<pre><code>
+GET - http://zype.apiary-mock.com/categories/id
+</code></pre>
+
+<h4 id="parameters-2">Parameters</h4>
+<p>##### id
+String id of the Category to retrieve. Example: 540731274c616e047a000000. (Number)</p>
+
+<h4 id="request-2">Request</h4>
+<p>Content-Type: application/json</p>
+
+<h3 id="response-2">Response</h3>
+<p>200
+Content-Type: application/json</p>
+<pre><code>
+{
+    response : {
+        _id: "540731274c616e047a000000",
+        _keywords: [
+            "type",
+            "video"
+        ],
+        created_at: "2014-08-05T16:17:29.670Z",
+        site_id: "53fe307f4c616e914e000000",
+        title: "video_type",
+        updated_at: "2014-08-26T18:26:54.461Z",
+        values: [
+            "Film",
+            "TV",
+            "Originals"
+        ]
+    }
+}_
+</code></pre>
+<hr />
+
+<h3 id="update-a-catgeory">Update a Catgeory</h3>
+<hr />
+
+<pre><code>
+PUT - http://zype.apiary-mock.com/categories/id
+</code></pre>
+
+<h4 id="parameters-3">Parameters</h4>
+<p>##### id
+String id of the Category to update. Example: 5389352e69702d401b000000. (Number)</p>
+
+<h4 id="request-3">Request</h4>
+<p>Content-Type: application/json</p>
+
+<h4 id="response-3">Response</h4>
+<p>201
+Content-Type: application/json</p>
+<pre><code>
+{
+    response : [
+        {
+            _id: "540731274c616e047a000000",
+            _keywords: [
+                "type",
+                "video"
+            ],
+            created_at: "2014-08-05T16:17:29.670Z",
+            site_id: "53fe307f4c616e914e000000",
+            title: "video_type",
+            updated_at: "2014-08-26T18:26:54.461Z",
+            values: [
+                "Film",
+                "TV",
+                "Originals"
+            ]
+        }
+    ]
+}_
+</code></pre>
+<hr />
+
+<h3 id="remove-a-category">Remove a Category</h3>
+<hr />
+
+<pre><code>
+DELETE - http://zype.apiary-mock.com/categories/id
+</code></pre>
+
+<h4 id="parameters-4">Parameters</h4>
+<p>##### id
+String id of the Category to remove. Example: 5389352e69702d401b000000. (Number)</p>
+
+<h4 id="request-4">Request</h4>
+<p>Content-Type: application/json</p>
+
+<h4 id="response-4">Response</h4>
+<p>200
+Content-Type: application/json</p>
+<pre><code>
+{
+    response : [
+        {
+            _id: "540731274c616e047a000000",
+            _keywords: [
+                "type",
+                "video"
+            ],
+            created_at: "2014-08-05T16:17:29.670Z",
+            site_id: "53fe307f4c616e914e000000",
+            title: "video_type",
+            updated_at: "2014-08-26T18:26:54.461Z",
+            values: [
+                "Film",
+                "TV",
+                "Originals"
+            ]
+        }
+    ]
+}_
+</code></pre>
+
+    </section>
+
+    <footer>
+  <p>This site is maintained by <a href="http://www.zype.com">Zype Media</a></p>
+  <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+</footer>
+
+
+  </body>
+
+</html>
