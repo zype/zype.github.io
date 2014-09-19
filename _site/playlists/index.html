@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Playlists</title>
+    <meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+">
+
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="canonical" href="http://yourdomain.com/playlists/">
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+
+
+  <body>
+
+    <header>
+  <h1 id="title"><a href="/">Zype Dev Portal</a></h1>
+  <p>a knowledge base</p>
+  <br>
+  <p><a href="/about">About</a></p>
+  <p><a href="/videos">Videos</a></p>
+  <p><a href="/playlists">Playlists</a></p>
+  <p><a href="/about">Page4</a></p>
+  <p><a href="/about">Page5</a></p>
+  <p><a href="/about">Page6</a></p>
+
+
+</header>
+
+
+    <section>
+      <h2 id="playlists-collection">Playlists Collection</h2>
+
+<p>Lists all Playlists. Playlist information includes descriptive information about the playlist.</p>
+<hr />
+
+<h3 id="list-all-playlists">List all Playlists</h3>
+<hr />
+
+<pre><code>
+GET - http://zype.apiary-mock.com/playlists?page=page&amp;per_page=per_page&amp;
+active=active&amp;keyword=keyword&amp;category=category
+</code></pre>
+
+<h4 id="parameters">Parameters</h4>
+
+<h5 id="page">page</h5>
+<p>The page number of records to return (zero indexed). Example: 0. (Number)</p>
+
+<h5 id="perpage">per_page</h5>
+<p>The number of records to return. Example: 10. (Number)</p>
+
+<h5 id="keyword">keyword</h5>
+<p>Filters the records returned by keyword. Example: comedy. (String)</p>
+
+<h5 id="active">active</h5>
+<p>Filters the records by whether active or not. Example: true. (String)</p>
+
+<h5 id="category">category</h5>
+<p>An optional set of key value category pairs to filter the records returned by category. Example: category[color]=blue. (Hash)</p>
+
+<h4 id="response">Response</h4>
+<p>200
+Content-Type: application/json</p>
+<pre><code>
+{
+    response: [
+        {
+            _id: "540735534c616e047a030000",
+            _keywords: [
+                "first",
+                "playlist"
+            ],
+            active: true,
+            "categories": [
+                {
+                    "title": "color",
+                    "value": "green"
+                }
+            ],
+            created_at: "2014-09-03T15:35:47.328Z",
+            description: "This is the first playlist",
+            site_id: "53fe307f4c616e914e000000",
+            title: "First Playlist",
+            updated_at: "2014-09-03T15:36:22.172Z"
+        }
+    ],
+    pagination: {
+        current: 1,
+        previous: null,
+        next: null,
+        per_page: 10,
+        pages: 1
+    }
+}_
+</code></pre>
+<hr />
+
+<h3 id="create-a-playlist">Create a Playlist</h3>
+<hr />
+
+<pre><code>
+POST - http://zype.apiary-mock.com/playlists?page=page&amp;per_page=per_page&amp;
+active=active&amp;keyword=keyword&amp;category=category
+</code></pre>
+
+<h4 id="parameters-1">Parameters</h4>
+
+<h5 id="playlist">playlist</h5>
+<p>A set of key value pairs that describe the Playlist (Hash)</p>
+
+<h4 id="request">Request</h4>
+
+<p>Content-Type: application/json</p>
+
+<h4 id="response-1">Response</h4>
+<p>201</p>
+<pre><code>
+Content-Type: application/json
+{
+    response: {
+        _id: "540735534c616e047a030000",
+        _keywords: [
+            "first",
+            "playlist"
+        ],
+        active: true,
+        "categories": [
+            {
+                "title": "color",
+                "value": "green"
+            }
+        ],
+        created_at: "2014-09-03T15:35:47.328Z",
+        description: "This is the first playlist",
+        site_id: "53fe307f4c616e914e000000",
+        title: "First Playlist",
+        updated_at: "2014-09-03T15:36:22.172Z"
+    }
+}_
+</code></pre>
+
+<h2 id="playlist-1">Playlist</h2>
+
+<p>Lists descriptive information about Playlist.</p>
+
+<hr />
+
+<h3 id="retrieve-a-playlist">Retrieve a Playlist</h3>
+<hr />
+
+<pre><code>
+GET - http://zype.apiary-mock.com/playlists/id
+</code></pre>
+
+<h4 id="parameters-2">Parameters</h4>
+
+<h5 id="id">id</h5>
+<p>String id of the Playlist to retrieve. Example: 5389352e69702d401b000000. (Number)</p>
+
+<h4 id="request-1">Request</h4>
+<p>Content-Type: application/json</p>
+
+<h4 id="response-2">Response</h4>
+<p>200
+Content-Type: application/json</p>
+<pre><code>
+{
+    response: {
+        _id: "540735534c616e047a030000",
+        _keywords: [
+            "first",
+            "playlist"
+        ],
+        active: true,
+        "categories": [
+            {
+                "title": "color",
+                "value": "green"
+            }
+        ],
+        created_at: "2014-09-03T15:35:47.328Z",
+        description: "This is the first playlist",
+        site_id: "53fe307f4c616e914e000000",
+        title: "First Playlist",
+        updated_at: "2014-09-03T15:36:22.172Z"
+    }
+}_
+</code></pre>
+<hr />
+
+<h3 id="update-a-playlist">Update a Playlist</h3>
+<hr />
+
+<pre><code>
+PUT - http://zype.apiary-mock.com/playlists/id
+</code></pre>
+
+<h4 id="parameters-3">Parameters</h4>
+
+<h5 id="playlist-2">playlist</h5>
+<p>A set of key value pairs that describe the playlist. (Hash)</p>
+
+<h4 id="request-2">Request</h4>
+<p>Content-Type: application/json</p>
+
+<h4 id="response-3">Response</h4>
+<p>201
+Content-Type: application/json</p>
+<pre><code>
+{
+    response: [
+        {
+            _id: "540735534c616e047a030000",
+            _keywords: [
+                "first",
+                "playlist"
+            ],
+            active: true,
+            "categories": [
+                {
+                    "title": "color",
+                    "value": "green"
+                }
+            ],
+            created_at: "2014-09-03T15:35:47.328Z",
+            description: "This is the first playlist",
+            site_id: "53fe307f4c616e914e000000",
+            title: "First Playlist",
+            updated_at: "2014-09-03T15:36:22.172Z"
+        }
+    ]
+}_
+</code></pre>
+<hr />
+
+<h3 id="remove-a-playlist">Remove a Playlist</h3>
+<hr />
+
+<pre><code>
+DELETE - http://zype.apiary-mock.com/playlists/id
+</code></pre>
+<p>#### Parameters</p>
+
+<h5 id="id-1">id</h5>
+<p>String id of the Playlist to remove. Example: 5389352e69702d401b000000. (Number)</p>
+
+<h4 id="request-3">Request</h4>
+<p>Content-Type: application/json</p>
+
+<h4 id="response-4">Response</h4>
+<p>200
+Content-Type: application/json</p>
+<pre><code>
+{
+    response: [
+        {
+            _id: "540735534c616e047a030000",
+            _keywords: [
+                "first",
+                "playlist"
+            ],
+            active: true,
+            "categories": [
+                {
+                    "title": "color",
+                    "value": "green"
+                }
+            ],
+            created_at: "2014-09-03T15:35:47.328Z",
+            description: "This is the first playlist",
+            site_id: "53fe307f4c616e914e000000",
+            title: "First Playlist",
+            updated_at: "2014-09-03T15:36:22.172Z"
+        }
+    ]
+}_
+</code></pre>
+
+    </section>
+
+    <footer>
+  <p>This site is maintained by <a href="http://www.zype.com">Zype Media</a></p>
+  <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+</footer>
+
+
+  </body>
+
+</html>
