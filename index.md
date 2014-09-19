@@ -2,6 +2,7 @@
 layout: default
 title: Index
 permalink: /
+permalink: /about/
 ---
 
 ## Introduction
