@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Zobjects</title>
+    <meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+">
+
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="canonical" href="http://yourdomain.com/zobjects/">
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+
+
+  <body>
+
+    <header>
+  <h1 id="title"><a href="/">Zype Dev Portal</a></h1>
+  <p>a knowledge base</p>
+  <br>
+  <p><a href="/about">About</a></p>
+  <p><a href="/videos">Videos</a></p>
+  <p><a href="/playlists">Playlists</a></p>
+  <p><a href="/categories">Categories</a></p>
+  <p><a href="/zobjects">Zobjects</a></p>
+  <p><a href="/about">Page6</a></p>
+
+
+</header>
+
+
+    <section>
+      <h2 id="zobject-types-collection">Zobject Types Collection</h2>
+<hr />
+
+<h3 id="list-all-zobject-types">List all Zobject Types</h3>
+<hr />
+
+<pre><code>
+GET - http://zype.apiary-mock.com/zobject_types?page=page&amp;per_page=per_page&amp;keywords=keyword
+</code></pre>
+
+<h4 id="parameters">Parameters</h4>
+
+<h5 id="page">page</h5>
+<p>The page number of records to return (zero indexed). Example: 0. (Number)</p>
+
+<h5 id="perpage">per_page</h5>
+<p>The number of records to return. Example: 10. (Number)</p>
+
+<h5 id="keywords">keywords</h5>
+<p>Filters the records returned by keyword. Example: comedy. (String)</p>
+
+<h4 id="response">Response</h4>
+<p>200
+Content-Type: application/json</p>
+<pre><code>
+{
+    response : [
+        {
+            _id: "5407412b4c616e047a0f0000",
+            _keywords: [
+                "Actor"
+            ],
+            created_at: "2014-09-03T16:26:19.680Z",
+            description: "Actor Card",
+            site_id: "53fe307f4c616e914e000000",
+            title: "Actor
+            updated_at: "2014-09-03T16:26:19.680Z",
+            videos_enabled: true,
+            zobject_attributes: [
+                {
+                    _id: "5407412b4c616e047a100000",
+                    created_at: "2014-09-03T16:26:19.680Z",
+                    description: "name of actor",
+                    field_name: "name",
+                    field_type: "String",
+                    show_list: false,
+                    updated_at: "2014-09-03T16:26:19.680Z"
+                }
+            ],
+            "zobject_count": 2
+        },
+        pagination: {
+            current: 1,
+            previous: null,
+            next: 2,
+            per_page: 10,
+            pages: 1
+        }
+    ]
+}_
+</code></pre>
+<hr />
+
+<h2 id="create-a-zobject-type">Create a Zobject Type</h2>
+<hr />
+
+<pre><code>
+POST - http://zype.apiary-mock.com/zobject_types?page=page&amp;per_page=per_page&amp;keywords=keyword
+</code></pre>
+
+<h4 id="parameters-1">Parameters</h4>
+
+<h5 id="zobjecttype">zobject_type</h5>
+<p>A set of key value pairs that describe the Zobject Type. (Hash)</p>
+
+<h4 id="request">Request</h4>
+<p>Content-Type: application/json</p>
+
+<h4 id="response-1">Response</h4>
+<p>201
+Content-Type: application/json</p>
+<pre><code>
+{
+    response: {
+        _id: "5407412b4c616e047a0f0000",
+        _keywords: [
+            "Actor"
+        ],
+        created_at: "2014-09-03T16:26:19.680Z",
+        description: "Actor Card",
+        site_id: "53fe307f4c616e914e000000",
+        title: "ctor
+        updated_at: "2014-09-03T16:26:19.680Z",
+        videos_enabled: true,
+        zobject_attributes: [
+            {
+                _id: "5407412b4c616e047a100000",
+                created_at: "2014-09-03T16:26:19.680Z",
+                description: "name of actor",
+                field_name: "name",
+                field_type: "String",
+                show_list: false,
+                updated_at: "2014-09-03T16:26:19.680Z"
+            } ...
+        ],
+        "zobject_count": 2
+    }
+}_
+</code></pre>
+
+<h2 id="zobject-type">Zobject Type</h2>
+
+<p>Lists descriptive information about Zobjects.</p>
+<hr />
+
+<h3 id="tzobject-type">tZobject Type</h3>
+<hr />
+
+<pre><code>
+GET - http://zype.apiary-mock.com/zobject_types/id
+</code></pre>
+
+<h4 id="parameters-2">Parameters</h4>
+
+<h5 id="id">id</h5>
+<p>String id of the Zobject Type to retrieve. Example: 5389352e69702d401b000000. (Number)</p>
+
+<h4 id="response-2">Response</h4>
+<p>200
+Content-Type: application/json</p>
+<pre><code>
+{
+    response :
+        {
+            _id: "5407412b4c616e047a0f0000",
+            _keywords: [
+                "Actor"
+            ],
+            created_at: "2014-09-03T16:26:19.680Z",
+            description: "Actor Card",
+            site_id: "53fe307f4c616e914e000000",
+            title: "ctor
+            updated_at: "2014-09-03T16:26:19.680Z",
+            videos_enabled: true,
+            zobject_attributes: [
+                {
+                    _id: "5407412b4c616e047a100000",
+                    created_at: "2014-09-03T16:26:19.680Z",
+                    description: "name of actor",
+                    field_name: "name",
+                    field_type: "String",
+                    show_list: false,
+                    updated_at: "2014-09-03T16:26:19.680Z"
+                } ...
+            ],
+            "zobject_count": 2
+        }
+}_
+</code></pre>
+<hr />
+
+<h3 id="update-a-zobject-type">Update a Zobject Type</h3>
+<hr />
+
+<pre><code>
+PUT - http://zype.apiary-mock.com/zobject_types/id
+</code></pre>
+
+<h4 id="parameters-3">Parameters</h4>
+
+<h5 id="zobject">zobject</h5>
+<p>A set of key value pairs that describe the Zobject Type. (Hash)</p>
+
+<h4 id="request-1">Request</h4>
+<p>Content-Type: application/json</p>
+
+<h4 id="response-3">Response</h4>
+<p>201
+Content-Type: application/json</p>
+<pre><code>
+{
+    response :
+        {
+            _id: "5407412b4c616e047a0f0000",
+            _keywords: [
+                "Actor"
+            ],
+            created_at: "2014-09-03T16:26:19.680Z",
+            description: "Actor Card",
+            site_id: "53fe307f4c616e914e000000",
+            title: "ctor
+            updated_at: "2014-09-03T16:26:19.680Z",
+            videos_enabled: true,
+            zobject_attributes: [
+                {
+                    _id: "5407412b4c616e047a100000",
+                    created_at: "2014-09-03T16:26:19.680Z",
+                    description: "name of actor",
+                    field_name: "name",
+                    field_type: "String",
+                    show_list: false,
+                    updated_at: "2014-09-03T16:26:19.680Z"
+                } ...
+            ],
+            "zobject_count": 2
+        }
+}_
+</code></pre>
+<hr />
+
+<h3 id="remove-a-zobject-type">Remove a Zobject Type</h3>
+<hr />
+
+<pre><code>
+DELETE - http://zype.apiary-mock.com/zobject_types/id
+</code></pre>
+
+<h4 id="parameters-4">Parameters</h4>
+
+<h5 id="id-1">id</h5>
+<p>String id of the Zobject Type to remove. Example: 5389352e69702d401b000000. (Number)</p>
+
+<h4 id="response-4">Response</h4>
+<p>200
+Content-Type: application/json</p>
+<pre><code>
+{
+    response :
+        {
+            _id: "5407412b4c616e047a0f0000",
+            _keywords: [
+                "Actor"
+            ],
+            created_at: "2014-09-03T16:26:19.680Z",
+            description: "Actor Card",
+            site_id: "53fe307f4c616e914e000000",
+            title: "ctor
+            updated_at: "2014-09-03T16:26:19.680Z",
+            videos_enabled: true,
+            zobject_attributes: [
+                {
+                    _id: "5407412b4c616e047a100000",
+                    created_at: "2014-09-03T16:26:19.680Z",
+                    description: "name of actor",
+                    field_name: "name",
+                    field_type: "String",
+                    show_list: false,
+                    updated_at: "2014-09-03T16:26:19.680Z"
+                }
+            ],
+            "zobject_count": 2
+        }
+}_
+</code></pre>
+
+    </section>
+
+    <footer>
+  <p>This site is maintained by <a href="http://www.zype.com">Zype Media</a></p>
+  <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+</footer>
+
+
+  </body>
+
+</html>

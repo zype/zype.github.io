@@ -108,6 +108,7 @@ GET - http://zype.apiary-mock.com/categories/id
 </code></pre>
 
 #### Parameters
+
 ##### id
 String id of the Category to retrieve. Example: 540731274c616e047a000000. (Number)
 
@@ -145,6 +146,7 @@ PUT - http://zype.apiary-mock.com/categories/id
 </code></pre>
 
 #### Parameters
+
 ##### id
 String id of the Category to update. Example: 5389352e69702d401b000000. (Number)
 
@@ -184,6 +186,7 @@ DELETE - http://zype.apiary-mock.com/categories/id
 </code></pre>
 
 #### Parameters
+
 ##### id
 String id of the Category to remove. Example: 5389352e69702d401b000000. (Number)
 
