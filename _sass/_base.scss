@@ -107,6 +107,7 @@ header {
   width:270px;
   float:left;
   position:fixed;
+  margin-left: 4em;
 }
 
 header ul {
@@ -192,7 +193,7 @@ header ul a strong {
 }
 
 section {
-  width:500px;
+  width:550px;
   float:right;
   padding-bottom:50px;
 }
@@ -213,6 +214,7 @@ footer {
   float:left;
   position:fixed;
   bottom:50px;
+  margin-left: 4em;
 }
 
 @media print, screen and (max-width: 960px) {
@@ -284,4 +286,9 @@ footer {
     font-size:12pt;
     color:#444;
   }
+}
+
+#title {
+  padding-bottom: 0px;
+  margin-bottom: 0px;
 }

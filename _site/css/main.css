@@ -85,7 +85,8 @@ img {
 header {
   width: 270px;
   float: left;
-  position: fixed; }
+  position: fixed;
+  margin-left: 4em; }
 
 header ul {
   list-style: none;
@@ -156,7 +157,7 @@ header ul a strong {
   color: #222; }
 
 section {
-  width: 500px;
+  width: 550px;
   float: right;
   padding-bottom: 50px; }
 
@@ -173,7 +174,8 @@ footer {
   width: 270px;
   float: left;
   position: fixed;
-  bottom: 50px; }
+  bottom: 50px;
+  margin-left: 4em; }
 
 @media print, screen and (max-width: 960px) {
   div.wrapper {
@@ -224,6 +226,10 @@ footer {
     padding: 0.4in;
     font-size: 12pt;
     color: #444; } }
+#title {
+  padding-bottom: 0px;
+  margin-bottom: 0px; }
+
 .highlight {
   background: #ffffff; }
 

@@ -4,17 +4,14 @@ title: Videos
 permalink: /videos/
 ---
 
-## Videos
-
-**Videos Collection** - lists all Videos
-
-Video information includes descriptive information about the video but does not include player embed codes.
-
+## Videos Collection
+Lists all Videos. Video information includes descriptive information about the video but does not include player embed codes.
+<hr>
 ### List all Videos
+<hr>
 <pre><code>
-GET - http://zype.apiary-mock.com/videos?page=page&
-per_page=per_page&keyword=keyword&status=status&
-active=true&type=type&category=category
+GET - http://zype.apiary-mock.com/videos?page=page&per_page=per_page&
+keyword=keyword&status=status&active=true&type=type&category=category
 </code></pre>
 
 #### Parameters
@@ -40,10 +37,9 @@ Show videos of the specified type (zype, youtube, hulu) Example: zype. (String)
 ##### category
 An optional set of key value category pairs to filter the records returned by category. Example: category[color]=blue. (Hash)
 
-#### Request & Response
-
-<pre><code>
+#### Response
 200
+<pre><code>
 Content-Type: application/json
 {
     response : [
@@ -101,15 +97,14 @@ Content-Type: application/json
         per_page: 10,
         pages: 1
     }
-}
+}_
 </code></pre>
-
+<hr>
 ### Create a Video
-
+<hr>
 <pre><code>
-POST - http://zype.apiary-mock.com/videos?page=page&
-per_page=per_page&keyword=keyword&status=status&
-active=true&type=type&category=category
+POST - http://zype.apiary-mock.com/videos?page=page&per_page=per_page&
+keyword=keyword&status=status&active=true&type=type&category=category
 </code></pre>
 
 #### Parameters
@@ -117,14 +112,296 @@ active=true&type=type&category=category
 ##### Video
 A set of key value pairs that describe the Video. (Hash)
 
-**Video Lists** descriptive information about Videos
+#### Response
+201
+<pre><code>
+Content-Type: application/json
+{
+    response: {
+        _id: "5389352e69702d401a000000",
+        active: true,
+        ad_timings: [
+            {
+                mode: "off",
+                time: 0,
+                type: "in"
+            }
+        ],
+        created_at: "2014-05-31T01:49:49.388Z",
+        description: null,
+        duration: 1217,
+        featured: false,
+        foreign_id: null,
+        keywords: [
+            "example",
+            "video"
+        ],
+        published_at: null,
+        site_id: 1,
+        thumbnails: [
+            {
+                height: 240,
+                name: null,
+                width: 426,
+                url: "http://t1.zype.com/5389352e69702d401b000000/1/53a2f27069702d260f050000/00001.png"
+            },
+            {
+                height: 360,
+                name: null,
+                width: 640,
+                url: "http://t1.zype.com/5389352e69702d401b000000/1/53a2f9d069702d26cf000000/00001.png"
+            },
+            {
+                height: 480,
+                name: null,
+                width: 854,
+                url: "http://t1.zype.com/5389352e69702d401b000000/1/53a2f9fb69702d26cf010000/00001.png"
+            }
+        ],
+        title: "Example Video",
+        updated_at: "2014-06-19T20:27:53.958Z",
+        upload_id: "5385c92c69702d589f170000",
+        video_source_id: null
+    }
+}_
+</code></pre>
 
-t Video
+## Video
+Lists descriptive information about Videos
+<hr>
+###tVideo
+<hr>
+<pre><code>
+GET - http://zype.apiary-mock.com/videos/id
+</code></pre>
 
-Update a Video
+#### Parameters
 
-Remove a Video
+##### id
+String id of the Video to retrieve. Example: 5389352e69702d401b000000. (Number)
 
-**Player Lists** - player content
+#### Request
+Content-Type: application/json
 
-You need to supply your player key in addition to your API key.
+#### Response
+200
+<pre><code>
+Content-Type: application/json
+{
+    response : {
+        _id: "5389352e69702d401a000000",
+        active: true,
+        ad_timings: [
+            {
+                mode: "off",
+                time: 0,
+                type: "in"
+            }
+        ],
+        created_at: "2014-05-31T01:49:49.388Z",
+        description: null,
+        duration: 1217,
+        featured: false,
+        foreign_id: null,
+        keywords: [
+            "example",
+            "video"
+        ],
+        published_at: null,
+        site_id: 1,
+        thumbnails: [
+            {
+                height: 240,
+                name: null,
+                width: 426,
+                url: "http://t1.zype.com/5389352e69702d401b000000/1/53a2f27069702d260f050000/00001.png"
+            },
+            {
+                height: 360,
+                name: null,
+                width: 640,
+                url: "http://t1.zype.com/5389352e69702d401b000000/1/53a2f9d069702d26cf000000/00001.png"
+            },
+            {
+                height: 480,
+                name: null,
+                width: 854,
+                url: "http://t1.zype.com/5389352e69702d401b000000/1/53a2f9fb69702d26cf010000/00001.png"
+            }
+        ],
+        title: "Example Video",
+        updated_at: "2014-06-19T20:27:53.958Z",
+        upload_id: "5385c92c69702d589f170000",
+        video_source_id: null
+    }
+}_
+</code></pre>
+<hr>
+### Update a Video
+<hr>
+<pre><code>
+PUT - http://zype.apiary-mock.com/videos/id
+</code></pre>
+
+#### Parameters
+
+##### Video - A set of key value pairs that describe the video. Example: video[description]=description. (Hash)
+
+#### Request
+
+Content-Type: application/json
+
+#### Response
+201
+
+<pre><code>
+Content-Type: application/json
+{
+    response : {
+        _id: "5389352e69702d401a000000",
+        active: true,
+        ad_timings: [
+            {
+                mode: "off",
+                time: 0,
+                type: "in"
+            }
+        ],
+        created_at: "2014-05-31T01:49:49.388Z",
+        description: null,
+        duration: 1217,
+        featured: false,
+        foreign_id: null,
+        keywords: [
+            "example",
+            "video"
+        ],
+        published_at: null,
+        site_id: 1,
+        thumbnails: [
+            {
+                height: 240,
+                name: null,
+                width: 426,
+                url: "http://t1.zype.com/5389352e69702d401b000000/1/53a2f27069702d260f050000/00001.png"
+            },
+            {
+                height: 360,
+                name: null,
+                width: 640,
+                url: "http://t1.zype.com/5389352e69702d401b000000/1/53a2f9d069702d26cf000000/00001.png"
+            },
+            {
+                height: 480,
+                name: null,
+                width: 854,
+                url: "http://t1.zype.com/5389352e69702d401b000000/1/53a2f9fb69702d26cf010000/00001.png"
+            }
+        ],
+        title: "Example Video",
+        updated_at: "2014-06-19T20:27:53.958Z",
+        upload_id: "5385c92c69702d589f170000",
+        video_source_id: null
+    }
+}_
+</code></pre>
+<hr>
+###Remove a Video
+<hr>
+<pre><code>
+DELETE - http://zype.apiary-mock.com/videos/id
+</code></pre>
+
+#### Parameters
+
+##### id
+String id of the Video to remove. Example: 5389352e69702d401b000000. (Number)
+
+#### Request
+Content-Type: application/json
+
+#### Response
+200
+<pre><code>
+Content-Type: application/json
+{
+    response : {
+        _id: "5389352e69702d401a000000",
+        active: true,
+        ad_timings: [
+            {
+                mode: "off",
+                time: 0,
+                type: "in"
+            }
+        ],
+        created_at: "2014-05-31T01:49:49.388Z",
+        description: null,
+        duration: 1217,
+        featured: false,
+        foreign_id: null,
+        keywords: [
+            "example",
+            "video"
+        ],
+        published_at: null,
+        site_id: 1,
+        thumbnails: [
+            {
+                height: 240,
+                name: null,
+                width: 426,
+                url: "http://t1.zype.com/5389352e69702d401b000000/1/53a2f27069702d260f050000/00001.png"
+            },
+            {
+                height: 360,
+                name: null,
+                width: 640,
+                url: "http://t1.zype.com/5389352e69702d401b000000/1/53a2f9d069702d26cf000000/00001.png"
+            },
+            {
+                height: 480,
+                name: null,
+                width: 854,
+                url: "http://t1.zype.com/5389352e69702d401b000000/1/53a2f9fb69702d26cf010000/00001.png"
+            }
+        ],
+        title: "Example Video",
+        updated_at: "2014-06-19T20:27:53.958Z",
+        upload_id: "5385c92c69702d589f170000",
+        video_source_id: null
+    }
+}_
+</code></pre>
+
+## Player
+Lists player content. You need to supply your player key in addition to your API key.
+<hr>
+### tPlayer
+<hr>
+<pre><code>
+GEThttp://zype.apiary-mock.com/videos/id/player?autoplay=autoplay
+</code></pre>
+
+#### Parameters
+
+##### id
+String id of the Video to retrieve. Example: 5389352e69702d401b000000. (String)
+
+##### autoplay
+Optional boolean value to indicate whether the player should automatically start. Example: false. (Boolean)
+
+#### Request
+Content-Type: application/json
+
+#### Response
+200
+<pre><code>
+Content-Type: application/json
+{
+    response : {
+        body: "[Video player embed code]"
+    }
+
+}
+</code></pre>
