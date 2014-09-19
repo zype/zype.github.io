@@ -6,12 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>Video Sources</title>
+    <title>GeoIP</title>
     <meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
 ">
 
     <link rel="stylesheet" href="/css/main.css">
-    <link rel="canonical" href="http://yourdomain.com/video_sources/">
+    <link rel="canonical" href="http://yourdomain.com/geoip/">
 
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -35,7 +35,45 @@
 
 
     <section>
-      <p><em>Video Sources</em></p>
+      <h2 id="geoip-collection">GeoIP Collection</h2>
+<hr />
+
+<h3 id="retrive-an-ip-address">Retrive an IP Address</h3>
+<hr />
+
+<pre><code>
+GET - http://zype.apiary-mock.com/geoip?ip_address=ip_address
+</code></pre>
+
+<h4 id="parameters">Parameters</h4>
+
+<h5 id="ipaddress">ip_address</h5>
+<p>Defaults to IP of API caller if not provided Example: 255.255.255.255. (Number)</p>
+
+<h4 id="response">Response</h4>
+<p>200
+Content-Type: application/json</p>
+<pre><code>
+{
+    response : {
+        request: "255.255.255.255",
+        ip: "255.255.255.255",
+        country_code2: "US",
+        country_code3: "USA",
+        country_name: "United States",
+        continent_code: "NA",
+        region_name: "NJ",
+        city_name: "Cranford",
+        postal_code: "07016",
+        latitude: 0.00000,
+        longitude: 0.00000,
+        dma_code: 0,
+        area_code: 0,
+        timezone: "America/New_York",
+        real_region_name: "New Jersey"
+      }
+}
+</code></pre>
 
     </section>
 
