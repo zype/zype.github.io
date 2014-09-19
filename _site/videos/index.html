@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Videos</title>
+    <meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+">
+
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="canonical" href="http://yourdomain.com/videos/">
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+
+
+  <body>
+
+    <header>
+  <h1>Zype Dev Portal</h1>
+  <p>a knowledge base</p>
+  <br>
+  <p><a href="/about">About</a></p>
+  <p><a href="/video_sources">Video Sources</a></p>
+  <p><a href="/about">Page3</a></p>
+  <p><a href="/about">Page4</a></p>
+  <p><a href="/about">Page5</a></p>
+  <p><a href="/about">Page6</a></p>
+
+  <p class="view"><a href="http://github.com/zype/zype.github.io">View the Project on GitHub</a></p>
+
+</header>
+
+
+    <section>
+      <h2 id="videos">Videos</h2>
+
+<p><strong>Videos Collection</strong> - lists all Videos</p>
+
+<p>Video information includes descriptive information about the video but does not include player embed codes.</p>
+
+<h3 id="list-all-videos">List all Videos</h3>
+<pre><code>
+GET - http://zype.apiary-mock.com/videos?page=page&amp;
+per_page=per_page&amp;keyword=keyword&amp;status=status&amp;
+active=true&amp;type=type&amp;category=category
+</code></pre>
+
+<h4 id="parameters">Parameters</h4>
+
+<h5 id="page">page</h5>
+<p>The page number of records to return (zero indexed). Example: 0. (Number)</p>
+
+<h5 id="perpage">per_page</h5>
+<p>The number of records to return. Example: 10. (Number)</p>
+
+<h5 id="keyword">keyword</h5>
+<p>Filters the records returned by keyword. Example: comedy. (String)</p>
+
+<h5 id="status">status</h5>
+<p>Filters the records returned by status. Example: created. (String)</p>
+
+<h5 id="active">active</h5>
+<p>Show active, inactive or all videos Example: true. (String)</p>
+
+<h5 id="type">type</h5>
+<p>Show videos of the specified type (zype, youtube, hulu) Example: zype. (String)</p>
+
+<h5 id="category">category</h5>
+<p>An optional set of key value category pairs to filter the records returned by category. Example: category[color]=blue. (Hash)</p>
+
+<h4 id="request--response">Request &amp; Response</h4>
+
+<pre><code>
+200
+Content-Type: application/json
+{
+    response : [
+        {
+            _id: "5389352e69702d401a000000",
+            active: true,
+            ad_timings: [
+                {
+                    mode: "off",
+                    time: 0,
+                    type: "in"
+                }
+            ],
+            created_at: "2014-05-31T01:49:49.388Z",
+            description: null,
+            duration: 1217,
+            featured: false,
+            foreign_id: null,
+            keywords: [
+                "example",
+                "video"
+            ],
+            published_at: null,
+            site_id: 1,
+            thumbnails: [
+                {
+                    height: 240,
+                    name: null,
+                    width: 426,
+                    url: "http://t1.zype.com/5389352e69702d401b000000/1/53a2f27069702d260f050000/00001.png"
+                },
+                {
+                    height: 360,
+                    name: null,
+                    width: 640,
+                    url: "http://t1.zype.com/5389352e69702d401b000000/1/53a2f9d069702d26cf000000/00001.png"
+                },
+                {
+                    height: 480,
+                    name: null,
+                    width: 854,
+                    url: "http://t1.zype.com/5389352e69702d401b000000/1/53a2f9fb69702d26cf010000/00001.png"
+                }
+            ],
+            title: "Example Video",
+            updated_at: "2014-06-19T20:27:53.958Z",
+            upload_id: "5385c92c69702d589f170000",
+            video_source_id: null
+        ]
+    },
+    pagination: {
+        current: 1,
+        previous: null,
+        next: 2,
+        per_page: 10,
+        pages: 1
+    }
+}
+</code></pre>
+
+<h3 id="create-a-video">Create a Video</h3>
+
+<pre><code>
+POST - http://zype.apiary-mock.com/videos?page=page&amp;
+per_page=per_page&amp;keyword=keyword&amp;status=status&amp;
+active=true&amp;type=type&amp;category=category
+</code></pre>
+
+<h4 id="parameters-1">Parameters</h4>
+
+<h5 id="video">Video</h5>
+<p>A set of key value pairs that describe the Video. (Hash)</p>
+
+<p><strong>Video Lists</strong> descriptive information about Videos</p>
+
+<p>t Video</p>
+
+<p>Update a Video</p>
+
+<p>Remove a Video</p>
+
+<p><strong>Player Lists</strong> - player content</p>
+
+<p>You need to supply your player key in addition to your API key.</p>
+
+    </section>
+
+    <footer>
+  <p>This site is maintained by <a href="http://www.zype.com">Zype Media</a></p>
+  <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+</footer>
+
+
+  </body>
+
+</html>
