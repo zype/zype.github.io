@@ -36,47 +36,47 @@ Content-Type: application/json
       "desktop"
       ],
 
-      "created_at": "2014-09-18T17:23:02.270Z",
-      "image_content_type": null,
-      "image_file_name": null,
-      "image_file_size": null,
-      "image_fingerprint": null,
-      "image_updated_at": null,
+      "created_at": "2014-09-22T16:02:11.113Z",
+      "image_content_type": "image/png",
+      "image_file_name": "desktop.png",
+      "image_file_size": 19347,
+      "image_fingerprint": "a661d27f5003bcf1523f75e3686f6b24",
+      "image_updated_at": "2014-09-22T16:02:11.041+00:00",
       "name": "Desktop",
-      "updated_at": "2014-09-18T17:23:02.270Z"
-  },
-  {
-      "_id": "541b14f6636261c814050000",
-      "_keywords": [
-      "mobile"
-      ],
+      "updated_at": "2014-09-22T16:02:11.113Z"
+      },
+{
+    "_id": "54204804636261f298050000",
+    "_keywords": [
+    "mobile"
+    ],
 
-      "created_at": "2014-09-18T17:23:02.273Z",
-      "image_content_type": null,
-      "image_file_name": null,
-      "image_file_size": null,
-      "image_fingerprint": null,
-      "image_updated_at": null,
-      "name": "Mobile",
-      "updated_at": "2014-09-18T17:23:02.273Z"
-  },
-  {
-      "_id": "541b14f6636261c814060000",
-      "_keywords": [
-      "ott"
-      ],
+    "created_at": "2014-09-22T16:02:12.319Z",
+    "image_content_type": "image/png",
+    "image_file_name": "mobile.png",
+    "image_file_size": 18671,
+    "image_fingerprint": "070c15b95b315a6f472a6efb6c3b898c",
+    "image_updated_at": "2014-09-22T16:02:12.299+00:00",
+    "name": "Mobile",
+    "updated_at": "2014-09-22T16:02:12.319Z"
+},
+{
+    "_id": "54204804636261f298060000",
+    "_keywords": [
+    "ott"
+    ],
 
-      "created_at": "2014-09-18T17:23:02.275Z",
-      "image_content_type": null,
-      "image_file_name": null,
-      "image_file_size": null,
-      "image_fingerprint": null,
-      "image_updated_at": null,
-      "name": "OTT",
-      "updated_at": "2014-09-18T17:23:02.275Z"
-  }
-  ],
-  
+    "created_at": "2014-09-22T16:02:12.578Z",
+    "image_content_type": "image/png",
+    "image_file_name": "desktop.png",
+    "image_file_size": 19347,
+    "image_fingerprint": "a661d27f5003bcf1523f75e3686f6b24",
+    "image_updated_at": "2014-09-22T16:02:12.558+00:00",
+    "name": "OTT",
+    "updated_at": "2014-09-22T16:02:12.578Z"
+    }
+],
+
   "pagination": {
   "current": 1,
   "previous": null,
@@ -99,7 +99,7 @@ GET - http://zype.apiary-mock.com/device_categories/id
 
 ##### id
 
-String id of the Video to retrieve. Example: 5389352e69702d401b000000. (Number)
+String id of the Device Category to retrieve. Example: 5389352e69702d401b000000. (Number)
 
 #### Response
 200
