@@ -10,7 +10,7 @@ permalink: /geoip/
 <hr>
 
 <pre><code>
-GET - http://zype.apiary-mock.com/geoip?ip_address=ip_address
+GET - https://api.zype.com/geoip?ip_address=ip_address
 </code></pre>
 
 #### Parameters

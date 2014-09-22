@@ -11,7 +11,7 @@ Lists all Categories.
 ### List all Categories
 <hr>
 <pre><code>
-GET - http://zype.apiary-mock.com/categories?page=page&per_page=per_page
+GET - https://api.zype.com/categories?page=page&per_page=per_page
 </code></pre>
 
 #### Parameters
@@ -62,7 +62,7 @@ Content-Type: application/json
 ### Create a Category
 <hr>
 <pre><code>
-POST - http://zype.apiary-mock.com/categories?page=page&per_page=per_page
+POST - https://api.zype.com/categories?page=page&per_page=per_page
 </code></pre>
 
 #### Parameters
@@ -104,7 +104,7 @@ Lists descriptive information about a Category.
 ### Retrieve a Category
 <hr>
 <pre><code>
-GET - http://zype.apiary-mock.com/categories/id
+GET - https://api.zype.com/categories/{id}
 </code></pre>
 
 #### Parameters
@@ -142,7 +142,7 @@ Content-Type: application/json
 ### Update a Catgeory
 <hr>
 <pre><code>
-PUT - http://zype.apiary-mock.com/categories/id
+PUT - https://api.zype.com/categories/{id}
 </code></pre>
 
 #### Parameters
@@ -182,7 +182,7 @@ Content-Type: application/json
 ### Remove a Category
 <hr>
 <pre><code>
-DELETE - http://zype.apiary-mock.com/categories/id
+DELETE - https://api.zype.com/categories/{id}
 </code></pre>
 
 #### Parameters

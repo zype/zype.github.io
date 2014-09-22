@@ -10,7 +10,7 @@ Lists all Videos. Video information includes descriptive information about the v
 ### List all Videos
 <hr>
 <pre><code>
-GET - http://zype.apiary-mock.com/videos?page=page&per_page=per_page&
+GET - https://api.zype.com/videos?page=page&per_page=per_page&
 keyword=keyword&status=status&active=true&type=type&category=category
 </code></pre>
 
@@ -103,7 +103,7 @@ Content-Type: application/json
 ### Create a Video
 <hr>
 <pre><code>
-POST - http://zype.apiary-mock.com/videos?page=page&per_page=per_page&
+POST - https://api.zype.com/videos?page=page&per_page=per_page&
 keyword=keyword&status=status&active=true&type=type&category=category
 </code></pre>
 
@@ -172,7 +172,7 @@ Lists descriptive information about Videos
 ###tVideo
 <hr>
 <pre><code>
-GET - http://zype.apiary-mock.com/videos/id
+GET - https://api.zype.com/videos/{id}
 </code></pre>
 
 #### Parameters
@@ -240,7 +240,7 @@ Content-Type: application/json
 ### Update a Video
 <hr>
 <pre><code>
-PUT - http://zype.apiary-mock.com/videos/id
+PUT - https://api.zype.com/videos/{id}
 </code></pre>
 
 #### Parameters
@@ -309,7 +309,7 @@ Content-Type: application/json
 ###Remove a Video
 <hr>
 <pre><code>
-DELETE - http://zype.apiary-mock.com/videos/id
+DELETE - https://api.zype.com/videos/{id}
 </code></pre>
 
 #### Parameters
@@ -380,7 +380,7 @@ Lists player content. You need to supply your player key in addition to your API
 ### tPlayer
 <hr>
 <pre><code>
-GEThttp://zype.apiary-mock.com/videos/id/player?autoplay=autoplay
+GEThttps://api.zype.com/videos/{id}/player?autoplay=autoplay
 </code></pre>
 
 #### Parameters

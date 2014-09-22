@@ -11,7 +11,7 @@ Lists all Playlists. Playlist information includes descriptive information about
 ### List all Playlists
 <hr>
 <pre><code>
-GET - http://zype.apiary-mock.com/playlists?page=page&per_page=per_page&
+GET - https://api.zype.com/playlists?page=page&per_page=per_page&
 active=active&keyword=keyword&category=category
 </code></pre>
 
@@ -71,7 +71,7 @@ Content-Type: application/json
 ### Create a Playlist
 <hr>
 <pre><code>
-POST - http://zype.apiary-mock.com/playlists?page=page&per_page=per_page&
+POST - https://api.zype.com/playlists?page=page&per_page=per_page&
 active=active&keyword=keyword&category=category
 </code></pre>
 
@@ -119,7 +119,7 @@ Lists descriptive information about Playlist.
 ### Retrieve a Playlist
 <hr>
 <pre><code>
-GET - http://zype.apiary-mock.com/playlists/id
+GET - https://api.zype.com/playlists/{id}
 </code></pre>
 
 #### Parameters
@@ -160,7 +160,7 @@ Content-Type: application/json
 ### Update a Playlist
 <hr>
 <pre><code>
-PUT - http://zype.apiary-mock.com/playlists/id
+PUT - https://api.zype.com/playlists/{id}
 </code></pre>
 
 #### Parameters
@@ -203,7 +203,7 @@ Content-Type: application/json
 ### Remove a Playlist
 <hr>
 <pre><code>
-DELETE - http://zype.apiary-mock.com/playlists/id
+DELETE - https://api.zype.com/playlists/{id}
 </code></pre>
 #### Parameters
 

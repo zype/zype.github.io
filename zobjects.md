@@ -9,7 +9,7 @@ permalink: /zobjects/
 ### List all Zobject Types
 <hr>
 <pre><code>
-GET - http://zype.apiary-mock.com/zobject_types?page=page&per_page=per_page&keywords=keyword
+GET - https://api.zype.com/zobject_types?page=page&per_page=per_page&keywords=keyword
 </code></pre>
 
 #### Parameters
@@ -68,7 +68,7 @@ Content-Type: application/json
 <hr>
 
 <pre><code>
-POST - http://zype.apiary-mock.com/zobject_types?page=page&per_page=per_page&keywords=keyword
+POST - https://api.zype.com/zobject_types?page=page&per_page=per_page&keywords=keyword
 </code></pre>
 
 #### Parameters
@@ -118,7 +118,7 @@ Lists descriptive information about Zobjects.
 ### tZobject Type
 <hr>
 <pre><code>
-GET - http://zype.apiary-mock.com/zobject_types/id
+GET - https://api.zype.com/zobject_types/{id}
 </code></pre>
 
 #### Parameters
@@ -163,7 +163,7 @@ Content-Type: application/json
 <hr>
 
 <pre><code>
-PUT - http://zype.apiary-mock.com/zobject_types/id
+PUT - https://api.zype.com/zobject_types/{id}
 </code></pre>
 
 #### Parameters
@@ -211,7 +211,7 @@ Content-Type: application/json
 <hr>
 
 <pre><code>
-DELETE - http://zype.apiary-mock.com/zobject_types/id
+DELETE - https://api.zype.com/zobject_types/{id}
 </code></pre>
 
 #### Parameters

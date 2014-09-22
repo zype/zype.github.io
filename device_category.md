@@ -10,7 +10,7 @@ permalink: /device_categories/
 <hr>
 
 <pre><code>
-GET - http://zype.apiary-mock.com/device_categories?page=page&per_page=per_page&search=search
+GET - https://api.zype.com/device_categories?page=page&per_page=per_page&search=search
 </code></pre>
 
 #### Parameters
@@ -92,7 +92,7 @@ Content-Type: application/json
 <hr>
 
 <pre><code>
-GET - http://zype.apiary-mock.com/device_categories/id
+GET - https://api.zype.com/device_categories/{id}
 </code></pre>
 
 #### Parameters
