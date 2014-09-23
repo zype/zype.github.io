@@ -15,11 +15,10 @@ Lists all Categories.
 
 #### Parameters
 
-##### page
-The page number of records to return (zero indexed). Example: 0. (Number)
-
-##### per_page
-The number of records to return. Example: 10. (Number)
+Parameter | Function | Type
+--------- | -------- | ----
+page | The page number of records to return (zero indexed). Example: 0. | Number
+per_page | The number of records to return. Example: 10. | Number
 
 #### Request
 Content-Type: application/json
@@ -65,8 +64,9 @@ Content-Type: application/json
 
 #### Parameters
 
-##### Category
-A set of key value pairs that describe the Category (Hash)
+Parameter | Function | Type
+--------- | -------- | ----
+category | A set of key value pairs that describe the Category | Hash
 
 #### Request
 Content-Type: application/json
@@ -106,8 +106,9 @@ Lists descriptive information about a Category.
 
 #### Parameters
 
-##### id
-String id of the Category to retrieve. Example: 540731274c616e047a000000. (Number)
+Parameter | Function | Type
+--------- | -------- | ----
+id | String id of the Category to retrieve. Example: 540731274c616e047a000000. | Number
 
 #### Request
 Content-Type: application/json
@@ -143,8 +144,9 @@ Content-Type: application/json
 
 #### Parameters
 
-##### id
-String id of the Category to update. Example: 5389352e69702d401b000000. (Number)
+Parameter | Function | Type
+--------- | -------- | ----
+id | String id of the Category to update. Example: 5389352e69702d401b000000. | Number
 
 #### Request
 Content-Type: application/json
@@ -182,8 +184,9 @@ Content-Type: application/json
 
 #### Parameters
 
-##### id
-String id of the Category to remove. Example: 5389352e69702d401b000000. (Number)
+Parameter | Function | Type
+--------- | -------- | ----
+id | String id of the Category to remove. Example: 5389352e69702d401b000000. | Number
 
 #### Request
 Content-Type: application/json

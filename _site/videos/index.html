@@ -52,26 +52,52 @@ keyword=keyword&amp;status=status&amp;active=true&amp;type=type&amp;category=cat
 
 <h4 id="parameters">Parameters</h4>
 
-<h5 id="page">page</h5>
-<p>The page number of records to return (zero indexed). Example: 0. (Number)</p>
-
-<h5 id="perpage">per_page</h5>
-<p>The number of records to return. Example: 10. (Number)</p>
-
-<h5 id="keyword">keyword</h5>
-<p>Filters the records returned by keyword. Example: comedy. (String)</p>
-
-<h5 id="status">status</h5>
-<p>Filters the records returned by status. Example: created. (String)</p>
-
-<h5 id="active">active</h5>
-<p>Show active, inactive or all videos Example: true. (String)</p>
-
-<h5 id="type">type</h5>
-<p>Show videos of the specified type (zype, youtube, hulu) Example: zype. (String)</p>
-
-<h5 id="category">category</h5>
-<p>An optional set of key value category pairs to filter the records returned by category. Example: category[color]=blue. (Hash)</p>
+<table>
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Function</th>
+      <th>Type</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>page</td>
+      <td>The page number of records to return (zero indexed). Example: 0.</td>
+      <td>Number</td>
+    </tr>
+    <tr>
+      <td>per_page</td>
+      <td>The number of records to return. Example: 10.</td>
+      <td>Number</td>
+    </tr>
+    <tr>
+      <td>keyword</td>
+      <td>Filters the records returned by keyword. Example: comedy.</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>status</td>
+      <td>Filters the records returned by status. Example: created.</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>active</td>
+      <td>Show active, inactive or all videos Example: true.</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>type</td>
+      <td>Show videos of the specified type (zype, youtube, hulu) Example: zype.</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>category</td>
+      <td>An optional set of key value category pairs to filter the records returned by category. Example: category[color]=blue.</td>
+      <td>Hash</td>
+    </tr>
+  </tbody>
+</table>
 
 <h4 id="response">Response</h4>
 <p>200
@@ -146,8 +172,22 @@ keyword=keyword&amp;status=status&amp;active=true&amp;type=type&amp;category=cat
 
 <h4 id="parameters-1">Parameters</h4>
 
-<h5 id="video">Video</h5>
-<p>A set of key value pairs that describe the Video. (Hash)</p>
+<table>
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Function</th>
+      <th>Type</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Video</td>
+      <td>A set of key value pairs that describe the Video.</td>
+      <td>Hash</td>
+    </tr>
+  </tbody>
+</table>
 
 <h4 id="response-1">Response</h4>
 <p>201
@@ -203,7 +243,7 @@ Content-Type: application/json</p>
 }_
 </code></pre>
 
-<h2 id="video-1">Video</h2>
+<h2 id="video">Video</h2>
 <p>Lists descriptive information about Videos</p>
 <hr />
 
@@ -215,8 +255,22 @@ Content-Type: application/json</p>
 
 <h4 id="parameters-2">Parameters</h4>
 
-<h5 id="id">id</h5>
-<p>String id of the Video to retrieve. Example: 5389352e69702d401b000000. (Number)</p>
+<table>
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Function</th>
+      <th>Type</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>id</td>
+      <td>String id of the Video to retrieve. Example: 5389352e69702d401b000000.</td>
+      <td>Number</td>
+    </tr>
+  </tbody>
+</table>
 
 <h4 id="request">Request</h4>
 <p>Content-Type: application/json</p>
@@ -284,7 +338,22 @@ Content-Type: application/json</p>
 
 <h4 id="parameters-3">Parameters</h4>
 
-<h5 id="video---a-set-of-key-value-pairs-that-describe-the-video-example-videodescriptiondescription-hash">Video - A set of key value pairs that describe the video. Example: video[description]=description. (Hash)</h5>
+<table>
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Function</th>
+      <th>Type</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Video</td>
+      <td>A set of key value pairs that describe the video. Example: video[description]=description.</td>
+      <td>Hash</td>
+    </tr>
+  </tbody>
+</table>
 
 <h4 id="request-1">Request</h4>
 
@@ -353,8 +422,22 @@ Content-Type: application/json</p>
 
 <h4 id="parameters-4">Parameters</h4>
 
-<h5 id="id-1">id</h5>
-<p>String id of the Video to remove. Example: 5389352e69702d401b000000. (Number)</p>
+<table>
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Function</th>
+      <th>Type</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>id</td>
+      <td>String id of the Video to remove. Example: 5389352e69702d401b000000.</td>
+      <td>Number</td>
+    </tr>
+  </tbody>
+</table>
 
 <h4 id="request-2">Request</h4>
 <p>Content-Type: application/json</p>
@@ -425,11 +508,27 @@ Content-Type: application/json</p>
 
 <h4 id="parameters-5">Parameters</h4>
 
-<h5 id="id-2">id</h5>
-<p>String id of the Video to retrieve. Example: 5389352e69702d401b000000. (String)</p>
-
-<h5 id="autoplay">autoplay</h5>
-<p>Optional boolean value to indicate whether the player should automatically start. Example: false. (Boolean)</p>
+<table>
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Function</th>
+      <th>Type</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>id</td>
+      <td>String id of the Video to retrieve. Example: 5389352e69702d401b000000.</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>autoplay</td>
+      <td>Optional boolean value to indicate whether the player should automatically start. Example: false.</td>
+      <td>Boolean</td>
+    </tr>
+  </tbody>
+</table>
 
 <h4 id="request-3">Request</h4>
 <p>Content-Type: application/json</p>

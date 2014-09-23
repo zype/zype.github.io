@@ -16,20 +16,13 @@ active=active&keyword=keyword&category=category
 
 #### Parameters
 
-##### page
-The page number of records to return (zero indexed). Example: 0. (Number)
-
-##### per_page
-The number of records to return. Example: 10. (Number)
-
-##### keyword
-Filters the records returned by keyword. Example: comedy. (String)
-
-##### active
-Filters the records by whether active or not. Example: true. (String)
-
-##### category
-An optional set of key value category pairs to filter the records returned by category. Example: category[color]=blue. (Hash)
+Parameter | Function | Type
+--------- | -------- | ----
+page | The page number of records to return (zero indexed). Example: 0. | Number
+per_page | The number of records to return. Example: 10. | Number
+keyword | Filters the records returned by keyword. Example: comedy. | String
+active | Filters the records by whether active or not. Example: true. | String
+category | An optional set of key value category pairs to filter the records returned by category. Example: category[color]=blue. | Hash
 
 #### Response
 200
@@ -75,8 +68,9 @@ active=active&keyword=keyword&category=category
 
 #### Parameters
 
-##### playlist
-A set of key value pairs that describe the Playlist (Hash)
+Parameter | Function | Type
+--------- | -------- | ----
+playlist | A set of key value pairs that describe the Playlist | Hash
 
 #### Request
 
@@ -121,8 +115,9 @@ Lists descriptive information about Playlist.
 
 #### Parameters
 
-##### id
-String id of the Playlist to retrieve. Example: 5389352e69702d401b000000. (Number)
+Parameter | Function | Type
+--------- | -------- | ----
+id | String id of the Playlist to retrieve. Example: 5389352e69702d401b000000. | Number
 
 #### Request
 Content-Type: application/json
@@ -161,8 +156,9 @@ Content-Type: application/json
 
 #### Parameters
 
-##### playlist
-A set of key value pairs that describe the playlist. (Hash)
+Parameter | Function | Type
+--------- | -------- | ----
+playlist | A set of key value pairs that describe the playlist. | Hash
 
 #### Request
 Content-Type: application/json
@@ -202,8 +198,9 @@ Content-Type: application/json
 </code></pre>
 #### Parameters
 
-##### id
-String id of the Playlist to remove. Example: 5389352e69702d401b000000. (Number)
+Parameter | Function | Type
+--------- | -------- | ----
+id | String id of the Playlist to remove. Example: 5389352e69702d401b000000. | Number
 
 #### Request
 Content-Type: application/json

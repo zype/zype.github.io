@@ -13,14 +13,11 @@ permalink: /zobjects/
 
 #### Parameters
 
-##### page
-The page number of records to return (zero indexed). Example: 0. (Number)
-
-##### per_page
-The number of records to return. Example: 10. (Number)
-
-##### keywords
-Filters the records returned by keyword. Example: comedy. (String)
+Parameter | Function | Type
+--------- | -------- | ----
+page      | The page number of records to return (zero indexed). Example: 0. | Number
+per_page  | The number of records to return. Example: 10. | Number
+keywords  | Filters the records returned by keyword. Example: comedy. | String
 
 #### Response
 200
@@ -71,8 +68,9 @@ Content-Type: application/json
 
 #### Parameters
 
-##### zobject_type
-A set of key value pairs that describe the Zobject Type. (Hash)
+Parameter | Function | Type
+--------- | -------- | ----
+zobject_type | A set of key value pairs that describe the Zobject Type. | Hash
 
 #### Request
 Content-Type: application/json
@@ -120,8 +118,9 @@ Lists descriptive information about Zobjects.
 
 #### Parameters
 
-##### id
-String id of the Zobject Type to retrieve. Example: 5389352e69702d401b000000. (Number)
+Parameter | Function | Type
+--------- | -------- | ----
+id | String id of the Zobject Type to retrieve. Example: 5389352e69702d401b000000. | Number
 
 #### Response
 200
@@ -164,8 +163,9 @@ Content-Type: application/json
 
 #### Parameters
 
-##### zobject
-A set of key value pairs that describe the Zobject Type. (Hash)
+Parameter | Function | Type
+--------- | -------- | ----
+zobject   | A set of key value pairs that describe the Zobject Type. | Hash
 
 #### Request
 Content-Type: application/json
@@ -211,8 +211,9 @@ Content-Type: application/json
 
 #### Parameters
 
-##### id
-String id of the Zobject Type to remove. Example: 5389352e69702d401b000000. (Number)
+Parameter | Function | Type
+--------- | -------- | ----
+id | String id of the Zobject Type to remove. Example: 5389352e69702d401b000000. | Number
 
 #### Response
 200

@@ -15,26 +15,15 @@ keyword=keyword&status=status&active=true&type=type&category=category
 
 #### Parameters
 
-##### page
-The page number of records to return (zero indexed). Example: 0. (Number)
-
-##### per_page
-The number of records to return. Example: 10. (Number)
-
-##### keyword
-Filters the records returned by keyword. Example: comedy. (String)
-
-##### status
-Filters the records returned by status. Example: created. (String)
-
-##### active
-Show active, inactive or all videos Example: true. (String)
-
-##### type
-Show videos of the specified type (zype, youtube, hulu) Example: zype. (String)
-
-##### category
-An optional set of key value category pairs to filter the records returned by category. Example: category[color]=blue. (Hash)
+Parameter | Function | Type
+--------- | -------- | ----
+page      | The page number of records to return (zero indexed). Example: 0. | Number
+per_page  | The number of records to return. Example: 10. | Number
+keyword   | Filters the records returned by keyword. Example: comedy. | String
+status    | Filters the records returned by status. Example: created. | String
+active    | Show active, inactive or all videos Example: true. | String
+type      | Show videos of the specified type (zype, youtube, hulu) Example: zype. | String
+category  | An optional set of key value category pairs to filter the records returned by category. Example: category[color]=blue. | Hash
 
 #### Response
 200
@@ -107,8 +96,9 @@ keyword=keyword&status=status&active=true&type=type&category=category
 
 #### Parameters
 
-##### Video
-A set of key value pairs that describe the Video. (Hash)
+Parameter | Function | Type
+--------- | -------- | ----
+Video     | A set of key value pairs that describe the Video. | Hash
 
 #### Response
 201
@@ -174,8 +164,9 @@ Lists descriptive information about Videos
 
 #### Parameters
 
-##### id
-String id of the Video to retrieve. Example: 5389352e69702d401b000000. (Number)
+Parameter | Function | Type
+--------- | -------- | ----
+id        | String id of the Video to retrieve. Example: 5389352e69702d401b000000. | Number
 
 #### Request
 Content-Type: application/json
@@ -241,7 +232,9 @@ Content-Type: application/json
 
 #### Parameters
 
-##### Video - A set of key value pairs that describe the video. Example: video[description]=description. (Hash)
+Parameter | Function | Type
+--------- | -------- | ----
+Video     | A set of key value pairs that describe the video. Example: video[description]=description. | Hash
 
 #### Request
 
@@ -308,8 +301,9 @@ Content-Type: application/json
 
 #### Parameters
 
-##### id
-String id of the Video to remove. Example: 5389352e69702d401b000000. (Number)
+Parameter | Function | Type
+--------- | -------- | ----
+id        | String id of the Video to remove. Example: 5389352e69702d401b000000. | Number
 
 #### Request
 Content-Type: application/json
@@ -378,11 +372,10 @@ Lists player content. You need to supply your player key in addition to your API
 
 #### Parameters
 
-##### id
-String id of the Video to retrieve. Example: 5389352e69702d401b000000. (String)
-
-##### autoplay
-Optional boolean value to indicate whether the player should automatically start. Example: false. (Boolean)
+Parameter | Function | Type
+--------- | -------- | ----
+id        | String id of the Video to retrieve. Example: 5389352e69702d401b000000. | String
+autoplay  | Optional boolean value to indicate whether the player should automatically start. Example: false. | Boolean
 
 #### Request
 Content-Type: application/json

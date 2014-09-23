@@ -15,8 +15,9 @@ GET - https://api.zype.com/geoip?ip_address=ip_address
 
 #### Parameters
 
-##### ip_address
-Defaults to IP of API caller if not provided Example: 255.255.255.255. (Number)
+Parameter | Function | Type
+--------- | -------- | ----
+ip_address | Defaults to IP of API caller if not provided Example: 255.255.255.255. | Number
 
 #### Response
 200

@@ -14,14 +14,11 @@ permalink: /device_categories/
 
 #### Parameters
 
-##### page
-The page number of records to return (zero indexed). Example: 0. (Number)
-
-##### per_page
-The number of records to return. Example: 10. (Number)
-
-##### search
-Performs a full text search for the term and returns records that match. Example: Mobile (String)
+Parameter | Function | Type
+--------- | -------- | ----
+page | The page number of records to return (zero indexed). Example: 0. | Number
+per_page | The number of records to return. Example: 10. | Number
+search | Performs a full text search for the term and returns records that match. Example: Mobile | String
 
 #### Response
 200
@@ -95,9 +92,9 @@ Content-Type: application/json
 
 #### Parameters
 
-##### id
-
-String id of the Device Category to retrieve. Example: 5389352e69702d401b000000. (Number)
+Parameter | Function | Type
+--------- | -------- | ----
+id | String id of the Device Category to retrieve. Example: 5389352e69702d401b000000. | Number
 
 #### Response
 200
