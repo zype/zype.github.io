@@ -26,8 +26,8 @@ Content-Type: application/json
 <pre><code>{
     response : [
         {
-            _id: "5407412b4c616e047a0f0000",
-            _keywords: [
+            &#95;id: "5407412b4c616e047a0f0000",
+            &#95;keywords: [
                 "Actor"
             ],
             created_at: "2014-09-03T16:26:19.680Z",
@@ -38,7 +38,7 @@ Content-Type: application/json
             videos_enabled: true,
             zobject_attributes: [
                 {
-                    _id: "5407412b4c616e047a100000",
+                    &#95;id: "5407412b4c616e047a100000",
                     created_at: "2014-09-03T16:26:19.680Z",
                     description: "name of actor",
                     field_name: "name",
@@ -57,7 +57,7 @@ Content-Type: application/json
             pages: 1
         }
     ]
-}_
+}
 </code></pre>
 <hr>
 ## Create a Zobject Type
@@ -81,8 +81,8 @@ Content-Type: application/json
 
 <pre><code>{
     response: {
-        _id: "5407412b4c616e047a0f0000",
-        _keywords: [
+        &#95;id: "5407412b4c616e047a0f0000",
+        &#95;keywords: [
             "Actor"
         ],
         created_at: "2014-09-03T16:26:19.680Z",
@@ -93,7 +93,7 @@ Content-Type: application/json
         videos_enabled: true,
         zobject_attributes: [
             {
-                _id: "5407412b4c616e047a100000",
+                &#95;id: "5407412b4c616e047a100000",
                 created_at: "2014-09-03T16:26:19.680Z",
                 description: "name of actor",
                 field_name: "name",
@@ -104,7 +104,7 @@ Content-Type: application/json
         ],
         "zobject_count": 2
     }
-}_
+}
 </code></pre>
 
 ## Zobject Type
@@ -129,8 +129,8 @@ Content-Type: application/json
 <pre><code>{
     response :
         {
-            _id: "5407412b4c616e047a0f0000",
-            _keywords: [
+            &#95;id: "5407412b4c616e047a0f0000",
+            &#95;keywords: [
                 "Actor"
             ],
             created_at: "2014-09-03T16:26:19.680Z",
@@ -141,7 +141,7 @@ Content-Type: application/json
             videos_enabled: true,
             zobject_attributes: [
                 {
-                    _id: "5407412b4c616e047a100000",
+                    &#95;id: "5407412b4c616e047a100000",
                     created_at: "2014-09-03T16:26:19.680Z",
                     description: "name of actor",
                     field_name: "name",
@@ -152,7 +152,7 @@ Content-Type: application/json
             ],
             "zobject_count": 2
         }
-}_
+}
 </code></pre>
 <hr>
 ### Update a Zobject Type
@@ -177,8 +177,8 @@ Content-Type: application/json
 <pre><code>{
     response :
         {
-            _id: "5407412b4c616e047a0f0000",
-            _keywords: [
+            &#95;id: "5407412b4c616e047a0f0000",
+            &#95;keywords: [
                 "Actor"
             ],
             created_at: "2014-09-03T16:26:19.680Z",
@@ -189,7 +189,7 @@ Content-Type: application/json
             videos_enabled: true,
             zobject_attributes: [
                 {
-                    _id: "5407412b4c616e047a100000",
+                    &#95;id: "5407412b4c616e047a100000",
                     created_at: "2014-09-03T16:26:19.680Z",
                     description: "name of actor",
                     field_name: "name",
@@ -200,7 +200,7 @@ Content-Type: application/json
             ],
             "zobject_count": 2
         }
-}_
+}
 </code></pre>
 <hr>
 ### Remove a Zobject Type
@@ -222,8 +222,8 @@ Content-Type: application/json
 <pre><code>{
     response :
         {
-            _id: "5407412b4c616e047a0f0000",
-            _keywords: [
+            &#95;id: "5407412b4c616e047a0f0000",
+            &#95;keywords: [
                 "Actor"
             ],
             created_at: "2014-09-03T16:26:19.680Z",
@@ -234,7 +234,7 @@ Content-Type: application/json
             videos_enabled: true,
             zobject_attributes: [
                 {
-                    _id: "5407412b4c616e047a100000",
+                    &#95;id: "5407412b4c616e047a100000",
                     created_at: "2014-09-03T16:26:19.680Z",
                     description: "name of actor",
                     field_name: "name",
@@ -245,5 +245,5 @@ Content-Type: application/json
             ],
             "zobject_count": 2
         }
-}_
+}
 </code></pre>

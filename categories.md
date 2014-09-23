@@ -30,8 +30,8 @@ Content-Type: application/json
 <pre><code>{
     response : [
         {
-            _id: "540731274c616e047a000000",
-            _keywords: [
+            &#95;id: "540731274c616e047a000000",
+            &#95;keywords: [
                 "type",
                 "video"
             ],
@@ -53,7 +53,7 @@ Content-Type: application/json
         per_page: 10,
         pages: 1
     }
-}_
+}
 </code></pre>
 
 <hr>
@@ -77,8 +77,8 @@ Content-Type: application/json
 
 <pre><code>{
     response: {
-        _id: "540731274c616e047a000000",
-        _keywords: [
+        &#95;id: "540731274c616e047a000000",
+        &#95;keywords: [
             "type",
             "video"
         ],
@@ -92,7 +92,7 @@ Content-Type: application/json
             "Originals"
         ]
     }
-}_
+}
 </code></pre>
 
 ## Category
@@ -119,8 +119,8 @@ Content-Type: application/json
 
 <pre><code>{
     response : {
-        _id: "540731274c616e047a000000",
-        _keywords: [
+        &#95;id: "540731274c616e047a000000",
+        &#95;keywords: [
             "type",
             "video"
         ],
@@ -134,7 +134,7 @@ Content-Type: application/json
             "Originals"
         ]
     }
-}_
+}
 </code></pre>
 <hr>
 ### Update a Catgeory
@@ -158,8 +158,8 @@ Content-Type: application/json
 <pre><code>{
     response : [
         {
-            _id: "540731274c616e047a000000",
-            _keywords: [
+            &#95;id: "540731274c616e047a000000",
+            &#95;keywords: [
                 "type",
                 "video"
             ],
@@ -174,7 +174,7 @@ Content-Type: application/json
             ]
         }
     ]
-}_
+}
 </code></pre>
 <hr>
 ### Remove a Category
@@ -198,8 +198,8 @@ Content-Type: application/json
 <pre><code>{
     response : [
         {
-            _id: "540731274c616e047a000000",
-            _keywords: [
+            &#95;id: "540731274c616e047a000000",
+            &#95;keywords: [
                 "type",
                 "video"
             ],
@@ -214,5 +214,5 @@ Content-Type: application/json
             ]
         }
     ]
-}_
+}
 </code></pre>

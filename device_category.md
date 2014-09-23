@@ -27,8 +27,8 @@ Content-Type: application/json
 <pre><code>{
   "response": [
     {
-      "_id": "541b14f6636261c814040000",
-      "_keywords": [
+      "&#95;id": "541b14f6636261c814040000",
+      "&#95;keywords": [
       "desktop"
       ],
 
@@ -42,8 +42,8 @@ Content-Type: application/json
       "updated_at": "2014-09-22T16:02:11.113Z"
       },
 {
-    "_id": "54204804636261f298050000",
-    "_keywords": [
+    "&#95;id": "54204804636261f298050000",
+    "&#95;keywords": [
     "mobile"
     ],
 
@@ -57,8 +57,8 @@ Content-Type: application/json
     "updated_at": "2014-09-22T16:02:12.319Z"
 },
 {
-    "_id": "54204804636261f298060000",
-    "_keywords": [
+    "&#95;id": "54204804636261f298060000",
+    "&#95;keywords": [
     "ott"
     ],
 
@@ -80,7 +80,7 @@ Content-Type: application/json
   "per_page": 10,
   "pages": 1
   }
-}_
+}
 </code></pre>
 
 <hr>
@@ -102,8 +102,8 @@ Content-Type: application/json
 
 <pre><code>{
   "response": {
-    "_id": "54204803636261f298040000",
-    "_keywords": [
+    "&#95;id": "54204803636261f298040000",
+    "&#95;keywords": [
       "desktop"
     ],
     "created_at": "2014-09-22T16:02:11.113Z",

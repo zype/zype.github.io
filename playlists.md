@@ -31,8 +31,8 @@ Content-Type: application/json
 <pre><code>{
     response: [
         {
-            _id: "540735534c616e047a030000",
-            _keywords: [
+            &#95;id: "540735534c616e047a030000",
+            &#95;keywords: [
                 "first",
                 "playlist"
             ],
@@ -57,7 +57,7 @@ Content-Type: application/json
         per_page: 10,
         pages: 1
     }
-}_
+}
 </code></pre>
 <hr>
 ### Create a Playlist
@@ -82,8 +82,8 @@ Content-Type: application/json
 
 <pre><code>{
     response: {
-        _id: "540735534c616e047a030000",
-        _keywords: [
+        &#95;id: "540735534c616e047a030000",
+        &#95;keywords: [
             "first",
             "playlist"
         ],
@@ -100,7 +100,7 @@ Content-Type: application/json
         title: "First Playlist",
         updated_at: "2014-09-03T15:36:22.172Z"
     }
-}_
+}
 </code></pre>
 
 ## Playlist
@@ -128,8 +128,8 @@ Content-Type: application/json
 
 <pre><code>{
     response: {
-        _id: "540735534c616e047a030000",
-        _keywords: [
+        &#95;id: "540735534c616e047a030000",
+        &#95;keywords: [
             "first",
             "playlist"
         ],
@@ -146,8 +146,9 @@ Content-Type: application/json
         title: "First Playlist",
         updated_at: "2014-09-03T15:36:22.172Z"
     }
-}_
+}
 </code></pre>
+
 <hr>
 ### Update a Playlist
 <hr>
@@ -170,8 +171,8 @@ Content-Type: application/json
 <pre><code>{
     response: [
         {
-            _id: "540735534c616e047a030000",
-            _keywords: [
+            &#95;id: "540735534c616e047a030000",
+            &#95;keywords: [
                 "first",
                 "playlist"
             ],
@@ -189,13 +190,14 @@ Content-Type: application/json
             updated_at: "2014-09-03T15:36:22.172Z"
         }
     ]
-}_
+}
 </code></pre>
 <hr>
 ### Remove a Playlist
 <hr>
 <pre><code>DELETE - https://api.zype.com/playlists/{id}
 </code></pre>
+
 #### Parameters
 
 Parameter | Function | Type
@@ -212,8 +214,8 @@ Content-Type: application/json
 <pre><code>{
     response: [
         {
-            _id: "540735534c616e047a030000",
-            _keywords: [
+            &#95;id: "540735534c616e047a030000",
+            &#95;keywords: [
                 "first",
                 "playlist"
             ],
@@ -231,5 +233,5 @@ Content-Type: application/json
             updated_at: "2014-09-03T15:36:22.172Z"
         }
     ]
-}_
+}
 </code></pre>

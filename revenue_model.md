@@ -26,8 +26,8 @@ Content-Type: application/json
 <pre><code>{
 "response": [
   {
-    "_id": "54204802636261f298030000",
-    "_keywords": [
+    "&#95;id": "54204802636261f298030000",
+    "&#95;keywords": [
       "free"
     ],
     "created_at": "2014-09-22T16:02:10.785Z",
@@ -36,8 +36,8 @@ Content-Type: application/json
     "updated_at": "2014-09-22T16:02:10.785Z"
   },
   {
-    "_id": "54204802636261f298020000",
-    "_keywords": [
+    "&#95;id": "54204802636261f298020000",
+    "&#95;keywords": [
       "demand",
       "subscription",
       "svod",
@@ -49,8 +49,8 @@ Content-Type: application/json
     "updated_at": "2014-09-22T16:02:10.783Z"
   },
   {
-    "_id": "54204802636261f298010000",
-    "_keywords": [
+    "&#95;id": "54204802636261f298010000",
+    "&#95;keywords": [
       "advertising",
       "avod",
       "demand",
@@ -62,8 +62,8 @@ Content-Type: application/json
     "updated_at": "2014-09-22T16:02:10.781Z"
   },
   {
-    "_id": "54204802636261f298000000",
-    "_keywords": [
+    "&#95;id": "54204802636261f298000000",
+    "&#95;keywords": [
       "electronic",
       "est",
       "sell",
@@ -82,7 +82,7 @@ Content-Type: application/json
   "per_page": 10,
   "pages": 1
   }
-}_
+}
 </code></pre>
 
 <hr>
@@ -104,8 +104,8 @@ Content-Type: application/json
 
 <pre><code>{
   "response": {
-    "_id": "54204802636261f298030000",
-    "_keywords": [
+    "&#95;id": "54204802636261f298030000",
+    "&#95;keywords": [
       "free"
     ],
     "created_at": "2014-09-22T16:02:10.785Z",
@@ -113,5 +113,5 @@ Content-Type: application/json
     "name": "Free",
     "updated_at": "2014-09-22T16:02:10.785Z"
   }
-}_
+}
 </code></pre>

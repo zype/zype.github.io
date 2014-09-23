@@ -32,7 +32,7 @@ Content-Type: application/json
 <pre><code>{
     response : [
         {
-            _id: "5389352e69702d401a000000",
+            &#95;id: "5389352e69702d401a000000",
             active: true,
             ad_timings: [
                 {
@@ -85,7 +85,7 @@ Content-Type: application/json
         per_page: 10,
         pages: 1
     }
-}_
+}
 </code></pre>
 <hr>
 ### Create a Video
@@ -106,7 +106,7 @@ Content-Type: application/json
 
 <pre><code>{
     response: {
-        _id: "5389352e69702d401a000000",
+        &#95;id: "5389352e69702d401a000000",
         active: true,
         ad_timings: [
             {
@@ -151,7 +151,7 @@ Content-Type: application/json
         upload_id: "5385c92c69702d589f170000",
         video_source_id: null
     }
-}_
+}
 </code></pre>
 
 ## Video
@@ -177,7 +177,7 @@ Content-Type: application/json
 
 <pre><code>{
     response : {
-        _id: "5389352e69702d401a000000",
+        &#95;id: "5389352e69702d401a000000",
         active: true,
         ad_timings: [
             {
@@ -222,7 +222,7 @@ Content-Type: application/json
         upload_id: "5385c92c69702d589f170000",
         video_source_id: null
     }
-}_
+}
 </code></pre>
 <hr>
 ### Update a Video
@@ -246,7 +246,7 @@ Content-Type: application/json
 
 <pre><code>{
     response : {
-        _id: "5389352e69702d401a000000",
+        &#95;id: "5389352e69702d401a000000",
         active: true,
         ad_timings: [
             {
@@ -291,7 +291,7 @@ Content-Type: application/json
         upload_id: "5385c92c69702d589f170000",
         video_source_id: null
     }
-}_
+}
 </code></pre>
 <hr>
 ###Remove a Video
@@ -314,7 +314,7 @@ Content-Type: application/json
 
 <pre><code>{
     response : {
-        _id: "5389352e69702d401a000000",
+        &#95;id: "5389352e69702d401a000000",
         active: true,
         ad_timings: [
             {
@@ -359,7 +359,7 @@ Content-Type: application/json
         upload_id: "5385c92c69702d589f170000",
         video_source_id: null
     }
-}_
+}
 </code></pre>
 
 ## Player
