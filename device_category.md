@@ -9,8 +9,7 @@ permalink: /device_categories/
 ### List all Device Categories
 <hr>
 
-<pre><code>
-GET - https://api.zype.com/device_categories?page=page&per_page=per_page&search=search
+<pre><code>GET - https://api.zype.com/device_categories?page=page&per_page=per_page&search=search
 </code></pre>
 
 #### Parameters
@@ -27,8 +26,8 @@ Performs a full text search for the term and returns records that match. Example
 #### Response
 200
 Content-Type: application/json
-<pre><code>
-{
+
+<pre><code>{
   "response": [
     {
       "_id": "541b14f6636261c814040000",
@@ -91,8 +90,7 @@ Content-Type: application/json
 ### Retrieve a Device Category
 <hr>
 
-<pre><code>
-GET - https://api.zype.com/device_categories/{id}
+<pre><code>GET - https://api.zype.com/device_categories/{id}
 </code></pre>
 
 #### Parameters
@@ -104,8 +102,8 @@ String id of the Device Category to retrieve. Example: 5389352e69702d401b000000.
 #### Response
 200
 Content-Type: application/json
-<pre><code>
-{
+
+<pre><code>{
   "response": {
     "_id": "54204803636261f298040000",
     "_keywords": [

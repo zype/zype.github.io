@@ -10,8 +10,7 @@ Lists all Playlists. Playlist information includes descriptive information about
 <hr>
 ### List all Playlists
 <hr>
-<pre><code>
-GET - https://api.zype.com/playlists?page=page&per_page=per_page&
+<pre><code>GET - https://api.zype.com/playlists?page=page&per_page=per_page&
 active=active&keyword=keyword&category=category
 </code></pre>
 
@@ -35,8 +34,8 @@ An optional set of key value category pairs to filter the records returned by ca
 #### Response
 200
 Content-Type: application/json
-<pre><code>
-{
+
+<pre><code>{
     response: [
         {
             _id: "540735534c616e047a030000",
@@ -70,8 +69,7 @@ Content-Type: application/json
 <hr>
 ### Create a Playlist
 <hr>
-<pre><code>
-POST - https://api.zype.com/playlists?page=page&per_page=per_page&
+<pre><code>POST - https://api.zype.com/playlists?page=page&per_page=per_page&
 active=active&keyword=keyword&category=category
 </code></pre>
 
@@ -86,9 +84,9 @@ Content-Type: application/json
 
 #### Response
 201
-<pre><code>
 Content-Type: application/json
-{
+
+<pre><code>{
     response: {
         _id: "540735534c616e047a030000",
         _keywords: [
@@ -118,8 +116,7 @@ Lists descriptive information about Playlist.
 <hr>
 ### Retrieve a Playlist
 <hr>
-<pre><code>
-GET - https://api.zype.com/playlists/{id}
+<pre><code>GET - https://api.zype.com/playlists/{id}
 </code></pre>
 
 #### Parameters
@@ -133,8 +130,8 @@ Content-Type: application/json
 #### Response
 200
 Content-Type: application/json
-<pre><code>
-{
+
+<pre><code>{
     response: {
         _id: "540735534c616e047a030000",
         _keywords: [
@@ -159,8 +156,7 @@ Content-Type: application/json
 <hr>
 ### Update a Playlist
 <hr>
-<pre><code>
-PUT - https://api.zype.com/playlists/{id}
+<pre><code>PUT - https://api.zype.com/playlists/{id}
 </code></pre>
 
 #### Parameters
@@ -174,8 +170,8 @@ Content-Type: application/json
 #### Response
 201
 Content-Type: application/json
-<pre><code>
-{
+
+<pre><code>{
     response: [
         {
             _id: "540735534c616e047a030000",
@@ -202,8 +198,7 @@ Content-Type: application/json
 <hr>
 ### Remove a Playlist
 <hr>
-<pre><code>
-DELETE - https://api.zype.com/playlists/{id}
+<pre><code>DELETE - https://api.zype.com/playlists/{id}
 </code></pre>
 #### Parameters
 
@@ -216,8 +211,8 @@ Content-Type: application/json
 #### Response
 200
 Content-Type: application/json
-<pre><code>
-{
+
+<pre><code>{
     response: [
         {
             _id: "540735534c616e047a030000",

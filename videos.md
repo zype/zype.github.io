@@ -9,8 +9,7 @@ Lists all Videos. Video information includes descriptive information about the v
 <hr>
 ### List all Videos
 <hr>
-<pre><code>
-GET - https://api.zype.com/videos?page=page&per_page=per_page&
+<pre><code>GET - https://api.zype.com/videos?page=page&per_page=per_page&
 keyword=keyword&status=status&active=true&type=type&category=category
 </code></pre>
 
@@ -39,9 +38,9 @@ An optional set of key value category pairs to filter the records returned by ca
 
 #### Response
 200
-<pre><code>
 Content-Type: application/json
-{
+
+<pre><code>{
     response : [
         {
             _id: "5389352e69702d401a000000",
@@ -102,8 +101,7 @@ Content-Type: application/json
 <hr>
 ### Create a Video
 <hr>
-<pre><code>
-POST - https://api.zype.com/videos?page=page&per_page=per_page&
+<pre><code>POST - https://api.zype.com/videos?page=page&per_page=per_page&
 keyword=keyword&status=status&active=true&type=type&category=category
 </code></pre>
 
@@ -114,9 +112,9 @@ A set of key value pairs that describe the Video. (Hash)
 
 #### Response
 201
-<pre><code>
 Content-Type: application/json
-{
+
+<pre><code>{
     response: {
         _id: "5389352e69702d401a000000",
         active: true,
@@ -171,8 +169,7 @@ Lists descriptive information about Videos
 <hr>
 ###tVideo
 <hr>
-<pre><code>
-GET - https://api.zype.com/videos/{id}
+<pre><code>GET - https://api.zype.com/videos/{id}
 </code></pre>
 
 #### Parameters
@@ -185,9 +182,9 @@ Content-Type: application/json
 
 #### Response
 200
-<pre><code>
 Content-Type: application/json
-{
+
+<pre><code>{
     response : {
         _id: "5389352e69702d401a000000",
         active: true,
@@ -239,8 +236,7 @@ Content-Type: application/json
 <hr>
 ### Update a Video
 <hr>
-<pre><code>
-PUT - https://api.zype.com/videos/{id}
+<pre><code>PUT - https://api.zype.com/videos/{id}
 </code></pre>
 
 #### Parameters
@@ -253,10 +249,9 @@ Content-Type: application/json
 
 #### Response
 201
-
-<pre><code>
 Content-Type: application/json
-{
+
+<pre><code>{
     response : {
         _id: "5389352e69702d401a000000",
         active: true,
@@ -308,8 +303,7 @@ Content-Type: application/json
 <hr>
 ###Remove a Video
 <hr>
-<pre><code>
-DELETE - https://api.zype.com/videos/{id}
+<pre><code>DELETE - https://api.zype.com/videos/{id}
 </code></pre>
 
 #### Parameters
@@ -322,9 +316,9 @@ Content-Type: application/json
 
 #### Response
 200
-<pre><code>
 Content-Type: application/json
-{
+
+<pre><code>{
     response : {
         _id: "5389352e69702d401a000000",
         active: true,
@@ -379,8 +373,7 @@ Lists player content. You need to supply your player key in addition to your API
 <hr>
 ### tPlayer
 <hr>
-<pre><code>
-GEThttps://api.zype.com/videos/{id}/player?autoplay=autoplay
+<pre><code>GET - https://api.zype.com/videos/{id}/player?autoplay=autoplay
 </code></pre>
 
 #### Parameters
@@ -396,9 +389,9 @@ Content-Type: application/json
 
 #### Response
 200
-<pre><code>
 Content-Type: application/json
-{
+
+<pre><code>{
     response : {
         body: "[Video player embed code]"
     }

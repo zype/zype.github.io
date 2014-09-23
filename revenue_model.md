@@ -8,9 +8,7 @@ permalink: /revenue_models/
 <hr>
 ### List all Revenue Models
 <hr>
-
-<pre><code>
-GET - https://api.zype.com/revenue_models?page=page&per_page=per_page&search=search
+<pre><code>GET - https://api.zype.com/revenue_models?page=page&per_page=per_page&search=search
 </code></pre>
 
 #### Parameters
@@ -27,8 +25,8 @@ Performs a full text search for the term and returns records that match. Example
 #### Response
 200
 Content-Type: application/json
-<pre><code>
-{
+
+<pre><code>{
 "response": [
   {
     "_id": "54204802636261f298030000",
@@ -94,8 +92,7 @@ Content-Type: application/json
 ### Retrieve a Revenue Model
 <hr>
 
-<pre><code>
-GET - https://api.zype.com/revenue_models/{id}
+<pre><code>GET - https://api.zype.com/revenue_models/{id}
 </code></pre>
 
 #### Parameters
@@ -107,8 +104,8 @@ String id of the Revenue Model to retrieve. Example: 5389352e69702d401b000000. (
 #### Response
 200
 Content-Type: application/json
-<pre><code>
-{
+
+<pre><code>{
   "response": {
     "_id": "54204802636261f298030000",
     "_keywords": [

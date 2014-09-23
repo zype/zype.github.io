@@ -10,8 +10,7 @@ Lists all Categories.
 <hr>
 ### List all Categories
 <hr>
-<pre><code>
-GET - https://api.zype.com/categories?page=page&per_page=per_page
+<pre><code>GET - https://api.zype.com/categories?page=page&per_page=per_page
 </code></pre>
 
 #### Parameters
@@ -28,8 +27,8 @@ Content-Type: application/json
 #### Response
 200
 Content-Type: application/json
-<pre><code>
-{
+
+<pre><code>{
     response : [
         {
             _id: "540731274c616e047a000000",
@@ -61,8 +60,7 @@ Content-Type: application/json
 <hr>
 ### Create a Category
 <hr>
-<pre><code>
-POST - https://api.zype.com/categories?page=page&per_page=per_page
+<pre><code>POST - https://api.zype.com/categories?page=page&per_page=per_page
 </code></pre>
 
 #### Parameters
@@ -76,8 +74,8 @@ Content-Type: application/json
 #### Response
 201
 Content-Type: application/json
-<pre><code>
-{
+
+<pre><code>{
     response: {
         _id: "540731274c616e047a000000",
         _keywords: [
@@ -103,8 +101,7 @@ Lists descriptive information about a Category.
 <hr>
 ### Retrieve a Category
 <hr>
-<pre><code>
-GET - https://api.zype.com/categories/{id}
+<pre><code>GET - https://api.zype.com/categories/{id}
 </code></pre>
 
 #### Parameters
@@ -118,8 +115,8 @@ Content-Type: application/json
 ### Response
 200
 Content-Type: application/json
-<pre><code>
-{
+
+<pre><code>{
     response : {
         _id: "540731274c616e047a000000",
         _keywords: [
@@ -141,8 +138,7 @@ Content-Type: application/json
 <hr>
 ### Update a Catgeory
 <hr>
-<pre><code>
-PUT - https://api.zype.com/categories/{id}
+<pre><code>PUT - https://api.zype.com/categories/{id}
 </code></pre>
 
 #### Parameters
@@ -156,8 +152,8 @@ Content-Type: application/json
 #### Response
 201
 Content-Type: application/json
-<pre><code>
-{
+
+<pre><code>{
     response : [
         {
             _id: "540731274c616e047a000000",
@@ -181,8 +177,7 @@ Content-Type: application/json
 <hr>
 ### Remove a Category
 <hr>
-<pre><code>
-DELETE - https://api.zype.com/categories/{id}
+<pre><code>DELETE - https://api.zype.com/categories/{id}
 </code></pre>
 
 #### Parameters
@@ -196,8 +191,8 @@ Content-Type: application/json
 #### Response
 200
 Content-Type: application/json
-<pre><code>
-{
+
+<pre><code>{
     response : [
         {
             _id: "540731274c616e047a000000",

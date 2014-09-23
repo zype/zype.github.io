@@ -8,8 +8,7 @@ permalink: /zobjects/
 <hr>
 ### List all Zobject Types
 <hr>
-<pre><code>
-GET - https://api.zype.com/zobject_types?page=page&per_page=per_page&keywords=keyword
+<pre><code>GET - https://api.zype.com/zobject_types?page=page&per_page=per_page&keywords=keyword
 </code></pre>
 
 #### Parameters
@@ -26,8 +25,8 @@ Filters the records returned by keyword. Example: comedy. (String)
 #### Response
 200
 Content-Type: application/json
-<pre><code>
-{
+
+<pre><code>{
     response : [
         {
             _id: "5407412b4c616e047a0f0000",
@@ -67,8 +66,7 @@ Content-Type: application/json
 ## Create a Zobject Type
 <hr>
 
-<pre><code>
-POST - https://api.zype.com/zobject_types?page=page&per_page=per_page&keywords=keyword
+<pre><code>POST - https://api.zype.com/zobject_types?page=page&per_page=per_page&keywords=keyword
 </code></pre>
 
 #### Parameters
@@ -82,8 +80,8 @@ Content-Type: application/json
 #### Response
 201
 Content-Type: application/json
-<pre><code>
-{
+
+<pre><code>{
     response: {
         _id: "5407412b4c616e047a0f0000",
         _keywords: [
@@ -117,8 +115,7 @@ Lists descriptive information about Zobjects.
 <hr>
 ### tZobject Type
 <hr>
-<pre><code>
-GET - https://api.zype.com/zobject_types/{id}
+<pre><code>GET - https://api.zype.com/zobject_types/{id}
 </code></pre>
 
 #### Parameters
@@ -129,8 +126,8 @@ String id of the Zobject Type to retrieve. Example: 5389352e69702d401b000000. (N
 #### Response
 200
 Content-Type: application/json
-<pre><code>
-{
+
+<pre><code>{
     response :
         {
             _id: "5407412b4c616e047a0f0000",
@@ -162,8 +159,7 @@ Content-Type: application/json
 ### Update a Zobject Type
 <hr>
 
-<pre><code>
-PUT - https://api.zype.com/zobject_types/{id}
+<pre><code>PUT - https://api.zype.com/zobject_types/{id}
 </code></pre>
 
 #### Parameters
@@ -177,8 +173,8 @@ Content-Type: application/json
 #### Response
 201
 Content-Type: application/json
-<pre><code>
-{
+
+<pre><code>{
     response :
         {
             _id: "5407412b4c616e047a0f0000",
@@ -210,8 +206,7 @@ Content-Type: application/json
 ### Remove a Zobject Type
 <hr>
 
-<pre><code>
-DELETE - https://api.zype.com/zobject_types/{id}
+<pre><code>DELETE - https://api.zype.com/zobject_types/{id}
 </code></pre>
 
 #### Parameters
@@ -222,8 +217,8 @@ String id of the Zobject Type to remove. Example: 5389352e69702d401b000000. (Num
 #### Response
 200
 Content-Type: application/json
-<pre><code>
-{
+
+<pre><code>{
     response :
         {
             _id: "5407412b4c616e047a0f0000",

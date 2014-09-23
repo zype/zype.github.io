@@ -8,9 +8,7 @@ permalink: /devices/
 <hr>
 ### List all Devices
 <hr>
-
-<pre><code>
-GET - https://api.zype.com/devices?page=page&per_page=per_page&search=search
+<pre><code>GET - https://api.zype.com/devices?page=page&per_page=per_page&search=search
 </code></pre>
 
 #### Parameters
@@ -27,8 +25,8 @@ Performs a full text search for the term and returns records that match. Example
 #### Response
 200
 Content-Type: application/json
-<pre><code>
-{
+
+<pre><code>{
 "response": [
   {
     "_id": "54204805636261f298090000",
@@ -120,8 +118,7 @@ Content-Type: application/json
 ### Retrieve a Device
 <hr>
 
-<pre><code>
-GET - https://api.zype.com/devices/{id}
+<pre><code>GET - https://api.zype.com/devices/{id}
 </code></pre>
 
 #### Parameters
@@ -133,8 +130,8 @@ String id of the Device to retrieve. Example: 5389352e69702d401b000000. (Number)
 #### Response
 200
 Content-Type: application/json
-<pre><code>
-{
+
+<pre><code>{
   "response": {
     "_id": "54204805636261f298090000",
     "_keywords": [
