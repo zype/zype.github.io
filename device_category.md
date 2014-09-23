@@ -107,19 +107,17 @@ Content-Type: application/json
 <pre><code>
 {
   "response": {
-      "_id": "541b14f6636261c814040000",
-      "_keywords": [
+    "_id": "54204803636261f298040000",
+    "_keywords": [
       "desktop"
-      ],
-
-      "created_at": "2014-09-18T17:23:02.270Z",
-      "image_content_type": null,
-      "image_file_name": null,
-      "image_file_size": null,
-      "image_fingerprint": null,
-      "image_updated_at": null,
-      "name": "Desktop",
-      "updated_at": "2014-09-18T17:23:02.270Z"
+    ],
+    "created_at": "2014-09-22T16:02:11.113Z",
+    "image_content_type": "image/png",
+    "image_file_name": "desktop.png",
+    "image_file_size": 19347,
+    "image_fingerprint": "a661d27f5003bcf1523f75e3686f6b24",
+    "image_updated_at": "2014-09-22T16:02:11.041+00:00",
+    "name": "Desktop",
+    "updated_at": "2014-09-22T16:02:11.113Z"
   }
-}_
-</code></pre>
+}

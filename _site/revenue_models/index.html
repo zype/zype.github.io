@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Revenue Models</title>
+    <meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+">
+
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="canonical" href="http://yourdomain.com/revenue_models/">
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+
+
+  <body>
+
+    <header>
+  <h1 id="title">Zype Dev Portal</h1>
+  <p>a knowledge base</p>
+  <br>
+  <p><a href="/">Introduction</a></p>
+  <p><a href="/videos">Videos</a></p>
+  <p><a href="/playlists">Playlists</a></p>
+  <p><a href="/categories">Categories</a></p>
+  <p><a href="/device_categories">Device Categories</a></p>
+  <p><a href="/devices">Devices</a></p>
+  <p><a href="/revenue_models">Revenue Models</a></p>  
+  <p><a href="/zobjects">Zobjects</a></p>
+  <p><a href="/geoip">GeoIP</a></p>
+</header>
+
+
+    <section>
+      <h2 id="revenue-models">Revenue Models</h2>
+<hr />
+
+<h3 id="list-all-revenue-models">List all Revenue Models</h3>
+<hr />
+
+<pre><code>
+GET - https://api.zype.com/revenue_models?page=page&amp;per_page=per_page&amp;search=search
+</code></pre>
+
+<h4 id="parameters">Parameters</h4>
+
+<h5 id="page">page</h5>
+<p>The page number of records to return (zero indexed). Example: 0. (Number)</p>
+
+<h5 id="perpage">per_page</h5>
+<p>The number of records to return. Example: 10. (Number)</p>
+
+<h5 id="search">search</h5>
+<p>Performs a full text search for the term and returns records that match. Example: SVOD (String)</p>
+
+<h4 id="response">Response</h4>
+<p>200
+Content-Type: application/json</p>
+<pre><code>
+{
+"response": [
+  {
+    "_id": "54204802636261f298030000",
+    "_keywords": [
+      "free"
+    ],
+    "created_at": "2014-09-22T16:02:10.785Z",
+    "description": "Free",
+    "name": "Free",
+    "updated_at": "2014-09-22T16:02:10.785Z"
+  },
+  {
+    "_id": "54204802636261f298020000",
+    "_keywords": [
+      "demand",
+      "subscription",
+      "svod",
+      "video"
+    ],
+    "created_at": "2014-09-22T16:02:10.783Z",
+    "description": "Subscription Video On Demand",
+    "name": "SVOD",
+    "updated_at": "2014-09-22T16:02:10.783Z"
+  },
+  {
+    "_id": "54204802636261f298010000",
+    "_keywords": [
+      "advertising",
+      "avod",
+      "demand",
+      "video"
+    ],
+    "created_at": "2014-09-22T16:02:10.781Z",
+    "description": "Advertising Video On Demand",
+    "name": "AVOD",
+    "updated_at": "2014-09-22T16:02:10.781Z"
+  },
+  {
+    "_id": "54204802636261f298000000",
+    "_keywords": [
+      "electronic",
+      "est",
+      "sell",
+      "through"
+    ],
+    "created_at": "2014-09-22T16:02:10.778Z",
+    "description": "Electronic sell-through",
+    "name": "EST",
+    "updated_at": "2014-09-22T16:02:10.778Z"
+  }
+  ],
+  "pagination": {
+  "current": 1,
+  "previous": null,
+  "next": null,
+  "per_page": 10,
+  "pages": 1
+  }
+}_
+</code></pre>
+
+<hr />
+
+<h3 id="retrieve-a-revenue-model">Retrieve a Revenue Model</h3>
+<hr />
+
+<pre><code>
+GET - https://api.zype.com/revenue_models/{id}
+</code></pre>
+
+<h4 id="parameters-1">Parameters</h4>
+
+<h5 id="id">id</h5>
+
+<p>String id of the Revenue Model to retrieve. Example: 5389352e69702d401b000000. (Number)</p>
+
+<h4 id="response-1">Response</h4>
+<p>200
+Content-Type: application/json</p>
+<pre><code>
+{
+  "response": {
+    "_id": "54204802636261f298030000",
+    "_keywords": [
+      "free"
+    ],
+    "created_at": "2014-09-22T16:02:10.785Z",
+    "description": "Free",
+    "name": "Free",
+    "updated_at": "2014-09-22T16:02:10.785Z"
+  }
+}_
+</code></pre>
+
+    </section>
+
+    <footer>
+  © 2014 Zype Media Group
+</footer>
+
+
+  </body>
+
+</html>
