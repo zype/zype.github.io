@@ -110,6 +110,10 @@ header {
   margin-left: 4em;
 }
 
+header p {
+  margin-bottom: 0.4em;
+}
+
 header ul {
   list-style:none;
   height:40px;
@@ -289,7 +293,13 @@ footer {
   }
 }
 
+// CUSTOM CSS
+
 #title {
   padding-bottom: 0px;
   margin-bottom: 0px;
+}
+
+.category {
+  font-size: 20px;
 }

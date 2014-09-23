@@ -75,10 +75,9 @@ Paging data is returned in the 'pagination' element on list requests. The follow
 
 **pages** - The total number of pages available.
 
-<pre><code>
 Example:
 
-{
+<pre><code>{
     response: { ... },
     pagination: {
         current: 1,
