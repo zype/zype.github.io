@@ -33,19 +33,20 @@
   <p><a href="/device_categories">Device Categories</a></p>
   <p><a href="/devices">Devices</a></p>
   <p><a href="/revenue_models">Revenue Models</a></p>
+  <p><a href="/zobject_types">Zobject Types</a></p>
   <p><a href="/zobjects">Zobjects</a></p>
   <p><a href="/geoip">GeoIP</a></p>
 </header>
 
 
     <section id="main">
-      <h2 id="zobject-types-collection">Zobject Types Collection</h2>
+      <h2 id="zobjects-collection">Zobjects Collection</h2>
 <hr />
 
-<h3 id="list-all-zobject-types">List all Zobject Types</h3>
+<h3 id="list-all-zobjects">List all Zobjects</h3>
 <hr />
 
-<pre><code>GET - https://api.zype.com/zobject_types?page=page&amp;per_page=per_page&amp;keywords=keyword
+<pre><code>GET - https://api.zype.com/zobject/?zobject_type=zobject_type&amp;page=page&amp;per_page=per_page&amp;keywords=keyword
 </code></pre>
 
 <h4 id="parameters">Parameters</h4>
@@ -59,6 +60,11 @@
     </tr>
   </thead>
   <tbody>
+    <tr>
+      <td>zobject_type</td>
+      <td>The title of the zobject type. Required. Example: cards.</td>
+      <td>String</td>
+    </tr>
     <tr>
       <td>page</td>
       <td>The page number of records to return (zero indexed). Example: 0.</td>
@@ -83,46 +89,38 @@ Content-Type: application/json</p>
 
 <pre><code>{
     response : [
-        {
-            &#95;id: "5407412b4c616e047a0f0000",
-            &#95;keywords: [
-                "Actor"
-            ],
-            created_at: "2014-09-03T16:26:19.680Z",
-            description: "Actor Card",
-            site_id: "53fe307f4c616e914e000000",
-            title: "Actor
-            updated_at: "2014-09-03T16:26:19.680Z",
-            videos_enabled: true,
-            zobject_attributes: [
-                {
-                    &#95;id: "5407412b4c616e047a100000",
-                    created_at: "2014-09-03T16:26:19.680Z",
-                    description: "name of actor",
-                    field_name: "name",
-                    field_type: "String",
-                    show_list: false,
-                    updated_at: "2014-09-03T16:26:19.680Z"
-                }
-            ],
-            "zobject_count": 2
-        },
-        pagination: {
-            current: 1,
-            previous: null,
-            next: 2,
-            per_page: 10,
-            pages: 1
-        }
+        "_id": "542b182c69702d73796d1100",
+        "active": true,
+        "alternate_name": "-",
+        "attack": 1500,
+        "created_at": "2014-09-30T20:53:00.926Z",
+        "defense": 800,
+        "description": null,
+        "featured": false,
+        "friendly_name": "blackland-fire-dragon",
+        "friendly_title": "blackland-fire-dragon",
+        "keywords": [],
+        "level": "4",
+        "rank": "-",
+        "site_id": "12345abcde",
+        "sort_order": 0,
+        "tgc_link": "http://www.db.yugioh-card.com/yugiohdb/card_search.action?ope=2&amp;cid=4016",
+        "title": "Blackland Fire Dragon",
+        "title_jp": "暗黒の竜王",
+        "tv_only": false,
+        "updated_at": "2014-09-30T20:53:00.926Z",
+        "video_ids": [],
+        "zobject_type_id": "53a4788c69702d5995630300",
+        "zobject_type_title": "card"
     ]
 }
 </code></pre>
 <hr />
 
-<h2 id="create-a-zobject-type">Create a Zobject Type</h2>
+<h2 id="create-a-zobject">Create a Zobject</h2>
 <hr />
 
-<pre><code>POST - https://api.zype.com/zobject_types?page=page&amp;per_page=per_page&amp;keywords=keyword
+<pre><code>POST - https://api.zype.com/zobjects?page=page&amp;per_page=per_page&amp;keywords=keyword
 </code></pre>
 
 <h4 id="parameters-1">Parameters</h4>
@@ -137,8 +135,8 @@ Content-Type: application/json</p>
   </thead>
   <tbody>
     <tr>
-      <td>zobject_type</td>
-      <td>A set of key value pairs that describe the Zobject Type.</td>
+      <td>zobject</td>
+      <td>A set of key value pairs that describe the Zobject.</td>
       <td>Hash</td>
     </tr>
   </tbody>
@@ -153,41 +151,42 @@ Content-Type: application/json</p>
 
 <pre><code>{
     response: {
-        &#95;id: "5407412b4c616e047a0f0000",
-        &#95;keywords: [
-            "Actor"
-        ],
-        created_at: "2014-09-03T16:26:19.680Z",
-        description: "Actor Card",
-        site_id: "53fe307f4c616e914e000000",
-        title: "ctor
-        updated_at: "2014-09-03T16:26:19.680Z",
-        videos_enabled: true,
-        zobject_attributes: [
-            {
-                &#95;id: "5407412b4c616e047a100000",
-                created_at: "2014-09-03T16:26:19.680Z",
-                description: "name of actor",
-                field_name: "name",
-                field_type: "String",
-                show_list: false,
-                updated_at: "2014-09-03T16:26:19.680Z"
-            } ...
-        ],
-        "zobject_count": 2
-    }
+        "_id": "542b182c69702d73796d1100",
+        "active": true,
+        "alternate_name": "-",
+        "attack": 1500,
+        "created_at": "2014-09-30T20:53:00.926Z",
+        "defense": 800,
+        "description": null,
+        "featured": false,
+        "friendly_name": "blackland-fire-dragon",
+        "friendly_title": "blackland-fire-dragon",
+        "keywords": [],
+        "level": "4",
+        "rank": "-",
+        "site_id": "12345abcde",
+        "sort_order": 0,
+        "tgc_link": "http://www.db.yugioh-card.com/yugiohdb/card_search.action?ope=2&amp;cid=4016",
+        "title": "Blackland Fire Dragon",
+        "title_jp": "暗黒の竜王",
+        "tv_only": false,
+        "updated_at": "2014-09-30T20:53:00.926Z",
+        "video_ids": [],
+        "zobject_type_id": "53a4788c69702d5995630300",
+        "zobject_type_title": "card"
+    }, ...
 }
 </code></pre>
 
-<h2 id="zobject-type">Zobject Type</h2>
+<h2 id="zobject">Zobject</h2>
 
 <p>Lists descriptive information about Zobjects.</p>
 <hr />
 
-<h3 id="tzobject-type">tZobject Type</h3>
+<h3 id="zobject-1">Zobject</h3>
 <hr />
 
-<pre><code>GET - https://api.zype.com/zobject_types/{id}
+<pre><code>GET - https://api.zype.com/zobjects/{id}/?zobject_type=zobject_type
 </code></pre>
 
 <h4 id="parameters-2">Parameters</h4>
@@ -203,8 +202,13 @@ Content-Type: application/json</p>
   <tbody>
     <tr>
       <td>id</td>
-      <td>String id of the Zobject Type to retrieve. Example: 5389352e69702d401b000000.</td>
+      <td>String id of the zobject to retrieve. Example: 5389352e69702d401b000000.</td>
       <td>Number</td>
+    </tr>
+    <tr>
+      <td>zobject_type</td>
+      <td>The title of the zobject type. Required. Example:</td>
+      <td>String</td>
     </tr>
   </tbody>
 </table>
@@ -216,37 +220,38 @@ Content-Type: application/json</p>
 <pre><code>{
     response :
         {
-            &#95;id: "5407412b4c616e047a0f0000",
-            &#95;keywords: [
-                "Actor"
-            ],
-            created_at: "2014-09-03T16:26:19.680Z",
-            description: "Actor Card",
-            site_id: "53fe307f4c616e914e000000",
-            title: "ctor
-            updated_at: "2014-09-03T16:26:19.680Z",
-            videos_enabled: true,
-            zobject_attributes: [
-                {
-                    &#95;id: "5407412b4c616e047a100000",
-                    created_at: "2014-09-03T16:26:19.680Z",
-                    description: "name of actor",
-                    field_name: "name",
-                    field_type: "String",
-                    show_list: false,
-                    updated_at: "2014-09-03T16:26:19.680Z"
-                } ...
-            ],
-            "zobject_count": 2
+          "_id": "542b182c69702d73796d1100",
+          "active": true,
+          "alternate_name": "-",
+          "attack": 1500,
+          "created_at": "2014-09-30T20:53:00.926Z",
+          "defense": 800,
+          "description": null,
+          "featured": false,
+          "friendly_name": "blackland-fire-dragon",
+          "friendly_title": "blackland-fire-dragon",
+          "keywords": [],
+          "level": "4",
+          "rank": "-",
+          "site_id": "12345abcde",
+          "sort_order": 0,
+          "tgc_link": "http://www.db.yugioh-card.com/yugiohdb/card_search.action?ope=2&amp;cid=4016",
+          "title": "Blackland Fire Dragon",
+          "title_jp": "暗黒の竜王",
+          "tv_only": false,
+          "updated_at": "2014-09-30T20:53:00.926Z",
+          "video_ids": [],
+          "zobject_type_id": "53a4788c69702d5995630300",
+          "zobject_type_title": "card"
         }
 }
 </code></pre>
 <hr />
 
-<h3 id="update-a-zobject-type">Update a Zobject Type</h3>
+<h3 id="update-a-zobject">Update a Zobject</h3>
 <hr />
 
-<pre><code>PUT - https://api.zype.com/zobject_types/{id}
+<pre><code>PUT - https://api.zype.com/zobjects/{id}
 </code></pre>
 
 <h4 id="parameters-3">Parameters</h4>
@@ -262,7 +267,7 @@ Content-Type: application/json</p>
   <tbody>
     <tr>
       <td>zobject</td>
-      <td>A set of key value pairs that describe the Zobject Type.</td>
+      <td>A set of key value pairs that describe the zobject.</td>
       <td>Hash</td>
     </tr>
   </tbody>
@@ -277,38 +282,39 @@ Content-Type: application/json</p>
 
 <pre><code>{
     response :
-        {
-            &#95;id: "5407412b4c616e047a0f0000",
-            &#95;keywords: [
-                "Actor"
-            ],
-            created_at: "2014-09-03T16:26:19.680Z",
-            description: "Actor Card",
-            site_id: "53fe307f4c616e914e000000",
-            title: "ctor
-            updated_at: "2014-09-03T16:26:19.680Z",
-            videos_enabled: true,
-            zobject_attributes: [
-                {
-                    &#95;id: "5407412b4c616e047a100000",
-                    created_at: "2014-09-03T16:26:19.680Z",
-                    description: "name of actor",
-                    field_name: "name",
-                    field_type: "String",
-                    show_list: false,
-                    updated_at: "2014-09-03T16:26:19.680Z"
-                } ...
-            ],
-            "zobject_count": 2
-        }
+      {
+        "_id": "542b182c69702d73796d1100",
+        "active": true,
+        "alternate_name": "-",
+        "attack": 1500,
+        "created_at": "2014-09-30T20:53:00.926Z",
+        "defense": 800,
+        "description": null,
+        "featured": false,
+        "friendly_name": "blackland-fire-dragon",
+        "friendly_title": "blackland-fire-dragon",
+        "keywords": [],
+        "level": "4",
+        "rank": "-",
+        "site_id": "12345abcde",
+        "sort_order": 0,
+        "tgc_link": "http://www.db.yugioh-card.com/yugiohdb/card_search.action?ope=2&amp;cid=4016",
+        "title": "Blackland Fire Dragon",
+        "title_jp": "暗黒の竜王",
+        "tv_only": false,
+        "updated_at": "2014-09-30T20:53:00.926Z",
+        "video_ids": [],
+        "zobject_type_id": "53a4788c69702d5995630300",
+        "zobject_type_title": "card"
+      }
 }
 </code></pre>
 <hr />
 
-<h3 id="remove-a-zobject-type">Remove a Zobject Type</h3>
+<h3 id="remove-a-zobject">Remove a Zobject</h3>
 <hr />
 
-<pre><code>DELETE - https://api.zype.com/zobject_types/{id}
+<pre><code>DELETE - https://api.zype.com/zobjects/{id}/?zobject_type=zobject_type
 </code></pre>
 
 <h4 id="parameters-4">Parameters</h4>
@@ -324,8 +330,13 @@ Content-Type: application/json</p>
   <tbody>
     <tr>
       <td>id</td>
-      <td>String id of the Zobject Type to remove. Example: 5389352e69702d401b000000.</td>
+      <td>String id of the zobject to remove. Example: 5389352e69702d401b000000.</td>
       <td>Number</td>
+    </tr>
+    <tr>
+      <td>zobject_type</td>
+      <td>The title of the zobject type. Required. Example: cards.</td>
+      <td>String</td>
     </tr>
   </tbody>
 </table>
@@ -337,28 +348,29 @@ Content-Type: application/json</p>
 <pre><code>{
     response :
         {
-            &#95;id: "5407412b4c616e047a0f0000",
-            &#95;keywords: [
-                "Actor"
-            ],
-            created_at: "2014-09-03T16:26:19.680Z",
-            description: "Actor Card",
-            site_id: "53fe307f4c616e914e000000",
-            title: "ctor
-            updated_at: "2014-09-03T16:26:19.680Z",
-            videos_enabled: true,
-            zobject_attributes: [
-                {
-                    &#95;id: "5407412b4c616e047a100000",
-                    created_at: "2014-09-03T16:26:19.680Z",
-                    description: "name of actor",
-                    field_name: "name",
-                    field_type: "String",
-                    show_list: false,
-                    updated_at: "2014-09-03T16:26:19.680Z"
-                }
-            ],
-            "zobject_count": 2
+          "_id": "542b182c69702d73796d1100",
+          "active": true,
+          "alternate_name": "-",
+          "attack": 1500,
+          "created_at": "2014-09-30T20:53:00.926Z",
+          "defense": 800,
+          "description": null,
+          "featured": false,
+          "friendly_name": "blackland-fire-dragon",
+          "friendly_title": "blackland-fire-dragon",
+          "keywords": [],
+          "level": "4",
+          "rank": "-",
+          "site_id": "12345abcde",
+          "sort_order": 0,
+          "tgc_link": "http://www.db.yugioh-card.com/yugiohdb/card_search.action?ope=2&amp;cid=4016",
+          "title": "Blackland Fire Dragon",
+          "title_jp": "暗黒の竜王",
+          "tv_only": false,
+          "updated_at": "2014-09-30T20:53:00.926Z",
+          "video_ids": [],
+          "zobject_type_id": "53a4788c69702d5995630300",
+          "zobject_type_title": "card"
         }
 }
 </code></pre>
