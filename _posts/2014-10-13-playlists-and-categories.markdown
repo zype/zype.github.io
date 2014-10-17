@@ -9,7 +9,7 @@ To organize your playlists using the Zype Platform, you can assign categories to
 your playlists and filter your playlists based on a category and its value.
 In this tutorial, I will walk through how to query for all the playlists that have
 a category named ‘zone’ and a value of ‘home.’ At Zype, we use this
-strategy to get all the playlists that we want to be displayed on the home page.
+strategy to get all the playlists that we want to be displayed on the home page or zone.
 
 **Step 1: Go to admin.zype.com/categories and click the create new category button**
 
