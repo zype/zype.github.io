@@ -7,7 +7,8 @@ permalink: /
 ## Introduction
 
 Zype API documentation provides information to web developers who wish to use Zype's Application Programming Interfaces (APIs).
-The Zype API includes modules for managing videos and associated metadata. In addition, this reference describes a number of related objects. The Zype API is a RESTful API service.
+The Zype API includes modules for managing videos and associated metadata.
+In addition, this reference describes a number of related objects. The Zype API is a RESTful API service.
 
 Our API is designed around standard REST CRUD (Create-Read-Update-Delete) semantics:
 
@@ -24,7 +25,8 @@ Our default is to support JSON formatting, however if you prefer XML use the Con
 
 ## Authentication
 
-You authenticate to the Zype API by providing your site API keys in the request. To authenticate your requests supply your site API key in the X-ZYPE-API-KEY header.
+You authenticate to the Zype API by providing your site API keys in the request.
+To authenticate your requests, supply your site API key in the X-ZYPE-API-KEY header.
 <hr>
 
 ## Errors

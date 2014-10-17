@@ -5,7 +5,8 @@ permalink: /api_docs/videos/
 ---
 
 ## Videos Collection
-Lists all Videos. Video information includes descriptive information about the video but does not include player embed codes.
+Lists all Videos. Video information includes descriptive information about the video,
+but does not include player embed codes.
 <hr>
 ### List all Videos
 <hr>
@@ -22,7 +23,6 @@ per_page  | The number of records to return. Example: 10. | Number
 keyword   | Filters the records returned by keyword. Example: comedy. | String
 status    | Filters the records returned by status. Example: created. | String
 active    | Show active, inactive or all videos Example: true. | String
-type      | Show videos of the specified type (zype, youtube, hulu) Example: zype. | String
 category  | An optional set of key value category pairs to filter the records returned by category. Example: category[color]=blue. | Hash
 
 #### Response
@@ -157,7 +157,7 @@ Content-Type: application/json
 ## Video
 Lists descriptive information about Videos
 <hr>
-###tVideo
+###Video
 <hr>
 <pre><code>GET - https://api.zype.com/videos/{id}
 </code></pre>
@@ -166,7 +166,7 @@ Lists descriptive information about Videos
 
 Parameter | Function | Type
 --------- | -------- | ----
-id        | String id of the Video to retrieve. Example: 5389352e69702d401b000000. | Number
+id        | String id of the Video to retrieve. Example: 5389352e69702d401b000000. | String
 
 #### Request
 Content-Type: application/json
@@ -303,7 +303,7 @@ Content-Type: application/json
 
 Parameter | Function | Type
 --------- | -------- | ----
-id        | String id of the Video to remove. Example: 5389352e69702d401b000000. | Number
+id        | String id of the Video to remove. Example: 5389352e69702d401b000000. | String
 
 #### Request
 Content-Type: application/json
@@ -365,7 +365,7 @@ Content-Type: application/json
 ## Player
 Lists player content. You need to supply your player key in addition to your API key.
 <hr>
-### tPlayer
+### Player
 <hr>
 <pre><code>GET - https://api.zype.com/videos/{id}/player?autoplay=autoplay
 </code></pre>

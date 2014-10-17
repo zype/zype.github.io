@@ -43,7 +43,8 @@
 
     <section id="main">
       <h2 id="videos-collection">Videos Collection</h2>
-<p>Lists all Videos. Video information includes descriptive information about the video but does not include player embed codes.</p>
+<p>Lists all Videos. Video information includes descriptive information about the video,
+but does not include player embed codes.</p>
 <hr />
 
 <h3 id="list-all-videos">List all Videos</h3>
@@ -87,11 +88,6 @@ keyword=keyword&amp;status=status&amp;active=true&amp;type=type&amp;category=cat
     <tr>
       <td>active</td>
       <td>Show active, inactive or all videos Example: true.</td>
-      <td>String</td>
-    </tr>
-    <tr>
-      <td>type</td>
-      <td>Show videos of the specified type (zype, youtube, hulu) Example: zype.</td>
       <td>String</td>
     </tr>
     <tr>
@@ -250,7 +246,7 @@ Content-Type: application/json</p>
 <p>Lists descriptive information about Videos</p>
 <hr />
 
-<h3 id="tvideo">tVideo</h3>
+<h3 id="video-1">Video</h3>
 <hr />
 
 <pre><code>GET - https://api.zype.com/videos/{id}
@@ -270,7 +266,7 @@ Content-Type: application/json</p>
     <tr>
       <td>id</td>
       <td>String id of the Video to retrieve. Example: 5389352e69702d401b000000.</td>
-      <td>Number</td>
+      <td>String</td>
     </tr>
   </tbody>
 </table>
@@ -437,7 +433,7 @@ Content-Type: application/json</p>
     <tr>
       <td>id</td>
       <td>String id of the Video to remove. Example: 5389352e69702d401b000000.</td>
-      <td>Number</td>
+      <td>String</td>
     </tr>
   </tbody>
 </table>
@@ -503,7 +499,7 @@ Content-Type: application/json</p>
 <p>Lists player content. You need to supply your player key in addition to your API key.</p>
 <hr />
 
-<h3 id="tplayer">tPlayer</h3>
+<h3 id="player-1">Player</h3>
 <hr />
 
 <pre><code>GET - https://api.zype.com/videos/{id}/player?autoplay=autoplay

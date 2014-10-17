@@ -6,14 +6,13 @@
 </description>
     <link>http://dev.zype.com/</link>
     <atom:link href="http://dev.zype.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Fri, 17 Oct 2014 13:15:41 -0400</pubDate>
-    <lastBuildDate>Fri, 17 Oct 2014 13:15:41 -0400</lastBuildDate>
+    <pubDate>Fri, 17 Oct 2014 14:05:27 -0400</pubDate>
+    <lastBuildDate>Fri, 17 Oct 2014 14:05:27 -0400</lastBuildDate>
     <generator>Jekyll v2.3.0</generator>
     
       <item>
         <title>Using Zype's Dynamic Player Technology (DPT)</title>
-        <description>&lt;p&gt;Zype’s DPT allows you to create player rules based on geography and device to
-determine which video player (ex. Hulu, Youtube, Zype) gets served to your end customers.
+        <description>&lt;p&gt;Zype’s DPT allows you to create player rules based on geography and device.
 For example, you could declare that end users will receive the Hulu Player if he
 or she is accessing your video via desktop in the United States or the Zype Player
 if he or she is accessing your video via desktop in Australia.&lt;/p&gt;
@@ -75,7 +74,7 @@ on how to set up your Rails App with the Zype Gem!&lt;/em&gt;&lt;/p&gt;
 your playlists and filter your playlists based on a category and its value.
 In this tutorial, I will walk through how to query for all the playlists that have
 a category named ‘zone’ and a value of ‘home.’ At Zype, we use this
-strategy to get all the playlists that we want to be displayed on the home page.&lt;/p&gt;
+strategy to get all the playlists that we want to be displayed on the home page or zone.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Step 1: Go to admin.zype.com/categories and click the create new category button&lt;/strong&gt;&lt;/p&gt;
 
