@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Playlists
+title: Zype Developer Portal | Playlists
 permalink: /playlists/
 ---
 

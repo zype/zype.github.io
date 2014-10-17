@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Video Sources
+title: Zype Developer Portal | Video Sources
 permalink: /video_sources/
 ---
 _Video Sources_

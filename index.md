@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Index
+title: Zype Developer Portal | Home
 permalink: /
 ---
 

@@ -1,6 +1,6 @@
 ---
 layout: default
-title: GeoIP
+title: Zype Developer Portal | GeoIP
 permalink: /geoip/
 ---
 

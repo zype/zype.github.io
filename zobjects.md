@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Zobjects
+title: Zype Developer Portal | Zobjects
 permalink: /zobjects/
 ---
 

@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Videos
+title: Zype Developer Portal | Videos
 permalink: /videos/
 ---
 

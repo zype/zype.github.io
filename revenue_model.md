@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Revenue Models
+title: Zype Developer Portal | Revenue Models
 permalink: /revenue_models/
 ---
 
