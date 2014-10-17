@@ -303,3 +303,21 @@ footer {
 .category {
   font-size: 20px;
 }
+
+.blog-posts {
+  padding-left: 0 !important;
+  h2 {
+    margin-bottom: 10px;
+
+    span.date {
+      margin-top: 8px;
+      color: #777;
+      font-size: 12px;
+      float: right;
+    }
+  }
+  h4 {
+    margin-bottom: 10px;
+    color: #777;
+  }
+}

@@ -237,6 +237,19 @@ footer {
 .category {
   font-size: 20px; }
 
+.blog-posts {
+  padding-left: 0 !important; }
+  .blog-posts h2 {
+    margin-bottom: 10px; }
+    .blog-posts h2 span.date {
+      margin-top: 8px;
+      color: #777;
+      font-size: 12px;
+      float: right; }
+  .blog-posts h4 {
+    margin-bottom: 10px;
+    color: #777; }
+
 .highlight {
   background: #ffffff; }
 
