@@ -6,9 +6,68 @@
 </description>
     <link>http://dev.zype.com/</link>
     <atom:link href="http://dev.zype.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Fri, 17 Oct 2014 12:09:20 -0400</pubDate>
-    <lastBuildDate>Fri, 17 Oct 2014 12:09:20 -0400</lastBuildDate>
+    <pubDate>Fri, 17 Oct 2014 12:53:27 -0400</pubDate>
+    <lastBuildDate>Fri, 17 Oct 2014 12:53:27 -0400</lastBuildDate>
     <generator>Jekyll v2.3.0</generator>
+    
+      <item>
+        <title>Using Zype's Dynamic Player Technology (DPT)</title>
+        <description>&lt;p&gt;Zype’s DPT allows you to create rules based on geography and device to
+determine which video player (ex. Hulu, Youtube, Zype) gets served to your end customers.
+For example, you could declare that end users will receive the Hulu Player if he
+or she is accessing your video via desktop in the United States or the Zype Player
+if he or she is accessing your video via desktop in Australia.&lt;/p&gt;
+
+&lt;h3 id=&quot;what-you-need-to-start&quot;&gt;What you need to start&lt;/h3&gt;
+
+&lt;p&gt;You will need to have a video collection on the Zype Platform from the video sources
+that you want to create player rules for.&lt;/p&gt;
+
+&lt;p&gt;1. Make sure you have imported your videos into your &lt;a href=&quot;https://admin.zype.com/video_imports&quot;&gt;video catalogue&lt;/a&gt;
+on the Zype Platform.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/XmeaBMa.png&quot; alt=&quot;video imports&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;what-you-need-to-do-in-the-zype-platform&quot;&gt;What you need to do in the Zype Platform&lt;/h3&gt;
+
+&lt;p&gt;1. Visit the &lt;a href=&quot;https://admin.zype.com/player_rules&quot;&gt;Player Rule Page&lt;/a&gt; and click on New Player Rule&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/qDK0aoL.png&quot; alt=&quot;player rules&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;2. Complete the Player Rules Form. You will need to know the countries and devices you want for your rule.
+Based on countries and devices, you will be given player options that can be served to the end user.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/nxcYd0K.png&quot; alt=&quot;player rule form&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;using-the-player-api&quot;&gt;Using the Player API&lt;/h3&gt;
+
+&lt;p&gt;1. Once you have set up your video catalogue in the Zype Platform and you have created your player rules, you are ready to use the Zype Player API!&lt;/p&gt;
+
+&lt;p&gt;2. You can find the player key and api key using the &lt;a href=&quot;https://admin.zype.com/site/api&quot;&gt;Zype Platform&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/oD3XxTY.png&quot; alt=&quot;site keys&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;3a. To make the API call to get the appropriate player&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;no&quot;&gt;GET&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;http&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;//&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;api&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;zype&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;com&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;videos&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;video_id&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;player&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;?&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;api_key&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;api_key&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;player_key&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;player_key&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;3b. To use the &lt;a href=&quot;https://github.com/edla/zype-cli&quot;&gt;Zype Ruby Gem&lt;/a&gt; to get the appropriate player&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;vi&quot;&gt;@zype_cli&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Zype&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Client&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;new&lt;/span&gt;
+&lt;span class=&quot;vi&quot;&gt;@video&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;vi&quot;&gt;@zype_cli&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;videos&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;find&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;params&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:video_id&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;vi&quot;&gt;@player&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;vi&quot;&gt;@video&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;player&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;player_key&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;params&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:player_key&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;em&gt;Check our &lt;a href=&quot;http://dev.zype.com/posts/2014/10/10/adding-zype-to-rails/&quot;&gt;previous post&lt;/a&gt;
+on how to set up your Rails App with the Zype Gem!&lt;/em&gt;&lt;/p&gt;
+</description>
+        <pubDate>Fri, 17 Oct 2014 11:53:00 -0400</pubDate>
+        <link>http://dev.zype.com/posts/2014/10/17/dpt-from-scratch</link>
+        <guid isPermaLink="true">http://dev.zype.com/posts/2014/10/17/dpt-from-scratch</guid>
+        
+        
+        <category>dpt</category>
+        
+      </item>
     
       <item>
         <title>Adding Zype to a Rails Application</title>

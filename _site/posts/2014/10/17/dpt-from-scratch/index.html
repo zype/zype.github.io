@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Using Zype's Dynamic Player Technology (DPT)</title>
+    <meta name="description" content="This is the devloper portal for Zype Media. Zype is Revenue and Reach Magic for Online Video. We help content owners deliver fully branded video experiences.
+">
+
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="canonical" href="http://dev.zype.com/posts/2014/10/17/dpt-from-scratch">
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+
+
+  <body>
+
+    <header>
+  <h1 id="title">Zype Dev Portal</h1>
+  <p>a knowledge base</p>
+  <br>
+  <p class="category"><a href="/blog/">Blog</a></p>
+  <br>
+  <p class="category">API Documentation</p>
+  <p><a href="/">Introduction</a></p>
+  <p><a href="/api_docs/videos/">Videos</a></p>
+  <p><a href="/api_docs/playlists/">Playlists</a></p>
+  <p><a href="/api_docs/categories/">Categories</a></p>
+  <p><a href="/api_docs/device_categories/">Device Categories</a></p>
+  <p><a href="/api_docs/devices/">Devices</a></p>
+  <p><a href="/api_docs/revenue_models/">Revenue Models</a></p>
+  <p><a href="/api_docs/zobject_types/">Zobject Types</a></p>
+  <p><a href="/api_docs/zobjects/">Zobjects</a></p>
+  <p><a href="/api_docs/geoip/">GeoIP</a></p>
+</header>
+
+
+    <section id="main">
+      <div class="post">
+  <h1 class="post-title">Using Zype's Dynamic Player Technology (DPT)</h1>
+  <p class="post-meta">Oct 17, 2014</p>
+  <article class="post-content">
+    <p>Zype’s DPT allows you to create rules based on geography and device to
+determine which video player (ex. Hulu, Youtube, Zype) gets served to your end customers.
+For example, you could declare that end users will receive the Hulu Player if he
+or she is accessing your video via desktop in the United States or the Zype Player
+if he or she is accessing your video via desktop in Australia.</p>
+
+<h3 id="what-you-need-to-start">What you need to start</h3>
+
+<p>You will need to have a video collection on the Zype Platform from the video sources
+that you want to create player rules for.</p>
+
+<p>1. Make sure you have imported your videos into your <a href="https://admin.zype.com/video_imports">video catalogue</a>
+on the Zype Platform.</p>
+
+<p><img src="http://i.imgur.com/XmeaBMa.png" alt="video imports" /></p>
+
+<h3 id="what-you-need-to-do-in-the-zype-platform">What you need to do in the Zype Platform</h3>
+
+<p>1. Visit the <a href="https://admin.zype.com/player_rules">Player Rule Page</a> and click on New Player Rule</p>
+
+<p><img src="http://i.imgur.com/qDK0aoL.png" alt="player rules" /></p>
+
+<p>2. Complete the Player Rules Form. You will need to know the countries and devices you want for your rule.
+Based on countries and devices, you will be given player options that can be served to the end user.</p>
+
+<p><img src="http://i.imgur.com/nxcYd0K.png" alt="player rule form" /></p>
+
+<h3 id="using-the-player-api">Using the Player API</h3>
+
+<p>1. Once you have set up your video catalogue in the Zype Platform and you have created your player rules, you are ready to use the Zype Player API!</p>
+
+<p>2. You can find the player key and api key using the <a href="https://admin.zype.com/site/api">Zype Platform</a></p>
+
+<p><img src="http://i.imgur.com/oD3XxTY.png" alt="site keys" /></p>
+
+<p>3a. To make the API call to get the appropriate player</p>
+
+<div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="no">GET</span> <span class="ss">http</span><span class="p">:</span><span class="sr">//</span><span class="n">api</span><span class="o">.</span><span class="n">zype</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">videos</span><span class="o">/</span><span class="p">{</span><span class="n">video_id</span><span class="p">}</span><span class="o">/</span><span class="n">player</span><span class="o">/</span><span class="p">?</span><span class="n">api_key</span><span class="o">=</span><span class="p">{</span><span class="n">api_key</span><span class="p">}</span><span class="o">&amp;</span><span class="n">player_key</span><span class="o">=</span><span class="p">{</span><span class="n">player_key</span><span class="p">}</span></code></pre></div>
+
+<p>3b. To use the <a href="https://github.com/edla/zype-cli">Zype Ruby Gem</a> to get the appropriate player</p>
+
+<div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="vi">@zype_cli</span> <span class="o">=</span> <span class="no">Zype</span><span class="o">::</span><span class="no">Client</span><span class="o">.</span><span class="n">new</span>
+<span class="vi">@video</span> <span class="o">=</span> <span class="vi">@zype_cli</span><span class="o">.</span><span class="n">videos</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="n">params</span><span class="o">[</span><span class="ss">:video_id</span><span class="o">]</span><span class="p">)</span>
+<span class="vi">@player</span> <span class="o">=</span> <span class="vi">@video</span><span class="o">.</span><span class="n">player</span><span class="p">(</span><span class="ss">player_key</span><span class="p">:</span> <span class="n">params</span><span class="o">[</span><span class="ss">:player_key</span><span class="o">]</span><span class="p">)</span></code></pre></div>
+
+<p><em>Check our <a href="http://dev.zype.com/posts/2014/10/10/adding-zype-to-rails/">previous post</a>
+on how to set up your Rails App with the Zype Gem!</em></p>
+
+  </article>
+  <div id="disqus_thread"></div>
+  <script type="text/javascript">
+      /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+      var disqus_shortname = 'zypedev'; // required: replace example with your forum shortname
+
+      /* * * DON'T EDIT BELOW THIS LINE * * */
+      (function() {
+          var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+          dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+
+    </section>
+
+    <footer>
+  © 2014 Zype Media Group
+</footer>
+
+
+  </body>
+
+</html>
