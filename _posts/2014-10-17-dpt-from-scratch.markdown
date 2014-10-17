@@ -4,7 +4,7 @@ title:  "Using Zype's Dynamic Player Technology (DPT)"
 date:   2014-10-17 15:53:00
 categories: dpt
 ---
-Zype’s DPT allows you to create rules based on geography and device to
+Zype’s DPT allows you to create player rules based on geography and device to
 determine which video player (ex. Hulu, Youtube, Zype) gets served to your end customers.
 For example, you could declare that end users will receive the Hulu Player if he
 or she is accessing your video via desktop in the United States or the Zype Player
@@ -35,7 +35,7 @@ Based on countries and devices, you will be given player options that can be ser
 
 1\. Once you have set up your video catalogue in the Zype Platform and you have created your player rules, you are ready to use the Zype Player API!
 
-2\. You can find the player key and api key using the [Zype Platform](https://admin.zype.com/site/api)
+2\. You can find your player key and api key using the [Zype Platform](https://admin.zype.com/site/api)
 
 ![site keys](http://i.imgur.com/oD3XxTY.png)
 

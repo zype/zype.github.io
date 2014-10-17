@@ -6,13 +6,13 @@
 </description>
     <link>http://dev.zype.com/</link>
     <atom:link href="http://dev.zype.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Fri, 17 Oct 2014 12:53:27 -0400</pubDate>
-    <lastBuildDate>Fri, 17 Oct 2014 12:53:27 -0400</lastBuildDate>
+    <pubDate>Fri, 17 Oct 2014 12:55:00 -0400</pubDate>
+    <lastBuildDate>Fri, 17 Oct 2014 12:55:00 -0400</lastBuildDate>
     <generator>Jekyll v2.3.0</generator>
     
       <item>
         <title>Using Zype's Dynamic Player Technology (DPT)</title>
-        <description>&lt;p&gt;Zype’s DPT allows you to create rules based on geography and device to
+        <description>&lt;p&gt;Zype’s DPT allows you to create player rules based on geography and device to
 determine which video player (ex. Hulu, Youtube, Zype) gets served to your end customers.
 For example, you could declare that end users will receive the Hulu Player if he
 or she is accessing your video via desktop in the United States or the Zype Player
@@ -43,7 +43,7 @@ Based on countries and devices, you will be given player options that can be ser
 
 &lt;p&gt;1. Once you have set up your video catalogue in the Zype Platform and you have created your player rules, you are ready to use the Zype Player API!&lt;/p&gt;
 
-&lt;p&gt;2. You can find the player key and api key using the &lt;a href=&quot;https://admin.zype.com/site/api&quot;&gt;Zype Platform&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;2. You can find your player key and api key using the &lt;a href=&quot;https://admin.zype.com/site/api&quot;&gt;Zype Platform&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;http://i.imgur.com/oD3XxTY.png&quot; alt=&quot;site keys&quot; /&gt;&lt;/p&gt;
 
