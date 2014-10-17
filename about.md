@@ -1,7 +1,6 @@
 ---
 layout: default
-title: Introduction
-permalink: '/'
+title: Zype Developer Portal | About
 ---
 _ABOUT_
 

@@ -6,8 +6,8 @@
 </description>
     <link>http://yourdomain.com/</link>
     <atom:link href="http://yourdomain.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Fri, 17 Oct 2014 10:49:51 -0400</pubDate>
-    <lastBuildDate>Fri, 17 Oct 2014 10:49:51 -0400</lastBuildDate>
+    <pubDate>Fri, 17 Oct 2014 11:04:46 -0400</pubDate>
+    <lastBuildDate>Fri, 17 Oct 2014 11:04:46 -0400</lastBuildDate>
     <generator>Jekyll v2.3.0</generator>
     
       <item>
@@ -15,8 +15,8 @@
         <description>
 </description>
         <pubDate>Fri, 17 Oct 2014 11:53:00 -0400</pubDate>
-        <link>http://yourdomain.com/jekyll/update/2014/10/17/lol.html</link>
-        <guid isPermaLink="true">http://yourdomain.com/jekyll/update/2014/10/17/lol.html</guid>
+        <link>http://yourdomain.com/posts/2014/10/17/lol</link>
+        <guid isPermaLink="true">http://yourdomain.com/posts/2014/10/17/lol</guid>
         
         
         <category>jekyll</category>
@@ -43,8 +43,8 @@
 
 </description>
         <pubDate>Tue, 09 Sep 2014 11:53:00 -0400</pubDate>
-        <link>http://yourdomain.com/jekyll/update/2014/09/09/welcome-to-jekyll.html</link>
-        <guid isPermaLink="true">http://yourdomain.com/jekyll/update/2014/09/09/welcome-to-jekyll.html</guid>
+        <link>http://yourdomain.com/posts/2014/09/09/welcome-to-jekyll</link>
+        <guid isPermaLink="true">http://yourdomain.com/posts/2014/09/09/welcome-to-jekyll</guid>
         
         
         <category>jekyll</category>
