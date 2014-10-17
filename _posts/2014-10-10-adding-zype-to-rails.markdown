@@ -40,7 +40,10 @@ guide for how to integrate the Zype Gem into a Rails App.
 <script type="text/javascript"> zype.player_key = {player_key};</script>
 {% endhighlight %}
 
+*You can find your player key from the [Zype Platform](http://admin.zype.com/site/api)*
+
 5\. Create a new instance of your Zype Client so that you can query the Zype Platform
+to get your videos, playlists, categories, zobjects, and appropriate video players
 from your Rails App.
 {% highlight ruby %}
 @zype = Zype::Client.new
@@ -50,9 +53,7 @@ from your Rails App.
 6\. Some things that you can do with your Zype Client that could be useful for a web app:
 
 - Get all your videos
-{% highlight ruby %}
-@zype.videos
-{% endhighlight %}
+{% highlight ruby %}@zype.videos{% endhighlight %}
 
 - Get a specific video
 {% highlight ruby %}
