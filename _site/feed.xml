@@ -6,8 +6,8 @@
 </description>
     <link>http://dev.zype.com/</link>
     <atom:link href="http://dev.zype.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Fri, 17 Oct 2014 11:25:20 -0400</pubDate>
-    <lastBuildDate>Fri, 17 Oct 2014 11:25:20 -0400</lastBuildDate>
+    <pubDate>Fri, 17 Oct 2014 11:27:48 -0400</pubDate>
+    <lastBuildDate>Fri, 17 Oct 2014 11:27:48 -0400</lastBuildDate>
     <generator>Jekyll v2.3.0</generator>
     
       <item>
@@ -24,7 +24,7 @@ guide for how to integrate the Zype Gem into a Rails App.&lt;/p&gt;
 
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;n&quot;&gt;gem&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;zype&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:git&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;git://github.com/edla/zype-cli.git&amp;#39;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
-&lt;p&gt;3. Add your Zype Configurations to the initializers&lt;/p&gt;
+&lt;p&gt;3. Add your Zype Configurations to the initializers directory&lt;/p&gt;
 
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;c1&quot;&gt;# Create a new file config/initializers/zype.rb&lt;/span&gt;
 

@@ -18,7 +18,7 @@ guide for how to integrate the Zype Gem into a Rails App.
     gem 'zype', :git => 'git://github.com/edla/zype-cli.git'
   {% endhighlight %}
 
-3\. Add your Zype Configurations to the initializers
+3\. Add your Zype Configurations to the initializers directory
 
   {% highlight ruby %}
   # Create a new file config/initializers/zype.rb
