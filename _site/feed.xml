@@ -6,8 +6,8 @@
 </description>
     <link>http://dev.zype.com/</link>
     <atom:link href="http://dev.zype.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Fri, 17 Oct 2014 12:58:49 -0400</pubDate>
-    <lastBuildDate>Fri, 17 Oct 2014 12:58:49 -0400</lastBuildDate>
+    <pubDate>Fri, 17 Oct 2014 13:15:41 -0400</pubDate>
+    <lastBuildDate>Fri, 17 Oct 2014 13:15:41 -0400</lastBuildDate>
     <generator>Jekyll v2.3.0</generator>
     
       <item>
@@ -45,7 +45,7 @@ Based on countries and devices, you will be given player options that can be ser
 
 &lt;p&gt;2. You can find your player key and api key using the &lt;a href=&quot;https://admin.zype.com/site/api&quot;&gt;Zype Platform&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/oD3XxTY.png&quot; alt=&quot;site keys&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/V7UoP3i.png?1&quot; alt=&quot;site keys&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;3a. To make the API call to get the appropriate player&lt;/p&gt;
 
@@ -66,6 +66,47 @@ on how to set up your Rails App with the Zype Gem!&lt;/em&gt;&lt;/p&gt;
         
         
         <category>dpt</category>
+        
+      </item>
+    
+      <item>
+        <title>Filter Playlists by a Category in a Rails App</title>
+        <description>&lt;p&gt;To organize your playlists using the Zype Platform, you can assign categories to
+your playlists and filter your playlists based on a category and its value.
+In this tutorial, I will walk through how to query for all the playlists that have
+a category named ‘zone’ and a value of ‘home.’ At Zype, we use this
+strategy to get all the playlists that we want to be displayed on the home page.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Step 1: Go to admin.zype.com/categories and click the create new category button&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/nweBnRo.png&quot; alt=&quot;new category&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Step 2: Fill out the category title and category values. You can have multiple
+values (and you can always go back and edit these category values!)&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/DmREstQ.png&quot; alt=&quot;new category&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Step 3: Create a playlist and assign it the Zone Category of home&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/0algUs9.png&quot; alt=&quot;new category&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Step 4: In your Rails App, query for playlists that have the category zone value of home.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;vi&quot;&gt;@playlists&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;vi&quot;&gt;@zype&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;playlists&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;zone&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;home&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+</description>
+        <pubDate>Mon, 13 Oct 2014 11:53:00 -0400</pubDate>
+        <link>http://dev.zype.com/posts/2014/10/13/playlists-and-categories</link>
+        <guid isPermaLink="true">http://dev.zype.com/posts/2014/10/13/playlists-and-categories</guid>
+        
+        
+        <category>rails</category>
+        
+        <category>ruby</category>
+        
+        <category>playlists</category>
+        
+        <category>categories</category>
         
       </item>
     

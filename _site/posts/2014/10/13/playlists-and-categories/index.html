@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Filter Playlists by a Category in a Rails App</title>
+    <meta name="description" content="This is the devloper portal for Zype Media. Zype is Revenue and Reach Magic for Online Video. We help content owners deliver fully branded video experiences.
+">
+
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="canonical" href="http://dev.zype.com/posts/2014/10/13/playlists-and-categories">
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+
+
+  <body>
+
+    <header>
+  <h1 id="title">Zype Dev Portal</h1>
+  <p>a knowledge base</p>
+  <br>
+  <p class="category"><a href="/blog/">Blog</a></p>
+  <br>
+  <p class="category">API Documentation</p>
+  <p><a href="/">Introduction</a></p>
+  <p><a href="/api_docs/videos/">Videos</a></p>
+  <p><a href="/api_docs/playlists/">Playlists</a></p>
+  <p><a href="/api_docs/categories/">Categories</a></p>
+  <p><a href="/api_docs/device_categories/">Device Categories</a></p>
+  <p><a href="/api_docs/devices/">Devices</a></p>
+  <p><a href="/api_docs/revenue_models/">Revenue Models</a></p>
+  <p><a href="/api_docs/zobject_types/">Zobject Types</a></p>
+  <p><a href="/api_docs/zobjects/">Zobjects</a></p>
+  <p><a href="/api_docs/geoip/">GeoIP</a></p>
+</header>
+
+
+    <section id="main">
+      <div class="post">
+  <h1 class="post-title">Filter Playlists by a Category in a Rails App</h1>
+  <p class="post-meta">Oct 13, 2014</p>
+  <article class="post-content">
+    <p>To organize your playlists using the Zype Platform, you can assign categories to
+your playlists and filter your playlists based on a category and its value.
+In this tutorial, I will walk through how to query for all the playlists that have
+a category named ‘zone’ and a value of ‘home.’ At Zype, we use this
+strategy to get all the playlists that we want to be displayed on the home page.</p>
+
+<p><strong>Step 1: Go to admin.zype.com/categories and click the create new category button</strong></p>
+
+<p><img src="http://i.imgur.com/nweBnRo.png" alt="new category" /></p>
+
+<p><strong>Step 2: Fill out the category title and category values. You can have multiple
+values (and you can always go back and edit these category values!)</strong></p>
+
+<p><img src="http://i.imgur.com/DmREstQ.png" alt="new category" /></p>
+
+<p><strong>Step 3: Create a playlist and assign it the Zone Category of home</strong></p>
+
+<p><img src="http://i.imgur.com/0algUs9.png" alt="new category" /></p>
+
+<p><strong>Step 4: In your Rails App, query for playlists that have the category zone value of home.</strong></p>
+
+<div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="vi">@playlists</span> <span class="o">=</span> <span class="vi">@zype</span><span class="o">.</span><span class="n">playlists</span><span class="p">(</span><span class="ss">zone</span><span class="p">:</span> <span class="s1">&#39;home&#39;</span><span class="p">)</span></code></pre></div>
+
+
+  </article>
+  <div id="disqus_thread"></div>
+  <script type="text/javascript">
+      /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+      var disqus_shortname = 'zypedev'; // required: replace example with your forum shortname
+
+      /* * * DON'T EDIT BELOW THIS LINE * * */
+      (function() {
+          var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+          dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+
+    </section>
+
+    <footer>
+  © 2014 Zype Media Group
+</footer>
+
+
+  </body>
+
+</html>

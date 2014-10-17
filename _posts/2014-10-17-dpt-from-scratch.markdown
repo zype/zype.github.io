@@ -37,7 +37,7 @@ Based on countries and devices, you will be given player options that can be ser
 
 2\. You can find your player key and api key using the [Zype Platform](https://admin.zype.com/site/api)
 
-![site keys](http://i.imgur.com/oD3XxTY.png)
+![site keys](http://i.imgur.com/V7UoP3i.png?1)
 
 3a\. To make the API call to get the appropriate player
 {% highlight ruby %}
