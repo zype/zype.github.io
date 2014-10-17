@@ -108,7 +108,7 @@ Lists descriptive information about a Category.
 
 Parameter | Function | Type
 --------- | -------- | ----
-id | String id of the Category to retrieve. Example: 540731274c616e047a000000. | Number
+id | String id of the Category to retrieve. Example: 540731274c616e047a000000. | String
 
 #### Request
 Content-Type: application/json
@@ -146,7 +146,7 @@ Content-Type: application/json
 
 Parameter | Function | Type
 --------- | -------- | ----
-id | String id of the Category to update. Example: 5389352e69702d401b000000. | Number
+id | String id of the Category to update. Example: 5389352e69702d401b000000. | String
 
 #### Request
 Content-Type: application/json

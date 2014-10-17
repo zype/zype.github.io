@@ -157,7 +157,7 @@ Content-Type: application/json
 ## Video
 Lists descriptive information about Videos
 <hr>
-###Video
+###Retrieve a Video
 <hr>
 <pre><code>GET - https://api.zype.com/videos/{id}
 </code></pre>
@@ -365,7 +365,7 @@ Content-Type: application/json
 ## Player
 Lists player content. You need to supply your player key in addition to your API key.
 <hr>
-### Player
+### Retrieve a Player
 <hr>
 <pre><code>GET - https://api.zype.com/videos/{id}/player?autoplay=autoplay
 </code></pre>

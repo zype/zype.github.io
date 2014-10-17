@@ -9,8 +9,7 @@ permalink: /api_docs/geoip/
 ### Retrive an IP Address
 <hr>
 
-<pre><code>
-GET - https://api.zype.com/geoip?ip_address=ip_address
+<pre><code>GET - https://api.zype.com/geoip?ip_address=ip_address
 </code></pre>
 
 #### Parameters
@@ -22,8 +21,7 @@ ip_address | Defaults to IP of API caller if not provided Example: 255.255.255.2
 #### Response
 200
 Content-Type: application/json
-<pre><code>
-{
+<pre><code>{
     response : {
         request: "255.255.255.255",
         ip: "255.255.255.255",

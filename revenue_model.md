@@ -96,7 +96,7 @@ Content-Type: application/json
 
 Parameter | Function | Type
 --------- | -------- | ----
-id | String id of the Revenue Model to retrieve. Example: 5389352e69702d401b000000. | Number
+id | String id of the Revenue Model to retrieve. Example: 5389352e69702d401b000000. | String
 
 #### Response
 200

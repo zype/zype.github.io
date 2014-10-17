@@ -15,7 +15,7 @@ permalink: /api_docs/zobjects/
 
 Parameter | Function | Type
 --------- | -------- | ----
-zobject_type | The title of the zobject type. Required. Example: cards. | String
+zobject_type | The title of the zobject type. Required. Example: card. | String
 page      | The page number of records to return (zero indexed). Example: 0. | Number
 per_page  | The number of records to return. Example: 10. | Number
 keywords  | Filters the records returned by keyword. Example: comedy. | String
@@ -114,8 +114,8 @@ Lists descriptive information about Zobjects.
 
 Parameter | Function | Type
 --------- | -------- | ----
-id | String id of the zobject to retrieve. Example: 5389352e69702d401b000000. | Number
-zobject_type | The title of the zobject type. Required. Example:  | String
+id | String id of the zobject to retrieve. Example: 5389352e69702d401b000000. | String
+zobject_type | The title of the zobject type. Required. Example: card.  | String
 
 #### Response
 200
@@ -210,8 +210,8 @@ Content-Type: application/json
 
 Parameter | Function | Type
 --------- | -------- | ----
-id | String id of the zobject to remove. Example: 5389352e69702d401b000000. | Number
-zobject_type | The title of the zobject type. Required. Example: cards. | String
+id | String id of the zobject to remove. Example: 5389352e69702d401b000000. | String
+zobject_type | The title of the zobject type. Required. Example: card. | String
 
 #### Response
 200
