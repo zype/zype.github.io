@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Devices
-permalink: /devices/
+permalink: /api_docs/devices/
 ---
 
 ## Devices

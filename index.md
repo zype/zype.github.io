@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Index
-permalink: /
+permalink: /api_docs/intro/
 ---
 
 ## Introduction

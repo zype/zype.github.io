@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Revenue Models
-permalink: /revenue_models/
+permalink: /api_docs/revenue_models/
 ---
 
 ## Revenue Models

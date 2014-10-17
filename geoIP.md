@@ -1,7 +1,7 @@
 ---
 layout: default
 title: GeoIP
-permalink: /geoip/
+permalink: /api_docs/geoip/
 ---
 
 ## GeoIP Collection

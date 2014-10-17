@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Categories
-permalink: /categories/
+permalink: /api_docs/categories/
 ---
 
 ## Categories Collection

@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Videos
-permalink: /videos/
+permalink: /api_docs/videos/
 ---
 
 ## Videos Collection

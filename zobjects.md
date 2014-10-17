@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Zobjects
-permalink: /zobjects/
+permalink: /api_docs/zobjects/
 ---
 
 ## Zobjects Collection

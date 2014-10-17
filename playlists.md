@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Playlists
-permalink: /playlists/
+permalink: /api_docs/playlists/
 ---
 
 ## Playlists Collection

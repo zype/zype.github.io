@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Zobject Types
-permalink: /zobject_types/
+permalink: /api_docs/zobject_types/
 ---
 
 ## Zobject Types Collection

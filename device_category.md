@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Device Categories
-permalink: /device_categories/
+permalink: /api_docs/device_categories/
 ---
 
 ## Device Categories

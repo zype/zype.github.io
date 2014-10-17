@@ -6,9 +6,24 @@
 </description>
     <link>http://yourdomain.com/</link>
     <atom:link href="http://yourdomain.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Thu, 09 Oct 2014 16:26:14 -0400</pubDate>
-    <lastBuildDate>Thu, 09 Oct 2014 16:26:14 -0400</lastBuildDate>
+    <pubDate>Fri, 17 Oct 2014 10:49:51 -0400</pubDate>
+    <lastBuildDate>Fri, 17 Oct 2014 10:49:51 -0400</lastBuildDate>
     <generator>Jekyll v2.3.0</generator>
+    
+      <item>
+        <title>Hur dur!</title>
+        <description>
+</description>
+        <pubDate>Fri, 17 Oct 2014 11:53:00 -0400</pubDate>
+        <link>http://yourdomain.com/jekyll/update/2014/10/17/lol.html</link>
+        <guid isPermaLink="true">http://yourdomain.com/jekyll/update/2014/10/17/lol.html</guid>
+        
+        
+        <category>jekyll</category>
+        
+        <category>update</category>
+        
+      </item>
     
       <item>
         <title>Welcome to Jekyll!</title>
