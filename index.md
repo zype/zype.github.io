@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Index
-permalink: /api_docs/intro/
+title: Zype Developer Portal | Home
+permalink: /
 ---
 
 ## Introduction

@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Categories
+title: Zype Developer Portal | Categories
 permalink: /api_docs/categories/
 ---
 

@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Zobject Types
+title: Zype Developer Portal | Zobject Types
 permalink: /api_docs/zobject_types/
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Posts
-permalink: /
+title: Zype Developer Portal | Posts
+permalink: /blog/
 ---
 <ul>
   {% for post in site.posts %}

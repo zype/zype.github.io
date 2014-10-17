@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Devices
+title: Zype Developer Portal | Devices
 permalink: /api_docs/devices/
 ---
 

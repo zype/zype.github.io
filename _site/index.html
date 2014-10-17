@@ -6,12 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>Posts</title>
-    <meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+    <title>Zype Developer Portal | Home</title>
+    <meta name="description" content="This is the devloper portal for Zype Media. Zype is Revenue and Reach Magic for Online Video. We help content owners deliver fully branded video experiences.
 ">
 
     <link rel="stylesheet" href="/css/main.css">
-    <link rel="canonical" href="http://yourdomain.com/">
+    <link rel="canonical" href="http://dev.zype.com/">
 
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -25,7 +25,7 @@
   <h1 id="title">Zype Dev Portal</h1>
   <p>a knowledge base</p>
   <br>
-  <p class="category"><a href="/">Blog Posts</a></p>
+  <p class="category"><a href="/blog/">Blog</a></p>
   <br>
   <p class="category">API Documentation</p>
   <p><a href="/api_docs/intro/">Introduction</a></p>
@@ -42,17 +42,183 @@
 
 
     <section id="main">
-      <ul>
-  
-    <li>
-      <a href="/posts/2014/10/17/lol">Hur dur!</a>
-    </li>
-  
-    <li>
-      <a href="/posts/2014/09/09/welcome-to-jekyll">Welcome to Jekyll!</a>
-    </li>
-  
-</ul>
+      <h2 id="introduction">Introduction</h2>
+
+<p>Zype API documentation provides information to web developers who wish to use Zype’s Application Programming Interfaces (APIs).
+The Zype API includes modules for managing videos and associated metadata. In addition, this reference describes a number of related objects. The Zype API is a RESTful API service.</p>
+
+<p>Our API is designed around standard REST CRUD (Create-Read-Update-Delete) semantics:</p>
+
+<p><strong>POST</strong> - Create a resource within a given collection</p>
+
+<p><strong>GET</strong> - Get a resource or collection of resources</p>
+
+<p><strong>PUT</strong> - Update a resource</p>
+
+<p><strong>DELETE</strong> - Delete a resource</p>
+
+<p>Our default is to support JSON formatting, however if you prefer XML use the Content-Type header with value text/xml.</p>
+<hr />
+
+<h2 id="authentication">Authentication</h2>
+
+<p>You authenticate to the Zype API by providing your site API keys in the request. To authenticate your requests supply your site API key in the X-ZYPE-API-KEY header.</p>
+<hr />
+
+<h2 id="errors">Errors</h2>
+
+<p>Zype uses conventional HTTP response codes to indicate success or failure of an API request. In general, codes in the 2xx range indicate success, codes in the 4xx range indicate an error that resulted from the provided information (e.g. a required r was missing, a charge failed, etc.), and codes in the 5xx range indicate an error with Zype’s servers.</p>
+
+<h3 id="ok">200 (OK)</h3>
+<p>The request was processed successfully.</p>
+
+<h3 id="unauthorized">401 (Unauthorized)</h3>
+<p>The request could not be processed because no API key was provided, or the API key provided is invalid.</p>
+
+<h3 id="not-found">404 (Not Found)</h3>
+<p>The request could not be processed because the resource you are operating on could not be found.</p>
+
+<h3 id="unprocessable-entity">422 (Unprocessable Entity)</h3>
+<p>The request could not be processed due to a validation rule.</p>
+
+<h3 id="server-error">500 (Server Error)</h3>
+<p>The request could not be processed due to a error on Zype’s servers.</p>
+
+<h3 id="attributes">Attributes:</h3>
+<p><strong>message</strong> - A human-readable message giving more details about the error.</p>
+
+<hr />
+
+<h2 id="pagination">Pagination</h2>
+
+<p>Pagination is required for all ‘list’ requests. The default setting for any list request is to return 10 records.</p>
+
+<h3 id="parameters">Parameters</h3>
+
+<p>page (optional) The page number of records to return (zero indexed).</p>
+
+<p>per_page (optional) The number of records to return (Default: 10, Maximum: 100).</p>
+
+<h3 id="attributes-1">Attributes</h3>
+
+<p>Paging data is returned in the ‘pagination’ element on list requests. The following data is made available.</p>
+
+<p><strong>current</strong> - The current page requested</p>
+
+<p><strong>previous</strong> - The page before the page requested.</p>
+
+<p><strong>next</strong> - The page after the page requested.</p>
+
+<p><strong>per_page</strong> - The maximum number of records returned.</p>
+
+<p><strong>pages</strong> - The total number of pages available.</p>
+
+<p>Example:</p>
+
+<pre><code>{
+    response: { ... },
+    pagination: {
+        current: 1,
+        previous: null,
+        next: 2,
+        per_page: 10,
+        pages: 5
+    }
+}
+</code></pre>
+<hr />
+
+<h2 id="video-formats">Video Formats</h2>
+
+<p>Videos published through the Zype platform support the following resolution and aspect ratios.</p>
+
+<h3 id="hls-http-live-streaming">HLS (HTTP Live Streaming):</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Resolution</th>
+      <th>Aspect</th>
+      <th>Width</th>
+      <th>Height</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>240p</td>
+      <td>16x9</td>
+      <td>426px</td>
+      <td>240px</td>
+    </tr>
+    <tr>
+      <td>360p</td>
+      <td>16x9</td>
+      <td>640px</td>
+      <td>360px</td>
+    </tr>
+    <tr>
+      <td>480p</td>
+      <td>16x9</td>
+      <td>854px</td>
+      <td>480px</td>
+    </tr>
+    <tr>
+      <td>720p</td>
+      <td>16x9</td>
+      <td>1280px</td>
+      <td>720px</td>
+    </tr>
+    <tr>
+      <td>1080p</td>
+      <td>16x9</td>
+      <td>1920px</td>
+      <td>1080px</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="webmmp4-streaming">WebM/MP4 Streaming:</h3>
+
+<p>To ensure compatibility with devices that do not support HLS, Zype provides WebM and MP4 streams.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Format</th>
+      <th>Resolution</th>
+      <th>Aspect</th>
+      <th>Width</th>
+      <th>Height</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>WebM</td>
+      <td>360p</td>
+      <td>16x9</td>
+      <td>640px</td>
+      <td>360px</td>
+    </tr>
+    <tr>
+      <td>MP4</td>
+      <td>360p</td>
+      <td>16x9</td>
+      <td>640px</td>
+      <td>360px</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Video formats are optional and are configurable in the Zype Publisher dashboard.</p>
+<hr />
+
+<h2 id="client-libraries">Client Libraries</h2>
+
+<p>Zype currently provides the following client libraries:</p>
+
+<h3 id="rubyhttpsgithubcomedlazype-cli"><a href="https://github.com/edla/zype-cli">Ruby</a></h3>
+
+<p>If your platform of choice is not found above, you can create your own or use API code samples.</p>
 
     </section>
 
