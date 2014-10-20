@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Checking your DPT request logs</title>
+    <meta name="description" content="This is the devloper portal for Zype Media. Zype is Revenue and Reach Magic for Online Video. We help content owners deliver fully branded video experiences.
+">
+
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="canonical" href="http://dev.zype.com/posts/2014/10/20/checking-player-request-logs">
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+
+
+  <body>
+
+    <header>
+  <h1 id="title">Zype Dev Portal</h1>
+  <p>a knowledge base</p>
+  <br>
+  <p class="category"><a href="/blog/">Blog</a></p>
+  <br>
+  <p class="category">API Documentation</p>
+  <p><a href="/">Introduction</a></p>
+  <p><a href="/api_docs/videos/">Videos</a></p>
+  <p><a href="/api_docs/playlists/">Playlists</a></p>
+  <p><a href="/api_docs/categories/">Categories</a></p>
+  <p><a href="/api_docs/device_categories/">Device Categories</a></p>
+  <p><a href="/api_docs/devices/">Devices</a></p>
+  <p><a href="/api_docs/revenue_models/">Revenue Models</a></p>
+  <p><a href="/api_docs/zobject_types/">Zobject Types</a></p>
+  <p><a href="/api_docs/zobjects/">Zobjects</a></p>
+  <p><a href="/api_docs/geoip/">GeoIP</a></p>
+</header>
+
+
+    <section id="main">
+      <div class="post">
+  <h1 class="post-title">Checking your DPT request logs</h1>
+  <p class="post-meta">Oct 20, 2014</p>
+  <article class="post-content">
+    <p>In a previous post, we covered how to use Zype’s Dynamic Player Technology (DPT).
+In this post, we’ll be covering how to use the DPT logs to see what requests are being made for your video content.
+For example, let’s say you’ve uploaded a batch of new videos and after the first 30 days, you’d like to get an idea
+of who’s viewing your content and what times of the day are most popular for viewing.</p>
+
+<h3 id="where-can-i-find-my-logs">Where can I find my logs?</h3>
+
+<p>After you’ve uploaded some video content to the Zype platform, log in through the <a href="http://admin.zype.com/">admin portal</a>
+and navigate to the logs section under the settings dropdown menu. In this post, we’ll cover the request logs,
+so feel free to click on that link once you see the logs menu.  </p>
+
+<p><img src="http://i.imgur.com/werWhEG.png" alt="dpt logs navigation" /></p>
+
+<h3 id="what-type-of-information-can-i-see-in-my-request-logs">What type of information can I see in my request logs?</h3>
+
+<p>The request logs screen shows you lots of information about the requests made to view your videos.
+Here are the most pertinent pieces of information:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Data</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Video</td>
+      <td>The video that was requested</td>
+    </tr>
+    <tr>
+      <td>IP Address</td>
+      <td>The IP address of the requester</td>
+    </tr>
+    <tr>
+      <td>Country</td>
+      <td>The country the request was made from</td>
+    </tr>
+    <tr>
+      <td>Device</td>
+      <td>The device the request was made from</td>
+    </tr>
+    <tr>
+      <td>Player</td>
+      <td>The player that served the video</td>
+    </tr>
+    <tr>
+      <td>Provider</td>
+      <td>The provider of the content</td>
+    </tr>
+    <tr>
+      <td>Revenue Model</td>
+      <td>The revenue model of the viewer</td>
+    </tr>
+    <tr>
+      <td>Status</td>
+      <td>The status of the request</td>
+    </tr>
+    <tr>
+      <td>Created</td>
+      <td>The date and time the request was created</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><img src="http://i.imgur.com/Y8DzoV9.png" alt="dpt logs" /></p>
+
+<h3 id="how-can-i-search-the-request-logs-data">How can I search the request logs data?</h3>
+
+<p>The request logs screen gives you a snapshot of the most recent requests by default.</p>
+
+<p>Sorting the request logs is easy: use the four drop down menus to select your search parameters
+and then click on the search button.</p>
+
+<p><img src="http://i.imgur.com/XgruOt5.png" alt="searching logs" /></p>
+
+<p><em>Check our <a href="http://dev.zype.com/posts/2014/10/10/adding-zype-to-rails/">previous post</a>
+on how to set up your Rails App with the Zype Gem!</em></p>
+
+  </article>
+  <div id="disqus_thread"></div>
+  <script type="text/javascript">
+      /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+      var disqus_shortname = 'zypedev'; // required: replace example with your forum shortname
+
+      /* * * DON'T EDIT BELOW THIS LINE * * */
+      (function() {
+          var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+          dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+
+    </section>
+
+    <footer>
+  © 2014 Zype Media Group
+</footer>
+
+
+  </body>
+
+</html>

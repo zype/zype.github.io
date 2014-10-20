@@ -6,12 +6,102 @@
 </description>
     <link>http://dev.zype.com/</link>
     <atom:link href="http://dev.zype.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Fri, 17 Oct 2014 14:12:06 -0400</pubDate>
-    <lastBuildDate>Fri, 17 Oct 2014 14:12:06 -0400</lastBuildDate>
+    <pubDate>Mon, 20 Oct 2014 10:40:08 -0400</pubDate>
+    <lastBuildDate>Mon, 20 Oct 2014 10:40:08 -0400</lastBuildDate>
     <generator>Jekyll v2.3.0</generator>
     
       <item>
-        <title>Using Zype's Dynamic Player Technology (DPT)</title>
+        <title>Checking your DPT request logs</title>
+        <description>&lt;p&gt;In a previous post, we covered how to use Zype’s Dynamic Player Technology (DPT).
+In this post, we’ll be covering how to use the DPT logs to see what requests are being made for your video content.
+For example, let’s say you’ve uploaded a batch of new videos and after the first 30 days, you’d like to get an idea
+of who’s viewing your content and what times of the day are most popular for viewing.&lt;/p&gt;
+
+&lt;h3 id=&quot;where-can-i-find-my-logs&quot;&gt;Where can I find my logs?&lt;/h3&gt;
+
+&lt;p&gt;After you’ve uploaded some video content to the Zype platform, log in through the &lt;a href=&quot;http://admin.zype.com/&quot;&gt;admin portal&lt;/a&gt;
+and navigate to the logs section under the settings dropdown menu. In this post, we’ll cover the request logs,
+so feel free to click on that link once you see the logs menu.  &lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/werWhEG.png&quot; alt=&quot;dpt logs navigation&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;what-type-of-information-can-i-see-in-my-request-logs&quot;&gt;What type of information can I see in my request logs?&lt;/h3&gt;
+
+&lt;p&gt;The request logs screen shows you lots of information about the requests made to view your videos.
+Here are the most pertinent pieces of information:&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Data&lt;/th&gt;
+      &lt;th&gt;Description&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Video&lt;/td&gt;
+      &lt;td&gt;The video that was requested&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;IP Address&lt;/td&gt;
+      &lt;td&gt;The IP address of the requester&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Country&lt;/td&gt;
+      &lt;td&gt;The country the request was made from&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Device&lt;/td&gt;
+      &lt;td&gt;The device the request was made from&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Player&lt;/td&gt;
+      &lt;td&gt;The player that served the video&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Provider&lt;/td&gt;
+      &lt;td&gt;The provider of the content&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Revenue Model&lt;/td&gt;
+      &lt;td&gt;The revenue model of the viewer&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Status&lt;/td&gt;
+      &lt;td&gt;The status of the request&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Created&lt;/td&gt;
+      &lt;td&gt;The date and time the request was created&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/Y8DzoV9.png&quot; alt=&quot;dpt logs&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;how-can-i-search-the-request-logs-data&quot;&gt;How can I search the request logs data?&lt;/h3&gt;
+
+&lt;p&gt;The request logs screen gives you a snapshot of the most recent requests by default.&lt;/p&gt;
+
+&lt;p&gt;Sorting the request logs is easy: use the four drop down menus to select your search parameters
+and then click on the search button.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/XgruOt5.png&quot; alt=&quot;searching logs&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Check our &lt;a href=&quot;http://dev.zype.com/posts/2014/10/10/adding-zype-to-rails/&quot;&gt;previous post&lt;/a&gt;
+on how to set up your Rails App with the Zype Gem!&lt;/em&gt;&lt;/p&gt;
+</description>
+        <pubDate>Mon, 20 Oct 2014 05:07:55 -0400</pubDate>
+        <link>http://dev.zype.com/posts/2014/10/20/checking-player-request-logs</link>
+        <guid isPermaLink="true">http://dev.zype.com/posts/2014/10/20/checking-player-request-logs</guid>
+        
+        
+        <category>dpt</category>
+        
+      </item>
+    
+      <item>
+        <title>Using Zype&#39;s Dynamic Player Technology (DPT)</title>
         <description>&lt;p&gt;Zype’s DPT allows you to create player rules based on geography and device.
 For example, you could declare that end users will receive the Hulu Player if he
 or she is accessing your video via desktop in the United States or the Zype Player
