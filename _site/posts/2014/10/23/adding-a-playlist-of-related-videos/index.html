@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Adding a playlist of related videos</title>
+    <meta name="description" content="This is the devloper portal for Zype Media. Zype is Revenue and Reach Magic for Online Video. We help content owners deliver fully branded video experiences.
+">
+
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="canonical" href="http://dev.zype.com/posts/2014/10/23/adding-a-playlist-of-related-videos">
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+
+
+  <body>
+
+    <header>
+  <h1 id="title">Zype Dev Portal</h1>
+  <p>a knowledge base</p>
+  <br>
+  <p class="category"><a href="/blog/">Blog</a></p>
+  <br>
+  <p class="category">API Documentation</p>
+  <p><a href="/">Introduction</a></p>
+  <p><a href="/api_docs/videos/">Videos</a></p>
+  <p><a href="/api_docs/playlists/">Playlists</a></p>
+  <p><a href="/api_docs/categories/">Categories</a></p>
+  <p><a href="/api_docs/device_categories/">Device Categories</a></p>
+  <p><a href="/api_docs/devices/">Devices</a></p>
+  <p><a href="/api_docs/revenue_models/">Revenue Models</a></p>
+  <p><a href="/api_docs/zobject_types/">Zobject Types</a></p>
+  <p><a href="/api_docs/zobjects/">Zobjects</a></p>
+  <p><a href="/api_docs/geoip/">GeoIP</a></p>
+</header>
+
+
+    <section id="main">
+      <div class="post">
+  <h1 class="post-title">Adding a playlist of related videos</h1>
+  <p class="post-meta">Oct 23, 2014</p>
+  <article class="post-content">
+    <p>Let’s say you’ve already got some video content on your zype destination site, but now you’d like to recommend
+additional content based on what your users are watching. The solution we’ve implemented is called related videos.
+In this post, we’ll be covering how to create a playlist of related videos that are recommended to a viewer
+based on what the video they’re watching. Here’s an example of the finished product:</p>
+
+<p><img src="http://i.imgur.com/QGhFTT1.png" alt="realted playlist" /></p>
+
+<p><em>The related videos section is automatically created for each video on your site, but if you’d like to be more
+specific about which videos are displayed there, follow along as we set up a playlist of related videos.</em></p>
+
+<h3 id="how-do-i-set-up-a-playlist-of-related-videos">How do I set up a playlist of related videos?</h3>
+
+<p>Setting up the playlist can be done from the <a href="http://admin.zype.com/">admin portal</a>. Navigate to the playlist
+section on the sidebar and and click “New Playlist”. Follow through the menu and create a playlist (make sure it’s active!).</p>
+
+<p><img src="http://i.imgur.com/2yzWH9X.png" alt="playlist navigation" /></p>
+
+<h3 id="how-can-i-choose-which-videos-are-shown-in-the-playlist">How can I choose which videos are shown in the playlist?</h3>
+
+<p>This is an easy one. Use the “Add Videos” button to select which videos will appear under the related videos section.</p>
+
+<p><img src="http://i.imgur.com/nKIFmTP.png" alt="add videos navigation" /></p>
+
+<h3 id="how-can-i-choose-which-videos-display-the-playlist">How can I choose which videos display the playlist?</h3>
+
+<p>Choosing the videos that will have your playlist displayed is done through the playlist edit screen. You can get there
+quickly by clicking on the name of your playlist here:</p>
+
+<p><img src="http://i.imgur.com/XSvwXVR.png" alt="edit your playlist" /></p>
+
+<p>Use our multiselector to search for the videos you want and click on them to move them into selected videos.
+Click “Save Changes” when you’re done.</p>
+
+<p><img src="http://i.imgur.com/xE9fM8n.png" alt="choose related videos" /></p>
+
+<h3 id="lets-confirm">Let’s confirm</h3>
+
+<p>You should take a second and make sure everything’s going according to plan. Go to your site and view a video
+that you added to selected videos in the previous step. Below the video, under the section “Related Videos”,
+you should see the playlist you just created and the first few videos you added. You can also update any of your
+current playlists to act as a playlist of related videos by following these same steps.</p>
+
+<p><em>Check our <a href="http://dev.zype.com/posts/2014/10/10/adding-zype-to-rails/">previous post</a>
+on how to set up your Rails App with the Zype Gem!</em></p>
+
+  </article>
+  <div id="disqus_thread"></div>
+  <script type="text/javascript">
+      /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+      var disqus_shortname = 'zypedev'; // required: replace example with your forum shortname
+
+      /* * * DON'T EDIT BELOW THIS LINE * * */
+      (function() {
+          var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+          dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+
+    </section>
+
+    <footer>
+  © 2014 Zype Media Group
+</footer>
+
+
+  </body>
+
+</html>

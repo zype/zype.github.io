@@ -6,9 +6,65 @@
 </description>
     <link>http://dev.zype.com/</link>
     <atom:link href="http://dev.zype.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Mon, 20 Oct 2014 10:40:08 -0400</pubDate>
-    <lastBuildDate>Mon, 20 Oct 2014 10:40:08 -0400</lastBuildDate>
+    <pubDate>Thu, 23 Oct 2014 19:25:07 -0400</pubDate>
+    <lastBuildDate>Thu, 23 Oct 2014 19:25:07 -0400</lastBuildDate>
     <generator>Jekyll v2.3.0</generator>
+    
+      <item>
+        <title>Adding a playlist of related videos</title>
+        <description>&lt;p&gt;Let’s say you’ve already got some video content on your zype destination site, but now you’d like to recommend
+additional content based on what your users are watching. The solution we’ve implemented is called related videos.
+In this post, we’ll be covering how to create a playlist of related videos that are recommended to a viewer
+based on what the video they’re watching. Here’s an example of the finished product:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/QGhFTT1.png&quot; alt=&quot;realted playlist&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;The related videos section is automatically created for each video on your site, but if you’d like to be more
+specific about which videos are displayed there, follow along as we set up a playlist of related videos.&lt;/em&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;how-do-i-set-up-a-playlist-of-related-videos&quot;&gt;How do I set up a playlist of related videos?&lt;/h3&gt;
+
+&lt;p&gt;Setting up the playlist can be done from the &lt;a href=&quot;http://admin.zype.com/&quot;&gt;admin portal&lt;/a&gt;. Navigate to the playlist
+section on the sidebar and and click “New Playlist”. Follow through the menu and create a playlist (make sure it’s active!).&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/2yzWH9X.png&quot; alt=&quot;playlist navigation&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;how-can-i-choose-which-videos-are-shown-in-the-playlist&quot;&gt;How can I choose which videos are shown in the playlist?&lt;/h3&gt;
+
+&lt;p&gt;This is an easy one. Use the “Add Videos” button to select which videos will appear under the related videos section.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/nKIFmTP.png&quot; alt=&quot;add videos navigation&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;how-can-i-choose-which-videos-display-the-playlist&quot;&gt;How can I choose which videos display the playlist?&lt;/h3&gt;
+
+&lt;p&gt;Choosing the videos that will have your playlist displayed is done through the playlist edit screen. You can get there
+quickly by clicking on the name of your playlist here:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/XSvwXVR.png&quot; alt=&quot;edit your playlist&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Use our multiselector to search for the videos you want and click on them to move them into selected videos.
+Click “Save Changes” when you’re done.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/xE9fM8n.png&quot; alt=&quot;choose related videos&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;lets-confirm&quot;&gt;Let’s confirm&lt;/h3&gt;
+
+&lt;p&gt;You should take a second and make sure everything’s going according to plan. Go to your site and view a video
+that you added to selected videos in the previous step. Below the video, under the section “Related Videos”,
+you should see the playlist you just created and the first few videos you added. You can also update any of your
+current playlists to act as a playlist of related videos by following these same steps.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Check our &lt;a href=&quot;http://dev.zype.com/posts/2014/10/10/adding-zype-to-rails/&quot;&gt;previous post&lt;/a&gt;
+on how to set up your Rails App with the Zype Gem!&lt;/em&gt;&lt;/p&gt;
+</description>
+        <pubDate>Thu, 23 Oct 2014 02:37:55 -0400</pubDate>
+        <link>http://dev.zype.com/posts/2014/10/23/adding-a-playlist-of-related-videos</link>
+        <guid isPermaLink="true">http://dev.zype.com/posts/2014/10/23/adding-a-playlist-of-related-videos</guid>
+        
+        
+        <category>videos</category>
+        
+      </item>
     
       <item>
         <title>Checking your DPT request logs</title>
