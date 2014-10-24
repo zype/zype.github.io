@@ -9,7 +9,7 @@ additional content based on what your users are watching. The solution we've imp
 In this post, we'll be covering how to create a playlist of related videos that are recommended to a viewer
 based on what the video they're watching. Here's an example of the finished product:
 
-![realted playlist](http://i.imgur.com/QGhFTT1.png)
+![related playlist](http://i.imgur.com/QGhFTT1.png)
 
 *The related videos section is automatically created for each video on your site, but if you'd like to be more
 specific about which videos are displayed there, follow along as we set up a playlist of related videos.*
