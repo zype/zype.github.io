@@ -251,6 +251,9 @@ ol.blog-posts {
     margin-bottom: 10px;
     color: #777; }
 
+header h3 {
+  margin-top: 20px; }
+
 .highlight {
   background: #ffffff; }
 
