@@ -5,7 +5,7 @@ permalink: /api_docs/subscriptions/
 ---
 
 ## Subscriptions Collection
-Lists all Subsctiptions.
+Lists all Subscriptions.
 <hr>
 ### List all Subscriptions
 <hr>
@@ -107,7 +107,7 @@ Content-Type: application/json
 ## Subscription
 Lists descriptive information about a Subscription
 <hr>
-###Retrieve a Video
+###Retrieve a Subscription
 <hr>
 <pre><code>GET - https://api.zype.com/subscriptions/{id}
 </code></pre>
