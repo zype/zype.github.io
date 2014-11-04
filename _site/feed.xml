@@ -6,8 +6,8 @@
 </description>
     <link>http://dev.zype.com/</link>
     <atom:link href="http://dev.zype.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Mon, 03 Nov 2014 11:07:07 -0500</pubDate>
-    <lastBuildDate>Mon, 03 Nov 2014 11:07:07 -0500</lastBuildDate>
+    <pubDate>Tue, 04 Nov 2014 17:27:54 -0500</pubDate>
+    <lastBuildDate>Tue, 04 Nov 2014 17:27:54 -0500</lastBuildDate>
     <generator>Jekyll v2.3.0</generator>
     
       <item>
@@ -198,7 +198,7 @@ on how to set up your Rails App with the Zype Gem!&lt;/em&gt;&lt;/p&gt;
       </item>
     
       <item>
-        <title>Using Zype's Dynamic Player Technology (DPT)</title>
+        <title>Using Zype&#39;s Dynamic Player Technology (DPT)</title>
         <description>&lt;p&gt;Zype’s DPT allows you to create player rules based on geography and device.
 For example, you could declare that end users will receive the Hulu Player if he
 or she is accessing your video via desktop in the United States or the Zype Player

@@ -1,7 +1,8 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:300italic,700italic,300,700);
 
 body {
-  padding:50px;
+  margin: 0; 
+  padding: 0;
   font:14px/1.5 Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
   color:#777;
   font-weight:300;
@@ -199,7 +200,7 @@ header ul a strong {
 section {
   padding-bottom:50px;
   width: 55%;
-  max-width: 650px;
+  max-width: 750px;
   margin-left: 28em;
 }
 
@@ -229,6 +230,10 @@ footer {
     margin:0;
   }
 
+  #main {
+    padding: 25px !important;
+  }
+
   header, section, footer {
     float:none;
     position:static;
@@ -236,7 +241,12 @@ footer {
   }
 
   header {
-    padding-right:320px;
+    padding-right: 580px !important;
+
+    p {
+      margin: 0;
+      padding: 0;
+    }
   }
 
   section {
@@ -298,10 +308,15 @@ footer {
 #title {
   padding-bottom: 0px;
   margin-bottom: 0px;
+  color: white;
 }
 
 .category {
   font-size: 20px;
+
+  a {
+  color: #8acfef;
+  }
 }
 
 ol.blog-posts {
@@ -327,6 +342,41 @@ ol.blog-posts {
 header {
   h4 {
     margin-top: 20px;
-    margin-bottom: 20px;
+    // margin-bottom: 20px;
   }
+}
+
+#main {
+  padding-bottom: 50px;
+  padding-top: 80px;
+  padding-left: 100px;
+
+  ul {
+    padding-left: 0 !important;
+  }
+}
+
+#header {
+  background-color: #423e3e;
+  margin: 0px;
+  height: 100%;
+  width: 400px;
+
+  p {
+    margin: 0;
+  }
+
+  a {
+    color: white;
+  }
+
+  h4 {
+    color: #c1d340;
+    margin-bottom: 5px;
+  }
+}
+
+#content {
+  padding-left: 80px;
+  padding-top: 50px;
 }
