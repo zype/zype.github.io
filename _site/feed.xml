@@ -6,8 +6,8 @@
 </description>
     <link>http://dev.zype.com/</link>
     <atom:link href="http://dev.zype.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Wed, 05 Nov 2014 11:23:48 -0500</pubDate>
-    <lastBuildDate>Wed, 05 Nov 2014 11:23:48 -0500</lastBuildDate>
+    <pubDate>Wed, 05 Nov 2014 11:26:10 -0500</pubDate>
+    <lastBuildDate>Wed, 05 Nov 2014 11:26:10 -0500</lastBuildDate>
     <generator>Jekyll v2.3.0</generator>
     
       <item>
@@ -29,7 +29,7 @@ your YouTube Channel ID and click save changes.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;http://i.imgur.com/n8Qa0E0.png&quot; alt=&quot;youtube video source new&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;em&gt;Need help finding the YouTube Channel ID? &lt;a href=&quot;http://localhost:4000/posts/2014/11/04/finding-youtube-channel-id/&quot;&gt;Click here&lt;/a&gt; for
+&lt;p&gt;&lt;em&gt;Need help finding the YouTube Channel ID? &lt;a href=&quot;/posts/2014/11/04/finding-youtube-channel-id/&quot;&gt;Click here&lt;/a&gt; for
 our tutorial on finding the Channel ID.&lt;/em&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Step 3&lt;/strong&gt;&lt;/p&gt;

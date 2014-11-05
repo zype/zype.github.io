@@ -22,7 +22,7 @@ your YouTube Channel ID and click save changes.
 
 ![youtube video source new](http://i.imgur.com/n8Qa0E0.png)
 
-*Need help finding the YouTube Channel ID? [Click here](http://localhost:4000/posts/2014/11/04/finding-youtube-channel-id/) for
+*Need help finding the YouTube Channel ID? [Click here](/posts/2014/11/04/finding-youtube-channel-id/) for
 our tutorial on finding the Channel ID.*
 
 **Step 3**
