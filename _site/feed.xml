@@ -6,9 +6,98 @@
 </description>
     <link>http://dev.zype.com/</link>
     <atom:link href="http://dev.zype.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Tue, 04 Nov 2014 17:27:54 -0500</pubDate>
-    <lastBuildDate>Tue, 04 Nov 2014 17:27:54 -0500</lastBuildDate>
+    <pubDate>Wed, 05 Nov 2014 11:23:48 -0500</pubDate>
+    <lastBuildDate>Wed, 05 Nov 2014 11:23:48 -0500</lastBuildDate>
     <generator>Jekyll v2.3.0</generator>
+    
+      <item>
+        <title>Importing a YouTube Channel to the Zype Platform</title>
+        <description>&lt;p&gt;With the Zype Platform, you can import all of the videos within a YouTube Channel.
+This tutorial will go over the three steps to importing all the videos within a Youtube
+Channel to your Zype video library.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Step 1&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;On the Video Source page in the Zype Platform, click on new YouTube Video Source&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/JoQNGol.png&quot; alt=&quot;youtube video sources&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Step 2&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;To add a new Youtube Video Source you need to input your YouTube Channel ID. Input
+your YouTube Channel ID and click save changes.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/n8Qa0E0.png&quot; alt=&quot;youtube video source new&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Need help finding the YouTube Channel ID? &lt;a href=&quot;http://localhost:4000/posts/2014/11/04/finding-youtube-channel-id/&quot;&gt;Click here&lt;/a&gt; for
+our tutorial on finding the Channel ID.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Step 3&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Once you click save changes, the Zype Platform will import the YouTube videos in the
+channel supplied. You will need to add those videos to your Zype video library from
+the import video screen.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/yU2X3UU.png&quot; alt=&quot;import youtube video&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The video imports that you add will now be a part of your Zype video library.&lt;/p&gt;
+</description>
+        <pubDate>Wed, 05 Nov 2014 05:57:55 -0500</pubDate>
+        <link>http://dev.zype.com/posts/2014/11/05/importing-youtube-channel-to-zype</link>
+        <guid isPermaLink="true">http://dev.zype.com/posts/2014/11/05/importing-youtube-channel-to-zype</guid>
+        
+        
+        <category>developers</category>
+        
+      </item>
+    
+      <item>
+        <title>Finding a YouTube Channel ID</title>
+        <description>&lt;p&gt;To import a YouTube Channel into the Zype Platform, you need to have its Channel ID.
+This ID can be tricky to find because the Channel ID and User ID are very similar.
+Below are the options and steps to finding a YouTube Channel ID
+to input into the Zype Platform.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Finding your YouTube Channel ID:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;1. Log into your YouTube account and visit &lt;a href=&quot;https://www.youtube.com/account_advanced&quot;&gt;advanced account settings&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;2. Your Channel ID can be found in your Account Information&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/fh76FMH.png&quot; alt=&quot;channel id instructions&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Finding an additional YouTube Channel ID:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;YouTube is in the process of moving from videos belonging to Users to videos
+belonging to Channels. Because of this migration, it is tricky to get your Channel ID because often, YouTube treats User and Channel as the same thing. It is important to make sure that you are getting the Channel ID and not the User ID for the Zype Platform.&lt;/p&gt;
+
+&lt;p&gt;1. Visit a YouTube video that is in the Channel you want and click on the channel name
+below the Video Player.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/28no7XC.png&quot; alt=&quot;youtube video&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;2. You will be taken to the Channel Page. The Channel ID is at the end of the URL.
+For example, for Last Week Tonight with John Oliver, the channel ID is UC3XTzVzaHQEd30rQbuvCtTQ.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/bisJffi.png&quot; alt=&quot;youtube channel page&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Common Mistakes&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Since YouTube is changing from User to Channel Pages, the User Page looks very similar
+to the Channel Page. The URL for the User Page has &lt;strong&gt;/user/&lt;/strong&gt; in it, not &lt;strong&gt;/channel/&lt;/strong&gt;. If
+you find yourself on the User Page instead of the Channel Page, click on a video in the User
+Page and repeat the steps for finding an additional YouTube Channel ID above.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/Ef8qcgA.png&quot; alt=&quot;youtube user page&quot; /&gt;&lt;/p&gt;
+</description>
+        <pubDate>Tue, 04 Nov 2014 05:57:55 -0500</pubDate>
+        <link>http://dev.zype.com/posts/2014/11/04/finding-youtube-channel-id</link>
+        <guid isPermaLink="true">http://dev.zype.com/posts/2014/11/04/finding-youtube-channel-id</guid>
+        
+        
+        <category>developers</category>
+        
+      </item>
     
       <item>
         <title>Russian Doll Caching in Rails 4</title>
@@ -198,7 +287,7 @@ on how to set up your Rails App with the Zype Gem!&lt;/em&gt;&lt;/p&gt;
       </item>
     
       <item>
-        <title>Using Zype&#39;s Dynamic Player Technology (DPT)</title>
+        <title>Using Zype's Dynamic Player Technology (DPT)</title>
         <description>&lt;p&gt;Zype’s DPT allows you to create player rules based on geography and device.
 For example, you could declare that end users will receive the Hulu Player if he
 or she is accessing your video via desktop in the United States or the Zype Player
