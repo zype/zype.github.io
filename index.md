@@ -7,7 +7,7 @@ permalink: /
 
 ##Welcome to the Zype Developer Portal
 
-If you're a developer, you've come to the right place! Here we'll discuss the zype platform and how to leverage it to deploy your video content. We recommend clicking on the [API Documentation](/api_docs/intro/) link in the nav bar to get started
+If you're a developer, you've come to the right place! Here we'll discuss the zype platform and how to leverage it to deploy your video content. We recommend clicking on the [API Documentation](/api_docs/intro/) link in the nav bar to get started or checkout our [blog](/blog/) for updated posts.
 
 Our platform includes all the APIs and SDKs video developers need to quickly deliver video apps.  We even make it easy to deploy to multiple set top platforms without having to republish to app marketplaces.  Digital agencies and app publishing houses use the Zype Platform to focus on creative while we worry about IT.
 
