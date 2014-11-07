@@ -4,124 +4,25 @@ title: Zype Developer Portal | Home
 permalink: /
 ---
 
-## Introduction
 
-Zype API documentation provides information to web developers who wish to use Zype's Application Programming Interfaces (APIs).
-The Zype API includes modules for managing videos and associated metadata.
-In addition, this reference describes a number of related objects. The Zype API is a RESTful API service.
+##Welcome to the Zype Developer Portal
 
-Our API is designed around standard REST CRUD (Create-Read-Update-Delete) semantics:
+If you're a developer, you've come to the right place! Here we'll discuss the zype platform and how to leverage it to deploy your video content. We recommend clicking on the [API Documentation](/api_docs/intro/) link in the nav bar to get started
 
-**POST** - Create a resource within a given collection
-
-**GET** - Get a resource or collection of resources
-
-**PUT** - Update a resource
-
-**DELETE** - Delete a resource
-
-Our default is to support JSON formatting, however if you prefer XML use the Content-Type header with value text/xml.
-<hr>
-
-## Authentication
-
-You authenticate to the Zype API by providing your site API keys in the request.
-To authenticate your requests, supply your site API key in the X-ZYPE-API-KEY header.
-<hr>
-
-## Errors
-
-Zype uses conventional HTTP response codes to indicate success or failure of an API request. In general, codes in the 2xx range indicate success, codes in the 4xx range indicate an error that resulted from the provided information (e.g. a required r was missing, a charge failed, etc.), and codes in the 5xx range indicate an error with Zype's servers.
-
-### 200 (OK)
-The request was processed successfully.
-
-### 401 (Unauthorized)
-The request could not be processed because no API key was provided, or the API key provided is invalid.
-
-### 404 (Not Found)
-The request could not be processed because the resource you are operating on could not be found.
-
-### 422 (Unprocessable Entity)
-The request could not be processed due to a validation rule.
-
-### 500 (Server Error)
-The request could not be processed due to a error on Zype's servers.
-
-### Attributes:
-**message** - A human-readable message giving more details about the error.
+Our platform includes all the APIs and SDKs video developers need to quickly deliver video apps.  We even make it easy to deploy to multiple set top platforms without having to republish to app marketplaces.  Digital agencies and app publishing houses use the Zype Platform to focus on creative while we worry about IT.
 
 <hr>
 
-## Pagination
+The Zype Platform includes everything a premium content owner needs to deliver web, mobile, and set-top apps direct to consumers.
 
-Pagination is required for all 'list' requests. The default setting for any list request is to return 10 records.
+####Instant Branded Set Top Apps:
+Launch branded Roku, Chromecast, SmartTV apps, and more in record time. Includes easy content management, promotion, and branding across apps from a single dashboard.  Monetize with advertising partners, or the Zype Ad Network to drive revenue.
 
-### Parameters
+####Video Business Management:
+Video from anywhere, including YouTube and Hulu, or even raw video source files - can be imported, optimized and delivered based on viewer location, device, licensing rules or revenue models. Check it out using our [test harness](http://demo.zype.com/test_harness)
 
-page (optional) The page number of records to return (zero indexed).
+####Metadata Unleashed:
+Zype’s proprietary VideoMeta technology allows import and matching of data - scripts, set lists, art, and related content without data entry headaches.  Powerful for SEO and deep, engaging branded video experiences. You can see this in action on [yugioh.com](http://www.yugioh.com)
 
-per_page (optional) The number of records to return (Default: 10, Maximum: 100).
-
-### Attributes
-
-Paging data is returned in the 'pagination' element on list requests. The following data is made available.
-
-**current** - The current page requested
-
-**previous** - The page before the page requested.
-
-**next** - The page after the page requested.
-
-**per_page** - The maximum number of records returned.
-
-**pages** - The total number of pages available.
-
-Example:
-
-<pre><code>{
-    response: { ... },
-    pagination: {
-        current: 1,
-        previous: null,
-        next: 2,
-        per_page: 10,
-        pages: 5
-    }
-}
-</code></pre>
-<hr>
-
-## Video Formats
-
-Videos published through the Zype platform support the following resolution and aspect ratios.
-
-### HLS (HTTP Live Streaming):
-
-Resolution | Aspect | Width | Height
----------- | ------ | ----- | ------
-240p	     | 16x9	  | 426px	| 240px
-360p	     | 16x9   | 640px	| 360px
-480p	     | 16x9   | 854px	| 480px
-720p	     | 16x9   | 1280px|	720px
-1080p	     | 16x9   | 1920px|	1080px
-
-### WebM/MP4 Streaming:
-
-To ensure compatibility with devices that do not support HLS, Zype provides WebM and MP4 streams.
-
-Format | Resolution | Aspect | Width | Height
------- | ---------- | ------ | ----- | ------
-WebM   | 360p	      | 16x9	 | 640px | 360px
-MP4	   | 360p	      | 16x9	 | 640px | 360px
-
-Video formats are optional and are configurable in the Zype Publisher dashboard.
-<hr>
-
-## Client Libraries
-
-Zype currently provides the following client libraries:
-
-### [Ruby](https://github.com/edla/zype-cli)
-
-If your platform of choice is not found above, you can create your own or use API code samples.
+####Hosting Included:
+With Zype, content owners get all of their hosting for web and mobile apps included - no need to worry about storage, application management, or monitoring.
