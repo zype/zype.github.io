@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: api
 title: Zype Developer Portal | Playlists
 permalink: /api_docs/playlists/
 ---

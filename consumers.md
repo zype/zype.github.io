@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: api
 title: Zype Developer Portal | Consumers
 permalink: /api_docs/consumers/
 ---

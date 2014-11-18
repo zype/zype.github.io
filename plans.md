@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: api
 title: Zype Developer Portal | Plans
 permalink: /api_docs/plans/
 ---

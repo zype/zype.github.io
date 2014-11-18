@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: api
 title: Zype Developer Portal | GeoIP
 permalink: /api_docs/geoip/
 ---

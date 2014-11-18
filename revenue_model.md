@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: api
 title: Zype Developer Portal | Revenue Models
 permalink: /api_docs/revenue_models/
 ---

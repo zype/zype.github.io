@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: api
 title: Zype Developer Portal | Subscriptions
 permalink: /api_docs/subscriptions/
 ---

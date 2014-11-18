@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: api
 title: Zype Developer Portal | Videos
 permalink: /api_docs/videos/
 ---

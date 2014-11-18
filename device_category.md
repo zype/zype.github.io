@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: api
 title: Zype Developer Portal | Device Categories
 permalink: /api_docs/device_categories/
 ---
