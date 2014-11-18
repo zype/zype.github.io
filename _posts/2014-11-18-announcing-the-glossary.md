@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Annoucing the Glossary!"
+title:  "Annoucing the Zype Glossary!"
 date:   2014-11-18 02:37:55
 categories: developers
 ---
