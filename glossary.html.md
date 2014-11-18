@@ -9,7 +9,6 @@ permalink: /glossary/
 The Zype developer portal uses some predefined language to reference certain aspects of the platform. We thought it might be helpful to have a glossary section so that you can be sure
 we're on the same page. Below is a list of terms that we use and their definitions.
 
-<hr>
 <br>
 
 ### Platforms
