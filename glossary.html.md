@@ -10,6 +10,8 @@ The Zype developer portal uses some predefined language to reference certain asp
 we're on the same page. Below is a list of terms that we use and their definitions.
 
 <hr>
+<br>
+
 ### Platforms
 <hr>
 
@@ -19,6 +21,8 @@ Zype.com | The public facing website at: http://www.zype.com/
 Zype Developer Portal | The public facing website geared towards developers who are using the Zype Platform.
 Zype Platform | The client-facing tool that's used to manage your zype content.
 
+<br>
+
 ### Users
 <hr>
 
@@ -26,6 +30,8 @@ Zype Platform | The client-facing tool that's used to manage your zype content.
 Admins | Administrators have access to your instance of the Zype Platform. They also have additional permissions and can take more actions than a typical user.
 Viewers | The population of the general public who are watching your video content.
 Consumers | The population of your Viewers who are paying to view your content.
+
+<br>
 
 ### Video Technology Terms
 <hr>
@@ -39,8 +45,7 @@ HLS | HTTP Live Streaming is an HTTP-based media streaming communications protoc
 M3U8 | The Unicode version of "m3u" is "m3u8", which uses UTF-8 Unicode characters. "m3u" and "m3u8" files are the basis for the HTTP Live Streaming format used by Apple to stream video to iOS devices.
 Resolution | The display resolution of a digital television, computer monitor or display device is the number of distinct pixels in each dimension that can be displayed. It can be an ambiguous term especially as the displayed resolution is controlled by different factors on different devices.
 
-
-
+<br>
 
 ### General Terms
 <hr>
@@ -53,6 +58,8 @@ XML | Extensible Markup Language (XML) is a markup language that defines a set o
 GIF | The Graphics Interchange Format is a bitmap image format that was introduced by CompuServe in 1987 and has since come into widespread usage on the World Wide Web due to its wide support and portability.
 JPEG | In computing, JPEG (seen most often with the .jpg or .jpeg filename extension) is a commonly used method of lossy compression for digital images, particularly for those images produced by digital photography. The degree of compression can be adjusted, allowing a selectable tradeoff between storage size and image quality. JPEG typically achieves 10:1 compression with little perceptible loss in image quality.
 PNG | Portable Network Graphics is a raster graphics file format that supports lossless data compression. PNG was created as an improved, non-patented replacement for Graphics Interchange Format (GIF), and is the most used lossless image compression format on the Internet.
+
+<br>
 
 ### Zype Platform Terms
 <hr>
