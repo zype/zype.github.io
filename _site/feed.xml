@@ -6,9 +6,59 @@
 </description>
     <link>http://dev.zype.com/</link>
     <atom:link href="http://dev.zype.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Tue, 18 Nov 2014 14:53:11 -0500</pubDate>
-    <lastBuildDate>Tue, 18 Nov 2014 14:53:11 -0500</lastBuildDate>
+    <pubDate>Wed, 19 Nov 2014 10:44:55 -0500</pubDate>
+    <lastBuildDate>Wed, 19 Nov 2014 10:44:55 -0500</lastBuildDate>
     <generator>Jekyll v2.3.0</generator>
+    
+      <item>
+        <title>Searching For A YouTube Channel in the Zype Platform</title>
+        <description>&lt;p&gt;We simplified the process of searching for and importing a YouTube Channel into the Zype Platform.
+Before, you had to manually go to YouTube and find your Channel ID. This was a cumbersome
+process. Now you can search for a YouTube Channel from the Zype Platform and we will get the Channel ID for you.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Step 1:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Go to Video Sources and click on the YouTube icon.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/xJoXbpp.png&quot; alt=&quot;click youtube&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Step 2:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Enter a name for your YouTube Video Source (something to help you remember it!) and click the
+Search YouTube Channels button&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/Ly24GBg.png&quot; alt=&quot;search youtube channels&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Step 3:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Enter the channel name that you are searching for and click Search. You will be
+given a list of YouTube Channels that match your search criteria. Click the Select Channel
+button for the YouTube Channel that you want to add.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/hpAfMu8.png&quot; alt=&quot;click select channel&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Step 4:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;This will prepopulate the Channel ID for you. All you need to do is click Save Changes
+and the Zype Platform will start to import all of the videos from the channel that you selected!&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/fszuPQu.png&quot; alt=&quot;click submit&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Step 5:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Your imported videos are in your import videos page. You can add videos to your catalogue
+from there.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/ZKliLxG.png&quot; alt=&quot;import videos&quot; /&gt;&lt;/p&gt;
+</description>
+        <pubDate>Tue, 18 Nov 2014 01:37:55 -0500</pubDate>
+        <link>http://dev.zype.com/posts/2014/11/18/search-youtube-in-zype</link>
+        <guid isPermaLink="true">http://dev.zype.com/posts/2014/11/18/search-youtube-in-zype</guid>
+        
+        
+        <category>developers</category>
+        
+      </item>
     
       <item>
         <title>Annoucing the Zype Glossary!</title>
