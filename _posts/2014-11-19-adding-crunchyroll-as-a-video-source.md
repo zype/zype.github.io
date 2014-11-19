@@ -30,7 +30,7 @@ Enter a name for your Crunchyroll Video Source (something you'll remember!) and 
 ### Importing your videos
 
 Now sit back while we go get all of your Crunchyroll videos and add them to the Zype Platform as video imports.
-Once we've imported all of your videos (it may take a few minutes depending on the size of the library), you will find them under the [Video Imports](https://admin.zype.com/video_imports) tab. The last step is to create new videos from the imports or add the video imports to videos you already have on the Zype Platform.
+Once we've imported all of your videos you will find them under the [Video Imports](https://admin.zype.com/video_imports) tab. The last step is to create new videos from the imports or add the video imports to videos you already have on the Zype Platform.
 
 ![video imports](http://i.imgur.com/cn3IVVB.png)
 
