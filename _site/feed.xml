@@ -6,12 +6,12 @@
 </description>
     <link>http://dev.zype.com/</link>
     <atom:link href="http://dev.zype.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Tue, 18 Nov 2014 14:50:20 -0500</pubDate>
-    <lastBuildDate>Tue, 18 Nov 2014 14:50:20 -0500</lastBuildDate>
+    <pubDate>Tue, 18 Nov 2014 14:53:11 -0500</pubDate>
+    <lastBuildDate>Tue, 18 Nov 2014 14:53:11 -0500</lastBuildDate>
     <generator>Jekyll v2.3.0</generator>
     
       <item>
-        <title>Annoucing the Glossary!</title>
+        <title>Annoucing the Zype Glossary!</title>
         <description>&lt;p&gt;As you might have seen in previous blog posts, we’re constantly adding new features and improving upon the Zype Platform. It only seemed right to start cataloguing the terms we use for easy lookup. Enter &lt;a href=&quot;http://dev.zype.com/glossary/&quot;&gt;the Zype  Glossary&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;We’ve organized terms into groups by topic: General Terms, Video Technology Terms, Zype Platform Terms, and a few others. If you’re ever unsure of what we mean, check the glossary (permalinked on the nav bar) for a simple, straightforward explanation.&lt;/p&gt;
