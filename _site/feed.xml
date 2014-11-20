@@ -6,9 +6,80 @@
 </description>
     <link>http://dev.zype.com/</link>
     <atom:link href="http://dev.zype.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Wed, 19 Nov 2014 15:25:38 -0500</pubDate>
-    <lastBuildDate>Wed, 19 Nov 2014 15:25:38 -0500</lastBuildDate>
+    <pubDate>Thu, 20 Nov 2014 10:11:48 -0500</pubDate>
+    <lastBuildDate>Thu, 20 Nov 2014 10:11:48 -0500</lastBuildDate>
     <generator>Jekyll v2.3.0</generator>
+    
+      <item>
+        <title>Uploading Videos With the Zype Command Line Interface</title>
+        <description>&lt;p&gt;We’re rolling out a bunch of new ways to add video content to the Zype Platform, like &lt;a href=&quot;http://dev.zype.com/posts/2014/11/18/search-youtube-in-zype/&quot;&gt;Youtube Channel Import&lt;/a&gt; and &lt;a href=&quot;http://dev.zype.com/posts/2014/11/19/adding-crunchyroll-as-a-video-source/&quot;&gt;Crunchyroll Video Import&lt;/a&gt;. In this post we’ll show you how to use the Zype Command Line Interface (or CLI) to upload videos that you have stored on a harddrive.&lt;/p&gt;
+
+&lt;h3 id=&quot;downloading-and-installing-the-zype-cli&quot;&gt;Downloading and Installing the Zype CLI&lt;/h3&gt;
+
+&lt;p&gt;First, you’ll need to download and set up the Zype CLI. You can find the tool on &lt;a href=&quot;https://github.com/edla/zype-cli&quot;&gt;gitHub&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/ZC3mLEs.png&quot; alt=&quot;gitHub&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;You’ll need to clone down the repo, then run the following commands:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ gem build zype.gemspec
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code&gt;$ gem install ./zype-1.0.0.gem
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;You can confirm that your installation succeeded by entering&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ zype
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;which will display a list of available commands for the Zype CLI. Remember this command in case you have questions about what the Zype CLI can do!&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/YZ8gcJl.png&quot; alt=&quot;CLI Interface&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;logging-in-through-the-zype-cli&quot;&gt;Logging in through the Zype CLI&lt;/h3&gt;
+
+&lt;p&gt;Let’s make sure that you can login and that your Zype CLI is linked to your instance of the Zype Platform.&lt;/p&gt;
+
+&lt;p&gt;Enter the command below:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ zype account:login
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;You’ll be prompted to enter your Zype API Key. You can find this by logging in to the &lt;a href=&quot;https://admin.zype.com&quot;&gt;Zype Platform&lt;/a&gt; and clicking on API within the settings menu at the top of the screen. Grab your API key and enter it into the terminal to continue.&lt;/p&gt;
+
+&lt;h3 id=&quot;uploading-your-videos&quot;&gt;Uploading your videos&lt;/h3&gt;
+
+&lt;p&gt;You’ll need to know which directory contains the videos you want to upload. Once you know where they live, you can run the upload command.&lt;/p&gt;
+
+&lt;p&gt;If all of the files live in a single directory, run the following command, replacing the example directory (“/myDir/videos”) with your own.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ zype video:upload --directory=&quot;/myDir/videos&quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;If you have multiple subdirectories that contain videos, you can pass in a wildcard character (*) at the end of the parent directory to grab all of the videos within each subdirectory. Like this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ zype video:upload --directory=&quot;/myDir/videos/*&quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Now sit back while we upload all of your videos and add them to the Zype Platform as video imports. Once we’ve imported all of your videos you will find them under the &lt;a href=&quot;https://admin.zype.com/video_imports&quot;&gt;Video Imports&lt;/a&gt; tab. The last step is to create new videos from the imports or add the video imports to videos you already have on the Zype Platform.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/SrnGXnw.png&quot; alt=&quot;video imports&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;confirm&quot;&gt;Confirm&lt;/h3&gt;
+
+&lt;p&gt;You can confirm that your videos were added by clicking on the videos tab and searching for the ones you’ve just added.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/MHiAOmb.png&quot; alt=&quot;videos&quot; /&gt;&lt;/p&gt;
+</description>
+        <pubDate>Thu, 20 Nov 2014 05:37:55 -0500</pubDate>
+        <link>http://dev.zype.com/posts/2014/11/20/uploading-vidoes-with-the-zype-cli</link>
+        <guid isPermaLink="true">http://dev.zype.com/posts/2014/11/20/uploading-vidoes-with-the-zype-cli</guid>
+        
+        
+        <category>developers</category>
+        
+      </item>
     
       <item>
         <title>Adding Crunchyroll as a Video Source</title>
@@ -33,13 +104,13 @@
 &lt;p&gt;Now sit back while we go get all of your Crunchyroll videos and add them to the Zype Platform as video imports.
 Once we’ve imported all of your videos you will find them under the &lt;a href=&quot;https://admin.zype.com/video_imports&quot;&gt;Video Imports&lt;/a&gt; tab. The last step is to create new videos from the imports or add the video imports to videos you already have on the Zype Platform.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/cn3IVVB.png&quot; alt=&quot;video imports&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/SrnGXnw.png&quot; alt=&quot;video imports&quot; /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;confirm&quot;&gt;Confirm&lt;/h3&gt;
 
 &lt;p&gt;You can confirm that your videos were added by clicking on the videos tab and searching for the ones you’ve just added.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/GcNjcmu.png&quot; alt=&quot;videos&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/MHiAOmb.png&quot; alt=&quot;videos&quot; /&gt;&lt;/p&gt;
 </description>
         <pubDate>Wed, 19 Nov 2014 05:37:55 -0500</pubDate>
         <link>http://dev.zype.com/posts/2014/11/19/adding-crunchyroll-as-a-video-source</link>
@@ -446,47 +517,6 @@ on how to set up your Rails App with the Zype Gem!&lt;/em&gt;&lt;/p&gt;
         
         
         <category>dpt</category>
-        
-      </item>
-    
-      <item>
-        <title>Filter Playlists by a Category in a Rails App</title>
-        <description>&lt;p&gt;To organize your playlists using the Zype Platform, you can assign categories to
-your playlists and filter your playlists based on a category and its value.
-In this tutorial, I will walk through how to query for all the playlists that have
-a category named ‘zone’ and a value of ‘home.’ At Zype, we use this
-strategy to get all the playlists that we want to be displayed on the home page or zone.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Step 1: Go to admin.zype.com/categories and click the create new category button&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/nweBnRo.png&quot; alt=&quot;new category&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Step 2: Fill out the category title and category values. You can have multiple
-values (and you can always go back and edit these category values!)&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/DmREstQ.png&quot; alt=&quot;new category&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Step 3: Create a playlist and assign it the Zone Category of home&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/0algUs9.png&quot; alt=&quot;new category&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Step 4: In your Rails App, query for playlists that have the category zone value of home.&lt;/strong&gt;&lt;/p&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;vi&quot;&gt;@playlists&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;vi&quot;&gt;@zype&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;playlists&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;zone&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;home&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-</description>
-        <pubDate>Mon, 13 Oct 2014 11:53:00 -0400</pubDate>
-        <link>http://dev.zype.com/posts/2014/10/13/playlists-and-categories</link>
-        <guid isPermaLink="true">http://dev.zype.com/posts/2014/10/13/playlists-and-categories</guid>
-        
-        
-        <category>rails</category>
-        
-        <category>ruby</category>
-        
-        <category>playlists</category>
-        
-        <category>categories</category>
         
       </item>
     
