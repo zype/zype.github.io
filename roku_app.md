@@ -70,7 +70,7 @@ Content-Type: application/json
     "switching_strategy": "minimum-adaptation",
     "title": "Roku Title",
     "toolbar_title": "Tools",
-    "top_description_zobject": "director",
+    "top_description_zobject": "actor",
     "version": 1.0,
     "app_images": [
       {
