@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Zype Developer Portal | Roku App</title>
+    <meta name="description" content="This is the devloper portal for Zype Media. Zype is Revenue and Reach Magic for Online Video. We help content owners deliver fully branded video experiences.
+">
+
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="canonical" href="http://dev.zype.com/api_docs/roku_app/">
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+
+
+  <body>
+
+      <header id="header">
+    <div id="content">
+      <a href="/"><img src="http://i.imgur.com/v8SUe9t.png" alt="Zype" />
+      <h1 id="title">Developer Portal</h1></a>
+      <p>a knowledge base</p>
+      <br>
+      <p class="category"><a href="/api_docs/intro/" style="color: #8acfef;">API Documentation</a></p>
+
+      <h4>Zype Platform</h4>
+      <p><a href="/api_docs/videos/">Videos</a></p>
+      <p><a href="/api_docs/playlists/">Playlists</a></p>
+      <p><a href="/api_docs/categories/">Categories</a></p>
+      <p><a href="/api_docs/device_categories/">Device Categories</a></p>
+      <p><a href="/api_docs/devices/">Devices</a></p>
+      <p><a href="/api_docs/revenue_models/">Revenue Models</a></p>
+      <p><a href="/api_docs/roku_app/">Roku App</a></p>
+      <p><a href="/api_docs/geoip/">GeoIP</a></p>
+      <h4>Users</h4>
+      <p><a href="/api_docs/consumers/">Consumers</a></p>
+      <p><a href="/api_docs/plans/">Plans</a></p>
+      <p><a href="/api_docs/subscriptions/">Subscriptions</a></p>
+      <h4>Zobjects</h4>
+      <p><a href="/api_docs/zobject_types/">Zobject Types</a></p>
+      <p><a href="/api_docs/zobjects/">Zobjects</a></p>
+      <br>
+      <p class="category"><a href="/blog/" style="color: #8acfef;">Blog</a></p>
+      <p class="category"><a href="/glossary/" style="color: #8acfef;">Glossary</a></p>
+      <p class="category"><a href="http://status.zype.com" style="color: #8acfef;">System Status</a></p>
+      <br>
+      © 2014 Zype Media Group
+    </div>
+  </header>
+
+
+    <section id="main">
+      <h2 id="roku-app">Roku App</h2>
+<hr />
+
+<h3 id="retrieve-a-roku-app">Retrieve a Roku App</h3>
+<p>Retrieve configuration settings for a Roku App.</p>
+<hr />
+
+<pre><code>GET - https://api.zype.com/app/?app_key=app_key
+</code></pre>
+
+<h4 id="parameters">Parameters</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Function</th>
+      <th>Type</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>app_key</td>
+      <td>The app key. Ex. abc123fg</td>
+      <td>String</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="response">Response</h4>
+<p>200
+Content-Type: application/json</p>
+
+<pre><code>
+{
+  "response": {
+    "_id": "12345",
+    "active": true,
+    "app_type_id": "12345",
+    "bottom_description_zobject": "director",
+    "category_id": "1234basc",
+    "color_background": "#ffffff",
+    "color_brand": "#C2D43C",
+    "color_dark": "#000000",
+    "color_light": "#ffffff",
+    "color_muted": "#666666",
+    "featured_playlist_id": "1234abc",
+    "grid_border_offset_hd": "(-1, 0)",
+    "grid_border_offset_sd": "(-1, 0)",
+    "grid_description_image_offset_hd": "(216, 20)",
+    "grid_description_image_offset_sd": "(216, 20)",
+    "grid_layout": "two-row-flat-landscape-custom",
+    "grid_logo_offset_hd_x": "60",
+    "grid_logo_offset_hd_y": "20",
+    "grid_logo_offset_sd_x": "60",
+    "grid_logo_offset_sd_y": "20",
+    "grid_overhang_height_hd": "138",
+    "grid_overhang_height_sd": "138",
+    "home_name": "Home",
+    "info_description": "Learn all about your favorite app",
+    "info_title": "Info",
+    "logo_offset_hd_x": "60",
+    "logo_offset_hd_y": "20",
+    "logo_offset_sd_x": "60",
+    "logo_offset_sd_y": "20",
+    "per_page": 100,
+    "play_button_text": "Watch from beginning",
+    "prepend_category_name": false,
+    "scale_mode": "photo-fit",
+    "search_button_text": "Submit!",
+    "search_description": "Search for things!",
+    "search_error_text": "No results.",
+    "search_help_text": "Enter your search.",
+    "search_layout": "flat-episodic-16x9",
+    "search_title": "Search",
+    "site_id": "abc1234",
+    "springboard_description_style": "movie",
+    "springboard_poster_style": "rounded-rect-16x9-generic",
+    "store_id": null,
+    "switching_strategy": "minimum-adaptation",
+    "title": "Roku Title",
+    "toolbar_title": "Tools",
+    "top_description_zobject": "director",
+    "version": null,
+    "app_images": [
+      {
+        "logo_hd": "http://u.zype.com/roku/54651b7369702d7c99b20000/logo_hd/1415984896/original.png?1415984896"
+      },
+      {
+      "logo_sd": "http://u.zype.com/roku/54651b7369702d7c99b20000/logo_sd/1415984896/original.png?1415984896"
+      },
+      {
+      "slice_hd": "http://u.zype.com/roku/54651b7369702d7c99b20000/slice_hd/1415984896/original.png?1415984896"
+      },
+      {
+      "slice_sd": "http://u.zype.com/roku/54651b7369702d7c99b20000/slice_sd/1415984897/original.png?1415984897"
+      },
+      {
+        "grid_description_image_hd": "http://u.zype.com/roku/54651b7369702d7c99b20000/grid_description_image_hd/1415984897/original.png?1415984897"
+      },
+      {
+        "grid_description_image_sd": "http://u.zype.com/roku/54651b7369702d7c99b20000/grid_description_image_sd/1415984897/original.png?1415984897"
+      },
+      {
+        "info_poster_hd": "http://u.zype.com/roku/54651b7369702d7c99b20000/info_poster_hd/1415984898/original.png?1415984898"
+      },
+      {
+        "info_poster_sd": "http://u.zype.com/roku/54651b7369702d7c99b20000/info_poster_sd/1415984898/original.png?1415984898"
+      },
+      {
+        "search_poster_hd": "http://u.zype.com/roku/54651b7369702d7c99b20000/search_poster_hd/1415984898/original.png?1415984898"
+      },
+      {
+        "search_poster_sd": "http://u.zype.com/roku/54651b7369702d7c99b20000/search_poster_sd/1415984899/original.png?1415984899"
+      },
+      {
+        "grid_border_image_hd": "http://u.zype.com/roku/54651b7369702d7c99b20000/grid_border_image_hd/1415984899/original.png?1415984899"
+      },
+      {
+        "grid_border_image_sd": "http://u.zype.com/roku/54651b7369702d7c99b20000/grid_border_image_sd/1415984899/original.png?1415984899"
+      }
+    ],
+    "store_icon_url": null,
+    "video_sources": [...]
+    }
+  }
+</code></pre>
+
+    </section>
+
+    <footer>
+</footer>
+
+
+  </body>
+
+</html>
