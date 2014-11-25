@@ -23,8 +23,7 @@ app_key      | The app key. Ex. abc123fg | String
 Content-Type: application/json
 
 
-<pre><code>
-{
+<pre><code>{
   "response": {
     "_id": "12345",
     "active": true,
@@ -68,12 +67,11 @@ Content-Type: application/json
     "site_id": "abc1234",
     "springboard_description_style": "movie",
     "springboard_poster_style": "rounded-rect-16x9-generic",
-    "store_id": null,
     "switching_strategy": "minimum-adaptation",
     "title": "Roku Title",
     "toolbar_title": "Tools",
     "top_description_zobject": "director",
-    "version": null,
+    "version": 1.0,
     "app_images": [
       {
         "logo_hd": "http://u.zype.com/roku/54651b7369702d7c99b20000/logo_hd/1415984896/original.png?1415984896"
@@ -112,7 +110,6 @@ Content-Type: application/json
         "grid_border_image_sd": "http://u.zype.com/roku/54651b7369702d7c99b20000/grid_border_image_sd/1415984899/original.png?1415984899"
       }
     ],
-    "store_icon_url": null,
     "video_sources": [...]
     }
   }
