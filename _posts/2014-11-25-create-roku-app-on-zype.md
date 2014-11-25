@@ -34,7 +34,7 @@ The Zype Platform and API are designed so that these changes can be updated with
 
 For example, you can set the featured playlist, the category to iterate through, copy text, and
 the colors of your Roku App any time you want from the Zype Platform. These changes will be reflected the
-next time that you load your Roku App. Only the Splash Screen and the Roku Store Icons cannot
+next time your Roku App is loaded. Only the Splash Screen and the Roku Store Icons cannot
 be updated via the Zype Platform.
 
 ![New Roku App](http://i.imgur.com/gkeHiEI.png)
@@ -42,5 +42,5 @@ be updated via the Zype Platform.
 **Step 4**
 
 Once you create your Roku App, you will need to publish the App on the Zype Platform
-by clicking on the Publish App button. Then, you can use our API, Roku SDK, or reach out to Zype
-to help you build and publish the App on the Roku Channel Store!
+by clicking on the Publish App button so that your App's API goes live.
+Then, you can use our API, Roku SDK, or reach out to Zype to help you build and publish the App on the Roku Channel Store!
