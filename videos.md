@@ -24,6 +24,7 @@ keyword   | Filters the records returned by keyword. Example: comedy. | String
 status    | Filters the records returned by status. Example: created. | String
 active    | Show active, inactive or all videos Example: true. | String
 category  | An optional set of key value category pairs to filter the records returned by category. Example: category[color]=blue. | Hash
+category! | Exclude a category from the query. Example: category![color] = blue | Hash
 
 #### Response
 200
