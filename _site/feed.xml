@@ -6,9 +6,50 @@
 </description>
     <link>http://dev.zype.com/</link>
     <atom:link href="http://dev.zype.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Tue, 25 Nov 2014 11:46:36 -0500</pubDate>
-    <lastBuildDate>Tue, 25 Nov 2014 11:46:36 -0500</lastBuildDate>
+    <pubDate>Thu, 27 Nov 2014 11:27:56 -0800</pubDate>
+    <lastBuildDate>Thu, 27 Nov 2014 11:27:56 -0800</lastBuildDate>
     <generator>Jekyll v2.3.0</generator>
+    
+      <item>
+        <title>Embedding a Player Using the Zype Platform</title>
+        <description>&lt;p&gt;The Zype Platform allows you to manage all of your video content in one place and
+then deliver your video content across any platform or device. In this tutorial, I
+will map out how to embed a video uploaded to the Zype Platform on any webpage.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Step 1&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Navigate to your video’s page and click on the Embed Code tab.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/kvfYeCS.png&quot; alt=&quot;Go to Embed Code&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Step 2&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Copy the embed code.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/yJLyMCp.png&quot; alt=&quot;Copy Embed Code&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Step 3&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Place the div with the id player_id where you want your player to appear on your webpage.
+We recommend that video embed codes are included before the closing body tag on your site.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;id=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;#39;player_id&amp;#39;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;script &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;type=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;text/javascript&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;https://api.zype.com/player.js&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/script&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;script &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;type=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;text/javascript&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;zype&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;player_key&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;3EytE8rlvjELg7sVXINIcA&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;zype&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;play&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;#player_id&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;5477416869702d6d03150000&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;autoplay&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/script&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+</description>
+        <pubDate>Thu, 27 Nov 2014 02:37:55 -0800</pubDate>
+        <link>http://dev.zype.com/posts/2014/11/27/embedding-player</link>
+        <guid isPermaLink="true">http://dev.zype.com/posts/2014/11/27/embedding-player</guid>
+        
+        
+        <category>developers</category>
+        
+      </item>
     
       <item>
         <title>Creating a Roku App Using the Zype Platform</title>
@@ -52,7 +93,7 @@ be updated via the Zype Platform.&lt;/p&gt;
 by clicking on the Publish App button so that your App’s API goes live.
 Then, you can use our API, Roku SDK, or reach out to Zype to help you build and publish the App on the Roku Channel Store!&lt;/p&gt;
 </description>
-        <pubDate>Tue, 25 Nov 2014 05:37:55 -0500</pubDate>
+        <pubDate>Tue, 25 Nov 2014 02:37:55 -0800</pubDate>
         <link>http://dev.zype.com/posts/2014/11/25/create-roku-app-on-zype</link>
         <guid isPermaLink="true">http://dev.zype.com/posts/2014/11/25/create-roku-app-on-zype</guid>
         
@@ -123,7 +164,7 @@ Then, you can use our API, Roku SDK, or reach out to Zype to help you build and 
 
 &lt;p&gt;&lt;img src=&quot;http://i.imgur.com/MHiAOmb.png&quot; alt=&quot;videos&quot; /&gt;&lt;/p&gt;
 </description>
-        <pubDate>Thu, 20 Nov 2014 05:37:55 -0500</pubDate>
+        <pubDate>Thu, 20 Nov 2014 02:37:55 -0800</pubDate>
         <link>http://dev.zype.com/posts/2014/11/20/uploading-vidoes-with-the-zype-cli</link>
         <guid isPermaLink="true">http://dev.zype.com/posts/2014/11/20/uploading-vidoes-with-the-zype-cli</guid>
         
@@ -163,7 +204,7 @@ Once we’ve imported all of your videos you will find them under the &lt;a href
 
 &lt;p&gt;&lt;img src=&quot;http://i.imgur.com/MHiAOmb.png&quot; alt=&quot;videos&quot; /&gt;&lt;/p&gt;
 </description>
-        <pubDate>Wed, 19 Nov 2014 05:37:55 -0500</pubDate>
+        <pubDate>Wed, 19 Nov 2014 02:37:55 -0800</pubDate>
         <link>http://dev.zype.com/posts/2014/11/19/adding-crunchyroll-as-a-video-source</link>
         <guid isPermaLink="true">http://dev.zype.com/posts/2014/11/19/adding-crunchyroll-as-a-video-source</guid>
         
@@ -213,9 +254,9 @@ from there.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;http://i.imgur.com/ZKliLxG.png&quot; alt=&quot;import videos&quot; /&gt;&lt;/p&gt;
 </description>
-        <pubDate>Tue, 18 Nov 2014 01:37:55 -0500</pubDate>
-        <link>http://dev.zype.com/posts/2014/11/18/search-youtube-in-zype</link>
-        <guid isPermaLink="true">http://dev.zype.com/posts/2014/11/18/search-youtube-in-zype</guid>
+        <pubDate>Mon, 17 Nov 2014 22:37:55 -0800</pubDate>
+        <link>http://dev.zype.com/posts/2014/11/17/search-youtube-in-zype</link>
+        <guid isPermaLink="true">http://dev.zype.com/posts/2014/11/17/search-youtube-in-zype</guid>
         
         
         <category>developers</category>
@@ -228,7 +269,7 @@ from there.&lt;/p&gt;
 
 &lt;p&gt;We’ve organized terms into groups by topic: General Terms, Video Technology Terms, Zype Platform Terms, and a few others. If you’re ever unsure of what we mean, check the glossary (permalinked on the nav bar) for a simple, straightforward explanation.&lt;/p&gt;
 </description>
-        <pubDate>Mon, 17 Nov 2014 21:37:55 -0500</pubDate>
+        <pubDate>Mon, 17 Nov 2014 18:37:55 -0800</pubDate>
         <link>http://dev.zype.com/posts/2014/11/17/announcing-the-glossary</link>
         <guid isPermaLink="true">http://dev.zype.com/posts/2014/11/17/announcing-the-glossary</guid>
         
@@ -269,7 +310,7 @@ the import video screen.&lt;/p&gt;
 
 &lt;p&gt;The video imports that you add will now be a part of your Zype video library.&lt;/p&gt;
 </description>
-        <pubDate>Wed, 05 Nov 2014 05:57:55 -0500</pubDate>
+        <pubDate>Wed, 05 Nov 2014 02:57:55 -0800</pubDate>
         <link>http://dev.zype.com/posts/2014/11/05/importing-youtube-channel-to-zype</link>
         <guid isPermaLink="true">http://dev.zype.com/posts/2014/11/05/importing-youtube-channel-to-zype</guid>
         
@@ -317,7 +358,7 @@ Page and repeat the steps for finding an additional YouTube Channel ID above.&lt
 
 &lt;p&gt;&lt;img src=&quot;http://i.imgur.com/Ef8qcgA.png&quot; alt=&quot;youtube user page&quot; /&gt;&lt;/p&gt;
 </description>
-        <pubDate>Tue, 04 Nov 2014 05:57:55 -0500</pubDate>
+        <pubDate>Tue, 04 Nov 2014 02:57:55 -0800</pubDate>
         <link>http://dev.zype.com/posts/2014/11/04/finding-youtube-channel-id</link>
         <guid isPermaLink="true">http://dev.zype.com/posts/2014/11/04/finding-youtube-channel-id</guid>
         
@@ -358,7 +399,7 @@ at how to nest caching statements in rails 4 for maximum effectiveness.&lt;/p&gt
 
 &lt;p&gt;&lt;a href=&quot;https://signalvnoise.com/posts/3112-how-basecamp-next-got-to-be-so-damn-fast-without-using-much-client-side-ui&quot;&gt;Here &lt;/a&gt;  &lt;a href=&quot;https://signalvnoise.com/posts/3113-how-key-based-cache-expiration-works&quot;&gt;- and here.&lt;/a&gt;&lt;/p&gt;
 </description>
-        <pubDate>Fri, 24 Oct 2014 06:57:55 -0400</pubDate>
+        <pubDate>Fri, 24 Oct 2014 03:57:55 -0700</pubDate>
         <link>http://dev.zype.com/posts/2014/10/24/russian-doll-caching</link>
         <guid isPermaLink="true">http://dev.zype.com/posts/2014/10/24/russian-doll-caching</guid>
         
@@ -414,102 +455,12 @@ current playlists to act as a playlist of related videos by following these same
 &lt;p&gt;&lt;em&gt;Check our &lt;a href=&quot;http://dev.zype.com/posts/2014/10/10/adding-zype-to-rails/&quot;&gt;previous post&lt;/a&gt;
 on how to set up your Rails App with the Zype Gem!&lt;/em&gt;&lt;/p&gt;
 </description>
-        <pubDate>Thu, 23 Oct 2014 02:37:55 -0400</pubDate>
-        <link>http://dev.zype.com/posts/2014/10/23/adding-a-playlist-of-related-videos</link>
-        <guid isPermaLink="true">http://dev.zype.com/posts/2014/10/23/adding-a-playlist-of-related-videos</guid>
+        <pubDate>Wed, 22 Oct 2014 23:37:55 -0700</pubDate>
+        <link>http://dev.zype.com/posts/2014/10/22/adding-a-playlist-of-related-videos</link>
+        <guid isPermaLink="true">http://dev.zype.com/posts/2014/10/22/adding-a-playlist-of-related-videos</guid>
         
         
         <category>videos</category>
-        
-      </item>
-    
-      <item>
-        <title>Checking your DPT request logs</title>
-        <description>&lt;p&gt;In a previous post, we covered how to use Zype’s Dynamic Player Technology (DPT).
-In this post, we’ll be covering how to use the DPT logs to see what requests are being made for your video content.
-For example, let’s say you’ve uploaded a batch of new videos and after the first 30 days, you’d like to get an idea
-of who’s viewing your content and what times of the day are most popular for viewing.&lt;/p&gt;
-
-&lt;h3 id=&quot;where-can-i-find-my-logs&quot;&gt;Where can I find my logs?&lt;/h3&gt;
-
-&lt;p&gt;After you’ve uploaded some video content to the Zype platform, log in through the &lt;a href=&quot;http://admin.zype.com/&quot;&gt;admin portal&lt;/a&gt;
-and navigate to the logs section under the settings dropdown menu. In this post, we’ll cover the request logs,
-so feel free to click on that link once you see the logs menu.  &lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/werWhEG.png&quot; alt=&quot;dpt logs navigation&quot; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;what-type-of-information-can-i-see-in-my-request-logs&quot;&gt;What type of information can I see in my request logs?&lt;/h3&gt;
-
-&lt;p&gt;The request logs screen shows you lots of information about the requests made to view your videos.
-Here are the most pertinent pieces of information:&lt;/p&gt;
-
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th&gt;Data&lt;/th&gt;
-      &lt;th&gt;Description&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;Video&lt;/td&gt;
-      &lt;td&gt;The video that was requested&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;IP Address&lt;/td&gt;
-      &lt;td&gt;The IP address of the requester&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;Country&lt;/td&gt;
-      &lt;td&gt;The country the request was made from&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;Device&lt;/td&gt;
-      &lt;td&gt;The device the request was made from&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;Player&lt;/td&gt;
-      &lt;td&gt;The player that served the video&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;Provider&lt;/td&gt;
-      &lt;td&gt;The provider of the content&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;Revenue Model&lt;/td&gt;
-      &lt;td&gt;The revenue model of the viewer&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;Status&lt;/td&gt;
-      &lt;td&gt;The status of the request&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;Created&lt;/td&gt;
-      &lt;td&gt;The date and time the request was created&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/Y8DzoV9.png&quot; alt=&quot;dpt logs&quot; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;how-can-i-search-the-request-logs-data&quot;&gt;How can I search the request logs data?&lt;/h3&gt;
-
-&lt;p&gt;The request logs screen gives you a snapshot of the most recent requests by default.&lt;/p&gt;
-
-&lt;p&gt;Sorting the request logs is easy: use the four drop down menus to select your search parameters
-and then click on the search button.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/XgruOt5.png&quot; alt=&quot;searching logs&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;Check our &lt;a href=&quot;http://dev.zype.com/posts/2014/10/10/adding-zype-to-rails/&quot;&gt;previous post&lt;/a&gt;
-on how to set up your Rails App with the Zype Gem!&lt;/em&gt;&lt;/p&gt;
-</description>
-        <pubDate>Mon, 20 Oct 2014 05:07:55 -0400</pubDate>
-        <link>http://dev.zype.com/posts/2014/10/20/checking-player-request-logs</link>
-        <guid isPermaLink="true">http://dev.zype.com/posts/2014/10/20/checking-player-request-logs</guid>
-        
-        
-        <category>dpt</category>
         
       </item>
     

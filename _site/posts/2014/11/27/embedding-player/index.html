@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Embedding a Player Using the Zype Platform</title>
+    <meta name="description" content="This is the devloper portal for Zype Media. Zype is Revenue and Reach Magic for Online Video. We help content owners deliver fully branded video experiences.
+">
+
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="canonical" href="http://dev.zype.com/posts/2014/11/27/embedding-player">
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+
+
+  <body>
+
+    <header id="header">
+  <div id="content">
+    <a href="/"><img src="http://i.imgur.com/v8SUe9t.png" alt="Zype" />
+    <h1 id="title">Developer Portal</h1></a>
+    <p>a knowledge base</p>
+    <br>
+    <p class="category"><a href="/api_docs/intro/" style="color: #8acfef;">API Documentation</a></p>
+    <p class="category"><a href="/blog/" style="color: #8acfef;">Blog</a></p>
+    <p class="category"><a href="/glossary/" style="color: #8acfef;">Glossary</a></p>
+    <p class="category"><a href="http://status.zype.com" style="color: #8acfef;">System Status</a></p>
+    <br>
+    © 2014 Zype Media Group
+  </div>
+</header>
+
+
+    <section id="main">
+      <div class="post">
+  <h1 class="post-title">Embedding a Player Using the Zype Platform</h1>
+  <p class="post-meta">Nov 27, 2014</p>
+  <article class="post-content">
+    <p>The Zype Platform allows you to manage all of your video content in one place and
+then deliver your video content across any platform or device. In this tutorial, I
+will map out how to embed a video uploaded to the Zype Platform on any webpage.</p>
+
+<p><strong>Step 1</strong></p>
+
+<p>Navigate to your video’s page and click on the Embed Code tab.</p>
+
+<p><img src="http://i.imgur.com/kvfYeCS.png" alt="Go to Embed Code" /></p>
+
+<p><strong>Step 2</strong></p>
+
+<p>Copy the embed code.</p>
+
+<p><img src="http://i.imgur.com/yJLyMCp.png" alt="Copy Embed Code" /></p>
+
+<p><strong>Step 3</strong></p>
+
+<p>Place the div with the id player_id where you want your player to appear on your webpage.
+We recommend that video embed codes are included before the closing body tag on your site.</p>
+
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&#39;player_id&#39;</span><span class="nt">&gt;&lt;/div&gt;</span>
+
+<span class="nt">&lt;script </span><span class="na">type=</span><span class="s">&quot;text/javascript&quot;</span> <span class="na">src=</span><span class="s">&quot;https://api.zype.com/player.js&quot;</span><span class="nt">&gt;&lt;/script&gt;</span>
+<span class="nt">&lt;script </span><span class="na">type=</span><span class="s">&quot;text/javascript&quot;</span><span class="nt">&gt;</span>
+<span class="nx">zype</span><span class="p">.</span><span class="nx">player_key</span> <span class="o">=</span><span class="s2">&quot;3EytE8rlvjELg7sVXINIcA&quot;</span><span class="p">;</span>
+<span class="nx">zype</span><span class="p">.</span><span class="nx">play</span><span class="p">(</span><span class="s2">&quot;#player_id&quot;</span><span class="p">,</span> <span class="s2">&quot;5477416869702d6d03150000&quot;</span><span class="p">,</span> <span class="p">{</span> <span class="nx">autoplay</span><span class="o">:</span> <span class="kc">true</span> <span class="p">});</span>
+<span class="nt">&lt;/script&gt;</span></code></pre></div>
+
+
+  </article>
+  <div id="disqus_thread"></div>
+  <script type="text/javascript">
+      /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+      var disqus_shortname = 'zypedev'; // required: replace example with your forum shortname
+
+      /* * * DON'T EDIT BELOW THIS LINE * * */
+      (function() {
+          var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+          dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+
+    </section>
+
+    <footer>
+</footer>
+
+
+  </body>
+
+</html>
