@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Embedding a Player Using the Zype Platform"
+title:  "Embedding a Video Using the Zype Platform"
 date:   2014-11-27 10:37:55
 categories: developers
 ---
