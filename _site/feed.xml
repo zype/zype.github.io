@@ -6,12 +6,12 @@
 </description>
     <link>http://dev.zype.com/</link>
     <atom:link href="http://dev.zype.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Fri, 28 Nov 2014 11:59:11 -0800</pubDate>
-    <lastBuildDate>Fri, 28 Nov 2014 11:59:11 -0800</lastBuildDate>
+    <pubDate>Fri, 28 Nov 2014 12:00:33 -0800</pubDate>
+    <lastBuildDate>Fri, 28 Nov 2014 12:00:33 -0800</lastBuildDate>
     <generator>Jekyll v2.3.0</generator>
     
       <item>
-        <title>Publishing a Roku Channel: Part III - Publishing a Private Channel</title>
+        <title>Publishing a Roku Channel: Part III - Publishing the Channel</title>
         <description>&lt;p&gt;In &lt;a href=&quot;http://dev.zype.com/posts/2014/11/28/develop-roku-app-with-zype-sdk/&quot;&gt;part two&lt;/a&gt; of publishing a Roku Channel, we described how to develop a Roku app using the Zype SDK and running it locally.
 In this tutorial, we will walk through how to publish a Private Roku Channel that you can
 share immediately with anyone that owns a Roku. If you are interested in publishing a Public Roku Channel, the steps are very similar, just you have to wait for Roku to approve your channel before it can be accessed in the Roku Channel Store. It is recommended that you first publish a private channel, test the channel out to beta users, and then publish the channel publicly.&lt;/p&gt;

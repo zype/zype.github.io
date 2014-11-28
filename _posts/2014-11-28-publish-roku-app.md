@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Publishing a Roku Channel: Part III - Publishing a Private Channel"
+title:  "Publishing a Roku Channel: Part III - Publishing the Channel"
 date:   2014-11-28 12:37:55
 categories: developers
 ---
