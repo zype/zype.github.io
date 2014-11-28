@@ -6,9 +6,147 @@
 </description>
     <link>http://dev.zype.com/</link>
     <atom:link href="http://dev.zype.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Thu, 27 Nov 2014 11:31:02 -0800</pubDate>
-    <lastBuildDate>Thu, 27 Nov 2014 11:31:02 -0800</lastBuildDate>
+    <pubDate>Fri, 28 Nov 2014 11:20:36 -0800</pubDate>
+    <lastBuildDate>Fri, 28 Nov 2014 11:20:36 -0800</lastBuildDate>
     <generator>Jekyll v2.3.0</generator>
+    
+      <item>
+        <title>Publishing a Roku Channel with Zype</title>
+        <description>&lt;p&gt;In a &lt;a href=&quot;http://dev.zype.com/posts/2014/11/28/develop-roku-app-with-zype-sdk/&quot;&gt;previous tutorial&lt;/a&gt;,
+we described how to develop a Roku app using the Zype SDK and testing it locally.
+In this tutorial, we will walk through how to publish a Private Roku Channel that you can
+share immediately. If you are interested in publishing a Public Roku Channel, the steps are very similar, just you have to wait for Roku to approve your channel before it can be accessed
+in the Roku Channel Store. It is recommended that you first publish a private channel, test the
+channel out to beta users, and then publish the channel publicly.&lt;/p&gt;
+
+&lt;p&gt;Before starting this tutorial, we will assume that you have already tested a Roku App
+locally and are a registered Roku developer.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Step 1&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Log into your Roku developer account and click Manage My Channels&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/K66GKpz.png&quot; alt=&quot;step 1&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Step 2&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Click add Private Channel.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/GeJiK58.png&quot; alt=&quot;step 2&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Step 3&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Fill out Channel Store information for your channel.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/HJqtL2G.png&quot; alt=&quot;step 3&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Step 4&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Fill our Channel Descriptions for your channel. You will need to have an HD Poster
+that is a 290 x 218 JPEG file and an SD Poster that is a 214 x 144 JPEG file.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/pFA3aHQ.png&quot; alt=&quot;step 4&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Step 5&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;You can optionally upload screenshots of your Roku Channel. Read the &lt;a href=&quot;http://sdkdocs.roku.com/display/sdkdoc/Channel+Packaging+And+Publishing#ChannelPackagingAndPublishing-38GeneratingScreenshotsSincev31onRoku1andv43onRoku2&quot;&gt;Roku documentation&lt;/a&gt; on how to generate a screenshot.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/lMtmsak.png&quot; alt=&quot;step 5&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Step 6&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Last, you will need to upload your application package.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/xufsqQC.png&quot; alt=&quot;step 6&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Follow the instructions from the &lt;a href=&quot;http://sdkdocs.roku.com/display/sdkdoc/Channel+Packaging+And+Publishing#ChannelPackagingAndPublishing-30PackagingYourApplication&quot;&gt;Roku documentation&lt;/a&gt; on how to generate a key and then package your channel.&lt;/p&gt;
+
+&lt;p&gt;Once you have downloaded your Roku Channel package, upload the application package and click the “Publish” arrow. You will get an access code url that can be used to download the private
+Roku channel on your individual Roku account.&lt;/p&gt;
+</description>
+        <pubDate>Fri, 28 Nov 2014 04:37:55 -0800</pubDate>
+        <link>http://dev.zype.com/posts/2014/11/28/publish-roku-app</link>
+        <guid isPermaLink="true">http://dev.zype.com/posts/2014/11/28/publish-roku-app</guid>
+        
+        
+        <category>developers</category>
+        
+      </item>
+    
+      <item>
+        <title>Develop Your Roku App Using the Zype SDK</title>
+        <description>&lt;p&gt;In a &lt;a href=&quot;http://dev.zype.com/posts/2014/11/25/create-roku-app-on-zype/&quot;&gt;previous tutorial&lt;/a&gt;,
+we described how to create a Roku App using the Zype Platform. In this tutorial,
+we will walk through how to develop a Roku app using the Zype SDK and testing it locally.&lt;/p&gt;
+
+&lt;p&gt;To complete this tutorial, we expect that you have knowledge of git and GitHub. You
+should have some knowledge of programming, but do not have to have prior experience
+with the &lt;a href=&quot;http://sdkdocs.roku.com/display/sdkdoc/BrightScript+Language+Reference&quot;&gt;BrightScript language&lt;/a&gt;
+that Roku uses to create Roku Channels (our SDK does all the heavy lifting for you!).&lt;/p&gt;
+
+&lt;p&gt;Also, you will need to have a Roku available to test out your app and a developer account with Roku to publish the app. &lt;a href=&quot;https://www.roku.com/developer&quot;&gt;Register here&lt;/a&gt; for a Roku developer account.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Step 1&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;You should have already created a Roku App on the Zype Platform. If you need help
+creating a Roku App from the Zype Platform, please read our &lt;a href=&quot;http://dev.zype.com/posts/2014/11/25/create-roku-app-on-zype/&quot;&gt;previous tutorial&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Step 2&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Now that you have a Roku App created on the Zype Platform, you will need to set up
+your Roku to be in developer mode. This will allow you to test out your app before you publish it.&lt;/p&gt;
+
+&lt;p&gt;To set up your Roku for developer mode, navigate to the home screen of your Roku
+and with your Roku remote control click the following: Home 3x, Up 2x, Right, Left, Right, Left, Right.&lt;/p&gt;
+
+&lt;p&gt;You will be prompted to enter a developer password for the Roku device and then follow
+instructions to restart the device. Record the password that you enter because it
+will be used to load your channel in development mode.&lt;/p&gt;
+
+&lt;p&gt;You will need to also record your Roku Player’s IP address. In your Roku, go to
+Settings &amp;gt; Network.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Step 3&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Now that your Roku is set up for developer mode and you have recorded your Developer Password
+and your Roku Player’s IP address, you are set to grab the Zype Roku SDK from our GitHub account.&lt;/p&gt;
+
+&lt;p&gt;Clone the repo &lt;a href=&quot;https://github.com/zype/zype-roku&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Step 4&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Once you have the code on your computer, you will need to do 3 things to customize the Roku app
+for your own app.&lt;/p&gt;
+
+&lt;p&gt;First, you need to open the app.mk file and set the ROKU_DEV_TARGET to your Roku Player’s IP
+address and set the DEVPASSWORD to your Developer Password.&lt;/p&gt;
+
+&lt;p&gt;Second, you will need to change the hard coded keys/initialization variables that are
+located in source/objects/config.brs. You will be able to find your api_key, app_key, and
+player_key in the Zype Platform.&lt;/p&gt;
+
+&lt;p&gt;Third, you need to make sure that the APPNAME in the Makefile matches the name of the Roku App’s directory that you cloned into. If you do not change anything from cloning, the Makefile and the
+directory name should both be zype-roku.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Step 5&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Now, its time to run your Roku App in the developer environment. Navigate to the Roku app’s directory in your terminal and run:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ make install&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This will build the app onto your local Roku App. Once the build is finished, your will automatically be loaded onto your Roku. Test to make sure everything works appropriately.&lt;/p&gt;
+
+&lt;p&gt;Now that your Roku app is built, you will need to publish the app to the Roku Channel store.
+&lt;a href=&quot;'http://dev.zype.com/posts/2014/11/28/publish-roku-app/'&quot;&gt;Click here&lt;/a&gt; to read how to publish your Roku App.&lt;/p&gt;
+</description>
+        <pubDate>Fri, 28 Nov 2014 02:37:55 -0800</pubDate>
+        <link>http://dev.zype.com/posts/2014/11/28/develop-roku-app-with-zype-sdk</link>
+        <guid isPermaLink="true">http://dev.zype.com/posts/2014/11/28/develop-roku-app-with-zype-sdk</guid>
+        
+        
+        <category>developers</category>
+        
+      </item>
     
       <item>
         <title>Embedding a Video Player Using the Zype Platform</title>
@@ -364,103 +502,6 @@ Page and repeat the steps for finding an additional YouTube Channel ID above.&lt
         
         
         <category>developers</category>
-        
-      </item>
-    
-      <item>
-        <title>Russian Doll Caching in Rails 4</title>
-        <description>&lt;p&gt;While developing, we always keep the user experience in mind and one of the most important things for a content heavy application
-is load times. In rails, this usually comes down to how quickly you can render the requested view. Today I want to take a quick look
-at how to nest caching statements in rails 4 for maximum effectiveness.&lt;/p&gt;
-
-&lt;h3 id=&quot;what-is-russian-doll-caching&quot;&gt;What is Russian doll caching?&lt;/h3&gt;
-
-&lt;p&gt;Russian-doll caching is a convention used in Rails 4 to improve the load time of your views. It involves using nested fragment caching statements so that only the page content that has changed since the last request needs to be regenerated. All the other elements of the page are simply read from their still-valid caches.&lt;/p&gt;
-
-&lt;p&gt;Here’s an example of some nested fragment caching statements in a view for a gallery of videos:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/cCQLi4g.png&quot; alt=&quot;nested cache statements&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Each level of nesting ensures that you only pay to read the caches of the content nested above it, not regenerate it, when the content nested below it changes. This has a reverse cascading effect, so the more strategic you can be with your caching statements, the less time you’ll spend trying to re-render the page.&lt;/p&gt;
-
-&lt;h3 id=&quot;where-should-i-start-adding-russian-doll-caching&quot;&gt;Where should I start adding Russian doll caching?&lt;/h3&gt;
-
-&lt;p&gt;The parts of your app that are viewed most often will likely be your best targets for russian doll caching. Anywhere that you’re displaying a mix of dynamic and static content is also a good target because you can eliminate the need to reload the entire page when only a portion of the content has changed.&lt;/p&gt;
-
-&lt;p&gt;Take a look at your views and see if you can compartmentalize them based on content, this will be easier if you’re already using partials in the same way.&lt;/p&gt;
-
-&lt;p&gt;Here’s a visual example of the nested nature of the caching statements from the code above:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/8PxC8mg.png&quot; alt=&quot;seeing the nests in your view&quot; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;further-reading&quot;&gt;Further reading&lt;/h3&gt;
-
-&lt;p&gt;You can read up about cache expiration and best practices from DHH himself:&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://signalvnoise.com/posts/3112-how-basecamp-next-got-to-be-so-damn-fast-without-using-much-client-side-ui&quot;&gt;Here &lt;/a&gt;  &lt;a href=&quot;https://signalvnoise.com/posts/3113-how-key-based-cache-expiration-works&quot;&gt;- and here.&lt;/a&gt;&lt;/p&gt;
-</description>
-        <pubDate>Fri, 24 Oct 2014 03:57:55 -0700</pubDate>
-        <link>http://dev.zype.com/posts/2014/10/24/russian-doll-caching</link>
-        <guid isPermaLink="true">http://dev.zype.com/posts/2014/10/24/russian-doll-caching</guid>
-        
-        
-        <category>developers</category>
-        
-      </item>
-    
-      <item>
-        <title>Adding a playlist of related videos</title>
-        <description>&lt;p&gt;Let’s say you’ve already got some video content on your zype destination site, but now you’d like to recommend
-additional content based on what your users are watching. The solution we’ve implemented is called related videos.
-In this post, we’ll be covering how to create a playlist of related videos that are recommended to a viewer
-based on what the video they’re watching. Here’s an example of the finished product:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/QGhFTT1.png&quot; alt=&quot;related playlist&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;The related videos section is automatically created for each video on your site, but if you’d like to be more
-specific about which videos are displayed there, follow along as we set up a playlist of related videos.&lt;/em&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;how-do-i-set-up-a-playlist-of-related-videos&quot;&gt;How do I set up a playlist of related videos?&lt;/h3&gt;
-
-&lt;p&gt;Setting up the playlist can be done from the &lt;a href=&quot;http://admin.zype.com/&quot;&gt;admin portal&lt;/a&gt;. Navigate to the playlist
-section on the sidebar and and click “New Playlist”. Follow through the menu and create a playlist (make sure it’s active!).&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/2yzWH9X.png&quot; alt=&quot;playlist navigation&quot; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;how-can-i-choose-which-videos-are-shown-in-the-playlist&quot;&gt;How can I choose which videos are shown in the playlist?&lt;/h3&gt;
-
-&lt;p&gt;This is an easy one. Use the “Add Videos” button to select which videos will appear under the related videos section.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/nKIFmTP.png&quot; alt=&quot;add videos navigation&quot; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;how-can-i-choose-which-videos-display-the-playlist&quot;&gt;How can I choose which videos display the playlist?&lt;/h3&gt;
-
-&lt;p&gt;Choosing the videos that will have your playlist displayed is done through the playlist edit screen. You can get there
-quickly by clicking on the name of your playlist here:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/XSvwXVR.png&quot; alt=&quot;edit your playlist&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Use our multiselector to search for the videos you want and click on them to move them into selected videos.
-Click “Save Changes” when you’re done.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/xE9fM8n.png&quot; alt=&quot;choose related videos&quot; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;lets-confirm&quot;&gt;Let’s confirm&lt;/h3&gt;
-
-&lt;p&gt;You should take a second and make sure everything’s going according to plan. Go to your site and view a video
-that you added to selected videos in the previous step. Below the video, under the section “Related Videos”,
-you should see the playlist you just created and the first few videos you added. You can also update any of your
-current playlists to act as a playlist of related videos by following these same steps.&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;Check our &lt;a href=&quot;http://dev.zype.com/posts/2014/10/10/adding-zype-to-rails/&quot;&gt;previous post&lt;/a&gt;
-on how to set up your Rails App with the Zype Gem!&lt;/em&gt;&lt;/p&gt;
-</description>
-        <pubDate>Wed, 22 Oct 2014 23:37:55 -0700</pubDate>
-        <link>http://dev.zype.com/posts/2014/10/22/adding-a-playlist-of-related-videos</link>
-        <guid isPermaLink="true">http://dev.zype.com/posts/2014/10/22/adding-a-playlist-of-related-videos</guid>
-        
-        
-        <category>videos</category>
         
       </item>
     
