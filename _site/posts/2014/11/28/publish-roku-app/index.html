@@ -42,12 +42,9 @@
   <h1 class="post-title">Publishing a Roku Channel: Part III - Publishing a Private Channel</h1>
   <p class="post-meta">Nov 28, 2014</p>
   <article class="post-content">
-    <p>In a <a href="http://dev.zype.com/posts/2014/11/28/develop-roku-app-with-zype-sdk/">previous tutorial</a>,
-we described how to develop a Roku app using the Zype SDK and testing it locally.
+    <p>In <a href="http://dev.zype.com/posts/2014/11/28/develop-roku-app-with-zype-sdk/">part two</a> of publishing a Roku Channel, we described how to develop a Roku app using the Zype SDK and running it locally.
 In this tutorial, we will walk through how to publish a Private Roku Channel that you can
-share immediately. If you are interested in publishing a Public Roku Channel, the steps are very similar, just you have to wait for Roku to approve your channel before it can be accessed
-in the Roku Channel Store. It is recommended that you first publish a private channel, test the
-channel out to beta users, and then publish the channel publicly.</p>
+share immediately with anyone that owns a Roku. If you are interested in publishing a Public Roku Channel, the steps are very similar, just you have to wait for Roku to approve your channel before it can be accessed in the Roku Channel Store. It is recommended that you first publish a private channel, test the channel out to beta users, and then publish the channel publicly.</p>
 
 <p>Before starting this tutorial, we will assume that you have already tested a Roku App
 locally and are a registered Roku developer.</p>
@@ -60,15 +57,17 @@ locally and are a registered Roku developer.</p>
 
 <p><strong>Step 2</strong></p>
 
-<p>Click add Private Channel.</p>
+<p>Click add Private Channel. If you want to publish a Public Channel, click add Public Channel.
+The steps are the same for private and public channels, except that you will need to
+give contact information in case Roku has questions when they are reviewing your app.</p>
 
 <p><img src="http://i.imgur.com/GeJiK58.png" alt="step 2" /></p>
 
 <p><strong>Step 3</strong></p>
 
-<p>Fill out Channel Store information for your channel.</p>
+<p>Fill out Channel Properties for your channel.</p>
 
-<p><img src="http://i.imgur.com/HJqtL2G.png" alt="step 3" /></p>
+<p><img src="http://i.imgur.com/VZDUXsL.png" alt="step 3" /></p>
 
 <p><strong>Step 4</strong></p>
 
@@ -85,14 +84,12 @@ that is a 290 x 218 JPEG file and an SD Poster that is a 214 x 144 JPEG file.</p
 
 <p><strong>Step 6</strong></p>
 
-<p>Last, you will need to upload your application package.</p>
-
-<p><img src="http://i.imgur.com/xufsqQC.png" alt="step 6" /></p>
-
-<p>Follow the instructions from the <a href="http://sdkdocs.roku.com/display/sdkdoc/Channel+Packaging+And+Publishing#ChannelPackagingAndPublishing-30PackagingYourApplication">Roku documentation</a> on how to generate a key and then package your channel.</p>
+<p>Last, you will need to upload your application package. Follow the instructions from the <a href="http://sdkdocs.roku.com/display/sdkdoc/Channel+Packaging+And+Publishing#ChannelPackagingAndPublishing-30PackagingYourApplication">Roku documentation</a> on how to generate a key and then package your channel.</p>
 
 <p>Once you have downloaded your Roku Channel package, upload the application package and click the “Publish” arrow. You will get an access code url that can be used to download the private
 Roku channel on your individual Roku account.</p>
+
+<p><img src="http://i.imgur.com/xufsqQC.png" alt="step 6" /></p>
 
 <p><strong>More tutorials in this series:</strong></p>
 
