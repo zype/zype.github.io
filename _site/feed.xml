@@ -6,12 +6,12 @@
 </description>
     <link>http://dev.zype.com/</link>
     <atom:link href="http://dev.zype.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Fri, 28 Nov 2014 11:21:31 -0800</pubDate>
-    <lastBuildDate>Fri, 28 Nov 2014 11:21:31 -0800</lastBuildDate>
+    <pubDate>Fri, 28 Nov 2014 11:36:36 -0800</pubDate>
+    <lastBuildDate>Fri, 28 Nov 2014 11:36:36 -0800</lastBuildDate>
     <generator>Jekyll v2.3.0</generator>
     
       <item>
-        <title>Publishing a Roku Channel with Zype</title>
+        <title>Publishing a Roku Channel: Part III - Publishing a Private Channel</title>
         <description>&lt;p&gt;In a &lt;a href=&quot;http://dev.zype.com/posts/2014/11/28/develop-roku-app-with-zype-sdk/&quot;&gt;previous tutorial&lt;/a&gt;,
 we described how to develop a Roku app using the Zype SDK and testing it locally.
 In this tutorial, we will walk through how to publish a Private Roku Channel that you can
@@ -63,6 +63,12 @@ that is a 290 x 218 JPEG file and an SD Poster that is a 214 x 144 JPEG file.&lt
 
 &lt;p&gt;Once you have downloaded your Roku Channel package, upload the application package and click the “Publish” arrow. You will get an access code url that can be used to download the private
 Roku channel on your individual Roku account.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;More tutorials in this series:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Part I: &lt;a href=&quot;http://dev.zype.com/posts/2014/11/25/create-roku-app-on-zype/&quot;&gt;Creating a Roku Channel using the Zype Platform&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Part II: &lt;a href=&quot;http://dev.zype.com/posts/2014/11/28/develop-roku-app-with-zype-sdk/&quot;&gt;Developing the Roku Channel using the Zype SDK&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Fri, 28 Nov 2014 04:37:55 -0800</pubDate>
         <link>http://dev.zype.com/posts/2014/11/28/publish-roku-app</link>
@@ -74,7 +80,7 @@ Roku channel on your individual Roku account.&lt;/p&gt;
       </item>
     
       <item>
-        <title>Developing Your Roku App Using the Zype SDK</title>
+        <title>Publishing a Roku Channel: Part II - Developing Your Roku App Using the Zype SDK</title>
         <description>&lt;p&gt;In a &lt;a href=&quot;http://dev.zype.com/posts/2014/11/25/create-roku-app-on-zype/&quot;&gt;previous tutorial&lt;/a&gt;,
 we described how to create a Roku App using the Zype Platform. In this tutorial,
 we will walk through how to develop a Roku app using the Zype SDK and testing it locally.&lt;/p&gt;
@@ -137,7 +143,13 @@ directory name should both be zype-roku.&lt;/p&gt;
 &lt;p&gt;This will build the app onto your local Roku App. Once the build is finished, your will automatically be loaded onto your Roku. Test to make sure everything works appropriately.&lt;/p&gt;
 
 &lt;p&gt;Now that your Roku app is built, you will need to publish the app to the Roku Channel store.
-&lt;a href=&quot;'http://dev.zype.com/posts/2014/11/28/publish-roku-app/'&quot;&gt;Click here&lt;/a&gt; to read how to publish your Roku App.&lt;/p&gt;
+&lt;a href=&quot;http://dev.zype.com/posts/2014/11/28/publish-roku-app/&quot;&gt;Click here&lt;/a&gt; to read how to publish your Roku App.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;More tutorials in this series:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Part I: &lt;a href=&quot;http://dev.zype.com/posts/2014/11/25/create-roku-app-on-zype/&quot;&gt;Creating a Roku Channel using the Zype Platform&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Part III: &lt;a href=&quot;http://dev.zype.com/posts/2014/11/28/publish-roku-app/&quot;&gt;Publishing the Private Roku Channel&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Fri, 28 Nov 2014 02:37:55 -0800</pubDate>
         <link>http://dev.zype.com/posts/2014/11/28/develop-roku-app-with-zype-sdk</link>
@@ -190,7 +202,7 @@ We recommend that video embed codes are included before the closing body tag on 
       </item>
     
       <item>
-        <title>Creating a Roku App Using the Zype Platform</title>
+        <title>Publishing a Roku Channel: Part I - Creating a Roku App Using the Zype Platform</title>
         <description>&lt;p&gt;One of the biggest strengths of the Zype Platfom is its ability to distribute your
 video content on multiple platforms like Roku. In this tutorial, we will describe how to use
 the Zype Platform to create a Roku app that looks like the screen shot below.&lt;/p&gt;
@@ -230,6 +242,11 @@ be updated via the Zype Platform.&lt;/p&gt;
 &lt;p&gt;Once you create your Roku App, you will need to publish the App on the Zype Platform
 by clicking on the Publish App button so that your App’s API goes live.
 Then, you can use our API, Roku SDK, or reach out to Zype to help you build and publish the App on the Roku Channel Store!&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;More tutorials in this series:&lt;/strong&gt;
+Part II: &lt;a href=&quot;http://dev.zype.com/posts/2014/11/28/develop-roku-app-with-zype-sdk/&quot;&gt;Developing the Roku Channel using the Zype SDK&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Part III: &lt;a href=&quot;http://dev.zype.com/posts/2014/11/28/publish-roku-app/&quot;&gt;Publishing the Private Roku Channel&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Tue, 25 Nov 2014 02:37:55 -0800</pubDate>
         <link>http://dev.zype.com/posts/2014/11/25/create-roku-app-on-zype</link>

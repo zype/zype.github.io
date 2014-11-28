@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Publishing a Roku Channel with Zype"
+title:  "Publishing a Roku Channel: Part III - Publishing a Private Channel"
 date:   2014-11-28 12:37:55
 categories: developers
 ---
@@ -56,3 +56,9 @@ Follow the instructions from the [Roku documentation](http://sdkdocs.roku.com/di
 
 Once you have downloaded your Roku Channel package, upload the application package and click the "Publish" arrow. You will get an access code url that can be used to download the private
 Roku channel on your individual Roku account.
+
+**More tutorials in this series:**
+
+Part I: [Creating a Roku Channel using the Zype Platform](http://dev.zype.com/posts/2014/11/25/create-roku-app-on-zype/)
+
+Part II: [Developing the Roku Channel using the Zype SDK](http://dev.zype.com/posts/2014/11/28/develop-roku-app-with-zype-sdk/)
