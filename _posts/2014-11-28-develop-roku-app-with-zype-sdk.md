@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Develop Your Roku App Using the Zype SDK"
+title:  "Developing Your Roku App Using the Zype SDK"
 date:   2014-11-28 10:37:55
 categories: developers
 ---
