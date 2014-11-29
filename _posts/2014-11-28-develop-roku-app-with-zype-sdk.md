@@ -42,7 +42,7 @@ Settings > Network to find it.
 Now that your Roku is set up for developer mode and you have recorded your Developer Password
 and your Roku Player's IP address, you are set to grab the Zype Roku SDK from our GitHub account.
 
-Clone the repo [here](#).
+Clone the repo [here](http://github.com/zype/zype-roku).
 
 **Step 4**
 
