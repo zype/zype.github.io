@@ -6,9 +6,71 @@
 </description>
     <link>http://dev.zype.com/</link>
     <atom:link href="http://dev.zype.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Fri, 28 Nov 2014 12:00:41 -0800</pubDate>
-    <lastBuildDate>Fri, 28 Nov 2014 12:00:41 -0800</lastBuildDate>
+    <pubDate>Fri, 28 Nov 2014 18:04:06 -0800</pubDate>
+    <lastBuildDate>Fri, 28 Nov 2014 18:04:06 -0800</lastBuildDate>
     <generator>Jekyll v2.3.0</generator>
+    
+      <item>
+        <title>Sample Rails App using the Zype Platform and API</title>
+        <description>&lt;p&gt;We want to make the Zype Platform accessible to as many types of developers as possible. To do this,
+we have provided &lt;a href=&quot;http://dev.zype.com/api_docs/intro/&quot;&gt;API documentation&lt;/a&gt; and are happy
+to &lt;a href=&quot;mailto:contact@zypemedia.com&quot;&gt;talk with you&lt;/a&gt; about creating a turnkey app.&lt;/p&gt;
+
+&lt;p&gt;As a developer, I always like to learn by example, so we have created
+a template Rails app to show you what you can do with the Zype Platform using our Ruby Gem and also provide you with a starter template if you want to build off of it for your own web app.&lt;/p&gt;
+
+&lt;p&gt;We intentionally kept the styling simple and used &lt;a href=&quot;http://getbootstrap.com/&quot;&gt;Bootstrap&lt;/a&gt; if
+you would like to use this example as a foundation to your Rails app.
+Feel free to clone the repo &lt;a href=&quot;https://github.com/zype/zype-rails&quot;&gt;here&lt;/a&gt;. You will
+need your Zype API and Player Keys from the Zype Platform. The README has directions
+to how you can find your keys.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;The Zype Rails Sample App has the following pages and features.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Home Page&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;The homepage includes all of your playlists, a link in the header to view all videos,
+and a search box to search for a specific video. The Playlists can be configured
+in the Zype Platform and can be fetched via the Ruby Gem.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/XdD1n7n.png&quot; alt=&quot;homepage&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Playlist Page&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;You can click on any playlist to view all the videos that belong to that playlist. You can sort
+the videos based on release date, name, or popularity. Also note that there are Zype Videos
+and YouTube videos in the same player. The Zype Platform and Zype API allows you to
+seamlessly combine the two.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/uDlDPcK.png&quot; alt=&quot;playlist page&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Browse all Videos&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;The browse all videos uses the Ruby Gem to query the Zype API to get all the videos.
+When you hover over a video, you will see the description. Feel free to read the &lt;a href=&quot;http://dev.zype.com/api_docs/videos/&quot;&gt;Video API Documentation&lt;/a&gt; to see what other information
+gtes returned when you query for the videos.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/ys7ZfD3.png&quot; alt=&quot;browse videos&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Video Page&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;When you click on a video’s thumbnail, you get directed to the video’s page. The video’s page
+contains the title, description, and video player. The Zype API will deliver the appropriate
+player based on where the video source comes from and what Player Rules you set.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/EjY7wlU.png&quot; alt=&quot;video page&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Have questions about implementing our sample Rails app or want to see examples of
+other features or in other languages? Feel free to comment below!&lt;/p&gt;
+</description>
+        <pubDate>Sat, 29 Nov 2014 04:37:55 -0800</pubDate>
+        <link>http://dev.zype.com/posts/2014/11/29/sample-rails-zype</link>
+        <guid isPermaLink="true">http://dev.zype.com/posts/2014/11/29/sample-rails-zype</guid>
+        
+        
+        <category>developers</category>
+        
+      </item>
     
       <item>
         <title>Publishing a Roku Channel: Part III - Publishing the Channel</title>
@@ -115,7 +177,7 @@ Settings &amp;gt; Network to find it.&lt;/p&gt;
 &lt;p&gt;Now that your Roku is set up for developer mode and you have recorded your Developer Password
 and your Roku Player’s IP address, you are set to grab the Zype Roku SDK from our GitHub account.&lt;/p&gt;
 
-&lt;p&gt;Clone the repo &lt;a href=&quot;#&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Clone the repo &lt;a href=&quot;http://github.com/zype/zype-roku&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Step 4&lt;/strong&gt;&lt;/p&gt;
 
@@ -466,54 +528,6 @@ the import video screen.&lt;/p&gt;
         <pubDate>Wed, 05 Nov 2014 02:57:55 -0800</pubDate>
         <link>http://dev.zype.com/posts/2014/11/05/importing-youtube-channel-to-zype</link>
         <guid isPermaLink="true">http://dev.zype.com/posts/2014/11/05/importing-youtube-channel-to-zype</guid>
-        
-        
-        <category>developers</category>
-        
-      </item>
-    
-      <item>
-        <title>Finding a YouTube Channel ID</title>
-        <description>&lt;p&gt;To import a YouTube Channel into the Zype Platform, you need to have its Channel ID.
-This ID can be tricky to find because the Channel ID and User ID are very similar.
-Below are the options and steps to finding a YouTube Channel ID
-to input into the Zype Platform.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Finding your YouTube Channel ID:&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;1. Log into your YouTube account and visit &lt;a href=&quot;https://www.youtube.com/account_advanced&quot;&gt;advanced account settings&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;2. Your Channel ID can be found in your Account Information&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/fh76FMH.png&quot; alt=&quot;channel id instructions&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Finding an additional YouTube Channel ID:&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;YouTube is in the process of moving from videos belonging to Users to videos
-belonging to Channels. Because of this migration, it is tricky to get your Channel ID because often, YouTube treats User and Channel as the same thing. It is important to make sure that you are getting the Channel ID and not the User ID for the Zype Platform.&lt;/p&gt;
-
-&lt;p&gt;1. Visit a YouTube video that is in the Channel you want and click on the channel name
-below the Video Player.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/28no7XC.png&quot; alt=&quot;youtube video&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;2. You will be taken to the Channel Page. The Channel ID is at the end of the URL.
-For example, for Last Week Tonight with John Oliver, the channel ID is UC3XTzVzaHQEd30rQbuvCtTQ.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/bisJffi.png&quot; alt=&quot;youtube channel page&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Common Mistakes&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Since YouTube is changing from User to Channel Pages, the User Page looks very similar
-to the Channel Page. The URL for the User Page has &lt;strong&gt;/user/&lt;/strong&gt; in it, not &lt;strong&gt;/channel/&lt;/strong&gt;. If
-you find yourself on the User Page instead of the Channel Page, click on a video in the User
-Page and repeat the steps for finding an additional YouTube Channel ID above.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/Ef8qcgA.png&quot; alt=&quot;youtube user page&quot; /&gt;&lt;/p&gt;
-</description>
-        <pubDate>Tue, 04 Nov 2014 02:57:55 -0800</pubDate>
-        <link>http://dev.zype.com/posts/2014/11/04/finding-youtube-channel-id</link>
-        <guid isPermaLink="true">http://dev.zype.com/posts/2014/11/04/finding-youtube-channel-id</guid>
         
         
         <category>developers</category>
