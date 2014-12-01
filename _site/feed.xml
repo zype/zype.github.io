@@ -6,9 +6,41 @@
 </description>
     <link>http://dev.zype.com/</link>
     <atom:link href="http://dev.zype.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Fri, 28 Nov 2014 18:04:06 -0800</pubDate>
-    <lastBuildDate>Fri, 28 Nov 2014 18:04:06 -0800</lastBuildDate>
+    <pubDate>Mon, 01 Dec 2014 16:06:54 -0500</pubDate>
+    <lastBuildDate>Mon, 01 Dec 2014 16:06:54 -0500</lastBuildDate>
     <generator>Jekyll v2.3.0</generator>
+    
+      <item>
+        <title>Accessing your API and Player Keys</title>
+        <description>&lt;p&gt;To interact with the Zype API, you will need your API Key and Player Key. This
+tutorial will show you how to find these keys from the Zype Platform.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Step 1&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Click the settings icon in the top navbar.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/MZmuINU.png&quot; alt=&quot;click settings&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Step 2&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;In the dropdown, select API&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/6CIjtZG.png&quot; alt=&quot;select API&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Step 3&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;You will be directed to the API credentials page.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/x3W3bYG.png&quot; alt=&quot;api player keys&quot; /&gt;&lt;/p&gt;
+</description>
+        <pubDate>Mon, 01 Dec 2014 07:37:55 -0500</pubDate>
+        <link>http://dev.zype.com/posts/2014/12/01/api-keys</link>
+        <guid isPermaLink="true">http://dev.zype.com/posts/2014/12/01/api-keys</guid>
+        
+        
+        <category>developers</category>
+        
+      </item>
     
       <item>
         <title>Sample Rails App using the Zype Platform and API</title>
@@ -63,7 +95,7 @@ player based on where the video source comes from and what Player Rules you set.
 &lt;p&gt;Have questions about implementing our sample Rails app or want to see examples of
 other features or in other languages? Feel free to comment below!&lt;/p&gt;
 </description>
-        <pubDate>Sat, 29 Nov 2014 04:37:55 -0800</pubDate>
+        <pubDate>Sat, 29 Nov 2014 07:37:55 -0500</pubDate>
         <link>http://dev.zype.com/posts/2014/11/29/sample-rails-zype</link>
         <guid isPermaLink="true">http://dev.zype.com/posts/2014/11/29/sample-rails-zype</guid>
         
@@ -129,7 +161,7 @@ Roku channel on your individual Roku account.&lt;/p&gt;
 
 &lt;p&gt;Part II: &lt;a href=&quot;http://dev.zype.com/posts/2014/11/28/develop-roku-app-with-zype-sdk/&quot;&gt;Developing the Roku Channel using the Zype SDK&lt;/a&gt;&lt;/p&gt;
 </description>
-        <pubDate>Fri, 28 Nov 2014 04:37:55 -0800</pubDate>
+        <pubDate>Fri, 28 Nov 2014 07:37:55 -0500</pubDate>
         <link>http://dev.zype.com/posts/2014/11/28/publish-roku-app</link>
         <guid isPermaLink="true">http://dev.zype.com/posts/2014/11/28/publish-roku-app</guid>
         
@@ -211,7 +243,7 @@ directory name should both be zype-roku.&lt;/p&gt;
 
 &lt;p&gt;Part III: &lt;a href=&quot;http://dev.zype.com/posts/2014/11/28/publish-roku-app/&quot;&gt;Publishing the Private Roku Channel&lt;/a&gt;&lt;/p&gt;
 </description>
-        <pubDate>Fri, 28 Nov 2014 02:37:55 -0800</pubDate>
+        <pubDate>Fri, 28 Nov 2014 05:37:55 -0500</pubDate>
         <link>http://dev.zype.com/posts/2014/11/28/develop-roku-app-with-zype-sdk</link>
         <guid isPermaLink="true">http://dev.zype.com/posts/2014/11/28/develop-roku-app-with-zype-sdk</guid>
         
@@ -252,7 +284,7 @@ We recommend that video embed codes are included before the closing body tag on 
 &lt;span class=&quot;nt&quot;&gt;&amp;lt;/script&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 </description>
-        <pubDate>Thu, 27 Nov 2014 02:37:55 -0800</pubDate>
+        <pubDate>Thu, 27 Nov 2014 05:37:55 -0500</pubDate>
         <link>http://dev.zype.com/posts/2014/11/27/embedding-player</link>
         <guid isPermaLink="true">http://dev.zype.com/posts/2014/11/27/embedding-player</guid>
         
@@ -308,7 +340,7 @@ Part II: &lt;a href=&quot;http://dev.zype.com/posts/2014/11/28/develop-roku-app-
 
 &lt;p&gt;Part III: &lt;a href=&quot;http://dev.zype.com/posts/2014/11/28/publish-roku-app/&quot;&gt;Publishing the Private Roku Channel&lt;/a&gt;&lt;/p&gt;
 </description>
-        <pubDate>Tue, 25 Nov 2014 02:37:55 -0800</pubDate>
+        <pubDate>Tue, 25 Nov 2014 05:37:55 -0500</pubDate>
         <link>http://dev.zype.com/posts/2014/11/25/create-roku-app-on-zype</link>
         <guid isPermaLink="true">http://dev.zype.com/posts/2014/11/25/create-roku-app-on-zype</guid>
         
@@ -379,7 +411,7 @@ Part II: &lt;a href=&quot;http://dev.zype.com/posts/2014/11/28/develop-roku-app-
 
 &lt;p&gt;&lt;img src=&quot;http://i.imgur.com/MHiAOmb.png&quot; alt=&quot;videos&quot; /&gt;&lt;/p&gt;
 </description>
-        <pubDate>Thu, 20 Nov 2014 02:37:55 -0800</pubDate>
+        <pubDate>Thu, 20 Nov 2014 05:37:55 -0500</pubDate>
         <link>http://dev.zype.com/posts/2014/11/20/uploading-vidoes-with-the-zype-cli</link>
         <guid isPermaLink="true">http://dev.zype.com/posts/2014/11/20/uploading-vidoes-with-the-zype-cli</guid>
         
@@ -419,7 +451,7 @@ Once we’ve imported all of your videos you will find them under the &lt;a href
 
 &lt;p&gt;&lt;img src=&quot;http://i.imgur.com/MHiAOmb.png&quot; alt=&quot;videos&quot; /&gt;&lt;/p&gt;
 </description>
-        <pubDate>Wed, 19 Nov 2014 02:37:55 -0800</pubDate>
+        <pubDate>Wed, 19 Nov 2014 05:37:55 -0500</pubDate>
         <link>http://dev.zype.com/posts/2014/11/19/adding-crunchyroll-as-a-video-source</link>
         <guid isPermaLink="true">http://dev.zype.com/posts/2014/11/19/adding-crunchyroll-as-a-video-source</guid>
         
@@ -469,9 +501,9 @@ from there.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;http://i.imgur.com/ZKliLxG.png&quot; alt=&quot;import videos&quot; /&gt;&lt;/p&gt;
 </description>
-        <pubDate>Mon, 17 Nov 2014 22:37:55 -0800</pubDate>
-        <link>http://dev.zype.com/posts/2014/11/17/search-youtube-in-zype</link>
-        <guid isPermaLink="true">http://dev.zype.com/posts/2014/11/17/search-youtube-in-zype</guid>
+        <pubDate>Tue, 18 Nov 2014 01:37:55 -0500</pubDate>
+        <link>http://dev.zype.com/posts/2014/11/18/search-youtube-in-zype</link>
+        <guid isPermaLink="true">http://dev.zype.com/posts/2014/11/18/search-youtube-in-zype</guid>
         
         
         <category>developers</category>
@@ -484,50 +516,9 @@ from there.&lt;/p&gt;
 
 &lt;p&gt;We’ve organized terms into groups by topic: General Terms, Video Technology Terms, Zype Platform Terms, and a few others. If you’re ever unsure of what we mean, check the glossary (permalinked on the nav bar) for a simple, straightforward explanation.&lt;/p&gt;
 </description>
-        <pubDate>Mon, 17 Nov 2014 18:37:55 -0800</pubDate>
+        <pubDate>Mon, 17 Nov 2014 21:37:55 -0500</pubDate>
         <link>http://dev.zype.com/posts/2014/11/17/announcing-the-glossary</link>
         <guid isPermaLink="true">http://dev.zype.com/posts/2014/11/17/announcing-the-glossary</guid>
-        
-        
-        <category>developers</category>
-        
-      </item>
-    
-      <item>
-        <title>Importing a YouTube Channel to the Zype Platform</title>
-        <description>&lt;p&gt;With the Zype Platform, you can import all of the videos within a YouTube Channel.
-This tutorial will go over the three steps to importing all the videos within a Youtube
-Channel to your Zype video library.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Step 1&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;On the Video Source page in the Zype Platform, click on new YouTube Video Source&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/JoQNGol.png&quot; alt=&quot;youtube video sources&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Step 2&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;To add a new Youtube Video Source you need to input your YouTube Channel ID. Input
-your YouTube Channel ID and click save changes.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/n8Qa0E0.png&quot; alt=&quot;youtube video source new&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;Need help finding the YouTube Channel ID? &lt;a href=&quot;/posts/2014/11/04/finding-youtube-channel-id/&quot;&gt;Click here&lt;/a&gt; for
-our tutorial on finding the Channel ID.&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Step 3&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Once you click save changes, the Zype Platform will import the YouTube videos in the
-channel supplied. You will need to add those videos to your Zype video library from
-the import video screen.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/yU2X3UU.png&quot; alt=&quot;import youtube video&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;The video imports that you add will now be a part of your Zype video library.&lt;/p&gt;
-</description>
-        <pubDate>Wed, 05 Nov 2014 02:57:55 -0800</pubDate>
-        <link>http://dev.zype.com/posts/2014/11/05/importing-youtube-channel-to-zype</link>
-        <guid isPermaLink="true">http://dev.zype.com/posts/2014/11/05/importing-youtube-channel-to-zype</guid>
         
         
         <category>developers</category>
