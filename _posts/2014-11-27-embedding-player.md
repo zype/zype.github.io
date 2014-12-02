@@ -13,28 +13,27 @@ will map out how to embed a video uploaded to the Zype Platform on any webpage.
 
 Navigate to your video's page and click on the Embed Code tab.
 
-![Go to Embed Code](http://i.imgur.com/kvfYeCS.png)
+![Go to Embed Code](http://i.imgur.com/4LcF8Lf.png)
 
 
 **Step 2**
 
 Copy the embed code.
 
-![Copy Embed Code](http://i.imgur.com/yJLyMCp.png)
+![Copy Embed Code](http://i.imgur.com/jvHwsnU.png)
 
 **Step 3**
 
-Place the div with the id player_id where you want your player to appear on your webpage.
-We recommend that video embed codes are included before the closing body tag on your site.
+You will need to place the div with the id 'zype_player' where you want your player
+to be located on your page.
+
+Currently, you can pass in autoplay, player_key, and subscription_id params.
+The player_key is required and can be found in Settings > API. Autoplay and subscription_id
+are optional.
 
 {% highlight html %}
 
-<div id='player_id'></div>
-
-<script type="text/javascript" src="https://api.zype.com/player.js"></script>
-<script type="text/javascript">
-zype.player_key ="3EytE8rlvjELg7sVXINIcA";
-zype.play("#player_id", "5477416869702d6d03150000", { autoplay: true });
-</script>
+<div id='zype_player'></div>
+<script id='zype_player_js' src='https://api.zype.com/embed/{video_id}.js?autoplay={boolean}&player_key={player_key}&subscription_id={subscription_id}' type='text/javascript'></script>
 
 {% endhighlight %}
