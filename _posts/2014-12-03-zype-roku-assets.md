@@ -11,13 +11,13 @@ images on the fly without having to republish your app. However, there are a few
 that need to be bundled during installation because they make up your
 application icon set. These images live on the Roku Channel store.
 This tutorial will describe the images that need to be bundled, the images that can
-be updated via the Zype Platform, and the details of both.
+be updated via the Zype Platform, and the specs for both.
 
-**Assets that can only be changed during publication:**
+**Assets that can only be configured during publication:**
 
 Example assets are included in our [Roku SDK](https://github.com/zype/zype-roku/tree/master/images) and
 need to be packaged with the Roku Channel are because they make up your application
-icon set:
+icon set. They do not get loaded via a call to the Zype API:
 
 1. [Image Home (Center Focus Icon)](https://github.com/zype/zype-roku/blob/master/images/mm_icon_focus_hd.png) - your large icon. HD is 366 x 210 pixels, SD is 248 x 140 pixels. PNG format.
 
