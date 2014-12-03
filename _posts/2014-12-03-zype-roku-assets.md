@@ -37,10 +37,9 @@ These assets get loaded via a call to the Zype API everytime the Roku Channel ge
 
 ![zype roku app](http://i.imgur.com/lpgb3MY.png)
 
-1. Logo - logo used in the overhang
+1. Logo - logo used in the overhang. Suggested size is 125 x 104 pixels, PNG format.
 
-2. Slice - image tiled to create the overhang. Suggested size is 1 x 165 pixels, PNG format. Suggested size
-is 125 x 104 pixels.
+2. Slice - image tiled to create the overhang. Suggested size is 1 x 165 pixels, PNG format.
 
 3. Grid Description Image - image used to contain text on the grid screen. Suggested size is 968 x 258 pixels, PNG format.
 

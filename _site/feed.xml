@@ -6,8 +6,8 @@
 </description>
     <link>http://dev.zype.com/</link>
     <atom:link href="http://dev.zype.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Wed, 03 Dec 2014 09:55:03 -0500</pubDate>
-    <lastBuildDate>Wed, 03 Dec 2014 09:55:03 -0500</lastBuildDate>
+    <pubDate>Wed, 03 Dec 2014 09:58:31 -0500</pubDate>
+    <lastBuildDate>Wed, 03 Dec 2014 09:58:31 -0500</lastBuildDate>
     <generator>Jekyll v2.3.0</generator>
     
       <item>
@@ -52,7 +52,7 @@ an SD Poster that is a 214 x 144 JPG format. We call that the Image Store in our
 
 &lt;ol&gt;
   &lt;li&gt;
-    &lt;p&gt;Logo - logo used in the overhang&lt;/p&gt;
+    &lt;p&gt;Logo - logo used in the overhang. Suggested size is 125 x 104 pixels, PNG format.&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;Slice - image tiled to create the overhang. Suggested size is 1 x 165 pixels, PNG format. Suggested size
