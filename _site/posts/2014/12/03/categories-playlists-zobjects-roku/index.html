@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Playlists, Categories, and Zobjects on Roku</title>
+    <meta name="description" content="This is the devloper portal for Zype Media. Zype is Revenue and Reach Magic for Online Video. We help content owners deliver fully branded video experiences.
+">
+
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="canonical" href="http://dev.zype.com/posts/2014/12/03/categories-playlists-zobjects-roku">
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+
+
+  <body>
+
+    <header id="header">
+  <div id="content">
+    <a href="/"><img src="http://i.imgur.com/v8SUe9t.png" alt="Zype" />
+    <h1 id="title">Developer Portal</h1></a>
+    <p>a knowledge base</p>
+    <br>
+    <p class="category"><a href="/api_docs/intro/" style="color: #8acfef;">API Documentation</a></p>
+    <p class="category"><a href="/blog/" style="color: #8acfef;">Blog</a></p>
+    <p class="category"><a href="/glossary/" style="color: #8acfef;">Glossary</a></p>
+    <p class="category"><a href="http://status.zype.com" style="color: #8acfef;">System Status</a></p>
+    <br>
+    © 2014 Zype Media Group
+  </div>
+</header>
+
+
+    <section id="main">
+      <div class="post">
+  <h1 class="post-title">Playlists, Categories, and Zobjects on Roku</h1>
+  <p class="post-meta">Dec 3, 2014</p>
+  <article class="post-content">
+    <p>We aim to make the development process of a Roku Channel as easy as possible using
+our <a href="https://github.com/zype/zype-roku">Zype Roku SDK</a>. To do this, our sample Roku Channel
+focuses on three major components of the Zype Platform: playlists, categories, and zobjects.
+Since the playlists, categories, and zobjects are being pulled into your Roku channel
+using the Zype API, they are all editable using the Zype Platform and do not require
+republishing to the Roku Channel Store to make a change.</p>
+
+<p>We will be using screenshots from our sample Roku Channel to highlight what you can do.</p>
+
+<p><img src="http://i.imgur.com/VVuBjU4.png" alt="playlists and categories" /></p>
+
+<p><strong>Featured Playlist</strong></p>
+
+<p>The first slider of the home screen is the featured playlist. This can be any playlist
+that you have created using the Zype Platform. Note, only Zype Videos will play.</p>
+
+<p><strong>Categories</strong></p>
+
+<p>Below the first slider are category sliders. Note that the category sliders and the featured playlist slider are identical.
+The only difference is how we are calling the Zype API to return us the videos in each slider.
+On the Zype Platform, you select a category that you want to iterate through for the rest
+of the home screen. In the picture above, we are iterating through the category ‘Genre.’
+Thus, the first category slider is the ‘Genre’ with a value of ‘Adventure’ and the second
+category slider will be the next ‘Genre’, which is ‘Comedy’.</p>
+
+<p><strong>Zobjects</strong></p>
+
+<p><img src="http://i.imgur.com/gS2W1Em.png" alt="Zobjects in video detail" /></p>
+
+<p>You also have the option to provide additional metadata about your videos in the video
+detail screen. You select one zobject to be above the description and one zobject to be
+below the description. In the example above, we selected the Zobject ‘Actor’ to be above the description
+and it lists the actors that we have associated with the video. Similarly, we selected
+the Zobject ‘Director’ to be below the description.</p>
+
+  </article>
+  <div id="disqus_thread"></div>
+  <script type="text/javascript">
+      /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+      var disqus_shortname = 'zypedev'; // required: replace example with your forum shortname
+
+      /* * * DON'T EDIT BELOW THIS LINE * * */
+      (function() {
+          var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+          dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+
+    </section>
+
+    <footer>
+</footer>
+
+
+  </body>
+
+</html>
