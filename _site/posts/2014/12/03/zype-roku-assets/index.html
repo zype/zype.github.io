@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Zype Assets for a Roku Channel</title>
+    <meta name="description" content="This is the devloper portal for Zype Media. Zype is Revenue and Reach Magic for Online Video. We help content owners deliver fully branded video experiences.
+">
+
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="canonical" href="http://dev.zype.com/posts/2014/12/03/zype-roku-assets">
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+
+
+  <body>
+
+    <header id="header">
+  <div id="content">
+    <a href="/"><img src="http://i.imgur.com/v8SUe9t.png" alt="Zype" />
+    <h1 id="title">Developer Portal</h1></a>
+    <p>a knowledge base</p>
+    <br>
+    <p class="category"><a href="/api_docs/intro/" style="color: #8acfef;">API Documentation</a></p>
+    <p class="category"><a href="/blog/" style="color: #8acfef;">Blog</a></p>
+    <p class="category"><a href="/glossary/" style="color: #8acfef;">Glossary</a></p>
+    <p class="category"><a href="http://status.zype.com" style="color: #8acfef;">System Status</a></p>
+    <br>
+    © 2014 Zype Media Group
+  </div>
+</header>
+
+
+    <section id="main">
+      <div class="post">
+  <h1 class="post-title">Zype Assets for a Roku Channel</h1>
+  <p class="post-meta">Dec 3, 2014</p>
+  <article class="post-content">
+    <p>Adding image assets to your Roku Channel allow your to make the channel your own!
+Using the Zype Platform and Zype API, you will be able to change the majority of
+images on the fly without having to republish your app. However, there are a few images
+that need to be bundled during installation because they make up your
+application icon set. These images live on the Roku Channel store.
+This tutorial will describe the images that need to be bundled, the images that can
+be updated via the Zype Platform, and the details of both.</p>
+
+<p><strong>Assets that can only be changed during publication:</strong></p>
+
+<p>Example assets are included in our <a href="https://github.com/zype/zype-roku/tree/master/images">Roku SDK</a> and
+need to be packaged with the Roku Channel are because they make up your application
+icon set:</p>
+
+<ol>
+  <li>
+    <p><a href="https://github.com/zype/zype-roku/blob/master/images/mm_icon_focus_hd.png">Image Home (Center Focus Icon)</a> - your large icon. HD is 366 x 210 pixels, SD is 248 x 140 pixels. PNG format.</p>
+  </li>
+  <li>
+    <p><a href="https://github.com/zype/zype-roku/blob/master/images/mm_icon_side_hd.png">Image Brand (Side Icon)</a> - your small icon. HD is 108 x 69 pixels, SD is 80 x 46 pixels. PNG format.</p>
+  </li>
+  <li>
+    <p><a href="https://github.com/zype/zype-roku/blob/master/images/splash_screen_hd.png">Image Splash</a> - the splash screen (what appears while your Roku Channel loads).
+HD is 1280 x 720 pixels, SD is  720 x 480 pixels. JPG format.</p>
+  </li>
+</ol>
+
+<p>When publishing, you will also need a HD Poster that is a 290 x 218 JPG format and
+an SD Poster that is a 214 x 144 JPG format. We call that the Image Store in our Zype Roku App.</p>
+
+<p><strong>Assets that can be changed using the Zype Platform and Zype API:</strong></p>
+
+<p>These assets get loaded via a call to the Zype API everytime the Roku Channel gets loaded.</p>
+
+<p><img src="http://i.imgur.com/1Cqh522.png" alt="zype roku app" /></p>
+
+<p><img src="http://i.imgur.com/lpgb3MY.png" alt="zype roku app" /></p>
+
+<ol>
+  <li>
+    <p>Logo - logo used in the overhang</p>
+  </li>
+  <li>
+    <p>Slice - image tiled to create the overhang. Suggested size is 1 x 165 pixels, PNG format. Suggested size
+is 125 x 104 pixels.</p>
+  </li>
+  <li>
+    <p>Grid Description Image - image used to contain text on the grid screen. Suggested size is 968 x 258 pixels, PNG format.</p>
+  </li>
+  <li>
+    <p>Grid Border Image - image used for the highlight border on the grid screen. Suggested size is 268 x 190 pixels, PNG format.</p>
+  </li>
+  <li>
+    <p>Info Poster - image used to link to the info page. Suggested size is 266 x 150 pixels, PNG format.</p>
+  </li>
+  <li>
+    <p>Search Poster - image used to link to the search page. Suggested size is 266 x 150 pixels, PNG format.</p>
+  </li>
+</ol>
+
+  </article>
+  <div id="disqus_thread"></div>
+  <script type="text/javascript">
+      /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+      var disqus_shortname = 'zypedev'; // required: replace example with your forum shortname
+
+      /* * * DON'T EDIT BELOW THIS LINE * * */
+      (function() {
+          var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+          dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+
+    </section>
+
+    <footer>
+</footer>
+
+
+  </body>
+
+</html>

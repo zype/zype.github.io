@@ -6,9 +6,80 @@
 </description>
     <link>http://dev.zype.com/</link>
     <atom:link href="http://dev.zype.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Mon, 01 Dec 2014 16:06:54 -0500</pubDate>
-    <lastBuildDate>Mon, 01 Dec 2014 16:06:54 -0500</lastBuildDate>
+    <pubDate>Wed, 03 Dec 2014 09:35:57 -0500</pubDate>
+    <lastBuildDate>Wed, 03 Dec 2014 09:35:57 -0500</lastBuildDate>
     <generator>Jekyll v2.3.0</generator>
+    
+      <item>
+        <title>Zype Assets for a Roku Channel</title>
+        <description>&lt;p&gt;Adding image assets to your Roku Channel allow your to make the channel your own!
+Using the Zype Platform and Zype API, you will be able to change the majority of
+images on the fly without having to republish your app. However, there are a few images
+that need to be bundled during installation because they make up your
+application icon set. These images live on the Roku Channel store.
+This tutorial will describe the images that need to be bundled, the images that can
+be updated via the Zype Platform, and the details of both.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Assets that can only be changed during publication:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Example assets are included in our &lt;a href=&quot;https://github.com/zype/zype-roku/tree/master/images&quot;&gt;Roku SDK&lt;/a&gt; and
+need to be packaged with the Roku Channel are because they make up your application
+icon set:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://github.com/zype/zype-roku/blob/master/images/mm_icon_focus_hd.png&quot;&gt;Image Home (Center Focus Icon)&lt;/a&gt; - your large icon. HD is 366 x 210 pixels, SD is 248 x 140 pixels. PNG format.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://github.com/zype/zype-roku/blob/master/images/mm_icon_side_hd.png&quot;&gt;Image Brand (Side Icon)&lt;/a&gt; - your small icon. HD is 108 x 69 pixels, SD is 80 x 46 pixels. PNG format.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://github.com/zype/zype-roku/blob/master/images/splash_screen_hd.png&quot;&gt;Image Splash&lt;/a&gt; - the splash screen (what appears while your Roku Channel loads).
+HD is 1280 x 720 pixels, SD is  720 x 480 pixels. JPG format.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;When publishing, you will also need a HD Poster that is a 290 x 218 JPG format and
+an SD Poster that is a 214 x 144 JPG format. We call that the Image Store in our Zype Roku App.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Assets that can be changed using the Zype Platform and Zype API:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;These assets get loaded via a call to the Zype API everytime the Roku Channel gets loaded.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/1Cqh522.png&quot; alt=&quot;zype roku app&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/lpgb3MY.png&quot; alt=&quot;zype roku app&quot; /&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;Logo - logo used in the overhang&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Slice - image tiled to create the overhang. Suggested size is 1 x 165 pixels, PNG format. Suggested size
+is 125 x 104 pixels.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Grid Description Image - image used to contain text on the grid screen. Suggested size is 968 x 258 pixels, PNG format.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Grid Border Image - image used for the highlight border on the grid screen. Suggested size is 268 x 190 pixels, PNG format.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Info Poster - image used to link to the info page. Suggested size is 266 x 150 pixels, PNG format.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Search Poster - image used to link to the search page. Suggested size is 266 x 150 pixels, PNG format.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+</description>
+        <pubDate>Wed, 03 Dec 2014 07:37:55 -0500</pubDate>
+        <link>http://dev.zype.com/posts/2014/12/03/zype-roku-assets</link>
+        <guid isPermaLink="true">http://dev.zype.com/posts/2014/12/03/zype-roku-assets</guid>
+        
+        
+        <category>developers</category>
+        
+      </item>
     
       <item>
         <title>Accessing your API and Player Keys</title>
@@ -262,26 +333,25 @@ will map out how to embed a video uploaded to the Zype Platform on any webpage.&
 
 &lt;p&gt;Navigate to your video’s page and click on the Embed Code tab.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/kvfYeCS.png&quot; alt=&quot;Go to Embed Code&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/4LcF8Lf.png&quot; alt=&quot;Go to Embed Code&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Step 2&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;Copy the embed code.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/yJLyMCp.png&quot; alt=&quot;Copy Embed Code&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/jvHwsnU.png&quot; alt=&quot;Copy Embed Code&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Step 3&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;Place the div with the id player_id where you want your player to appear on your webpage.
-We recommend that video embed codes are included before the closing body tag on your site.&lt;/p&gt;
+&lt;p&gt;You will need to place the div with the id ‘zype_player’ where you want your player
+to be located on your page.&lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;id=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;#39;player_id&amp;#39;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+&lt;p&gt;Currently, you can pass in autoplay, player_key, and subscription_id params.
+The player_key is required and can be found in Settings &amp;gt; API. Autoplay and subscription_id
+are optional.&lt;/p&gt;
 
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;script &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;type=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;text/javascript&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;https://api.zype.com/player.js&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/script&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;script &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;type=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;text/javascript&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;nx&quot;&gt;zype&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;player_key&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;3EytE8rlvjELg7sVXINIcA&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;nx&quot;&gt;zype&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;play&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;#player_id&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;5477416869702d6d03150000&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;autoplay&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;/script&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;id=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;#39;zype_player&amp;#39;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;script &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;id=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;#39;zype_player_js&amp;#39;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;#39;https://api.zype.com/embed/{video_id}.js?autoplay={boolean}&amp;amp;player_key={player_key}&amp;amp;subscription_id={subscription_id}&amp;#39;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;type=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;#39;text/javascript&amp;#39;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/script&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 </description>
         <pubDate>Thu, 27 Nov 2014 05:37:55 -0500</pubDate>
@@ -504,21 +574,6 @@ from there.&lt;/p&gt;
         <pubDate>Tue, 18 Nov 2014 01:37:55 -0500</pubDate>
         <link>http://dev.zype.com/posts/2014/11/18/search-youtube-in-zype</link>
         <guid isPermaLink="true">http://dev.zype.com/posts/2014/11/18/search-youtube-in-zype</guid>
-        
-        
-        <category>developers</category>
-        
-      </item>
-    
-      <item>
-        <title>Annoucing the Zype Glossary!</title>
-        <description>&lt;p&gt;As you might have seen in previous blog posts, we’re constantly adding new features and improving upon the Zype Platform. It only seemed right to start cataloguing the terms we use for easy lookup. Enter &lt;a href=&quot;http://dev.zype.com/glossary/&quot;&gt;the Zype  Glossary&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;We’ve organized terms into groups by topic: General Terms, Video Technology Terms, Zype Platform Terms, and a few others. If you’re ever unsure of what we mean, check the glossary (permalinked on the nav bar) for a simple, straightforward explanation.&lt;/p&gt;
-</description>
-        <pubDate>Mon, 17 Nov 2014 21:37:55 -0500</pubDate>
-        <link>http://dev.zype.com/posts/2014/11/17/announcing-the-glossary</link>
-        <guid isPermaLink="true">http://dev.zype.com/posts/2014/11/17/announcing-the-glossary</guid>
         
         
         <category>developers</category>

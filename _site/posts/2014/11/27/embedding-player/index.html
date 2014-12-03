@@ -50,26 +50,25 @@ will map out how to embed a video uploaded to the Zype Platform on any webpage.<
 
 <p>Navigate to your video’s page and click on the Embed Code tab.</p>
 
-<p><img src="http://i.imgur.com/kvfYeCS.png" alt="Go to Embed Code" /></p>
+<p><img src="http://i.imgur.com/4LcF8Lf.png" alt="Go to Embed Code" /></p>
 
 <p><strong>Step 2</strong></p>
 
 <p>Copy the embed code.</p>
 
-<p><img src="http://i.imgur.com/yJLyMCp.png" alt="Copy Embed Code" /></p>
+<p><img src="http://i.imgur.com/jvHwsnU.png" alt="Copy Embed Code" /></p>
 
 <p><strong>Step 3</strong></p>
 
-<p>Place the div with the id player_id where you want your player to appear on your webpage.
-We recommend that video embed codes are included before the closing body tag on your site.</p>
+<p>You will need to place the div with the id ‘zype_player’ where you want your player
+to be located on your page.</p>
 
-<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&#39;player_id&#39;</span><span class="nt">&gt;&lt;/div&gt;</span>
+<p>Currently, you can pass in autoplay, player_key, and subscription_id params.
+The player_key is required and can be found in Settings &gt; API. Autoplay and subscription_id
+are optional.</p>
 
-<span class="nt">&lt;script </span><span class="na">type=</span><span class="s">&quot;text/javascript&quot;</span> <span class="na">src=</span><span class="s">&quot;https://api.zype.com/player.js&quot;</span><span class="nt">&gt;&lt;/script&gt;</span>
-<span class="nt">&lt;script </span><span class="na">type=</span><span class="s">&quot;text/javascript&quot;</span><span class="nt">&gt;</span>
-<span class="nx">zype</span><span class="p">.</span><span class="nx">player_key</span> <span class="o">=</span><span class="s2">&quot;3EytE8rlvjELg7sVXINIcA&quot;</span><span class="p">;</span>
-<span class="nx">zype</span><span class="p">.</span><span class="nx">play</span><span class="p">(</span><span class="s2">&quot;#player_id&quot;</span><span class="p">,</span> <span class="s2">&quot;5477416869702d6d03150000&quot;</span><span class="p">,</span> <span class="p">{</span> <span class="nx">autoplay</span><span class="o">:</span> <span class="kc">true</span> <span class="p">});</span>
-<span class="nt">&lt;/script&gt;</span></code></pre></div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&#39;zype_player&#39;</span><span class="nt">&gt;&lt;/div&gt;</span>
+<span class="nt">&lt;script </span><span class="na">id=</span><span class="s">&#39;zype_player_js&#39;</span> <span class="na">src=</span><span class="s">&#39;https://api.zype.com/embed/{video_id}.js?autoplay={boolean}&amp;player_key={player_key}&amp;subscription_id={subscription_id}&#39;</span> <span class="na">type=</span><span class="s">&#39;text/javascript&#39;</span><span class="nt">&gt;&lt;/script&gt;</span></code></pre></div>
 
 
   </article>
