@@ -268,7 +268,8 @@ ol.blog-posts {
     color: #777; }
 
 header h4 {
-  margin-top: 20px; }
+  margin-top: 5px;
+  margin-bottom: 0px; }
 
 #main {
   padding-bottom: 50px;

@@ -6,9 +6,41 @@
 </description>
     <link>http://dev.zype.com/</link>
     <atom:link href="http://dev.zype.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Wed, 03 Dec 2014 09:58:31 -0500</pubDate>
-    <lastBuildDate>Wed, 03 Dec 2014 09:58:31 -0500</lastBuildDate>
+    <pubDate>Thu, 04 Dec 2014 17:18:48 -0500</pubDate>
+    <lastBuildDate>Thu, 04 Dec 2014 17:18:48 -0500</lastBuildDate>
     <generator>Jekyll v2.3.0</generator>
+    
+      <item>
+        <title>Defining Categories and Playlists</title>
+        <description>&lt;p&gt;As you make your way through the &lt;a href=&quot;http://admin.zype.com&quot;&gt;Zype Platform&lt;/a&gt;, you might have some
+questions about the differences between a playlist and a category. At the end of the day, both
+are used to return a set of videos, but they aren’t exactly the same thing. This blog post
+will look at categories and playlists and help you better understand how and when to use them.&lt;/p&gt;
+
+&lt;h3 id=&quot;what-are-playlists-and-how-do-i-use-them&quot;&gt;What are playlists and how do I use them?&lt;/h3&gt;
+&lt;p&gt;A playlist on the Zype Platform is a collection of videos that you assemble under a title.
+Common playlists might include: Trending Videos, Most Popular, Editor’s Choice, etc. Playlists
+are great for when you want to create and curate, by hand, a set of videos that might not fall
+under a specific category.&lt;/p&gt;
+
+&lt;h3 id=&quot;what-are-categories-and-how-do-i-use-them&quot;&gt;What are categories and how do I use them?&lt;/h3&gt;
+&lt;p&gt;A category on the Zype Platform is a label that you can create and assign to any number of
+videos. Common categories for video content might include: Genre, Tag, Type, Season, Series,
+ etc. Categories are more generic than playlists and can be mass assigned to videos in your
+&lt;a href=&quot;http://admin.zype.com/videos&quot;&gt;Video Library.&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;im-using-the-zype-platform-to-create-a-roku-app-whats-the-difference-for-me&quot;&gt;I’m using the Zype Platform to create a Roku app, what’s the difference for me?&lt;/h3&gt;
+&lt;p&gt;Roku apps will treat categories and playlists the same, as they are both just a collection of
+videos. For an in-depth guide on how to create your Roku App, make sure you check out &lt;a href=&quot;http://localhost:4000/posts/2014/12/03/categories-playlists-zobjects-roku/&quot;&gt;this blog post&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Thu, 04 Dec 2014 06:16:55 -0500</pubDate>
+        <link>http://dev.zype.com/posts/2014/12/04/defining-categories-and-playlists</link>
+        <guid isPermaLink="true">http://dev.zype.com/posts/2014/12/04/defining-categories-and-playlists</guid>
+        
+        
+        <category>platform</category>
+        
+      </item>
     
       <item>
         <title>Zype Assets for a Roku Channel</title>
@@ -55,8 +87,7 @@ an SD Poster that is a 214 x 144 JPG format. We call that the Image Store in our
     &lt;p&gt;Logo - logo used in the overhang. Suggested size is 125 x 104 pixels, PNG format.&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;Slice - image tiled to create the overhang. Suggested size is 1 x 165 pixels, PNG format. Suggested size
-is 125 x 104 pixels.&lt;/p&gt;
+    &lt;p&gt;Slice - image tiled to create the overhang. Suggested size is 1 x 165 pixels, PNG format.&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;Grid Description Image - image used to contain text on the grid screen. Suggested size is 968 x 258 pixels, PNG format.&lt;/p&gt;
@@ -533,46 +564,6 @@ Part II: &lt;a href=&quot;http://dev.zype.com/posts/2014/11/28/develop-roku-app-
         
         
         <category>developers</category>
-        
-      </item>
-    
-      <item>
-        <title>Adding Crunchyroll as a Video Source</title>
-        <description>&lt;p&gt;We know you have a lot of video content and we know that you want it all to be available to your viewers through the Zype Platform. That’s why we’re proud to announce that you can now use &lt;a href=&quot;http://www.crunchyroll.com/&quot;&gt;Crunchyroll&lt;/a&gt; as a video source for videos on the Zype Platform!&lt;/p&gt;
-
-&lt;p&gt;As part of the announcement, we want to walk you through the setup involved and get you up to speed. If you’ve added videos to the Zype Platform using video sources in the past, the will look very familiar.&lt;/p&gt;
-
-&lt;h3 id=&quot;navigating-to-the-crunchyroll-video-source-form&quot;&gt;Navigating to the Crunchyroll Video Source form&lt;/h3&gt;
-
-&lt;p&gt;First, let’s login to the &lt;a href=&quot;https://admin.zype.com/&quot;&gt;Zype Platform&lt;/a&gt; and go to &lt;a href=&quot;https://admin.zype.com/video_sources&quot;&gt;Video Sources&lt;/a&gt;. Now click on the Crunchyroll icon.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/oSJebB6.png&quot; alt=&quot;click crunchyroll&quot; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;adding-your-affiliate-code&quot;&gt;Adding your affiliate code&lt;/h3&gt;
-
-&lt;p&gt;Enter a name for your Crunchyroll Video Source (something you’ll remember!) and your Crunchyroll Affiliate code (this is provided to you by Crunchyroll when you become an affiliate.)&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/tPG2uZv.png&quot; alt=&quot;add name and affiliate code&quot; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;importing-your-videos&quot;&gt;Importing your videos&lt;/h3&gt;
-
-&lt;p&gt;Now sit back while we go get all of your Crunchyroll videos and add them to the Zype Platform as video imports.
-Once we’ve imported all of your videos you will find them under the &lt;a href=&quot;https://admin.zype.com/video_imports&quot;&gt;Video Imports&lt;/a&gt; tab. The last step is to create new videos from the imports or add the video imports to videos you already have on the Zype Platform.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/SrnGXnw.png&quot; alt=&quot;video imports&quot; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;confirm&quot;&gt;Confirm&lt;/h3&gt;
-
-&lt;p&gt;You can confirm that your videos were added by clicking on the videos tab and searching for the ones you’ve just added.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/MHiAOmb.png&quot; alt=&quot;videos&quot; /&gt;&lt;/p&gt;
-</description>
-        <pubDate>Wed, 19 Nov 2014 05:37:55 -0500</pubDate>
-        <link>http://dev.zype.com/posts/2014/11/19/adding-crunchyroll-as-a-video-source</link>
-        <guid isPermaLink="true">http://dev.zype.com/posts/2014/11/19/adding-crunchyroll-as-a-video-source</guid>
-        
-        
-        <category>admins</category>
         
       </item>
     
