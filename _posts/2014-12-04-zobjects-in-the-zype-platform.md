@@ -7,9 +7,9 @@ categories: developers
 
 A central component of the Zype Platform is a 'Zobject.' A zobject is additional
 metadata that you can create and associate with your videos. In the tutorial below,
-we will show how to associate an actor to a video. To do this, we will create a zobject type
-called actors and then create a zobject actor for John Boyega and link him
-to the newest Star Wars trailer.
+we will show how to associate an the actor John Boyega to the newest Star Wars trailer.
+To do this, we will create a zobject type called actors and then create a zobject actor for John Boyega.
+Lastly, we will associate John Boyega with the Star Wars trailer.
 
 **Step 1: Create a Zobject Type**
 
@@ -31,7 +31,7 @@ attributes.
 
 ![zobject type add attribute](http://i.imgur.com/DOq76qY.png)
 
-**Step 2: Add a Zobject John Boyega for the Zobject Type Actor**
+**Step 2: Add an Actor Zobject John Boyega for the Zobject Type Actor**
 
 Click on your Zobject in the right hand navigation or via the appropriate tile on
 the dashboard home screen.
@@ -39,7 +39,8 @@ the dashboard home screen.
 ![access zobject](http://i.imgur.com/kA0xlr7.png)
 
 Next, click on 'Add New Actor'. You will be prompted to fill out all the information
-that you laid out when you created your zobject type.
+that you laid out when you created your zobject type. We have included keyword
+and description as additional fields that you can leave blank.
 
 ![insert actor info](http://i.imgur.com/oSewGUE.png)
 
