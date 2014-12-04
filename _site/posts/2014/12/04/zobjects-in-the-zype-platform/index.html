@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Zobjects in the Zype Platform</title>
+    <meta name="description" content="This is the devloper portal for Zype Media. Zype is Revenue and Reach Magic for Online Video. We help content owners deliver fully branded video experiences.
+">
+
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="canonical" href="http://dev.zype.com/posts/2014/12/04/zobjects-in-the-zype-platform">
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+
+
+  <body>
+
+    <header id="header">
+  <div id="content">
+    <a href="/"><img src="http://i.imgur.com/v8SUe9t.png" alt="Zype" />
+    <h1 id="title">Developer Portal</h1></a>
+    <p>a knowledge base</p>
+    <br>
+    <p class="category"><a href="/api_docs/intro/" style="color: #8acfef;">API Documentation</a></p>
+    <p class="category"><a href="/blog/" style="color: #8acfef;">Blog</a></p>
+    <p class="category"><a href="/glossary/" style="color: #8acfef;">Glossary</a></p>
+    <p class="category"><a href="http://status.zype.com" style="color: #8acfef;">System Status</a></p>
+    <br>
+    © 2014 Zype Media Group
+  </div>
+</header>
+
+
+    <section id="main">
+      <div class="post">
+  <h1 class="post-title">Zobjects in the Zype Platform</h1>
+  <p class="post-meta">Dec 4, 2014</p>
+  <article class="post-content">
+    <p>A central component of the Zype Platform is a ‘Zobject.’ A zobject is additional
+metadata that you can create and associate with your videos. In the tutorial below,
+we will show how to associate an the actor John Boyega to the newest Star Wars trailer.
+To do this, we will create a zobject type called actors and then create a zobject actor for John Boyega.
+Lastly, we will associate John Boyega with the Star Wars trailer.</p>
+
+<p><strong>Step 1: Create a Zobject Type</strong></p>
+
+<p>Since zobjects can be whatever metadata you want, you first need to create a zobject type
+to define the your zobject data structure. You can access zobject types using the
+settings toolbar at the top of your dashboard.</p>
+
+<p><img src="http://i.imgur.com/tlg7ik8.png" alt="zobject type settings" /></p>
+
+<p>We will call our zobject type actor so that it is easy to reference.</p>
+
+<p><img src="http://i.imgur.com/tEzQf7F.png" alt="zobject type title" /></p>
+
+<p>For our actor zobject, we need a field for name, which is a string.
+You can use any familiar data structure when creating a zobject type.
+You can access zobject types using the settings toolbar at the top of your dashboard. To add an attribute,
+click the button Add Attribute. You can always return to this page to add additional
+attributes.</p>
+
+<p><img src="http://i.imgur.com/DOq76qY.png" alt="zobject type add attribute" /></p>
+
+<p><strong>Step 2: Add an Actor Zobject John Boyega for the Zobject Type Actor</strong></p>
+
+<p>Click on your Zobject in the right hand navigation or via the appropriate tile on
+the dashboard home screen.</p>
+
+<p><img src="http://i.imgur.com/kA0xlr7.png" alt="access zobject" /></p>
+
+<p>Next, click on ‘Add New Actor’. You will be prompted to fill out all the information
+that you laid out when you created your zobject type. We have included keyword
+and description as additional fields that you can leave blank.</p>
+
+<p><img src="http://i.imgur.com/oSewGUE.png" alt="insert actor info" /></p>
+
+<p><strong>Step 3: Link the Zobject to the Video</strong></p>
+
+<p>Click on the Videos tab to associate videos with the actor</p>
+
+<p><img src="http://i.imgur.com/mRdieLV.png" alt="associate videos" /></p>
+
+<p>Once you click save, your zobject will be associated with that video! You can double
+check by going to the video and looking at its metadata.</p>
+
+<p><img src="http://i.imgur.com/bkPlwIV.png" alt="video metadata" /></p>
+
+  </article>
+  <div id="disqus_thread"></div>
+  <script type="text/javascript">
+      /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+      var disqus_shortname = 'zypedev'; // required: replace example with your forum shortname
+
+      /* * * DON'T EDIT BELOW THIS LINE * * */
+      (function() {
+          var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+          dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+
+    </section>
+
+    <footer>
+</footer>
+
+
+  </body>
+
+</html>
