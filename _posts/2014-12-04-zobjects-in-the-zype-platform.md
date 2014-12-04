@@ -6,17 +6,16 @@ categories: developers
 ---
 
 A central component of the Zype Platform is a 'Zobject.' A zobject is additional
-metadata that you can create and associate to your videos. In the tutorial below,
-we will be showing how to associate an actor to a video by creating a zobject type
-called actors and then creating zobjects to link an actor to a movie. This is super helpful because the Zype API
-gives all zobject information in a video request and you can query for videos
-with a specific zobject value.
+metadata that you can create and associate with your videos. In the tutorial below,
+we will show how to associate an actor to a video. To do this, we will create a zobject type
+called actors and then create a zobject actor for John Boyega and link him
+to the newest Star Wars trailer.
 
 **Step 1: Create a Zobject Type**
 
-Since zobjects can be whatever metadata you want, you first need to define the your
-zobject data structure. You can access zobject types using the settings toolbar at
-the top of your dashboard.
+Since zobjects can be whatever metadata you want, you first need to create a zobject type
+to define the your zobject data structure. You can access zobject types using the
+settings toolbar at the top of your dashboard.
 
 ![zobject type settings](http://i.imgur.com/tlg7ik8.png)
 
@@ -27,11 +26,12 @@ We will call our zobject type actor so that it is easy to reference.
 For our actor zobject, we need a field for name, which is a string.
 You can use any familiar data structure when creating a zobject type.
 You can access zobject types using the settings toolbar at the top of your dashboard. To add an attribute,
-click the button Add Attribute.
+click the button Add Attribute. You can always return to this page to add additional
+attributes.
 
 ![zobject type add attribute](http://i.imgur.com/DOq76qY.png)
 
-**Step 2: Add a Zobject for your Zobject Type**
+**Step 2: Add a Zobject John Boyega for the Zobject Type Actor**
 
 Click on your Zobject in the right hand navigation or via the appropriate tile on
 the dashboard home screen.
