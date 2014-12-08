@@ -6,9 +6,28 @@
 </description>
     <link>http://dev.zype.com/</link>
     <atom:link href="http://dev.zype.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Thu, 04 Dec 2014 17:22:21 -0500</pubDate>
-    <lastBuildDate>Thu, 04 Dec 2014 17:22:21 -0500</lastBuildDate>
+    <pubDate>Mon, 08 Dec 2014 16:22:19 -0500</pubDate>
+    <lastBuildDate>Mon, 08 Dec 2014 16:22:19 -0500</lastBuildDate>
     <generator>Jekyll v2.3.0</generator>
+    
+      <item>
+        <title>Using Embed Codes on Your Site</title>
+        <description>&lt;p&gt;We’re happy to announce that the &lt;a href=&quot;http://admin.zype.com&quot;&gt;Zype Platform&lt;/a&gt; now grants you the power to “grab and go” with embed codes! Each video that you add to the platform has a snippet of code located under the Embed Code tab. You can navigate to the tab by finding a video that you want to embed and clicking on the edit button. The tab appears along the top of the menu.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/V3LoUYw.png&quot; alt=&quot;embed code&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The embed codes are designed to be dropped into a webpage, wherever you need them. The div id must remain the same, but other than that, you’re free to do as you please. As the page states, we recommend that you include the javascript portion of the embed code before the closing body tag on the page.&lt;/p&gt;
+
+&lt;p&gt;We hope you use this feature to get up and running with Zype videos on your site in the blink of an eye!&lt;/p&gt;
+</description>
+        <pubDate>Sun, 07 Dec 2014 23:16:55 -0500</pubDate>
+        <link>http://dev.zype.com/posts/2014/12/07/using-embed-codes</link>
+        <guid isPermaLink="true">http://dev.zype.com/posts/2014/12/07/using-embed-codes</guid>
+        
+        
+        <category>platform</category>
+        
+      </item>
     
       <item>
         <title>Zobjects in the Zype Platform</title>
@@ -495,62 +514,6 @@ are optional.&lt;/p&gt;
         <pubDate>Thu, 27 Nov 2014 05:37:55 -0500</pubDate>
         <link>http://dev.zype.com/posts/2014/11/27/embedding-player</link>
         <guid isPermaLink="true">http://dev.zype.com/posts/2014/11/27/embedding-player</guid>
-        
-        
-        <category>developers</category>
-        
-      </item>
-    
-      <item>
-        <title>Publishing a Roku Channel: Part I - Creating a Roku App Using the Zype Platform</title>
-        <description>&lt;p&gt;One of the biggest strengths of the Zype Platfom is its ability to distribute your
-video content on multiple platforms like Roku. In this tutorial, we will describe how to use
-the Zype Platform to create a Roku app that looks like the screen shot below.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/d15uKlK.png&quot; alt=&quot;Roku Home&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Step 1&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Upload your videos into the Zype Platform. Roku will only serve videos from the Zype
-video source. Don’t worry if you have videos from other sources like Hulu and YouTube.
-The Zype API can query to only show Zype Videos in your Roku App.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/Y6ozC6J.png&quot; alt=&quot;Video Catalogue&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Step 2&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Navigate to the Video Apps screen using the left hand navigation and click on the Roku
-icon to start the process of creating a new Roku App.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/77nsysj.png&quot; alt=&quot;Select App&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Step 3&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;You will be prompted to answer questions about how you want to set up your Roku App.
-Don’t worry if you want to change these configurations down the road.
-The Zype Platform and API are designed so that these changes can be updated without having to republish your app!&lt;/p&gt;
-
-&lt;p&gt;For example, you can set the featured playlist, the category to iterate through, copy text, and
-the colors of your Roku App any time you want from the Zype Platform. These changes will be reflected the
-next time your Roku App is loaded. Only the Splash Screen and the Roku Store Icons cannot
-be updated via the Zype Platform.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/gkeHiEI.png&quot; alt=&quot;New Roku App&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Step 4&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Once you create your Roku App, you will need to publish the App on the Zype Platform
-by clicking on the Publish App button so that your App’s API goes live.
-Then, you can use our API, Roku SDK, or reach out to Zype to help you build and publish the App on the Roku Channel Store!&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;More tutorials in this series:&lt;/strong&gt;
-Part II: &lt;a href=&quot;http://dev.zype.com/posts/2014/11/28/develop-roku-app-with-zype-sdk/&quot;&gt;Developing the Roku Channel using the Zype SDK&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Part III: &lt;a href=&quot;http://dev.zype.com/posts/2014/11/28/publish-roku-app/&quot;&gt;Publishing the Private Roku Channel&lt;/a&gt;&lt;/p&gt;
-</description>
-        <pubDate>Tue, 25 Nov 2014 05:37:55 -0500</pubDate>
-        <link>http://dev.zype.com/posts/2014/11/25/create-roku-app-on-zype</link>
-        <guid isPermaLink="true">http://dev.zype.com/posts/2014/11/25/create-roku-app-on-zype</guid>
         
         
         <category>developers</category>
