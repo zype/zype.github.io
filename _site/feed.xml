@@ -6,9 +6,40 @@
 </description>
     <link>http://dev.zype.com/</link>
     <atom:link href="http://dev.zype.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Mon, 08 Dec 2014 16:22:19 -0500</pubDate>
-    <lastBuildDate>Mon, 08 Dec 2014 16:22:19 -0500</lastBuildDate>
+    <pubDate>Tue, 09 Dec 2014 17:48:43 -0500</pubDate>
+    <lastBuildDate>Tue, 09 Dec 2014 17:48:43 -0500</lastBuildDate>
     <generator>Jekyll v2.3.0</generator>
+    
+      <item>
+        <title>Filtering Videos and Playlists</title>
+        <description>&lt;p&gt;If you’ve been busy adding video content to the &lt;a href=&quot;http://admin.zype.com&quot;&gt;Zype Platform&lt;/a&gt; and creating playlists, you might be at the point where you’ve got a few pages of each. To help you better manage your content, we’ve added a set of filters to the videos and playlists pages:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/W1ASYca.png&quot; alt=&quot;video filtering&quot; /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/SQcnYcn.png&quot; alt=&quot;playlist filtering&quot; /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;The search filters button let’s you select as many parameters for your search as you’d like. Each button has a dropdown selector you can use to select a value to search by. The default search options are “Active” (whether or not the video is marked as active) and each of the categories you’ve created for your site. You can create and manage your categories &lt;a href=&quot;https://admin.zype.com/categories&quot;&gt;here.&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Once you’ve selected all of the filters you want to use, click the search button to see the results.&lt;/p&gt;
+
+&lt;p&gt;You can search by entering a search term, using the filters or both!&lt;/p&gt;
+
+&lt;p&gt;If the search filters button is greyed out, that’s because you don’t have any videos or playlists yet.&lt;/p&gt;
+
+&lt;p&gt;Check out our previous blog post on &lt;a href=&quot;http://dev.zype.com/posts/2014/12/04/defining-categories-and-playlists/&quot;&gt;defining categories and playlists&lt;/a&gt;, if you have questions about getting started.&lt;/p&gt;
+</description>
+        <pubDate>Tue, 09 Dec 2014 07:16:55 -0500</pubDate>
+        <link>http://dev.zype.com/posts/2014/12/09/filtering-videos-and-playlists</link>
+        <guid isPermaLink="true">http://dev.zype.com/posts/2014/12/09/filtering-videos-and-playlists</guid>
+        
+        
+        <category>platform</category>
+        
+      </item>
     
       <item>
         <title>Using Embed Codes on Your Site</title>
@@ -474,46 +505,6 @@ directory name should both be zype-roku.&lt;/p&gt;
         <pubDate>Fri, 28 Nov 2014 05:37:55 -0500</pubDate>
         <link>http://dev.zype.com/posts/2014/11/28/develop-roku-app-with-zype-sdk</link>
         <guid isPermaLink="true">http://dev.zype.com/posts/2014/11/28/develop-roku-app-with-zype-sdk</guid>
-        
-        
-        <category>developers</category>
-        
-      </item>
-    
-      <item>
-        <title>Embedding a Video Player Using the Zype Platform</title>
-        <description>&lt;p&gt;The Zype Platform allows you to manage all of your video content in one place and
-then deliver your video content across any platform or device. In this tutorial, I
-will map out how to embed a video uploaded to the Zype Platform on any webpage.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Step 1&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Navigate to your video’s page and click on the Embed Code tab.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/4LcF8Lf.png&quot; alt=&quot;Go to Embed Code&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Step 2&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Copy the embed code.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/jvHwsnU.png&quot; alt=&quot;Copy Embed Code&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Step 3&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;You will need to place the div with the id ‘zype_player’ where you want your player
-to be located on your page.&lt;/p&gt;
-
-&lt;p&gt;Currently, you can pass in autoplay, player_key, and subscription_id params.
-The player_key is required and can be found in Settings &amp;gt; API. Autoplay and subscription_id
-are optional.&lt;/p&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;id=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;#39;zype_player&amp;#39;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;script &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;id=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;#39;zype_player_js&amp;#39;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;#39;https://api.zype.com/embed/{video_id}.js?autoplay={boolean}&amp;amp;player_key={player_key}&amp;amp;subscription_id={subscription_id}&amp;#39;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;type=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;#39;text/javascript&amp;#39;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/script&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-</description>
-        <pubDate>Thu, 27 Nov 2014 05:37:55 -0500</pubDate>
-        <link>http://dev.zype.com/posts/2014/11/27/embedding-player</link>
-        <guid isPermaLink="true">http://dev.zype.com/posts/2014/11/27/embedding-player</guid>
         
         
         <category>developers</category>
