@@ -151,7 +151,7 @@ Content-Type: application/json
 
 <hr>
 
-### Retrieve a Videos in a Playlist
+### Retrieve Videos in a Playlist
 <hr>
 <pre><code>GET - https://api.zype.com/playlists/{id}/videos
 </code></pre>
