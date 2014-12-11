@@ -264,13 +264,86 @@ Content-Type: application/json</p>
 
 <hr />
 
+<h3 id="retrieve-a-videos-in-a-playlist">Retrieve a Videos in a Playlist</h3>
+<hr />
+
+<pre><code>GET - https://api.zype.com/playlists/{id}/videos
+</code></pre>
+
+<h4 id="parameters-3">Parameters</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Function</th>
+      <th>Type</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>id</td>
+      <td>String id of the Playlist to retrieve. Example: 5389352e69702d401b000000.</td>
+      <td>String</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="request-2">Request</h4>
+<p>Content-Type: application/json</p>
+
+<h4 id="response-3">Response</h4>
+<p>200
+Content-Type: application/json</p>
+
+<pre><code>{
+  "response": [
+  {
+    "_id": "1234abc",
+    "active": true,
+    "categories": [],
+        "country": "",
+        "created_at": "2014-12-06T12:15:26.455-05:00",
+        "description": "Video Description",
+        "duration": 200,
+        "episode": null,
+        "featured": false,
+        "foreign_id": null,
+        "keywords": [],
+        "mature_content": false,
+        "published_at": "2014-12-10T00:00:00.000-05:00",
+        "rating": 0,
+        "related_playlist_ids": [],
+        "request_count": 0,
+        "season": null,
+        "site_id": "site_id1234",
+        "status": "created",
+        "subscription_required": false,
+        "title": "Video Title",
+        "updated_at": "2014-12-10T12:23:30.120-05:00",
+        "zobject_ids": [],
+        "thumbnails": []
+        }
+        ],
+        "pagination": {
+          "current": 1,
+          "previous": null,
+          "next": 2,
+          "per_page": 10,
+          "pages": 2
+        }
+      }
+</code></pre>
+
+<hr />
+
 <h3 id="update-a-playlist">Update a Playlist</h3>
 <hr />
 
 <pre><code>PUT - https://api.zype.com/playlists/{id}
 </code></pre>
 
-<h4 id="parameters-3">Parameters</h4>
+<h4 id="parameters-4">Parameters</h4>
 
 <table>
   <thead>
@@ -289,10 +362,10 @@ Content-Type: application/json</p>
   </tbody>
 </table>
 
-<h4 id="request-2">Request</h4>
+<h4 id="request-3">Request</h4>
 <p>Content-Type: application/json</p>
 
-<h4 id="response-3">Response</h4>
+<h4 id="response-4">Response</h4>
 <p>201
 Content-Type: application/json</p>
 
@@ -328,7 +401,7 @@ Content-Type: application/json</p>
 <pre><code>DELETE - https://api.zype.com/playlists/{id}
 </code></pre>
 
-<h4 id="parameters-4">Parameters</h4>
+<h4 id="parameters-5">Parameters</h4>
 
 <table>
   <thead>
@@ -347,10 +420,10 @@ Content-Type: application/json</p>
   </tbody>
 </table>
 
-<h4 id="request-3">Request</h4>
+<h4 id="request-4">Request</h4>
 <p>Content-Type: application/json</p>
 
-<h4 id="response-4">Response</h4>
+<h4 id="response-5">Response</h4>
 <p>200
 Content-Type: application/json</p>
 
