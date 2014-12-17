@@ -99,7 +99,18 @@ keyword=keyword&status=status&active=true&type=type&category=category
 
 Parameter | Function | Type
 --------- | -------- | ----
-Video     | A set of key value pairs that describe the Video. | Hash
+Video     | A set of key value pairs that describe the video | Hash
+title | The title of the video | String
+description | The description of the video | String
+published_at  | The date and time that the video will appear to have been published | String
+episode | The video's episode number | Integer
+season | The video's season number | Integer
+country | The country the video was created in | String
+active | Whether or not the video is active | Boolean
+featured | Whether or not the video is featured | Boolean
+keywords | Keywords for the video | Array
+subscription_required | Whether or not the video requires a subscription to view | Boolean
+mature_content | Whether or not the video requires the viewer to be 18+ to view | Boolean
 
 #### Response
 201
@@ -228,14 +239,25 @@ Content-Type: application/json
 <hr>
 ### Update a Video
 <hr>
-<pre><code>PUT - https://api.zype.com/videos/{id}
+<pre><code>PUT - https://api.zype.com/videos/{id}/&video[parameter]=value
 </code></pre>
 
 #### Parameters
 
 Parameter | Function | Type
 --------- | -------- | ----
-Video     | A set of key value pairs that describe the video. Example: video[description]=description. | Hash
+video | A set of key value pairs that describe the video. Example: video[description]=description. | Hash
+title | The title of the video | String
+description | The description of the video | String
+published_at  | The date and time that the video will appear to have been published | String
+episode | The video's episode number | Integer
+season | The video's season number | Integer
+country | The country the video was created in | String
+active | Whether or not the video is active | Boolean
+featured | Whether or not the video is featured | Boolean
+keywords | Keywords for the video | Array
+subscription_required | Whether or not the video requires a subscription to view | Boolean
+mature_content | Whether or not the video requires the viewer to be 18+ to view | Boolean
 
 #### Request
 
@@ -243,74 +265,6 @@ Content-Type: application/json
 
 #### Response
 201
-Content-Type: application/json
-
-<pre><code>{
-    response : {
-        &#95;id: "5389352e69702d401a000000",
-        active: true,
-        ad_timings: [
-            {
-                mode: "off",
-                time: 0,
-                type: "in"
-            }
-        ],
-        created_at: "2014-05-31T01:49:49.388Z",
-        description: null,
-        duration: 1217,
-        featured: false,
-        foreign_id: null,
-        keywords: [
-            "example",
-            "video"
-        ],
-        published_at: null,
-        site_id: 1,
-        thumbnails: [
-            {
-                height: 240,
-                name: null,
-                width: 426,
-                url: "http://t1.zype.com/5389352e69702d401b000000/1/53a2f27069702d260f050000/00001.png"
-            },
-            {
-                height: 360,
-                name: null,
-                width: 640,
-                url: "http://t1.zype.com/5389352e69702d401b000000/1/53a2f9d069702d26cf000000/00001.png"
-            },
-            {
-                height: 480,
-                name: null,
-                width: 854,
-                url: "http://t1.zype.com/5389352e69702d401b000000/1/53a2f9fb69702d26cf010000/00001.png"
-            }
-        ],
-        title: "Example Video",
-        updated_at: "2014-06-19T20:27:53.958Z",
-        upload_id: "5385c92c69702d589f170000",
-        video_source_id: null
-    }
-}
-</code></pre>
-<hr>
-###Remove a Video
-<hr>
-<pre><code>DELETE - https://api.zype.com/videos/{id}
-</code></pre>
-
-#### Parameters
-
-Parameter | Function | Type
---------- | -------- | ----
-id        | String id of the Video to remove. Example: 5389352e69702d401b000000. | String
-
-#### Request
-Content-Type: application/json
-
-#### Response
-200
 Content-Type: application/json
 
 <pre><code>{

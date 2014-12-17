@@ -201,8 +201,63 @@ keyword=keyword&amp;status=status&amp;active=true&amp;type=type&amp;category=cat
   <tbody>
     <tr>
       <td>Video</td>
-      <td>A set of key value pairs that describe the Video.</td>
+      <td>A set of key value pairs that describe the video</td>
       <td>Hash</td>
+    </tr>
+    <tr>
+      <td>title</td>
+      <td>The title of the video</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>description</td>
+      <td>The description of the video</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>published_at</td>
+      <td>The date and time that the video will appear to have been published</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>episode</td>
+      <td>The video’s episode number</td>
+      <td>Integer</td>
+    </tr>
+    <tr>
+      <td>season</td>
+      <td>The video’s season number</td>
+      <td>Integer</td>
+    </tr>
+    <tr>
+      <td>country</td>
+      <td>The country the video was created in</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>active</td>
+      <td>Whether or not the video is active</td>
+      <td>Boolean</td>
+    </tr>
+    <tr>
+      <td>featured</td>
+      <td>Whether or not the video is featured</td>
+      <td>Boolean</td>
+    </tr>
+    <tr>
+      <td>keywords</td>
+      <td>Keywords for the video</td>
+      <td>Array</td>
+    </tr>
+    <tr>
+      <td>subscription_required</td>
+      <td>Whether or not the video requires a subscription to view</td>
+      <td>Boolean</td>
+    </tr>
+    <tr>
+      <td>mature_content</td>
+      <td>Whether or not the video requires the viewer to be 18+ to view</td>
+      <td>Boolean</td>
     </tr>
   </tbody>
 </table>
@@ -351,7 +406,7 @@ Content-Type: application/json</p>
 <h3 id="update-a-video">Update a Video</h3>
 <hr />
 
-<pre><code>PUT - https://api.zype.com/videos/{id}
+<pre><code>PUT - https://api.zype.com/videos/{id}/&amp;video[parameter]=value
 </code></pre>
 
 <h4 id="parameters-3">Parameters</h4>
@@ -366,9 +421,64 @@ Content-Type: application/json</p>
   </thead>
   <tbody>
     <tr>
-      <td>Video</td>
+      <td>video</td>
       <td>A set of key value pairs that describe the video. Example: video[description]=description.</td>
       <td>Hash</td>
+    </tr>
+    <tr>
+      <td>title</td>
+      <td>The title of the video</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>description</td>
+      <td>The description of the video</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>published_at</td>
+      <td>The date and time that the video will appear to have been published</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>episode</td>
+      <td>The video’s episode number</td>
+      <td>Integer</td>
+    </tr>
+    <tr>
+      <td>season</td>
+      <td>The video’s season number</td>
+      <td>Integer</td>
+    </tr>
+    <tr>
+      <td>country</td>
+      <td>The country the video was created in</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>active</td>
+      <td>Whether or not the video is active</td>
+      <td>Boolean</td>
+    </tr>
+    <tr>
+      <td>featured</td>
+      <td>Whether or not the video is featured</td>
+      <td>Boolean</td>
+    </tr>
+    <tr>
+      <td>keywords</td>
+      <td>Keywords for the video</td>
+      <td>Array</td>
+    </tr>
+    <tr>
+      <td>subscription_required</td>
+      <td>Whether or not the video requires a subscription to view</td>
+      <td>Boolean</td>
+    </tr>
+    <tr>
+      <td>mature_content</td>
+      <td>Whether or not the video requires the viewer to be 18+ to view</td>
+      <td>Boolean</td>
     </tr>
   </tbody>
 </table>
@@ -379,89 +489,6 @@ Content-Type: application/json</p>
 
 <h4 id="response-3">Response</h4>
 <p>201
-Content-Type: application/json</p>
-
-<pre><code>{
-    response : {
-        &#95;id: "5389352e69702d401a000000",
-        active: true,
-        ad_timings: [
-            {
-                mode: "off",
-                time: 0,
-                type: "in"
-            }
-        ],
-        created_at: "2014-05-31T01:49:49.388Z",
-        description: null,
-        duration: 1217,
-        featured: false,
-        foreign_id: null,
-        keywords: [
-            "example",
-            "video"
-        ],
-        published_at: null,
-        site_id: 1,
-        thumbnails: [
-            {
-                height: 240,
-                name: null,
-                width: 426,
-                url: "http://t1.zype.com/5389352e69702d401b000000/1/53a2f27069702d260f050000/00001.png"
-            },
-            {
-                height: 360,
-                name: null,
-                width: 640,
-                url: "http://t1.zype.com/5389352e69702d401b000000/1/53a2f9d069702d26cf000000/00001.png"
-            },
-            {
-                height: 480,
-                name: null,
-                width: 854,
-                url: "http://t1.zype.com/5389352e69702d401b000000/1/53a2f9fb69702d26cf010000/00001.png"
-            }
-        ],
-        title: "Example Video",
-        updated_at: "2014-06-19T20:27:53.958Z",
-        upload_id: "5385c92c69702d589f170000",
-        video_source_id: null
-    }
-}
-</code></pre>
-<hr />
-
-<h3 id="remove-a-video">Remove a Video</h3>
-<hr />
-
-<pre><code>DELETE - https://api.zype.com/videos/{id}
-</code></pre>
-
-<h4 id="parameters-4">Parameters</h4>
-
-<table>
-  <thead>
-    <tr>
-      <th>Parameter</th>
-      <th>Function</th>
-      <th>Type</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>id</td>
-      <td>String id of the Video to remove. Example: 5389352e69702d401b000000.</td>
-      <td>String</td>
-    </tr>
-  </tbody>
-</table>
-
-<h4 id="request-2">Request</h4>
-<p>Content-Type: application/json</p>
-
-<h4 id="response-4">Response</h4>
-<p>200
 Content-Type: application/json</p>
 
 <pre><code>{
@@ -524,7 +551,7 @@ Content-Type: application/json</p>
 <pre><code>GET - https://api.zype.com/videos/{id}/player?autoplay=autoplay
 </code></pre>
 
-<h4 id="parameters-5">Parameters</h4>
+<h4 id="parameters-4">Parameters</h4>
 
 <table>
   <thead>
@@ -548,10 +575,10 @@ Content-Type: application/json</p>
   </tbody>
 </table>
 
-<h4 id="request-3">Request</h4>
+<h4 id="request-2">Request</h4>
 <p>Content-Type: application/json</p>
 
-<h4 id="response-5">Response</h4>
+<h4 id="response-4">Response</h4>
 <p>200
 Content-Type: application/json</p>
 
