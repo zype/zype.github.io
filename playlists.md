@@ -150,6 +150,67 @@ Content-Type: application/json
 </code></pre>
 
 <hr>
+
+### Retrieve Videos in a Playlist
+<hr>
+<pre><code>GET - https://api.zype.com/playlists/{id}/videos
+</code></pre>
+
+#### Parameters
+
+Parameter | Function | Type
+--------- | -------- | ----
+id | String id of the Playlist to retrieve. Example: 5389352e69702d401b000000. | String
+
+#### Request
+Content-Type: application/json
+
+#### Response
+200
+Content-Type: application/json
+
+<pre><code>{
+  "response": [
+  {
+    "_id": "1234abc",
+    "active": true,
+    "categories": [],
+        "country": "",
+        "created_at": "2014-12-06T12:15:26.455-05:00",
+        "description": "Video Description",
+        "duration": 200,
+        "episode": null,
+        "featured": false,
+        "foreign_id": null,
+        "keywords": [],
+        "mature_content": false,
+        "published_at": "2014-12-10T00:00:00.000-05:00",
+        "rating": 0,
+        "related_playlist_ids": [],
+        "request_count": 0,
+        "season": null,
+        "site_id": "site_id1234",
+        "status": "created",
+        "subscription_required": false,
+        "title": "Video Title",
+        "updated_at": "2014-12-10T12:23:30.120-05:00",
+        "zobject_ids": [],
+        "thumbnails": []
+        }
+        ],
+        "pagination": {
+          "current": 1,
+          "previous": null,
+          "next": 2,
+          "per_page": 10,
+          "pages": 2
+        }
+      }
+</code></pre>
+
+<hr>
+
+
 ### Update a Playlist
 <hr>
 <pre><code>PUT - https://api.zype.com/playlists/{id}
