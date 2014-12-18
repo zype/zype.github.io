@@ -29,34 +29,24 @@ category | An optional set of key value category pairs to filter the records ret
 Content-Type: application/json
 
 <pre><code>{
-    response: [
-        {
-            &#95;id: "540735534c616e047a030000",
-            &#95;keywords: [
-                "first",
-                "playlist"
-            ],
-            active: true,
-            "categories": [
-                {
-                    "title": "color",
-                    "value": "green"
-                }
-            ],
-            created_at: "2014-09-03T15:35:47.328Z",
-            description: "This is the first playlist",
-            site_id: "53fe307f4c616e914e000000",
-            title: "First Playlist",
-            updated_at: "2014-09-03T15:36:22.172Z"
-        }
-    ],
-    pagination: {
-        current: 1,
-        previous: null,
-        next: null,
-        per_page: 10,
-        pages: 1
+  "response": [
+    {
+      "_id": "546407fb69702d76c1740000",
+      "_keywords": [
+        "featured",
+        "horror"
+      ],
+      "active": true,
+      "created_at": "2014-11-12T20:23:07.291-05:00",
+      "description": "",
+      "priority": 0,
+      "related_video_ids": [],
+      "site_id": "5463c68e69702d24db490000",
+      "title": "Featured Horror ",
+      "updated_at": "2014-11-12T20:23:07.291-05:00",
+      "playlist_item_count": 6
     }
+  ]
 }
 </code></pre>
 <hr>
@@ -81,25 +71,20 @@ Content-Type: application/json
 Content-Type: application/json
 
 <pre><code>{
-    response: {
-        &#95;id: "540735534c616e047a030000",
-        &#95;keywords: [
-            "first",
-            "playlist"
-        ],
-        active: true,
-        "categories": [
-            {
-                "title": "color",
-                "value": "green"
-            }
-        ],
-        created_at: "2014-09-03T15:35:47.328Z",
-        description: "This is the first playlist",
-        site_id: "53fe307f4c616e914e000000",
-        title: "First Playlist",
-        updated_at: "2014-09-03T15:36:22.172Z"
-    }
+  "response":
+  {  
+    "_id": "54908b5c4c616e20e73a0000",
+    "_keywords": ["active","best","playlist"],
+    "active": true,
+    "created_at": "2014-12-16T14:43:24.272-05:00",
+    "description": null,
+    "priority": null,
+    "related_video_ids": [],
+    "site_id": "545932274c616e2359000000",
+    "title": "The best active playlist!!",
+    "updated_at": "2014-12-16T14:43:24.272-05:00",
+    "playlist_item_count": 0
+  }
 }
 </code></pre>
 
@@ -126,26 +111,21 @@ Content-Type: application/json
 200
 Content-Type: application/json
 
-<pre><code>{
-    response: {
-        &#95;id: "540735534c616e047a030000",
-        &#95;keywords: [
-            "first",
-            "playlist"
-        ],
-        active: true,
-        "categories": [
-            {
-                "title": "color",
-                "value": "green"
-            }
-        ],
-        created_at: "2014-09-03T15:35:47.328Z",
-        description: "This is the first playlist",
-        site_id: "53fe307f4c616e914e000000",
-        title: "First Playlist",
-        updated_at: "2014-09-03T15:36:22.172Z"
-    }
+<pre><code>{  
+  "response":
+  {
+    "_id": "549082404c616e20e7290000",
+    "_keywords": ["playlist","test"],
+    "active": true,
+    "created_at": "2014-12-16T14:04:32.666-05:00",
+    "description": "",
+    "priority": 0,
+    "related_video_ids": [],
+    "site_id": "545932274c616e2359000000",
+    "title": "Test Playlist",
+    "updated_at": "2014-12-16T14:04:32.666-05:00",
+    "playlist_item_count": 4
+  }
 }
 </code></pre>
 
@@ -170,42 +150,67 @@ Content-Type: application/json
 Content-Type: application/json
 
 <pre><code>{
-  "response": [
+  "response":
+  [
+    {
+      "_id":"5481f66e4c616e06ec670000",
+      "active":true,
+      "categories":
+      [
+        {
+          "title":"Season",
+          "value":["1","2","3","4","5","6","7"]
+        },
+        {
+          "title":"Final test",
+          "value":["everything"]
+        },
+        {
+          "title":"Test",
+          "value":["no","yes"]
+        }
+      ],
+      "country": "",
+      "created_at": "2014-12-05T13:16:14.280-05:00",
+      "description": "Music video by Taylor Swift performing #VEVOCertified, Pt. 3: Taylor Talks About Her Fans. (C) 2012 Big Machine Records, LLC.",  
+      "duration": 141,
+      "episode": null,
+      "featured": false,
+      "foreign_id": null,
+      "keywords": [],
+      "mature_content": false,
+      "published_at": "2012-10-29T11:45:07.000-04:00",
+      "rating": 0.0,
+      "related_playlist_ids": [],
+      "request_count": 0,
+      "season": null,
+      "site_id": "545932274c616e2359000000",
+      "status": "created",
+      "subscription_required": false,
+      "title": "#VEVOCertified, Pt. 3: Taylor Talks About Her Fans",
+      "updated_at": "2014-12-15T17:53:24.119-05:00",
+      "zobject_ids": [],
+      "thumbnails":
+      [
+        {
+          "aspect_ratio": null,
+          "height": 90,
+          "name": null,
+          "url": "https://i.ytimg.com/vi/ehLp0cjqkRk/default.jpg",
+          "width": 120
+        }
+      ]
+    }
+  ]
+  "pagination":
   {
-    "_id": "1234abc",
-    "active": true,
-    "categories": [],
-        "country": "",
-        "created_at": "2014-12-06T12:15:26.455-05:00",
-        "description": "Video Description",
-        "duration": 200,
-        "episode": null,
-        "featured": false,
-        "foreign_id": null,
-        "keywords": [],
-        "mature_content": false,
-        "published_at": "2014-12-10T00:00:00.000-05:00",
-        "rating": 0,
-        "related_playlist_ids": [],
-        "request_count": 0,
-        "season": null,
-        "site_id": "site_id1234",
-        "status": "created",
-        "subscription_required": false,
-        "title": "Video Title",
-        "updated_at": "2014-12-10T12:23:30.120-05:00",
-        "zobject_ids": [],
-        "thumbnails": []
-        }
-        ],
-        "pagination": {
-          "current": 1,
-          "previous": null,
-          "next": 2,
-          "per_page": 10,
-          "pages": 2
-        }
-      }
+    "current": 1,
+    "previous":null,
+    "next":null,
+    "per_page": 10,
+    "pages": 1
+  }
+}
 </code></pre>
 
 <hr>
@@ -230,27 +235,20 @@ Content-Type: application/json
 Content-Type: application/json
 
 <pre><code>{
-    response: [
-        {
-            &#95;id: "540735534c616e047a030000",
-            &#95;keywords: [
-                "first",
-                "playlist"
-            ],
-            active: true,
-            "categories": [
-                {
-                    "title": "color",
-                    "value": "green"
-                }
-            ],
-            created_at: "2014-09-03T15:35:47.328Z",
-            description: "This is the first playlist",
-            site_id: "53fe307f4c616e914e000000",
-            title: "First Playlist",
-            updated_at: "2014-09-03T15:36:22.172Z"
-        }
-    ]
+  response:
+  {
+    "_id": "549082404c616e20e7290000",
+    "_keywords": ["playlist","test"],
+    "active": true,
+    "created_at": "2014-12-16T14:04:32.666-05:00",
+    "description": "",
+    "priority": 0,
+    "related_video_ids": [],
+    "site_id": "545932274c616e2359000000",
+    "title": "Updated Test Playlist",
+    "updated_at": "2014-12-18T14:04:32.666-05:00",
+    "playlist_item_count": 4
+  }
 }
 </code></pre>
 <hr>
@@ -269,30 +267,6 @@ id | String id of the Playlist to remove. Example: 5389352e69702d401b000000. | N
 Content-Type: application/json
 
 #### Response
-200
-Content-Type: application/json
+204
 
-<pre><code>{
-    response: [
-        {
-            &#95;id: "540735534c616e047a030000",
-            &#95;keywords: [
-                "first",
-                "playlist"
-            ],
-            active: true,
-            "categories": [
-                {
-                    "title": "color",
-                    "value": "green"
-                }
-            ],
-            created_at: "2014-09-03T15:35:47.328Z",
-            description: "This is the first playlist",
-            site_id: "53fe307f4c616e914e000000",
-            title: "First Playlist",
-            updated_at: "2014-09-03T15:36:22.172Z"
-        }
-    ]
-}
-</code></pre>
+No Content

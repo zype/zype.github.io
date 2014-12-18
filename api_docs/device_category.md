@@ -27,58 +27,68 @@ Content-Type: application/json
 <pre><code>{
   "response": [
     {
-      "&#95;id": "541b14f6636261c814040000",
-      "&#95;keywords": [
+      "_id": "5429b1c369702d2f7c040000",
+      "_keywords": [
       "desktop"
       ],
-
-      "created_at": "2014-09-22T16:02:11.113Z",
+      "created_at": "2014-09-29T15:23:47.302-04:00",
       "image_content_type": "image/png",
       "image_file_name": "desktop.png",
       "image_file_size": 19347,
       "image_fingerprint": "a661d27f5003bcf1523f75e3686f6b24",
-      "image_updated_at": "2014-09-22T16:02:11.041+00:00",
+      "image_updated_at": "2014-09-29T15:23:47.099-04:00",
       "name": "Desktop",
-      "updated_at": "2014-09-22T16:02:11.113Z"
-      },
-{
-    "&#95;id": "54204804636261f298050000",
-    "&#95;keywords": [
-    "mobile"
-    ],
-
-    "created_at": "2014-09-22T16:02:12.319Z",
-    "image_content_type": "image/png",
-    "image_file_name": "mobile.png",
-    "image_file_size": 18671,
-    "image_fingerprint": "070c15b95b315a6f472a6efb6c3b898c",
-    "image_updated_at": "2014-09-22T16:02:12.299+00:00",
-    "name": "Mobile",
-    "updated_at": "2014-09-22T16:02:12.319Z"
-},
-{
-    "&#95;id": "54204804636261f298060000",
-    "&#95;keywords": [
-    "ott"
-    ],
-
-    "created_at": "2014-09-22T16:02:12.578Z",
-    "image_content_type": "image/png",
-    "image_file_name": "desktop.png",
-    "image_file_size": 19347,
-    "image_fingerprint": "a661d27f5003bcf1523f75e3686f6b24",
-    "image_updated_at": "2014-09-22T16:02:12.558+00:00",
-    "name": "OTT",
-    "updated_at": "2014-09-22T16:02:12.578Z"
+      "updated_at": "2014-09-29T15:23:47.302-04:00"
+    },
+    {
+      "_id": "5429b1c469702d2f7c050000",
+      "_keywords": [
+      "mobile"
+      ],
+      "created_at": "2014-09-29T15:23:48.879-04:00",
+      "image_content_type": "image/png",
+      "image_file_name": "mobile.png",
+      "image_file_size": 18671,
+      "image_fingerprint": "070c15b95b315a6f472a6efb6c3b898c",
+      "image_updated_at": "2014-09-29T15:23:48.788-04:00",
+      "name": "Mobile",
+      "updated_at": "2014-09-29T15:23:48.879-04:00"
+    },
+    {
+      "_id": "5429b1c569702d2f7c060000",
+      "_keywords": [
+      "ott"
+      ],
+      "created_at": "2014-09-29T15:23:49.234-04:00",
+      "image_content_type": "image/png",
+      "image_file_name": "desktop.png",
+      "image_file_size": 19347,
+      "image_fingerprint": "a661d27f5003bcf1523f75e3686f6b24",
+      "image_updated_at": "2014-09-29T15:23:49.057-04:00",
+      "name": "OTT",
+      "updated_at": "2014-09-29T15:23:49.234-04:00"
+    },
+    {
+      "_id": "5429b1c569702d2f7c070000",
+      "_keywords": [
+      "tablet"
+      ],
+      "created_at": "2014-09-29T15:23:49.531-04:00",
+      "image_content_type": "image/png",
+      "image_file_name": "tablet.png",
+      "image_file_size": 18686,
+      "image_fingerprint": "8be3ee187e89cc533382bb06b6dae3ea",
+      "image_updated_at": "2014-09-29T15:23:49.441-04:00",
+      "name": "Tablet",
+      "updated_at": "2014-09-29T15:23:49.531-04:00"
     }
-],
-
+  ],
   "pagination": {
-  "current": 1,
-  "previous": null,
-  "next": null,
-  "per_page": 10,
-  "pages": 1
+    "current": 1,
+    "previous": null,
+    "next": null,
+    "per_page": 10,
+    "pages": 1
   }
 }
 </code></pre>
@@ -102,17 +112,18 @@ Content-Type: application/json
 
 <pre><code>{
   "response": {
-    "&#95;id": "54204803636261f298040000",
-    "&#95;keywords": [
+    "_id": "5429b1c369702d2f7c040000",
+    "_keywords": [
       "desktop"
     ],
-    "created_at": "2014-09-22T16:02:11.113Z",
+    "created_at": "2014-09-29T15:23:47.302-04:00",
     "image_content_type": "image/png",
     "image_file_name": "desktop.png",
     "image_file_size": 19347,
     "image_fingerprint": "a661d27f5003bcf1523f75e3686f6b24",
-    "image_updated_at": "2014-09-22T16:02:11.041+00:00",
+    "image_updated_at": "2014-09-29T15:23:47.099-04:00",
     "name": "Desktop",
-    "updated_at": "2014-09-22T16:02:11.113Z"
+    "updated_at": "2014-09-29T15:23:47.302-04:00"
   }
 }
+</code></pre>

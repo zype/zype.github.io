@@ -21,23 +21,16 @@ ip_address | Defaults to IP of API caller if not provided Example: 255.255.255.2
 #### Response
 200
 Content-Type: application/json
-<pre><code>{
-    response : {
-        request: "255.255.255.255",
-        ip: "255.255.255.255",
-        country_code2: "US",
-        country_code3: "USA",
-        country_name: "United States",
-        continent_code: "NA",
-        region_name: "NJ",
-        city_name: "Cranford",
-        postal_code: "07016",
-        latitude: 0.00000,
-        longitude: 0.00000,
-        dma_code: 0,
-        area_code: 0,
-        timezone: "America/New_York",
-        real_region_name: "New Jersey"
-      }
+<pre><code>
+{
+  "response": {
+    "request": "108.29.95.21",
+    "ip": "108.29.95.21",
+    "country_code": 225,
+    "country_code2": "US",
+    "country_code3": "USA",
+    "country_name": "United States",
+    "continent_code": "NA"
+  }
 }
 </code></pre>

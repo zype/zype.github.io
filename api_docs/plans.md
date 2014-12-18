@@ -25,32 +25,31 @@ Content-Type: application/json
 
 
 <pre><code>{
-  "response":
-    [
-      {
-        "_id": "544813e74c616e0dc0000000",
-        "_keywords": [],
-        "active": true,
-        "amount": "7.99",
-        "created_at": "2014-10-22T20:30:31.792Z",
-        "currency": "USD",
-        "description": 'Description for the plan',
-        "interval": "month",
-        "name": "Zype Monthly Subscription",
-        "stripe_id": "zype-monthly",
-        "stripe_public_key": "pk_test_iLS3IUO1bHqqLxNBWhxcW6c1234",
-        "trial_period_days": 0,
-        "updated_at": "2014-10-23T13:02:20.075Z"
-      }
-    ],
-    "pagination": {
-      "current": 1,
-      "previous": null,
-      "next": null,
-      "per_page": 1,
-      "pages": 1
-      }
+  "response": [
+    {
+      "_id": "544813e74c616e0dc0000000",
+      "_keywords": [],
+      "active": true,
+      "amount": "7.99",
+      "created_at": "2014-10-22T20:30:31.792Z",
+      "currency": "USD",
+      "description": 'Description for the plan',
+      "interval": "month",
+      "name": "Zype Monthly Subscription",
+      "stripe_id": "zype-monthly",
+      "stripe_public_key": "pk_test_iLS3IUO1bHqqLxNBWhxcW6c1234",
+      "trial_period_days": 0,
+      "updated_at": "2014-10-23T13:02:20.075Z"
     }
+  ],
+  "pagination": {
+    "current": 1,
+    "previous": null,
+    "next": null,
+    "per_page": 1,
+    "pages": 1
+  }
+}
 </code></pre>
 
 <hr>

@@ -28,31 +28,62 @@ Content-Type: application/json
 Content-Type: application/json
 
 <pre><code>{
-    response : [
-        {
-            &#95;id: "540731274c616e047a000000",
-            &#95;keywords: [
-                "type",
-                "video"
-            ],
-            created_at: "2014-08-05T16:17:29.670Z",
-            site_id: "53fe307f4c616e914e000000",
-            title: "video_type",
-            updated_at: "2014-08-26T18:26:54.461Z",
-            values: [
-                "Film",
-                "TV",
-                "Originals"
-            ]
-        }
+  "response": [
+  {
+    "_id": "546782ee69702d2328350000",
+    "_keywords": [
+    "additional",
+    "videos",
+    "youtube"
     ],
-    pagination: {
-        current: 1,
-        previous: null,
-        next: 2,
-        per_page: 10,
-        pages: 1
-    }
+    "created_at": "2014-11-15T11:44:30.700-05:00",
+    "site_id": "5463c68e69702d24db490000",
+    "title": "Additional Videos from YouTube",
+    "updated_at": "2014-11-15T11:44:30.700-05:00",
+    "values": [
+    "Yes"
+    ]
+  },
+  {
+    "_id": "546763ee69702d4efa260000",
+    "_keywords": [
+      "series"
+    ],
+    "created_at": "2014-11-15T09:32:14.575-05:00",
+    "site_id": "5463c68e69702d24db490000",
+    "title": "series",
+    "updated_at": "2014-11-15T11:02:59.329-05:00",
+    "values": [
+      "12 Monkeys",
+      "13 Assassins",
+      "2 Fast 2 Furious",
+      "A Little Princess",
+      "A Night at the Roxbury"
+    ]
+  },
+  {
+    "_id": "5463e49f69702d34ff0d0000",
+    "_keywords": [
+      "genre"
+    ],
+    "created_at": "2014-11-12T17:52:15.547-05:00",
+    "site_id": "5463c68e69702d24db490000",
+    "title": "Genre",
+    "updated_at": "2014-11-15T09:53:12.784-05:00",
+    "values": [
+      "Adventure",
+      "Comedy",
+      "Horror"
+    ]
+  }
+  ],
+  "pagination": {
+    "current": 1,
+    "previous": null,
+    "next": null,
+    "per_page": 10,
+    "pages": 1
+  }
 }
 </code></pre>
 
@@ -75,23 +106,26 @@ Content-Type: application/json
 201
 Content-Type: application/json
 
-<pre><code>{
-    response: {
-        &#95;id: "540731274c616e047a000000",
-        &#95;keywords: [
-            "type",
-            "video"
-        ],
-        created_at: "2014-08-05T16:17:29.670Z",
-        site_id: "53fe307f4c616e914e000000",
-        title: "video_type",
-        updated_at: "2014-08-26T18:26:54.461Z",
-        values: [
-            "Film",
-            "TV",
-            "Originals"
-        ]
-    }
+<pre><code>{  
+  "response":
+  {  
+    "_id": "54907f944c616e20e7270000",
+    "_keywords":
+    [
+    "favorite",
+    "pizza",
+    "toppings"
+    ],
+    "created_at": "2014-12-16T13:53:08.564-05:00",
+    "site_id": "545932274c616e2359000000",
+    "title": "Favorite Pizza Toppings",
+    "updated_at": "2014-12-16T13:53:08.564-05:00",
+    "values":
+    [
+      "Mushroom,
+      Pepperoni"
+    ]
+  }
 }
 </code></pre>
 
@@ -118,22 +152,24 @@ Content-Type: application/json
 Content-Type: application/json
 
 <pre><code>{
-    response : {
-        &#95;id: "540731274c616e047a000000",
-        &#95;keywords: [
-            "type",
-            "video"
-        ],
-        created_at: "2014-08-05T16:17:29.670Z",
-        site_id: "53fe307f4c616e914e000000",
-        title: "video_type",
-        updated_at: "2014-08-26T18:26:54.461Z",
-        values: [
-            "Film",
-            "TV",
-            "Originals"
-        ]
-    }
+  "response":
+  {
+    "_id": "548f5b8e4c616e8031010000",
+    "_keywords":
+    [
+      "Over",
+      "9000"
+    ],
+    "created_at": "2014-12-15T17:07:10.481-05:00",
+    "site_id": "545932274c616e2359000000",
+    "title": "Is it over 9000?",
+    "updated_at": "2014-12-15T17:07:10.481-05:00",
+    "values":
+    [
+      "yes",
+      "no"
+    ]
+  }
 }
 </code></pre>
 <hr>
@@ -155,25 +191,27 @@ Content-Type: application/json
 201
 Content-Type: application/json
 
-<pre><code>{
-    response : [
-        {
-            &#95;id: "540731274c616e047a000000",
-            &#95;keywords: [
-                "type",
-                "video"
-            ],
-            created_at: "2014-08-05T16:17:29.670Z",
-            site_id: "53fe307f4c616e914e000000",
-            title: "video_type",
-            updated_at: "2014-08-26T18:26:54.461Z",
-            values: [
-                "Film",
-                "TV",
-                "Originals"
-            ]
-        }
+<pre><code>
+{
+  "response":
+  {
+    "_id": "548f5b8e4c616e8031010000",
+    "_keywords":
+    [
+      "Definitely",
+      "Over",
+      "9000"
+    ],
+    "created_at": "2014-12-15T17:07:10.481-05:00",
+    "site_id": "545932274c616e2359000000",
+    "title": "Definitely Over 9000",
+    "updated_at": "2014-12-16T13:53:08.266-05:00",
+    "values":
+    [
+      "yes",
+      "no"
     ]
+  }
 }
 </code></pre>
 <hr>
@@ -192,27 +230,6 @@ id | String id of the Category to remove. Example: 5389352e69702d401b000000. | N
 Content-Type: application/json
 
 #### Response
-200
-Content-Type: application/json
+204
 
-<pre><code>{
-    response : [
-        {
-            &#95;id: "540731274c616e047a000000",
-            &#95;keywords: [
-                "type",
-                "video"
-            ],
-            created_at: "2014-08-05T16:17:29.670Z",
-            site_id: "53fe307f4c616e914e000000",
-            title: "video_type",
-            updated_at: "2014-08-26T18:26:54.461Z",
-            values: [
-                "Film",
-                "TV",
-                "Originals"
-            ]
-        }
-    ]
-}
-</code></pre>
+No Content

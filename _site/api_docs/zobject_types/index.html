@@ -28,28 +28,26 @@
       <p>a knowledge base</p>
       <br>
       <p class="category"><a href="/api_docs/intro/" style="color: #8acfef;">API Documentation</a></p>
-
-      <h4 class="api-header">Zype Platform:</h4>
-      <p><a href="/api_docs/videos/">Videos</a></p>
-      <p><a href="/api_docs/playlists/">Playlists</a></p>
-      <p><a href="/api_docs/categories/">Categories</a></p>
-      <p><a href="/api_docs/device_categories/">Device Categories</a></p>
-      <p><a href="/api_docs/devices/">Devices</a></p>
-      <p><a href="/api_docs/revenue_models/">Revenue Models</a></p>
-      <p><a href="/api_docs/roku_app/">Roku App</a></p>
-      <p><a href="/api_docs/geoip/">GeoIP</a></p>
-      <h4 class="api-header">Users:</h4>
-      <p><a href="/api_docs/consumers/">Consumers</a></p>
-      <p><a href="/api_docs/plans/">Plans</a></p>
-      <p><a href="/api_docs/subscriptions/">Subscriptions</a></p>
-      <h4 class="api-header">Zobjects:</h4>
-      <p><a href="/api_docs/zobject_types/">Zobject Types</a></p>
-      <p><a href="/api_docs/zobjects/">Zobjects</a></p>
-      <br>
+        <h4 class="api-header">Zype Platform:</h4>
+          <p><a href="/api_docs/videos/">Videos</a></p>
+          <p><a href="/api_docs/playlists/">Playlists</a></p>
+          <p><a href="/api_docs/categories/">Categories</a></p>
+          <p><a href="/api_docs/device_categories/">Device Categories</a></p>
+          <p><a href="/api_docs/devices/">Devices</a></p>
+          <p><a href="/api_docs/revenue_models/">Revenue Models</a></p>
+          <p><a href="/api_docs/roku_app/">Roku App</a></p>
+          <p><a href="/api_docs/geoip/">GeoIP</a></p>
+        <h4 class="api-header">Users:</h4>
+          <p><a href="/api_docs/consumers/">Consumers</a></p>
+          <p><a href="/api_docs/plans/">Plans</a></p>
+          <p><a href="/api_docs/subscriptions/">Subscriptions</a></p>
+        <h4 class="api-header">Zobjects:</h4>
+          <p><a href="/api_docs/zobject_types/">Zobject Types</a></p>
+          <p><a href="/api_docs/zobjects/">Zobjects</a></p>
+        <br>
       <p class="category"><a href="/platform_docs/" style="color: #8acfef;">Platform Documentation</a></p>
       <p class="category"><a href="/glossary/" style="color: #8acfef;">Glossary</a></p>
       <p class="category"><a href="http://status.zype.com" style="color: #8acfef;">System Status</a></p>
-      <p class="category"><a href="http://admin.zype.com" style="color: #8acfef;">Blog</a></p>
       <br>
       © 2014 Zype Media Group
     </div>
@@ -100,39 +98,38 @@
 Content-Type: application/json</p>
 
 <pre><code>{
-    response : [
-        {
-            &#95;id: "5407412b4c616e047a0f0000",
-            &#95;keywords: [
-                "Actor"
-            ],
-            created_at: "2014-09-03T16:26:19.680Z",
-            description: "Actor Card",
-            site_id: "53fe307f4c616e914e000000",
-            title: "Actor
-            updated_at: "2014-09-03T16:26:19.680Z",
-            videos_enabled: true,
-            zobject_attributes: [
-                {
-                    &#95;id: "5407412b4c616e047a100000",
-                    created_at: "2014-09-03T16:26:19.680Z",
-                    description: "name of actor",
-                    field_name: "name",
-                    field_type: "String",
-                    show_list: false,
-                    updated_at: "2014-09-03T16:26:19.680Z"
-                }
-            ],
-            "zobject_count": 2
-        },
-        pagination: {
-            current: 1,
-            previous: null,
-            next: 2,
-            per_page: 10,
-            pages: 1
-        }
-    ]
+  "response": [
+  {
+    "_id":"546cd8124c616e043d010000",
+    "_keywords": ["actor"],
+    "created_at": "2014-11-19T12:49:06.385-05:00",
+    "description": "",
+    "site_id": "545932274c616e2359000000",
+    "title": "actor",
+    "updated_at": "2014-11-19T12:49:06.385-05:00",
+    "videos_enabled": true,
+    "zobject_count": 2
+  },
+  {
+    "_id": "546cd8324c616e043d020000",
+    "_keywords": ["director"],
+    "created_at": "2014-11-19T12:49:38.521-05:00",
+    "description": "",
+    "site_id": "545932274c616e2359000000",
+    "title": "director",
+    "updated_at": "2014-11-19T12:49:38.521-05:00",
+    "videos_enabled": true,
+    "zobject_count": 2
+  }
+  ],
+  "pagination":
+  {
+    "current": 1,
+    "previous": null,
+    "next": null,
+    "per_page": 10,
+    "pages": 1
+  }
 }
 </code></pre>
 <hr />
@@ -170,30 +167,22 @@ Content-Type: application/json</p>
 Content-Type: application/json</p>
 
 <pre><code>{
-    response: {
-        &#95;id: "5407412b4c616e047a0f0000",
-        &#95;keywords: [
-            "Actor"
-        ],
-        created_at: "2014-09-03T16:26:19.680Z",
-        description: "Actor Card",
-        site_id: "53fe307f4c616e914e000000",
-        title: "ctor
-        updated_at: "2014-09-03T16:26:19.680Z",
-        videos_enabled: true,
-        zobject_attributes: [
-            {
-                &#95;id: "5407412b4c616e047a100000",
-                created_at: "2014-09-03T16:26:19.680Z",
-                description: "name of actor",
-                field_name: "name",
-                field_type: "String",
-                show_list: false,
-                updated_at: "2014-09-03T16:26:19.680Z"
-            } ...
-        ],
-        "zobject_count": 2
-    }
+  "response": {
+    "_id":"54908d574c616e20e73b0000",
+    "_keywords":
+    [
+      "new",
+      "type",
+      "zobject"
+    ],
+    "created_at":"2014-12-16T14:51:51.302-05:00",
+    "description":null,
+    "site_id":"545932274c616e2359000000",
+    "title":"new zobject type!",
+    "updated_at":"2014-12-16T14:51:51.302-05:00",
+    "videos_enabled":true,
+    "zobject_count":0
+  }
 }
 </code></pre>
 
@@ -232,31 +221,17 @@ Content-Type: application/json</p>
 Content-Type: application/json</p>
 
 <pre><code>{
-    response :
-        {
-            &#95;id: "5407412b4c616e047a0f0000",
-            &#95;keywords: [
-                "Actor"
-            ],
-            created_at: "2014-09-03T16:26:19.680Z",
-            description: "Actor Card",
-            site_id: "53fe307f4c616e914e000000",
-            title: "ctor
-            updated_at: "2014-09-03T16:26:19.680Z",
-            videos_enabled: true,
-            zobject_attributes: [
-                {
-                    &#95;id: "5407412b4c616e047a100000",
-                    created_at: "2014-09-03T16:26:19.680Z",
-                    description: "name of actor",
-                    field_name: "name",
-                    field_type: "String",
-                    show_list: false,
-                    updated_at: "2014-09-03T16:26:19.680Z"
-                } ...
-            ],
-            "zobject_count": 2
-        }
+  "response": {
+    "_id": "546cd8124c616e043d010000",
+    "_keywords": ["actor"],
+    "created_at": "2014-11-19T12:49:06.385-05:00",
+    "description": "",
+    "site_id": "545932274c616e2359000000",
+    "title": "actor",
+    "updated_at": "2014-11-19T12:49:06.385-05:00",
+    "videos_enabled": true,
+    "zobject_count": 2
+  }
 }
 </code></pre>
 <hr />

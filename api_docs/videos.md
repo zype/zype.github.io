@@ -31,61 +31,95 @@ category! | Exclude a category from the query. Example: category![color] = blue 
 Content-Type: application/json
 
 <pre><code>{
-    response : [
-        {
-            &#95;id: "5389352e69702d401a000000",
-            active: true,
-            ad_timings: [
-                {
-                    mode: "off",
-                    time: 0,
-                    type: "in"
-                }
-            ],
-            created_at: "2014-05-31T01:49:49.388Z",
-            description: null,
-            duration: 1217,
-            featured: false,
-            foreign_id: null,
-            keywords: [
-                "example",
-                "video"
-            ],
-            published_at: null,
-            site_id: 1,
-            thumbnails: [
-                {
-                    height: 240,
-                    name: null,
-                    width: 426,
-                    url: "http://t1.zype.com/5389352e69702d401b000000/1/53a2f27069702d260f050000/00001.png"
-                },
-                {
-                    height: 360,
-                    name: null,
-                    width: 640,
-                    url: "http://t1.zype.com/5389352e69702d401b000000/1/53a2f9d069702d26cf000000/00001.png"
-                },
-                {
-                    height: 480,
-                    name: null,
-                    width: 854,
-                    url: "http://t1.zype.com/5389352e69702d401b000000/1/53a2f9fb69702d26cf010000/00001.png"
-                }
-            ],
-            title: "Example Video",
-            updated_at: "2014-06-19T20:27:53.958Z",
-            upload_id: "5385c92c69702d589f170000",
-            video_source_id: null
+  "response": [
+  {
+    "_id": "547b4dca69702d070dca0000",
+    "active": true,
+    "categories": [
+      {
+        "title": "Additional Videos from YouTube",
+        "value": []
+      },
+      {
+        "title": "Genre",
+        "value": [
+          "Adventure"
         ]
-    },
-    pagination: {
-        current: 1,
-        previous: null,
-        next: 2,
-        per_page: 10,
-        pages: 1
-    }
+      },
+      {
+        "title": "series",
+        "value": []
+      }
+    ],
+    "country": "",
+    "created_at": "2014-11-30T12:03:06.783-05:00",
+    "description": "A continuation of the saga created by George Lucas set thirty years after Star Wars: Episode VI - Return of the Jedi (1983).",
+    "duration": 91,
+    "episode": null,
+    "featured": false,
+    "foreign_id": null,
+    "keywords": [],
+    "mature_content": false,
+    "published_at": "2014-11-30T12:01:32.000-05:00",
+    "rating": 0,
+    "related_playlist_ids": [
+      "5464084f69702d76c1770000"
+    ],
+    "request_count": 14,
+    "season": null,
+    "site_id": "5463c68e69702d24db490000",
+    "status": "created",
+    "subscription_required": false,
+    "title": "Star Wars: Episode VII - The Force Awakens Official Teaser Trailer",
+    "updated_at": "2014-12-17T23:00:03.649-05:00",
+    "video_zobjects": [
+      {
+        "_id": "547b4e6f69702d070dd30000",
+        "description": "",
+        "title": "Harrison Ford",
+        "zobject_type_title": "actor"
+      },
+      {
+        "_id": "547b4e9369702d070edc0000",
+        "description": "",
+        "title": "J.J. Abrams",
+        "zobject_type_title": "director"
+      },
+      {
+        "_id": "54808d6a69702d18b51d0000",
+        "description": "",
+        "title": "John Boyega",
+        "zobject_type_title": "actor"
+      }
+    ],
+    "zobject_ids": [
+      "547b4e6f69702d070dd30000",
+      "547b4e9369702d070edc0000",
+      "54808d6a69702d18b51d0000"
+    ],
+    "thumbnails": [
+      {
+        "aspect_ratio": null,
+        "height": 90,
+        "name": null,
+        "url": "https://i.ytimg.com/vi/PlFckE98xN4/default.jpg",
+        "width": 120
+      },
+      {
+        "aspect_ratio": null,
+        "height": 180,
+        "name": null,
+        "url": "https://i.ytimg.com/vi/PlFckE98xN4/mqdefault.jpg",
+        "width": 320
+      },
+      {
+        "aspect_ratio": null,
+        "height": 360,
+        "name": null,
+        "url": "https://i.ytimg.com/vi/PlFckE98xN4/hqdefault.jpg",
+        "width": 480
+      }
+    ]
 }
 </code></pre>
 <hr>
@@ -117,52 +151,32 @@ mature_content | Whether or not the video requires the viewer to be 18+ to view 
 Content-Type: application/json
 
 <pre><code>{
-    response: {
-        &#95;id: "5389352e69702d401a000000",
-        active: true,
-        ad_timings: [
-            {
-                mode: "off",
-                time: 0,
-                type: "in"
-            }
-        ],
-        created_at: "2014-05-31T01:49:49.388Z",
-        description: null,
-        duration: 1217,
-        featured: false,
-        foreign_id: null,
-        keywords: [
-            "example",
-            "video"
-        ],
-        published_at: null,
-        site_id: 1,
-        thumbnails: [
-            {
-                height: 240,
-                name: null,
-                width: 426,
-                url: "http://t1.zype.com/5389352e69702d401b000000/1/53a2f27069702d260f050000/00001.png"
-            },
-            {
-                height: 360,
-                name: null,
-                width: 640,
-                url: "http://t1.zype.com/5389352e69702d401b000000/1/53a2f9d069702d26cf000000/00001.png"
-            },
-            {
-                height: 480,
-                name: null,
-                width: 854,
-                url: "http://t1.zype.com/5389352e69702d401b000000/1/53a2f9fb69702d26cf010000/00001.png"
-            }
-        ],
-        title: "Example Video",
-        updated_at: "2014-06-19T20:27:53.958Z",
-        upload_id: "5385c92c69702d589f170000",
-        video_source_id: null
-    }
+  "response":
+  {
+    "_id": "549336916362613cf51f0000",
+    "active": true,
+    "country": nil,
+    "created_at": "2014-12-18T15:18:25.744-05:00",
+    "description": "Sample Description",
+    "duration": nil,
+    "episode": 1,
+    "featured": false,
+    "foreign_id": nil,
+    "keywords": [],
+    "mature_content": false,
+    "published_at": nil,
+    "rating": 0.0,
+    "related_playlist_ids": [],
+    "request_count": 0,
+    "season": 1,
+    "site_id": "53c4296a69702d25ca000000",
+    "status": "created",
+    "subscription_required": false,
+    "title": "Sample Video Title",
+    "updated_at": "2014-12-18T15:18:25.744-05:00",
+    "zobject_ids": [],
+    "thumbnails": []
+  }
 }
 </code></pre>
 
@@ -188,52 +202,70 @@ Content-Type: application/json
 Content-Type: application/json
 
 <pre><code>{
-    response : {
-        &#95;id: "5389352e69702d401a000000",
-        active: true,
-        ad_timings: [
-            {
-                mode: "off",
-                time: 0,
-                type: "in"
-            }
-        ],
-        created_at: "2014-05-31T01:49:49.388Z",
-        description: null,
-        duration: 1217,
-        featured: false,
-        foreign_id: null,
-        keywords: [
-            "example",
-            "video"
-        ],
-        published_at: null,
-        site_id: 1,
-        thumbnails: [
-            {
-                height: 240,
-                name: null,
-                width: 426,
-                url: "http://t1.zype.com/5389352e69702d401b000000/1/53a2f27069702d260f050000/00001.png"
-            },
-            {
-                height: 360,
-                name: null,
-                width: 640,
-                url: "http://t1.zype.com/5389352e69702d401b000000/1/53a2f9d069702d26cf000000/00001.png"
-            },
-            {
-                height: 480,
-                name: null,
-                width: 854,
-                url: "http://t1.zype.com/5389352e69702d401b000000/1/53a2f9fb69702d26cf010000/00001.png"
-            }
-        ],
-        title: "Example Video",
-        updated_at: "2014-06-19T20:27:53.958Z",
-        upload_id: "5385c92c69702d589f170000",
-        video_source_id: null
-    }
+  "response":
+  {
+    "_id": "546529b669702d534fb00000",
+    "active": true,
+    "categories": [
+      {
+        "title": "Genre",
+        "value": [
+          "Adventure"
+        ]
+      },
+      {
+        "title": "Additional Videos from YouTube",
+        "value": []
+      },
+      {
+        "title": "series",
+        "value": []
+      }
+    ],
+    "country": "",
+    "created_at": "2014-11-13T16:59:18.970-05:00",
+    "description": "New trailer for Marvel's Avengers: The Age of Ultron!",
+    "duration": 151,
+    "episode": null,
+    "featured": true,
+    "foreign_id": null,
+    "keywords": [],
+    "mature_content": false,
+    "published_at": "2014-11-13T16:57:02.000-05:00",
+    "rating": 0,
+    "related_playlist_ids": [],
+    "request_count": 39,
+    "season": null,
+    "site_id": "5463c68e69702d24db490000",
+    "status": "created",
+    "subscription_required": false,
+    "title": "Avengers: Age of Ultron",
+    "updated_at": "2014-12-17T23:00:14.215-05:00",
+    "zobject_ids": [],
+    "thumbnails": [
+      {
+      "aspect_ratio": null,
+      "height": 90,
+      "name": null,
+      "url": "https://i.ytimg.com/vi/Kno4FTxWycI/default.jpg",
+      "width": 120
+      },
+      {
+      "aspect_ratio": null,
+      "height": 180,
+      "name": null,
+      "url": "https://i.ytimg.com/vi/Kno4FTxWycI/mqdefault.jpg",
+      "width": 320
+      },
+      {
+        "aspect_ratio": null,
+        "height": 360,
+        "name": null,
+        "url": "https://i.ytimg.com/vi/Kno4FTxWycI/hqdefault.jpg",
+        "width": 480
+      }
+    ]
+  }
 }
 </code></pre>
 <hr>
@@ -268,52 +300,32 @@ Content-Type: application/json
 Content-Type: application/json
 
 <pre><code>{
-    response : {
-        &#95;id: "5389352e69702d401a000000",
-        active: true,
-        ad_timings: [
-            {
-                mode: "off",
-                time: 0,
-                type: "in"
-            }
-        ],
-        created_at: "2014-05-31T01:49:49.388Z",
-        description: null,
-        duration: 1217,
-        featured: false,
-        foreign_id: null,
-        keywords: [
-            "example",
-            "video"
-        ],
-        published_at: null,
-        site_id: 1,
-        thumbnails: [
-            {
-                height: 240,
-                name: null,
-                width: 426,
-                url: "http://t1.zype.com/5389352e69702d401b000000/1/53a2f27069702d260f050000/00001.png"
-            },
-            {
-                height: 360,
-                name: null,
-                width: 640,
-                url: "http://t1.zype.com/5389352e69702d401b000000/1/53a2f9d069702d26cf000000/00001.png"
-            },
-            {
-                height: 480,
-                name: null,
-                width: 854,
-                url: "http://t1.zype.com/5389352e69702d401b000000/1/53a2f9fb69702d26cf010000/00001.png"
-            }
-        ],
-        title: "Example Video",
-        updated_at: "2014-06-19T20:27:53.958Z",
-        upload_id: "5385c92c69702d589f170000",
-        video_source_id: null
-    }
+  "response":
+  {
+    "_id": "549336916362613cf51f0000",
+    "active": true,
+    "country": nil,
+    "created_at": "2014-12-18T15:18:25.744-05:00",
+    "description": "Sample Description",
+    "duration": nil,
+    "episode": 1,
+    "featured": false,
+    "foreign_id": nil,
+    "keywords": [],
+    "mature_content": false,
+    "published_at": nil,
+    "rating": 0.0,
+    "related_playlist_ids": [],
+    "request_count": 0,
+    "season": 1,
+    "site_id": "53c4296a69702d25ca000000",
+    "status": "created",
+    "subscription_required": false,
+    "title": "Updated Video Title",
+    "updated_at": "2014-12-18T15:54:11.787-05:00",
+    "zobject_ids": [],
+    "thumbnails": []
+  }
 }
 </code></pre>
 
@@ -340,9 +352,31 @@ Content-Type: application/json
 Content-Type: application/json
 
 <pre><code>{
-    response : {
-        body: "[Video player embed code]"
+  "response":
+  {
+    "body": "<div style=\"position: relative; padding-bottom: 56.25%; padding-top: 0; height: 0; overflow: hidden;\">\n<iframe id=\"_video_546529b669702d534fb00000\" type=\"text/html\" src=\"https://www.youtube.com/embed/Kno4FTxWycI?autoplay=false&showinfo=0&modestbranding=1\" frameborder=\"0\" style=\"position: absolute; top: 0; left: 0; width: 100%; height: 100%;\"></iframe>\n</div>\n",
+    "device": {
+      "_id": "5429b1c569702d2f7c080000",
+      "description": "Accessed via desktop HTML5 web browser",
+      "name": "Desktop"
+    },
+    "revenue_model": {
+      "_id": "5429b1c269702d2f7c010000",
+      "description": "Advertising Video On Demand",
+      "name": "AVOD"
+    },
+    "player": {
+      "_id": "5429b1cb69702d2f7c1d0000",
+      "name": "Youtube Player"
+    },
+    "provider": {
+      "_id": "5429b1cb69702d2f7c1a0000",
+      "name": "Youtube"
+    },
+    "user_agent": {
+      "_id": "547e0d6569702d1bfaa00a00",
+      "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.71 Safari/537.36"
     }
-
+  }
 }
 </code></pre>

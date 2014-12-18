@@ -24,39 +24,38 @@ keywords  | Filters the records returned by keyword. Example: comedy. | String
 Content-Type: application/json
 
 <pre><code>{
-    response : [
-        {
-            &#95;id: "5407412b4c616e047a0f0000",
-            &#95;keywords: [
-                "Actor"
-            ],
-            created_at: "2014-09-03T16:26:19.680Z",
-            description: "Actor Card",
-            site_id: "53fe307f4c616e914e000000",
-            title: "Actor
-            updated_at: "2014-09-03T16:26:19.680Z",
-            videos_enabled: true,
-            zobject_attributes: [
-                {
-                    &#95;id: "5407412b4c616e047a100000",
-                    created_at: "2014-09-03T16:26:19.680Z",
-                    description: "name of actor",
-                    field_name: "name",
-                    field_type: "String",
-                    show_list: false,
-                    updated_at: "2014-09-03T16:26:19.680Z"
-                }
-            ],
-            "zobject_count": 2
-        },
-        pagination: {
-            current: 1,
-            previous: null,
-            next: 2,
-            per_page: 10,
-            pages: 1
-        }
-    ]
+  "response": [
+  {
+    "_id":"546cd8124c616e043d010000",
+    "_keywords": ["actor"],
+    "created_at": "2014-11-19T12:49:06.385-05:00",
+    "description": "",
+    "site_id": "545932274c616e2359000000",
+    "title": "actor",
+    "updated_at": "2014-11-19T12:49:06.385-05:00",
+    "videos_enabled": true,
+    "zobject_count": 2
+  },
+  {
+    "_id": "546cd8324c616e043d020000",
+    "_keywords": ["director"],
+    "created_at": "2014-11-19T12:49:38.521-05:00",
+    "description": "",
+    "site_id": "545932274c616e2359000000",
+    "title": "director",
+    "updated_at": "2014-11-19T12:49:38.521-05:00",
+    "videos_enabled": true,
+    "zobject_count": 2
+  }
+  ],
+  "pagination":
+  {
+    "current": 1,
+    "previous": null,
+    "next": null,
+    "per_page": 10,
+    "pages": 1
+  }
 }
 </code></pre>
 <hr>
@@ -80,30 +79,22 @@ Content-Type: application/json
 Content-Type: application/json
 
 <pre><code>{
-    response: {
-        &#95;id: "5407412b4c616e047a0f0000",
-        &#95;keywords: [
-            "Actor"
-        ],
-        created_at: "2014-09-03T16:26:19.680Z",
-        description: "Actor Card",
-        site_id: "53fe307f4c616e914e000000",
-        title: "ctor
-        updated_at: "2014-09-03T16:26:19.680Z",
-        videos_enabled: true,
-        zobject_attributes: [
-            {
-                &#95;id: "5407412b4c616e047a100000",
-                created_at: "2014-09-03T16:26:19.680Z",
-                description: "name of actor",
-                field_name: "name",
-                field_type: "String",
-                show_list: false,
-                updated_at: "2014-09-03T16:26:19.680Z"
-            } ...
-        ],
-        "zobject_count": 2
-    }
+  "response": {
+    "_id":"54908d574c616e20e73b0000",
+    "_keywords":
+    [
+      "new",
+      "type",
+      "zobject"
+    ],
+    "created_at":"2014-12-16T14:51:51.302-05:00",
+    "description":null,
+    "site_id":"545932274c616e2359000000",
+    "title":"new zobject type!",
+    "updated_at":"2014-12-16T14:51:51.302-05:00",
+    "videos_enabled":true,
+    "zobject_count":0
+  }
 }
 </code></pre>
 
@@ -127,31 +118,17 @@ id | String id of the Zobject Type to retrieve. Example: 5389352e69702d401b00000
 Content-Type: application/json
 
 <pre><code>{
-    response :
-        {
-            &#95;id: "5407412b4c616e047a0f0000",
-            &#95;keywords: [
-                "Actor"
-            ],
-            created_at: "2014-09-03T16:26:19.680Z",
-            description: "Actor Card",
-            site_id: "53fe307f4c616e914e000000",
-            title: "ctor
-            updated_at: "2014-09-03T16:26:19.680Z",
-            videos_enabled: true,
-            zobject_attributes: [
-                {
-                    &#95;id: "5407412b4c616e047a100000",
-                    created_at: "2014-09-03T16:26:19.680Z",
-                    description: "name of actor",
-                    field_name: "name",
-                    field_type: "String",
-                    show_list: false,
-                    updated_at: "2014-09-03T16:26:19.680Z"
-                } ...
-            ],
-            "zobject_count": 2
-        }
+  "response": {
+    "_id": "546cd8124c616e043d010000",
+    "_keywords": ["actor"],
+    "created_at": "2014-11-19T12:49:06.385-05:00",
+    "description": "",
+    "site_id": "545932274c616e2359000000",
+    "title": "actor",
+    "updated_at": "2014-11-19T12:49:06.385-05:00",
+    "videos_enabled": true,
+    "zobject_count": 2
+  }
 }
 </code></pre>
 <hr>

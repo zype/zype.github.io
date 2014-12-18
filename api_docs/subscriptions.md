@@ -25,37 +25,37 @@ Content-Type: application/json
 
 
 <pre><code>{
-  response : [
+  "response": [
+  {
     {
-      {
-        "_id": "54579a714c616e0389010000",
-        "_keywords": [
+      "_id": "54579a714c616e0389010000",
+      "_keywords": [
         "com",
         "example",
         "subscription",
         "test123"
-        ],
-        "amount": "5.99",
-        "consumer_id": "54579a634c616e0389000000",
-        "created_at": "2014-11-03T15:08:33.668Z",
-        "currency": "USD",
-        "deleted": false,
-        "interval": "month",
-        "plan_id": "544813e74c616e0dc0000000",
-        "site_id": "53e8d7f869702d5b64010000",
-        "stripe_card_token": "tok_14umRWBZRS312G8xjfXD1zHQvP3",
-        "stripe_id": "sub_54wKXHYIaIj8812YgK",
-        "trial_period_days": 14,
-        "updated_at": "2014-11-03T15:08:33.668Z"
-      }
+      ],
+      "amount": "5.99",
+      "consumer_id": "54579a634c616e0389000000",
+      "created_at": "2014-11-03T15:08:33.668Z",
+      "currency": "USD",
+      "deleted": false,
+      "interval": "month",
+      "plan_id": "544813e74c616e0dc0000000",
+      "site_id": "53e8d7f869702d5b64010000",
+      "stripe_card_token": "tok_14umRWBZRS312G8xjfXD1zHQvP3",
+      "stripe_id": "sub_54wKXHYIaIj8812YgK",
+      "trial_period_days": 14,
+      "updated_at": "2014-11-03T15:08:33.668Z"
     }
+  }
   ],
-  pagination: {
-      current: 2,
-      previous: 1,
-      next: 3,
-      per_page: 10,
-      pages: 1
+  "pagination": {
+    current: 2,
+    previous: 1,
+    next: 3,
+    per_page: 10,
+    pages: 1
   }
 }
 </code></pre>
@@ -77,30 +77,30 @@ Subscription | A set of key value pairs that describe the Subscription. Needs to
 Content-Type: application/json
 
 <pre><code>{
-  response :
+  "response":
+  {
     {
-      {
-        "_id": "54579a714c616e0389010000",
-        "_keywords": [
+      "_id": "54579a714c616e0389010000",
+      "_keywords": [
         "com",
         "example",
         "subscription",
         "test123"
-        ],
-        "amount": "5.99",
-        "consumer_id": "54579a634c616e0389000000",
-        "created_at": "2014-11-03T15:08:33.668Z",
-        "currency": "USD",
-        "deleted": false,
-        "interval": "month",
-        "plan_id": "544813e74c616e0dc0000000",
-        "site_id": "53e8d7f869702d5b64010000",
-        "stripe_card_token": "tok_14umRWBZRS312G8xjfXD1zHQvP3",
-        "stripe_id": "sub_54wKXHYIaIj8812YgK",
-        "trial_period_days": 14,
-        "updated_at": "2014-11-03T15:08:33.668Z"
-      }
+      ],
+      "amount": "5.99",
+      "consumer_id": "54579a634c616e0389000000",
+      "created_at": "2014-11-03T15:08:33.668Z",
+      "currency": "USD",
+      "deleted": false,
+      "interval": "month",
+      "plan_id": "544813e74c616e0dc0000000",
+      "site_id": "53e8d7f869702d5b64010000",
+      "stripe_card_token": "tok_14umRWBZRS312G8xjfXD1zHQvP3",
+      "stripe_id": "sub_54wKXHYIaIj8812YgK",
+      "trial_period_days": 14,
+      "updated_at": "2014-11-03T15:08:33.668Z"
     }
+  }
 }
 </code></pre>
 
@@ -126,30 +126,30 @@ Content-Type: application/json
 Content-Type: application/json
 
 <pre><code>{
-  response :
+  "response":
+  {
     {
-      {
-        "_id": "54579a714c616e0389010000",
-        "_keywords": [
+      "_id": "54579a714c616e0389010000",
+      "_keywords": [
         "com",
         "example",
         "subscription",
         "test123"
-        ],
-        "amount": "5.99",
-        "consumer_id": "54579a634c616e0389000000",
-        "created_at": "2014-11-03T15:08:33.668Z",
-        "currency": "USD",
-        "deleted": false,
-        "interval": "month",
-        "plan_id": "544813e74c616e0dc0000000",
-        "site_id": "53e8d7f869702d5b64010000",
-        "stripe_card_token": "tok_14umRWBZRS312G8xjfXD1zHQvP3",
-        "stripe_id": "sub_54wKXHYIaIj8812YgK",
-        "trial_period_days": 14,
-        "updated_at": "2014-11-03T15:08:33.668Z"
-      }
+      ],
+      "amount": "5.99",
+      "consumer_id": "54579a634c616e0389000000",
+      "created_at": "2014-11-03T15:08:33.668Z",
+      "currency": "USD",
+      "deleted": false,
+      "interval": "month",
+      "plan_id": "544813e74c616e0dc0000000",
+      "site_id": "53e8d7f869702d5b64010000",
+      "stripe_card_token": "tok_14umRWBZRS312G8xjfXD1zHQvP3",
+      "stripe_id": "sub_54wKXHYIaIj8812YgK",
+      "trial_period_days": 14,
+      "updated_at": "2014-11-03T15:08:33.668Z"
     }
+  }
 }
 </code></pre>
 
@@ -174,30 +174,30 @@ Content-Type: application/json
 Content-Type: application/json
 
 <pre><code>{
-  response :
+  "response":
+  {
     {
-      {
-        "_id": "54579a714c616e0389010000",
-        "_keywords": [
+      "_id": "54579a714c616e0389010000",
+      "_keywords": [
         "com",
         "example",
         "subscription",
         "test123"
-        ],
-        "amount": "5.99",
-        "consumer_id": "54579a634c616e0389000000",
-        "created_at": "2014-11-03T15:08:33.668Z",
-        "currency": "USD",
-        "deleted": false,
-        "interval": "month",
-        "plan_id": "544813e74c616e0dc0000000",
-        "site_id": "53e8d7f869702d5b64010000",
-        "stripe_card_token": "tok_14umRWBZRS312G8xjfXD1zHQvP3",
-        "stripe_id": "sub_54wKXHYIaIj8812YgK",
-        "trial_period_days": 14,
-        "updated_at": "2014-11-03T15:08:33.668Z"
-      }
+      ],
+      "amount": "5.99",
+      "consumer_id": "54579a634c616e0389000000",
+      "created_at": "2014-11-03T15:08:33.668Z",
+      "currency": "USD",
+      "deleted": false,
+      "interval": "month",
+      "plan_id": "544813e74c616e0dc0000000",
+      "site_id": "53e8d7f869702d5b64010000",
+      "stripe_card_token": "tok_14umRWBZRS312G8xjfXD1zHQvP3",
+      "stripe_id": "sub_54wKXHYIaIj8812YgK",
+      "trial_period_days": 14,
+      "updated_at": "2014-11-03T15:08:33.668Z"
     }
+  }
 }
 </code></pre>
 
@@ -221,29 +221,29 @@ Content-Type: application/json
 Content-Type: application/json
 
 <pre><code>{
-  response :
+  "response":
+  {
     {
-      {
-        "_id": "54579a714c616e0389010000",
-        "_keywords": [
+      "_id": "54579a714c616e0389010000",
+      "_keywords": [
         "com",
         "example",
         "subscription",
         "test123"
-        ],
-        "amount": "5.99",
-        "consumer_id": "54579a634c616e0389000000",
-        "created_at": "2014-11-03T15:08:33.668Z",
-        "currency": "USD",
-        "deleted": false,
-        "interval": "month",
-        "plan_id": "544813e74c616e0dc0000000",
-        "site_id": "53e8d7f869702d5b64010000",
-        "stripe_card_token": "tok_14umRWBZRS312G8xjfXD1zHQvP3",
-        "stripe_id": "sub_54wKXHYIaIj8812YgK",
-        "trial_period_days": 14,
-        "updated_at": "2014-11-03T15:08:33.668Z"
-      }
+      ],
+      "amount": "5.99",
+      "consumer_id": "54579a634c616e0389000000",
+      "created_at": "2014-11-03T15:08:33.668Z",
+      "currency": "USD",
+      "deleted": false,
+      "interval": "month",
+      "plan_id": "544813e74c616e0dc0000000",
+      "site_id": "53e8d7f869702d5b64010000",
+      "stripe_card_token": "tok_14umRWBZRS312G8xjfXD1zHQvP3",
+      "stripe_id": "sub_54wKXHYIaIj8812YgK",
+      "trial_period_days": 14,
+      "updated_at": "2014-11-03T15:08:33.668Z"
     }
+  }
 }
 </code></pre>
