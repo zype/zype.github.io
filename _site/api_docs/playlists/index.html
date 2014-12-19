@@ -156,6 +156,21 @@ active=active&amp;keyword=keyword&amp;category=category
       <td>A set of key value pairs that describe the Playlist</td>
       <td>Hash</td>
     </tr>
+    <tr>
+      <td>title</td>
+      <td>The title of the playlist</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>site_id</td>
+      <td>The id of the site the playlist belongs to</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>video_ids</td>
+      <td>A list of items within the playlist by video id</td>
+      <td>Array</td>
+    </tr>
   </tbody>
 </table>
 
@@ -227,14 +242,14 @@ Content-Type: application/json</p>
   "response":
   {
     "_id": "549082404c616e20e7290000",
-    "_keywords": ["playlist","test"],
+    "_keywords": ["playlist","sample"],
     "active": true,
     "created_at": "2014-12-16T14:04:32.666-05:00",
     "description": "",
     "priority": 0,
     "related_video_ids": [],
     "site_id": "545932274c616e2359000000",
-    "title": "Test Playlist",
+    "title": "sample Playlist",
     "updated_at": "2014-12-16T14:04:32.666-05:00",
     "playlist_item_count": 4
   }
@@ -276,8 +291,7 @@ Content-Type: application/json</p>
 Content-Type: application/json</p>
 
 <pre><code>{
-  "response":
-  [
+  "response": [
     {
       "_id":"5481f66e4c616e06ec670000",
       "active":true,
@@ -285,14 +299,14 @@ Content-Type: application/json</p>
       [
         {
           "title":"Season",
-          "value":["1","2","3","4","5","6","7"]
+          "value":["1"]
         },
         {
-          "title":"Final test",
+          "title":"Final sample",
           "value":["everything"]
         },
         {
-          "title":"Test",
+          "title":"sample",
           "value":["no","yes"]
         }
       ],
@@ -360,8 +374,33 @@ Content-Type: application/json</p>
   <tbody>
     <tr>
       <td>playlist</td>
-      <td>A set of key value pairs that describe the playlist.</td>
+      <td>A set of key value pairs that describe the Playlist</td>
       <td>Hash</td>
+    </tr>
+    <tr>
+      <td>title</td>
+      <td>The title of the playlist</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>site_id</td>
+      <td>The id of the site the playlist belongs to</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>video_ids</td>
+      <td>A list of items within the playlist by video id</td>
+      <td>Array</td>
+    </tr>
+    <tr>
+      <td>video_id</td>
+      <td>The id of a video to be repositioned within the playlist</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>position</td>
+      <td>The position that the video will now occupy within the playlist</td>
+      <td>Integer</td>
     </tr>
   </tbody>
 </table>
@@ -377,14 +416,14 @@ Content-Type: application/json</p>
   response:
   {
     "_id": "549082404c616e20e7290000",
-    "_keywords": ["playlist","test"],
+    "_keywords": ["playlist","sample"],
     "active": true,
     "created_at": "2014-12-16T14:04:32.666-05:00",
     "description": "",
     "priority": 0,
     "related_video_ids": [],
     "site_id": "545932274c616e2359000000",
-    "title": "Updated Test Playlist",
+    "title": "Updated sample Playlist",
     "updated_at": "2014-12-18T14:04:32.666-05:00",
     "playlist_item_count": 4
   }

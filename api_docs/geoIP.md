@@ -16,13 +16,12 @@ permalink: /api_docs/geoip/
 
 Parameter | Function | Type
 --------- | -------- | ----
-ip_address | Defaults to IP of API caller if not provided Example: 255.255.255.255. | Number
+ip_address | Defaults to IP of API caller if not provided Example: 255.255.255.255. | Integer
 
 #### Response
 200
 Content-Type: application/json
-<pre><code>
-{
+<pre><code>{
   "response": {
     "request": "108.29.95.21",
     "ip": "108.29.95.21",

@@ -25,8 +25,7 @@ Content-Type: application/json
 
 
 <pre><code>{
-  "response":
-  [
+  "response": [
     {
       "_id": "54579a634c616e0389000000",
       "_keywords": [
@@ -63,15 +62,15 @@ Content-Type: application/json
 
 Parameter | Function | Type
 --------- | -------- | ----
-Consumer | A set of key value pairs that describe the Consumer. Needs to include email. | Hash
+consumer | A set of key value pairs that describe the Consumer. Needs to include email. | Hash
+email | The consumer's email address (must be unique) | string
 
 #### Response
 201
 Content-Type: application/json
 
 <pre><code> {
-  "response":
-  {
+  "response": {
     "_id": "54579a634c616e0389000000",
     "_keywords": [
       "com",
@@ -91,7 +90,7 @@ Content-Type: application/json
 ## Consumer
 Lists descriptive information about a Consumer
 <hr>
-###Retrieve a Consumer
+### Retrieve a Consumer
 <hr>
 <pre><code>GET - https://api.zype.com/consumer/{id}
 </code></pre>
@@ -110,8 +109,7 @@ Content-Type: application/json
 Content-Type: application/json
 
 <pre><code> {
-  "response":
-  {
+  "response": {
     "_id": "54579a634c616e0389000000",
     "_keywords": [
       "com",

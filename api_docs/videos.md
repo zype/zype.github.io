@@ -20,11 +20,17 @@ Parameter | Function | Type
 --------- | -------- | ----
 page      | The page number of records to return (zero indexed). Example: 0. | Number
 per_page  | The number of records to return. Example: 10. | Number
+q         | A query string for searching for videos | String
 keyword   | Filters the records returned by keyword. Example: comedy. | String
 status    | Filters the records returned by status. Example: created. | String
 active    | Show active, inactive or all videos Example: true. | String
+type      | The type of videos to query. Example: Zype, Hulu, Youtube, Crunchyroll | String
+id        | Query for a video by id | String
+id!       | Exclude a video from the query | String
 category  | An optional set of key value category pairs to filter the records returned by category. Example: category[color]=blue. | Hash
 category! | Exclude a category from the query. Example: category![color] = blue | Hash
+zobject_id  | Query for videos with a specific zobject associated with them | String
+zobject_id! | Exclude videos with a specfific zobject associated with them | String
 
 #### Response
 200

@@ -16,12 +16,11 @@ Retrieve configuration settings for a Roku App.
 
 Parameter | Function | Type
 --------- | -------- | ----
-app_key      | The app key. Ex. abc123fg | String
+app_key   | The app key | String
 
 #### Response
 200
 Content-Type: application/json
-
 
 <pre><code>{
   "response": {
@@ -111,6 +110,6 @@ Content-Type: application/json
       }
     ],
     "video_sources": [...]
-    }
   }
+}
 </code></pre>

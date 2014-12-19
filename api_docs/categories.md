@@ -98,6 +98,8 @@ Content-Type: application/json
 Parameter | Function | Type
 --------- | -------- | ----
 category | A set of key value pairs that describe the Category | Hash
+title | Title of the category | String
+values | Values for the category | Array
 
 #### Request
 Content-Type: application/json
@@ -173,7 +175,7 @@ Content-Type: application/json
 }
 </code></pre>
 <hr>
-### Update a Catgeory
+### Update a Category
 <hr>
 <pre><code>PUT - https://api.zype.com/categories/{id}
 </code></pre>
@@ -183,6 +185,8 @@ Content-Type: application/json
 Parameter | Function | Type
 --------- | -------- | ----
 id | String id of the Category to update. Example: 5389352e69702d401b000000. | String
+title | Title of the category | String
+values | Values for the category | Array
 
 #### Request
 Content-Type: application/json
@@ -214,22 +218,3 @@ Content-Type: application/json
   }
 }
 </code></pre>
-<hr>
-### Remove a Category
-<hr>
-<pre><code>DELETE - https://api.zype.com/categories/{id}
-</code></pre>
-
-#### Parameters
-
-Parameter | Function | Type
---------- | -------- | ----
-id | String id of the Category to remove. Example: 5389352e69702d401b000000. | Number
-
-#### Request
-Content-Type: application/json
-
-#### Response
-204
-
-No Content

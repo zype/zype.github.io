@@ -70,15 +70,17 @@ Content-Type: application/json
 
 Parameter | Function | Type
 --------- | -------- | ----
-Subscription | A set of key value pairs that describe the Subscription. Needs to include consumer_id and plan_id. | Hash
+subscription | A set of key value pairs that describe the Subscription. Needs to include consumer_id and plan_id. | Hash
+consumer_id | The id of the consumer to be subscribed | String
+plan_id | The id of the plan the consumer is subscribing to | String
+
 
 #### Response
 201
 Content-Type: application/json
 
 <pre><code>{
-  "response":
-  {
+  "response": {
     {
       "_id": "54579a714c616e0389010000",
       "_keywords": [
@@ -126,8 +128,7 @@ Content-Type: application/json
 Content-Type: application/json
 
 <pre><code>{
-  "response":
-  {
+  "response": {
     {
       "_id": "54579a714c616e0389010000",
       "_keywords": [
@@ -163,7 +164,10 @@ Content-Type: application/json
 
 Parameter | Function | Type
 --------- | -------- | ----
-Subscription     | A set of key value pairs that describe the subscription. Example: subscription[amount]="10.99". | Hash
+Subscription     | A set of key value pairs that describe the subscription. | Hash
+consumer_id | The id of the consumer | String
+plan_id | The id of the plan | String
+
 
 #### Request
 
@@ -174,8 +178,7 @@ Content-Type: application/json
 Content-Type: application/json
 
 <pre><code>{
-  "response":
-  {
+  "response": {
     {
       "_id": "54579a714c616e0389010000",
       "_keywords": [
@@ -202,7 +205,7 @@ Content-Type: application/json
 </code></pre>
 
 <hr>
-###Remove a Subscription
+### Remove a Subscription
 <hr>
 <pre><code>DELETE - https://api.zype.com/subscriptions/{id}
 </code></pre>
@@ -221,8 +224,7 @@ Content-Type: application/json
 Content-Type: application/json
 
 <pre><code>{
-  "response":
-  {
+  "response": {
     {
       "_id": "54579a714c616e0389010000",
       "_keywords": [

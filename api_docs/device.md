@@ -26,8 +26,8 @@ Content-Type: application/json
 <pre><code>{
 "response": [
   {
-    "&#95;id": "54204805636261f298090000",
-    "&#95;keywords": [
+    id": "54204805636261f298090000",
+    keywords": [
       "accessed",
       "android",
       "chrome",
@@ -51,8 +51,8 @@ Content-Type: application/json
     "updated_at": "2014-09-22T16:02:13.578Z"
 },
   {
-    "&#95;id": "54204805636261f298080000",
-    "&#95;keywords": [
+    id": "54204805636261f298080000",
+    keywords": [
       "accessed",
       "html5",
       "ios",
@@ -74,9 +74,7 @@ Content-Type: application/json
     ],
     "updated_at": "2014-09-22T16:02:13.340Z"
 },
-  {
-    "&#95;id": "54204804636261f298070000",
-    "&#95;keywords": [
+  id": "54204804636261f298070000"keywords": [
       "accessed",
       "browser",
       "desktop",
@@ -130,8 +128,8 @@ Content-Type: application/json
 
 <pre><code>{
   "response": {
-    "&#95;id": "54204805636261f298090000",
-    "&#95;keywords": [
+    "id": "54204805636261f298090000",
+    "keywords": [
       "accessed",
       "android",
       "chrome",

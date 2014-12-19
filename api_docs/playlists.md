@@ -61,6 +61,9 @@ active=active&keyword=keyword&category=category
 Parameter | Function | Type
 --------- | -------- | ----
 playlist | A set of key value pairs that describe the Playlist | Hash
+title | The title of the playlist | String
+site_id | The id of the site the playlist belongs to | String
+video_ids | A list of items within the playlist by video id | Array
 
 #### Request
 
@@ -115,14 +118,14 @@ Content-Type: application/json
   "response":
   {
     "_id": "549082404c616e20e7290000",
-    "_keywords": ["playlist","test"],
+    "_keywords": ["playlist","sample"],
     "active": true,
     "created_at": "2014-12-16T14:04:32.666-05:00",
     "description": "",
     "priority": 0,
     "related_video_ids": [],
     "site_id": "545932274c616e2359000000",
-    "title": "Test Playlist",
+    "title": "sample Playlist",
     "updated_at": "2014-12-16T14:04:32.666-05:00",
     "playlist_item_count": 4
   }
@@ -150,8 +153,7 @@ Content-Type: application/json
 Content-Type: application/json
 
 <pre><code>{
-  "response":
-  [
+  "response": [
     {
       "_id":"5481f66e4c616e06ec670000",
       "active":true,
@@ -159,14 +161,14 @@ Content-Type: application/json
       [
         {
           "title":"Season",
-          "value":["1","2","3","4","5","6","7"]
+          "value":["1"]
         },
         {
-          "title":"Final test",
+          "title":"Final sample",
           "value":["everything"]
         },
         {
-          "title":"Test",
+          "title":"sample",
           "value":["no","yes"]
         }
       ],
@@ -225,7 +227,12 @@ Content-Type: application/json
 
 Parameter | Function | Type
 --------- | -------- | ----
-playlist | A set of key value pairs that describe the playlist. | Hash
+playlist | A set of key value pairs that describe the Playlist | Hash
+title | The title of the playlist | String
+site_id | The id of the site the playlist belongs to | String
+video_ids | A list of items within the playlist by video id | Array
+video_id | The id of a video to be repositioned within the playlist | String
+position | The position that the video will now occupy within the playlist | Integer
 
 #### Request
 Content-Type: application/json
@@ -238,14 +245,14 @@ Content-Type: application/json
   response:
   {
     "_id": "549082404c616e20e7290000",
-    "_keywords": ["playlist","test"],
+    "_keywords": ["playlist","sample"],
     "active": true,
     "created_at": "2014-12-16T14:04:32.666-05:00",
     "description": "",
     "priority": 0,
     "related_video_ids": [],
     "site_id": "545932274c616e2359000000",
-    "title": "Updated Test Playlist",
+    "title": "Updated sample Playlist",
     "updated_at": "2014-12-18T14:04:32.666-05:00",
     "playlist_item_count": 4
   }

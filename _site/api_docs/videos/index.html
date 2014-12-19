@@ -89,6 +89,11 @@ keyword=keyword&amp;status=status&amp;active=true&amp;type=type&amp;category=cat
       <td>Number</td>
     </tr>
     <tr>
+      <td>q</td>
+      <td>A query string for searching for videos</td>
+      <td>String</td>
+    </tr>
+    <tr>
       <td>keyword</td>
       <td>Filters the records returned by keyword. Example: comedy.</td>
       <td>String</td>
@@ -104,6 +109,21 @@ keyword=keyword&amp;status=status&amp;active=true&amp;type=type&amp;category=cat
       <td>String</td>
     </tr>
     <tr>
+      <td>type</td>
+      <td>The type of videos to query. Example: Zype, Hulu, Youtube, Crunchyroll</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>id</td>
+      <td>Query for a video by id</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>id!</td>
+      <td>Exclude a video from the query</td>
+      <td>String</td>
+    </tr>
+    <tr>
       <td>category</td>
       <td>An optional set of key value category pairs to filter the records returned by category. Example: category[color]=blue.</td>
       <td>Hash</td>
@@ -112,6 +132,16 @@ keyword=keyword&amp;status=status&amp;active=true&amp;type=type&amp;category=cat
       <td>category!</td>
       <td>Exclude a category from the query. Example: category![color] = blue</td>
       <td>Hash</td>
+    </tr>
+    <tr>
+      <td>zobject_id</td>
+      <td>Query for videos with a specific zobject associated with them</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>zobject_id!</td>
+      <td>Exclude videos with a specfific zobject associated with them</td>
+      <td>String</td>
     </tr>
   </tbody>
 </table>

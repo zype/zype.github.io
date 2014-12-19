@@ -149,9 +149,19 @@ Content-Type: application/json</p>
   </thead>
   <tbody>
     <tr>
-      <td>Subscription</td>
+      <td>subscription</td>
       <td>A set of key value pairs that describe the Subscription. Needs to include consumer_id and plan_id.</td>
       <td>Hash</td>
+    </tr>
+    <tr>
+      <td>consumer_id</td>
+      <td>The id of the consumer to be subscribed</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>plan_id</td>
+      <td>The id of the plan the consumer is subscribing to</td>
+      <td>String</td>
     </tr>
   </tbody>
 </table>
@@ -161,8 +171,7 @@ Content-Type: application/json</p>
 Content-Type: application/json</p>
 
 <pre><code>{
-  "response":
-  {
+  "response": {
     {
       "_id": "54579a714c616e0389010000",
       "_keywords": [
@@ -225,8 +234,7 @@ Content-Type: application/json</p>
 Content-Type: application/json</p>
 
 <pre><code>{
-  "response":
-  {
+  "response": {
     {
       "_id": "54579a714c616e0389010000",
       "_keywords": [
@@ -273,8 +281,18 @@ Content-Type: application/json</p>
   <tbody>
     <tr>
       <td>Subscription</td>
-      <td>A set of key value pairs that describe the subscription. Example: subscription[amount]=”10.99”.</td>
+      <td>A set of key value pairs that describe the subscription.</td>
       <td>Hash</td>
+    </tr>
+    <tr>
+      <td>consumer_id</td>
+      <td>The id of the consumer</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>plan_id</td>
+      <td>The id of the plan</td>
+      <td>String</td>
     </tr>
   </tbody>
 </table>
@@ -288,8 +306,7 @@ Content-Type: application/json</p>
 Content-Type: application/json</p>
 
 <pre><code>{
-  "response":
-  {
+  "response": {
     {
       "_id": "54579a714c616e0389010000",
       "_keywords": [
@@ -350,8 +367,7 @@ Content-Type: application/json</p>
 Content-Type: application/json</p>
 
 <pre><code>{
-  "response":
-  {
+  "response": {
     {
       "_id": "54579a714c616e0389010000",
       "_keywords": [

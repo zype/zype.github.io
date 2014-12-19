@@ -59,7 +59,7 @@ Content-Type: application/json
 }
 </code></pre>
 <hr>
-## Create a Zobject Type
+### Create a Zobject Type
 <hr>
 
 <pre><code>POST - https://api.zype.com/zobject_types?page=page&per_page=per_page&keywords=keyword
@@ -98,11 +98,9 @@ Content-Type: application/json
 }
 </code></pre>
 
-## Zobject Type
-
-Lists descriptive information about Zobjects.
+Lists descriptive information about a Zobject type.
 <hr>
-### Zobject Type
+### Retrieve a Zobject Type
 <hr>
 <pre><code>GET - https://api.zype.com/zobject_types/{id}
 </code></pre>
@@ -118,17 +116,32 @@ id | String id of the Zobject Type to retrieve. Example: 5389352e69702d401b00000
 Content-Type: application/json
 
 <pre><code>{
-  "response": {
-    "_id": "546cd8124c616e043d010000",
-    "_keywords": ["actor"],
-    "created_at": "2014-11-19T12:49:06.385-05:00",
-    "description": "",
-    "site_id": "545932274c616e2359000000",
-    "title": "actor",
-    "updated_at": "2014-11-19T12:49:06.385-05:00",
-    "videos_enabled": true,
-    "zobject_count": 2
-  }
+  "response": [
+    {
+      "_id": "5464f94569702d5349720000",
+      "_keywords": [
+      "actor"
+      ],
+      "created_at": "2014-11-13T13:32:37.284-05:00",
+      "description": "",
+      "site_id": "5463c68e69702d24db490000",
+      "title": "actor",
+      "updated_at": "2014-11-14T14:14:12.757-05:00",
+      "videos_enabled": true,
+      "zobject_attributes": [
+        {
+          "_id": "5464f94569702d5349730000",
+          "created_at": "2014-11-13T13:32:37.284-05:00",
+          "description": "The actor's name.",
+          "field_name": "name",
+          "field_type": "String",
+          "show_list": true,
+          "updated_at": "2014-11-13T13:32:37.284-05:00"
+        }
+      ],
+      "zobject_count": 7
+    }
+  ]
 }
 </code></pre>
 <hr>
@@ -152,35 +165,36 @@ Content-Type: application/json
 Content-Type: application/json
 
 <pre><code>{
-    response :
-        {
-            &#95;id: "5407412b4c616e047a0f0000",
-            &#95;keywords: [
-                "Actor"
-            ],
-            created_at: "2014-09-03T16:26:19.680Z",
-            description: "Actor Card",
-            site_id: "53fe307f4c616e914e000000",
-            title: "ctor
-            updated_at: "2014-09-03T16:26:19.680Z",
-            videos_enabled: true,
-            zobject_attributes: [
-                {
-                    &#95;id: "5407412b4c616e047a100000",
-                    created_at: "2014-09-03T16:26:19.680Z",
-                    description: "name of actor",
-                    field_name: "name",
-                    field_type: "String",
-                    show_list: false,
-                    updated_at: "2014-09-03T16:26:19.680Z"
-                } ...
-            ],
-            "zobject_count": 2
-        }
+  "response": [
+    {
+      "_id": "5464f94569702d5349720000",
+      "_keywords": [
+      "actor"
+      ],
+      "created_at": "2014-11-13T13:32:37.284-05:00",
+      "description": "",
+      "site_id": "5463c68e69702d24db490000",
+      "title": "actor",
+      "updated_at": "2014-11-14T14:14:12.757-05:00",
+      "videos_enabled": true,
+      "zobject_attributes": [
+      {
+        "_id": "5464f94569702d5349730000",
+        "created_at": "2014-11-13T13:32:37.284-05:00",
+        "description": "The actor's name.",
+        "field_name": "name",
+        "field_type": "String",
+        "show_list": true,
+        "updated_at": "2014-11-13T13:32:37.284-05:00"
+      }
+      ],
+      "zobject_count": 7
+    }
+  ]
 }
 </code></pre>
 <hr>
-### Remove a Zobject Type
+### Delete a Zobject Type
 <hr>
 
 <pre><code>DELETE - https://api.zype.com/zobject_types/{id}
@@ -193,34 +207,6 @@ Parameter | Function | Type
 id | String id of the Zobject Type to remove. Example: 5389352e69702d401b000000. | String
 
 #### Response
-200
-Content-Type: application/json
+204
 
-<pre><code>{
-    response :
-        {
-            &#95;id: "5407412b4c616e047a0f0000",
-            &#95;keywords: [
-                "Actor"
-            ],
-            created_at: "2014-09-03T16:26:19.680Z",
-            description: "Actor Card",
-            site_id: "53fe307f4c616e914e000000",
-            title: "ctor
-            updated_at: "2014-09-03T16:26:19.680Z",
-            videos_enabled: true,
-            zobject_attributes: [
-                {
-                    &#95;id: "5407412b4c616e047a100000",
-                    created_at: "2014-09-03T16:26:19.680Z",
-                    description: "name of actor",
-                    field_name: "name",
-                    field_type: "String",
-                    show_list: false,
-                    updated_at: "2014-09-03T16:26:19.680Z"
-                }
-            ],
-            "zobject_count": 2
-        }
-}
-</code></pre>
+No Content
