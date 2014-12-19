@@ -24,4 +24,4 @@ videos. Common categories for video content might include: Genre, Tag, Type, Sea
 
 ### I'm using the Zype Platform to create a Roku app, what's the difference for me?
 Roku apps will treat categories and playlists the same, as they are both just a collection of
-videos. For an in-depth guide on how to create your Roku App, make sure you check out [this blog post](http://localhost:4000/posts/2014/12/03/categories-playlists-zobjects-roku/)
+videos. For an in-depth guide on how to create your Roku App, make sure you check out [this blog post](http://dev.zype.com/posts/2014/12/03/categories-playlists-zobjects-roku/)

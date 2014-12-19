@@ -6,8 +6,8 @@
 </description>
     <link>http://dev.zype.com/</link>
     <atom:link href="http://dev.zype.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Fri, 19 Dec 2014 17:13:02 -0500</pubDate>
-    <lastBuildDate>Fri, 19 Dec 2014 17:13:02 -0500</lastBuildDate>
+    <pubDate>Fri, 19 Dec 2014 17:30:09 -0500</pubDate>
+    <lastBuildDate>Fri, 19 Dec 2014 17:30:09 -0500</lastBuildDate>
     <generator>Jekyll v2.3.0</generator>
     
       <item>
@@ -142,7 +142,7 @@ videos. Common categories for video content might include: Genre, Tag, Type, Sea
 
 &lt;h3 id=&quot;im-using-the-zype-platform-to-create-a-roku-app-whats-the-difference-for-me&quot;&gt;I’m using the Zype Platform to create a Roku app, what’s the difference for me?&lt;/h3&gt;
 &lt;p&gt;Roku apps will treat categories and playlists the same, as they are both just a collection of
-videos. For an in-depth guide on how to create your Roku App, make sure you check out &lt;a href=&quot;http://localhost:4000/posts/2014/12/03/categories-playlists-zobjects-roku/&quot;&gt;this blog post&lt;/a&gt;&lt;/p&gt;
+videos. For an in-depth guide on how to create your Roku App, make sure you check out &lt;a href=&quot;http://dev.zype.com/posts/2014/12/03/categories-playlists-zobjects-roku/&quot;&gt;this blog post&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Thu, 04 Dec 2014 06:16:55 -0500</pubDate>
         <link>http://dev.zype.com/posts/2014/12/04/defining-categories-and-playlists</link>

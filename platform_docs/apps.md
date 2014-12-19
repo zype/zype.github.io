@@ -7,7 +7,7 @@ permalink: /platform_docs/apps/
 The Zype Platform is feature rich, so we want to provide you with a place to learn more about it.
 Below are a bunch of short tutorials (with pictures!) to help you with apps.
 
-If you want a full walkthrough of creating an app, we suggest you look at the [creating an app guide.](http://localhost:4000/platform_docs/creating_an_app/)
+If you want a full walkthrough of creating an app, we suggest you look at the [creating an app guide.](http://dev.zype.com/platform_docs/creating_an_app/)
 
 <div style="float: left;">
   <div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>
