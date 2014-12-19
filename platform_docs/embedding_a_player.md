@@ -4,9 +4,11 @@ title: Zype Developer Portal | Platform Docs
 permalink: /platform_docs/embedding_a_player/
 ---
 ##Embedding a Player on Your Site
-The Zype Platform is feature rich, so we want to provide you with a place to learn more about it.
-Below are a bunch of short tutorials (with pictures!) to help you with a number of topics.
+One of the quickest ways to get up and running with Zype videos is to simply drop a player embed code onto your site. Once you've got some videos ready to view, take a look at the guides below.
 
-Topic | Tags
------ | ------------
-<a href="http://dev.zype.com/posts/2014/11/27/embedding-player/">Embedding a Player on Your Site</a> | Player, Embed
+<div style="float: left;">
+  <div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>
+    <a href="http://dev.zype.com/posts/2014/11/27/embedding-player/">
+    Embedding a Player on Your Site</a>
+  </div>
+</div>

@@ -1,68 +1,13 @@
-<!DOCTYPE html>
-<html>
+---
+layout: platform
+title: Zype Developer Portal | Platform Docs
+permalink: /platform_docs/
+---
+## User Guides
+The Zype Platform is feature rich, so we want to provide you with a place to learn more about it.
+Below are a bunch of short tutorials (with pictures!) to help you with a number of topics. The links on the left under "Getting Started" will walk you through the major parts of the Zype Platform.
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-    <title>Zype Developer Portal | Platform Docs</title>
-    <meta name="description" content="This is the devloper portal for Zype Media. Zype is Revenue and Reach Magic for Online Video. We help content owners deliver fully branded video experiences.
-">
-
-    <link rel="stylesheet" href="/css/main.css">
-    <link rel="canonical" href="http://dev.zype.com/platform_docs/">
-    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-</head>
-
-
-<body>
-
-  <header id="header">
-  <div id="content">
-    <a href="/"><img src="http://i.imgur.com/v8SUe9t.png" alt="Zype" />
-      <h1 id="title">Developer Portal</h1></a>
-      <p>a knowledge base</p>
-      <br>
-      <p class="category"><a href="/api_docs/intro/" style="color: #8acfef;">API Documentation</a></p>
-      <p class="category"><a href="/platform_docs/" style="color: #8acfef;">Platform Documentation</a></p>
-        <h4 class="api-header">Getting Started:</h4>
-          <p><a href="/platform_docs/overview/">Overview</a></p>
-          <p><a href="/platform_docs/adding_videos/">Adding Videos</a></p>
-          <p><a href="/platform_docs/creating_an_app/">Creating an App</a></p>
-          <p><a href="/platform_docs/embedding_a_player/">Embedding a Player</a></p>
-          <p><a href="/platform_docs/reports_and_analytics/">Reports and Analytics</a></p>
-        <h4 class="api-header">Learn About:</h4>
-          <p><a href="/platform_docs/videos/">Videos</a></p>
-          <p><a href="/platform_docs/apps/">Apps</a></p>
-          <p><a href="/platform_docs/player_rules/">Player Rules</a></p>
-          <p><a href="/platform_docs/playlists/">Playlists</a></p>
-          <p><a href="/platform_docs/categories/">Categories</a></p>
-          <p><a href="/platform_docs/assets/">Assets</a></p>
-          <!-- <p><a href="/platform_docs/consumers/">Consumers</a></p>
-          <p><a href="/platform_docs/plans/">Plans</a></p>
-          <p><a href="/platform_docs/subscriptions/">Subscriptions</a></p> -->
-          <p><a href="/platform_docs/zobjects/">Zobjects</a></p>
-        <br>
-      <p class="category"><a href="/glossary/" style="color: #8acfef;">Glossary</a></p>
-      <p class="category"><a href="http://status.zype.com" style="color: #8acfef;">System Status</a></p>
-      <p class="category"><a href="/faq/" style="color: #8acfef;">FAQ</a></p>
-      <br>
-      © 2014 Zype Media Group
-    </div>
-  </header>
-
-
-  <section id="main">
-    <h2 id="user-guides">User Guides</h2>
-<p>The Zype Platform is feature rich, so we want to provide you with a place to learn more about it.
-Below are a bunch of short tutorials (with pictures!) to help you with a number of topics. The links on the left under “Getting Started” will walk you through the major parts of the Zype Platform.</p>
-
-<div style="width: 45%; float: left;">
+  <div style="width: 45%; float: left;">
     <div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>
       <a href="http://dev.zype.com/posts/2014/10/10/adding-zype-to-rails/">
       Adding Zype to a Rails Application</a>
@@ -101,7 +46,7 @@ Below are a bunch of short tutorials (with pictures!) to help you with a number 
     </div>
   </div>
 
-<div style="width: 45%; float: left;">
+  <div style="width: 45%; float: left;">
     <div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>  
       <a href="http://dev.zype.com/posts/2014/12/03/categories-playlists-zobjects-roku/">
       Categories, Playlists and Your Roku App</a>
@@ -139,13 +84,3 @@ Below are a bunch of short tutorials (with pictures!) to help you with a number 
       Search Filters</a>
     </div>
   </div>
-
-  </section>
-
-  <footer>
-</footer>
-
-
-</body>
-
-</html>
