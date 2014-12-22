@@ -62,20 +62,101 @@
 <p>The Zype Platform is feature rich, so we want to provide you with a place to learn more about it.
 Below are a bunch of short tutorials (with pictures!) to help you with categories.</p>
 
-<div style="float: left;">
+<div style="width: 100%;">
   <div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>
-    <a href="http://dev.zype.com/posts/2014/12/04/defining-categories-and-playlists/">
+    <a href="#1">
     Categories and Playlists on the Zype Platform</a>
   </div>
   <div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>
-    <a href="http://dev.zype.com/posts/2014/12/03/categories-playlists-zobjects-roku/">
+    <a href="#2">
     Categories, Playlists and Your Roku App</a>
   </div>
   <div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>
-    <a href="http://dev.zype.com/posts/2014/12/10/filtering-videos-and-playlists/">
+    <a href="#3">
     Search Filters on the Zype Platform</a>
   </div>
 </div>
+
+<hr id="1" />
+
+<h2 id="categories-and-playlists-on-the-zype-platform">Categories and Playlists on the Zype Platform</h2>
+<p>As you make your way through the <a href="http://admin.zype.com">Zype Platform</a>, you might have some
+questions about the differences between a playlist and a category. At the end of the day, both
+are used to return a set of videos, but they aren’t exactly the same thing. This blog post
+will look at categories and playlists and help you better understand how and when to use them.</p>
+
+<h3 id="what-are-playlists-and-how-do-i-use-them">What are playlists and how do I use them?</h3>
+<p>A playlist on the Zype Platform is a collection of videos that you assemble under a title.
+Common playlists might include: Trending Videos, Most Popular, Editor’s Choice, etc. Playlists
+are great for when you want to create and curate, by hand, a set of videos that might not fall
+under a specific category.</p>
+
+<h3 id="what-are-categories-and-how-do-i-use-them">What are categories and how do I use them?</h3>
+<p>A category on the Zype Platform is a label that you can create and assign to any number of
+videos. Common categories for video content might include: Genre, Tag, Type, Season, Series,
+etc. Categories are more generic than playlists and can be mass assigned to videos in your
+<a href="http://admin.zype.com/videos">Video Library.</a></p>
+
+<h3 id="im-using-the-zype-platform-to-create-a-roku-app-whats-the-difference-for-me">I’m using the Zype Platform to create a Roku app, what’s the difference for me?</h3>
+<p>Roku apps will treat categories and playlists the same, as they are both just a collection of
+videos. For an in-depth guide on how to create your Roku App, make sure you check out <a href="http://dev.zype.com/posts/2014/12/03/categories-playlists-zobjects-roku/">this blog post</a></p>
+
+<hr id="2" />
+
+<h2 id="categories-playlists-and-your-roku-app">Categories, Playlists and Your Roku App</h2>
+<p>We aim to make the development process of a Roku Channel as easy as possible using
+our <a href="https://github.com/zype/zype-roku">Zype Roku SDK</a>. To do this, our sample Roku Channel
+focuses on three major components of the Zype Platform: playlists, categories, and zobjects.
+Since the playlists, categories, and zobjects are being pulled into your Roku channel
+using the Zype API, they are all editable using the Zype Platform and do not require
+republishing to the Roku Channel Store to make a change.</p>
+
+<p>We will be using screenshots from our sample Roku Channel to highlight what you can do.</p>
+
+<p><img src="http://i.imgur.com/VVuBjU4.png" alt="playlists and categories" /></p>
+
+<p><strong>Featured Playlist</strong></p>
+
+<p>The first slider of the home screen is the featured playlist. This can be any playlist
+that you have created using the Zype Platform. Note, only Zype Videos will play.</p>
+
+<p><strong>Categories</strong></p>
+
+<p>Below the first slider are category sliders. Note that the category sliders and the featured playlist slider are identical.
+The only difference is how we are calling the Zype API to return us the videos in each slider.
+On the Zype Platform, you select a category that you want to iterate through for the rest
+of the home screen. In the picture above, we are iterating through the category ‘Genre.’
+Thus, the first category slider is the ‘Genre’ with a value of ‘Adventure’ and the second
+category slider will be the next ‘Genre’, which is ‘Comedy’.</p>
+
+<p><strong>Zobjects</strong></p>
+
+<p><img src="http://i.imgur.com/gS2W1Em.png" alt="Zobjects in video detail" /></p>
+
+<p>You also have the option to provide additional metadata about your videos in the video
+detail screen. You select one zobject to be above the description and one zobject to be
+below the description. In the example above, we selected the Zobject ‘Actor’ to be above the description
+and it lists the actors that we have associated with the video. Similarly, we selected
+the Zobject ‘Director’ to be below the description.</p>
+
+<hr id="3" />
+
+<h2 id="search-filters-on-the-zype-platform">Search Filters on the Zype Platform</h2>
+<p>If you’ve been busy adding video content to the <a href="http://admin.zype.com">Zype Platform</a> and creating playlists, you might be at the point where you’ve got a few pages of each. To help you better manage your content, we’ve added a set of filters to the videos and playlists pages:</p>
+
+<p><img src="http://i.imgur.com/BOCwSVG.png" alt="video filtering" /></p>
+
+<p><img src="http://i.imgur.com/CVg7VSJ.png" alt="playlist filtering" /></p>
+
+<p>The filter buttons let you select as many parameters for your search as you’d like. Each button has a dropdown you can use to select a value to search by. The default search options are the categories you’ve created for your site and “Active” (whether or not the video is marked as active). You can create and manage your categories <a href="https://admin.zype.com/categories">here.</a></p>
+
+<p>Once you’ve selected all of the filters you want to use, click the search button to see the results.</p>
+
+<p>You can search by entering a search term, using the filters or both!</p>
+
+<p>If the filter buttons are greyed out, that’s because you don’t have any videos or playlists yet.</p>
+
+<p>Check out our previous blog post on <a href="http://dev.zype.com/posts/2014/12/04/defining-categories-and-playlists/">defining categories and playlists</a>, if you have questions about getting started.</p>
 
   </section>
 

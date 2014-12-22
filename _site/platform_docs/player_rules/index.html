@@ -62,16 +62,148 @@
 <p>The Zype Platform is feature rich, so we want to provide you with a place to learn more about it.
 Below are a bunch of short tutorials (with pictures!) to help you with player rules.</p>
 
-<div style="float: left;">
+<div style="width: 100%">
   <div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>
-    <a href="http://dev.zype.com/posts/2014/10/17/dpt-from-scratch/">
+    <a href="#1">
     Learn About Dynamic Player Technology (DPT)</a>
   </div>
   <div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>
-    <a href="http://dev.zype.com/posts/2014/10/20/checking-player-request-logs/">
+    <a href="#2">
     Monitoring Your Views</a>
   </div>
 </div>
+
+<hr id="1" />
+
+<h2 id="learn-about-dynamic-player-technology-dpt">Learn About Dynamic Player Technology (DPT)</h2>
+<p>Zype’s DPT allows you to create player rules based on geography and device.
+For example, you could declare that end users will receive the Hulu Player if he
+or she is accessing your video via desktop in the United States or the Zype Player
+if he or she is accessing your video via desktop in Australia.</p>
+
+<h3 id="what-you-need-to-start">What you need to start</h3>
+
+<p>You will need to have a video collection on the Zype Platform from the video sources
+that you want to create player rules for.</p>
+
+<p>1. Make sure you have imported your videos into your <a href="https://admin.zype.com/video_imports">video catalogue</a>
+on the Zype Platform.</p>
+
+<p><img src="http://i.imgur.com/XmeaBMa.png" alt="video imports" /></p>
+
+<h3 id="what-you-need-to-do-in-the-zype-platform">What you need to do in the Zype Platform</h3>
+
+<p>1. Visit the <a href="https://admin.zype.com/player_rules">Player Rule Page</a> and click on New Player Rule</p>
+
+<p><img src="http://i.imgur.com/qDK0aoL.png" alt="player rules" /></p>
+
+<p>2. Complete the Player Rules Form. You will need to know the countries and devices you want for your rule.
+Based on countries and devices, you will be given player options that can be served to the end user.</p>
+
+<p><img src="http://i.imgur.com/nxcYd0K.png" alt="player rule form" /></p>
+
+<h3 id="using-the-player-api">Using the Player API</h3>
+
+<p>1. Once you have set up your video catalogue in the Zype Platform and you have created your player rules, you are ready to use the Zype Player API!</p>
+
+<p>2. You can find your player key and api key using the <a href="https://admin.zype.com/site/api">Zype Platform</a></p>
+
+<p><img src="http://i.imgur.com/V7UoP3i.png?1" alt="site keys" /></p>
+
+<p>3a. To make the API call to get the appropriate player</p>
+
+<div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="no">GET</span> <span class="ss">http</span><span class="p">:</span><span class="sr">//</span><span class="n">api</span><span class="o">.</span><span class="n">zype</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">videos</span><span class="o">/</span><span class="p">{</span><span class="n">video_id</span><span class="p">}</span><span class="o">/</span><span class="n">player</span><span class="o">/</span><span class="p">?</span><span class="n">api_key</span><span class="o">=</span><span class="p">{</span><span class="n">api_key</span><span class="p">}</span><span class="o">&amp;</span><span class="n">player_key</span><span class="o">=</span><span class="p">{</span><span class="n">player_key</span><span class="p">}</span></code></pre></div>
+
+<p>3b. To use the <a href="https://github.com/edla/zype-cli">Zype Ruby Gem</a> to get the appropriate player</p>
+
+<div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="vi">@zype_cli</span> <span class="o">=</span> <span class="no">Zype</span><span class="o">::</span><span class="no">Client</span><span class="o">.</span><span class="n">new</span>
+<span class="vi">@video</span> <span class="o">=</span> <span class="vi">@zype_cli</span><span class="o">.</span><span class="n">videos</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="n">params</span><span class="o">[</span><span class="ss">:video_id</span><span class="o">]</span><span class="p">)</span>
+<span class="vi">@player</span> <span class="o">=</span> <span class="vi">@video</span><span class="o">.</span><span class="n">player</span><span class="p">(</span><span class="ss">player_key</span><span class="p">:</span> <span class="n">params</span><span class="o">[</span><span class="ss">:player_key</span><span class="o">]</span><span class="p">)</span></code></pre></div>
+
+<p><em>Check our <a href="http://dev.zype.com/posts/2014/10/10/adding-zype-to-rails/">previous post</a>
+on how to set up your Rails App with the Zype Gem!</em></p>
+
+<hr id="2" />
+
+<h2 id="monitoring-your-views">Monitoring Your Views</h2>
+<p>In a previous post, we covered how to use Zype’s Dynamic Player Technology (DPT).
+In this post, we’ll be covering how to use the DPT logs to see what requests are being made for your video content.
+For example, let’s say you’ve uploaded a batch of new videos and after the first 30 days, you’d like to get an idea
+of who’s viewing your content and what times of the day are most popular for viewing.</p>
+
+<h3 id="where-can-i-find-my-logs">Where can I find my logs?</h3>
+
+<p>After you’ve uploaded some video content to the Zype platform, log in through the <a href="http://admin.zype.com/">admin portal</a>
+and navigate to the logs section under the settings dropdown menu. In this post, we’ll cover the request logs,
+so feel free to click on that link once you see the logs menu.  </p>
+
+<p><img src="http://i.imgur.com/werWhEG.png" alt="dpt logs navigation" /></p>
+
+<h3 id="what-type-of-information-can-i-see-in-my-request-logs">What type of information can I see in my request logs?</h3>
+
+<p>The request logs screen shows you lots of information about the requests made to view your videos.
+Here are the most pertinent pieces of information:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Data</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Video</td>
+      <td>The video that was requested</td>
+    </tr>
+    <tr>
+      <td>IP Address</td>
+      <td>The IP address of the requester</td>
+    </tr>
+    <tr>
+      <td>Country</td>
+      <td>The country the request was made from</td>
+    </tr>
+    <tr>
+      <td>Device</td>
+      <td>The device the request was made from</td>
+    </tr>
+    <tr>
+      <td>Player</td>
+      <td>The player that served the video</td>
+    </tr>
+    <tr>
+      <td>Provider</td>
+      <td>The provider of the content</td>
+    </tr>
+    <tr>
+      <td>Revenue Model</td>
+      <td>The revenue model of the viewer</td>
+    </tr>
+    <tr>
+      <td>Status</td>
+      <td>The status of the request</td>
+    </tr>
+    <tr>
+      <td>Created</td>
+      <td>The date and time the request was created</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><img src="http://i.imgur.com/Y8DzoV9.png" alt="dpt logs" /></p>
+
+<h3 id="how-can-i-search-the-request-logs-data">How can I search the request logs data?</h3>
+
+<p>The request logs screen gives you a snapshot of the most recent requests by default.</p>
+
+<p>Sorting the request logs is easy: use the four drop down menus to select your search parameters
+and then click on the search button.</p>
+
+<p><img src="http://i.imgur.com/XgruOt5.png" alt="searching logs" /></p>
+
+<p><em>Check our <a href="http://dev.zype.com/posts/2014/10/10/adding-zype-to-rails/">previous post</a>
+on how to set up your Rails App with the Zype Gem!</em></p>
 
   </section>
 

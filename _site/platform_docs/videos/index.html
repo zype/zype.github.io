@@ -62,44 +62,465 @@
 <p>The Zype Platform is feature rich, so we want to provide you with a place to learn more about it.
 Below are a bunch of short tutorials (with pictures!) to help you with videos.</p>
 
-<div style="float: left;">
+<div style="width: 100%;">
   <div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>
-    <a href="http://dev.zype.com/posts/2014/10/17/dpt-from-scratch/">
+    <a href="#1">
     Learn About Dynamic Player Technology (DPT)</a>
   </div>
   <div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>
-    <a href="http://dev.zype.com/posts/2014/10/20/checking-player-request-logs/">
+    <a href="#2">
     Monitoring Your Views</a>
   </div>
   <div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>
-    <a href="http://dev.zype.com/posts/2014/10/23/adding-a-playlist-of-related-videos/">
+    <a href="#3">
     Related Playlists</a>
   </div>
   <div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>
-    <a href="http://dev.zype.com/posts/2014/11/18/search-youtube-in-zype/">
+    <a href="#4">
     Adding Videos from a YouTube Channel to the Zype Platform</a>
   </div>
   <div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>
-    <a href="http://dev.zype.com/posts/2014/11/19/adding-crunchyroll-as-a-video-source/">
+    <a href="#5">
     Adding Your Crunchyroll Videos to Zype</a>
   </div>
   <div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>
-    <a href="http://dev.zype.com/posts/2014/11/20/uploading-vidoes-with-the-zype-cli/">
+    <a href="#6">
     Uploading Videos to Zype Using Our Ruby Gem</a>
   </div>
   <div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>
-    <a href="http://dev.zype.com/posts/2014/11/29/sample-rails-zype/">
+    <a href="#7">
     Walkthrough of the Zype API with a Sample Rails App</a>
   </div>
   <div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>
-    <a href="http://dev.zype.com/posts/2014/11/27/embedding-player/">
+    <a href="#8">
     Embedding a Player on Your Site</a>
   </div>
   <div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>
-    <a href="http://dev.zype.com/posts/2014/12/10/filtering-videos-and-playlists/">
+    <a href="#9">
     Search Filters on the Zype Platform</a>
   </div>
 </div>
+
+<hr id="1" />
+
+<h2 id="learn-about-dynamic-player-technology-dpt">Learn About Dynamic Player Technology (DPT)</h2>
+<p>Zype’s DPT allows you to create player rules based on geography and device.
+For example, you could declare that end users will receive the Hulu Player if he
+or she is accessing your video via desktop in the United States or the Zype Player
+if he or she is accessing your video via desktop in Australia.</p>
+
+<h3 id="what-you-need-to-start">What you need to start</h3>
+
+<p>You will need to have a video collection on the Zype Platform from the video sources
+that you want to create player rules for.</p>
+
+<p>1. Make sure you have imported your videos into your <a href="https://admin.zype.com/video_imports">video catalogue</a>
+on the Zype Platform.</p>
+
+<p><img src="http://i.imgur.com/XmeaBMa.png" alt="video imports" /></p>
+
+<h3 id="what-you-need-to-do-in-the-zype-platform">What you need to do in the Zype Platform</h3>
+
+<p>1. Visit the <a href="https://admin.zype.com/player_rules">Player Rule Page</a> and click on New Player Rule</p>
+
+<p><img src="http://i.imgur.com/qDK0aoL.png" alt="player rules" /></p>
+
+<p>2. Complete the Player Rules Form. You will need to know the countries and devices you want for your rule.
+Based on countries and devices, you will be given player options that can be served to the end user.</p>
+
+<p><img src="http://i.imgur.com/nxcYd0K.png" alt="player rule form" /></p>
+
+<h3 id="using-the-player-api">Using the Player API</h3>
+
+<p>1. Once you have set up your video catalogue in the Zype Platform and you have created your player rules, you are ready to use the Zype Player API!</p>
+
+<p>2. You can find your player key and api key using the <a href="https://admin.zype.com/site/api">Zype Platform</a></p>
+
+<p><img src="http://i.imgur.com/V7UoP3i.png?1" alt="site keys" /></p>
+
+<p>3a. To make the API call to get the appropriate player</p>
+
+<div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="no">GET</span> <span class="ss">http</span><span class="p">:</span><span class="sr">//</span><span class="n">api</span><span class="o">.</span><span class="n">zype</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">videos</span><span class="o">/</span><span class="p">{</span><span class="n">video_id</span><span class="p">}</span><span class="o">/</span><span class="n">player</span><span class="o">/</span><span class="p">?</span><span class="n">api_key</span><span class="o">=</span><span class="p">{</span><span class="n">api_key</span><span class="p">}</span><span class="o">&amp;</span><span class="n">player_key</span><span class="o">=</span><span class="p">{</span><span class="n">player_key</span><span class="p">}</span></code></pre></div>
+
+<p>3b. To use the <a href="https://github.com/edla/zype-cli">Zype Ruby Gem</a> to get the appropriate player</p>
+
+<div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="vi">@zype_cli</span> <span class="o">=</span> <span class="no">Zype</span><span class="o">::</span><span class="no">Client</span><span class="o">.</span><span class="n">new</span>
+<span class="vi">@video</span> <span class="o">=</span> <span class="vi">@zype_cli</span><span class="o">.</span><span class="n">videos</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="n">params</span><span class="o">[</span><span class="ss">:video_id</span><span class="o">]</span><span class="p">)</span>
+<span class="vi">@player</span> <span class="o">=</span> <span class="vi">@video</span><span class="o">.</span><span class="n">player</span><span class="p">(</span><span class="ss">player_key</span><span class="p">:</span> <span class="n">params</span><span class="o">[</span><span class="ss">:player_key</span><span class="o">]</span><span class="p">)</span></code></pre></div>
+
+<p><em>Check our <a href="http://dev.zype.com/posts/2014/10/10/adding-zype-to-rails/">previous post</a>
+on how to set up your Rails App with the Zype Gem!</em></p>
+
+<hr id="2" />
+
+<h2 id="monitoring-your-views">Monitoring Your Views</h2>
+<p>In a previous post, we covered how to use Zype’s Dynamic Player Technology (DPT).
+In this post, we’ll be covering how to use the DPT logs to see what requests are being made for your video content.
+For example, let’s say you’ve uploaded a batch of new videos and after the first 30 days, you’d like to get an idea
+of who’s viewing your content and what times of the day are most popular for viewing.</p>
+
+<h3 id="where-can-i-find-my-logs">Where can I find my logs?</h3>
+
+<p>After you’ve uploaded some video content to the Zype platform, log in through the <a href="http://admin.zype.com/">admin portal</a>
+and navigate to the logs section under the settings dropdown menu. In this post, we’ll cover the request logs,
+so feel free to click on that link once you see the logs menu.  </p>
+
+<p><img src="http://i.imgur.com/werWhEG.png" alt="dpt logs navigation" /></p>
+
+<h3 id="what-type-of-information-can-i-see-in-my-request-logs">What type of information can I see in my request logs?</h3>
+
+<p>The request logs screen shows you lots of information about the requests made to view your videos.
+Here are the most pertinent pieces of information:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Data</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Video</td>
+      <td>The video that was requested</td>
+    </tr>
+    <tr>
+      <td>IP Address</td>
+      <td>The IP address of the requester</td>
+    </tr>
+    <tr>
+      <td>Country</td>
+      <td>The country the request was made from</td>
+    </tr>
+    <tr>
+      <td>Device</td>
+      <td>The device the request was made from</td>
+    </tr>
+    <tr>
+      <td>Player</td>
+      <td>The player that served the video</td>
+    </tr>
+    <tr>
+      <td>Provider</td>
+      <td>The provider of the content</td>
+    </tr>
+    <tr>
+      <td>Revenue Model</td>
+      <td>The revenue model of the viewer</td>
+    </tr>
+    <tr>
+      <td>Status</td>
+      <td>The status of the request</td>
+    </tr>
+    <tr>
+      <td>Created</td>
+      <td>The date and time the request was created</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><img src="http://i.imgur.com/Y8DzoV9.png" alt="dpt logs" /></p>
+
+<h3 id="how-can-i-search-the-request-logs-data">How can I search the request logs data?</h3>
+
+<p>The request logs screen gives you a snapshot of the most recent requests by default.</p>
+
+<p>Sorting the request logs is easy: use the four drop down menus to select your search parameters
+and then click on the search button.</p>
+
+<p><img src="http://i.imgur.com/XgruOt5.png" alt="searching logs" /></p>
+
+<p><em>Check our <a href="http://dev.zype.com/posts/2014/10/10/adding-zype-to-rails/">previous post</a>
+on how to set up your Rails App with the Zype Gem!</em></p>
+
+<hr id="3" />
+
+<h2 id="related-playlists">Related Playlists</h2>
+<p>Let’s say you’ve already got some video content on your zype destination site, but now you’d like to recommend
+additional content based on what your users are watching. The solution we’ve implemented is called related videos.
+In this post, we’ll be covering how to create a playlist of related videos that are recommended to a viewer
+based on what the video they’re watching. Here’s an example of the finished product:</p>
+
+<p><img src="http://i.imgur.com/QGhFTT1.png" alt="related playlist" /></p>
+
+<p><em>The related videos section is automatically created for each video on your site, but if you’d like to be more
+specific about which videos are displayed there, follow along as we set up a playlist of related videos.</em></p>
+
+<h3 id="how-do-i-set-up-a-playlist-of-related-videos">How do I set up a playlist of related videos?</h3>
+
+<p>Setting up the playlist can be done from the <a href="http://admin.zype.com/">admin portal</a>. Navigate to the playlist
+section on the sidebar and and click “New Playlist”. Follow through the menu and create a playlist (make sure it’s active!).</p>
+
+<p><img src="http://i.imgur.com/2yzWH9X.png" alt="playlist navigation" /></p>
+
+<h3 id="how-can-i-choose-which-videos-are-shown-in-the-playlist">How can I choose which videos are shown in the playlist?</h3>
+
+<p>This is an easy one. Use the “Add Videos” button to select which videos will appear under the related videos section.</p>
+
+<p><img src="http://i.imgur.com/nKIFmTP.png" alt="add videos navigation" /></p>
+
+<h3 id="how-can-i-choose-which-videos-display-the-playlist">How can I choose which videos display the playlist?</h3>
+
+<p>Choosing the videos that will have your playlist displayed is done through the playlist edit screen. You can get there
+quickly by clicking on the name of your playlist here:</p>
+
+<p><img src="http://i.imgur.com/XSvwXVR.png" alt="edit your playlist" /></p>
+
+<p>Use our multiselector to search for the videos you want and click on them to move them into selected videos.
+Click “Save Changes” when you’re done.</p>
+
+<p><img src="http://i.imgur.com/xE9fM8n.png" alt="choose related videos" /></p>
+
+<h3 id="lets-confirm">Let’s confirm</h3>
+
+<p>You should take a second and make sure everything’s going according to plan. Go to your site and view a video
+that you added to selected videos in the previous step. Below the video, under the section “Related Videos”,
+you should see the playlist you just created and the first few videos you added. You can also update any of your
+current playlists to act as a playlist of related videos by following these same steps.</p>
+
+<p><em>Check our <a href="http://dev.zype.com/posts/2014/10/10/adding-zype-to-rails/">previous post</a>
+on how to set up your Rails App with the Zype Gem!</em></p>
+
+<hr id="4" />
+
+<h2 id="adding-videos-from-a-youtube-channel-to-the-zype-platform">Adding Videos from a YouTube Channel to the Zype Platform</h2>
+<p>We simplified the process of searching for and importing a YouTube Channel into the Zype Platform.
+Before, you had to manually go to YouTube and find your Channel ID. This was a cumbersome
+process. Now you can search for a YouTube Channel from the Zype Platform and we will get the Channel ID for you.</p>
+
+<p><strong>Step 1:</strong></p>
+
+<p>Go to Video Sources and click on the YouTube icon.</p>
+
+<p><img src="http://i.imgur.com/xJoXbpp.png" alt="click youtube" /></p>
+
+<p><strong>Step 2:</strong></p>
+
+<p>Enter a name for your YouTube Video Source (something to help you remember it!) and click the
+Search YouTube Channels button</p>
+
+<p><img src="http://i.imgur.com/Ly24GBg.png" alt="search youtube channels" /></p>
+
+<p><strong>Step 3:</strong></p>
+
+<p>Enter the channel name that you are searching for and click Search. You will be
+given a list of YouTube Channels that match your search criteria. Click the Select Channel
+button for the YouTube Channel that you want to add.</p>
+
+<p><img src="http://i.imgur.com/hpAfMu8.png" alt="click select channel" /></p>
+
+<p><strong>Step 4:</strong></p>
+
+<p>This will prepopulate the Channel ID for you. All you need to do is click Save Changes
+and the Zype Platform will start to import all of the videos from the channel that you selected!</p>
+
+<p><img src="http://i.imgur.com/fszuPQu.png" alt="click submit" /></p>
+
+<p><strong>Step 5:</strong></p>
+
+<p>Your imported videos are in your import videos page. You can add videos to your catalogue
+from there.</p>
+
+<p><img src="http://i.imgur.com/ZKliLxG.png" alt="import videos" /></p>
+
+<hr id="5" />
+
+<h2 id="adding-your-crunchyroll-videos-to-zype">Adding Your Crunchyroll Videos to Zype</h2>
+<p>We know you have a lot of video content and we know that you want it all to be available to your viewers through the Zype Platform. That’s why we’re proud to announce that you can now use <a href="http://www.crunchyroll.com/">Crunchyroll</a> as a video source for videos on the Zype Platform!</p>
+
+<p>As part of the announcement, we want to walk you through the setup involved and get you up to speed. If you’ve added videos to the Zype Platform using video sources in the past, the will look very familiar.</p>
+
+<h3 id="navigating-to-the-crunchyroll-video-source-form">Navigating to the Crunchyroll Video Source form</h3>
+
+<p>First, let’s login to the <a href="https://admin.zype.com/">Zype Platform</a> and go to <a href="https://admin.zype.com/video_sources">Video Sources</a>. Now click on the Crunchyroll icon.</p>
+
+<p><img src="http://i.imgur.com/oSJebB6.png" alt="click crunchyroll" /></p>
+
+<h3 id="adding-your-affiliate-code">Adding your affiliate code</h3>
+
+<p>Enter a name for your Crunchyroll Video Source (something you’ll remember!) and your Crunchyroll Affiliate code (this is provided to you by Crunchyroll when you become an affiliate.)</p>
+
+<p><img src="http://i.imgur.com/tPG2uZv.png" alt="add name and affiliate code" /></p>
+
+<h3 id="importing-your-videos">Importing your videos</h3>
+
+<p>Now sit back while we go get all of your Crunchyroll videos and add them to the Zype Platform as video imports.
+Once we’ve imported all of your videos you will find them under the <a href="https://admin.zype.com/video_imports">Video Imports</a> tab. The last step is to create new videos from the imports or add the video imports to videos you already have on the Zype Platform.</p>
+
+<p><img src="http://i.imgur.com/SrnGXnw.png" alt="video imports" /></p>
+
+<h3 id="confirm">Confirm</h3>
+
+<p>You can confirm that your videos were added by clicking on the videos tab and searching for the ones you’ve just added.</p>
+
+<p><img src="http://i.imgur.com/MHiAOmb.png" alt="videos" /></p>
+
+<hr id="6" />
+
+<h2 id="uploading-videos-to-zype-using-our-ruby-gem">Uploading Videos to Zype Using Our Ruby Gem</h2>
+<p>We’re rolling out a bunch of new ways to add video content to the Zype Platform, like <a href="http://dev.zype.com/posts/2014/11/18/search-youtube-in-zype/">Youtube Channel Import</a> and <a href="http://dev.zype.com/posts/2014/11/19/adding-crunchyroll-as-a-video-source/">Crunchyroll Video Import</a>. In this post we’ll show you how to use the Zype Command Line Interface (or CLI) to upload videos that you have stored on a harddrive.</p>
+
+<h3 id="downloading-and-installing-the-zype-cli">Downloading and Installing the Zype CLI</h3>
+
+<p>First, you’ll need to download and set up the Zype CLI. You can find the tool on <a href="https://github.com/edla/zype-cli">gitHub</a>.</p>
+
+<p><img src="http://i.imgur.com/ZC3mLEs.png" alt="gitHub" /></p>
+
+<p>You’ll need to clone down the repo, then run the following commands:</p>
+
+<pre><code>$ gem build zype.gemspec
+</code></pre>
+
+<pre><code>$ gem install ./zype-1.0.0.gem
+</code></pre>
+
+<p>You can confirm that your installation succeeded by entering</p>
+
+<pre><code>$ zype
+</code></pre>
+
+<p>which will display a list of available commands for the Zype CLI. Remember this command in case you have questions about what the Zype CLI can do!</p>
+
+<p><img src="http://i.imgur.com/YZ8gcJl.png" alt="CLI Interface" /></p>
+
+<h3 id="logging-in-through-the-zype-cli">Logging in through the Zype CLI</h3>
+
+<p>Let’s make sure that you can login and that your Zype CLI is linked to your instance of the Zype Platform.</p>
+
+<p>Enter the command below:</p>
+
+<pre><code>$ zype account:login
+</code></pre>
+
+<p>You’ll be prompted to enter your Zype API Key. You can find this by logging in to the <a href="https://admin.zype.com">Zype Platform</a> and clicking on API within the settings menu at the top of the screen. Grab your API key and enter it into the terminal to continue.</p>
+
+<h3 id="uploading-your-videos">Uploading your videos</h3>
+
+<p>You’ll need to know which directory contains the videos you want to upload. Once you know where they live, you can run the upload command.</p>
+
+<p>If all of the files live in a single directory, run the following command, replacing the example directory (“/myDir/videos”) with your own.</p>
+
+<pre><code>$ zype video:upload --directory="/myDir/videos"
+</code></pre>
+
+<p>If you have multiple subdirectories that contain videos, you can pass in a wildcard character (*) at the end of the parent directory to grab all of the videos within each subdirectory. Like this:</p>
+
+<pre><code>$ zype video:upload --directory="/myDir/videos/*"
+</code></pre>
+
+<p>Now sit back while we upload all of your videos and add them to the Zype Platform as video imports. Once we’ve imported all of your videos you will find them under the <a href="https://admin.zype.com/video_imports">Video Imports</a> tab. The last step is to create new videos from the imports or add the video imports to videos you already have on the Zype Platform.</p>
+
+<p><img src="http://i.imgur.com/SrnGXnw.png" alt="video imports" /></p>
+
+<h3 id="confirm-1">Confirm</h3>
+
+<p>You can confirm that your videos were added by clicking on the videos tab and searching for the ones you’ve just added.</p>
+
+<p><img src="http://i.imgur.com/MHiAOmb.png" alt="videos" /></p>
+
+<hr id="7" />
+
+<h2 id="walkthrough-of-the-zype-api-with-a-sample-rails-app">Walkthrough of the Zype API with a Sample Rails App</h2>
+<p>We want to make the Zype Platform accessible to as many types of developers as possible. To do this,
+we have provided <a href="http://dev.zype.com/api_docs/intro/">API documentation</a> and are happy
+to <a href="mailto:contact@zypemedia.com">talk with you</a> about creating a turnkey app.</p>
+
+<p>As a developer, I always like to learn by example, so we have created
+a template Rails app to show you what you can do with the Zype Platform using our Ruby Gem and also provide you with a starter template if you want to build off of it for your own web app.</p>
+
+<p>We intentionally kept the styling simple and used <a href="http://getbootstrap.com/">Bootstrap</a> if
+you would like to use this example as a foundation to your Rails app.
+Feel free to clone the repo <a href="https://github.com/zype/zype-rails">here</a>. You will
+need your Zype API and Player Keys from the Zype Platform. The README has directions
+to how you can find your keys.</p>
+
+<p><em>The Zype Rails Sample App has the following pages and features.</em></p>
+
+<p><strong>Home Page</strong></p>
+
+<p>The homepage includes all of your playlists, a link in the header to view all videos,
+and a search box to search for a specific video. The Playlists can be configured
+in the Zype Platform and can be fetched via the Ruby Gem.</p>
+
+<p><img src="http://i.imgur.com/XdD1n7n.png" alt="homepage" /></p>
+
+<p><strong>Playlist Page</strong></p>
+
+<p>You can click on any playlist to view all the videos that belong to that playlist. You can sort
+the videos based on release date, name, or popularity. Also note that there are Zype Videos
+and YouTube videos in the same player. The Zype Platform and Zype API allows you to
+seamlessly combine the two.</p>
+
+<p><img src="http://i.imgur.com/uDlDPcK.png" alt="playlist page" /></p>
+
+<p><strong>Browse all Videos</strong></p>
+
+<p>The browse all videos uses the Ruby Gem to query the Zype API to get all the videos.
+When you hover over a video, you will see the description. Feel free to read the <a href="http://dev.zype.com/api_docs/videos/">Video API Documentation</a> to see what other information
+gtes returned when you query for the videos.</p>
+
+<p><img src="http://i.imgur.com/ys7ZfD3.png" alt="browse videos" /></p>
+
+<p><strong>Video Page</strong></p>
+
+<p>When you click on a video’s thumbnail, you get directed to the video’s page. The video’s page
+contains the title, description, and video player. The Zype API will deliver the appropriate
+player based on where the video source comes from and what Player Rules you set.</p>
+
+<p><img src="http://i.imgur.com/EjY7wlU.png" alt="video page" /></p>
+
+<p>Have questions about implementing our sample Rails app or want to see examples of
+other features or in other languages? Feel free to comment below!</p>
+
+<hr id="8" />
+
+<h2 id="embedding-a-player-on-your-site">Embedding a Player on Your Site</h2>
+<p>The Zype Platform allows you to manage all of your video content in one place and
+then deliver your video content across any platform or device. In this tutorial, I
+will map out how to embed a video uploaded to the Zype Platform on any webpage.</p>
+
+<p><strong>Step 1</strong></p>
+
+<p>Navigate to your video’s page and click on the Embed Code tab.</p>
+
+<p><img src="http://i.imgur.com/4LcF8Lf.png" alt="Go to Embed Code" /></p>
+
+<p><strong>Step 2</strong></p>
+
+<p>Copy the embed code.</p>
+
+<p><img src="http://i.imgur.com/jvHwsnU.png" alt="Copy Embed Code" /></p>
+
+<p><strong>Step 3</strong></p>
+
+<p>You will need to place the div with the id ‘zype_player’ where you want your player
+to be located on your page.</p>
+
+<p>Currently, you can pass in autoplay, player_key, and subscription_id params.
+The player_key is required and can be found in Settings &gt; API. Autoplay and subscription_id
+are optional.</p>
+
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&#39;zype_player&#39;</span><span class="nt">&gt;&lt;/div&gt;</span>
+<span class="nt">&lt;script </span><span class="na">id=</span><span class="s">&#39;zype_player_js&#39;</span> <span class="na">src=</span><span class="s">&#39;https://api.zype.com/embed/{video_id}.js?autoplay={boolean}&amp;player_key={player_key}&amp;subscription_id={subscription_id}&#39;</span> <span class="na">type=</span><span class="s">&#39;text/javascript&#39;</span><span class="nt">&gt;&lt;/script&gt;</span></code></pre></div>
+
+<hr id="9" />
+
+<h2 id="search-filters-on-the-zype-platform">Search Filters on the Zype Platform</h2>
+<p>If you’ve been busy adding video content to the <a href="http://admin.zype.com">Zype Platform</a> and creating playlists, you might be at the point where you’ve got a few pages of each. To help you better manage your content, we’ve added a set of filters to the videos and playlists pages:</p>
+
+<p><img src="http://i.imgur.com/BOCwSVG.png" alt="video filtering" /></p>
+
+<p><img src="http://i.imgur.com/CVg7VSJ.png" alt="playlist filtering" /></p>
+
+<p>The filter buttons let you select as many parameters for your search as you’d like. Each button has a dropdown you can use to select a value to search by. The default search options are the categories you’ve created for your site and “Active” (whether or not the video is marked as active). You can create and manage your categories <a href="https://admin.zype.com/categories">here.</a></p>
+
+<p>Once you’ve selected all of the filters you want to use, click the search button to see the results.</p>
+
+<p>You can search by entering a search term, using the filters or both!</p>
+
+<p>If the filter buttons are greyed out, that’s because you don’t have any videos or playlists yet.</p>
+
+<p>Check out our previous blog post on <a href="http://dev.zype.com/posts/2014/12/04/defining-categories-and-playlists/">defining categories and playlists</a>, if you have questions about getting started.</p>
 
   </section>
 
