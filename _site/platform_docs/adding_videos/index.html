@@ -61,20 +61,157 @@
     <h2 id="adding-videos-to-the-zype-platform">Adding Videos to the Zype Platform</h2>
 <p>We want to provide you as many ways as possible to get your video content on the Zype platform. Below are a few guides to get you started, but don’t be afraid to check for new <a href="https://admin.zype.com/video_sources">video sources</a> from time to time!</p>
 
-<div style="float: left;">
+<div style="width: 100%;">
   <div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>
-    <a href="http://dev.zype.com/posts/2014/11/18/search-youtube-in-zype/">
+    <a href="#1">
     Adding Videos from a YouTube Channel to the Zype Platform</a>
   </div>
   <div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>
-    <a href="http://dev.zype.com/posts/2014/11/19/adding-crunchyroll-as-a-video-source/">
+    <a href="#2">
     Adding Your Crunchyroll Videos to the Zype Platform</a>
   </div>
   <div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>
-    <a href="http://dev.zype.com/posts/2014/11/20/uploading-vidoes-with-the-zype-cli/">
+    <a href="#3">
     Uploading Videos to the Zype Platform Using Our Ruby Gem</a>
   </div>
 </div>
+
+<hr id="1" />
+
+<h2 id="adding-videos-from-a-youtube-channel">Adding Videos from a YouTube Channel</h2>
+<p>We simplified the process of searching for and importing a YouTube Channel into the Zype Platform.
+Before, you had to manually go to YouTube and find your Channel ID. This was a cumbersome
+process. Now you can search for a YouTube Channel from the Zype Platform and we will get the Channel ID for you.</p>
+
+<p><strong>Step 1:</strong></p>
+
+<p>Go to Video Sources and click on the YouTube icon.</p>
+
+<p><img src="http://i.imgur.com/xJoXbpp.png" alt="click youtube" /></p>
+
+<p><strong>Step 2:</strong></p>
+
+<p>Enter a name for your YouTube Video Source (something to help you remember it!) and click the
+Search YouTube Channels button</p>
+
+<p><img src="http://i.imgur.com/Ly24GBg.png" alt="search youtube channels" /></p>
+
+<p><strong>Step 3:</strong></p>
+
+<p>Enter the channel name that you are searching for and click Search. You will be
+given a list of YouTube Channels that match your search criteria. Click the Select Channel
+button for the YouTube Channel that you want to add.</p>
+
+<p><img src="http://i.imgur.com/hpAfMu8.png" alt="click select channel" /></p>
+
+<p><strong>Step 4:</strong></p>
+
+<p>This will prepopulate the Channel ID for you. All you need to do is click Save Changes
+and the Zype Platform will start to import all of the videos from the channel that you selected!</p>
+
+<p><img src="http://i.imgur.com/fszuPQu.png" alt="click submit" /></p>
+
+<p><strong>Step 5:</strong></p>
+
+<p>Your imported videos are in your import videos page. You can add videos to your catalogue
+from there.</p>
+
+<p><img src="http://i.imgur.com/ZKliLxG.png" alt="import videos" /></p>
+
+<hr id="2" />
+
+<h2 id="adding-your-crunchyroll-videos">Adding Your Crunchyroll Videos</h2>
+<p>We know you have a lot of video content and we know that you want it all to be available to your viewers through the Zype Platform. That’s why we’re proud to announce that you can now use <a href="http://www.crunchyroll.com/">Crunchyroll</a> as a video source for videos on the Zype Platform!</p>
+
+<p>As part of the announcement, we want to walk you through the setup involved and get you up to speed. If you’ve added videos to the Zype Platform using video sources in the past, the will look very familiar.</p>
+
+<h3 id="navigating-to-the-crunchyroll-video-source-form">Navigating to the Crunchyroll Video Source form</h3>
+
+<p>First, let’s login to the <a href="https://admin.zype.com/">Zype Platform</a> and go to <a href="https://admin.zype.com/video_sources">Video Sources</a>. Now click on the Crunchyroll icon.</p>
+
+<p><img src="http://i.imgur.com/oSJebB6.png" alt="click crunchyroll" /></p>
+
+<h3 id="adding-your-affiliate-code">Adding your affiliate code</h3>
+
+<p>Enter a name for your Crunchyroll Video Source (something you’ll remember!) and your Crunchyroll Affiliate code (this is provided to you by Crunchyroll when you become an affiliate.)</p>
+
+<p><img src="http://i.imgur.com/tPG2uZv.png" alt="add name and affiliate code" /></p>
+
+<h3 id="importing-your-videos">Importing your videos</h3>
+
+<p>Now sit back while we go get all of your Crunchyroll videos and add them to the Zype Platform as video imports.
+Once we’ve imported all of your videos you will find them under the <a href="https://admin.zype.com/video_imports">Video Imports</a> tab. The last step is to create new videos from the imports or add the video imports to videos you already have on the Zype Platform.</p>
+
+<p><img src="http://i.imgur.com/SrnGXnw.png" alt="video imports" /></p>
+
+<h3 id="confirm">Confirm</h3>
+
+<p>You can confirm that your videos were added by clicking on the videos tab and searching for the ones you’ve just added.</p>
+
+<p><img src="http://i.imgur.com/MHiAOmb.png" alt="videos" /></p>
+
+<hr id="3" />
+
+<h2 id="uploading-videos-to-the-zype-platform-using-our-ruby-gem">Uploading Videos to the Zype Platform Using Our Ruby Gem</h2>
+<p>We’re rolling out a bunch of new ways to add video content to the Zype Platform, like <a href="http://dev.zype.com/posts/2014/11/18/search-youtube-in-zype/">Youtube Channel Import</a> and <a href="http://dev.zype.com/posts/2014/11/19/adding-crunchyroll-as-a-video-source/">Crunchyroll Video Import</a>. In this post we’ll show you how to use the Zype Command Line Interface (or CLI) to upload videos that you have stored on a harddrive.</p>
+
+<h3 id="downloading-and-installing-the-zype-cli">Downloading and Installing the Zype CLI</h3>
+
+<p>First, you’ll need to download and set up the Zype CLI. You can find the tool on <a href="https://github.com/edla/zype-cli">gitHub</a>.</p>
+
+<p><img src="http://i.imgur.com/ZC3mLEs.png" alt="gitHub" /></p>
+
+<p>You’ll need to clone down the repo, then run the following commands:</p>
+
+<pre><code>$ gem build zype.gemspec
+</code></pre>
+
+<pre><code>$ gem install ./zype-1.0.0.gem
+</code></pre>
+
+<p>You can confirm that your installation succeeded by entering</p>
+
+<pre><code>$ zype
+</code></pre>
+
+<p>which will display a list of available commands for the Zype CLI. Remember this command in case you have questions about what the Zype CLI can do!</p>
+
+<p><img src="http://i.imgur.com/YZ8gcJl.png" alt="CLI Interface" /></p>
+
+<h3 id="logging-in-through-the-zype-cli">Logging in through the Zype CLI</h3>
+
+<p>Let’s make sure that you can login and that your Zype CLI is linked to your instance of the Zype Platform.</p>
+
+<p>Enter the command below:</p>
+
+<pre><code>$ zype account:login
+</code></pre>
+
+<p>You’ll be prompted to enter your Zype API Key. You can find this by logging in to the <a href="https://admin.zype.com">Zype Platform</a> and clicking on API within the settings menu at the top of the screen. Grab your API key and enter it into the terminal to continue.</p>
+
+<h3 id="uploading-your-videos">Uploading your videos</h3>
+
+<p>You’ll need to know which directory contains the videos you want to upload. Once you know where they live, you can run the upload command.</p>
+
+<p>If all of the files live in a single directory, run the following command, replacing the example directory (“/myDir/videos”) with your own.</p>
+
+<pre><code>$ zype video:upload --directory="/myDir/videos"
+</code></pre>
+
+<p>If you have multiple subdirectories that contain videos, you can pass in a wildcard character (*) at the end of the parent directory to grab all of the videos within each subdirectory. Like this:</p>
+
+<pre><code>$ zype video:upload --directory="/myDir/videos/*"
+</code></pre>
+
+<p>Now sit back while we upload all of your videos and add them to the Zype Platform as video imports. Once we’ve imported all of your videos you will find them under the <a href="https://admin.zype.com/video_imports">Video Imports</a> tab. The last step is to create new videos from the imports or add the video imports to videos you already have on the Zype Platform.</p>
+
+<p><img src="http://i.imgur.com/SrnGXnw.png" alt="video imports" /></p>
+
+<h3 id="confirm-1">Confirm</h3>
+
+<p>You can confirm that your videos were added by clicking on the videos tab and searching for the ones you’ve just added.</p>
+
+<p><img src="http://i.imgur.com/MHiAOmb.png" alt="videos" /></p>
 
   </section>
 

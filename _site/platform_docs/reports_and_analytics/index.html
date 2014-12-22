@@ -59,14 +59,96 @@
 
   <section id="main">
     <h2 id="reports-and-analytics-on-the-zype-platform">Reports and Analytics on the Zype Platform</h2>
-<p>We know that it’s all about views at the end of the day. These guides are designed to walk you through the different reports you can generate and help you understand how to get the most out of your video content. </p>
+<p>We know that it’s all about views at the end of the day. These guides are designed to walk you through the different reports you can generate and help you understand how to get the most out of your video content.</p>
 
-<div style="float: left;">
+<div style="width: 100%;">
   <div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>
-    <a href="http://dev.zype.com/posts/2014/10/20/checking-player-request-logs/">
+    <a href="#1">
     Monitoring Your Views</a>
   </div>
 </div>
+
+<hr id="1" />
+
+<h2 id="monitoring-your-views">Monitoring Your Views</h2>
+<p>In a previous post, we covered how to use Zype’s Dynamic Player Technology (DPT).
+In this post, we’ll be covering how to use the DPT logs to see what requests are being made for your video content.
+For example, let’s say you’ve uploaded a batch of new videos and after the first 30 days, you’d like to get an idea
+of who’s viewing your content and what times of the day are most popular for viewing.</p>
+
+<h3 id="where-can-i-find-my-logs">Where can I find my logs?</h3>
+
+<p>After you’ve uploaded some video content to the Zype platform, log in through the <a href="http://admin.zype.com/">admin portal</a>
+and navigate to the logs section under the settings dropdown menu. In this post, we’ll cover the request logs,
+so feel free to click on that link once you see the logs menu.  </p>
+
+<p><img src="http://i.imgur.com/werWhEG.png" alt="dpt logs navigation" /></p>
+
+<h3 id="what-type-of-information-can-i-see-in-my-request-logs">What type of information can I see in my request logs?</h3>
+
+<p>The request logs screen shows you lots of information about the requests made to view your videos.
+Here are the most pertinent pieces of information:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Data</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Video</td>
+      <td>The video that was requested</td>
+    </tr>
+    <tr>
+      <td>IP Address</td>
+      <td>The IP address of the requester</td>
+    </tr>
+    <tr>
+      <td>Country</td>
+      <td>The country the request was made from</td>
+    </tr>
+    <tr>
+      <td>Device</td>
+      <td>The device the request was made from</td>
+    </tr>
+    <tr>
+      <td>Player</td>
+      <td>The player that served the video</td>
+    </tr>
+    <tr>
+      <td>Provider</td>
+      <td>The provider of the content</td>
+    </tr>
+    <tr>
+      <td>Revenue Model</td>
+      <td>The revenue model of the viewer</td>
+    </tr>
+    <tr>
+      <td>Status</td>
+      <td>The status of the request</td>
+    </tr>
+    <tr>
+      <td>Created</td>
+      <td>The date and time the request was created</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><img src="http://i.imgur.com/Y8DzoV9.png" alt="dpt logs" /></p>
+
+<h3 id="how-can-i-search-the-request-logs-data">How can I search the request logs data?</h3>
+
+<p>The request logs screen gives you a snapshot of the most recent requests by default.</p>
+
+<p>Sorting the request logs is easy: use the four drop down menus to select your search parameters
+and then click on the search button.</p>
+
+<p><img src="http://i.imgur.com/XgruOt5.png" alt="searching logs" /></p>
+
+<p><em>Check our <a href="http://dev.zype.com/posts/2014/10/10/adding-zype-to-rails/">previous post</a>
+on how to set up your Rails App with the Zype Gem!</em></p>
 
   </section>
 
