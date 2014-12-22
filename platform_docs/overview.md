@@ -21,7 +21,7 @@ The easiest way to experiment with Zype is to sign up for a free account on [the
 
 ### What can I Accomplish?
 
-At the core, our mission is to enable you to get your video content in front of satisfied viewers. 
+At the core, our mission is to enable you to give your consumers what they want - instant and easy direct access to the content they love, on any device, anywhere.
 
 ### This is awesome!
 
