@@ -5,7 +5,7 @@ permalink: /
 ---
 
 
-##Welcome to the Zype Developer Portal
+##Welcome to the Zype Developer Portal!
 
 If you're a developer, you've come to the right place! Here we'll discuss the Zype platform and how to leverage it to deploy your video content. We recommend clicking on the [API Documentation](/api_docs/intro/) link in the nav bar to get started or checkout our [blog](/blog/) for updated posts.
 
