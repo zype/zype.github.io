@@ -277,3 +277,94 @@ Content-Type: application/json
 204
 
 No Content
+
+<hr>
+### Add Video to a Playlist
+<hr>
+<pre><code>PUT - https://api.zype.com/playlists/{id}/add_videos/&video_id=video_id
+</code></pre>
+
+#### Parameters
+
+Parameter | Function | Type
+--------- | -------- | ----
+video_id  | ID of the video to add the playlist | String
+
+#### Request
+
+Content-Type: application/json
+
+#### Response
+201
+Content-Type: application/json
+
+<pre><code>{
+  "response"=> [
+    {
+      "_id"=>"5499c6bc4c616e04b8120000",
+      "active"=>true,
+      "country"=>"",
+      "created_at"=>"2014-12-23T14:47:09.079-05:00",
+      "description"=>
+      "A staple of \"Bands To Watch\" lists far and wide, Alabama Shakes ...",
+      "duration"=>665,
+      "episode"=>nil,
+      "featured"=>false,
+      "foreign_id"=>nil,
+      "keywords"=>[],
+      "mature_content"=>false,
+      "published_at"=>"2012-03-27T12:59:21.000-04:00",
+      "rating"=>0.0,
+      "related_playlist_ids"=>[],
+      "request_count"=>0,
+      "season"=>nil,
+      "site_id"=>"5468f40d4c616e0a770c0000",
+      "status"=>"created",
+      "subscription_required"=>false,
+      "title"=>"Alabama Shakes, Live In Concert: NPR Music's SXSW 2012 Showcase",
+      "updated_at"=>"2014-12-24T17:57:15.731-05:00",
+      "zobject_ids"=>[],
+      "thumbnails"=>
+        [
+        {"aspect_ratio"=>nil, "height"=>90, "name"=>nil, "url"=>"https://i.ytimg.com/vi/eNa5wYXonbQ/default.jpg", "width"=>120},
+        {"aspect_ratio"=>nil, "height"=>180, "name"=>nil, "url"=>"https://i.ytimg.com/vi/eNa5wYXonbQ/mqdefault.jpg", "width"=>320},
+        {"aspect_ratio"=>nil, "height"=>360, "name"=>nil, "url"=>"https://i.ytimg.com/vi/eNa5wYXonbQ/hqdefault.jpg", "width"=>480},
+        {"aspect_ratio"=>nil, "height"=>480, "name"=>nil, "url"=>"https://i.ytimg.com/vi/eNa5wYXonbQ/sddefault.jpg", "width"=>640},
+        {"aspect_ratio"=>nil, "height"=>720, "name"=>nil, "url"=>"https://i.ytimg.com/vi/eNa5wYXonbQ/maxresdefault.jpg", "width"=>1280}
+        ]
+      }
+    ],
+    "pagination"=>{"current"=>1, "previous"=>nil, "next"=>nil, "per_page"=>25, "pages"=>1}
+    }
+  }
+}
+</code></pre>
+
+<hr>
+### Remove Video from a Playlist
+<hr>
+<pre><code>PUT - https://api.zype.com/playlists/{id}/add_videos/&video_id=video_id
+</code></pre>
+
+#### Parameters
+
+Parameter | Function | Type
+--------- | -------- | ----
+video_id  | ID of the video to add the playlist | String
+
+#### Request
+
+Content-Type: application/json
+
+#### Response
+201
+Content-Type: application/json
+
+<pre><code>{
+  "response"=>[],
+  "pagination"=>
+  {
+    "current"=>1, "previous"=>nil, "next"=>2, "per_page"=>25, "pages"=>0
+  }
+}
+</code></pre>
