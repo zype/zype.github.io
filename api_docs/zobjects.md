@@ -171,7 +171,9 @@ Content-Type: application/json
 
 Parameter | Function | Type
 --------- | -------- | ----
+id | String id of the zobject to retrieve. Example: 5389352e69702d401b000000. | String
 zobject   | A set of key value pairs that describe the zobject. | Hash
+
 
 #### Request
 Content-Type: application/json
@@ -208,11 +210,91 @@ Content-Type: application/json
   }
 }
 </code></pre>
+
+<hr>
+### Associate Videos with a Zobject
+<hr>
+
+<pre><code>PUT - https://api.zype.com/zobjects/{id}/add_videos?zobject_type=type&video_id=[id00001, id00002]
+</code></pre>
+
+#### Parameters
+
+Parameter | Function | Type
+--------- | -------- | ----
+id | String id of the zobject to retrieve. Example: 5389352e69702d401b000000. | String
+zobject_type | The title of the zobject type. Required. Example: card.  | String
+video_id | An array containing the id's of the video you want to associate with this zobject | Array of Strings
+
+#### Request
+Content-Type: application/json
+
+#### Response
+201
+Content-Type: application/json
+<pre><code>{
+  "response": {
+    "_id": "549dc72d636872c09d1f0000",
+    "active": true,
+    "created_at": "2014-12-26T15:38:05.447-05:00",
+    "description": "",
+    "friendly_title": "jamie-foxx",
+    "keywords": [],
+    "site_id": "549dc583636872c09d110000",
+    "title": "Jamie Foxx",
+    "updated_at": "2014-12-26T16:40:03.670-05:00",
+    "video_ids": ["549dc599636872c09d1a0000"],
+    "zobject_type_id": "549dc71f636872c09d1d0000",
+    "zobject_type_title": "actor"
+  }
+}
+</code></pre>
+
+<hr>
+### Remove Associated Videos from a Zobject
+<hr>
+
+<pre><code>PUT - https://api.zype.com/zobjects/{id}//remove_videos?zobject_type=type&video_id=[id00001, id00002]
+</code></pre>
+
+#### Parameters
+
+Parameter | Function | Type
+--------- | -------- | ----
+id | String id of the zobject to retrieve. Example: 5389352e69702d401b000000. | String
+zobject_type | The title of the zobject type. Required. Example: card.  | String
+video_id | An array containing the id's of the videos you want to dissociate from this zobject | Array of Strings
+
+#### Request
+Content-Type: application/json
+
+#### Response
+200
+
+Content-Type: application/json
+<pre><code>{
+  "response":
+  {
+    "_id": "549dc72d636872c09d1f0000",
+    "active": true,
+    "created_at": "2014-12-26T15:38:05.447-05:00",
+    "description": "",
+    "friendly_title": "jamie-foxx",
+    "keywords": [],
+    "site_id": "549dc583636872c09d110000",
+    "title": "Jamie Foxx",
+    "updated_at": "2014-12-26T16:45:30.419-05:00",
+    "video_ids": [],
+    "zobject_type_id": "549dc71f636872c09d1d0000",
+    "zobject_type_title": "actor"
+  }
+}
+</code></pre>
+
 <hr>
 ### Remove a Zobject
 <hr>
-
-<pre><code>DELETE - https://api.zype.com/zobjects/{id}/?zobject_type=zobject_type
+<pre><code>DELETE - https://api.zype.com/zobjects/{id}/?zobject_type=type
 </code></pre>
 
 #### Parameters
@@ -220,7 +302,10 @@ Content-Type: application/json
 Parameter | Function | Type
 --------- | -------- | ----
 id | String id of the zobject to remove. Example: 5389352e69702d401b000000. | String
-zobject_type | The title of the zobject type. Required. Example: card. | String
+zobject_type | The title of the zobject type. Required. Example: card.  | String
+
+#### Request
+Content-Type: application/json
 
 #### Response
 204
