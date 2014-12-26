@@ -19,7 +19,6 @@ Parameter | Function | Type
 page      | The page number of records to return (zero indexed). Example: 0. | Number
 per_page  | The number of records to return. Example: 10. | Number
 q         | A query string for searching for video sources | String
-keyword   | Filters the records returned by keyword. Example: comedy. | String
 type      | The type of video sources to query. Example: zype, hulu, youtube, crunchyroll | String
 id        | Query for a video source by id | String
 id!       | Exclude a video source from the query | String
@@ -49,10 +48,6 @@ Content-Type: application/json
     },
     {
       "_id": "5499c0274c616e04b8110000",
-      "_keywords": [
-      "videosource",
-      "youtube"
-      ],
       "created_at": "2014-12-23T14:19:04.025-05:00",
       "deleteable": true,
       "editable": true,
@@ -117,7 +112,6 @@ Content-Type: application/json
   "response"=>
   {
     "_id"=>"549b4dac4c616e3a3e000000",
-    "_keywords"=>["hbo", "john", "oliver", "show", "videosource", "youtube"],
     "created_at"=>"2014-12-24T18:35:08.982-05:00",
     "deleteable"=>true,
     "editable"=>true,
@@ -146,17 +140,16 @@ Content-Type: application/json
   "response"=>
     {
       "_id"=>"549b4dac4c616e3a3e000000",
-    "_keywords"=>["hbo", "john", "oliver", "show", "videosource", "youtube"],
-    "created_at"=>"2014-12-24T18:35:08.982-05:00",
-    "deleteable"=>true,
-    "editable"=>true,
-    "guid"=>"UC3XTzVzaHQEd30rQbuvCtTQ",
-    "name"=>"John Oliver HBO Show",
-    "provider_id"=>"5429b1cb69702d2f7c1a0000",
-    "refreshed_at"=>nil,
-    "site_id"=>"5468f40d4c616e0a770c0000",
-    "updated_at"=>"2014-12-24T18:35:08.982-05:00",
-    "video_count"=>0
+      "created_at"=>"2014-12-24T18:35:08.982-05:00",
+      "deleteable"=>true,
+      "editable"=>true,
+      "guid"=>"UC3XTzVzaHQEd30rQbuvCtTQ",
+      "name"=>"John Oliver HBO Show",
+      "provider_id"=>"5429b1cb69702d2f7c1a0000",
+      "refreshed_at"=>nil,
+      "site_id"=>"5468f40d4c616e0a770c0000",
+      "updated_at"=>"2014-12-24T18:35:08.982-05:00",
+      "video_count"=>0
     }
 }
 </code></pre>
@@ -181,7 +174,6 @@ Content-Type: application/json
   "response"=>
   {
     "_id"=>"549b4dac4c616e3a3e000000",
-    "_keywords"=>["hbo", "john", "oliver", "show", "videosource", "youtube"],
     "created_at"=>"2014-12-24T18:35:08.982-05:00",
     "deleteable"=>true,
     "editable"=>true,

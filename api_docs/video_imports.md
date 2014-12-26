@@ -21,7 +21,6 @@ Parameter | Function | Type
 page      | The page number of records to return (zero indexed). Example: 0. | Number
 per_page  | The number of records to return. Example: 10. | Number
 q         | A query string for searching for video imports | String
-keyword   | Filters the records returned by keyword. Example: comedy. | String
 status    | Filters the records returned by status. Example: created. | String
 active    | Show active, inactive or all videos Example: true. | String
 type      | The type of video imports to query. Example: hulu, youtube, crunchyroll | String
@@ -38,7 +37,6 @@ Content-Type: application/json
   "response"=> [
     {
       "_id"=>"5499c02d4c616e0545000000",
-      "_keywords"=> ["concert", "desk", "lucinda", "music", "npr", "tiny", "williams"],
       "active"=>true,
       "created_at"=>"2014-12-23T14:19:09.369-05:00",
       "description"=>
@@ -82,22 +80,12 @@ Content-Type: application/json
 <pre><code>{
   "response": {
     "_id": "5499c0334c616e0545bd0200",
-    "_keywords": [
-    "atlas",
-    "estate",
-    "front",
-    "music",
-    "npr",
-    "real",
-    "row"
-    ],
     "active": true,
     "created_at": "2014-12-23T14:19:15.926-05:00",
     "description": "The members of Real Estate are awfully young to pine for their lost youth, but nostalgia remains crucial ",
     "duration": 3117,
     "episode": null,
     "etag": "\"F9iA7pnxqNgrkOutjQAa9F2k8HY/OANWyL7bhxMQ9uLewq1i4tvdD6o\"",
-    "keywords": [],
     "published_at": "2014-03-25T16:39:22.000-04:00",
     "season": null,
     "site_id": "5468f40d4c616e0a770c0000",
