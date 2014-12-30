@@ -1,80 +1,26 @@
-<!DOCTYPE html>
-<html>
+---
+layout: api
+title: Zype Developer Portal | Apps
+permalink: /api_docs/apps/
+---
 
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-    <title>Zype Developer Portal | Roku App</title>
-    <meta name="description" content="This is the devloper portal for Zype Media. Zype is Revenue and Reach Magic for Online Video. We help content owners deliver fully branded video experiences.
-">
-
-    <link rel="stylesheet" href="/css/main.css">
-    <link rel="canonical" href="http://dev.zype.com/api_docs/roku_app/">
-    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-</head>
-
-
-  <body>
-
-      <header id="header">
-    <div id="content">
-      <a href="/"><img src="http://i.imgur.com/v8SUe9t.png" alt="Zype" />
-      <h1 id="title">Developer Portal</h1></a>
-      <p>a knowledge base</p>
-      <br>
-      <p class="category"><a href="/api_docs/intro/" style="color: #8acfef;">API Documentation</a></p>
-        <a href="/api_docs/zype_platform/"><h4 class="api-header">Zype Platform</h4></a>
-        <a href="/api_docs/users/"><h4 class="api-header">Users</h4></a>
-        <a href="/api_docs/zobject_docs/"><h4 class="api-header">Zobjects</h4></a>
-      <p class="category"><a href="/platform_docs/" style="color: #8acfef;">Platform Documentation</a></p>
-      <p class="category"><a href="/glossary/" style="color: #8acfef;">Glossary</a></p>
-      <p class="category"><a href="http://status.zype.com" style="color: #8acfef;">System Status</a></p>
-      <p class="category"><a href="/faq/" style="color: #8acfef;">FAQ</a></p>
-      <br>
-      © 2014 Zype Media Group
-    </div>
-  </header>
-
-
-    <section id="main">
-      <h2 id="roku-app">Roku App</h2>
-<hr />
-
-<h3 id="retrieve-a-roku-app">Retrieve a Roku App</h3>
-<p>Retrieve configuration settings for a Roku App.</p>
-<hr />
-
+## Apps
+<hr>
+### Retrieve an App
+Retrieve configuration settings for an App.
+<hr>
 <pre><code>GET - https://api.zype.com/app/?app_key=app_key
 </code></pre>
 
-<h4 id="parameters">Parameters</h4>
+#### Parameters
 
-<table>
-  <thead>
-    <tr>
-      <th>Parameter</th>
-      <th>Function</th>
-      <th>Type</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>app_key</td>
-      <td>The app key</td>
-      <td>String</td>
-    </tr>
-  </tbody>
-</table>
+Parameter | Function | Type
+--------- | -------- | ----
+app_key   | The app key | String
 
-<h4 id="response">Response</h4>
-<p>200
-Content-Type: application/json</p>
+#### Response
+200
+Content-Type: application/json
 
 <pre><code>{
   "response": {
@@ -167,13 +113,3 @@ Content-Type: application/json</p>
   }
 }
 </code></pre>
-
-    </section>
-
-    <footer>
-</footer>
-
-
-  </body>
-
-</html>
