@@ -6,12 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>Zype Developer Portal | GeoIP</title>
+    <title>Zype Developer Portal | Zype Platform</title>
     <meta name="description" content="This is the devloper portal for Zype Media. Zype is Revenue and Reach Magic for Online Video. We help content owners deliver fully branded video experiences.
 ">
 
     <link rel="stylesheet" href="/css/main.css">
-    <link rel="canonical" href="http://dev.zype.com/api_docs/geoip/">
+    <link rel="canonical" href="http://dev.zype.com/api_docs/zype_platform/">
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 
     <!--[if lt IE 9]>
@@ -59,49 +59,54 @@
 
 
     <section id="main">
-      <h2 id="geoip-collection">GeoIP Collection</h2>
-<hr />
+      <h2 id="zype-platform">Zype Platform</h2>
 
-<h3 id="retrive-an-ip-address">Retrive an IP Address</h3>
-<hr />
+<p>The Zype API is feature rich, so we want to provide you with a place to learn more about it. The documentation below will help you with a number of objects based around the Zype Platform.</p>
 
-<pre><code>GET - https://api.zype.com/geoip?ip_address=ip_address
-</code></pre>
-
-<h4 id="parameters">Parameters</h4>
-
-<table>
-  <thead>
-    <tr>
-      <th>Parameter</th>
-      <th>Function</th>
-      <th>Type</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>ip_address</td>
-      <td>Defaults to IP of API caller if not provided Example: 255.255.255.255.</td>
-      <td>Integer</td>
-    </tr>
-  </tbody>
-</table>
-
-<h4 id="response">Response</h4>
-<p>200
-Content-Type: application/json</p>
-<pre><code>{
-  "response": {
-    "request": "108.29.95.21",
-    "ip": "108.29.95.21",
-    "country_code": 225,
-    "country_code2": "US",
-    "country_code3": "USA",
-    "country_name": "United States",
-    "continent_code": "NA"
-  }
-}
-</code></pre>
+<div style="width: 45%; float: left;">
+  <div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>
+  <a href="/api_docs/videos/">
+  Videos</a>
+  </div>
+  <div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>
+  <a href="/api_docs/video_imports/">
+  Video Imports</a>
+  </div>
+  <div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>
+  <a href="/api_docs/video_sources/">
+  Video Sources</a>
+  </div>
+  <div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>
+  <a href="/api_docs/playlists/">
+  Playlists</a>
+  </div>
+  <div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>
+  <a href="/api_docs/categories/">
+  Zobjects</a>
+  </div>
+</div>
+<div style="width: 45%; float: left;">
+  <div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>
+  <a href="/api_docs/device_categories/">
+  Device Categories</a>
+  </div>
+  <div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>
+  <a href="/api_docs/devices/">
+  Devices</a>
+  </div>
+  <div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>
+  <a href="/api_docs/revenue_models/">
+  Revenue Models</a>
+  </div>
+  <div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>
+  <a href="/api_docs/roku_app/">
+  Roku App</a>
+  </div>
+  <div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>
+  <a href="/api_docs/geoip/">
+  GeoIP</a>
+  </div>
+</div>
 
     </section>
 

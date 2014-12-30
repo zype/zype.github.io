@@ -19,6 +19,10 @@ We want to provide you as many ways as possible to get your video content on the
     <a href="#3">
     Uploading Videos to the Zype Platform Using Our Ruby Gem</a>
   </div>
+  <div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>
+  <a href="#4">
+  Adding YouTube Videos from a URL</a>
+  </div>
 </div>
 
 <hr id="1">
@@ -168,3 +172,28 @@ Now sit back while we upload all of your videos and add them to the Zype Platfor
 You can confirm that your videos were added by clicking on the videos tab and searching for the ones you've just added.
 
 ![videos](http://i.imgur.com/MHiAOmb.png)
+
+<hr id="4">
+
+## Adding YouTube Video from a URL
+We're happy to announce that the [Zype Platform](http://admin.zype.com) now grants you the power to import videos from YouTube simply by copying an pasting a YouTube link into the platform.
+
+Check out the [Video Imports Screen](http://admin.zype.com/video_imports) and click on the "Add a YouTube Video Import" button to get started.
+
+
+![navigate to form](http://i.imgur.com/4lSzNBt.png)
+
+
+The next step is to copy a URL from YouTube that shows the video you want to add.
+
+
+![copy url](http://i.imgur.com/QdHp2nM.png)
+
+
+Paste the URL into the field on this page and click "Add Video Import".
+
+
+![paste url](http://i.imgur.com/jtREFxL.png)
+
+
+If everything went according to plan, you should see the video imports screen again, with a new import from the link you provided. If you're interested in grabbing a bunch of videos from YouTube, you may want to follow our guides under [Adding Videos.](http://dev.zype.com/platform_docs/adding_videos/)

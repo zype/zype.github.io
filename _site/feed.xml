@@ -6,9 +6,36 @@
 </description>
     <link>http://dev.zype.com/</link>
     <atom:link href="http://dev.zype.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Tue, 23 Dec 2014 13:45:13 -0500</pubDate>
-    <lastBuildDate>Tue, 23 Dec 2014 13:45:13 -0500</lastBuildDate>
+    <pubDate>Tue, 30 Dec 2014 15:16:23 -0500</pubDate>
+    <lastBuildDate>Tue, 30 Dec 2014 15:16:23 -0500</lastBuildDate>
     <generator>Jekyll v2.3.0</generator>
+    
+      <item>
+        <title>Adding a YouTube Video from a Link</title>
+        <description>&lt;p&gt;We’re happy to announce that the &lt;a href=&quot;http://admin.zype.com&quot;&gt;Zype Platform&lt;/a&gt; now grants you the power to import videos from YouTube simply by copying an pasting a YouTube link into the platform.&lt;/p&gt;
+
+&lt;p&gt;Check out the &lt;a href=&quot;http://admin.zype.com/video_imports&quot;&gt;Video Imports Screen&lt;/a&gt; and click on the “Add a YouTube Video Import” button to get started.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/4lSzNBt.png&quot; alt=&quot;navigate to form&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The next step is to copy a URL from YouTube that shows the video you want to add.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/QdHp2nM.png&quot; alt=&quot;copy url&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Paste the URL into the field on this page and click “Add Video Import”.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/jtREFxL.png&quot; alt=&quot;paste url&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;If everything went according to plan, you should see the video imports screen again, with a new import from the link you provided. If you’re interested in grabbing a bunch of videos from YouTube, you may want to follow our guides under &lt;a href=&quot;http://dev.zype.com/platform_docs/adding_videos/&quot;&gt;Adding Videos.&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Thu, 25 Dec 2014 21:16:55 -0500</pubDate>
+        <link>http://dev.zype.com/posts/2014/12/25/adding-youtube-embeds</link>
+        <guid isPermaLink="true">http://dev.zype.com/posts/2014/12/25/adding-youtube-embeds</guid>
+        
+        
+        <category>platform</category>
+        
+      </item>
     
       <item>
         <title>Filtering Videos and Playlists</title>
@@ -423,88 +450,6 @@ Roku channel on your individual Roku account.&lt;/p&gt;
         <pubDate>Fri, 28 Nov 2014 07:37:55 -0500</pubDate>
         <link>http://dev.zype.com/posts/2014/11/28/publish-roku-app</link>
         <guid isPermaLink="true">http://dev.zype.com/posts/2014/11/28/publish-roku-app</guid>
-        
-        
-        <category>developers</category>
-        
-      </item>
-    
-      <item>
-        <title>Publishing a Roku Channel: Part II - Developing Your Roku App Using the Zype SDK</title>
-        <description>&lt;p&gt;In a &lt;a href=&quot;http://dev.zype.com/posts/2014/11/25/create-roku-app-on-zype/&quot;&gt;previous tutorial&lt;/a&gt;,
-we described how to create a Roku App using the Zype Platform. In this tutorial,
-we will walk through how to develop a Roku app using the Zype SDK and testing it locally.&lt;/p&gt;
-
-&lt;p&gt;To complete this tutorial, we expect that you know how to clone a repo on GitHub. You do
-not need to have prior experience with the &lt;a href=&quot;http://sdkdocs.roku.com/display/sdkdoc/BrightScript+Language+Reference&quot;&gt;BrightScript language&lt;/a&gt;
-that Roku uses to create Roku Channels, but you should be comfortable with programming because
-you will need to update some variables within the cloned app and &lt;a href=&quot;http://en.wikipedia.org/wiki/Telnet&quot;&gt;telnet&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Moreover, you need to have a Roku available to test out your app and a developer account with Roku to publish the app. &lt;a href=&quot;https://www.roku.com/developer&quot;&gt;Register here&lt;/a&gt; for a Roku developer account.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Step 1&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;You should have already created a Roku App on the Zype Platform. If you need help
-creating a Roku App from the Zype Platform, please read our &lt;a href=&quot;http://dev.zype.com/posts/2014/11/25/create-roku-app-on-zype/&quot;&gt;previous tutorial&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Step 2&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Now that you have a Roku App created on the Zype Platform, you will need to turn developer mode
-on for your Roku. This will allow you to test out your app before you publish it on your local Roku.&lt;/p&gt;
-
-&lt;p&gt;To set up your Roku for developer mode, navigate to the home screen of your Roku
-and, with your Roku remote control, click the following:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;Home 3x, Up 2x, Right, Left, Right, Left, Right.&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;On your Roku, you will be prompted to enter a developer password for the Roku device.
-Record the password that you enter because it will be used to load your channel in development mode.&lt;/p&gt;
-
-&lt;p&gt;You will also need to record your Roku Player’s IP address. In your Roku, go to
-Settings &amp;gt; Network to find it.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Step 3&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Now that your Roku is set up for developer mode and you have recorded your Developer Password
-and your Roku Player’s IP address, you are set to grab the Zype Roku SDK from our GitHub account.&lt;/p&gt;
-
-&lt;p&gt;Clone the repo &lt;a href=&quot;http://github.com/zype/zype-roku&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Step 4&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Once you have the code on your computer, you will need to do 3 things to customize the Roku app
-for your own app.&lt;/p&gt;
-
-&lt;p&gt;First, you need to open the app.mk file and set the ROKU_DEV_TARGET to your Roku Player’s IP
-address and set the DEVPASSWORD to your Developer Password.&lt;/p&gt;
-
-&lt;p&gt;Second, you will need to change the hard coded keys/initialization variables that are
-located in source/objects/config.brs. You will be able to find your api_key, app_key, and
-player_key in the Zype Platform.&lt;/p&gt;
-
-&lt;p&gt;Third, you need to make sure that the APPNAME in the Makefile matches the name of the Roku App’s directory that you cloned into. If you do not change anything from cloning, the Makefile and the
-directory name should both be zype-roku.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Step 5&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Now, its time to test run your Roku App on your local Roku. Navigate to the Roku app’s directory in your computer’s terminal and run:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;$ make install&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;This will build the app onto your local Roku. Once the build is finished, the channel will automatically load. Test to make sure everything works appropriately.&lt;/p&gt;
-
-&lt;p&gt;Now that your Roku app is built, you will need to publish the app to the Roku Channel store.
-&lt;a href=&quot;http://dev.zype.com/posts/2014/11/28/publish-roku-app/&quot;&gt;Click here&lt;/a&gt; to read how to publish your Roku App.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;More tutorials in this series:&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Part I: &lt;a href=&quot;http://dev.zype.com/posts/2014/11/25/create-roku-app-on-zype/&quot;&gt;Creating a Roku Channel using the Zype Platform&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Part III: &lt;a href=&quot;http://dev.zype.com/posts/2014/11/28/publish-roku-app/&quot;&gt;Publishing the Private Roku Channel&lt;/a&gt;&lt;/p&gt;
-</description>
-        <pubDate>Fri, 28 Nov 2014 05:37:55 -0500</pubDate>
-        <link>http://dev.zype.com/posts/2014/11/28/develop-roku-app-with-zype-sdk</link>
-        <guid isPermaLink="true">http://dev.zype.com/posts/2014/11/28/develop-roku-app-with-zype-sdk</guid>
         
         
         <category>developers</category>

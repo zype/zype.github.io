@@ -335,6 +335,201 @@ Content-Type: application/json
 }
 </code></pre>
 
+<hr>
+###Associate Zobjects with a Video
+<hr>
+<pre><code>PUT - https://api.zype.com/videos/{id}/add_zobjects&zobject_id=[id00001, id00002]
+</code></pre>
+
+#### Parameters
+
+Parameter | Function | Type
+--------- | -------- | ----
+id        | String id of the Video. Example: 5389352e69702d401b000000. | String
+zobject_id | An array containing all of the zobject id's that you want to add to the video. | Array of Strings
+
+#### Request
+Content-Type: application/json
+
+#### Response
+200
+Content-Type: application/json
+<pre><code>{
+  "response": {
+    "_id": "549dc599636872c09d1a0000",
+    "active": false,
+    "country": nil,
+    "created_at": "2014-12-26T15:31:22.121-05:00",
+    "data_sources":
+    [
+      {"_id": "549dc59a636872c09d1b0000",
+      "active": true,
+      "duration": 493,
+      "status": "ready",
+      "youtube_id": "J7f26d-AIrM",
+      "thumbnails":
+        [
+          {"_id": "549dc594636872c09d150000",
+          "aspect_ratio": nil,
+          "height": 90,
+          "name": nil,
+          "url": "https://i.ytimg.com/vi/J7f26d-AIrM/default.jpg",
+          "width": 120},
+          {"_id": "549dc594636872c09d160000",
+          "aspect_ratio": nil,
+          "height": 180,
+          "name": nil,
+          "url": "https://i.ytimg.com/vi/J7f26d-AIrM/mqdefault.jpg",
+          "width": 320},
+          {"_id": "549dc594636872c09d170000",
+          "aspect_ratio": nil,
+          "height": 360,
+          "name": nil,
+          "url": "https://i.ytimg.com/vi/J7f26d-AIrM/hqdefault.jpg",
+          "width": 480},
+          {"_id": "549dc594636872c09d180000",
+          "aspect_ratio": nil,
+          "height": 480,
+          "name": nil,
+          "url": "https://i.ytimg.com/vi/J7f26d-AIrM/sddefault.jpg",
+          "width": 640},
+          {"_id": "549dc594636872c09d190000",
+          "aspect_ratio": nil,
+          "height": 720,
+          "name": nil,
+          "url": "https://i.ytimg.com/vi/J7f26d-AIrM/maxresdefault.jpg",
+          "width": 1280}
+        ]
+      }
+    ],
+    "description": "Conan brings the magic of the blues to Chicago's youngest, and most adorable generation.",
+    "duration": 493,
+    "episode": nil,
+    "featured": false,
+    "foreign_id": nil,
+    "keywords": [],
+    "mature_content": false,
+    "published_at": nil,
+    "rating": 0.0,
+    "related_playlist_ids": [],
+    "request_count": 0,
+    "season": nil,
+    "site_id": "549dc583636872c09d110000",
+    "status": "created",
+    "subscription_required": false,
+    "title": "Conan Writes Chicago Blues Songs With School Kids - CONAN on TBS",
+    "updated_at": "2014-12-26T16:20:46.324-05:00",
+    "zobject_ids": ["549dc72d636872c09d1f0000"],
+    "thumbnails":
+    [
+      {"aspect_ratio": nil, "height": 90, "name": nil, "url": "https://i.ytimg.com/vi/J7f26d-AIrM/default.jpg", "width": 120},
+      {"aspect_ratio": nil, "height": 180, "name": nil, "url": "https://i.ytimg.com/vi/J7f26d-AIrM/mqdefault.jpg", "width": 320},
+      {"aspect_ratio": nil, "height": 360, "name": nil, "url": "https://i.ytimg.com/vi/J7f26d-AIrM/hqdefault.jpg", "width": 480},
+      {"aspect_ratio": nil, "height": 480, "name": nil, "url": "https://i.ytimg.com/vi/J7f26d-AIrM/sddefault.jpg", "width": 640},
+      {"aspect_ratio": nil, "height": 720, "name": nil, "url": "https://i.ytimg.com/vi/J7f26d-AIrM/maxresdefault.jpg", "width": 1280}
+    ]
+  }
+}
+</code></pre>
+
+<hr>
+###Remove Associated Zobjects from a Video
+<hr>
+<pre><code>PUT - https://api.zype.com/videos/{id}/remove_zobjects&zobject_id=[id00001, id00002]
+</code></pre>
+
+#### Parameters
+
+Parameter | Function | Type
+--------- | -------- | ----
+id        | String id of the Video. Example: 5389352e69702d401b000000. | String
+zobject_id | An array containing all of the zobject id's that you want to dissociate from the video. | Array of Strings
+
+#### Request
+Content-Type: application/json
+
+#### Response
+200
+Content-Type: application/json
+
+<pre><code>{
+  "response": {
+    "_id": "549dc599636872c09d1a0000",
+    "active": false,
+    "country": nil,
+    "created_at": "2014-12-26T15:31:22.121-05:00",
+    "data_sources":
+      [
+        {"_id": "549dc59a636872c09d1b0000",
+        "active": true,
+        "duration": 493,
+        "status": "ready",
+        "youtube_id": "J7f26d-AIrM",
+        "thumbnails":
+          [
+            {"_id": "549dc594636872c09d150000",
+            "aspect_ratio": nil,
+            "height": 90,
+            "name": nil,
+            "url": "https://i.ytimg.com/vi/J7f26d-AIrM/default.jpg",
+            "width": 120},
+            {"_id": "549dc594636872c09d160000",
+            "aspect_ratio": nil,
+            "height": 180,
+            "name": nil,
+            "url": "https://i.ytimg.com/vi/J7f26d-AIrM/mqdefault.jpg",
+            "width": 320},
+            {"_id": "549dc594636872c09d170000",
+            "aspect_ratio": nil,
+            "height": 360,
+            "name": nil,
+            "url": "https://i.ytimg.com/vi/J7f26d-AIrM/hqdefault.jpg",
+            "width": 480},
+            {"_id": "549dc594636872c09d180000",
+            "aspect_ratio": nil,
+            "height": 480,
+            "name": nil,
+            "url": "https://i.ytimg.com/vi/J7f26d-AIrM/sddefault.jpg",
+            "width": 640},
+            {"_id": "549dc594636872c09d190000",
+            "aspect_ratio": nil,
+            "height": 720,
+            "name": nil,
+            "url": "https://i.ytimg.com/vi/J7f26d-AIrM/maxresdefault.jpg",
+            "width": 1280}
+          ]
+        }
+      ],
+    "description": "Conan brings the magic of the blues to Chicago's youngest, and most adorable generation.",
+    "duration": 493,
+    "episode": nil,
+    "featured": false,
+    "foreign_id": nil,
+    "keywords": [],
+    "mature_content": false,
+    "published_at": nil,
+    "rating": 0.0,
+    "related_playlist_ids": [],
+    "request_count": 0,
+    "season": nil,
+    "site_id": "549dc583636872c09d110000",
+    "status": "created",
+    "subscription_required": false,
+    "title": "Conan Writes Chicago Blues Songs With School Kids - CONAN on TBS",
+    "updated_at": "2014-12-26T16:20:46.324-05:00",
+    "zobject_ids": [],
+  "thumbnails":
+  [
+    {"aspect_ratio": nil, "height": 90, "name": nil, "url": "https://i.ytimg.com/vi/J7f26d-AIrM/default.jpg", "width": 120},
+    {"aspect_ratio": nil, "height": 180, "name": nil, "url": "https://i.ytimg.com/vi/J7f26d-AIrM/mqdefault.jpg", "width": 320},
+    {"aspect_ratio": nil, "height": 360, "name": nil, "url": "https://i.ytimg.com/vi/J7f26d-AIrM/hqdefault.jpg", "width": 480},
+    {"aspect_ratio": nil, "height": 480, "name": nil, "url": "https://i.ytimg.com/vi/J7f26d-AIrM/sddefault.jpg", "width": 640},
+    {"aspect_ratio": nil, "height": 720, "name": nil, "url": "https://i.ytimg.com/vi/J7f26d-AIrM/maxresdefault.jpg", "width": 1280}
+    ]
+  }
+}
+</code></pre>
+
 ## Player
 Lists player content. You need to supply your player key in addition to your API key.
 <hr>

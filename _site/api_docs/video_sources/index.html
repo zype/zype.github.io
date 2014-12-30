@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Zype Developer Portal | Video Sources</title>
+    <meta name="description" content="This is the devloper portal for Zype Media. Zype is Revenue and Reach Magic for Online Video. We help content owners deliver fully branded video experiences.
+">
+
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="canonical" href="http://dev.zype.com/api_docs/video_sources/">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+
+
+  <body>
+
+      <header id="header">
+    <div id="content">
+      <a href="/"><img src="http://i.imgur.com/v8SUe9t.png" alt="Zype" />
+      <h1 id="title">Developer Portal</h1></a>
+      <p>a knowledge base</p>
+      <br>
+      <p class="category"><a href="/api_docs/intro/" style="color: #8acfef;">API Documentation</a></p>
+      <a href="/api_docs/zype_platform/"><h4 class="api-header">Zype Platform</h4></a>
+      <p><a href="/api_docs/videos/">Videos</a></p>
+      <p><a href="/api_docs/playlists/">Playlists</a></p>
+      <p><a href="/api_docs/categories/">Categories</a></p>
+      <p><a href="/api_docs/apps/">Apps</a></p>
+      <p><a href="/api_docs/devices/">Devices</a></p>
+      <p><a href="/api_docs/device_categories/">Device Categories</a></p>
+      <p><a href="/api_docs/revenue_models/">Revenue Models</a></p>
+      <p><a href="/api_docs/video_imports/">Video Imports</a></p>
+      <p><a href="/api_docs/video_sources/">Video Sources</a></p>
+      <p><a href="/api_docs/geoip/">GeoIP</a></p>
+      <a href="/api_docs/users/"><h4 class="api-header">Users</h4></a>
+      <p><a href="/api_docs/consumers/">Consumers</a></p>
+      <p><a href="/api_docs/plans/">Plans</a></p>
+      <p><a href="/api_docs/subscriptions/">Subscriptions</a></p>
+      <a href="/api_docs/zobject_docs/"><h4 class="api-header">Zobjects</h4></a>
+      <p><a href="/api_docs/zobject_types/">Zobject Types</a></p>
+      <p><a href="/api_docs/zobjects/">Zobjects</a></p>
+      <br>
+      <p class="category"><a href="/platform_docs/" style="color: #8acfef;">Platform Documentation</a></p>
+      <p class="category"><a href="/glossary/" style="color: #8acfef;">Glossary</a></p>
+      <p class="category"><a href="http://status.zype.com" style="color: #8acfef;">System Status</a></p>
+      <p class="category"><a href="/faq/" style="color: #8acfef;">FAQ</a></p>
+      <br>
+      © 2014 Zype Media Group
+    </div>
+  </header>
+
+
+    <section id="main">
+      <h2 id="video-sources-collection">Video Sources Collection</h2>
+<hr />
+
+<h3 id="list-all-video-sources">List all Video Sources</h3>
+<hr />
+
+<pre><code>GET - https://api.zype.com/video_sources?page=page&amp;per_page=per_page&amp;
+keyword=keyword
+</code></pre>
+
+<h4 id="parameters">Parameters</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Function</th>
+      <th>Type</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>page</td>
+      <td>The page number of records to return (zero indexed). Example: 0.</td>
+      <td>Number</td>
+    </tr>
+    <tr>
+      <td>per_page</td>
+      <td>The number of records to return. Example: 10.</td>
+      <td>Number</td>
+    </tr>
+    <tr>
+      <td>q</td>
+      <td>A query string for searching for video sources</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>type</td>
+      <td>The type of video sources to query. Example: zype, hulu, youtube, crunchyroll</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>id</td>
+      <td>Query for a video source by id</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>id!</td>
+      <td>Exclude a video source from the query</td>
+      <td>String</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="response">Response</h4>
+<p>200
+Content-Type: application/json</p>
+
+<pre><code>{
+  "response": [
+  {
+    "_id": "5468f40d4c616e0a770d0000",
+    "_keywords": [
+    "videosource",
+    "zype"
+    ],
+    "created_at": "2014-11-16T13:59:25.420-05:00",
+    "deleteable": false,
+    "editable": false,
+    "name": "Zype",
+    "provider_id": "5429b1ca69702d2f7c190000",
+    "refreshed_at": null,
+    "site_id": "5468f40d4c616e0a770c0000",
+    "updated_at": "2014-11-16T13:59:25.420-05:00",
+    "video_count": 0
+    },
+    {
+      "_id": "5499c0274c616e04b8110000",
+      "created_at": "2014-12-23T14:19:04.025-05:00",
+      "deleteable": true,
+      "editable": true,
+      "guid": "UC4eYXhJI4-7wSWc8UNRwD4A",
+      "name": "YouTube",
+      "provider_id": "5429b1cb69702d2f7c1a0000",
+      "refreshed_at": "2014-12-23T14:19:04.156-05:00",
+      "site_id": "5468f40d4c616e0a770c0000",
+      "updated_at": "2014-12-23T14:19:45.552-05:00",
+      "video_count": 0
+      },
+      {
+        "_id": "549b4dac4c616e3a3e000000",
+        "_keywords": [
+        "hbo",
+        "john",
+        "oliver",
+        "show",
+        "videosource",
+        "youtube"
+        ],
+        "created_at": "2014-12-24T18:35:08.982-05:00",
+        "deleteable": true,
+        "editable": true,
+        "guid": "UC3XTzVzaHQEd30rQbuvCtTQ",
+        "name": "John Oliver HBO Show!!!",
+        "provider_id": "5429b1cb69702d2f7c1a0000",
+        "refreshed_at": null,
+        "site_id": "5468f40d4c616e0a770c0000",
+        "updated_at": "2014-12-24T18:42:03.155-05:00",
+        "video_count": 0
+      }
+      ],
+      "pagination": {
+        "current": 1,
+        "previous": null,
+        "next": null,
+        "per_page": 10,
+        "pages": 1
+      }
+    }
+</code></pre>
+
+<hr />
+
+<h3 id="create-a-video-source">Create a Video Source</h3>
+<hr />
+
+<pre><code>POST - https://api.zype.com/video_sources/?source=source&amp;video_source[attributes]=attributes
+</code></pre>
+
+<table>
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Function</th>
+      <th>Type</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>source</td>
+      <td>The source of the video sources. Example: hulu, youtube, crunchyroll</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>video_source[name]</td>
+      <td>Name of the video source</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>video_source[guid]</td>
+      <td>Guid of the video source</td>
+      <td>String</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="response-1">Response</h4>
+<p>201
+Content-Type: application/json</p>
+
+<pre><code>{
+  "response"=&gt;
+  {
+    "_id"=&gt;"549b4dac4c616e3a3e000000",
+    "created_at"=&gt;"2014-12-24T18:35:08.982-05:00",
+    "deleteable"=&gt;true,
+    "editable"=&gt;true,
+    "guid"=&gt;"UC3XTzVzaHQEd30rQbuvCtTQ",
+    "name"=&gt;"John Oliver HBO Show",
+    "provider_id"=&gt;"5429b1cb69702d2f7c1a0000",
+    "refreshed_at"=&gt;nil,
+    "site_id"=&gt;"5468f40d4c616e0a770c0000",
+    "updated_at"=&gt;"2014-12-24T18:35:08.982-05:00",
+    "video_count"=&gt;0
+  }
+}
+</code></pre>
+
+<hr />
+
+<h3 id="retrieve-a-single-video-source">Retrieve a Single Video Source</h3>
+<hr />
+
+<pre><code>GET - https://api.zype.com/video_sources/{id}/
+</code></pre>
+
+<h4 id="response-2">Response</h4>
+<p>200
+Content-Type: application/json</p>
+
+<pre><code>{
+  "response"=&gt;
+    {
+      "_id"=&gt;"549b4dac4c616e3a3e000000",
+      "created_at"=&gt;"2014-12-24T18:35:08.982-05:00",
+      "deleteable"=&gt;true,
+      "editable"=&gt;true,
+      "guid"=&gt;"UC3XTzVzaHQEd30rQbuvCtTQ",
+      "name"=&gt;"John Oliver HBO Show",
+      "provider_id"=&gt;"5429b1cb69702d2f7c1a0000",
+      "refreshed_at"=&gt;nil,
+      "site_id"=&gt;"5468f40d4c616e0a770c0000",
+      "updated_at"=&gt;"2014-12-24T18:35:08.982-05:00",
+      "video_count"=&gt;0
+    }
+}
+</code></pre>
+
+<hr />
+
+<h3 id="update-a-video-source">Update a Video Source</h3>
+<hr />
+
+<pre><code>PUT - https://api.zype.com/video_sources/{id}/?video_source[attributes]=attributes
+</code></pre>
+
+<table>
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Function</th>
+      <th>Type</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>video_source[name]</td>
+      <td>Name of the video source</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>video_source[guid]</td>
+      <td>Guid of the video source</td>
+      <td>String</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="response-3">Response</h4>
+<p>201
+Content-Type: application/json</p>
+
+<pre><code>{
+  "response"=&gt;
+  {
+    "_id"=&gt;"549b4dac4c616e3a3e000000",
+    "created_at"=&gt;"2014-12-24T18:35:08.982-05:00",
+    "deleteable"=&gt;true,
+    "editable"=&gt;true,
+    "guid"=&gt;"UC3XTzVzaHQEd30rQbuvCtTQ",
+    "name"=&gt;"John Oliver HBO Show - UPDATED",
+    "provider_id"=&gt;"5429b1cb69702d2f7c1a0000",
+    "refreshed_at"=&gt;nil,
+    "site_id"=&gt;"5468f40d4c616e0a770c0000",
+    "updated_at"=&gt;"2014-12-24T18:35:08.982-05:00",
+    "video_count"=&gt;0
+  }
+}
+</code></pre>
+
+<hr />
+
+<h3 id="delete-a-video-source">Delete a Video Source</h3>
+<hr />
+
+<p>Note, you cannot delete a Zype video source.</p>
+
+<pre><code>DELETE - https://api.zype.com/video_sources/{id}/
+</code></pre>
+
+<h4 id="response-4">Response</h4>
+<p>204</p>
+
+<p>No content</p>
+
+    </section>
+
+    <footer>
+</footer>
+
+
+  </body>
+
+</html>
