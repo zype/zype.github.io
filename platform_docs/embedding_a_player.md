@@ -32,13 +32,13 @@ We hope you use this feature to get up and running with Zype videos on your site
 
 ## Configuring Player Expiration for Your Site
 
-One of the ways that Zype defends your video content is by expiring our video url's. We let you configure the time before expiration using the [Zype Platform.](http://admin.zype.com).
+One of the ways that Zype defends your video content is by expiring our video url's after a set amount of time. We let you configure the time before expiration using the [Zype Platform.](http://admin.zype.com).
 
 If you want to edit your Player Expiration value, head over to your Site Settings by clicking on the gear at the top of the screen and clicking on settings.
 
 ![site settings](http://i.imgur.com/Ed3emek.png)
 
-At the bottom of the Site Settings page is a value for Player Expiration, the default is 300 seconds or 5 minutes. You can change this value by typing directly into the box or using the step arrows on the side. The maximum value is 2592000 seconds or one month. Edit the value as needed and click save changes.  
+At the bottom of the Site Settings page is a value for Player Expiration, the default is 300 seconds or 5 minutes. You can change this value by typing directly into the box or using the step arrows on the side. The minimum value is 0, which means that your video url's will never expire. The maximum value is 2592000 seconds or one month. Edit the value as needed and click save changes.  
 
 ![player expiration](http://i.imgur.com/R8EIEXm.png)
 
