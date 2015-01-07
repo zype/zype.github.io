@@ -7,7 +7,8 @@ permalink: /platform_docs/
 The Zype Platform is feature rich, so we want to provide you with a place to learn more about it.
 Below are a bunch of short tutorials (with pictures!) to help you with a number of topics. The links on the left under "Getting Started" will walk you through the major parts of the Zype Platform.
 
-  <div style="width: 45%; float: left;">
+<div style="display: inline-flex; width: 100%;">
+  <div style="width: 50%;">
     <div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>
       <a href="http://dev.zype.com/posts/2014/10/10/adding-zype-to-rails/">
       Adding Zype to a Rails Application</a>
@@ -46,7 +47,7 @@ Below are a bunch of short tutorials (with pictures!) to help you with a number 
     </div>
   </div>
 
-  <div style="width: 45%; float: left;">
+  <div style="width: 50%;">
     <div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>  
       <a href="http://dev.zype.com/posts/2014/12/03/categories-playlists-zobjects-roku/">
       Categories, Playlists and Your Roku App</a>
@@ -84,3 +85,4 @@ Below are a bunch of short tutorials (with pictures!) to help you with a number 
       Search Filters</a>
     </div>
   </div>
+</div>
