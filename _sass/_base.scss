@@ -381,17 +381,17 @@ header {
     margin-bottom: 5px;
   }
 
-  @media print, screen and (max-width: 551px) {
+  @media print, screen and (max-width: 962px) {
     padding-bottom: 30px;
   }
 }
 
 #footer {
-  @media print, screen and (min-width: 962px) {
+  @media print, screen and (min-width: 552px) {
     display: none;
   }
 
-  @media print, screen and (max-width: 961px) {
+  @media print, screen and (max-width: 551px) {
     background-color: #423e3e;
     text-align: center;
     height: 50px;
@@ -460,6 +460,12 @@ header {
 
 .hidden-mobile {
   @media print, screen and (max-width: 961px) {
+    display: none;
+  }
+}
+
+.hidden-medium {
+  @media print, screen and (max-width: 552px) {
     display: none;
   }
 }
