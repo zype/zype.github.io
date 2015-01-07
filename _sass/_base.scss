@@ -416,14 +416,14 @@ header {
 .homepage-icon {
   font-size: 80px !important;
   width: 180px;
-  margin-bottom: 20px;
-  padding-top: 20px;
+  margin-bottom: 15px;
+  padding-top: 25px;
 
   @media print, screen and (max-width: 551px) {
     font-size: 50px !important;
     width: 100px;
-    margin-bottom: 14px;
-    padding-top: 10px;
+    margin-bottom: 10px;
+    padding-top: 18px;
   }
 }
 
