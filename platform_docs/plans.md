@@ -10,7 +10,7 @@ The Zype Platform supports Stripe for credit card processing.
 <div style="width: 100%;">
 <div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>
 <a href="#1">
-Linking Stripe</a>
+Connecting Stripe</a>
 </div>
 <div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>
 <a href="#2">
@@ -36,7 +36,7 @@ Stripe Secret Key. Your Stripe Secret Key can be found under your Stripe [accoun
 ## Creating a Plan
 Once you have your Stripe Secret Key in the Zype Platform, you can create plans from the
 Zype Platform that connect to your Stripe Account. To create a plan, click on the
-"Subscription" on the left hand menu and click on plans. Once you are on the [plans page](https://admin.zype.com/plans),
+"Subscription" on the left hand menu and click on plans. Once you are on the [plans' page](https://admin.zype.com/plans),
 click on the new plan button.
 
 ![new plan](http://i.imgur.com/TZemOeL.png)
@@ -49,7 +49,7 @@ be a unique idenitifier for the plans and is what Stripe uses in its API queries
 
 If your plan is active, you will be ready to have consumers subscribe to your plan!
 
-<hr id="2">
+<hr id="3">
 
 ## Deactivating a Plan
 You can make a plan inactive by navigating to your plan and toggling the plan to be

@@ -4,25 +4,25 @@ title: Zype Developer Portal | Platform Docs
 permalink: /platform_docs/consumers/
 ---
 ##All About Consumers
-The Zype Platform is feature rich, so we want to provide you with a place to learn more about it.
-Below are a bunch of short tutorials (with pictures!) to help you with videos.
+Consumers are the backbone of Zype's Subscription Service. Consumers, with a plan,
+create a subscription. The Zype Platform supports Stripe for credit card processing of consumers.
 
 <div style="width: 100%;">
 <div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>
 <a href="#1">
-Linking Stripe</a>
+Connecting Stripe</a>
 </div>
 <div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>
-<a href="#1">
-What is a Plan?</a>
+<a href="#2">
+Creating a Consumer</a>
 </div>
 <div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>
 <a href="#3">
-Creating a Plan</a>
+Getting a Consumer's Details</a>
 </div>
 <div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>
 <a href="#4">
-Removing a Plan</a>
+Removing a Consumer</a>
 </div>
 </div>
 
@@ -37,8 +37,24 @@ Stripe Secret Key. Your Stripe Secret Key can be found under your Stripe [accoun
 
 <hr id="2">
 
-## Creating a  (DPT)
-Zype’s DPT allows you to create player rules based on geography and device.
-For example, you could declare that end users will receive the Hulu Player if he
-or she is accessing your video via desktop in the United States or the Zype Player
-if he or she is accessing your video via desktop in Australia.
+## Creating a Consumer
+You will need to [use our API](http://dev.zype.com/api_docs/consumers/) to create consumers.
+
+<hr id='3'>
+
+## Getting a Consumer's Details
+You can use the Zype Platform to get details about a consumer. To get a consumer's details, click on the
+"Subscription" on the left hand menu and click on consumers. Once you are on the [consumers' page](https://admin.zype.com/consumers),
+click on the appropriate consumer. Information includes a consumer's email and his or her subscriptions.
+
+![consumer information](http://i.imgur.com/s3NLd4X.png)
+
+<hr id="4">
+
+## Removing a Consumer
+You can remove a consumer from the Zype Platform. To do so, navigate to the [consumers' page](https://admin.zype.com/consumers)
+and click on the red delete button for the appropriate consumer.
+
+![delete consumer](http://i.imgur.com/kwMbFHb.png)
+
+Note, deleting a consumer will also cancel all of his or her subscriptions.
