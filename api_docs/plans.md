@@ -37,7 +37,7 @@ Content-Type: application/json
       "interval": "month",
       "name": "Zype Monthly Subscription",
       "stripe_id": "zype-monthly",
-      "stripe_public_key": "pk_test_iLS3IUO1bHqqLxNBWhxcW6c1234",
+      "stripe_public_key": "pk_test_123456",
       "trial_period_days": 0,
       "updated_at": "2014-10-23T13:02:20.075Z"
     }
@@ -87,7 +87,7 @@ Content-Type: application/json
       "interval": "month",
       "name": "Zype Monthly Subscription",
       "stripe_id": "zype-monthly",
-      "stripe_public_key": "iLS4444HqqLxNBWhxcW6c1234",
+      "stripe_public_key": "abcde12345",
       "trial_period_days": 0,
       "updated_at": "2014-10-23T13:02:20.075Z"
     }
