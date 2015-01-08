@@ -54,9 +54,9 @@
           <p><a href="/platform_docs/playlists/">Playlists</a></p>
           <p><a href="/platform_docs/categories/">Categories</a></p>
           <p><a href="/platform_docs/assets/">Assets</a></p>
-          <!-- <p><a href="/platform_docs/consumers/">Consumers</a></p>
+          <p><a href="/platform_docs/consumers/">Consumers</a></p>
           <p><a href="/platform_docs/plans/">Plans</a></p>
-          <p><a href="/platform_docs/subscriptions/">Subscriptions</a></p> -->
+          <p><a href="/platform_docs/subscriptions/">Subscriptions</a></p>
           <p><a href="/platform_docs/zobjects/">Zobjects</a></p>
         <br>
       <p class="category"><a href="/glossary/" style="color: #8acfef;">Glossary</a></p>
@@ -70,91 +70,61 @@
 
   <section id="main">
     <h2 id="all-about-plans">All About Plans</h2>
-<p>The Zype Platform is feature rich, so we want to provide you with a place to learn more about it.
-Below are a bunch of short tutorials (with pictures!) to help you with a number of topics.</p>
+<p>To require your consumers to pay for access to your videos, you will need to create subscription plans.
+The Zype Platform supports Stripe for credit card processing.</p>
 
-<table>
-  <thead>
-    <tr>
-      <th>Topic</th>
-      <th>Tags</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="http://dev.zype.com/posts/2014/10/10/adding-zype-to-rails/">Adding Zype to a Rails Application</a></td>
-      <td>Rails, Zype</td>
-    </tr>
-    <tr>
-      <td><a href="http://dev.zype.com/posts/2014/10/17/dpt-from-scratch/">Learn About Dynamic Player Technology (DPT)</a></td>
-      <td>DPT, Player Rules</td>
-    </tr>
-    <tr>
-      <td><a href="http://dev.zype.com/posts/2014/10/20/checking-player-request-logs/">Monitoring Your Views</a></td>
-      <td>DPT, Views</td>
-    </tr>
-    <tr>
-      <td><a href="http://dev.zype.com/posts/2014/10/23/adding-a-playlist-of-related-videos/">Related Playlists</a></td>
-      <td>Playlists</td>
-    </tr>
-    <tr>
-      <td><a href="http://dev.zype.com/posts/2014/11/18/search-youtube-in-zype/">Adding Videos from a YouTube Channel to the Zype Platform</a></td>
-      <td>YouTube, Zype</td>
-    </tr>
-    <tr>
-      <td><a href="http://dev.zype.com/posts/2014/11/19/adding-crunchyroll-as-a-video-source/">Adding Your Crunchyroll Videos to Zype</a></td>
-      <td>Crunchyroll, Zype</td>
-    </tr>
-    <tr>
-      <td><a href="http://dev.zype.com/posts/2014/11/20/uploading-vidoes-with-the-zype-cli/">Uploading Videos to Zype Using Our Ruby Gem</a></td>
-      <td>Ruby, Gem, Zype</td>
-    </tr>
-    <tr>
-      <td><a href="http://dev.zype.com/posts/2014/11/25/create-roku-app-on-zype/">Starting a Roku App on the Zype Platform</a></td>
-      <td>Roku, Zype</td>
-    </tr>
-    <tr>
-      <td><a href="http://dev.zype.com/posts/2014/12/03/zype-roku-assets/">Adding Assets to Your Roku App</a></td>
-      <td>Roku, Assets, Zype</td>
-    </tr>
-    <tr>
-      <td><a href="http://dev.zype.com/posts/2014/12/03/categories-playlists-zobjects-roku/">Categories, Playlists and Your Roku App</a></td>
-      <td>Roku, Categories, Playlists</td>
-    </tr>
-    <tr>
-      <td><a href="http://dev.zype.com/posts/2014/11/28/develop-roku-app-with-zype-sdk/">Building Your Roku App</a></td>
-      <td>Roku, SDK, Zype</td>
-    </tr>
-    <tr>
-      <td><a href="http://dev.zype.com/posts/2014/11/28/publish-roku-app/">Publishing Your Roku App</a></td>
-      <td>Roku, Publishing</td>
-    </tr>
-    <tr>
-      <td><a href="http://dev.zype.com/posts/2014/12/01/api-keys/">Help Finding Your API/Player Keys</a></td>
-      <td>API Key, Player Key</td>
-    </tr>
-    <tr>
-      <td><a href="http://dev.zype.com/posts/2014/11/29/sample-rails-zype/">Walkthrough of the Zype API with a Sample Rails App</a></td>
-      <td>API, Zype, Rails</td>
-    </tr>
-    <tr>
-      <td><a href="http://dev.zype.com/posts/2014/11/27/embedding-player/">Embedding a Player on Your Site</a></td>
-      <td>Player, Embed</td>
-    </tr>
-    <tr>
-      <td><a href="http://dev.zype.com/posts/2014/12/04/defining-categories-and-playlists/">Categories and Playlists on the Zype Platform</a></td>
-      <td>Categories, Playlists, Platform</td>
-    </tr>
-    <tr>
-      <td><a href="http://dev.zype.com/posts/2014/12/04/zobjects-in-the-zype-platform/">Zobjects on the Zype Platform</a></td>
-      <td>Zobjects, Zobject Types, Platform</td>
-    </tr>
-    <tr>
-      <td><a href="http://dev.zype.com/posts/2014/12/10/filtering-videos-and-playlists/">Search Filters on the Zype Platform</a></td>
-      <td>Search Filters, Platform</td>
-    </tr>
-  </tbody>
-</table>
+<div style="width: 100%;">
+<div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>
+<a href="#1">
+Linking Stripe</a>
+</div>
+<div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>
+<a href="#2">
+Creating a Plan</a>
+</div>
+<div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>
+<a href="#3">
+Deactivating a Plan</a>
+</div>
+</div>
+
+<hr id="1" />
+
+<h2 id="connecting-stripe">Connecting Stripe</h2>
+<p>Before creating a plan, you need to link your Stripe Account to the Zype Platform
+To link your Stripe Account, navigate in the Zype Platform to settings and enter your
+Stripe Secret Key. Your Stripe Secret Key can be found under your Stripe <a href="https://dashboard.stripe.com/account/apikeys">account settings</a>.</p>
+
+<p><img src="http://i.imgur.com/ho1jPpL.png" alt="stripe settings" /></p>
+
+<hr id="2" />
+
+<h2 id="creating-a-plan">Creating a Plan</h2>
+<p>Once you have your Stripe Secret Key in the Zype Platform, you can create plans from the
+Zype Platform that connect to your Stripe Account. To create a plan, click on the
+“Subscription” on the left hand menu and click on plans. Once you are on the <a href="https://admin.zype.com/plans">plans page</a>,
+click on the new plan button.</p>
+
+<p><img src="http://i.imgur.com/TZemOeL.png" alt="new plan" /></p>
+
+<p>You will be prompted to enter the name, plan id, statement description, trial period days,
+amount, currency type, interval, and whether or not the plan is active. Note, the Plan ID has to
+be a unique idenitifier for the plans and is what Stripe uses in its API queries.</p>
+
+<p><img src="http://i.imgur.com/X4ElIgg.png" alt="new plan form" /></p>
+
+<p>If your plan is active, you will be ready to have consumers subscribe to your plan!</p>
+
+<hr id="2" />
+
+<h2 id="deactivating-a-plan">Deactivating a Plan</h2>
+<p>You can make a plan inactive by navigating to your plan and toggling the plan to be
+inactive.</p>
+
+<p><img src="http://i.imgur.com/ykZhpKD.png" alt="deactivate plan" /></p>
+
+<p>Note, deactivating a plan does not affect any current subscribers to the plan.
+It means that new subscribers can’t be added to that plan.</p>
 
   </section>
 
