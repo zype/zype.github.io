@@ -17,12 +17,23 @@
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-1376128-30', 'auto');
+    ga('send', 'pageview');
+
+    </script>
 </head>
 
 
 <body>
 
-  <header id="header">
+  <header id="header" style="overflow-y: scroll;">
   <div id="content">
     <a href="/"><img src="http://i.imgur.com/v8SUe9t.png" alt="Zype" />
       <h1 id="title">Developer Portal</h1></a>
@@ -66,6 +77,10 @@
     <a href="#1">
     Embedding a Player on Your Site</a>
   </div>
+  <div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>
+  <a href="#2">
+  Configuring Player Expiration for Your Site</a>
+  </div>
 </div>
 
 <hr id="1" />
@@ -78,6 +93,22 @@
 <p>The embed codes are designed to be dropped into a webpage, wherever you need them. The div id must remain the same, but other than that, you’re free to do as you please. As the page states, we recommend that you include the javascript portion of the embed code before the closing body tag on the page.</p>
 
 <p>We hope you use this feature to get up and running with Zype videos on your site in the blink of an eye!</p>
+
+<hr id="2" />
+
+<h2 id="configuring-player-expiration-for-your-site">Configuring Player Expiration for Your Site</h2>
+
+<p>One of the ways that Zype defends your video content is by expiring our video url’s after a set amount of time. We let you configure the time before expiration using the <a href="http://admin.zype.com">Zype Platform.</a>.</p>
+
+<p>If you want to edit your Player Expiration value, head over to your Site Settings by clicking on the gear at the top of the screen and clicking on settings.</p>
+
+<p><img src="http://i.imgur.com/Ed3emek.png" alt="site settings" /></p>
+
+<p>At the bottom of the Site Settings page is a value for Player Expiration, the default is 300 seconds or 5 minutes. You can change this value by typing directly into the box or using the step arrows on the side. The minimum value is 0, which means that your video url’s will never expire. The maximum value is 2592000 seconds or one month. Edit the value as needed and click save changes.  </p>
+
+<p><img src="http://i.imgur.com/R8EIEXm.png" alt="player expiration" /></p>
+
+<p>That’s it! You can confirm by clicking on Site Settings again scrolling to the bottom to see your changes.</p>
 
   </section>
 
