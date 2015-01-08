@@ -130,3 +130,23 @@ Content-Type: application/json
   }
 }
 </code></pre>
+
+<hr>
+### Remove a Consumer
+<hr>
+<pre><code>DELETE - https://api.zype.com/consumers/{id}
+</code></pre>
+
+#### Parameters
+
+Parameter | Function | Type
+--------- | -------- | ----
+id        | String id of the Consumer to remove. Example: 5389352e69702d401b000000. | String
+
+#### Request
+Content-Type: application/json
+
+#### Response
+204
+
+No Content
