@@ -1,13 +1,13 @@
 ---
 layout: api
-title: Zype Developer Portal | Roku App
-permalink: /api_docs/roku_app/
+title: Zype Developer Portal | Apps
+permalink: /api_docs/apps/
 ---
 
-## Roku App
+## Apps
 <hr>
-### Retrieve a Roku App
-Retrieve configuration settings for a Roku App.
+### Retrieve an App
+Retrieve configuration settings for an App.
 <hr>
 <pre><code>GET - https://api.zype.com/app/?app_key=app_key
 </code></pre>

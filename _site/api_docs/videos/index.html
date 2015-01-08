@@ -17,35 +17,48 @@
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-1376128-30', 'auto');
+    ga('send', 'pageview');
+
+    </script>
 </head>
 
 
   <body>
 
-      <header id="header">
+      <header id="header" style="overflow-y: scroll;">
     <div id="content">
       <a href="/"><img src="http://i.imgur.com/v8SUe9t.png" alt="Zype" />
       <h1 id="title">Developer Portal</h1></a>
       <p>a knowledge base</p>
       <br>
       <p class="category"><a href="/api_docs/intro/" style="color: #8acfef;">API Documentation</a></p>
-        <h4 class="api-header">Zype Platform:</h4>
-          <p><a href="/api_docs/videos/">Videos</a></p>
-          <p><a href="/api_docs/playlists/">Playlists</a></p>
-          <p><a href="/api_docs/categories/">Categories</a></p>
-          <p><a href="/api_docs/device_categories/">Device Categories</a></p>
-          <p><a href="/api_docs/devices/">Devices</a></p>
-          <p><a href="/api_docs/revenue_models/">Revenue Models</a></p>
-          <p><a href="/api_docs/roku_app/">Roku App</a></p>
-          <p><a href="/api_docs/geoip/">GeoIP</a></p>
-        <h4 class="api-header">Users:</h4>
-          <p><a href="/api_docs/consumers/">Consumers</a></p>
-          <p><a href="/api_docs/plans/">Plans</a></p>
-          <p><a href="/api_docs/subscriptions/">Subscriptions</a></p>
-        <h4 class="api-header">Zobjects:</h4>
-          <p><a href="/api_docs/zobject_types/">Zobject Types</a></p>
-          <p><a href="/api_docs/zobjects/">Zobjects</a></p>
-        <br>
+      <a href="/api_docs/zype_platform/"><h4 class="api-header">Zype Platform</h4></a>
+      <p><a href="/api_docs/videos/">Videos</a></p>
+      <p><a href="/api_docs/playlists/">Playlists</a></p>
+      <p><a href="/api_docs/categories/">Categories</a></p>
+      <p><a href="/api_docs/apps/">Apps</a></p>
+      <p><a href="/api_docs/devices/">Devices</a></p>
+      <p><a href="/api_docs/device_categories/">Device Categories</a></p>
+      <p><a href="/api_docs/revenue_models/">Revenue Models</a></p>
+      <p><a href="/api_docs/video_imports/">Video Imports</a></p>
+      <p><a href="/api_docs/video_sources/">Video Sources</a></p>
+      <p><a href="/api_docs/geoip/">GeoIP</a></p>
+      <a href="/api_docs/users/"><h4 class="api-header">Users</h4></a>
+      <p><a href="/api_docs/consumers/">Consumers</a></p>
+      <p><a href="/api_docs/plans/">Plans</a></p>
+      <p><a href="/api_docs/subscriptions/">Subscriptions</a></p>
+      <a href="/api_docs/zobject_docs/"><h4 class="api-header">Zobjects</h4></a>
+      <p><a href="/api_docs/zobject_types/">Zobject Types</a></p>
+      <p><a href="/api_docs/zobjects/">Zobjects</a></p>
+      <br>
       <p class="category"><a href="/platform_docs/" style="color: #8acfef;">Platform Documentation</a></p>
       <p class="category"><a href="/glossary/" style="color: #8acfef;">Glossary</a></p>
       <p class="category"><a href="http://status.zype.com" style="color: #8acfef;">System Status</a></p>
@@ -584,6 +597,239 @@ Content-Type: application/json</p>
 }
 </code></pre>
 
+<hr />
+
+<h3 id="associate-zobjects-with-a-video">Associate Zobjects with a Video</h3>
+<hr />
+
+<pre><code>PUT - https://api.zype.com/videos/{id}/add_zobjects&amp;zobject_id=[id00001, id00002]
+</code></pre>
+
+<h4 id="parameters-4">Parameters</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Function</th>
+      <th>Type</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>id</td>
+      <td>String id of the Video. Example: 5389352e69702d401b000000.</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>zobject_id</td>
+      <td>An array containing all of the zobject id’s that you want to add to the video.</td>
+      <td>Array of Strings</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="request-2">Request</h4>
+<p>Content-Type: application/json</p>
+
+<h4 id="response-4">Response</h4>
+<p>200
+Content-Type: application/json</p>
+<pre><code>{
+  "response": {
+    "_id": "549dc599636872c09d1a0000",
+    "active": false,
+    "country": nil,
+    "created_at": "2014-12-26T15:31:22.121-05:00",
+    "data_sources":
+    [
+      {"_id": "549dc59a636872c09d1b0000",
+      "active": true,
+      "duration": 493,
+      "status": "ready",
+      "youtube_id": "J7f26d-AIrM",
+      "thumbnails":
+        [
+          {"_id": "549dc594636872c09d150000",
+          "aspect_ratio": nil,
+          "height": 90,
+          "name": nil,
+          "url": "https://i.ytimg.com/vi/J7f26d-AIrM/default.jpg",
+          "width": 120},
+          {"_id": "549dc594636872c09d160000",
+          "aspect_ratio": nil,
+          "height": 180,
+          "name": nil,
+          "url": "https://i.ytimg.com/vi/J7f26d-AIrM/mqdefault.jpg",
+          "width": 320},
+          {"_id": "549dc594636872c09d170000",
+          "aspect_ratio": nil,
+          "height": 360,
+          "name": nil,
+          "url": "https://i.ytimg.com/vi/J7f26d-AIrM/hqdefault.jpg",
+          "width": 480},
+          {"_id": "549dc594636872c09d180000",
+          "aspect_ratio": nil,
+          "height": 480,
+          "name": nil,
+          "url": "https://i.ytimg.com/vi/J7f26d-AIrM/sddefault.jpg",
+          "width": 640},
+          {"_id": "549dc594636872c09d190000",
+          "aspect_ratio": nil,
+          "height": 720,
+          "name": nil,
+          "url": "https://i.ytimg.com/vi/J7f26d-AIrM/maxresdefault.jpg",
+          "width": 1280}
+        ]
+      }
+    ],
+    "description": "Conan brings the magic of the blues to Chicago's youngest, and most adorable generation.",
+    "duration": 493,
+    "episode": nil,
+    "featured": false,
+    "foreign_id": nil,
+    "keywords": [],
+    "mature_content": false,
+    "published_at": nil,
+    "rating": 0.0,
+    "related_playlist_ids": [],
+    "request_count": 0,
+    "season": nil,
+    "site_id": "549dc583636872c09d110000",
+    "status": "created",
+    "subscription_required": false,
+    "title": "Conan Writes Chicago Blues Songs With School Kids - CONAN on TBS",
+    "updated_at": "2014-12-26T16:20:46.324-05:00",
+    "zobject_ids": ["549dc72d636872c09d1f0000"],
+    "thumbnails":
+    [
+      {"aspect_ratio": nil, "height": 90, "name": nil, "url": "https://i.ytimg.com/vi/J7f26d-AIrM/default.jpg", "width": 120},
+      {"aspect_ratio": nil, "height": 180, "name": nil, "url": "https://i.ytimg.com/vi/J7f26d-AIrM/mqdefault.jpg", "width": 320},
+      {"aspect_ratio": nil, "height": 360, "name": nil, "url": "https://i.ytimg.com/vi/J7f26d-AIrM/hqdefault.jpg", "width": 480},
+      {"aspect_ratio": nil, "height": 480, "name": nil, "url": "https://i.ytimg.com/vi/J7f26d-AIrM/sddefault.jpg", "width": 640},
+      {"aspect_ratio": nil, "height": 720, "name": nil, "url": "https://i.ytimg.com/vi/J7f26d-AIrM/maxresdefault.jpg", "width": 1280}
+    ]
+  }
+}
+</code></pre>
+
+<hr />
+
+<h3 id="remove-associated-zobjects-from-a-video">Remove Associated Zobjects from a Video</h3>
+<hr />
+
+<pre><code>PUT - https://api.zype.com/videos/{id}/remove_zobjects&amp;zobject_id=[id00001, id00002]
+</code></pre>
+
+<h4 id="parameters-5">Parameters</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Function</th>
+      <th>Type</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>id</td>
+      <td>String id of the Video. Example: 5389352e69702d401b000000.</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>zobject_id</td>
+      <td>An array containing all of the zobject id’s that you want to dissociate from the video.</td>
+      <td>Array of Strings</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="request-3">Request</h4>
+<p>Content-Type: application/json</p>
+
+<h4 id="response-5">Response</h4>
+<p>200
+Content-Type: application/json</p>
+
+<pre><code>{
+  "response": {
+    "_id": "549dc599636872c09d1a0000",
+    "active": false,
+    "country": nil,
+    "created_at": "2014-12-26T15:31:22.121-05:00",
+    "data_sources":
+      [
+        {"_id": "549dc59a636872c09d1b0000",
+        "active": true,
+        "duration": 493,
+        "status": "ready",
+        "youtube_id": "J7f26d-AIrM",
+        "thumbnails":
+          [
+            {"_id": "549dc594636872c09d150000",
+            "aspect_ratio": nil,
+            "height": 90,
+            "name": nil,
+            "url": "https://i.ytimg.com/vi/J7f26d-AIrM/default.jpg",
+            "width": 120},
+            {"_id": "549dc594636872c09d160000",
+            "aspect_ratio": nil,
+            "height": 180,
+            "name": nil,
+            "url": "https://i.ytimg.com/vi/J7f26d-AIrM/mqdefault.jpg",
+            "width": 320},
+            {"_id": "549dc594636872c09d170000",
+            "aspect_ratio": nil,
+            "height": 360,
+            "name": nil,
+            "url": "https://i.ytimg.com/vi/J7f26d-AIrM/hqdefault.jpg",
+            "width": 480},
+            {"_id": "549dc594636872c09d180000",
+            "aspect_ratio": nil,
+            "height": 480,
+            "name": nil,
+            "url": "https://i.ytimg.com/vi/J7f26d-AIrM/sddefault.jpg",
+            "width": 640},
+            {"_id": "549dc594636872c09d190000",
+            "aspect_ratio": nil,
+            "height": 720,
+            "name": nil,
+            "url": "https://i.ytimg.com/vi/J7f26d-AIrM/maxresdefault.jpg",
+            "width": 1280}
+          ]
+        }
+      ],
+    "description": "Conan brings the magic of the blues to Chicago's youngest, and most adorable generation.",
+    "duration": 493,
+    "episode": nil,
+    "featured": false,
+    "foreign_id": nil,
+    "keywords": [],
+    "mature_content": false,
+    "published_at": nil,
+    "rating": 0.0,
+    "related_playlist_ids": [],
+    "request_count": 0,
+    "season": nil,
+    "site_id": "549dc583636872c09d110000",
+    "status": "created",
+    "subscription_required": false,
+    "title": "Conan Writes Chicago Blues Songs With School Kids - CONAN on TBS",
+    "updated_at": "2014-12-26T16:20:46.324-05:00",
+    "zobject_ids": [],
+  "thumbnails":
+  [
+    {"aspect_ratio": nil, "height": 90, "name": nil, "url": "https://i.ytimg.com/vi/J7f26d-AIrM/default.jpg", "width": 120},
+    {"aspect_ratio": nil, "height": 180, "name": nil, "url": "https://i.ytimg.com/vi/J7f26d-AIrM/mqdefault.jpg", "width": 320},
+    {"aspect_ratio": nil, "height": 360, "name": nil, "url": "https://i.ytimg.com/vi/J7f26d-AIrM/hqdefault.jpg", "width": 480},
+    {"aspect_ratio": nil, "height": 480, "name": nil, "url": "https://i.ytimg.com/vi/J7f26d-AIrM/sddefault.jpg", "width": 640},
+    {"aspect_ratio": nil, "height": 720, "name": nil, "url": "https://i.ytimg.com/vi/J7f26d-AIrM/maxresdefault.jpg", "width": 1280}
+    ]
+  }
+}
+</code></pre>
+
 <h2 id="player">Player</h2>
 <p>Lists player content. You need to supply your player key in addition to your API key.</p>
 <hr />
@@ -594,7 +840,7 @@ Content-Type: application/json</p>
 <pre><code>GET - https://api.zype.com/videos/{id}/player?autoplay=autoplay
 </code></pre>
 
-<h4 id="parameters-4">Parameters</h4>
+<h4 id="parameters-6">Parameters</h4>
 
 <table>
   <thead>
@@ -618,10 +864,10 @@ Content-Type: application/json</p>
   </tbody>
 </table>
 
-<h4 id="request-2">Request</h4>
+<h4 id="request-4">Request</h4>
 <p>Content-Type: application/json</p>
 
-<h4 id="response-4">Response</h4>
+<h4 id="response-6">Response</h4>
 <p>200
 Content-Type: application/json</p>
 

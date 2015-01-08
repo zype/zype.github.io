@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Zype Developer Portal | Video Imports</title>
+    <meta name="description" content="This is the devloper portal for Zype Media. Zype is Revenue and Reach Magic for Online Video. We help content owners deliver fully branded video experiences.
+">
+
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="canonical" href="http://dev.zype.com/api_docs/video_imports/">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-1376128-30', 'auto');
+    ga('send', 'pageview');
+
+    </script>
+</head>
+
+
+  <body>
+
+      <header id="header" style="overflow-y: scroll;">
+    <div id="content">
+      <a href="/"><img src="http://i.imgur.com/v8SUe9t.png" alt="Zype" />
+      <h1 id="title">Developer Portal</h1></a>
+      <p>a knowledge base</p>
+      <br>
+      <p class="category"><a href="/api_docs/intro/" style="color: #8acfef;">API Documentation</a></p>
+      <a href="/api_docs/zype_platform/"><h4 class="api-header">Zype Platform</h4></a>
+      <p><a href="/api_docs/videos/">Videos</a></p>
+      <p><a href="/api_docs/playlists/">Playlists</a></p>
+      <p><a href="/api_docs/categories/">Categories</a></p>
+      <p><a href="/api_docs/apps/">Apps</a></p>
+      <p><a href="/api_docs/devices/">Devices</a></p>
+      <p><a href="/api_docs/device_categories/">Device Categories</a></p>
+      <p><a href="/api_docs/revenue_models/">Revenue Models</a></p>
+      <p><a href="/api_docs/video_imports/">Video Imports</a></p>
+      <p><a href="/api_docs/video_sources/">Video Sources</a></p>
+      <p><a href="/api_docs/geoip/">GeoIP</a></p>
+      <a href="/api_docs/users/"><h4 class="api-header">Users</h4></a>
+      <p><a href="/api_docs/consumers/">Consumers</a></p>
+      <p><a href="/api_docs/plans/">Plans</a></p>
+      <p><a href="/api_docs/subscriptions/">Subscriptions</a></p>
+      <a href="/api_docs/zobject_docs/"><h4 class="api-header">Zobjects</h4></a>
+      <p><a href="/api_docs/zobject_types/">Zobject Types</a></p>
+      <p><a href="/api_docs/zobjects/">Zobjects</a></p>
+      <br>
+      <p class="category"><a href="/platform_docs/" style="color: #8acfef;">Platform Documentation</a></p>
+      <p class="category"><a href="/glossary/" style="color: #8acfef;">Glossary</a></p>
+      <p class="category"><a href="http://status.zype.com" style="color: #8acfef;">System Status</a></p>
+      <p class="category"><a href="/faq/" style="color: #8acfef;">FAQ</a></p>
+      <br>
+      © 2014 Zype Media Group
+    </div>
+  </header>
+
+
+    <section id="main">
+      <h2 id="video-imports-collection">Video Imports Collection</h2>
+<p>Lists all Video Imports. Video Imports are created via video sources.</p>
+<hr />
+
+<h3 id="list-all-video-imports">List all Video Imports</h3>
+<hr />
+
+<pre><code>GET - https://api.zype.com/video_imports?page=page&amp;per_page=per_page&amp;
+q=q&amp;keyword=keyword&amp;status=status&amp;active=active&amp;
+id=id&amp;id!=id&amp;video_source_id=video_source_id&amp;q=q&amp;keyword=keyword
+</code></pre>
+
+<h4 id="parameters">Parameters</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Function</th>
+      <th>Type</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>page</td>
+      <td>The page number of records to return (zero indexed). Example: 0.</td>
+      <td>Number</td>
+    </tr>
+    <tr>
+      <td>per_page</td>
+      <td>The number of records to return. Example: 10.</td>
+      <td>Number</td>
+    </tr>
+    <tr>
+      <td>q</td>
+      <td>A query string for searching for video imports</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>status</td>
+      <td>Filters the records returned by status. Example: created.</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>active</td>
+      <td>Show active, inactive or all videos Example: true.</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>type</td>
+      <td>The type of video imports to query. Example: hulu, youtube, crunchyroll</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>id</td>
+      <td>Query for a video import by id</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>id!</td>
+      <td>Exclude a video import from the query</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>video_source_id</td>
+      <td>Query by video source</td>
+      <td>String</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="response">Response</h4>
+<p>200
+Content-Type: application/json</p>
+
+<pre><code>{
+  "response"=&gt; [
+    {
+      "_id"=&gt;"5499c02d4c616e0545000000",
+      "active"=&gt;true,
+      "created_at"=&gt;"2014-12-23T14:19:09.369-05:00",
+      "description"=&gt;
+        "She came to the Tiny Desk a little unsure, and left singing \"West Memphis\" with intensity and passion ...",
+      "duration"=&gt;1195,
+      "episode"=&gt;nil,
+      "etag"=&gt;"\"F9iA7pnxqNgrkOutjQAa9F2k8HY/RVSzO8IXeqRD4Xh1SisxwseyKvk\"",
+      "keywords"=&gt;[],
+      "published_at"=&gt;"2014-12-22T18:03:09.000-05:00",
+      "season"=&gt;nil,
+      "site_id"=&gt;"12345abcd",
+      "status"=&gt;"ready",
+      "thumbnails"=&gt;
+      [
+        {"aspect_ratio"=&gt;nil,
+        "height"=&gt;90,
+        "name"=&gt;nil,
+        "url"=&gt;"https://i.ytimg.com/vi/mTu4cXW9H_Q/default.jpg",
+        "width"=&gt;120},
+        ...
+      ],
+    "title"=&gt;"Lucinda Williams: NPR Music Tiny Desk Concert",
+    "updated_at"=&gt;"2014-12-23T14:19:09.369-05:00",
+    "upload_id"=&gt;nil,
+    "video_id"=&gt;nil,
+    "video_source_id"=&gt;"5499c0274c616e04b8110000",
+    "youtube_id"=&gt;"mTu4cXW9H_Q"
+  }],
+  "pagination"=&gt;{"current"=&gt;1, "previous"=&gt;nil, "next"=&gt;2, "per_page"=&gt;1, "pages"=&gt;500}}
+</code></pre>
+
+<hr />
+
+<h3 id="retrieve-a-video-import">Retrieve a Video Import</h3>
+<hr />
+
+<pre><code>GET - https://api.zype.com/video_imports/{id}
+</code></pre>
+
+<h4 id="response-1">Response</h4>
+<p>200
+Content-Type: application/json</p>
+<pre><code>{
+  "response": {
+    "_id": "5499c0334c616e0545bd0200",
+    "active": true,
+    "created_at": "2014-12-23T14:19:15.926-05:00",
+    "description": "The members of Real Estate are awfully young to pine for their lost youth, but nostalgia remains crucial ",
+    "duration": 3117,
+    "episode": null,
+    "etag": "\"F9iA7pnxqNgrkOutjQAa9F2k8HY/OANWyL7bhxMQ9uLewq1i4tvdD6o\"",
+    "published_at": "2014-03-25T16:39:22.000-04:00",
+    "season": null,
+    "site_id": "5468f40d4c616e0a770c0000",
+    "status": "ready",
+    "thumbnails": [
+    {
+      "aspect_ratio": null,
+      "height": 90,
+      "name": null,
+      "url": "https://i.ytimg.com/vi/O2AeQDIw2j4/default.jpg",
+      "width": 120
+    },
+    {
+      "aspect_ratio": null,
+      "height": 180,
+      "name": null,
+      "url": "https://i.ytimg.com/vi/O2AeQDIw2j4/mqdefault.jpg",
+      "width": 320
+    },
+    {
+      "aspect_ratio": null,
+      "height": 360,
+      "name": null,
+      "url": "https://i.ytimg.com/vi/O2AeQDIw2j4/hqdefault.jpg",
+      "width": 480
+    }
+    ],
+      "title": "Real Estate, 'Atlas' | NPR MUSIC FRONT ROW",
+      "updated_at": "2014-12-23T14:19:15.926-05:00",
+      "upload_id": null,
+      "video_id": null,
+      "video_source_id": "5499c0274c616e04b8110000",
+      "youtube_id": "O2AeQDIw2j4"
+    }
+  }
+
+</code></pre>
+
+<hr />
+
+<h3 id="add-video-from-a-video-import">Add Video from a Video Import</h3>
+<hr />
+
+<pre><code>PUT - https://api.zype.com/video_imports/{id}/add_video/&amp;video_id=video_id
+</code></pre>
+
+<h4 id="parameters-1">Parameters</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Function</th>
+      <th>Type</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>video_id</td>
+      <td>ID of the video to add the video import to a preexisting video (optional, if blank it creates a new video).</td>
+      <td>String</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="request">Request</h4>
+
+<p>Content-Type: application/json</p>
+
+<h4 id="response-2">Response</h4>
+<p>201
+Content-Type: application/json</p>
+
+<pre><code>{
+  "response"=&gt; {
+    "_id"=&gt;"549b3e8a4c616e04f4040000",
+    "active"=&gt;false,
+    "country"=&gt;nil,
+    "created_at"=&gt;"2014-12-24T17:30:34.674-05:00",
+    "data_sources"=&gt;
+      [
+      {"_id"=&gt;"549b3e8a4c616e04f4050000",
+    "active"=&gt;true,
+    "duration"=&gt;1369,
+    "status"=&gt;"ready",
+    "youtube_id"=&gt;"G7NapIZ1xGE",
+    "thumbnails"=&gt;
+      [
+      {"_id"=&gt;"5499c0344c616e05450f0300", "aspect_ratio"=&gt;nil, "height"=&gt;90, "name"=&gt;nil, "url"=&gt;"https://i.ytimg.com/vi/G7NapIZ1xGE/default.jpg", "width"=&gt;120},
+      {"_id"=&gt;"5499c0344c616e0545100300", "aspect_ratio"=&gt;nil, "height"=&gt;180, "name"=&gt;nil, "url"=&gt;"https://i.ytimg.com/vi/G7NapIZ1xGE/mqdefault.jpg", "width"=&gt;320},
+      {"_id"=&gt;"5499c0344c616e0545110300", "aspect_ratio"=&gt;nil, "height"=&gt;360, "name"=&gt;nil, "url"=&gt;"https://i.ytimg.com/vi/G7NapIZ1xGE/hqdefault.jpg", "width"=&gt;480},
+      {"_id"=&gt;"5499c0344c616e0545120300", "aspect_ratio"=&gt;nil, "height"=&gt;480, "name"=&gt;nil, "url"=&gt;"https://i.ytimg.com/vi/G7NapIZ1xGE/sddefault.jpg", "width"=&gt;640},
+      {"_id"=&gt;"5499c0344c616e0545130300", "aspect_ratio"=&gt;nil, "height"=&gt;720, "name"=&gt;nil, "url"=&gt;"https://i.ytimg.com/vi/G7NapIZ1xGE/maxresdefault.jpg", "width"=&gt;1280}]}
+      ],
+    "description"=&gt; "Angel Olsen came to the Tiny Desk on an odd autumn day ...",
+    "duration"=&gt;1369,
+    "episode"=&gt;nil,
+    "featured"=&gt;false,
+    "foreign_id"=&gt;nil,
+    "keywords"=&gt;[],
+    "mature_content"=&gt;false,
+    "published_at"=&gt;"2014-01-27T15:06:34.000-05:00",
+    "rating"=&gt;0.0,
+    "related_playlist_ids"=&gt;[],
+    "request_count"=&gt;0,
+    "season"=&gt;nil,
+    "site_id"=&gt;"5468f40d4c616e0a770c0000",
+    "status"=&gt;"created",
+    "subscription_required"=&gt;false,
+    "title"=&gt;"Angel Olsen: NPR Music Tiny Desk Concert",
+    "updated_at"=&gt;"2014-12-24T17:30:34.674-05:00",
+    "zobject_ids"=&gt;[],
+    "thumbnails"=&gt;
+      [
+        {"aspect_ratio"=&gt;nil, "height"=&gt;90, "name"=&gt;nil, "url"=&gt;"https://i.ytimg.com/vi/G7NapIZ1xGE/default.jpg", "width"=&gt;120},
+        {"aspect_ratio"=&gt;nil, "height"=&gt;180, "name"=&gt;nil, "url"=&gt;"https://i.ytimg.com/vi/G7NapIZ1xGE/mqdefault.jpg", "width"=&gt;320},
+        {"aspect_ratio"=&gt;nil, "height"=&gt;360, "name"=&gt;nil, "url"=&gt;"https://i.ytimg.com/vi/G7NapIZ1xGE/hqdefault.jpg", "width"=&gt;480},
+        {"aspect_ratio"=&gt;nil, "height"=&gt;480, "name"=&gt;nil, "url"=&gt;"https://i.ytimg.com/vi/G7NapIZ1xGE/sddefault.jpg", "width"=&gt;640},
+      {"aspect_ratio"=&gt;nil, "height"=&gt;720, "name"=&gt;nil, "url"=&gt;"https://i.ytimg.com/vi/G7NapIZ1xGE/maxresdefault.jpg", "width"=&gt;1280}
+    ]
+  }
+}
+</code>
+</pre>
+
+    </section>
+
+    <footer>
+</footer>
+
+
+  </body>
+
+</html>

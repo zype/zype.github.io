@@ -4,25 +4,44 @@ title: Zype Developer Portal | Home
 permalink: /
 ---
 
-
 ##Welcome to the Zype Developer Portal
 
-If you're a developer, you've come to the right place! Here we'll discuss the Zype platform and how to leverage it to deploy your video content. We recommend clicking on the [API Documentation](/api_docs/intro/) link in the nav bar to get started or checkout our [blog](/blog/) for updated posts.
+If you're a developer, you've come to the right place! Here we'll discuss the Zype platform and how to leverage it to deploy your video content. We recommend clicking on the [Platform Documentation](/platform_docs/) link in the nav bar to get started or checkout our [API Documentation](/api_docs/intro/) for working with our API.
 
-Our platform includes all the APIs and SDKs video developers need to quickly deliver video apps.  We even make it easy to deploy to multiple set top platforms without having to republish to app marketplaces.  Digital agencies and app publishing houses use the Zype Platform to focus on creative while we worry about IT.
 
-<hr>
+<div id="homepage-container">
+  <div class="homepage-tile">
+    <a href="/api_docs/intro/">
+      <span class="fa fa-code homepage-icon"></span>
+      <span class="homepage-text">API Docs</span>
+    </a>
+  </div>
 
-The Zype Platform includes everything a premium content owner needs to deliver web, mobile, and set-top apps direct to consumers.
+  <div class="homepage-tile">
+    <a href="/platform_docs/">
+      <span class="fa fa-file-text homepage-icon"></span>
+      <span class="homepage-text">Platform Docs</span>
+    </a>
+  </div>
 
-####Instant Branded Set Top Apps:
-Launch branded Roku, Chromecast, SmartTV apps, and more in record time. Includes easy content management, promotion, and branding across apps from a single dashboard.  Monetize with advertising partners, or the Zype Ad Network to drive revenue.
+  <div class="homepage-tile end-of-row">
+    <a href="/glossary/">
+      <span class="fa fa-book homepage-icon"></span>
+      <span class="homepage-text">Zype Glossary</span>
+    </a>
+  </div>
 
-####Video Business Management:
-Video from anywhere, including YouTube and Hulu, or even raw video source files - can be imported, optimized and delivered based on viewer location, device, licensing rules or revenue models. Check it out using our [test harness](http://demo.zype.com/test_harness)
+  <div class="homepage-tile">
+    <a href="http://status.zype.com/">
+      <span class="fa fa-cogs homepage-icon"></span>
+      <span class="homepage-text">System Status</span>
+    </a>
+  </div>
 
-####Metadata Unleashed:
-Zype’s proprietary VideoMeta technology allows import and matching of data - scripts, set lists, art, and related content without data entry headaches.  Powerful for SEO and deep, engaging branded video experiences. You can see this in action on [yugioh.com](http://www.yugioh.com)
-
-####Hosting Included:
-With Zype, content owners get all of their hosting for web and mobile apps included - no need to worry about storage, application management, or monitoring.
+  <div class="homepage-tile">
+    <a href="/faq/">
+      <span class="fa fa-question homepage-icon"></span>
+      <span class="homepage-text">FAQ</span>
+    </a>
+  </div>
+</div>

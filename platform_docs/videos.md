@@ -25,23 +25,27 @@ Below are a bunch of short tutorials (with pictures!) to help you with videos.
     Adding Videos from a YouTube Channel to the Zype Platform</a>
   </div>
   <div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>
-    <a href="#5">
-    Adding Your Crunchyroll Videos to Zype</a>
+  <a href="#5">
+  Adding YouTube Videos from a URL</a>
   </div>
   <div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>
     <a href="#6">
-    Uploading Videos to Zype Using Our Ruby Gem</a>
+    Adding Your Crunchyroll Videos to Zype</a>
   </div>
   <div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>
     <a href="#7">
-    Walkthrough of the Zype API with a Sample Rails App</a>
+    Uploading Videos to Zype Using Our Ruby Gem</a>
   </div>
   <div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>
     <a href="#8">
-    Embedding a Player on Your Site</a>
+    Walkthrough of the Zype API with a Sample Rails App</a>
   </div>
   <div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>
     <a href="#9">
+    Embedding a Player on Your Site</a>
+  </div>
+  <div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>
+    <a href="#10">
     Search Filters on the Zype Platform</a>
   </div>
 </div>
@@ -240,6 +244,31 @@ from there.
 
 <hr id="5">
 
+## Adding YouTube Video from a URL
+We're happy to announce that the [Zype Platform](http://admin.zype.com) now grants you the power to import videos from YouTube simply by copying an pasting a YouTube link into the platform.
+
+Check out the [Video Imports Screen](http://admin.zype.com/video_imports) and click on the "Add a YouTube Video Import" button to get started.
+
+
+![navigate to form](http://i.imgur.com/4lSzNBt.png)
+
+
+The next step is to copy a URL from YouTube that shows the video you want to add.
+
+
+![copy url](http://i.imgur.com/QdHp2nM.png)
+
+
+Paste the URL into the field on this page and click "Add Video Import".
+
+
+![paste url](http://i.imgur.com/jtREFxL.png)
+
+
+If everything went according to plan, you should see the video imports screen again, with a new import from the link you provided. If you're interested in grabbing a bunch of videos from YouTube, you may want to follow our guides under [Adding Videos.](http://dev.zype.com/platform_docs/adding_videos/)
+
+<hr id="6">
+
 ## Adding Your Crunchyroll Videos to Zype
 We know you have a lot of video content and we know that you want it all to be available to your viewers through the Zype Platform. That's why we're proud to announce that you can now use [Crunchyroll](http://www.crunchyroll.com/) as a video source for videos on the Zype Platform!
 
@@ -278,7 +307,7 @@ You can confirm that your videos were added by clicking on the videos tab and se
 
 ![videos](http://i.imgur.com/MHiAOmb.png)
 
-<hr id="6">
+<hr id="7">
 
 ## Uploading Videos to Zype Using Our Ruby Gem
 We're rolling out a bunch of new ways to add video content to the Zype Platform, like [Youtube Channel Import](http://dev.zype.com/posts/2014/11/18/search-youtube-in-zype/) and [Crunchyroll Video Import](http://dev.zype.com/posts/2014/11/19/adding-crunchyroll-as-a-video-source/). In this post we'll show you how to use the Zype Command Line Interface (or CLI) to upload videos that you have stored on a harddrive.
@@ -342,7 +371,7 @@ You can confirm that your videos were added by clicking on the videos tab and se
 
 ![videos](http://i.imgur.com/MHiAOmb.png)
 
-<hr id="7">
+<hr id="8">
 
 ## Walkthrough of the Zype API with a Sample Rails App
 We want to make the Zype Platform accessible to as many types of developers as possible. To do this,
@@ -397,7 +426,7 @@ player based on where the video source comes from and what Player Rules you set.
 Have questions about implementing our sample Rails app or want to see examples of
 other features or in other languages? Feel free to comment below!
 
-<hr id="8">
+<hr id="9">
 
 ## Embedding a Player on Your Site
 The Zype Platform allows you to manage all of your video content in one place and
@@ -433,7 +462,7 @@ are optional.
 
 {% endhighlight %}
 
-<hr id="9">
+<hr id="10">
 
 ## Search Filters on the Zype Platform
 If you've been busy adding video content to the [Zype Platform](http://admin.zype.com) and creating playlists, you might be at the point where you've got a few pages of each. To help you better manage your content, we've added a set of filters to the videos and playlists pages:

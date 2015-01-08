@@ -17,12 +17,23 @@
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-1376128-30', 'auto');
+    ga('send', 'pageview');
+
+    </script>
 </head>
 
 
 <body>
 
-  <header id="header">
+  <header id="header" style="overflow-y: scroll;">
   <div id="content">
     <a href="/"><img src="http://i.imgur.com/v8SUe9t.png" alt="Zype" />
       <h1 id="title">Developer Portal</h1></a>
@@ -80,23 +91,27 @@ Below are a bunch of short tutorials (with pictures!) to help you with videos.</
     Adding Videos from a YouTube Channel to the Zype Platform</a>
   </div>
   <div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>
-    <a href="#5">
-    Adding Your Crunchyroll Videos to Zype</a>
+  <a href="#5">
+  Adding YouTube Videos from a URL</a>
   </div>
   <div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>
     <a href="#6">
-    Uploading Videos to Zype Using Our Ruby Gem</a>
+    Adding Your Crunchyroll Videos to Zype</a>
   </div>
   <div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>
     <a href="#7">
-    Walkthrough of the Zype API with a Sample Rails App</a>
+    Uploading Videos to Zype Using Our Ruby Gem</a>
   </div>
   <div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>
     <a href="#8">
-    Embedding a Player on Your Site</a>
+    Walkthrough of the Zype API with a Sample Rails App</a>
   </div>
   <div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>
     <a href="#9">
+    Embedding a Player on Your Site</a>
+  </div>
+  <div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>
+    <a href="#10">
     Search Filters on the Zype Platform</a>
   </div>
 </div>
@@ -325,6 +340,25 @@ from there.</p>
 
 <hr id="5" />
 
+<h2 id="adding-youtube-video-from-a-url">Adding YouTube Video from a URL</h2>
+<p>We’re happy to announce that the <a href="http://admin.zype.com">Zype Platform</a> now grants you the power to import videos from YouTube simply by copying an pasting a YouTube link into the platform.</p>
+
+<p>Check out the <a href="http://admin.zype.com/video_imports">Video Imports Screen</a> and click on the “Add a YouTube Video Import” button to get started.</p>
+
+<p><img src="http://i.imgur.com/4lSzNBt.png" alt="navigate to form" /></p>
+
+<p>The next step is to copy a URL from YouTube that shows the video you want to add.</p>
+
+<p><img src="http://i.imgur.com/QdHp2nM.png" alt="copy url" /></p>
+
+<p>Paste the URL into the field on this page and click “Add Video Import”.</p>
+
+<p><img src="http://i.imgur.com/jtREFxL.png" alt="paste url" /></p>
+
+<p>If everything went according to plan, you should see the video imports screen again, with a new import from the link you provided. If you’re interested in grabbing a bunch of videos from YouTube, you may want to follow our guides under <a href="http://dev.zype.com/platform_docs/adding_videos/">Adding Videos.</a></p>
+
+<hr id="6" />
+
 <h2 id="adding-your-crunchyroll-videos-to-zype">Adding Your Crunchyroll Videos to Zype</h2>
 <p>We know you have a lot of video content and we know that you want it all to be available to your viewers through the Zype Platform. That’s why we’re proud to announce that you can now use <a href="http://www.crunchyroll.com/">Crunchyroll</a> as a video source for videos on the Zype Platform!</p>
 
@@ -355,7 +389,7 @@ Once we’ve imported all of your videos you will find them under the <a href="h
 
 <p><img src="http://i.imgur.com/MHiAOmb.png" alt="videos" /></p>
 
-<hr id="6" />
+<hr id="7" />
 
 <h2 id="uploading-videos-to-zype-using-our-ruby-gem">Uploading Videos to Zype Using Our Ruby Gem</h2>
 <p>We’re rolling out a bunch of new ways to add video content to the Zype Platform, like <a href="http://dev.zype.com/posts/2014/11/18/search-youtube-in-zype/">Youtube Channel Import</a> and <a href="http://dev.zype.com/posts/2014/11/19/adding-crunchyroll-as-a-video-source/">Crunchyroll Video Import</a>. In this post we’ll show you how to use the Zype Command Line Interface (or CLI) to upload videos that you have stored on a harddrive.</p>
@@ -418,7 +452,7 @@ Once we’ve imported all of your videos you will find them under the <a href="h
 
 <p><img src="http://i.imgur.com/MHiAOmb.png" alt="videos" /></p>
 
-<hr id="7" />
+<hr id="8" />
 
 <h2 id="walkthrough-of-the-zype-api-with-a-sample-rails-app">Walkthrough of the Zype API with a Sample Rails App</h2>
 <p>We want to make the Zype Platform accessible to as many types of developers as possible. To do this,
@@ -472,7 +506,7 @@ player based on where the video source comes from and what Player Rules you set.
 <p>Have questions about implementing our sample Rails app or want to see examples of
 other features or in other languages? Feel free to comment below!</p>
 
-<hr id="8" />
+<hr id="9" />
 
 <h2 id="embedding-a-player-on-your-site">Embedding a Player on Your Site</h2>
 <p>The Zype Platform allows you to manage all of your video content in one place and
@@ -503,7 +537,7 @@ are optional.</p>
 <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&#39;zype_player&#39;</span><span class="nt">&gt;&lt;/div&gt;</span>
 <span class="nt">&lt;script </span><span class="na">id=</span><span class="s">&#39;zype_player_js&#39;</span> <span class="na">src=</span><span class="s">&#39;https://api.zype.com/embed/{video_id}.js?autoplay={boolean}&amp;player_key={player_key}&amp;subscription_id={subscription_id}&#39;</span> <span class="na">type=</span><span class="s">&#39;text/javascript&#39;</span><span class="nt">&gt;&lt;/script&gt;</span></code></pre></div>
 
-<hr id="9" />
+<hr id="10" />
 
 <h2 id="search-filters-on-the-zype-platform">Search Filters on the Zype Platform</h2>
 <p>If you’ve been busy adding video content to the <a href="http://admin.zype.com">Zype Platform</a> and creating playlists, you might be at the point where you’ve got a few pages of each. To help you better manage your content, we’ve added a set of filters to the videos and playlists pages:</p>
