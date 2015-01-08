@@ -25,9 +25,9 @@ Deactivating a Plan</a>
 <hr id="1">
 
 ## Connecting Stripe
-Before creating a plan, you need to link your Stripe Account to the Zype Platform
-To link your Stripe Account, navigate in the Zype Platform to settings and enter your
-Stripe Secret Key. Your Stripe Secret Key can be found under your Stripe [account settings](https://dashboard.stripe.com/account/apikeys).
+Before creating a plan, you will need to link your Stripe Account to the Zype Platform.
+In the Zype Platform, navigate to settings and enter your Stripe Secret Key.
+Your Stripe Secret Key can be found under your Stripe [account settings](https://dashboard.stripe.com/account/apikeys).
 
 ![stripe settings](http://i.imgur.com/ho1jPpL.png)
 
@@ -35,9 +35,7 @@ Stripe Secret Key. Your Stripe Secret Key can be found under your Stripe [accoun
 
 ## Creating a Plan
 Once you have your Stripe Secret Key in the Zype Platform, you can create plans from the
-Zype Platform that connect to your Stripe Account. To create a plan, click on the
-"Subscription" on the left hand menu and click on plans. Once you are on the [plans' page](https://admin.zype.com/plans),
-click on the new plan button.
+Zype Platform that connect to your Stripe Account. To create a plan, go to the [plans page](https://admin.zype.com/plans).
 
 ![new plan](http://i.imgur.com/TZemOeL.png)
 

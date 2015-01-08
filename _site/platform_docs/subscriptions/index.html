@@ -70,44 +70,62 @@
 
   <section id="main">
     <h2 id="all-about-subscriptions">All About Subscriptions</h2>
-<p>The Zype Platform is feature rich, so we want to provide you with a place to learn more about it.
-Below are a bunch of short tutorials (with pictures!) to help you with videos.</p>
+<p>Subscriptions combine consumers and plans and allow you to make money from your videos.
+The Zype Platform supports Stripe for credit card processing of consumers.</p>
 
 <div style="width: 100%;">
 <div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>
 <a href="#1">
-Linking Stripe</a>
+Connecting Stripe</a>
 </div>
 <div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>
-<a href="#1">
-What is a Plan?</a>
+<a href="#2">
+Creating a Subscription</a>
 </div>
 <div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>
 <a href="#3">
-Creating a Plan</a>
+Viewing Subscriptions</a>
 </div>
 <div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>
 <a href="#4">
-Removing a Plan</a>
+Cancelling a Subscription</a>
 </div>
 </div>
 
 <hr id="1" />
 
 <h2 id="connecting-stripe">Connecting Stripe</h2>
-<p>Before creating a subscription, you need to link your Stripe Account to the Zype Platform
-To link your Stripe Account, navigate in the Zype Platform to settings and enter your
-Stripe Secret Key. Your Stripe Secret Key can be found under your Stripe <a href="https://dashboard.stripe.com/account/apikeys">account settings</a>.</p>
+<p>Before creating a subscription, you will need to link your Stripe Account to the Zype Platform.
+In the Zype Platform, navigate to settings and enter your Stripe Secret Key.
+Your Stripe Secret Key can be found under your Stripe <a href="https://dashboard.stripe.com/account/apikeys">account settings</a>.</p>
 
 <p><img src="http://i.imgur.com/ho1jPpL.png" alt="stripe settings" /></p>
 
 <hr id="2" />
 
-<h2 id="creating-a--dpt">Creating a  (DPT)</h2>
-<p>Zype’s DPT allows you to create player rules based on geography and device.
-For example, you could declare that end users will receive the Hulu Player if he
-or she is accessing your video via desktop in the United States or the Zype Player
-if he or she is accessing your video via desktop in Australia.</p>
+<h2 id="creating-a-subscription">Creating a Subscription</h2>
+<p>You will need to <a href="http://dev.zype.com/api_docs/subscriptions/">use our API</a> to create a subscription.</p>
+
+<hr id="3" />
+
+<h2 id="viewing-subscriptions">Viewing Subscriptions</h2>
+<p>To view subscriptions, go to the <a href="https://admin.zype.com/subscriptions">subscriptions page</a>.</p>
+
+<p><img src="http://i.imgur.com/WW5dmQd.png" alt="viewing subscriptions" /></p>
+
+<p>You can search by subscription and see each subscription’s consumer, plan, amount, currency,
+interval, trial period, and when it was created.</p>
+
+<hr id="4" />
+
+<h2 id="cancelling-a-subscription">Cancelling a Subscription</h2>
+<p>To cancel a subscription, click on the
+“Subscription” on the left hand menu and click on subscriptions to get to the <a href="https://admin.zype.com/subscriptions">subscriptions page</a>.
+Then, click the red button for the subscription that you want to cancel.</p>
+
+<p><img src="http://i.imgur.com/ncUiasM.png" alt="cancelling a subscription" /></p>
+
+<p>This will remove the subscription from Stripe.</p>
 
   </section>
 
