@@ -18,6 +18,9 @@ Parameter | Function | Type
 --------- | -------- | ----
 page      | The page number of records to return (zero indexed). Example: 0. | Number
 per_page  | The number of records to return. Example: 10. | Number
+q         | A query string for searching for subscriptions | String
+id        | Query for a subscription by id | String
+id!       | Exclude a subscription from the query | String
 
 #### Response
 200
