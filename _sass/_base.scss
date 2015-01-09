@@ -380,6 +380,23 @@ header {
     color: #c1d340;
     margin-bottom: 5px;
   }
+
+  @media print, screen and (max-width: 551px) {
+    padding-bottom: 30px;
+  }
+}
+
+#footer {
+  @media print, screen and (min-width: 962px) {
+    display: none;
+  }
+
+  @media print, screen and (max-width: 961px) {
+    background-color: #423e3e;
+    text-align: center;
+    height: 50px;
+    margin: 0;
+  }
 }
 
 #content {
@@ -389,7 +406,7 @@ header {
 
 #homepage-container {
   display: inline-table;
-  
+
   @media print, screen and (max-width: 551px) {
     margin-left: 9%;
     margin-right: 3%;
@@ -438,5 +455,11 @@ header {
 .end-of-row {
   @media print, screen and (min-width: 1186px) {
     margin-right: 0px;
+  }
+}
+
+.hidden-mobile {
+  @media print, screen and (max-width: 961px) {
+    display: none;
   }
 }

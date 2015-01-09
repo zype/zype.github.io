@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: general
 title: Zype Developer Portal | FAQ
 permalink: /faq/
 ---
