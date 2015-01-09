@@ -289,6 +289,19 @@ header h4 {
   #header h4 {
     color: #c1d340;
     margin-bottom: 5px; }
+  @media print, screen and (max-width: 551px) {
+    #header {
+      padding-bottom: 30px; } }
+
+@media print, screen and (min-width: 962px) {
+  #footer {
+    display: none; } }
+@media print, screen and (max-width: 961px) {
+  #footer {
+    background-color: #423e3e;
+    text-align: center;
+    height: 50px;
+    margin: 0; } }
 
 #content {
   padding-left: 80px;
@@ -337,6 +350,10 @@ header h4 {
 @media print, screen and (min-width: 1186px) {
   .end-of-row {
     margin-right: 0px; } }
+
+@media print, screen and (max-width: 961px) {
+  .hidden-mobile {
+    display: none; } }
 
 .highlight {
   background: #ffffff; }
