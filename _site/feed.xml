@@ -6,13 +6,8 @@
 </description>
     <link>http://dev.zype.com/</link>
     <atom:link href="http://dev.zype.com/feed.xml" rel="self" type="application/rss+xml" />
-<<<<<<< HEAD
-    <pubDate>Thu, 08 Jan 2015 15:10:07 -0500</pubDate>
-    <lastBuildDate>Thu, 08 Jan 2015 15:10:07 -0500</lastBuildDate>
-=======
-    <pubDate>Fri, 09 Jan 2015 17:03:08 -0500</pubDate>
-    <lastBuildDate>Fri, 09 Jan 2015 17:03:08 -0500</lastBuildDate>
->>>>>>> 7f205a2c66910e7c865f7c866afc07b7c15082ab
+    <pubDate>Wed, 14 Jan 2015 10:45:51 -0500</pubDate>
+    <lastBuildDate>Wed, 14 Jan 2015 10:45:51 -0500</lastBuildDate>
     <generator>Jekyll v2.3.0</generator>
     
       <item>

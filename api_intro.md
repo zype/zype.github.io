@@ -25,8 +25,21 @@ Our default is to support JSON formatting, however if you prefer XML use the Con
 
 ## Authentication
 
-You authenticate to the Zype API by providing your site API keys in the request.
-To authenticate your requests, supply your site API key in the X-ZYPE-API-KEY header.
+There are two ways to authenticate to the Zype API. The first way to authenticate is
+to providing your API key in the request. To authenticate your requests, supply your API key in the X-ZYPE-API-KEY header.
+
+The second way to authenticate is to include your API key in the query param.
+
+<pre><code>
+https://api.zype.com/videos/?api_key=api_key
+</code></pre>
+
+Zype currently provides three types of API Keys for you to use to authenticate.
+
+- **Admin Key:** Admin keys have full access to your account and should not be distributed in video applications.
+- **Read Only Key:** Read only keys have limited access to your account and are not allowed to create or modify existing resources. Read only keys should be used when distributing a video application.
+- **Player Key:** Player keys have limited access to your account and are only allowed to issue player requests. Player keys should be used in embed codes for web applications.
+
 <hr>
 
 ## Errors
