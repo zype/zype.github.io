@@ -23,8 +23,7 @@ icon set. They do not get loaded via a call to the Zype API:
 
 2. [Image Brand (Side Icon)](https://github.com/zype/zype-roku/blob/master/images/mm_icon_side_hd.png) - your small icon. HD is 108 x 69 pixels, SD is 80 x 46 pixels. PNG format.
 
-3. [Image Splash](https://github.com/zype/zype-roku/blob/master/images/splash_screen_hd.png) - the splash screen (what appears while your Roku Channel loads).
-HD is 1280 x 720 pixels, SD is  720 x 480 pixels. JPG format.
+3. [Image Splash](https://github.com/zype/zype-roku/blob/master/images/splash_screen_hd.png) - the splash screen (what appears while your Roku Channel loads). 640 x 480 pixels. JPG format.
 
 When publishing, you will also need a HD Poster that is a 290 x 218 JPG format and
 an SD Poster that is a 214 x 144 JPG format. We call that the Image Store in our Zype Roku App.
@@ -37,9 +36,9 @@ These assets get loaded via a call to the Zype API everytime the Roku Channel ge
 
 ![zype roku app](http://i.imgur.com/lpgb3MY.png)
 
-1. Logo - logo used in the overhang. Suggested size is 125 x 104 pixels, PNG format.
+1. Logo - logo used in the overhang. Suggested size is 125 x 104 pixels for HD and 80 x 67 pixels, PNG format.
 
-2. Slice - image tiled to create the overhang. Suggested size is 1 x 165 pixels, PNG format.
+2. Slice - image tiled to create the overhang. Suggested size is 1 x 124 pixels for HD and 1 x 83 for SD pixels, PNG format.
 
 3. Grid Description Image - image used to contain text on the grid screen. Suggested size is 968 x 258 pixels, PNG format.
 

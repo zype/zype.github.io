@@ -6,8 +6,8 @@
 </description>
     <link>http://dev.zype.com/</link>
     <atom:link href="http://dev.zype.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Wed, 14 Jan 2015 10:47:14 -0500</pubDate>
-    <lastBuildDate>Wed, 14 Jan 2015 10:47:14 -0500</lastBuildDate>
+    <pubDate>Thu, 22 Jan 2015 12:02:58 -0500</pubDate>
+    <lastBuildDate>Thu, 22 Jan 2015 12:02:58 -0500</lastBuildDate>
     <generator>Jekyll v2.3.0</generator>
     
       <item>
@@ -204,8 +204,7 @@ icon set. They do not get loaded via a call to the Zype API:&lt;/p&gt;
     &lt;p&gt;&lt;a href=&quot;https://github.com/zype/zype-roku/blob/master/images/mm_icon_side_hd.png&quot;&gt;Image Brand (Side Icon)&lt;/a&gt; - your small icon. HD is 108 x 69 pixels, SD is 80 x 46 pixels. PNG format.&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;https://github.com/zype/zype-roku/blob/master/images/splash_screen_hd.png&quot;&gt;Image Splash&lt;/a&gt; - the splash screen (what appears while your Roku Channel loads).
-HD is 1280 x 720 pixels, SD is  720 x 480 pixels. JPG format.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;https://github.com/zype/zype-roku/blob/master/images/splash_screen_hd.png&quot;&gt;Image Splash&lt;/a&gt; - the splash screen (what appears while your Roku Channel loads). 640 x 480 pixels. JPG format.&lt;/p&gt;
   &lt;/li&gt;
 &lt;/ol&gt;
 
@@ -222,10 +221,10 @@ an SD Poster that is a 214 x 144 JPG format. We call that the Image Store in our
 
 &lt;ol&gt;
   &lt;li&gt;
-    &lt;p&gt;Logo - logo used in the overhang. Suggested size is 125 x 104 pixels, PNG format.&lt;/p&gt;
+    &lt;p&gt;Logo - logo used in the overhang. Suggested size is 125 x 104 pixels for HD and 80 x 67 pixels, PNG format.&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;Slice - image tiled to create the overhang. Suggested size is 1 x 165 pixels, PNG format.&lt;/p&gt;
+    &lt;p&gt;Slice - image tiled to create the overhang. Suggested size is 1 x 124 pixels for HD and 1 x 83 for SD pixels, PNG format.&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;Grid Description Image - image used to contain text on the grid screen. Suggested size is 968 x 258 pixels, PNG format.&lt;/p&gt;
