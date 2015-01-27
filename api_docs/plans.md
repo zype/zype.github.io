@@ -18,6 +18,10 @@ Parameter | Function | Type
 --------- | -------- | ----
 page      | The page number of records to return (zero indexed). Example: 0. | Number
 per_page  | The number of records to return. Example: 10. | Number
+q         | A query string for searching for plans | String
+id        | Query for a plan by id | String
+id!       | Exclude a plan from the query | String
+
 
 #### Response
 200
@@ -37,7 +41,7 @@ Content-Type: application/json
       "interval": "month",
       "name": "Zype Monthly Subscription",
       "stripe_id": "zype-monthly",
-      "stripe_public_key": "pk_test_iLS3IUO1bHqqLxNBWhxcW6c1234",
+      "stripe_public_key": "pk_test_123456",
       "trial_period_days": 0,
       "updated_at": "2014-10-23T13:02:20.075Z"
     }
@@ -87,7 +91,7 @@ Content-Type: application/json
       "interval": "month",
       "name": "Zype Monthly Subscription",
       "stripe_id": "zype-monthly",
-      "stripe_public_key": "iLS4444HqqLxNBWhxcW6c1234",
+      "stripe_public_key": "abcde12345",
       "trial_period_days": 0,
       "updated_at": "2014-10-23T13:02:20.075Z"
     }

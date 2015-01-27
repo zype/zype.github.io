@@ -103,6 +103,21 @@
       <td>The number of records to return. Example: 10.</td>
       <td>Number</td>
     </tr>
+    <tr>
+      <td>q</td>
+      <td>A query string for searching for plans</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>id</td>
+      <td>Query for a plan by id</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>id!</td>
+      <td>Exclude a plan from the query</td>
+      <td>String</td>
+    </tr>
   </tbody>
 </table>
 
@@ -123,7 +138,7 @@ Content-Type: application/json</p>
       "interval": "month",
       "name": "Zype Monthly Subscription",
       "stripe_id": "zype-monthly",
-      "stripe_public_key": "pk_test_iLS3IUO1bHqqLxNBWhxcW6c1234",
+      "stripe_public_key": "pk_test_123456",
       "trial_period_days": 0,
       "updated_at": "2014-10-23T13:02:20.075Z"
     }
@@ -188,7 +203,7 @@ Content-Type: application/json</p>
       "interval": "month",
       "name": "Zype Monthly Subscription",
       "stripe_id": "zype-monthly",
-      "stripe_public_key": "iLS4444HqqLxNBWhxcW6c1234",
+      "stripe_public_key": "abcde12345",
       "trial_period_days": 0,
       "updated_at": "2014-10-23T13:02:20.075Z"
     }

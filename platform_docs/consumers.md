@@ -4,26 +4,55 @@ title: Zype Developer Portal | Platform Docs
 permalink: /platform_docs/consumers/
 ---
 ##All About Consumers
-The Zype Platform is feature rich, so we want to provide you with a place to learn more about it.
-Below are a bunch of short tutorials (with pictures!) to help you with a number of topics.
+Consumers are the backbone of Zype's Subscription Service. Consumers, with a plan,
+create a subscription. The Zype Platform supports Stripe for credit card processing of consumers.
 
-Topic | Tags
------ | ------------
-<a href="http://dev.zype.com/posts/2014/10/10/adding-zype-to-rails/">Adding Zype to a Rails Application</a> | Rails, Zype
-<a href="http://dev.zype.com/posts/2014/10/17/dpt-from-scratch/">Learn About Dynamic Player Technology (DPT)</a> | DPT, Player Rules
-<a href="http://dev.zype.com/posts/2014/10/20/checking-player-request-logs/">Monitoring Your Views</a> | DPT, Views
-<a href="http://dev.zype.com/posts/2014/10/23/adding-a-playlist-of-related-videos/">Related Playlists</a> | Playlists
-<a href="http://dev.zype.com/posts/2014/11/18/search-youtube-in-zype/">Adding Videos from a YouTube Channel to the Zype Platform</a> | YouTube, Zype
-<a href="http://dev.zype.com/posts/2014/11/19/adding-crunchyroll-as-a-video-source/">Adding Your Crunchyroll Videos to Zype</a> | Crunchyroll, Zype
-<a href="http://dev.zype.com/posts/2014/11/20/uploading-vidoes-with-the-zype-cli/">Uploading Videos to Zype Using Our Ruby Gem</a> | Ruby, Gem, Zype
-<a href="http://dev.zype.com/posts/2014/11/25/create-roku-app-on-zype/">Starting a Roku App on the Zype Platform</a> | Roku, Zype
-<a href="http://dev.zype.com/posts/2014/12/03/zype-roku-assets/">Adding Assets to Your Roku App</a> | Roku, Assets, Zype
-<a href="http://dev.zype.com/posts/2014/12/03/categories-playlists-zobjects-roku/">Categories, Playlists and Your Roku App</a> | Roku, Categories, Playlists
-<a href="http://dev.zype.com/posts/2014/11/28/develop-roku-app-with-zype-sdk/">Building Your Roku App</a> | Roku, SDK, Zype
-<a href="http://dev.zype.com/posts/2014/11/28/publish-roku-app/">Publishing Your Roku App</a> | Roku, Publishing
-<a href="http://dev.zype.com/posts/2014/12/01/api-keys/">Help Finding Your API/Player Keys</a> | API Key, Player Key
-<a href="http://dev.zype.com/posts/2014/11/29/sample-rails-zype/">Walkthrough of the Zype API with a Sample Rails App</a> | API, Zype, Rails
-<a href="http://dev.zype.com/posts/2014/11/27/embedding-player/">Embedding a Player on Your Site</a> | Player, Embed
-<a href="http://dev.zype.com/posts/2014/12/04/defining-categories-and-playlists/">Categories and Playlists on the Zype Platform</a> | Categories, Playlists, Platform
-<a href="http://dev.zype.com/posts/2014/12/04/zobjects-in-the-zype-platform/">Zobjects on the Zype Platform</a> | Zobjects, Zobject Types, Platform
-<a href="http://dev.zype.com/posts/2014/12/10/filtering-videos-and-playlists/">Search Filters on the Zype Platform</a> | Search Filters, Platform
+<div style="width: 100%;">
+<div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>
+<a href="#1">
+Connecting Stripe</a>
+</div>
+<div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>
+<a href="#2">
+Creating a Consumer</a>
+</div>
+<div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>
+<a href="#3">
+Getting a Consumer's Details</a>
+</div>
+<div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>
+<a href="#4">
+Removing a Consumer</a>
+</div>
+</div>
+
+<hr id="1">
+
+## Connecting Stripe
+Before creating a consumer, you will need to link your Stripe Account to the Zype Platform.
+In the Zype Platform, navigate to settings and enter your Stripe Secret Key. Your Stripe Secret Key can be found under your Stripe [account settings](https://dashboard.stripe.com/account/apikeys).
+
+![stripe settings](http://i.imgur.com/ho1jPpL.png)
+
+<hr id="2">
+
+## Creating a Consumer
+You will need to [use our API](http://dev.zype.com/api_docs/consumers/) to create consumers.
+
+<hr id='3'>
+
+## Getting a Consumer's Details
+You can use the Zype Platform to get details about a consumer. To get a consumer's details, go to the [consumers page](https://admin.zype.com/consumers) and click on the appropriate consumer.
+Information includes a consumer's email and his or her subscriptions.
+
+![consumer information](http://i.imgur.com/s3NLd4X.png)
+
+<hr id="4">
+
+## Removing a Consumer
+You can remove a consumer from the Zype Platform. To do so, navigate to the [consumers' page](https://admin.zype.com/consumers)
+and click on the red delete button for the appropriate consumer.
+
+![delete consumer](http://i.imgur.com/kwMbFHb.png)
+
+Note, deleting a consumer will also cancel all of his or her subscriptions.
