@@ -66,7 +66,7 @@ that you want to create player rules for.
 1\. Make sure you have imported your videos into your [video catalogue](https://admin.zype.com/video_imports)
 on the Zype Platform.
 
-![video imports](http://i.imgur.com/XmeaBMa.png)
+![video imports](http://i.imgur.com/t3aczbs.png)
 
 ### What you need to do in the Zype Platform
 
@@ -116,7 +116,7 @@ After you've uploaded some video content to the Zype platform, log in through th
 and navigate to the logs section under the settings dropdown menu. In this post, we'll cover the request logs,
 so feel free to click on that link once you see the logs menu.  
 
-![dpt logs navigation](http://i.imgur.com/werWhEG.png)
+![dpt logs navigation](http://i.imgur.com/cxELdn1.png)
 
 ### What type of information can I see in my request logs?
 
@@ -135,7 +135,7 @@ Revenue Model	| The revenue model of the viewer
 Status	| The status of the request
 Created | The date and time the request was created
 
-![dpt logs](http://i.imgur.com/Y8DzoV9.png)
+![dpt logs](http://i.imgur.com/AULsF7q.png)
 
 ### How can I search the request logs data?
 
@@ -145,7 +145,7 @@ Sorting the request logs is easy: use the four drop down menus to select your se
 and then click on the search button.
 
 
-![searching logs](http://i.imgur.com/XgruOt5.png)
+![searching logs](http://i.imgur.com/l2N4Kql.png)
 
 
 *Check our [previous post](http://dev.zype.com/posts/2014/10/10/adding-zype-to-rails/)
@@ -159,7 +159,7 @@ additional content based on what your users are watching. The solution we've imp
 In this post, we'll be covering how to create a playlist of related videos that are recommended to a viewer
 based on what the video they're watching. Here's an example of the finished product:
 
-![related playlist](http://i.imgur.com/QGhFTT1.png)
+![related playlist](http://i.imgur.com/wPXZ772.png)
 
 *The related videos section is automatically created for each video on your site, but if you'd like to be more
 specific about which videos are displayed there, follow along as we set up a playlist of related videos.*
@@ -169,13 +169,13 @@ specific about which videos are displayed there, follow along as we set up a pla
 Setting up the playlist can be done from the [admin portal](http://admin.zype.com/). Navigate to the playlist
 section on the sidebar and and click "New Playlist". Follow through the menu and create a playlist (make sure it's active!).
 
-![playlist navigation](http://i.imgur.com/2yzWH9X.png)
+![playlist navigation](http://i.imgur.com/oXi3Dlg.png)
 
 ### How can I choose which videos are shown in the playlist?
 
 This is an easy one. Use the "Add Videos" button to select which videos will appear under the related videos section.
 
-![add videos navigation](http://i.imgur.com/nKIFmTP.png)
+![add videos navigation](http://i.imgur.com/hMAkhgQ.png)
 
 ### How can I choose which videos display the playlist?
 
@@ -187,7 +187,7 @@ quickly by clicking on the name of your playlist here:
 Use our multiselector to search for the videos you want and click on them to move them into selected videos.
 Click "Save Changes" when you're done.
 
-![choose related videos](http://i.imgur.com/xE9fM8n.png)
+![choose related videos](http://i.imgur.com/WRtRv8m.png)
 
 ### Let's confirm
 
@@ -297,7 +297,7 @@ Enter a name for your Crunchyroll Video Source (something you'll remember!) and 
 Now sit back while we go get all of your Crunchyroll videos and add them to the Zype Platform as video imports.
 Once we've imported all of your videos you will find them under the [Video Imports](https://admin.zype.com/video_imports) tab. The last step is to create new videos from the imports or add the video imports to videos you already have on the Zype Platform.
 
-![video imports](http://i.imgur.com/SrnGXnw.png)
+![video imports](http://i.imgur.com/tjEUtTW.png)
 
 
 
@@ -305,7 +305,7 @@ Once we've imported all of your videos you will find them under the [Video Impor
 
 You can confirm that your videos were added by clicking on the videos tab and searching for the ones you've just added.
 
-![videos](http://i.imgur.com/MHiAOmb.png)
+![videos](http://i.imgur.com/1JDkFYZ.png)
 
 <hr id="7">
 
@@ -363,13 +363,13 @@ If you have multiple subdirectories that contain videos, you can pass in a wildc
 
 Now sit back while we upload all of your videos and add them to the Zype Platform as video imports. Once we've imported all of your videos you will find them under the [Video Imports](https://admin.zype.com/video_imports) tab. The last step is to create new videos from the imports or add the video imports to videos you already have on the Zype Platform.
 
-![video imports](http://i.imgur.com/SrnGXnw.png)
+![video imports](http://i.imgur.com/tjEUtTW.png)
 
 ### Confirm
 
 You can confirm that your videos were added by clicking on the videos tab and searching for the ones you've just added.
 
-![videos](http://i.imgur.com/MHiAOmb.png)
+![videos](http://i.imgur.com/1JDkFYZ.png)
 
 <hr id="8">
 

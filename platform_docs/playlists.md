@@ -82,7 +82,7 @@ additional content based on what your users are watching. The solution we've imp
 In this post, we'll be covering how to create a playlist of related videos that are recommended to a viewer
 based on what the video they're watching. Here's an example of the finished product:
 
-![related playlist](http://i.imgur.com/QGhFTT1.png)
+![related playlist](http://i.imgur.com/wPXZ772.png)
 
 *The related videos section is automatically created for each video on your site, but if you'd like to be more
 specific about which videos are displayed there, follow along as we set up a playlist of related videos.*
@@ -92,13 +92,13 @@ specific about which videos are displayed there, follow along as we set up a pla
 Setting up the playlist can be done from the [admin portal](http://admin.zype.com/). Navigate to the playlist
 section on the sidebar and and click "New Playlist". Follow through the menu and create a playlist (make sure it's active!).
 
-![playlist navigation](http://i.imgur.com/2yzWH9X.png)
+![playlist navigation](http://i.imgur.com/oXi3Dlg.png)
 
 ### How can I choose which videos are shown in the playlist?
 
 This is an easy one. Use the "Add Videos" button to select which videos will appear under the related videos section.
 
-![add videos navigation](http://i.imgur.com/nKIFmTP.png)
+![add videos navigation](http://i.imgur.com/hMAkhgQ.png)
 
 ### How can I choose which videos display the playlist?
 
