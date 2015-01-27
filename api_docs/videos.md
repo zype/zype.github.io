@@ -367,17 +367,46 @@ Content-Type: application/json
 }
 </code></pre>
 
+
 <hr>
-###Add highlights to a Video
+###Find a specific highlight
 <hr>
-<pre><code>POST - https://api.zype.com/videos/{id}/add_highlights
+<pre><code>GET - https://api.zype.com/videos/{id}/highlights/{id}
 </code></pre>
 
 #### Parameters
 
 Parameter | Function | Type
 --------- | -------- | ----
-id        | String id of the Video. Example: 5389352e69702d401b000000. | String
+video_id        | String id of the Video to which the highlight belongs. Example: 5389352e69702d401b000000. | String
+
+#### Request
+Content-Type: application/json
+
+#### Response
+200
+Content-Type: application/json
+<pre><code>{
+  "response": [
+    {"_id": "54c6cbe56368726454050000",
+    "description": "theBest",
+    "end": 112,
+    "start": 90
+    }
+  ]
+}
+</code></pre>
+
+<hr>
+###Add highlights to a Video
+<hr>
+<pre><code>POST - https://api.zype.com/videos/{id}/highlights
+</code></pre>
+
+#### Parameters
+
+Parameter | Function | Type
+--------- | -------- | ----
 highlight | A set of key value pairs that describe the highlight. Example: highlight[description]=description. | Hash
 description | The description for the video highlight | String
 start | The point in the video where the highlight begins | Integer
@@ -403,88 +432,24 @@ Content-Type: application/json
 <hr>
 ###Remove highlights from a Video
 <hr>
-<pre><code>POST - https://api.zype.com/videos/{id}/remove_highlights
+<pre><code>DELETE - https://api.zype.com/videos/{id}/highlights/{id}
 </code></pre>
 
 #### Parameters
 
 Parameter | Function | Type
 --------- | -------- | ----
-id        | String id of the Video. Example: 5389352e69702d401b000000. | String
-highlight_id | String id of the highlight to be removed | String
+id        | String id of the Highlight. Example: 5389352e69702d401b000000. | String
+video_id        | String id of the Video to which the highlight belongs. Example: 5389352e69702d401b000000. | String
 
 #### Request
 Content-Type: application/json
 
 #### Response
-200
+204
 Content-Type: application/json
 <pre><code>{
-  "response":
-  {
-    "_id": "546529b669702d534fb00000",
-    "active": true,
-    "categories": [
-      {
-        "title": "Genre",
-        "value": [
-          "Adventure"
-        ]
-      },
-      {
-        "title": "Additional Videos from YouTube",
-        "value": []
-      },
-      {
-        "title": "series",
-        "value": []
-      }
-    ],
-    "country": "",
-    "created_at": "2014-11-13T16:59:18.970-05:00",
-    "description": "New trailer for Marvel's Avengers: The Age of Ultron!",
-    "duration": 151,
-    "episode": null,
-    "featured": true,
-    "foreign_id": null,
-    "keywords": [],
-    "highlights": [],
-    "mature_content": false,
-    "published_at": "2014-11-13T16:57:02.000-05:00",
-    "rating": 0,
-    "related_playlist_ids": [],
-    "request_count": 39,
-    "season": null,
-    "site_id": "5463c68e69702d24db490000",
-    "status": "created",
-    "subscription_required": false,
-    "title": "Avengers: Age of Ultron",
-    "updated_at": "2014-12-17T23:00:14.215-05:00",
-    "zobject_ids": [],
-    "thumbnails": [
-      {
-        "aspect_ratio": null,
-        "height": 90,
-        "name": null,
-        "url": "https://i.ytimg.com/vi/Kno4FTxWycI/default.jpg",
-        "width": 120
-      },
-      {
-        "aspect_ratio": null,
-        "height": 180,
-        "name": null,
-        "url": "https://i.ytimg.com/vi/Kno4FTxWycI/mqdefault.jpg",
-        "width": 320
-      },
-      {
-        "aspect_ratio": null,
-        "height": 360,
-        "name": null,
-        "url": "https://i.ytimg.com/vi/Kno4FTxWycI/hqdefault.jpg",
-        "width": 480
-      }
-    ]
-  }
+  "response": No Content
 }
 </code></pre>
 
@@ -499,7 +464,7 @@ Content-Type: application/json
 Parameter | Function | Type
 --------- | -------- | ----
 id        | String id of the Video. Example: 5389352e69702d401b000000. | String
-highlight_id | String id of the highlight to be updated | String
+video_id  | String id of the Video to which the highlight belongs. Example: 5389352e69702d401b000000. | String
 highlight | A set of key value pairs that describe the highlight. Example: highlight[description]=description. | Hash
 description | The description for the video highlight | String
 start | The point in the video where the highlight begins | Integer
