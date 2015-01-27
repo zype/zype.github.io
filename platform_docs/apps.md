@@ -4,7 +4,8 @@ title: Zype Developer Portal | Platform Docs
 permalink: /platform_docs/apps/
 ---
 ##All About Apps
-The Zype Platform is feature rich, so we want to provide you with a place to learn more about it. Below are a bunch of short tutorials (with pictures!) to help you with apps.
+The Zype Platform will help you configure apps that you will need to build and publish
+to the respective application stores.
 
 If you want a full walkthrough of creating an app, we suggest you look at the [creating an app guide.](http://dev.zype.com/platform_docs/creating_an_app/)
 
