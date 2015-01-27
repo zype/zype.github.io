@@ -31,6 +31,8 @@ category  | An optional set of key value category pairs to filter the records re
 category! | Exclude a category from the query. Example: category![color] = blue | Hash
 zobject_id  | Query for videos with a specific zobject associated with them | String
 zobject_id! | Exclude videos with a specfific zobject associated with them | String
+created_at | Filter the records returned by created date. You can use greater than or less than filters by adding a suffix: '.gt', '.gte', '.lt', 'lte'. Example: created_at.gte=2015-01-01 | Date
+published_at | Filter the records returned by published date. You can use greater than or less than filters by adding a suffix: '.gt', '.gte', '.lt', 'lte'. Example: published_at.gte=2015-01-01 | Date
 
 #### Response
 200
