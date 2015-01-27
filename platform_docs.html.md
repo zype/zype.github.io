@@ -31,23 +31,35 @@ Below are a bunch of short tutorials (with pictures!) to help you with a number 
     </div>
     <div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>  
       <a href="http://dev.zype.com/posts/2014/11/19/adding-crunchyroll-as-a-video-source/">
-      Adding Your Crunchyroll</a>
+      Adding Your Crunchyroll Videos to Zype</a>
     </div>
     <div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>  
       <a href="http://dev.zype.com/posts/2014/11/20/uploading-vidoes-with-the-zype-cli/">
       Uploading Videos Using Our Ruby Gem</a>
     </div>
     <div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>  
-      <a href="http://dev.zype.com/posts/2014/11/25/create-roku-app-on-zype/">
-      Starting a Roku App </a>
+    <a href="/platform_docs/adding_videos/#2">
+    Adding a colleciton of Videos from Vimeo</a>
     </div>
-    <div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>
-      <a href="http://dev.zype.com/posts/2014/12/03/zype-roku-assets/">
-      Adding Assets to Your Roku App</a>
+    <div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>  
+    <a href="/platform_docs/adding_videos/#6">
+    Adding single Videos from a Vimeo link</a>
+    </div>
+    <div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>  
+    <a href="http://dev.zype.com/posts/2014/12/04/zobjects-in-the-zype-platform/">
+    Zobjects</a>
     </div>
   </div>
 
   <div style="width: 50%;">
+  <div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>  
+  <a href="http://dev.zype.com/posts/2014/11/25/create-roku-app-on-zype/">
+  Starting a Roku App </a>
+  </div>
+  <div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>
+  <a href="http://dev.zype.com/posts/2014/12/03/zype-roku-assets/">
+  Adding Assets to Your Roku App</a>
+  </div>
     <div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>  
       <a href="http://dev.zype.com/posts/2014/12/03/categories-playlists-zobjects-roku/">
       Categories, Playlists and Your Roku App</a>
@@ -75,10 +87,6 @@ Below are a bunch of short tutorials (with pictures!) to help you with a number 
     <div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>  
       <a href="http://dev.zype.com/posts/2014/12/04/defining-categories-and-playlists/">
       Categories and Playlists on the Zype Platform</a>
-    </div>
-    <div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>  
-      <a href="http://dev.zype.com/posts/2014/12/04/zobjects-in-the-zype-platform/">
-      Zobjects</a>
     </div>
     <div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>  
       <a href="http://dev.zype.com/posts/2014/12/10/filtering-videos-and-playlists/">
