@@ -17,7 +17,7 @@ that you want to create player rules for.
 1\. Make sure you have imported your videos into your [video catalogue](https://admin.zype.com/video_imports)
 on the Zype Platform.
 
-![video imports](http://i.imgur.com/XmeaBMa.png)
+![video imports](http://i.imgur.com/t3aczbs.png)
 
 ### What you need to do in the Zype Platform
 

@@ -22,7 +22,7 @@ One of the quickest ways to get up and running with Zype videos is to simply dro
 ## Embedding a Player on Your Site
 We're happy to announce that the [Zype Platform](http://admin.zype.com) now grants you the power to "grab and go" with embed codes! Each video that you add to the platform has a snippet of code located under the Embed Code tab. You can navigate to the tab by finding a video that you want to embed and clicking on the edit button. The tab appears along the top of the menu.
 
-![embed code](http://i.imgur.com/V3LoUYw.png)
+![embed code](http://i.imgur.com/14Pg7k8.png)
 
 The embed codes are designed to be dropped into a webpage, wherever you need them. The div id must remain the same, but other than that, you're free to do as you please. As the page states, we recommend that you include the javascript portion of the embed code before the closing body tag on the page.
 

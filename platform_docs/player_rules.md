@@ -34,7 +34,7 @@ that you want to create player rules for.
 1\. Make sure you have imported your videos into your [video catalogue](https://admin.zype.com/video_imports)
 on the Zype Platform.
 
-![video imports](http://i.imgur.com/XmeaBMa.png)
+![video imports](http://i.imgur.com/t3aczbs.png)
 
 ### What you need to do in the Zype Platform
 
@@ -85,7 +85,7 @@ After you've uploaded some video content to the Zype platform, log in through th
 and navigate to the logs section under the settings dropdown menu. In this post, we'll cover the request logs,
 so feel free to click on that link once you see the logs menu.  
 
-![dpt logs navigation](http://i.imgur.com/werWhEG.png)
+![dpt logs navigation](http://i.imgur.com/cxELdn1.png)
 
 ### What type of information can I see in my request logs?
 
@@ -104,7 +104,7 @@ Revenue Model	| The revenue model of the viewer
 Status	| The status of the request
 Created | The date and time the request was created
 
-![dpt logs](http://i.imgur.com/Y8DzoV9.png)
+![dpt logs](http://i.imgur.com/cxELdn1.png)
 
 ### How can I search the request logs data?
 
@@ -114,7 +114,7 @@ Sorting the request logs is easy: use the four drop down menus to select your se
 and then click on the search button.
 
 
-![searching logs](http://i.imgur.com/XgruOt5.png)
+![searching logs](http://i.imgur.com/l2N4Kql.png)
 
 
 *Check our [previous post](http://dev.zype.com/posts/2014/10/10/adding-zype-to-rails/)
