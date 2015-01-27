@@ -9,7 +9,7 @@
     <pubDate>Tue, 27 Jan 2015 11:25:45 -0500</pubDate>
     <lastBuildDate>Tue, 27 Jan 2015 11:25:45 -0500</lastBuildDate>
     <generator>Jekyll v2.3.0</generator>
-    
+
       <item>
         <title>Adding a YouTube Video from a Link</title>
         <description>&lt;p&gt;We’re happy to announce that the &lt;a href=&quot;http://admin.zype.com&quot;&gt;Zype Platform&lt;/a&gt; now grants you the power to import videos from YouTube simply by copying an pasting a YouTube link into the platform.&lt;/p&gt;
@@ -31,12 +31,12 @@
         <pubDate>Thu, 25 Dec 2014 21:16:55 -0500</pubDate>
         <link>http://dev.zype.com/posts/2014/12/25/adding-youtube-embeds</link>
         <guid isPermaLink="true">http://dev.zype.com/posts/2014/12/25/adding-youtube-embeds</guid>
-        
-        
+
+
         <category>platform</category>
-        
+
       </item>
-    
+
       <item>
         <title>Filtering Videos and Playlists</title>
         <description>&lt;p&gt;If you’ve been busy adding video content to the &lt;a href=&quot;http://admin.zype.com&quot;&gt;Zype Platform&lt;/a&gt; and creating playlists, you might be at the point where you’ve got a few pages of each. To help you better manage your content, we’ve added a set of filters to the videos and playlists pages:&lt;/p&gt;
@@ -62,12 +62,12 @@
         <pubDate>Wed, 10 Dec 2014 07:16:55 -0500</pubDate>
         <link>http://dev.zype.com/posts/2014/12/10/filtering-videos-and-playlists</link>
         <guid isPermaLink="true">http://dev.zype.com/posts/2014/12/10/filtering-videos-and-playlists</guid>
-        
-        
+
+
         <category>platform</category>
-        
+
       </item>
-    
+
       <item>
         <title>Using Embed Codes on Your Site</title>
         <description>&lt;p&gt;We’re happy to announce that the &lt;a href=&quot;http://admin.zype.com&quot;&gt;Zype Platform&lt;/a&gt; now grants you the power to “grab and go” with embed codes! Each video that you add to the platform has a snippet of code located under the Embed Code tab. You can navigate to the tab by finding a video that you want to embed and clicking on the edit button. The tab appears along the top of the menu.&lt;/p&gt;
@@ -81,12 +81,12 @@
         <pubDate>Sun, 07 Dec 2014 23:16:55 -0500</pubDate>
         <link>http://dev.zype.com/posts/2014/12/07/using-embed-codes</link>
         <guid isPermaLink="true">http://dev.zype.com/posts/2014/12/07/using-embed-codes</guid>
-        
-        
+
+
         <category>platform</category>
-        
+
       </item>
-    
+
       <item>
         <title>Zobjects in the Zype Platform</title>
         <description>&lt;p&gt;A central component of the Zype Platform is a ‘Zobject.’ A zobject is additional
@@ -142,12 +142,12 @@ check by going to the video and looking at its metadata.&lt;/p&gt;
         <pubDate>Thu, 04 Dec 2014 07:37:55 -0500</pubDate>
         <link>http://dev.zype.com/posts/2014/12/04/zobjects-in-the-zype-platform</link>
         <guid isPermaLink="true">http://dev.zype.com/posts/2014/12/04/zobjects-in-the-zype-platform</guid>
-        
-        
+
+
         <category>developers</category>
-        
+
       </item>
-    
+
       <item>
         <title>Defining Categories and Playlists</title>
         <description>&lt;p&gt;As you make your way through the &lt;a href=&quot;http://admin.zype.com&quot;&gt;Zype Platform&lt;/a&gt;, you might have some
@@ -174,12 +174,12 @@ videos. For an in-depth guide on how to create your Roku App, make sure you chec
         <pubDate>Thu, 04 Dec 2014 06:16:55 -0500</pubDate>
         <link>http://dev.zype.com/posts/2014/12/04/defining-categories-and-playlists</link>
         <guid isPermaLink="true">http://dev.zype.com/posts/2014/12/04/defining-categories-and-playlists</guid>
-        
-        
+
+
         <category>platform</category>
-        
+
       </item>
-    
+
       <item>
         <title>Zype Assets for a Roku Channel</title>
         <description>&lt;p&gt;Adding image assets to your Roku Channel allow your to make the channel your own!
@@ -243,12 +243,12 @@ an SD Poster that is a 214 x 144 JPG format. We call that the Image Store in our
         <pubDate>Wed, 03 Dec 2014 07:37:55 -0500</pubDate>
         <link>http://dev.zype.com/posts/2014/12/03/zype-roku-assets</link>
         <guid isPermaLink="true">http://dev.zype.com/posts/2014/12/03/zype-roku-assets</guid>
-        
-        
+
+
         <category>developers</category>
-        
+
       </item>
-    
+
       <item>
         <title>Playlists, Categories, and Zobjects on Roku</title>
         <description>&lt;p&gt;We aim to make the development process of a Roku Channel as easy as possible using
@@ -289,12 +289,12 @@ the Zobject ‘Director’ to be below the description.&lt;/p&gt;
         <pubDate>Wed, 03 Dec 2014 05:37:55 -0500</pubDate>
         <link>http://dev.zype.com/posts/2014/12/03/categories-playlists-zobjects-roku</link>
         <guid isPermaLink="true">http://dev.zype.com/posts/2014/12/03/categories-playlists-zobjects-roku</guid>
-        
-        
+
+
         <category>developers</category>
-        
+
       </item>
-    
+
       <item>
         <title>Accessing your API and Player Keys</title>
         <description>&lt;p&gt;To interact with the Zype API, you will need your API Key and Player Key. This
@@ -321,12 +321,12 @@ tutorial will show you how to find these keys from the Zype Platform.&lt;/p&gt;
         <pubDate>Mon, 01 Dec 2014 07:37:55 -0500</pubDate>
         <link>http://dev.zype.com/posts/2014/12/01/api-keys</link>
         <guid isPermaLink="true">http://dev.zype.com/posts/2014/12/01/api-keys</guid>
-        
-        
+
+
         <category>developers</category>
-        
+
       </item>
-    
+
       <item>
         <title>Sample Rails App using the Zype Platform and API</title>
         <description>&lt;p&gt;We want to make the Zype Platform accessible to as many types of developers as possible. To do this,
@@ -383,12 +383,12 @@ other features or in other languages? Feel free to comment below!&lt;/p&gt;
         <pubDate>Sat, 29 Nov 2014 07:37:55 -0500</pubDate>
         <link>http://dev.zype.com/posts/2014/11/29/sample-rails-zype</link>
         <guid isPermaLink="true">http://dev.zype.com/posts/2014/11/29/sample-rails-zype</guid>
-        
-        
+
+
         <category>developers</category>
-        
+
       </item>
-    
+
       <item>
         <title>Publishing a Roku Channel: Part III - Publishing the Channel</title>
         <description>&lt;p&gt;In &lt;a href=&quot;http://dev.zype.com/posts/2014/11/28/develop-roku-app-with-zype-sdk/&quot;&gt;part two&lt;/a&gt; of publishing a Roku Channel, we described how to develop a Roku app using the Zype SDK and running it locally.
@@ -449,11 +449,11 @@ Roku channel on your individual Roku account.&lt;/p&gt;
         <pubDate>Fri, 28 Nov 2014 07:37:55 -0500</pubDate>
         <link>http://dev.zype.com/posts/2014/11/28/publish-roku-app</link>
         <guid isPermaLink="true">http://dev.zype.com/posts/2014/11/28/publish-roku-app</guid>
-        
-        
+
+
         <category>developers</category>
-        
+
       </item>
-    
+
   </channel>
 </rss>
