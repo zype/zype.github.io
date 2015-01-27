@@ -47,7 +47,7 @@ The Zype API is feature rich, so we want to provide you with a place to learn mo
     </div>
     <div style="margin: 20px;">
       <span class="fa fa-file-text" style="margin-right: 4px;"></span>
-      <a href="/api_docs/roku_app/">Roku App</a>
+      <a href="/api_docs/apps/">Roku App</a>
     </div>
     <div style="margin: 20px;">
       <span class="fa fa-file-text" style="margin-right: 4px;"></span>
