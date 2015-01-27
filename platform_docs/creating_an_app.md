@@ -110,7 +110,7 @@ icon set. They do not get loaded via a call to the Zype API:
 2. [Image Brand (Side Icon)](https://github.com/zype/zype-roku/blob/master/images/mm_icon_side_hd.png) - your small icon. HD is 108 x 69 pixels, SD is 80 x 46 pixels. PNG format.
 
 3. [Image Splash](https://github.com/zype/zype-roku/blob/master/images/splash_screen_hd.png) - the splash screen (what appears while your Roku Channel loads).
-HD is 1280 x 720 pixels, SD is  720 x 480 pixels. JPG format.
+640 x 480 pixels. JPG format.
 
 When publishing, you will also need a HD Poster that is a 290 x 218 JPG format and
 an SD Poster that is a 214 x 144 JPG format. We call that the Image Store in our Zype Roku App.
@@ -123,17 +123,17 @@ These assets get loaded via a call to the Zype API everytime the Roku Channel ge
 
 ![zype roku app](http://i.imgur.com/lpgb3MY.png)
 
-1. Logo - logo used in the overhang. Suggested size is 125 x 104 pixels, PNG format.
+1. Logo - logo used in the overhang. Suggested size is 125 x 104 pixels HD, 83 x 69 SD, PNG format.
 
-2. Slice - image tiled to create the overhang. Suggested size is 1 x 165 pixels, PNG format.
+2. Slice - image tiled to create the overhang. Suggested size is 1 x 124 pixels HD and 1 x 83 SD, PNG format.
 
-3. Grid Description Image - image used to contain text on the grid screen. Suggested size is 968 x 258 pixels, PNG format.
+3. Grid Description Image - image used to contain text on the grid screen. Suggested size is 968 x 258 pixels HD, 502 x 177 pixels SD, PNG format.
 
-4. Grid Border Image - image used for the highlight border on the grid screen. Suggested size is 268 x 190 pixels, PNG format.
+4. Grid Border Image - image used for the highlight border on the grid screen. Suggested size is 268 x 190 pixels HD, 158 x 88 pixels SD, PNG format.
 
-5. Info Poster - image used to link to the info page. Suggested size is 266 x 150 pixels, PNG format.
+5. Info Poster - image used to link to the info page. Suggested size is 266 x 150 pixels HD & SD, PNG format.
 
-6. Search Poster - image used to link to the search page. Suggested size is 266 x 150 pixels, PNG format.
+6. Search Poster - image used to link to the search page. Suggested size is 266 x 150 pixels HD & SD, PNG format.
 
 
 <hr id="3">

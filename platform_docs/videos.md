@@ -4,8 +4,9 @@ title: Zype Developer Portal | Platform Docs
 permalink: /platform_docs/videos/
 ---
 ##All About Videos
-The Zype Platform is feature rich, so we want to provide you with a place to learn more about it.
-Below are a bunch of short tutorials (with pictures!) to help you with videos.
+Videos are at the core of the Zype Experience. You can upload videos or import videos
+from a third party source and use Zype to deliver your video content to any device or
+geographic location desired.
 
 <div style="width: 100%;">
   <div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>
@@ -19,6 +20,10 @@ Below are a bunch of short tutorials (with pictures!) to help you with videos.
   <div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>
     <a href="#3">
     Related Playlists</a>
+  </div>
+  <div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>
+    <a href="#4a">
+    Uploading Videos to the Zype Platform</a>
   </div>
   <div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>
     <a href="#4">
@@ -199,6 +204,25 @@ current playlists to act as a playlist of related videos by following these same
 
 *Check our [previous post](http://dev.zype.com/posts/2014/10/10/adding-zype-to-rails/)
 on how to set up your Rails App with the Zype Gem!*
+
+<hr id="4a">
+
+## Uploading Videos to the Zype Platform from the Web
+The easiest way to add a video to your video library is to upload a video to the Zype Platform.
+
+**Step 1:**
+
+Go to Uploads, click the upload button, and select the video that you want from your computer.
+
+![click upload](http://i.imgur.com/QYeRw0M.png)
+
+**Step 2:**
+
+When the video is finished uploading, click add video. This will start to transcode your video.
+All uploaded videos will need to be transcoded before being able to be viewed.
+
+![add video](http://i.imgur.com/HwdBdwV.png)
+
 
 <hr id="4">
 

@@ -4,8 +4,7 @@ title: Zype Developer Portal | Platform Docs
 permalink: /platform_docs/player_rules/
 ---
 ##All About Player Rules and Dynamic Player Technology (DPT)
-The Zype Platform is feature rich, so we want to provide you with a place to learn more about it.
-Below are a bunch of short tutorials (with pictures!) to help you with player rules.
+Dynamic Player Technology allows you to create player rules based on geography and device.
 
 <div style="width: 100%">
   <div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>

@@ -18,6 +18,9 @@ Parameter | Function | Type
 --------- | -------- | ----
 page      | The page number of records to return (zero indexed). Example: 0. | Number
 per_page  | The number of records to return. Example: 10. | Number
+q         | A query string for searching for subscriptions | String
+id        | Query for a subscription by id | String
+id!       | Exclude a subscription from the query | String
 
 #### Response
 200
@@ -39,7 +42,7 @@ Content-Type: application/json
       "consumer_id": "54579a634c616e0389000000",
       "created_at": "2014-11-03T15:08:33.668Z",
       "currency": "USD",
-      "deleted": false,
+      "deleted_at": null,
       "interval": "month",
       "plan_id": "544813e74c616e0dc0000000",
       "site_id": "53e8d7f869702d5b64010000",
@@ -93,7 +96,7 @@ Content-Type: application/json
       "consumer_id": "54579a634c616e0389000000",
       "created_at": "2014-11-03T15:08:33.668Z",
       "currency": "USD",
-      "deleted": false,
+      "deleted_at": null,
       "interval": "month",
       "plan_id": "544813e74c616e0dc0000000",
       "site_id": "53e8d7f869702d5b64010000",
