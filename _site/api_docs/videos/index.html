@@ -648,10 +648,10 @@ Content-Type: application/json</p>
 
 <hr />
 
-<h3 id="add-highlights-to-a-video">Add highlights to a Video</h3>
+<h3 id="find-a-specific-highlight">Find a specific highlight</h3>
 <hr />
 
-<pre><code>POST - https://api.zype.com/videos/{id}/add_highlights
+<pre><code>GET - https://api.zype.com/videos/{id}/highlights/{id}
 </code></pre>
 
 <h4 id="parameters-5">Parameters</h4>
@@ -667,9 +667,53 @@ Content-Type: application/json</p>
   <tbody>
     <tr>
       <td>id</td>
-      <td>String id of the Video. Example: 5389352e69702d401b000000.</td>
+      <td>String id of the Highlight. Example: 5389352e69702d401b000000.</td>
       <td>String</td>
     </tr>
+    <tr>
+      <td>video_id</td>
+      <td>String id of the Video to which the highlight belongs. Example: 5389352e69702d401b000000.</td>
+      <td>String</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="request-3">Request</h4>
+<p>Content-Type: application/json</p>
+
+<h4 id="response-5">Response</h4>
+<p>200
+Content-Type: application/json</p>
+<pre><code>{
+  "response": [
+    {"_id": "54c6cbe56368726454050000",
+    "description": "theBest",
+    "end": 112,
+    "start": 90
+    }
+  ]
+}
+</code></pre>
+
+<hr />
+
+<h3 id="add-highlights-to-a-video">Add highlights to a Video</h3>
+<hr />
+
+<pre><code>POST - https://api.zype.com/videos/{id}/highlights
+</code></pre>
+
+<h4 id="parameters-6">Parameters</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Function</th>
+      <th>Type</th>
+    </tr>
+  </thead>
+  <tbody>
     <tr>
       <td>highlight</td>
       <td>A set of key value pairs that describe the highlight. Example: highlight[description]=description.</td>
@@ -693,10 +737,10 @@ Content-Type: application/json</p>
   </tbody>
 </table>
 
-<h4 id="request-3">Request</h4>
+<h4 id="request-4">Request</h4>
 <p>Content-Type: application/json</p>
 
-<h4 id="response-5">Response</h4>
+<h4 id="response-6">Response</h4>
 <p>201
 Content-Type: application/json</p>
 <pre><code>{
@@ -715,114 +759,7 @@ Content-Type: application/json</p>
 <h3 id="remove-highlights-from-a-video">Remove highlights from a Video</h3>
 <hr />
 
-<pre><code>POST - https://api.zype.com/videos/{id}/remove_highlights
-</code></pre>
-
-<h4 id="parameters-6">Parameters</h4>
-
-<table>
-  <thead>
-    <tr>
-      <th>Parameter</th>
-      <th>Function</th>
-      <th>Type</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>id</td>
-      <td>String id of the Video. Example: 5389352e69702d401b000000.</td>
-      <td>String</td>
-    </tr>
-    <tr>
-      <td>highlight_id</td>
-      <td>String id of the highlight to be removed</td>
-      <td>String</td>
-    </tr>
-  </tbody>
-</table>
-
-<h4 id="request-4">Request</h4>
-<p>Content-Type: application/json</p>
-
-<h4 id="response-6">Response</h4>
-<p>200
-Content-Type: application/json</p>
-<pre><code>{
-  "response":
-  {
-    "_id": "546529b669702d534fb00000",
-    "active": true,
-    "categories": [
-      {
-        "title": "Genre",
-        "value": [
-          "Adventure"
-        ]
-      },
-      {
-        "title": "Additional Videos from YouTube",
-        "value": []
-      },
-      {
-        "title": "series",
-        "value": []
-      }
-    ],
-    "country": "",
-    "created_at": "2014-11-13T16:59:18.970-05:00",
-    "description": "New trailer for Marvel's Avengers: The Age of Ultron!",
-    "duration": 151,
-    "episode": null,
-    "featured": true,
-    "foreign_id": null,
-    "keywords": [],
-    "highlights": [],
-    "mature_content": false,
-    "published_at": "2014-11-13T16:57:02.000-05:00",
-    "rating": 0,
-    "related_playlist_ids": [],
-    "request_count": 39,
-    "season": null,
-    "site_id": "5463c68e69702d24db490000",
-    "status": "created",
-    "subscription_required": false,
-    "title": "Avengers: Age of Ultron",
-    "updated_at": "2014-12-17T23:00:14.215-05:00",
-    "zobject_ids": [],
-    "thumbnails": [
-      {
-        "aspect_ratio": null,
-        "height": 90,
-        "name": null,
-        "url": "https://i.ytimg.com/vi/Kno4FTxWycI/default.jpg",
-        "width": 120
-      },
-      {
-        "aspect_ratio": null,
-        "height": 180,
-        "name": null,
-        "url": "https://i.ytimg.com/vi/Kno4FTxWycI/mqdefault.jpg",
-        "width": 320
-      },
-      {
-        "aspect_ratio": null,
-        "height": 360,
-        "name": null,
-        "url": "https://i.ytimg.com/vi/Kno4FTxWycI/hqdefault.jpg",
-        "width": 480
-      }
-    ]
-  }
-}
-</code></pre>
-
-<hr />
-
-<h3 id="update-highlights-belonging-to-a-video">Update highlights belonging to a video</h3>
-<hr />
-
-<pre><code>PUT - https://api.zype.com/videos/{id}/update_highlights
+<pre><code>DELETE - https://api.zype.com/videos/{id}/highlights/{id}
 </code></pre>
 
 <h4 id="parameters-7">Parameters</h4>
@@ -838,12 +775,55 @@ Content-Type: application/json</p>
   <tbody>
     <tr>
       <td>id</td>
-      <td>String id of the Video. Example: 5389352e69702d401b000000.</td>
+      <td>String id of the Highlight to be deleted. Example: 5389352e69702d401b000000.</td>
       <td>String</td>
     </tr>
     <tr>
-      <td>highlight_id</td>
-      <td>String id of the highlight to be updated</td>
+      <td>video_id</td>
+      <td>String id of the Video to which the highlight belongs. Example: 5389352e69702d401b000000.</td>
+      <td>String</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="request-5">Request</h4>
+<p>Content-Type: application/json</p>
+
+<h4 id="response-7">Response</h4>
+<p>204
+Content-Type: application/json</p>
+<pre><code>{
+  "response": No Content
+}
+</code></pre>
+
+<hr />
+
+<h3 id="update-highlights-belonging-to-a-video">Update highlights belonging to a video</h3>
+<hr />
+
+<pre><code>PUT - https://api.zype.com/videos/{id}/highlights/{id}
+</code></pre>
+
+<h4 id="parameters-8">Parameters</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Function</th>
+      <th>Type</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>id</td>
+      <td>String id of the Highlight to be updated. Example: 5389352e69702d401b000000.</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>video_id</td>
+      <td>String id of the Video to which the highlight belongs. Example: 5389352e69702d401b000000.</td>
       <td>String</td>
     </tr>
     <tr>
@@ -869,10 +849,10 @@ Content-Type: application/json</p>
   </tbody>
 </table>
 
-<h4 id="request-5">Request</h4>
+<h4 id="request-6">Request</h4>
 <p>Content-Type: application/json</p>
 
-<h4 id="response-7">Response</h4>
+<h4 id="response-8">Response</h4>
 <p>201
 Content-Type: application/json</p>
 <pre><code>{
@@ -894,7 +874,7 @@ Content-Type: application/json</p>
 <pre><code>PUT - https://api.zype.com/videos/{id}/add_zobjects&amp;zobject_id=[id00001, id00002]
 </code></pre>
 
-<h4 id="parameters-8">Parameters</h4>
+<h4 id="parameters-9">Parameters</h4>
 
 <table>
   <thead>
@@ -918,10 +898,10 @@ Content-Type: application/json</p>
   </tbody>
 </table>
 
-<h4 id="request-6">Request</h4>
+<h4 id="request-7">Request</h4>
 <p>Content-Type: application/json</p>
 
-<h4 id="response-8">Response</h4>
+<h4 id="response-9">Response</h4>
 <p>200
 Content-Type: application/json</p>
 <pre><code>{
@@ -1010,7 +990,7 @@ Content-Type: application/json</p>
 <pre><code>PUT - https://api.zype.com/videos/{id}/remove_zobjects&amp;zobject_id=[id00001, id00002]
 </code></pre>
 
-<h4 id="parameters-9">Parameters</h4>
+<h4 id="parameters-10">Parameters</h4>
 
 <table>
   <thead>
@@ -1034,10 +1014,10 @@ Content-Type: application/json</p>
   </tbody>
 </table>
 
-<h4 id="request-7">Request</h4>
+<h4 id="request-8">Request</h4>
 <p>Content-Type: application/json</p>
 
-<h4 id="response-9">Response</h4>
+<h4 id="response-10">Response</h4>
 <p>200
 Content-Type: application/json</p>
 
@@ -1129,7 +1109,7 @@ Content-Type: application/json</p>
 <pre><code>GET - https://api.zype.com/videos/{id}/player?autoplay=autoplay
 </code></pre>
 
-<h4 id="parameters-10">Parameters</h4>
+<h4 id="parameters-11">Parameters</h4>
 
 <table>
   <thead>
@@ -1153,10 +1133,10 @@ Content-Type: application/json</p>
   </tbody>
 </table>
 
-<h4 id="request-8">Request</h4>
+<h4 id="request-9">Request</h4>
 <p>Content-Type: application/json</p>
 
-<h4 id="response-10">Response</h4>
+<h4 id="response-11">Response</h4>
 <p>200
 Content-Type: application/json</p>
 

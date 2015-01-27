@@ -378,6 +378,7 @@ Content-Type: application/json
 
 Parameter | Function | Type
 --------- | -------- | ----
+id        | String id of the Highlight. Example: 5389352e69702d401b000000. | String
 video_id        | String id of the Video to which the highlight belongs. Example: 5389352e69702d401b000000. | String
 
 #### Request
@@ -439,7 +440,7 @@ Content-Type: application/json
 
 Parameter | Function | Type
 --------- | -------- | ----
-id        | String id of the Highlight. Example: 5389352e69702d401b000000. | String
+id        | String id of the Highlight to be deleted. Example: 5389352e69702d401b000000. | String
 video_id        | String id of the Video to which the highlight belongs. Example: 5389352e69702d401b000000. | String
 
 #### Request
@@ -456,14 +457,14 @@ Content-Type: application/json
 <hr>
 ###Update highlights belonging to a video
 <hr>
-<pre><code>PUT - https://api.zype.com/videos/{id}/update_highlights
+<pre><code>PUT - https://api.zype.com/videos/{id}/highlights/{id}
 </code></pre>
 
 #### Parameters
 
 Parameter | Function | Type
 --------- | -------- | ----
-id        | String id of the Video. Example: 5389352e69702d401b000000. | String
+id        | String id of the Highlight to be updated. Example: 5389352e69702d401b000000. | String
 video_id  | String id of the Video to which the highlight belongs. Example: 5389352e69702d401b000000. | String
 highlight | A set of key value pairs that describe the highlight. Example: highlight[description]=description. | Hash
 description | The description for the video highlight | String
