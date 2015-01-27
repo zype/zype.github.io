@@ -49,6 +49,10 @@ Below are a bunch of short tutorials (with pictures!) to help you with a number 
     <a href="http://dev.zype.com/posts/2014/12/04/zobjects-in-the-zype-platform/">
     Zobjects</a>
     </div>
+    <div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>  
+      <a href="http://dev.zype.com/posts/2014/12/10/filtering-videos-and-playlists/">
+      Search Filters</a>
+    </div>
   </div>
 
   <div style="width: 50%;">
@@ -73,6 +77,13 @@ Below are a bunch of short tutorials (with pictures!) to help you with a number 
       Publishing Your Roku App</a>
     </div>
     <div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>  
+      <a href="/platform_docs/google_analytics/">
+      Enabling Google Analytics Integration</a>
+    </div>
+
+    
+
+    <div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>  
       <a href="http://dev.zype.com/posts/2014/12/01/api-keys/">
       Help Finding Your API/Player Keys</a>
     </div>
@@ -88,9 +99,6 @@ Below are a bunch of short tutorials (with pictures!) to help you with a number 
       <a href="http://dev.zype.com/posts/2014/12/04/defining-categories-and-playlists/">
       Categories and Playlists on the Zype Platform</a>
     </div>
-    <div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>  
-      <a href="http://dev.zype.com/posts/2014/12/10/filtering-videos-and-playlists/">
-      Search Filters</a>
-    </div>
+    
   </div>
 </div>
