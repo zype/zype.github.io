@@ -18,16 +18,24 @@ Video Source, all other videos will have a video source from the respected third
     Adding Videos from a YouTube Channel to the Zype Platform</a>
   </div>
   <div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>
-    <a href="#2">
-    Adding Your Crunchyroll Videos to the Zype Platform</a>
+  <a href="#2">
+  Adding Videos from a Vimeo Channel, Group or User to the Zype Platform</a>
   </div>
   <div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>
     <a href="#3">
+    Adding Your Crunchyroll Videos to the Zype Platform</a>
+  </div>
+  <div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>
+    <a href="#4">
     Uploading Videos to the Zype Platform Using Our Ruby Gem</a>
   </div>
   <div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>
-  <a href="#4">
+  <a href="#5">
   Adding YouTube Videos from a URL</a>
+  </div>
+  <div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>
+  <a href="#6">
+  Adding Vimeo Videos from a URL</a>
   </div>
 </div>
 
@@ -90,8 +98,51 @@ from there.
 
 ![import videos](http://i.imgur.com/ZKliLxG.png)
 
-
 <hr id="2">
+
+## Adding Videos from a Vimeo Channel, Group or User
+We're happy to provide you with a simple and powerful for importing your Vimeo videos to the Zype Platform. Below are the steps for grabbing your videos, no matter where they exist in Vimeo.
+
+**Step 1:**
+
+Go to Video Sources and click on the Vimeo icon.
+
+![click vimeo](http://i.imgur.com/pJl7zpM.png)
+
+**Step 2:**
+
+Enter a name for your Vimeo Video Source (something to help you remember it!).
+
+**Step 3:**
+
+You'll need to copy and paste a link to your Vimeo videos from a group, channel or user. Here are some quick example links:
+
+<pre><code>https://vimeo.com/channels/staffpicks
+
+https://vimeo.com/user36554072/videos
+
+https://vimeo.com/groups/animation
+</code></pre>
+
+First, go to Vimeo and copy the link:
+
+![copy your link](http://i.imgur.com/OSqBvPI.png)
+
+Then paste the link into the Vimeo Source form:
+
+![paste your link](http://i.imgur.com/t4wdD8f.png)
+
+Then click the 'Save Changes' button.
+
+
+**Step 4:**
+
+If everything went according to plan, you can see your new video imports by clicking on the green 'Video Imports' button.
+
+![video imports button](http://i.imgur.com/xeeQFLq.png)
+
+
+<hr id="3">
 
 ## Adding Your Crunchyroll Videos
 We know you have a lot of video content and we know that you want it all to be available to your viewers through the Zype Platform. That's why we're proud to announce that you can now use [Crunchyroll](http://www.crunchyroll.com/) as a video source for videos on the Zype Platform!
@@ -132,7 +183,7 @@ You can confirm that your videos were added by clicking on the videos tab and se
 ![videos](http://i.imgur.com/1JDkFYZ.png)
 
 
-<hr id="3">
+<hr id="4">
 
 ## Uploading Videos to the Zype Platform Using Our Ruby Gem
 We're rolling out a bunch of new ways to add video content to the Zype Platform, like [Youtube Channel Import](http://dev.zype.com/posts/2014/11/18/search-youtube-in-zype/) and [Crunchyroll Video Import](http://dev.zype.com/posts/2014/11/19/adding-crunchyroll-as-a-video-source/). In this post we'll show you how to use the Zype Command Line Interface (or CLI) to upload videos that you have stored on a harddrive.
@@ -196,12 +247,12 @@ You can confirm that your videos were added by clicking on the videos tab and se
 
 ![videos](http://i.imgur.com/1JDkFYZ.png)
 
-<hr id="4">
+<hr id="5">
 
 ## Adding YouTube Video from a URL
 We're happy to announce that the [Zype Platform](http://admin.zype.com) now grants you the power to import videos from YouTube simply by copying an pasting a YouTube link into the platform.
 
-Check out the [Video Imports Screen](http://admin.zype.com/video_imports) and click on the "Add a YouTube Video Import" button to get started.
+Check out the [Video Imports Screen](http://admin.zype.com/video_imports) and click on the "Add Video Import" button to get started.
 
 
 ![navigate to form](http://i.imgur.com/4lSzNBt.png)
@@ -220,3 +271,29 @@ Paste the URL into the field on this page and click "Add Video Import".
 
 
 If everything went according to plan, you should see the video imports screen again, with a new import from the link you provided. If you're interested in grabbing a bunch of videos from YouTube, you may want to follow our guides under [Adding Videos.](http://dev.zype.com/platform_docs/adding_videos/)
+
+<hr id="6">
+
+## Adding Vimeo Video from a URL
+Check out the [Video Imports Screen](http://admin.zype.com/video_imports) and click on the "Add  Video Import" button to get started.
+
+
+![navigate to form](http://i.imgur.com/HK2qF8X.png)
+
+
+The next step is to copy a URL from Vimeo that shows the video you want to add.
+
+
+![copy url](http://i.imgur.com/zbYIO83.png)
+
+
+Paste the URL into the field on this page and click "Add Video Import".
+
+
+![paste url](http://i.imgur.com/tuGK2MG.png)
+
+Then click the 'Save Changes' button.
+
+![save changes](http://i.imgur.com/OPt5Rvo.png)
+
+If everything went according to plan, you should see the video imports screen again, with a new import from the link you provided. If you're interested in grabbing a bunch of videos from Vimeo, you may want to follow our guides under [Adding Videos.](http://dev.zype.com/platform_docs/adding_videos/)
