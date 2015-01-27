@@ -30,9 +30,7 @@ to provide your API key in the request. To authenticate your requests, supply yo
 
 The second way to authenticate is to include your API key in the query param.
 
-<pre><code>
-https://api.zype.com/videos/?api_key=api_key
-</code></pre>
+<pre><code>https://api.zype.com/videos/?api_key=[api_key]</code></pre>
 
 Currently, Zype provides three types of API Keys for you to use for authentication.
 
