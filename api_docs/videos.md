@@ -67,7 +67,7 @@ Content-Type: application/json
     "featured": false,
     "foreign_id": null,
     "keywords": [],
-    "highlights": [],
+    "segments": [],
     "mature_content": false,
     "published_at": "2014-11-30T12:01:32.000-05:00",
     "rating": 0,
@@ -172,7 +172,7 @@ Content-Type: application/json
     "featured": false,
     "foreign_id": nil,
     "keywords": [],
-    "highlights": [],
+    "segments": [],
     "mature_content": false,
     "published_at": nil,
     "rating": 0.0,
@@ -240,7 +240,7 @@ Content-Type: application/json
     "featured": true,
     "foreign_id": null,
     "keywords": [],
-    "highlights": [],
+    "segments": [],
     "mature_content": false,
     "published_at": "2014-11-13T16:57:02.000-05:00",
     "rating": 0,
@@ -341,9 +341,9 @@ Content-Type: application/json
 </code></pre>
 
 <hr>
-###List the highlights of a Video
+###List the segments of a Video
 <hr>
-<pre><code>GET - https://api.zype.com/videos/{id}/highlights
+<pre><code>GET - https://api.zype.com/videos/{id}/segments
 </code></pre>
 
 #### Parameters
@@ -371,17 +371,17 @@ Content-Type: application/json
 
 
 <hr>
-###Find a specific highlight
+###Find a specific segment
 <hr>
-<pre><code>GET - https://api.zype.com/videos/{id}/highlights/{id}
+<pre><code>GET - https://api.zype.com/videos/{id1}/segments/{id2}
 </code></pre>
 
 #### Parameters
 
 Parameter | Function | Type
 --------- | -------- | ----
-id        | String id of the Highlight. Example: 5389352e69702d401b000000. | String
-video_id        | String id of the Video to which the highlight belongs. Example: 5389352e69702d401b000000. | String
+id1        | String id of the Video to which the segment belongs. Example: 5389352e69702d401b000000. | String
+id2        | String id of the segment. Example: 5389352e69702d401b000000. | String
 
 #### Request
 Content-Type: application/json
@@ -401,19 +401,19 @@ Content-Type: application/json
 </code></pre>
 
 <hr>
-###Add highlights to a Video
+###Add segments to a Video
 <hr>
-<pre><code>POST - https://api.zype.com/videos/{id}/highlights
+<pre><code>POST - https://api.zype.com/videos/{id}/segments
 </code></pre>
 
 #### Parameters
 
 Parameter | Function | Type
 --------- | -------- | ----
-highlight | A set of key value pairs that describe the highlight. Example: highlight[description]=description. | Hash
-description | The description for the video highlight | String
-start | The point in the video where the highlight begins | Integer
-end | The point in the video where the highlight ends | Integer
+segment | A set of key value pairs that describe the segment. Example: segment[description]=description. | Hash
+description | The description for the video segment | String
+start | The point in the video where the segment begins | Integer
+end | The point in the video where the segment ends | Integer
 
 #### Request
 Content-Type: application/json
@@ -433,17 +433,18 @@ Content-Type: application/json
 </code></pre>
 
 <hr>
-###Remove highlights from a Video
+###Remove segments from a Video
 <hr>
-<pre><code>DELETE - https://api.zype.com/videos/{id}/highlights/{id}
+<pre><code>DELETE - https://api.zype.com/videos/{id1}/segments/{id2}
 </code></pre>
 
 #### Parameters
 
 Parameter | Function | Type
 --------- | -------- | ----
-id        | String id of the Highlight to be deleted. Example: 5389352e69702d401b000000. | String
-video_id        | String id of the Video to which the highlight belongs. Example: 5389352e69702d401b000000. | String
+id1       | String id of the Video to which the segment belongs. Example: 5389352e69702d401b000000. | String
+id2       | String id of the segment to be deleted. Example: 5389352e69702d401b000000. | String
+
 
 #### Request
 Content-Type: application/json
@@ -457,21 +458,21 @@ Content-Type: application/json
 </code></pre>
 
 <hr>
-###Update highlights belonging to a video
+###Update segments belonging to a video
 <hr>
-<pre><code>PUT - https://api.zype.com/videos/{id}/highlights/{id}
+<pre><code>PUT - https://api.zype.com/videos/{id1}/segments/{id2}
 </code></pre>
 
 #### Parameters
 
 Parameter | Function | Type
 --------- | -------- | ----
-id        | String id of the Highlight to be updated. Example: 5389352e69702d401b000000. | String
-video_id  | String id of the Video to which the highlight belongs. Example: 5389352e69702d401b000000. | String
-highlight | A set of key value pairs that describe the highlight. Example: highlight[description]=description. | Hash
-description | The description for the video highlight | String
-start | The point in the video where the highlight begins | Integer
-end | The point in the video where the highlight ends | Integer
+id1  | String id of the Video to which the segment belongs. Example: 5389352e69702d401b000000. | String
+id2        | String id of the segment to be updated. Example: 5389352e69702d401b000000. | String
+segment | A set of key value pairs that describe the segment. Example: segment[description]=description. | Hash
+description | The description for the video segment | String
+start | The point in the video where the segment begins | Integer
+end | The point in the video where the segment ends | Integer
 
 #### Request
 Content-Type: application/json
