@@ -25,7 +25,10 @@
     })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
     ga('create', 'UA-1376128-30', 'auto');
+    ga('create', 'UA-1376128-21', 'auto', {'name': 'global'});
+
     ga('send', 'pageview');
+    ga('global.send', 'pageview');
 
     </script>
 </head>
@@ -170,6 +173,21 @@ keyword=keyword&amp;status=status&amp;active=true&amp;type=type&amp;category=cat
       <td>Filter the records returned by published date. You can use greater than or less than filters by adding a suffix: ‘.gt’, ‘.gte’, ‘.lt’, ‘lte’. Example: published_at.gte=2015-01-01</td>
       <td>Date</td>
     </tr>
+    <tr>
+      <td>published_at</td>
+      <td>Filter the records returned by published date. You can use greater than or less than filters by adding a suffix: ‘.gt’, ‘.gte’, ‘.lt’, ‘lte’. Example: published_at.gte=2015-01-01</td>
+      <td>Date</td>
+    </tr>
+    <tr>
+      <td>start_at</td>
+      <td>Filter the records returned by start at date. You can use greater than or less than filters by adding a suffix: ‘.gt’, ‘.gte’, ‘.lt’, ‘lte’. Example: published_at.gte=2015-01-01</td>
+      <td>Date</td>
+    </tr>
+    <tr>
+      <td>expire_at</td>
+      <td>Filter the records returned by expire at date. You can use greater than or less than filters by adding a suffix: ‘.gt’, ‘.gte’, ‘.lt’, ‘lte’. Example: published_at.gte=2015-01-01</td>
+      <td>Date</td>
+    </tr>
   </tbody>
 </table>
 
@@ -203,6 +221,7 @@ Content-Type: application/json</p>
     "description": "A continuation of the saga created by George Lucas set thirty years after Star Wars: Episode VI - Return of the Jedi (1983).",
     "duration": 91,
     "episode": null,
+    "expire_at": "2015-02-27T09:30:00.000-05:00",
     "featured": false,
     "foreign_id": null,
     "keywords": [],
@@ -216,6 +235,7 @@ Content-Type: application/json</p>
     "request_count": 14,
     "season": null,
     "site_id": "5463c68e69702d24db490000",
+    "start_at": "2015-01-29T03:10:00.000-05:00",
     "status": "created",
     "subscription_required": false,
     "title": "Star Wars: Episode VII - The Force Awakens Official Teaser Trailer",
@@ -350,6 +370,16 @@ keyword=keyword&amp;status=status&amp;active=true&amp;type=type&amp;category=cat
       <td>Whether or not the video requires the viewer to be 18+ to view</td>
       <td>Boolean</td>
     </tr>
+    <tr>
+      <td>start_at</td>
+      <td>Date to make the video active</td>
+      <td>Date</td>
+    </tr>
+    <tr>
+      <td>expire_at</td>
+      <td>Date to make the video inactive</td>
+      <td>Date</td>
+    </tr>
   </tbody>
 </table>
 
@@ -367,6 +397,7 @@ Content-Type: application/json</p>
     "description": "Sample Description",
     "duration": nil,
     "episode": 1,
+    "expire_at": "2015-02-27T09:30:00.000-05:00",
     "featured": false,
     "foreign_id": nil,
     "keywords": [],
@@ -378,6 +409,7 @@ Content-Type: application/json</p>
     "request_count": 0,
     "season": 1,
     "site_id": "53c4296a69702d25ca000000",
+    "start_at": "2015-01-29T03:10:00.000-05:00",
     "status": "created",
     "subscription_required": false,
     "title": "Sample Video Title",
@@ -450,6 +482,7 @@ Content-Type: application/json</p>
     "description": "New trailer for Marvel's Avengers: The Age of Ultron!",
     "duration": 151,
     "episode": null,
+    "expire_at": "2015-02-27T09:30:00.000-05:00",
     "featured": true,
     "foreign_id": null,
     "keywords": [],
@@ -462,6 +495,7 @@ Content-Type: application/json</p>
     "season": null,
     "site_id": "5463c68e69702d24db490000",
     "status": "created",
+    "start_at": "2015-01-29T03:10:00.000-05:00",
     "subscription_required": false,
     "title": "Avengers: Age of Ultron",
     "updated_at": "2014-12-17T23:00:14.215-05:00",
@@ -571,6 +605,16 @@ Content-Type: application/json</p>
       <td>Whether or not the video requires the viewer to be 18+ to view</td>
       <td>Boolean</td>
     </tr>
+    <tr>
+      <td>start_at</td>
+      <td>Date to make the video active</td>
+      <td>Date</td>
+    </tr>
+    <tr>
+      <td>expire_at</td>
+      <td>Date to make the video inactive</td>
+      <td>Date</td>
+    </tr>
   </tbody>
 </table>
 
@@ -592,6 +636,7 @@ Content-Type: application/json</p>
     "description": "Sample Description",
     "duration": nil,
     "episode": 1,
+    "expire_at": "2015-02-27T09:30:00.000-05:00",
     "featured": false,
     "foreign_id": nil,
     "keywords": [],
@@ -602,6 +647,7 @@ Content-Type: application/json</p>
     "request_count": 0,
     "season": 1,
     "site_id": "53c4296a69702d25ca000000",
+    "start_at": "2015-01-29T03:10:00.000-05:00",
     "status": "created",
     "subscription_required": false,
     "title": "Updated Video Title",
@@ -658,10 +704,10 @@ Content-Type: application/json</p>
 
 <hr />
 
-<h3 id="find-a-specific-highlight">Find a specific highlight</h3>
+<h3 id="find-a-specific-segment">Find a specific segment</h3>
 <hr />
 
-<pre><code>GET - https://api.zype.com/videos/{id}/segments/{id}
+<pre><code>GET - https://api.zype.com/videos/{id1}/segments/{id2}
 </code></pre>
 
 <h4 id="parameters-5">Parameters</h4>
@@ -676,13 +722,13 @@ Content-Type: application/json</p>
   </thead>
   <tbody>
     <tr>
-      <td>id</td>
-      <td>String id of the Highlight. Example: 5389352e69702d401b000000.</td>
+      <td>id1</td>
+      <td>String id of the Video to which the segment belongs. Example: 5389352e69702d401b000000.</td>
       <td>String</td>
     </tr>
     <tr>
-      <td>video_id</td>
-      <td>String id of the Video to which the highlight belongs. Example: 5389352e69702d401b000000.</td>
+      <td>id2</td>
+      <td>String id of the segment. Example: 5389352e69702d401b000000.</td>
       <td>String</td>
     </tr>
   </tbody>
@@ -725,23 +771,23 @@ Content-Type: application/json</p>
   </thead>
   <tbody>
     <tr>
-      <td>highlight</td>
-      <td>A set of key value pairs that describe the highlight. Example: highlight[description]=description.</td>
+      <td>segment</td>
+      <td>A set of key value pairs that describe the segment. Example: segment[description]=description.</td>
       <td>Hash</td>
     </tr>
     <tr>
       <td>description</td>
-      <td>The description for the video highlight</td>
+      <td>The description for the video segment</td>
       <td>String</td>
     </tr>
     <tr>
       <td>start</td>
-      <td>The point in the video where the highlight begins</td>
+      <td>The point in the video where the segment begins</td>
       <td>Integer</td>
     </tr>
     <tr>
       <td>end</td>
-      <td>The point in the video where the highlight ends</td>
+      <td>The point in the video where the segment ends</td>
       <td>Integer</td>
     </tr>
   </tbody>
@@ -769,7 +815,7 @@ Content-Type: application/json</p>
 <h3 id="remove-segments-from-a-video">Remove segments from a Video</h3>
 <hr />
 
-<pre><code>DELETE - https://api.zype.com/videos/{id}/segments/{id}
+<pre><code>DELETE - https://api.zype.com/videos/{id1}/segments/{id2}
 </code></pre>
 
 <h4 id="parameters-7">Parameters</h4>
@@ -784,13 +830,13 @@ Content-Type: application/json</p>
   </thead>
   <tbody>
     <tr>
-      <td>id</td>
-      <td>String id of the Highlight to be deleted. Example: 5389352e69702d401b000000.</td>
+      <td>id1</td>
+      <td>String id of the Video to which the segment belongs. Example: 5389352e69702d401b000000.</td>
       <td>String</td>
     </tr>
     <tr>
-      <td>video_id</td>
-      <td>String id of the Video to which the highlight belongs. Example: 5389352e69702d401b000000.</td>
+      <td>id2</td>
+      <td>String id of the segment to be deleted. Example: 5389352e69702d401b000000.</td>
       <td>String</td>
     </tr>
   </tbody>
@@ -812,7 +858,7 @@ Content-Type: application/json</p>
 <h3 id="update-segments-belonging-to-a-video">Update segments belonging to a video</h3>
 <hr />
 
-<pre><code>PUT - https://api.zype.com/videos/{id}/segments/{id}
+<pre><code>PUT - https://api.zype.com/videos/{id1}/segments/{id2}
 </code></pre>
 
 <h4 id="parameters-8">Parameters</h4>
@@ -827,33 +873,33 @@ Content-Type: application/json</p>
   </thead>
   <tbody>
     <tr>
-      <td>id</td>
-      <td>String id of the Highlight to be updated. Example: 5389352e69702d401b000000.</td>
+      <td>id1</td>
+      <td>String id of the Video to which the segment belongs. Example: 5389352e69702d401b000000.</td>
       <td>String</td>
     </tr>
     <tr>
-      <td>video_id</td>
-      <td>String id of the Video to which the highlight belongs. Example: 5389352e69702d401b000000.</td>
+      <td>id2</td>
+      <td>String id of the segment to be updated. Example: 5389352e69702d401b000000.</td>
       <td>String</td>
     </tr>
     <tr>
-      <td>highlight</td>
-      <td>A set of key value pairs that describe the highlight. Example: highlight[description]=description.</td>
+      <td>segment</td>
+      <td>A set of key value pairs that describe the segment. Example: segment[description]=description.</td>
       <td>Hash</td>
     </tr>
     <tr>
       <td>description</td>
-      <td>The description for the video highlight</td>
+      <td>The description for the video segment</td>
       <td>String</td>
     </tr>
     <tr>
       <td>start</td>
-      <td>The point in the video where the highlight begins</td>
+      <td>The point in the video where the segment begins</td>
       <td>Integer</td>
     </tr>
     <tr>
       <td>end</td>
-      <td>The point in the video where the highlight ends</td>
+      <td>The point in the video where the segment ends</td>
       <td>Integer</td>
     </tr>
   </tbody>
@@ -965,6 +1011,7 @@ Content-Type: application/json</p>
     "description": "Conan brings the magic of the blues to Chicago's youngest, and most adorable generation.",
     "duration": 493,
     "episode": nil,
+    "expire_at": "2015-02-27T09:30:00.000-05:00",
     "featured": false,
     "foreign_id": nil,
     "keywords": [],
@@ -975,6 +1022,7 @@ Content-Type: application/json</p>
     "request_count": 0,
     "season": nil,
     "site_id": "549dc583636872c09d110000",
+    "start_at": "2015-01-29T03:10:00.000-05:00",
     "status": "created",
     "subscription_required": false,
     "title": "Conan Writes Chicago Blues Songs With School Kids - CONAN on TBS",
@@ -1082,6 +1130,7 @@ Content-Type: application/json</p>
     "description": "Conan brings the magic of the blues to Chicago's youngest, and most adorable generation.",
     "duration": 493,
     "episode": nil,
+    "expire_at": "2015-02-27T09:30:00.000-05:00",
     "featured": false,
     "foreign_id": nil,
     "keywords": [],
@@ -1092,6 +1141,7 @@ Content-Type: application/json</p>
     "request_count": 0,
     "season": nil,
     "site_id": "549dc583636872c09d110000",
+    "start_at": "2015-01-29T03:10:00.000-05:00",
     "status": "created",
     "subscription_required": false,
     "title": "Conan Writes Chicago Blues Songs With School Kids - CONAN on TBS",

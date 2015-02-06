@@ -33,6 +33,9 @@ zobject_id  | Query for videos with a specific zobject associated with them | St
 zobject_id! | Exclude videos with a specfific zobject associated with them | String
 created_at | Filter the records returned by created date. You can use greater than or less than filters by adding a suffix: '.gt', '.gte', '.lt', 'lte'. Example: created_at.gte=2015-01-01 | Date
 published_at | Filter the records returned by published date. You can use greater than or less than filters by adding a suffix: '.gt', '.gte', '.lt', 'lte'. Example: published_at.gte=2015-01-01 | Date
+published_at | Filter the records returned by published date. You can use greater than or less than filters by adding a suffix: '.gt', '.gte', '.lt', 'lte'. Example: published_at.gte=2015-01-01 | Date
+start_at | Filter the records returned by start at date. You can use greater than or less than filters by adding a suffix: '.gt', '.gte', '.lt', 'lte'. Example: published_at.gte=2015-01-01 | Date
+expire_at | Filter the records returned by expire at date. You can use greater than or less than filters by adding a suffix: '.gt', '.gte', '.lt', 'lte'. Example: published_at.gte=2015-01-01 | Date
 
 #### Response
 200
@@ -64,6 +67,7 @@ Content-Type: application/json
     "description": "A continuation of the saga created by George Lucas set thirty years after Star Wars: Episode VI - Return of the Jedi (1983).",
     "duration": 91,
     "episode": null,
+    "expire_at": "2015-02-27T09:30:00.000-05:00",
     "featured": false,
     "foreign_id": null,
     "keywords": [],
@@ -77,6 +81,7 @@ Content-Type: application/json
     "request_count": 14,
     "season": null,
     "site_id": "5463c68e69702d24db490000",
+    "start_at": "2015-01-29T03:10:00.000-05:00",
     "status": "created",
     "subscription_required": false,
     "title": "Star Wars: Episode VII - The Force Awakens Official Teaser Trailer",
@@ -154,6 +159,8 @@ featured | Whether or not the video is featured | Boolean
 keywords | Keywords for the video | Array
 subscription_required | Whether or not the video requires a subscription to view | Boolean
 mature_content | Whether or not the video requires the viewer to be 18+ to view | Boolean
+start_at | Date to make the video active | Date
+expire_at | Date to make the video inactive | Date
 
 #### Response
 201
@@ -169,6 +176,7 @@ Content-Type: application/json
     "description": "Sample Description",
     "duration": nil,
     "episode": 1,
+    "expire_at": "2015-02-27T09:30:00.000-05:00",
     "featured": false,
     "foreign_id": nil,
     "keywords": [],
@@ -180,6 +188,7 @@ Content-Type: application/json
     "request_count": 0,
     "season": 1,
     "site_id": "53c4296a69702d25ca000000",
+    "start_at": "2015-01-29T03:10:00.000-05:00",
     "status": "created",
     "subscription_required": false,
     "title": "Sample Video Title",
@@ -237,6 +246,7 @@ Content-Type: application/json
     "description": "New trailer for Marvel's Avengers: The Age of Ultron!",
     "duration": 151,
     "episode": null,
+    "expire_at": "2015-02-27T09:30:00.000-05:00",
     "featured": true,
     "foreign_id": null,
     "keywords": [],
@@ -249,6 +259,7 @@ Content-Type: application/json
     "season": null,
     "site_id": "5463c68e69702d24db490000",
     "status": "created",
+    "start_at": "2015-01-29T03:10:00.000-05:00",
     "subscription_required": false,
     "title": "Avengers: Age of Ultron",
     "updated_at": "2014-12-17T23:00:14.215-05:00",
@@ -301,6 +312,8 @@ featured | Whether or not the video is featured | Boolean
 keywords | Keywords for the video | Array
 subscription_required | Whether or not the video requires a subscription to view | Boolean
 mature_content | Whether or not the video requires the viewer to be 18+ to view | Boolean
+start_at | Date to make the video active | Date
+expire_at | Date to make the video inactive | Date
 
 #### Request
 
@@ -320,6 +333,7 @@ Content-Type: application/json
     "description": "Sample Description",
     "duration": nil,
     "episode": 1,
+    "expire_at": "2015-02-27T09:30:00.000-05:00",
     "featured": false,
     "foreign_id": nil,
     "keywords": [],
@@ -330,6 +344,7 @@ Content-Type: application/json
     "request_count": 0,
     "season": 1,
     "site_id": "53c4296a69702d25ca000000",
+    "start_at": "2015-01-29T03:10:00.000-05:00",
     "status": "created",
     "subscription_required": false,
     "title": "Updated Video Title",
@@ -561,6 +576,7 @@ Content-Type: application/json
     "description": "Conan brings the magic of the blues to Chicago's youngest, and most adorable generation.",
     "duration": 493,
     "episode": nil,
+    "expire_at": "2015-02-27T09:30:00.000-05:00",
     "featured": false,
     "foreign_id": nil,
     "keywords": [],
@@ -571,6 +587,7 @@ Content-Type: application/json
     "request_count": 0,
     "season": nil,
     "site_id": "549dc583636872c09d110000",
+    "start_at": "2015-01-29T03:10:00.000-05:00",
     "status": "created",
     "subscription_required": false,
     "title": "Conan Writes Chicago Blues Songs With School Kids - CONAN on TBS",
@@ -659,6 +676,7 @@ Content-Type: application/json
     "description": "Conan brings the magic of the blues to Chicago's youngest, and most adorable generation.",
     "duration": 493,
     "episode": nil,
+    "expire_at": "2015-02-27T09:30:00.000-05:00",
     "featured": false,
     "foreign_id": nil,
     "keywords": [],
@@ -669,6 +687,7 @@ Content-Type: application/json
     "request_count": 0,
     "season": nil,
     "site_id": "549dc583636872c09d110000",
+    "start_at": "2015-01-29T03:10:00.000-05:00",
     "status": "created",
     "subscription_required": false,
     "title": "Conan Writes Chicago Blues Songs With School Kids - CONAN on TBS",
