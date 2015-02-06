@@ -31,7 +31,7 @@ geographic location desired.
   </div>
   <div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>  
   <a href="#6">
-  Adding single Videos from a Vimeo link</a>
+    Adding single Videos from a Vimeo link</a>
   </div>
   <div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>
     <a href="#7">
@@ -39,7 +39,7 @@ geographic location desired.
   </div>
   <div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>
   <a href="#8">
-  Adding YouTube Videos from a URL</a>
+    Adding YouTube Videos from a URL</a>
   </div>
   <div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>
     <a href="#9">
@@ -60,6 +60,10 @@ geographic location desired.
   <div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>
     <a href="#13">
     Search Filters on the Zype Platform</a>
+  </div>
+  <div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>
+    <a href="#14">
+    Scheduling Video Publishing</a>
   </div>
 </div>
 
@@ -573,7 +577,6 @@ If you've been busy adding video content to the [Zype Platform](http://admin.zyp
 
 ![playlist filtering](http://i.imgur.com/CVg7VSJ.png)
 
-
 The filter buttons let you select as many parameters for your search as you'd like. Each button has a dropdown you can use to select a value to search by. The default search options are the categories you've created for your site and "Active" (whether or not the video is marked as active). You can create and manage your categories [here.](https://admin.zype.com/categories)
 
 Once you've selected all of the filters you want to use, click the search button to see the results.
@@ -583,3 +586,31 @@ You can search by entering a search term, using the filters or both!
 If the filter buttons are greyed out, that's because you don't have any videos or playlists yet.
 
 Check out our previous blog post on [defining categories and playlists](http://dev.zype.com/posts/2014/12/04/defining-categories-and-playlists/), if you have questions about getting started.
+
+<hr id="14">
+
+## Scheduling Video Publishing
+
+You can publish a video two different ways on the Zype Platform. You can either
+set a video to be active right away or you can set a video to be active in a future date.
+Once a video is active, it is published and can be viewed by your end users.
+
+**Setting a Video as Active Right Away**
+
+If you want to publish your video via a "set and forget" method, navigate to your video
+edit page and turn active on.
+
+![set active](http://i.imgur.com/BdIqnSE.png)
+
+Once your video is active, it will be able to be viewed.
+
+**Scheduling a Video to become Active**
+
+If you want to schedule when your video is published (and thus, active), you
+can set the "Start at" and "Expire at" dates in your edit video page.
+
+![schedule video](http://i.imgur.com/ieiEEjR.png)
+
+Your video will be made active at the specified start at time and will be made inactive
+at the specified expire at time. If you do not want the video to become inactive in
+the future, you can leave the expire at field blank!
