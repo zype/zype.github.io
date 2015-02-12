@@ -11,7 +11,7 @@
 ">
 
     <link rel="stylesheet" href="/css/main.css">
-    <link rel="canonical" href="http://dev.zype.com/platform_docs/plans/">
+    <link rel="canonical" href="http://localhost:4000//platform_docs/plans/">
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 
     <!--[if lt IE 9]>
@@ -25,7 +25,10 @@
     })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
     ga('create', 'UA-1376128-30', 'auto');
+    ga('create', 'UA-1376128-21', 'auto', {'name': 'global'});
+
     ga('send', 'pageview');
+    ga('global.send', 'pageview');
 
     </script>
 </head>
@@ -97,7 +100,7 @@ Deactivating a Plan</a>
 In the Zype Platform, navigate to settings and enter your Stripe Secret Key.
 Your Stripe Secret Key can be found under your Stripe <a href="https://dashboard.stripe.com/account/apikeys">account settings</a>.</p>
 
-<p><img src="http://i.imgur.com/ho1jPpL.png" alt="stripe settings" /></p>
+<p><img src="http://localhost:4000/assets/Plan/stripe_key.png" alt="stripe settings" /></p>
 
 <hr id="2" />
 
@@ -105,13 +108,13 @@ Your Stripe Secret Key can be found under your Stripe <a href="https://dashboard
 <p>Once you have your Stripe Secret Key in the Zype Platform, you can create plans from the
 Zype Platform that connect to your Stripe Account. To create a plan, go to the <a href="https://admin.zype.com/plans">plans page</a>.</p>
 
-<p><img src="http://i.imgur.com/TZemOeL.png" alt="new plan" /></p>
+<p><img src="http://localhost:4000/assets/Plan/new_plan.png" alt="new plan" /></p>
 
 <p>You will be prompted to enter the name, plan id, statement description, trial period days,
 amount, currency type, interval, and whether or not the plan is active. Note, the Plan ID has to
 be a unique idenitifier for the plans and is what Stripe uses in its API queries.</p>
 
-<p><img src="http://i.imgur.com/X4ElIgg.png" alt="new plan form" /></p>
+<p><img src="http://localhost:4000/assets/Plan/plan_details.png" alt="new plan form" /></p>
 
 <p>If your plan is active, you will be ready to have consumers subscribe to your plan!</p>
 
@@ -121,7 +124,7 @@ be a unique idenitifier for the plans and is what Stripe uses in its API queries
 <p>You can make a plan inactive by navigating to your plan and toggling the plan to be
 inactive.</p>
 
-<p><img src="http://i.imgur.com/ykZhpKD.png" alt="deactivate plan" /></p>
+<p><img src="http://localhost:4000/assets/Plan/activate_plan.png" alt="deactivate plan" /></p>
 
 <p>Note, deactivating a plan does not affect any current subscribers to the plan.
 It means that new subscribers can’t be added to that plan.</p>

@@ -33,18 +33,18 @@ that you want to create player rules for.
 1\. Make sure you have imported your videos into your [video catalogue](https://admin.zype.com/video_imports)
 on the Zype Platform.
 
-![video imports](http://i.imgur.com/t3aczbs.png)
+![video imports]({{site.url}}assets/DPT/add_videos.png)
 
 ### What you need to do in the Zype Platform
 
 1\. Visit the [Player Rule Page](https://admin.zype.com/player_rules) and click on New Player Rule
 
-![player rules](http://i.imgur.com/qDK0aoL.png)
+![player rules]({{site.url}}assets/DPT/player_rule.png)
 
 2\. Complete the Player Rules Form. You will need to know the countries and devices you want for your rule.
 Based on countries and devices, you will be given player options that can be served to the end user.
 
-![player rule form](http://i.imgur.com/nxcYd0K.png)
+![player rule form]({{site.url}}assets/DPT/player_rule_form.png)
 
 ### Using the Player API
 
@@ -52,7 +52,7 @@ Based on countries and devices, you will be given player options that can be ser
 
 2\. You can find your player key and api key using the [Zype Platform](https://admin.zype.com/site/api)
 
-![site keys](http://i.imgur.com/V7UoP3i.png?1)
+![site keys]({{site.url}}assets/API/site_key.png)
 
 3a\. To make the API call to get the appropriate player
 {% highlight ruby %}
@@ -84,7 +84,7 @@ After you've uploaded some video content to the Zype platform, log in through th
 and navigate to the logs section under the settings dropdown menu. In this post, we'll cover the request logs,
 so feel free to click on that link once you see the logs menu.  
 
-![dpt logs navigation](http://i.imgur.com/cxELdn1.png)
+![dpt logs navigation]({{site.url}}assets/Monitoring Your Views/log_navigation_1.png)
 
 ### What type of information can I see in my request logs?
 
@@ -103,7 +103,7 @@ Revenue Model	| The revenue model of the viewer
 Status	| The status of the request
 Created | The date and time the request was created
 
-![dpt logs](http://i.imgur.com/cxELdn1.png)
+![dpt logs]({{site.url}}assets/Monitoring Your Views/request_logs.png)
 
 ### How can I search the request logs data?
 
@@ -113,7 +113,7 @@ Sorting the request logs is easy: use the four drop down menus to select your se
 and then click on the search button.
 
 
-![searching logs](http://i.imgur.com/l2N4Kql.png)
+![searching logs]({{site.url}}assets/Monitoring Your Views/request_log_search_3.png)
 
 
 *Check our [previous post](http://dev.zype.com/posts/2014/10/10/adding-zype-to-rails/)

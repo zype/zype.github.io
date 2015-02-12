@@ -11,7 +11,7 @@
 ">
 
     <link rel="stylesheet" href="/css/main.css">
-    <link rel="canonical" href="http://dev.zype.com/platform_docs/subscriptions/">
+    <link rel="canonical" href="http://localhost:4000//platform_docs/subscriptions/">
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 
     <!--[if lt IE 9]>
@@ -25,7 +25,10 @@
     })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
     ga('create', 'UA-1376128-30', 'auto');
+    ga('create', 'UA-1376128-21', 'auto', {'name': 'global'});
+
     ga('send', 'pageview');
+    ga('global.send', 'pageview');
 
     </script>
 </head>
@@ -101,7 +104,7 @@ Cancelling a Subscription</a>
 In the Zype Platform, navigate to settings and enter your Stripe Secret Key.
 Your Stripe Secret Key can be found under your Stripe <a href="https://dashboard.stripe.com/account/apikeys">account settings</a>.</p>
 
-<p><img src="http://i.imgur.com/ho1jPpL.png" alt="stripe settings" /></p>
+<p><img src="http://localhost:4000/assets/Connecting Stripe/stripe_key.png" alt="stripe settings" /></p>
 
 <hr id="2" />
 
@@ -113,7 +116,7 @@ Your Stripe Secret Key can be found under your Stripe <a href="https://dashboard
 <h2 id="viewing-subscriptions">Viewing Subscriptions</h2>
 <p>To view subscriptions, go to the <a href="https://admin.zype.com/subscriptions">subscriptions page</a>.</p>
 
-<p><img src="http://i.imgur.com/WW5dmQd.png" alt="viewing subscriptions" /></p>
+<p><img src="http://localhost:4000/assets/Connecting Stripe/customer_details.png" alt="viewing subscriptions" /></p>
 
 <p>You can search by subscription and see each subscription’s consumer, plan, amount, currency,
 interval, trial period, and when it was created.</p>
@@ -125,7 +128,7 @@ interval, trial period, and when it was created.</p>
 “Subscription” on the left hand menu and click on subscriptions to get to the <a href="https://admin.zype.com/subscriptions">subscriptions page</a>.
 Then, click the red button for the subscription that you want to cancel.</p>
 
-<p><img src="http://i.imgur.com/ncUiasM.png" alt="cancelling a subscription" /></p>
+<p><img src="http://localhost:4000/assets/Connecting Stripe/delete_cust.png" alt="cancelling a subscription" /></p>
 
 <p>This will remove the subscription from Stripe.</p>
 

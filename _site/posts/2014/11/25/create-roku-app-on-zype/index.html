@@ -11,7 +11,7 @@
 ">
 
     <link rel="stylesheet" href="/css/main.css">
-    <link rel="canonical" href="http://dev.zype.com/posts/2014/11/25/create-roku-app-on-zype">
+    <link rel="canonical" href="http://localhost:4000//posts/2014/11/25/create-roku-app-on-zype">
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 
     <!--[if lt IE 9]>
@@ -25,7 +25,10 @@
     })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
     ga('create', 'UA-1376128-30', 'auto');
+    ga('create', 'UA-1376128-21', 'auto', {'name': 'global'});
+
     ga('send', 'pageview');
+    ga('global.send', 'pageview');
 
     </script>
 </head>
@@ -61,7 +64,7 @@
 video content on multiple platforms like Roku. In this tutorial, we will describe how to use
 the Zype Platform to create a Roku app that looks like the screen shot below.</p>
 
-<p><img src="http://i.imgur.com/d15uKlK.png" alt="Roku Home" /></p>
+<p><img src="http://localhost:4000/assets/Creating an App/roku.png" alt="Roku Home" /></p>
 
 <p><strong>Step 1</strong></p>
 
@@ -69,14 +72,14 @@ the Zype Platform to create a Roku app that looks like the screen shot below.</p
 video source. Don’t worry if you have videos from other sources like Hulu and YouTube.
 The Zype API can query to only show Zype Videos in your Roku App.</p>
 
-<p><img src="http://i.imgur.com/Y6ozC6J.png" alt="Video Catalogue" /></p>
+<p><img src="http://localhost:4000/assets/Creating an App/videos.png" alt="Video Catalogue" /></p>
 
 <p><strong>Step 2</strong></p>
 
 <p>Navigate to the Video Apps screen using the left hand navigation and click on the Roku
 icon to start the process of creating a new Roku App.</p>
 
-<p><img src="http://i.imgur.com/77nsysj.png" alt="Select App" /></p>
+<p><img src="http://localhost:4000/assets/Creating an App/vid_app.png" alt="Select App" /></p>
 
 <p><strong>Step 3</strong></p>
 
@@ -89,7 +92,7 @@ the colors of your Roku App any time you want from the Zype Platform. These chan
 next time your Roku App is loaded. Only the Splash Screen and the Roku Store Icons cannot
 be updated via the Zype Platform.</p>
 
-<p><img src="http://i.imgur.com/gkeHiEI.png" alt="New Roku App" /></p>
+<p><img src="http://localhost:4000/assets/Creating an App/new_video_app.png" alt="New Roku App" /></p>
 
 <p><strong>Step 4</strong></p>
 

@@ -40,7 +40,7 @@ One of the biggest strengths of the Zype Platfom is its ability to distribute yo
 video content on multiple platforms like Roku. In this tutorial, we will describe how to use
 the Zype Platform to create a Roku app that looks like the screen shot below.
 
-![Roku Home](http://i.imgur.com/d15uKlK.png)
+![Roku Home]({{site.url}}assets/Creating an App/roku.png)
 
 **Step 1**
 
@@ -48,14 +48,14 @@ Upload your videos into the Zype Platform. Roku will only serve videos from the 
 video source. Don't worry if you have videos from other sources like Hulu and YouTube.
 The Zype API can query to only show Zype Videos in your Roku App.
 
-![Video Catalogue](http://i.imgur.com/Y6ozC6J.png)
+![Video Catalogue]({{site.url}}assets/Creating an App/videos.png)
 
 **Step 2**
 
 Navigate to the Video Apps screen using the left hand navigation and click on the Roku
 icon to start the process of creating a new Roku App.
 
-![Select App](http://i.imgur.com/77nsysj.png)
+![Select App]({{site.url}}assets/Creating an App/vid_app.png)
 
 **Step 3**
 
@@ -68,7 +68,7 @@ the colors of your Roku App any time you want from the Zype Platform. These chan
 next time your Roku App is loaded. Only the Splash Screen and the Roku Store Icons cannot
 be updated via the Zype Platform.
 
-![New Roku App](http://i.imgur.com/gkeHiEI.png)
+![New Roku App]({{site.url}}assets/Creating an App/new_video_app.png)
 
 **Step 4**
 
@@ -112,9 +112,9 @@ an SD Poster that is a 214 x 144 JPG format. We call that the Image Store in our
 
 These assets get loaded via a call to the Zype API everytime the Roku Channel gets loaded.
 
-![zype roku app](http://i.imgur.com/1Cqh522.png)
+![zype roku app]({{site.url}}assets/Creating an App/roku_info.png)
 
-![zype roku app](http://i.imgur.com/lpgb3MY.png)
+![zype roku app]({{site.url}}assets/Creating an App/more_roku_info.png)
 
 1. Logo - logo used in the overhang. Suggested size is 125 x 104 pixels HD, 83 x 69 SD, PNG format.
 
@@ -140,7 +140,7 @@ republishing to the Roku Channel Store to make a change.
 
 We will be using screenshots from our sample Roku Channel to highlight what you can do.
 
-![playlists and categories](http://i.imgur.com/VVuBjU4.png)
+![playlists and categories]({{site.url}}assets/Categories, Playlists and Your Roku App/roku_playlist.png)
 
 **Featured Playlist**
 
@@ -158,7 +158,7 @@ category slider will be the next 'Genre', which is 'Comedy'.
 
 **Zobjects**
 
-![Zobjects in video detail](http://i.imgur.com/gS2W1Em.png)
+![Zobjects in video detail]({{site.url}}assets/Categories, Playlists and Your Roku App/roku_zobject.png)
 
 You also have the option to provide additional metadata about your videos in the video
 detail screen. You select one zobject to be above the description and one zobject to be
@@ -254,7 +254,7 @@ locally and are a registered Roku developer.
 
 Log into your Roku developer account and click Manage My Channels
 
-![step 1](http://i.imgur.com/K66GKpz.png)
+![step 1]({{site.url}}assets/Publishing Your Roku App/1.png)
 
 **Step 2**
 
@@ -262,26 +262,26 @@ Click add Private Channel. If you want to publish a Public Channel, click add Pu
 The steps are the same for private and public channels, except that you will need to
 give contact information in case Roku has questions when they are reviewing your app.
 
-![step 2](http://i.imgur.com/GeJiK58.png)
+![step 2]({{site.url}}assets/Publishing Your Roku App/2.png)
 
 **Step 3**
 
 Fill out Channel Properties for your channel.
 
-![step 3](http://i.imgur.com/VZDUXsL.png)
+![step 3]({{site.url}}assets/Publishing Your Roku App/3.png)
 
 **Step 4**
 
 Fill our Channel Descriptions for your channel. You will need to have an HD Poster
 that is a 290 x 218 JPEG file and an SD Poster that is a 214 x 144 JPEG file.
 
-![step 4](http://i.imgur.com/pFA3aHQ.png)
+![step 4]({{site.url}}assets/Publishing Your Roku App/4.png)
 
 **Step 5**
 
 You can optionally upload screenshots of your Roku Channel. Read the [Roku documentation](http://sdkdocs.roku.com/display/sdkdoc/Channel+Packaging+And+Publishing#ChannelPackagingAndPublishing-38GeneratingScreenshotsSincev31onRoku1andv43onRoku2) on how to generate a screenshot.
 
-![step 5](http://i.imgur.com/lMtmsak.png)
+![step 5]({{site.url}}assets/Publishing Your Roku App/5.png)
 
 **Step 6**
 
@@ -291,7 +291,7 @@ Once you have downloaded your Roku Channel package, upload the application packa
 Roku channel on your individual Roku account.
 
 
-![step 6](http://i.imgur.com/xufsqQC.png)
+![step 6]({{site.url}}assets/Publishing Your Roku App/6.png)
 
 **More tutorials in this series:**
 

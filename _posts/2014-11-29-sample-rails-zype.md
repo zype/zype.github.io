@@ -26,7 +26,7 @@ The homepage includes all of your playlists, a link in the header to view all vi
 and a search box to search for a specific video. The Playlists can be configured
 in the Zype Platform and can be fetched via the Ruby Gem.
 
-![homepage](http://i.imgur.com/XdD1n7n.png)
+![homepage]({{site.url}}assets/Walkthrough of the Zype API with a Sample Rails App/home.png)
 
 **Playlist Page**
 
@@ -35,7 +35,7 @@ the videos based on release date, name, or popularity. Also note that there are 
 and YouTube videos in the same player. The Zype Platform and Zype API allows you to
 seamlessly combine the two.
 
-![playlist page](http://i.imgur.com/uDlDPcK.png)
+![playlist page]({{site.url}}assets/Walkthrough of the Zype API with a Sample Rails App/playlist.png)
 
 
 **Browse all Videos**
@@ -44,7 +44,7 @@ The browse all videos uses the Ruby Gem to query the Zype API to get all the vid
 When you hover over a video, you will see the description. Feel free to read the [Video API Documentation](http://dev.zype.com/api_docs/videos/) to see what other information
 gtes returned when you query for the videos.
 
-![browse videos](http://i.imgur.com/ys7ZfD3.png)
+![browse videos]({{site.url}}assets/Walkthrough of the Zype API with a Sample Rails App/browse.png)
 
 **Video Page**
 
@@ -52,7 +52,7 @@ When you click on a video's thumbnail, you get directed to the video's page. The
 contains the title, description, and video player. The Zype API will deliver the appropriate
 player based on where the video source comes from and what Player Rules you set.
 
-![video page](http://i.imgur.com/EjY7wlU.png)
+![video page]({{site.url}}assets/Walkthrough of the Zype API with a Sample Rails App/video.png)
 
 Have questions about implementing our sample Rails app or want to see examples of
 other features or in other languages? Feel free to comment below!
