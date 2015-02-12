@@ -14,7 +14,7 @@ republishing to the Roku Channel Store to make a change.
 
 We will be using screenshots from our sample Roku Channel to highlight what you can do.
 
-![playlists and categories](http://i.imgur.com/VVuBjU4.png)
+![playlists and categories]({{site.url}}assets/Categories, Playlists and Your Roku App/roku_playlist.png)
 
 **Featured Playlist**
 
@@ -32,7 +32,7 @@ category slider will be the next 'Genre', which is 'Comedy'.
 
 **Zobjects**
 
-![Zobjects in video detail](http://i.imgur.com/gS2W1Em.png)
+![Zobjects in video detail]({{site.url}}assets/Categories, Playlists and Your Roku App/roku_zobject.png)
 
 You also have the option to provide additional metadata about your videos in the video
 detail screen. You select one zobject to be above the description and one zobject to be

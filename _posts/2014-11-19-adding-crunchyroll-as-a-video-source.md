@@ -15,7 +15,7 @@ As part of the announcement, we want to walk you through the setup involved and 
 
 First, let's login to the [Zype Platform](https://admin.zype.com/) and go to [Video Sources](https://admin.zype.com/video_sources). Now click on the Crunchyroll icon.
 
-![click crunchyroll](http://i.imgur.com/oSJebB6.png)
+![click crunchyroll]({{site.url}}assets/Adding Your Crunchyroll Videos to Zype/click_crunchy.png)
 
 
 
@@ -23,7 +23,7 @@ First, let's login to the [Zype Platform](https://admin.zype.com/) and go to [Vi
 
 Enter a name for your Crunchyroll Video Source (something you'll remember!) and your Crunchyroll Affiliate code (this is provided to you by Crunchyroll when you become an affiliate.)
 
-![add name and affiliate code](http://i.imgur.com/tPG2uZv.png)
+![add name and affiliate code]({{site.url}}assets/Adding Your Crunchyroll Videos to Zype/new_crunchy_source.png)
 
 
 
@@ -32,7 +32,7 @@ Enter a name for your Crunchyroll Video Source (something you'll remember!) and 
 Now sit back while we go get all of your Crunchyroll videos and add them to the Zype Platform as video imports.
 Once we've imported all of your videos you will find them under the [Video Imports](https://admin.zype.com/video_imports) tab. The last step is to create new videos from the imports or add the video imports to videos you already have on the Zype Platform.
 
-![video imports](http://i.imgur.com/tjEUtTW.png)
+![video imports]({{site.url}}assets/Adding Your Crunchyroll Videos to Zype/import_conformation.png)
 
 
 
@@ -40,4 +40,4 @@ Once we've imported all of your videos you will find them under the [Video Impor
 
 You can confirm that your videos were added by clicking on the videos tab and searching for the ones you've just added.
 
-![videos](http://i.imgur.com/1JDkFYZ.png)
+![videos]({{site.url}}assets/Adding Your Crunchyroll Videos to Zype/show_video_imports.png)

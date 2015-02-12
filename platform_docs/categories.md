@@ -58,7 +58,7 @@ republishing to the Roku Channel Store to make a change.
 
 We will be using screenshots from our sample Roku Channel to highlight what you can do.
 
-![playlists and categories](http://i.imgur.com/VVuBjU4.png)
+![playlists and categories]({{site.url}}assets/Categories, Playlists and Your Roku App/roku_playlist.png)
 
 **Featured Playlist**
 
@@ -76,7 +76,7 @@ category slider will be the next 'Genre', which is 'Comedy'.
 
 **Zobjects**
 
-![Zobjects in video detail](http://i.imgur.com/gS2W1Em.png)
+![Zobjects in video detail]({{site.url}}assets/Categories, Playlists and Your Roku App/roku_zobject.png)
 
 You also have the option to provide additional metadata about your videos in the video
 detail screen. You select one zobject to be above the description and one zobject to be
@@ -90,10 +90,10 @@ the Zobject 'Director' to be below the description.
 ## Search Filters on the Zype Platform
 If you've been busy adding video content to the [Zype Platform](http://admin.zype.com) and creating playlists, you might be at the point where you've got a few pages of each. To help you better manage your content, we've added a set of filters to the videos and playlists pages:
 
-![video filtering](http://i.imgur.com/BOCwSVG.png)
+![video filtering]({{site.url}}assets/Search Filters on the Zype Platform/video_lib.png)
 
 
-![playlist filtering](http://i.imgur.com/CVg7VSJ.png)
+![playlist filtering]({{site.url}}assets/Search Filters on the Zype Platform/playlist_search.png)
 
 
 The filter buttons let you select as many parameters for your search as you'd like. Each button has a dropdown you can use to select a value to search by. The default search options are the categories you've created for your site and "Active" (whether or not the video is marked as active). You can create and manage your categories [here.](https://admin.zype.com/categories)

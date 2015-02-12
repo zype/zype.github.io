@@ -11,7 +11,7 @@
 ">
 
     <link rel="stylesheet" href="/css/main.css">
-    <link rel="canonical" href="http://dev.zype.com/posts/2014/10/17/dpt-from-scratch">
+    <link rel="canonical" href="http://localhost:4000//posts/2014/10/17/dpt-from-scratch">
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 
     <!--[if lt IE 9]>
@@ -25,7 +25,10 @@
     })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
     ga('create', 'UA-1376128-30', 'auto');
+    ga('create', 'UA-1376128-21', 'auto', {'name': 'global'});
+
     ga('send', 'pageview');
+    ga('global.send', 'pageview');
 
     </script>
 </head>
@@ -70,18 +73,18 @@ that you want to create player rules for.</p>
 <p>1. Make sure you have imported your videos into your <a href="https://admin.zype.com/video_imports">video catalogue</a>
 on the Zype Platform.</p>
 
-<p><img src="http://i.imgur.com/t3aczbs.png" alt="video imports" /></p>
+<p><img src="http://localhost:4000/assets/DPT/add_videos.png" alt="video imports" /></p>
 
 <h3 id="what-you-need-to-do-in-the-zype-platform">What you need to do in the Zype Platform</h3>
 
 <p>1. Visit the <a href="https://admin.zype.com/player_rules">Player Rule Page</a> and click on New Player Rule</p>
 
-<p><img src="http://i.imgur.com/qDK0aoL.png" alt="player rules" /></p>
+<p><img src="http://localhost:4000/assets/DPT/player_rule.png" alt="player rules" /></p>
 
 <p>2. Complete the Player Rules Form. You will need to know the countries and devices you want for your rule.
 Based on countries and devices, you will be given player options that can be served to the end user.</p>
 
-<p><img src="http://i.imgur.com/nxcYd0K.png" alt="player rule form" /></p>
+<p><img src="http://localhost:4000/assets/DPT/player_rule_form.png" alt="player rule form" /></p>
 
 <h3 id="using-the-player-api">Using the Player API</h3>
 
@@ -89,7 +92,7 @@ Based on countries and devices, you will be given player options that can be ser
 
 <p>2. You can find your player key and api key using the <a href="https://admin.zype.com/site/api">Zype Platform</a></p>
 
-<p><img src="http://i.imgur.com/V7UoP3i.png?1" alt="site keys" /></p>
+<p><img src="http://localhost:4000/assets/API/site_key.png" alt="site keys" /></p>
 
 <p>3a. To make the API call to get the appropriate player</p>
 

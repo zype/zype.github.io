@@ -79,18 +79,19 @@ that you want to create player rules for.
 1\. Make sure you have imported your videos into your [video catalogue](https://admin.zype.com/video_imports)
 on the Zype Platform.
 
-![video imports](http://i.imgur.com/t3aczbs.png)
+![video imports]({{site.url}}assets/DPT/add_videos.png)
+
 
 ### What you need to do in the Zype Platform
 
 1\. Visit the [Player Rule Page](https://admin.zype.com/player_rules) and click on New Player Rule
 
-![player rules](http://i.imgur.com/qDK0aoL.png)
+![player rules]({{site.url}}assets/DPT/player_rule.png)
 
 2\. Complete the Player Rules Form. You will need to know the countries and devices you want for your rule.
 Based on countries and devices, you will be given player options that can be served to the end user.
 
-![player rule form](http://i.imgur.com/nxcYd0K.png)
+![player rule form]({{site.url}}assets/DPT/player_rule_form.png)
 
 ### Using the Player API
 
@@ -98,7 +99,7 @@ Based on countries and devices, you will be given player options that can be ser
 
 2\. You can find your player key and api key using the [Zype Platform](https://admin.zype.com/site/api)
 
-![site keys](http://i.imgur.com/V7UoP3i.png?1)
+![site keys]({{site.url}}assets/API/site_key.png)
 
 3a\. To make the API call to get the appropriate player
 {% highlight ruby %}
@@ -129,7 +130,7 @@ After you've uploaded some video content to the Zype platform, log in through th
 and navigate to the logs section under the settings dropdown menu. In this post, we'll cover the request logs,
 so feel free to click on that link once you see the logs menu.  
 
-![dpt logs navigation](http://i.imgur.com/cxELdn1.png)
+![dpt logs navigation]({{site.url}}assets/Monitoring Your Views/log_navigation_1.png)
 
 ### What type of information can I see in my request logs?
 
@@ -148,7 +149,7 @@ Revenue Model	| The revenue model of the viewer
 Status	| The status of the request
 Created | The date and time the request was created
 
-![dpt logs](http://i.imgur.com/AULsF7q.png)
+![dpt logs]({{site.url}}assets/Monitoring Your Views/request_logs.png)
 
 ### How can I search the request logs data?
 
@@ -158,7 +159,7 @@ Sorting the request logs is easy: use the four drop down menus to select your se
 and then click on the search button.
 
 
-![searching logs](http://i.imgur.com/l2N4Kql.png)
+![searching logs]({{site.url}}assets/Monitoring Your Views/request_log_search_3.png)
 
 
 *Check our [previous post](http://dev.zype.com/posts/2014/10/10/adding-zype-to-rails/)
@@ -172,7 +173,7 @@ additional content based on what your users are watching. The solution we've imp
 In this post, we'll be covering how to create a playlist of related videos that are recommended to a viewer
 based on what the video they're watching. Here's an example of the finished product:
 
-![related playlist](http://i.imgur.com/wPXZ772.png)
+![related playlist]({{site.url}}assets/Related Playlists/related_playlists.png)
 
 *The related videos section is automatically created for each video on your site, but if you'd like to be more
 specific about which videos are displayed there, follow along as we set up a playlist of related videos.*
@@ -182,25 +183,25 @@ specific about which videos are displayed there, follow along as we set up a pla
 Setting up the playlist can be done from the [admin portal](http://admin.zype.com/). Navigate to the playlist
 section on the sidebar and and click "New Playlist". Follow through the menu and create a playlist (make sure it's active!).
 
-![playlist navigation](http://i.imgur.com/oXi3Dlg.png)
+![playlist navigation]({{site.url}}assets/Related Playlists/playlist_navigation_2.png)
 
 ### How can I choose which videos are shown in the playlist?
 
 This is an easy one. Use the "Add Videos" button to select which videos will appear under the related videos section.
 
-![add videos navigation](http://i.imgur.com/hMAkhgQ.png)
+![add videos navigation]({{site.url}}assets/Related Playlists/add_videos_playlist_3.png)
 
 ### How can I choose which videos display the playlist?
 
 Choosing the videos that will have your playlist displayed is done through the playlist edit screen. You can get there
 quickly by clicking on the name of your playlist here:
 
-![edit your playlist](http://i.imgur.com/XSvwXVR.png)
+![edit your playlist]({{site.url}}assets/Related Playlists/save_your_playlist_4.png)
 
 Use our multiselector to search for the videos you want and click on them to move them into selected videos.
 Click "Save Changes" when you're done.
 
-![choose related videos](http://i.imgur.com/WRtRv8m.png)
+![choose related videos]({{site.url}}assets/Related Playlists/choose_related_videos_5.png)
 
 ### Let's confirm
 
@@ -222,14 +223,14 @@ The easiest way to add a video to your video library is to upload a video to the
 
 Go to Uploads, click the upload button, and select the video that you want from your computer.
 
-![click upload](http://i.imgur.com/QYeRw0M.png)
+![click upload]({{site.url}}assets/Uploading Videos to the Zype Platform from the Web/upload_video_1.png)
 
 **Step 2:**
 
 When the video is finished uploading, click add video. This will start to transcode your video.
 All uploaded videos will need to be transcoded before being able to be viewed.
 
-![add video](http://i.imgur.com/HwdBdwV.png)
+![add video]({{site.url}}assets/Uploading Videos to the Zype Platform from the Web/add_video_import_button.png)
 
 <hr id="5">
 
@@ -240,7 +241,7 @@ We're happy to provide you with a simple and powerful for importing your Vimeo v
 
 Go to Video Sources and click on the Vimeo icon.
 
-![click vimeo](http://i.imgur.com/pJl7zpM.png)
+![click vimeo]({{site.url}}assets/Adding Videos from a Vimeo Channel, Group or User/click_vimeo.png)
 
 **Step 2:**
 
@@ -259,11 +260,11 @@ https://vimeo.com/groups/animation
 
 First, go to Vimeo and copy the link:
 
-![copy your link](http://i.imgur.com/OSqBvPI.png)
+![copy your link]({{site.url}}assets/Adding Videos from a Vimeo Channel, Group or User/vimeo_copy.png)
 
 Then paste the link into the Vimeo Source form:
 
-![paste your link](http://i.imgur.com/t4wdD8f.png)
+![paste your link]({{site.url}}assets/Adding Videos from a Vimeo Channel, Group or User/paste_your_link.png)
 
 Then click the 'Save Changes' button.
 
@@ -272,7 +273,7 @@ Then click the 'Save Changes' button.
 
 If everything went according to plan, you can see your new video imports by clicking on the green 'Video Imports' button.
 
-![video imports button](http://i.imgur.com/xeeQFLq.png)
+![video imports button]({{site.url}}assets/Adding Videos from a Vimeo Channel, Group or User/video_imports_button.png)
 
 <hr id="6">
 
@@ -280,23 +281,23 @@ If everything went according to plan, you can see your new video imports by clic
 Check out the [Video Imports Screen](http://admin.zype.com/video_imports) and click on the "Add  Video Import" button to get started.
 
 
-![navigate to form](http://i.imgur.com/HK2qF8X.png)
+![navigate to form]({{site.url}}assets/Adding Vimeo Video from a URL/import_videos.png)
 
 
 The next step is to copy a URL from Vimeo that shows the video you want to add.
 
 
-![copy url](http://i.imgur.com/zbYIO83.png)
+![copy url]({{site.url}}assets/Adding Vimeo Video from a URL/copy_url.png)
 
 
 Paste the URL into the field on this page and click "Add Video Import".
 
 
-![paste url](http://i.imgur.com/tuGK2MG.png)
+![paste url]({{site.url}}assets/Adding Vimeo Video from a URL/paste_your_url.png)
 
 Then click the 'Save Changes' button.
 
-![save changes](http://i.imgur.com/OPt5Rvo.png)
+![save changes]({{site.url}}assets/Adding Vimeo Video from a URL/save_changes.png)
 
 If everything went according to plan, you should see the video imports screen again, with a new import from the link you provided. If you're interested in grabbing a bunch of videos from Vimeo, you may want to follow our guides under [Adding Videos.](http://dev.zype.com/platform_docs/adding_videos/)
 
@@ -312,14 +313,14 @@ process. Now you can search for a YouTube Channel from the Zype Platform and we 
 
 Go to Video Sources and click on the YouTube icon.
 
-![click youtube](http://i.imgur.com/xJoXbpp.png)
+![click youtube]({{site.url}}assets/Adding Videos from a YouTube Channel to the Zype Platform/click_youtube.png)
 
 **Step 2:**
 
 Enter a name for your YouTube Video Source (something to help you remember it!) and click the
 Search YouTube Channels button
 
-![search youtube channels](http://i.imgur.com/Ly24GBg.png)
+![search youtube channels]({{site.url}}assets/Adding Videos from a YouTube Channel to the Zype Platform/search_youtube_channel.png)
 
 **Step 3:**
 
@@ -327,21 +328,21 @@ Enter the channel name that you are searching for and click Search. You will be
 given a list of YouTube Channels that match your search criteria. Click the Select Channel
 button for the YouTube Channel that you want to add.
 
-![click select channel](http://i.imgur.com/hpAfMu8.png)
+![click select channel]({{site.url}}assets/Adding Videos from a YouTube Channel to the Zype Platform/select_channel.png)
 
 **Step 4:**
 
 This will prepopulate the Channel ID for you. All you need to do is click Save Changes
 and the Zype Platform will start to import all of the videos from the channel that you selected!
 
-![click submit](http://i.imgur.com/fszuPQu.png)
+![click submit]({{site.url}}assets/Adding Videos from a YouTube Channel to the Zype Platform/youtube_save_changes.png)
 
 **Step 5:**
 
 Your imported videos are in your import videos page. You can add videos to your catalogue
 from there.
 
-![import videos](http://i.imgur.com/ZKliLxG.png)
+![import videos]({{site.url}}assets/Adding Videos from a YouTube Channel to the Zype Platform/add_video.png)
 
 <hr id="8">
 
@@ -351,19 +352,19 @@ We're happy to announce that the [Zype Platform](http://admin.zype.com) now gran
 Check out the [Video Imports Screen](http://admin.zype.com/video_imports) and click on the "Add a YouTube Video Import" button to get started.
 
 
-![navigate to form](http://i.imgur.com/4lSzNBt.png)
+![navigate to form]({{site.url}}assets/Adding YouTube Video from a URL/add_video_imports_1.png)
 
 
 The next step is to copy a URL from YouTube that shows the video you want to add.
 
 
-![copy url](http://i.imgur.com/QdHp2nM.png)
+![copy url]({{site.url}}assets/Adding YouTube Video from a URL/copy_url.png)
 
 
 Paste the URL into the field on this page and click "Add Video Import".
 
 
-![paste url](http://i.imgur.com/jtREFxL.png)
+![paste url]({{site.url}}assets/Adding YouTube Video from a URL/paste_url.png)
 
 
 If everything went according to plan, you should see the video imports screen again, with a new import from the link you provided. If you're interested in grabbing a bunch of videos from YouTube, you may want to follow our guides under [Adding Videos.](http://dev.zype.com/platform_docs/adding_videos/)
@@ -381,7 +382,7 @@ As part of the announcement, we want to walk you through the setup involved and 
 
 First, let's login to the [Zype Platform](https://admin.zype.com/) and go to [Video Sources](https://admin.zype.com/video_sources). Now click on the Crunchyroll icon.
 
-![click crunchyroll](http://i.imgur.com/oSJebB6.png)
+![click crunchyroll]({{site.url}}assets/Adding Your Crunchyroll Videos to Zype/click_crunchy.png)
 
 
 
@@ -389,7 +390,7 @@ First, let's login to the [Zype Platform](https://admin.zype.com/) and go to [Vi
 
 Enter a name for your Crunchyroll Video Source (something you'll remember!) and your Crunchyroll Affiliate code (this is provided to you by Crunchyroll when you become an affiliate.)
 
-![add name and affiliate code](http://i.imgur.com/tPG2uZv.png)
+![add name and affiliate code]({{site.url}}assets/Adding Your Crunchyroll Videos to Zype/new_crunchy_source.png)
 
 
 
@@ -398,7 +399,7 @@ Enter a name for your Crunchyroll Video Source (something you'll remember!) and 
 Now sit back while we go get all of your Crunchyroll videos and add them to the Zype Platform as video imports.
 Once we've imported all of your videos you will find them under the [Video Imports](https://admin.zype.com/video_imports) tab. The last step is to create new videos from the imports or add the video imports to videos you already have on the Zype Platform.
 
-![video imports](http://i.imgur.com/tjEUtTW.png)
+![video imports]({{site.url}}assets/Adding Your Crunchyroll Videos to Zype/import_conformation.png)
 
 
 
@@ -406,7 +407,7 @@ Once we've imported all of your videos you will find them under the [Video Impor
 
 You can confirm that your videos were added by clicking on the videos tab and searching for the ones you've just added.
 
-![videos](http://i.imgur.com/1JDkFYZ.png)
+![videos]({{site.url}}assets/Adding Your Crunchyroll Videos to Zype/show_video_imports.png)
 
 <hr id="10">
 
@@ -417,7 +418,7 @@ We're rolling out a bunch of new ways to add video content to the Zype Platform,
 
 First, you'll need to download and set up the Zype CLI. You can find the tool on [gitHub](https://github.com/edla/zype-cli).
 
-![gitHub](http://i.imgur.com/ZC3mLEs.png)
+![gitHub]({{site.url}}assets/Uploading Videos to Zype Using Our Ruby Gem/copy_clone.png)
 
 You'll need to clone down the repo, then run the following commands:
 
@@ -434,7 +435,7 @@ You can confirm that your installation succeeded by entering
 
 which will display a list of available commands for the Zype CLI. Remember this command in case you have questions about what the Zype CLI can do!
 
-![CLI Interface](http://i.imgur.com/YZ8gcJl.png)
+![CLI Interface]({{site.url}}assets/Uploading Videos to Zype Using Our Ruby Gem/commands.png)
 
 
 ### Logging in through the Zype CLI
@@ -464,13 +465,13 @@ If you have multiple subdirectories that contain videos, you can pass in a wildc
 
 Now sit back while we upload all of your videos and add them to the Zype Platform as video imports. Once we've imported all of your videos you will find them under the [Video Imports](https://admin.zype.com/video_imports) tab. The last step is to create new videos from the imports or add the video imports to videos you already have on the Zype Platform.
 
-![video imports](http://i.imgur.com/tjEUtTW.png)
+![video imports]({{site.url}}assets/Uploading Videos to Zype Using Our Ruby Gem/imports.png)
 
 ### Confirm
 
 You can confirm that your videos were added by clicking on the videos tab and searching for the ones you've just added.
 
-![videos](http://i.imgur.com/1JDkFYZ.png)
+![videos]({{site.url}}assets/Uploading Videos to Zype Using Our Ruby Gem/confirm.png)
 
 <hr id="11">
 
@@ -496,7 +497,7 @@ The homepage includes all of your playlists, a link in the header to view all vi
 and a search box to search for a specific video. The Playlists can be configured
 in the Zype Platform and can be fetched via the Ruby Gem.
 
-![homepage](http://i.imgur.com/XdD1n7n.png)
+![homepage]({{site.url}}assets/Walkthrough of the Zype API with a Sample Rails App/home.png)
 
 **Playlist Page**
 
@@ -505,7 +506,7 @@ the videos based on release date, name, or popularity. Also note that there are 
 and YouTube videos in the same player. The Zype Platform and Zype API allows you to
 seamlessly combine the two.
 
-![playlist page](http://i.imgur.com/uDlDPcK.png)
+![playlist page]({{site.url}}assets/Walkthrough of the Zype API with a Sample Rails App/playlist.png)
 
 
 **Browse all Videos**
@@ -514,7 +515,7 @@ The browse all videos uses the Ruby Gem to query the Zype API to get all the vid
 When you hover over a video, you will see the description. Feel free to read the [Video API Documentation](http://dev.zype.com/api_docs/videos/) to see what other information
 gtes returned when you query for the videos.
 
-![browse videos](http://i.imgur.com/ys7ZfD3.png)
+![browse videos]({{site.url}}assets/Walkthrough of the Zype API with a Sample Rails App/browse.png)
 
 **Video Page**
 
@@ -522,7 +523,7 @@ When you click on a video's thumbnail, you get directed to the video's page. The
 contains the title, description, and video player. The Zype API will deliver the appropriate
 player based on where the video source comes from and what Player Rules you set.
 
-![video page](http://i.imgur.com/EjY7wlU.png)
+![video page]({{site.url}}assets/Walkthrough of the Zype API with a Sample Rails App/video.png)
 
 Have questions about implementing our sample Rails app or want to see examples of
 other features or in other languages? Feel free to comment below!
@@ -538,14 +539,14 @@ will map out how to embed a video uploaded to the Zype Platform on any webpage.
 
 Navigate to your video's page and click on the Embed Code tab.
 
-![Go to Embed Code](http://i.imgur.com/4LcF8Lf.png)
+![Go to Embed Code]({{site.url}}assets/Embedding a Player on Your Site/embed_tab.png)
 
 
 **Step 2**
 
 Copy the embed code.
 
-![Copy Embed Code](http://i.imgur.com/jvHwsnU.png)
+![Copy Embed Code]({{site.url}}assets/Embedding a Player on Your Site/click_copy_clip.png)
 
 **Step 3**
 
@@ -568,10 +569,10 @@ are optional.
 ## Search Filters on the Zype Platform
 If you've been busy adding video content to the [Zype Platform](http://admin.zype.com) and creating playlists, you might be at the point where you've got a few pages of each. To help you better manage your content, we've added a set of filters to the videos and playlists pages:
 
-![video filtering](http://i.imgur.com/BOCwSVG.png)
+![video filtering]({{site.url}}assets/Search Filters on the Zype Platform/video_lib.png)
 
 
-![playlist filtering](http://i.imgur.com/CVg7VSJ.png)
+![playlist filtering]({{site.url}}assets/Search Filters on the Zype Platform/playlist_search.png)
 
 
 The filter buttons let you select as many parameters for your search as you'd like. Each button has a dropdown you can use to select a value to search by. The default search options are the categories you've created for your site and "Active" (whether or not the video is marked as active). You can create and manage your categories [here.](https://admin.zype.com/categories)

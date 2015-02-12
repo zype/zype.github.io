@@ -4,10 +4,10 @@
     <title>Zype Dev Portal</title>
     <description>This is the devloper portal for Zype Media. Zype is Revenue and Reach Magic for Online Video. We help content owners deliver fully branded video experiences.
 </description>
-    <link>http://dev.zype.com/</link>
-    <atom:link href="http://dev.zype.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Tue, 27 Jan 2015 17:26:22 -0500</pubDate>
-    <lastBuildDate>Tue, 27 Jan 2015 17:26:22 -0500</lastBuildDate>
+    <link>http://localhost:4000//</link>
+    <atom:link href="http://localhost:4000//feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Thu, 12 Feb 2015 14:04:25 -0500</pubDate>
+    <lastBuildDate>Thu, 12 Feb 2015 14:04:25 -0500</lastBuildDate>
     <generator>Jekyll v2.3.0</generator>
     
       <item>
@@ -16,21 +16,21 @@
 
 &lt;p&gt;Check out the &lt;a href=&quot;http://admin.zype.com/video_imports&quot;&gt;Video Imports Screen&lt;/a&gt; and click on the “Add a YouTube Video Import” button to get started.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/4lSzNBt.png&quot; alt=&quot;navigate to form&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/Adding YouTube Video from a URL/add_video_imports_1.png&quot; alt=&quot;navigate to form&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;The next step is to copy a URL from YouTube that shows the video you want to add.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/QdHp2nM.png&quot; alt=&quot;copy url&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/Adding YouTube Video from a URL/copy_url.png&quot; alt=&quot;copy url&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Paste the URL into the field on this page and click “Add Video Import”.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/jtREFxL.png&quot; alt=&quot;paste url&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/Adding YouTube Video from a URL/paste_url.png&quot; alt=&quot;paste url&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;If everything went according to plan, you should see the video imports screen again, with a new import from the link you provided. If you’re interested in grabbing a bunch of videos from YouTube, you may want to follow our guides under &lt;a href=&quot;http://dev.zype.com/platform_docs/adding_videos/&quot;&gt;Adding Videos.&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Thu, 25 Dec 2014 21:16:55 -0500</pubDate>
-        <link>http://dev.zype.com/posts/2014/12/25/adding-youtube-embeds</link>
-        <guid isPermaLink="true">http://dev.zype.com/posts/2014/12/25/adding-youtube-embeds</guid>
+        <link>http://localhost:4000//posts/2014/12/25/adding-youtube-embeds</link>
+        <guid isPermaLink="true">http://localhost:4000//posts/2014/12/25/adding-youtube-embeds</guid>
         
         
         <category>platform</category>
@@ -41,11 +41,11 @@
         <title>Filtering Videos and Playlists</title>
         <description>&lt;p&gt;If you’ve been busy adding video content to the &lt;a href=&quot;http://admin.zype.com&quot;&gt;Zype Platform&lt;/a&gt; and creating playlists, you might be at the point where you’ve got a few pages of each. To help you better manage your content, we’ve added a set of filters to the videos and playlists pages:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/BOCwSVG.png&quot; alt=&quot;video filtering&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/Search Filters on the Zype Platform/video_lib.png&quot; alt=&quot;video filtering&quot; /&gt;&lt;/p&gt;
 
 &lt;hr /&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/CVg7VSJ.png&quot; alt=&quot;playlist filtering&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/Search Filters on the Zype Platform/playlist_search.png&quot; alt=&quot;playlist filtering&quot; /&gt;&lt;/p&gt;
 
 &lt;hr /&gt;
 
@@ -60,8 +60,8 @@
 &lt;p&gt;Check out our previous blog post on &lt;a href=&quot;http://dev.zype.com/posts/2014/12/04/defining-categories-and-playlists/&quot;&gt;defining categories and playlists&lt;/a&gt;, if you have questions about getting started.&lt;/p&gt;
 </description>
         <pubDate>Wed, 10 Dec 2014 07:16:55 -0500</pubDate>
-        <link>http://dev.zype.com/posts/2014/12/10/filtering-videos-and-playlists</link>
-        <guid isPermaLink="true">http://dev.zype.com/posts/2014/12/10/filtering-videos-and-playlists</guid>
+        <link>http://localhost:4000//posts/2014/12/10/filtering-videos-and-playlists</link>
+        <guid isPermaLink="true">http://localhost:4000//posts/2014/12/10/filtering-videos-and-playlists</guid>
         
         
         <category>platform</category>
@@ -72,15 +72,15 @@
         <title>Using Embed Codes on Your Site</title>
         <description>&lt;p&gt;We’re happy to announce that the &lt;a href=&quot;http://admin.zype.com&quot;&gt;Zype Platform&lt;/a&gt; now grants you the power to “grab and go” with embed codes! Each video that you add to the platform has a snippet of code located under the Embed Code tab. You can navigate to the tab by finding a video that you want to embed and clicking on the edit button. The tab appears along the top of the menu.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/V3LoUYw.png&quot; alt=&quot;embed code&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/Embedding a Player on Your Site/embed_tab.png&quot; alt=&quot;Go to Embed Code&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;The embed codes are designed to be dropped into a webpage, wherever you need them. The div id must remain the same, but other than that, you’re free to do as you please. As the page states, we recommend that you include the javascript portion of the embed code before the closing body tag on the page.&lt;/p&gt;
 
 &lt;p&gt;We hope you use this feature to get up and running with Zype videos on your site in the blink of an eye!&lt;/p&gt;
 </description>
         <pubDate>Sun, 07 Dec 2014 23:16:55 -0500</pubDate>
-        <link>http://dev.zype.com/posts/2014/12/07/using-embed-codes</link>
-        <guid isPermaLink="true">http://dev.zype.com/posts/2014/12/07/using-embed-codes</guid>
+        <link>http://localhost:4000//posts/2014/12/07/using-embed-codes</link>
+        <guid isPermaLink="true">http://localhost:4000//posts/2014/12/07/using-embed-codes</guid>
         
         
         <category>platform</category>
@@ -101,11 +101,11 @@ Lastly, we will associate John Boyega with the Star Wars trailer.&lt;/p&gt;
 to define the your zobject data structure. You can access zobject types using the
 settings toolbar at the top of your dashboard.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/tlg7ik8.png&quot; alt=&quot;zobject type settings&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/Zobjects/nav_zobject.png&quot; alt=&quot;zobject type settings&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;We will call our zobject type actor so that it is easy to reference.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/tEzQf7F.png&quot; alt=&quot;zobject type title&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/Zobjects/new_zobject.png&quot; alt=&quot;zobject type title&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;For our actor zobject, we need a field for name, which is a string.
 You can use any familiar data structure when creating a zobject type.
@@ -113,35 +113,35 @@ You can access zobject types using the settings toolbar at the top of your dashb
 click the button Add Attribute. You can always return to this page to add additional
 attributes.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/DOq76qY.png&quot; alt=&quot;zobject type add attribute&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/Zobjects/new_attribute.png&quot; alt=&quot;zobject type add attribute&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Step 2: Add an Actor Zobject John Boyega for the Zobject Type Actor&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;Click on your Zobject in the right hand navigation or via the appropriate tile on
 the dashboard home screen.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/kA0xlr7.png&quot; alt=&quot;access zobject&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/Zobjects/actors_nav.png&quot; alt=&quot;access zobject&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Next, click on ‘Add New Actor’. You will be prompted to fill out all the information
 that you laid out when you created your zobject type. We have included keyword
 and description as additional fields that you can leave blank.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/oSewGUE.png&quot; alt=&quot;insert actor info&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/Zobjects/stallone_actor.png&quot; alt=&quot;insert actor info&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Step 3: Link the Zobject to the Video&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;Click on the Videos tab to associate videos with the actor&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/mRdieLV.png&quot; alt=&quot;associate videos&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/Zobjects/select_movie.png&quot; alt=&quot;associate videos&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Once you click save, your zobject will be associated with that video! You can double
 check by going to the video and looking at its metadata.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/bkPlwIV.png&quot; alt=&quot;video metadata&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/Zobjects/video_assoc.png&quot; alt=&quot;video metadata&quot; /&gt;&lt;/p&gt;
 </description>
         <pubDate>Thu, 04 Dec 2014 07:37:55 -0500</pubDate>
-        <link>http://dev.zype.com/posts/2014/12/04/zobjects-in-the-zype-platform</link>
-        <guid isPermaLink="true">http://dev.zype.com/posts/2014/12/04/zobjects-in-the-zype-platform</guid>
+        <link>http://localhost:4000//posts/2014/12/04/zobjects-in-the-zype-platform</link>
+        <guid isPermaLink="true">http://localhost:4000//posts/2014/12/04/zobjects-in-the-zype-platform</guid>
         
         
         <category>developers</category>
@@ -172,8 +172,8 @@ videos. Common categories for video content might include: Genre, Tag, Type, Sea
 videos. For an in-depth guide on how to create your Roku App, make sure you check out &lt;a href=&quot;http://dev.zype.com/posts/2014/12/03/categories-playlists-zobjects-roku/&quot;&gt;this blog post&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Thu, 04 Dec 2014 06:16:55 -0500</pubDate>
-        <link>http://dev.zype.com/posts/2014/12/04/defining-categories-and-playlists</link>
-        <guid isPermaLink="true">http://dev.zype.com/posts/2014/12/04/defining-categories-and-playlists</guid>
+        <link>http://localhost:4000//posts/2014/12/04/defining-categories-and-playlists</link>
+        <guid isPermaLink="true">http://localhost:4000//posts/2014/12/04/defining-categories-and-playlists</guid>
         
         
         <category>platform</category>
@@ -215,9 +215,9 @@ an SD Poster that is a 214 x 144 JPG format. We call that the Image Store in our
 
 &lt;p&gt;These assets get loaded via a call to the Zype API everytime the Roku Channel gets loaded.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/1Cqh522.png&quot; alt=&quot;zype roku app&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/Creating an App/roku_info.png&quot; alt=&quot;zype roku app&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/lpgb3MY.png&quot; alt=&quot;zype roku app&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/Creating an App/more_roku_info.png&quot; alt=&quot;zype roku app&quot; /&gt;&lt;/p&gt;
 
 &lt;ol&gt;
   &lt;li&gt;
@@ -241,8 +241,8 @@ an SD Poster that is a 214 x 144 JPG format. We call that the Image Store in our
 &lt;/ol&gt;
 </description>
         <pubDate>Wed, 03 Dec 2014 07:37:55 -0500</pubDate>
-        <link>http://dev.zype.com/posts/2014/12/03/zype-roku-assets</link>
-        <guid isPermaLink="true">http://dev.zype.com/posts/2014/12/03/zype-roku-assets</guid>
+        <link>http://localhost:4000//posts/2014/12/03/zype-roku-assets</link>
+        <guid isPermaLink="true">http://localhost:4000//posts/2014/12/03/zype-roku-assets</guid>
         
         
         <category>developers</category>
@@ -260,7 +260,7 @@ republishing to the Roku Channel Store to make a change.&lt;/p&gt;
 
 &lt;p&gt;We will be using screenshots from our sample Roku Channel to highlight what you can do.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/VVuBjU4.png&quot; alt=&quot;playlists and categories&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/Categories, Playlists and Your Roku App/roku_playlist.png&quot; alt=&quot;playlists and categories&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Featured Playlist&lt;/strong&gt;&lt;/p&gt;
 
@@ -278,7 +278,7 @@ category slider will be the next ‘Genre’, which is ‘Comedy’.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Zobjects&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/gS2W1Em.png&quot; alt=&quot;Zobjects in video detail&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/Categories, Playlists and Your Roku App/roku_zobject.png&quot; alt=&quot;Zobjects in video detail&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;You also have the option to provide additional metadata about your videos in the video
 detail screen. You select one zobject to be above the description and one zobject to be
@@ -287,8 +287,8 @@ and it lists the actors that we have associated with the video. Similarly, we se
 the Zobject ‘Director’ to be below the description.&lt;/p&gt;
 </description>
         <pubDate>Wed, 03 Dec 2014 05:37:55 -0500</pubDate>
-        <link>http://dev.zype.com/posts/2014/12/03/categories-playlists-zobjects-roku</link>
-        <guid isPermaLink="true">http://dev.zype.com/posts/2014/12/03/categories-playlists-zobjects-roku</guid>
+        <link>http://localhost:4000//posts/2014/12/03/categories-playlists-zobjects-roku</link>
+        <guid isPermaLink="true">http://localhost:4000//posts/2014/12/03/categories-playlists-zobjects-roku</guid>
         
         
         <category>developers</category>
@@ -304,23 +304,23 @@ tutorial will show you how to find these keys from the Zype Platform.&lt;/p&gt;
 
 &lt;p&gt;Click the settings icon in the top navbar.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/MZmuINU.png&quot; alt=&quot;click settings&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/API Blog/1.png&quot; alt=&quot;click settings&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Step 2&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;In the dropdown, select API&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/6CIjtZG.png&quot; alt=&quot;select API&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/API Blog/2.png&quot; alt=&quot;select API&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Step 3&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;You will be directed to the API credentials page.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/x3W3bYG.png&quot; alt=&quot;api player keys&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/API Blog/3.png&quot; alt=&quot;api player keys&quot; /&gt;&lt;/p&gt;
 </description>
         <pubDate>Mon, 01 Dec 2014 07:37:55 -0500</pubDate>
-        <link>http://dev.zype.com/posts/2014/12/01/api-keys</link>
-        <guid isPermaLink="true">http://dev.zype.com/posts/2014/12/01/api-keys</guid>
+        <link>http://localhost:4000//posts/2014/12/01/api-keys</link>
+        <guid isPermaLink="true">http://localhost:4000//posts/2014/12/01/api-keys</guid>
         
         
         <category>developers</category>
@@ -350,7 +350,7 @@ to how you can find your keys.&lt;/p&gt;
 and a search box to search for a specific video. The Playlists can be configured
 in the Zype Platform and can be fetched via the Ruby Gem.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/XdD1n7n.png&quot; alt=&quot;homepage&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/Walkthrough of the Zype API with a Sample Rails App/home.png&quot; alt=&quot;homepage&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Playlist Page&lt;/strong&gt;&lt;/p&gt;
 
@@ -359,7 +359,7 @@ the videos based on release date, name, or popularity. Also note that there are 
 and YouTube videos in the same player. The Zype Platform and Zype API allows you to
 seamlessly combine the two.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/uDlDPcK.png&quot; alt=&quot;playlist page&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/Walkthrough of the Zype API with a Sample Rails App/playlist.png&quot; alt=&quot;playlist page&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Browse all Videos&lt;/strong&gt;&lt;/p&gt;
 
@@ -367,7 +367,7 @@ seamlessly combine the two.&lt;/p&gt;
 When you hover over a video, you will see the description. Feel free to read the &lt;a href=&quot;http://dev.zype.com/api_docs/videos/&quot;&gt;Video API Documentation&lt;/a&gt; to see what other information
 gtes returned when you query for the videos.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/ys7ZfD3.png&quot; alt=&quot;browse videos&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/Walkthrough of the Zype API with a Sample Rails App/browse.png&quot; alt=&quot;browse videos&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Video Page&lt;/strong&gt;&lt;/p&gt;
 
@@ -375,14 +375,14 @@ gtes returned when you query for the videos.&lt;/p&gt;
 contains the title, description, and video player. The Zype API will deliver the appropriate
 player based on where the video source comes from and what Player Rules you set.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/EjY7wlU.png&quot; alt=&quot;video page&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/Walkthrough of the Zype API with a Sample Rails App/video.png&quot; alt=&quot;video page&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Have questions about implementing our sample Rails app or want to see examples of
 other features or in other languages? Feel free to comment below!&lt;/p&gt;
 </description>
         <pubDate>Sat, 29 Nov 2014 07:37:55 -0500</pubDate>
-        <link>http://dev.zype.com/posts/2014/11/29/sample-rails-zype</link>
-        <guid isPermaLink="true">http://dev.zype.com/posts/2014/11/29/sample-rails-zype</guid>
+        <link>http://localhost:4000//posts/2014/11/29/sample-rails-zype</link>
+        <guid isPermaLink="true">http://localhost:4000//posts/2014/11/29/sample-rails-zype</guid>
         
         
         <category>developers</category>
@@ -402,7 +402,7 @@ locally and are a registered Roku developer.&lt;/p&gt;
 
 &lt;p&gt;Log into your Roku developer account and click Manage My Channels&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/K66GKpz.png&quot; alt=&quot;step 1&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/Publishing Your Roku App/1.png&quot; alt=&quot;step 1&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Step 2&lt;/strong&gt;&lt;/p&gt;
 
@@ -410,26 +410,26 @@ locally and are a registered Roku developer.&lt;/p&gt;
 The steps are the same for private and public channels, except that you will need to
 give contact information in case Roku has questions when they are reviewing your app.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/GeJiK58.png&quot; alt=&quot;step 2&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/Publishing Your Roku App/2.png&quot; alt=&quot;step 2&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Step 3&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;Fill out Channel Properties for your channel.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/VZDUXsL.png&quot; alt=&quot;step 3&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/Publishing Your Roku App/3.png&quot; alt=&quot;step 3&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Step 4&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;Fill our Channel Descriptions for your channel. You will need to have an HD Poster
 that is a 290 x 218 JPEG file and an SD Poster that is a 214 x 144 JPEG file.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/pFA3aHQ.png&quot; alt=&quot;step 4&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/Publishing Your Roku App/4.png&quot; alt=&quot;step 4&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Step 5&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;You can optionally upload screenshots of your Roku Channel. Read the &lt;a href=&quot;http://sdkdocs.roku.com/display/sdkdoc/Channel+Packaging+And+Publishing#ChannelPackagingAndPublishing-38GeneratingScreenshotsSincev31onRoku1andv43onRoku2&quot;&gt;Roku documentation&lt;/a&gt; on how to generate a screenshot.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/lMtmsak.png&quot; alt=&quot;step 5&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/Publishing Your Roku App/5.png&quot; alt=&quot;step 5&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Step 6&lt;/strong&gt;&lt;/p&gt;
 
@@ -438,7 +438,7 @@ that is a 290 x 218 JPEG file and an SD Poster that is a 214 x 144 JPEG file.&lt
 &lt;p&gt;Once you have downloaded your Roku Channel package, upload the application package and click the “Publish” arrow. You will get an access code url that can be used to download the private
 Roku channel on your individual Roku account.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/xufsqQC.png&quot; alt=&quot;step 6&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/Publishing Your Roku App/6.png&quot; alt=&quot;step 6&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;More tutorials in this series:&lt;/strong&gt;&lt;/p&gt;
 
@@ -447,8 +447,8 @@ Roku channel on your individual Roku account.&lt;/p&gt;
 &lt;p&gt;Part II: &lt;a href=&quot;http://dev.zype.com/posts/2014/11/28/develop-roku-app-with-zype-sdk/&quot;&gt;Developing the Roku Channel using the Zype SDK&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Fri, 28 Nov 2014 07:37:55 -0500</pubDate>
-        <link>http://dev.zype.com/posts/2014/11/28/publish-roku-app</link>
-        <guid isPermaLink="true">http://dev.zype.com/posts/2014/11/28/publish-roku-app</guid>
+        <link>http://localhost:4000//posts/2014/11/28/publish-roku-app</link>
+        <guid isPermaLink="true">http://localhost:4000//posts/2014/11/28/publish-roku-app</guid>
         
         
         <category>developers</category>

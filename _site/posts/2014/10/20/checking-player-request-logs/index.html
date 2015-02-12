@@ -11,7 +11,7 @@
 ">
 
     <link rel="stylesheet" href="/css/main.css">
-    <link rel="canonical" href="http://dev.zype.com/posts/2014/10/20/checking-player-request-logs">
+    <link rel="canonical" href="http://localhost:4000//posts/2014/10/20/checking-player-request-logs">
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 
     <!--[if lt IE 9]>
@@ -25,7 +25,10 @@
     })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
     ga('create', 'UA-1376128-30', 'auto');
+    ga('create', 'UA-1376128-21', 'auto', {'name': 'global'});
+
     ga('send', 'pageview');
+    ga('global.send', 'pageview');
 
     </script>
 </head>
@@ -68,7 +71,7 @@ of who’s viewing your content and what times of the day are most popular for v
 and navigate to the logs section under the settings dropdown menu. In this post, we’ll cover the request logs,
 so feel free to click on that link once you see the logs menu.  </p>
 
-<p><img src="http://i.imgur.com/npiMmsg.png" alt="dpt logs navigation" /></p>
+<p><img src="http://localhost:4000/assets/Monitoring Your Views/log_navigation_1.png" alt="dpt logs navigation" /></p>
 
 <h3 id="what-type-of-information-can-i-see-in-my-request-logs">What type of information can I see in my request logs?</h3>
 
@@ -122,7 +125,7 @@ Here are the most pertinent pieces of information:</p>
   </tbody>
 </table>
 
-<p><img src="http://i.imgur.com/cxELdn1.png" alt="dpt logs" /></p>
+<p><img src="http://localhost:4000/assets/Monitoring Your Views/request_logs.png" alt="dpt logs" /></p>
 
 <h3 id="how-can-i-search-the-request-logs-data">How can I search the request logs data?</h3>
 
@@ -131,7 +134,7 @@ Here are the most pertinent pieces of information:</p>
 <p>Sorting the request logs is easy: use the four drop down menus to select your search parameters
 and then click on the search button.</p>
 
-<p><img src="http://i.imgur.com/l2N4Kql.png" alt="searching logs" /></p>
+<p><img src="http://localhost:4000/assets/Monitoring Your Views/request_log_search_3.png" alt="searching logs" /></p>
 
 <p><em>Check our <a href="http://dev.zype.com/posts/2014/10/10/adding-zype-to-rails/">previous post</a>
 on how to set up your Rails App with the Zype Gem!</em></p>

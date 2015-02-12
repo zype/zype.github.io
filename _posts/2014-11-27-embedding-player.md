@@ -13,14 +13,14 @@ will map out how to embed a video uploaded to the Zype Platform on any webpage.
 
 Navigate to your video's page and click on the Embed Code tab.
 
-![Go to Embed Code](http://i.imgur.com/4LcF8Lf.png)
+![Go to Embed Code]({{site.url}}assets/Embedding a Player on Your Site/embed_tab.png)
 
 
 **Step 2**
 
 Copy the embed code.
 
-![Copy Embed Code](http://i.imgur.com/jvHwsnU.png)
+![Copy Embed Code]({{site.url}}assets/Embedding a Player on Your Site/click_copy_clip.png)
 
 **Step 3**
 

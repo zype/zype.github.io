@@ -9,7 +9,7 @@ additional content based on what your users are watching. The solution we've imp
 In this post, we'll be covering how to create a playlist of related videos that are recommended to a viewer
 based on what the video they're watching. Here's an example of the finished product:
 
-![related playlist](http://i.imgur.com/wPXZ772.png)
+![related playlist]({{site.url}}assets/Related Playlists/related_playlists.png)
 
 *The related videos section is automatically created for each video on your site, but if you'd like to be more
 specific about which videos are displayed there, follow along as we set up a playlist of related videos.*
@@ -19,25 +19,25 @@ specific about which videos are displayed there, follow along as we set up a pla
 Setting up the playlist can be done from the [admin portal](http://admin.zype.com/). Navigate to the playlist
 section on the sidebar and and click "New Playlist". Follow through the menu and create a playlist (make sure it's active!).
 
-![playlist navigation](http://i.imgur.com/oXi3Dlg.png)
+![playlist navigation]({{site.url}}assets/Related Playlists/playlist_navigation_2.png)
 
 ### How can I choose which videos are shown in the playlist?
 
 This is an easy one. Use the "Add Videos" button to select which videos will appear under the related videos section.
 
-![add videos navigation](http://i.imgur.com/hMAkhgQ.png)
+![add videos navigation]({{site.url}}assets/Related Playlists/add_videos_playlist_3.png)
 
 ### How can I choose which videos display the playlist?
 
 Choosing the videos that will have your playlist displayed is done through the playlist edit screen. You can get there
 quickly by clicking on the name of your playlist here:
 
-![edit your playlist](http://i.imgur.com/XSvwXVR.png)
+![edit your playlist]({{site.url}}assets/Related Playlists/save_your_playlist_4.png)
 
 Use our multiselector to search for the videos you want and click on them to move them into selected videos.
 Click "Save Changes" when you're done.
 
-![choose related videos](http://i.imgur.com/WRtRv8m.png)
+![choose related videos]({{site.url}}assets/Related Playlists/choose_related_videos_5.png)
 
 ### Let's confirm
 

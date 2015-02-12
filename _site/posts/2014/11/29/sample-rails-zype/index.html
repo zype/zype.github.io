@@ -11,7 +11,7 @@
 ">
 
     <link rel="stylesheet" href="/css/main.css">
-    <link rel="canonical" href="http://dev.zype.com/posts/2014/11/29/sample-rails-zype">
+    <link rel="canonical" href="http://localhost:4000//posts/2014/11/29/sample-rails-zype">
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 
     <!--[if lt IE 9]>
@@ -25,7 +25,10 @@
     })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
     ga('create', 'UA-1376128-30', 'auto');
+    ga('create', 'UA-1376128-21', 'auto', {'name': 'global'});
+
     ga('send', 'pageview');
+    ga('global.send', 'pageview');
 
     </script>
 </head>
@@ -78,7 +81,7 @@ to how you can find your keys.</p>
 and a search box to search for a specific video. The Playlists can be configured
 in the Zype Platform and can be fetched via the Ruby Gem.</p>
 
-<p><img src="http://i.imgur.com/XdD1n7n.png" alt="homepage" /></p>
+<p><img src="http://localhost:4000/assets/Walkthrough of the Zype API with a Sample Rails App/home.png" alt="homepage" /></p>
 
 <p><strong>Playlist Page</strong></p>
 
@@ -87,7 +90,7 @@ the videos based on release date, name, or popularity. Also note that there are 
 and YouTube videos in the same player. The Zype Platform and Zype API allows you to
 seamlessly combine the two.</p>
 
-<p><img src="http://i.imgur.com/uDlDPcK.png" alt="playlist page" /></p>
+<p><img src="http://localhost:4000/assets/Walkthrough of the Zype API with a Sample Rails App/playlist.png" alt="playlist page" /></p>
 
 <p><strong>Browse all Videos</strong></p>
 
@@ -95,7 +98,7 @@ seamlessly combine the two.</p>
 When you hover over a video, you will see the description. Feel free to read the <a href="http://dev.zype.com/api_docs/videos/">Video API Documentation</a> to see what other information
 gtes returned when you query for the videos.</p>
 
-<p><img src="http://i.imgur.com/ys7ZfD3.png" alt="browse videos" /></p>
+<p><img src="http://localhost:4000/assets/Walkthrough of the Zype API with a Sample Rails App/browse.png" alt="browse videos" /></p>
 
 <p><strong>Video Page</strong></p>
 
@@ -103,7 +106,7 @@ gtes returned when you query for the videos.</p>
 contains the title, description, and video player. The Zype API will deliver the appropriate
 player based on where the video source comes from and what Player Rules you set.</p>
 
-<p><img src="http://i.imgur.com/EjY7wlU.png" alt="video page" /></p>
+<p><img src="http://localhost:4000/assets/Walkthrough of the Zype API with a Sample Rails App/video.png" alt="video page" /></p>
 
 <p>Have questions about implementing our sample Rails app or want to see examples of
 other features or in other languages? Feel free to comment below!</p>

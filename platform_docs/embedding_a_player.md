@@ -22,7 +22,7 @@ One of the quickest ways to get up and running with Zype videos is to simply dro
 ## Embedding a Player on Your Site
 We're happy to announce that the [Zype Platform](http://admin.zype.com) now grants you the power to "grab and go" with embed codes! Each video that you add to the platform has a snippet of code located under the Embed Code tab. You can navigate to the tab by finding a video that you want to embed and clicking on the edit button. The tab appears along the top of the menu.
 
-![embed code](http://i.imgur.com/14Pg7k8.png)
+![embed code]({{site.url}}assets/Embedding a Player on Your Site2/embed_code.png)
 
 The embed codes are designed to be dropped into a webpage, wherever you need them. The div id must remain the same, but other than that, you're free to do as you please. As the page states, we recommend that you include the javascript portion of the embed code before the closing body tag on the page.
 
@@ -36,10 +36,10 @@ One of the ways that Zype defends your video content is by expiring our video ur
 
 If you want to edit your Player Expiration value, head over to your Site Settings by clicking on the gear at the top of the screen and clicking on settings.
 
-![site settings](http://i.imgur.com/Ed3emek.png)
+![site settings]({{site.url}}assets/Embedding a Player on Your Site2/setting.png)
 
 At the bottom of the Site Settings page is a value for Player Expiration, the default is 300 seconds or 5 minutes. You can change this value by typing directly into the box or using the step arrows on the side. The minimum value is 0, which means that your video url's will never expire. The maximum value is 2592000 seconds or one month. Edit the value as needed and click save changes.  
 
-![player expiration](http://i.imgur.com/R8EIEXm.png)
+![player expiration]({{site.url}}assets/Embedding a Player on Your Site2/300.png)
 
 That's it! You can confirm by clicking on Site Settings again scrolling to the bottom to see your changes.

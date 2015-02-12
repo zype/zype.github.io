@@ -11,7 +11,7 @@
 ">
 
     <link rel="stylesheet" href="/css/main.css">
-    <link rel="canonical" href="http://dev.zype.com/api_docs/geoip/">
+    <link rel="canonical" href="http://localhost:4000//api_docs/geoip/">
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 
     <!--[if lt IE 9]>
@@ -25,7 +25,10 @@
     })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
     ga('create', 'UA-1376128-30', 'auto');
+    ga('create', 'UA-1376128-21', 'auto', {'name': 'global'});
+
     ga('send', 'pageview');
+    ga('global.send', 'pageview');
 
     </script>
 </head>
