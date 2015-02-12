@@ -16,7 +16,7 @@ to input into the Zype Platform.
 
 2\. Your Channel ID can be found in your Account Information
 
-![channel id instructions](http://i.imgur.com/fh76FMH.png)
+![channel id instructions]({{site.url}}assets/Finding Youtube Channel ID/1.png)
 
 **Finding an additional YouTube Channel ID:**
 
@@ -26,12 +26,12 @@ belonging to Channels. Because of this migration, it is tricky to get your Chann
 1\. Visit a YouTube video that is in the Channel you want and click on the channel name
 below the Video Player.
 
-![youtube video](http://i.imgur.com/28no7XC.png)
+![youtube video]({{site.url}}assets/Finding Youtube Channel ID/2.png)
 
 2\. You will be taken to the Channel Page. The Channel ID is at the end of the URL.
 For example, for Last Week Tonight with John Oliver, the channel ID is UC3XTzVzaHQEd30rQbuvCtTQ.
 
-![youtube channel page](http://i.imgur.com/bisJffi.png)
+![youtube channel page]({{site.url}}assets/Finding Youtube Channel ID/3.png)
 
 **Common Mistakes**
 
@@ -40,4 +40,4 @@ to the Channel Page. The URL for the User Page has **/user/** in it, not **/chan
 you find yourself on the User Page instead of the Channel Page, click on a video in the User
 Page and repeat the steps for finding an additional YouTube Channel ID above.
 
-![youtube user page](http://i.imgur.com/Ef8qcgA.png)
+![youtube user page]({{site.url}}assets/Finding Youtube Channel ID/4.png)
