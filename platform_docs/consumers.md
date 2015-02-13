@@ -32,7 +32,7 @@ Removing a Consumer</a>
 Before creating a consumer, you will need to link your Stripe Account to the Zype Platform.
 In the Zype Platform, navigate to settings and enter your Stripe Secret Key. Your Stripe Secret Key can be found under your Stripe [account settings](https://dashboard.stripe.com/account/apikeys).
 
-![stripe settings](http://i.imgur.com/ho1jPpL.png)
+![stripe settings]({{site.url}}assets/Connecting Stripe/stripe_key.png)
 
 <hr id="2">
 
@@ -45,7 +45,7 @@ You will need to [use our API](http://dev.zype.com/api_docs/consumers/) to creat
 You can use the Zype Platform to get details about a consumer. To get a consumer's details, go to the [consumers page](https://admin.zype.com/consumers) and click on the appropriate consumer.
 Information includes a consumer's email and his or her subscriptions.
 
-![consumer information](http://i.imgur.com/s3NLd4X.png)
+![consumer information]({{site.url}}assets/Connecting Stripe/customer_details.png)
 
 <hr id="4">
 
@@ -53,6 +53,6 @@ Information includes a consumer's email and his or her subscriptions.
 You can remove a consumer from the Zype Platform. To do so, navigate to the [consumers' page](https://admin.zype.com/consumers)
 and click on the red delete button for the appropriate consumer.
 
-![delete consumer](http://i.imgur.com/kwMbFHb.png)
+![delete consumer]({{site.url}}assets/Connecting Stripe/delete_cust.png)
 
 Note, deleting a consumer will also cancel all of his or her subscriptions.
