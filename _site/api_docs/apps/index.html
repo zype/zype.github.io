@@ -78,8 +78,8 @@
       <h2 id="apps">Apps</h2>
 <hr />
 
-<h3 id="retrieve-an-app">Retrieve an App</h3>
-<p>Retrieve configuration settings for an App.</p>
+<h3 id="retrieve-roku-channel-configurations">Retrieve Roku Channel Configurations</h3>
+<p>Retrieve configuration settings for a Roku Channel.</p>
 <hr />
 
 <pre><code>GET - https://api.zype.com/app/?app_key=app_key
@@ -196,6 +196,154 @@ Content-Type: application/json</p>
       }
     ],
     "video_sources": [...]
+  }
+}
+</code></pre>
+
+<hr />
+
+<h3 id="retrieve-iphone-app-configurations">Retrieve iPhone App Configurations</h3>
+<p>Retrieve configuration settings for an iPhone App.</p>
+<hr />
+
+<pre><code>GET - https://api.zype.com/app/?app_key=app_key
+</code></pre>
+
+<h4 id="parameters-1">Parameters</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Function</th>
+      <th>Type</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>app_key</td>
+      <td>The app key</td>
+      <td>String</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="response-1">Response</h4>
+<p>200
+Content-Type: application/json</p>
+
+<pre><code>{
+  "response": {
+    "_id": "53a9cd3069702d56d8000000",
+    "active": true,
+    "app_type_id": null,
+    "channel": {
+      "_id": "53a9cdf169702d5834010000",
+      "background_color": "#000000",
+      "font_color": "#FFFFFF",
+      "title": 0,
+      "banner_url": "http://u.zype.com/app/channel/53a9cdf169702d5834010000/banner/original.png?1407812250",
+      "large_banner_url": "http://u.zype.com/app/channel/53a9cdf169702d5834010000/large_banner/original.png?1407812288",
+      "icon_url": "http://u.zype.com/app/channel/53a9cdf169702d5834010000/icon/original.jpg?1407812317"
+    },
+    "device_id": null,
+    "site_id": "53c0457a69702d4d66030000",
+    "store_id": null,
+    "tiles": [
+    {
+      "_id": "53b17eb869702d4ade000000",
+      "background_color": "#C154C1",
+      "font_color": "#FFFFFF",
+      "position": 2,
+      "text": "Some descriptive information about Tile 2",
+      "title": "Favorites",
+      "url": "favorites",
+      "icon_url": "http://u.zype.com/app/tile/53b17eb869702d4ade000000/icon/original.png?1407811649"
+    },
+    {
+      "_id": "53b17ec369702d4ade020000",
+      "background_color": "#FF7F00",
+      "font_color": "#FFFFFF",
+      "position": 4,
+      "text": "Some descriptive information about Tile 4",
+      "title": "Google+",
+      "url": "https://plus.google.com/u/0/113521400992096024513",
+      "icon_url": "http://u.zype.com/app/tile/53b17ec369702d4ade020000/icon/original.png?1407811698"
+    },
+    {
+      "_id": "53b17ecc69702d4ade030000",
+      "background_color": "#C154C1",
+      "font_color": "#FFFFFF",
+      "position": 0,
+      "text": "Some descriptive information about Tile 5",
+      "title": "Video",
+      "url": "videos",
+      "icon_url": "http://u.zype.com/app/tile/53b17ecc69702d4ade030000/icon/original.png?1407811738"
+    },
+    {
+      "_id": "53b17ecd69702d4ade040000",
+      "background_color": "#BFFF00",
+      "font_color": "#FFFFFF",
+      "position": 6,
+      "text": "Some descriptive information about Tile 6",
+      "title": "Twitter",
+      "url": "http://twitter.com/ryanckulp",
+      "icon_url": "http://u.zype.com/app/tile/53b17ecd69702d4ade040000/icon/original.png?1407811765"
+    },
+    {
+      "_id": "53b17ed669702d4ade050000",
+      "background_color": "#008080",
+      "font_color": "#FFFFFF",
+      "position": 7,
+      "text": "Some descriptive information about Tile 7",
+      "title": "Blog",
+      "url": "http://ryanckulp.com/",
+      "icon_url": "http://u.zype.com/app/tile/53b17ed669702d4ade050000/icon/original.png?1407811787"
+    },
+    {
+      "_id": "53b17ed769702d4ade060000",
+      "background_color": "#FF7F00",
+      "font_color": "#FFFFFF",
+      "position": 8,
+      "text": "Some descriptive information about Tile 8",
+      "title": "Music",
+      "url": "http://lastnamekulp.com/",
+      "icon_url": "http://u.zype.com/app/tile/53b17ed769702d4ade060000/icon/original.png?1407811884"
+    },
+    {
+      "_id": "53babe6269702d012e000000",
+      "background_color": "#FF7F00",
+      "font_color": "#FFFFFF",
+      "position": 9,
+      "text": "Some descriptive information about Tile 9",
+      "title": "Facebook",
+      "url": "https://www.facebook.com/ryanckulp",
+      "icon_url": "http://u.zype.com/app/tile/53babe6269702d012e000000/icon/original.png?1407811904"
+    }
+    ],
+    "title": "Ryan Kulp Guitar Ninja",
+    "version": "0.0.0",
+    "store_icon_url": null,
+    "video_sources": [
+      {
+      "_id": "53acf2b669702d2b8f010000",
+      "_keywords": [
+        "videosource",
+        "youtube"
+      ],
+      "created_at": "2014-06-27T00:27:41.895-04:00",
+      "deleteable": true,
+      "deleted_at": null,
+      "editable": true,
+      "guid": "UC7iW0FatScRqIGHeA-5cFiw",
+      "name": null,
+      "provider_id": null,
+      "refreshed_at": "2015-02-10T06:59:59.187-05:00",
+      "site_id": "53c0457a69702d4d66030000",
+      "updated_at": "2015-02-10T07:00:01.937-05:00",
+      "video_count": 0
+      }
+    ]
   }
 }
 </code></pre>

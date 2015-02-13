@@ -6,8 +6,8 @@
 </description>
     <link>http://localhost:4000//</link>
     <atom:link href="http://localhost:4000//feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Fri, 13 Feb 2015 17:50:39 -0500</pubDate>
-    <lastBuildDate>Fri, 13 Feb 2015 17:50:39 -0500</lastBuildDate>
+    <pubDate>Fri, 13 Feb 2015 17:58:31 -0500</pubDate>
+    <lastBuildDate>Fri, 13 Feb 2015 17:58:31 -0500</lastBuildDate>
     <generator>Jekyll v2.3.0</generator>
     
       <item>
@@ -180,6 +180,19 @@ If you have not yet submitted your Roku Channel, you will need to grab a new bun
         <pubDate>Fri, 13 Feb 2015 05:37:55 -0500</pubDate>
         <link>http://localhost:4000//posts/2015/02/13/roku-advanced-settings</link>
         <guid isPermaLink="true">http://localhost:4000//posts/2015/02/13/roku-advanced-settings</guid>
+        
+        
+        <category>developers</category>
+        
+      </item>
+    
+      <item>
+        <title>Publish an iPhone App from the Zype Platform</title>
+        <description>&lt;p&gt;TODO&lt;/p&gt;
+</description>
+        <pubDate>Fri, 13 Feb 2015 05:37:55 -0500</pubDate>
+        <link>http://localhost:4000//posts/2015/02/13/publish-iphone-advanced</link>
+        <guid isPermaLink="true">http://localhost:4000//posts/2015/02/13/publish-iphone-advanced</guid>
         
         
         <category>developers</category>
@@ -419,52 +432,6 @@ an SD Poster that is a 214 x 144 JPG format. We call that the Image Store in our
         <pubDate>Wed, 03 Dec 2014 07:37:55 -0500</pubDate>
         <link>http://localhost:4000//posts/2014/12/03/zype-roku-assets</link>
         <guid isPermaLink="true">http://localhost:4000//posts/2014/12/03/zype-roku-assets</guid>
-        
-        
-        <category>developers</category>
-        
-      </item>
-    
-      <item>
-        <title>Playlists, Categories, and Zobjects on Roku</title>
-        <description>&lt;p&gt;We aim to make the development process of a Roku Channel as easy as possible using
-our &lt;a href=&quot;https://github.com/zype/zype-roku&quot;&gt;Zype Roku SDK&lt;/a&gt;. To do this, our sample Roku Channel
-focuses on three major components of the Zype Platform: playlists, categories, and zobjects.
-Since the playlists, categories, and zobjects are being pulled into your Roku channel
-using the Zype API, they are all editable using the Zype Platform and do not require
-republishing to the Roku Channel Store to make a change.&lt;/p&gt;
-
-&lt;p&gt;We will be using screenshots from our sample Roku Channel to highlight what you can do.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/Categories, Playlists and Your Roku App/roku_playlist.png&quot; alt=&quot;playlists and categories&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Featured Playlist&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;The first slider of the home screen is the featured playlist. This can be any playlist
-that you have created using the Zype Platform. Note, only Zype Videos will play.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Categories&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Below the first slider are category sliders. Note that the category sliders and the featured playlist slider are identical.
-The only difference is how we are calling the Zype API to return us the videos in each slider.
-On the Zype Platform, you select a category that you want to iterate through for the rest
-of the home screen. In the picture above, we are iterating through the category ‘Genre.’
-Thus, the first category slider is the ‘Genre’ with a value of ‘Adventure’ and the second
-category slider will be the next ‘Genre’, which is ‘Comedy’.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Zobjects&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/Categories, Playlists and Your Roku App/roku_zobject.png&quot; alt=&quot;Zobjects in video detail&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;You also have the option to provide additional metadata about your videos in the video
-detail screen. You select one zobject to be above the description and one zobject to be
-below the description. In the example above, we selected the Zobject ‘Actor’ to be above the description
-and it lists the actors that we have associated with the video. Similarly, we selected
-the Zobject ‘Director’ to be below the description.&lt;/p&gt;
-</description>
-        <pubDate>Wed, 03 Dec 2014 05:37:55 -0500</pubDate>
-        <link>http://localhost:4000//posts/2014/12/03/categories-playlists-zobjects-roku</link>
-        <guid isPermaLink="true">http://localhost:4000//posts/2014/12/03/categories-playlists-zobjects-roku</guid>
         
         
         <category>developers</category>
