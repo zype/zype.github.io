@@ -6,8 +6,8 @@
 </description>
     <link>http://localhost:4000//</link>
     <atom:link href="http://localhost:4000//feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Fri, 13 Feb 2015 16:22:18 -0500</pubDate>
-    <lastBuildDate>Fri, 13 Feb 2015 16:22:18 -0500</lastBuildDate>
+    <pubDate>Fri, 13 Feb 2015 16:54:41 -0500</pubDate>
+    <lastBuildDate>Fri, 13 Feb 2015 16:54:41 -0500</lastBuildDate>
     <generator>Jekyll v2.3.0</generator>
     
       <item>
@@ -25,7 +25,59 @@
     
       <item>
         <title>Self Publishing a Roku Channel on the Zype Platform</title>
-        <description>&lt;p&gt;This is the new article on publishing (with emphasis on self-publishing)&lt;/p&gt;
+        <description>&lt;p&gt;Before being ready to self-publish, you will need to set up your Roku Channel on the Zype
+Platform. &lt;a href=&quot;http://localhost:4000/posts/2015/02/13/zype-publish-roku&quot;&gt;Click here&lt;/a&gt; to read up on
+how to set up your Roku Channel for publishing.
+To self-publish your Roku Channel, you will need to have a Roku device and be
+comfortable using the terminal. This tutorial is focused for those users who are
+on Mac or linux. If you are on Windows, you can follow along with the tutorial,
+but you will need to use the &lt;a href=&quot;http://sdkdocs.roku.com/display/sdkdoc/Eclipse+Plugin+Guide&quot;&gt;Eclipse BrightScript plug-in to package your Roku Channel&lt;/a&gt; (step 2).&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Step 1: Enable Roku Development Mode on Your Box&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;You will need to enable Roku Development Mode on your Roku device. Read through the &lt;a href=&quot;http://sdkdocs.roku.com/display/sdkdoc/Developer+Guide#DeveloperGuide-70LoadingandRunningyourApplicationWalkthrough&quot;&gt;Roku
+Documentation&lt;/a&gt;
+on how to load and run your Roku Channel.&lt;/p&gt;
+
+&lt;p&gt;Please store your ROKU_DEV_TARGET (the IP address
+of your Roku) and DEVPASSWORD (you will get to choose this when you set up your Roku Developer Device). You will need both of these to side load
+your Roku Channel into your Roku device.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Step 2: Unzip your bundled channel and test out locally (Mac/Linux)&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Zype will email you a bundled channel zip that contains the BrightScript code for your Roku Channel. You will need to unzip your channel and, in your terminal, navigate to the Roku code.&lt;/p&gt;
+
+&lt;p&gt;Next, open up app.mk in your text editor of choice and change the ROKU_DEV_TARGET
+and DEVPASSWORD to match your Roku device.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/Publishing Your Roku App/replace_appmk_vars.png&quot; alt=&quot;app.mk replacement&quot; /&gt;)&lt;/p&gt;
+
+&lt;p&gt;Then, run make install inside the Roku Channel directory in your terminal to side load your Roku Channel to your Roku device.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/Publishing Your Roku App/make_install.png&quot; alt=&quot;make install&quot; /&gt;)&lt;/p&gt;
+
+&lt;p&gt;If the command is successful, your Roku Channel will load automatically to your Roku Device.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Step 3: Package Your Roku Channel for Publishing&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;You will need to key your Roku Channel using your Roku device.
+Please read the official &lt;a href=&quot;http://sdkdocs.roku.com/display/sdkdoc/Channel+Packaging+And+Publishing#ChannelPackagingAndPublishing-30PackagingYourApplication&quot;&gt;Roku
+documentation&lt;/a&gt;
+on how to generate your key and key your device.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Step 4: Submit Your Roku Channel to the Roku Channel Store&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Now that you have a packaged Roku Channel, you will need to submit your Roku Channel to the Roku Channel Store. You can choose to either publish
+a private channel or a public channel. A private channel will be published right away, but is not searchable via the Roku Channel Store. You will
+be given a Channel URL that you can share to others to add your private channel. To publish a public channel, you will added to the Roku
+Publishing Queue for Roku QA. This queue takes approximately 3-4 to get to the front of. You should expect it to take 4-6 weeks to get your
+public Roku Channel available on the Roku Channel Store.&lt;/p&gt;
+
+&lt;p&gt;Click &lt;a href=&quot;https://owner.roku.com/Developer/Apps&quot;&gt;here&lt;/a&gt; to submit your Roku Channel!
+You will have to be logged into your Roku Developer Account.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Please feel free to reach out to Zype using the question box &lt;a href=&quot;https://admin.zype.com/&quot;&gt;in the lower left hand corner&lt;/a&gt;
+if you have any questions or would like Zype to publish your Roku Channel for you!&lt;/em&gt;&lt;/p&gt;
 </description>
         <pubDate>Fri, 13 Feb 2015 05:37:55 -0500</pubDate>
         <link>http://localhost:4000//posts/2015/02/13/self-publish-roku</link>
