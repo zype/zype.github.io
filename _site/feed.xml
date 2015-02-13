@@ -6,8 +6,8 @@
 </description>
     <link>http://localhost:4000//</link>
     <atom:link href="http://localhost:4000//feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Fri, 13 Feb 2015 16:54:41 -0500</pubDate>
-    <lastBuildDate>Fri, 13 Feb 2015 16:54:41 -0500</lastBuildDate>
+    <pubDate>Fri, 13 Feb 2015 17:19:06 -0500</pubDate>
+    <lastBuildDate>Fri, 13 Feb 2015 17:19:06 -0500</lastBuildDate>
     <generator>Jekyll v2.3.0</generator>
     
       <item>
@@ -82,6 +82,46 @@ if you have any questions or would like Zype to publish your Roku Channel for yo
         <pubDate>Fri, 13 Feb 2015 05:37:55 -0500</pubDate>
         <link>http://localhost:4000//posts/2015/02/13/self-publish-roku</link>
         <guid isPermaLink="true">http://localhost:4000//posts/2015/02/13/self-publish-roku</guid>
+        
+        
+        <category>developers</category>
+        
+      </item>
+    
+      <item>
+        <title>Advanced Settings for Your Roku Channel</title>
+        <description>&lt;p&gt;Selecting a Channel Template and uploading a Channel Image takes most of the hard
+work out of branding your Roku Channel. However, if you want to further specialize
+your Roku Channel, you can click on Edit Advanced Settings for your Roku Channel.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/Publishing Your Roku App/roku_advanced_settings_btn.png&quot; alt=&quot;advanced settings btn&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The Advanced Settings have a lot of options! The highest impact advanced settings
+that you can change are in the Main Configurations Tab and the Image Configurations Tab.&lt;/p&gt;
+
+&lt;p&gt;In particular, in the Main Configurations, you can change which playlist is to
+be featured at the top of your Roku Channel and you can change the category to
+iterate through for the rest of your Roku Channel.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/Publishing Your Roku App/main_configs.png&quot; alt=&quot;main configs&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;In the Image Configurations, you can change the run time images such as your logo, slice images,
+and grid images. These images are grabbed through the Zype API each time your Roku
+Channel gets loaded, so you can upload a new image and refresh your Roku Channel to see
+it being changed in real time.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/Publishing Your Roku App/image_configs.png&quot; alt=&quot;image configs&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;You can also change your Channel Build Details. Note, however, that if you change
+images in your Channel Build Details like your store or focus image, you will
+need to resubmit your Channel to the Roku Channel Store.
+If you have not yet submitted your Roku Channel, you will need to grab a new bundle of your Roku Channel.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/Publishing Your Roku App/build_configs.png&quot; alt=&quot;image configs&quot; /&gt;&lt;/p&gt;
+</description>
+        <pubDate>Fri, 13 Feb 2015 05:37:55 -0500</pubDate>
+        <link>http://localhost:4000//posts/2015/02/13/roku-advanced-settings</link>
+        <guid isPermaLink="true">http://localhost:4000//posts/2015/02/13/roku-advanced-settings</guid>
         
         
         <category>developers</category>
@@ -367,38 +407,6 @@ the Zobject ‘Director’ to be below the description.&lt;/p&gt;
         <pubDate>Wed, 03 Dec 2014 05:37:55 -0500</pubDate>
         <link>http://localhost:4000//posts/2014/12/03/categories-playlists-zobjects-roku</link>
         <guid isPermaLink="true">http://localhost:4000//posts/2014/12/03/categories-playlists-zobjects-roku</guid>
-        
-        
-        <category>developers</category>
-        
-      </item>
-    
-      <item>
-        <title>Accessing your API and Player Keys</title>
-        <description>&lt;p&gt;To interact with the Zype API, you will need your API Key and Player Key. This
-tutorial will show you how to find these keys from the Zype Platform.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Step 1&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Click the settings icon in the top navbar.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/API Blog/1.png&quot; alt=&quot;click settings&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Step 2&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;In the dropdown, select API&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/API Blog/2.png&quot; alt=&quot;select API&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Step 3&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;You will be directed to the API credentials page.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/API Blog/3.png&quot; alt=&quot;api player keys&quot; /&gt;&lt;/p&gt;
-</description>
-        <pubDate>Mon, 01 Dec 2014 07:37:55 -0500</pubDate>
-        <link>http://localhost:4000//posts/2014/12/01/api-keys</link>
-        <guid isPermaLink="true">http://localhost:4000//posts/2014/12/01/api-keys</guid>
         
         
         <category>developers</category>
