@@ -1,4 +1,5 @@
+When running locally use this command.
 
-
-When running localy use this command so that the 
+<pre><code>
 jekyll build --config _config.yml,_config_dev.yml --watch
+</code></pre>
