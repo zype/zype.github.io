@@ -5,6 +5,9 @@ date:   2014-11-28 10:37:55
 categories: developers
 ---
 
+**Note, this article is depreciated as of 2/13/15. To find an up to date version
+of publishing a Roku Channel, [click here]({{site.url}}posts/2015/02/13/zype-publish-roku/).**
+
 In a [previous tutorial](http://dev.zype.com/posts/2014/11/25/create-roku-app-on-zype/),
 we described how to create a Roku App using the Zype Platform. In this tutorial,
 we will walk through how to develop a Roku app using the Zype SDK and testing it locally.

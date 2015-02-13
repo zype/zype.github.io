@@ -5,6 +5,9 @@ date:   2014-11-25 10:37:55
 categories: developers
 ---
 
+**Note, this article is depreciated as of 2/13/15. To find an up to date version
+of publishing a Roku Channel, [click here]({{site.url}}posts/2015/02/13/zype-publish-roku/).**
+
 One of the biggest strengths of the Zype Platfom is its ability to distribute your
 video content on multiple platforms like Roku. In this tutorial, we will describe how to use
 the Zype Platform to create a Roku app that looks like the screen shot below.
