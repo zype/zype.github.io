@@ -6,9 +6,48 @@
 </description>
     <link>http://localhost:4000//</link>
     <atom:link href="http://localhost:4000//feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sun, 15 Feb 2015 12:39:31 -0500</pubDate>
-    <lastBuildDate>Sun, 15 Feb 2015 12:39:31 -0500</lastBuildDate>
+    <pubDate>Sun, 15 Feb 2015 12:57:54 -0500</pubDate>
+    <lastBuildDate>Sun, 15 Feb 2015 12:57:54 -0500</lastBuildDate>
     <generator>Jekyll v2.3.0</generator>
+    
+      <item>
+        <title>Importing Videos from a Third Party Source</title>
+        <description>&lt;p&gt;We’ve made it easier to import your videos from third party sources like YouTube, Vimeo, or Hulu
+to your video library! Now, the default option is to automatically add all video imports to your
+video library as new videos.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Step 1: Add your video source and make sure that add videos is turned on&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/video_sources/add_source.png&quot; alt=&quot;add video source&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Step 2: Navigate to your Video Library, you should see new videos from your video source that
+are active! Note, videos will be added to your video library as they become available&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/video_sources/video_library.png&quot; alt=&quot;video library&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Advanced Importing&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;If you do not want to automatically import all of the videos from a video source to your video
+library or if you want to merge your video imports to videos preexisting in your library, you can
+turn add video ‘off’ when you create a video source and use the “Advanced Video Importing”
+option.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/video_sources/add_source_not_auto.png&quot; alt=&quot;add video source not-auto&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Then, navigate to the video imports screen and click on the add button for the videos that you
+want to add to your video library or the merge button if you want to merge your video imports to
+preexisting videos in your video library.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/video_sources/advanced_video_imports.png&quot; alt=&quot;advanced video importing&quot; /&gt;&lt;/p&gt;
+</description>
+        <pubDate>Sun, 15 Feb 2015 05:37:55 -0500</pubDate>
+        <link>http://localhost:4000//posts/2015/02/15/importing-videos-from-third-party-source</link>
+        <guid isPermaLink="true">http://localhost:4000//posts/2015/02/15/importing-videos-from-third-party-source</guid>
+        
+        
+        <category>developers</category>
+        
+      </item>
     
       <item>
         <title>Publishing a Roku Channel on the Zype Platform</title>
@@ -407,75 +446,6 @@ videos. For an in-depth guide on how to create your Roku App, make sure you chec
         
         
         <category>platform</category>
-        
-      </item>
-    
-      <item>
-        <title>Zype Assets for a Roku Channel</title>
-        <description>&lt;p&gt;Adding image assets to your Roku Channel allow your to make the channel your own!
-Using the Zype Platform and Zype API, you will be able to change the majority of
-images on the fly without having to republish your app. However, there are a few images
-that need to be bundled during installation because they make up your
-application icon set. These images live on the Roku Channel store.
-This tutorial will describe the images that need to be bundled, the images that can
-be updated via the Zype Platform, and the specs for both.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Assets that can only be configured during publication:&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Example assets are included in our &lt;a href=&quot;https://github.com/zype/zype-roku/tree/master/images&quot;&gt;Roku SDK&lt;/a&gt; and
-need to be packaged with the Roku Channel are because they make up your application
-icon set. They do not get loaded via a call to the Zype API:&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;https://github.com/zype/zype-roku/blob/master/images/mm_icon_focus_hd.png&quot;&gt;Image Home (Center Focus Icon)&lt;/a&gt; - your large icon. HD is 366 x 210 pixels, SD is 248 x 140 pixels. PNG format.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;https://github.com/zype/zype-roku/blob/master/images/mm_icon_side_hd.png&quot;&gt;Image Brand (Side Icon)&lt;/a&gt; - your small icon. HD is 108 x 69 pixels, SD is 80 x 46 pixels. PNG format.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;https://github.com/zype/zype-roku/blob/master/images/splash_screen_hd.png&quot;&gt;Image Splash&lt;/a&gt; - the splash screen (what appears while your Roku Channel loads). 640 x 480 pixels. JPG format.&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;When publishing, you will also need a HD Poster that is a 290 x 218 JPG format and
-an SD Poster that is a 214 x 144 JPG format. We call that the Image Store in our Zype Roku App.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Assets that can be changed using the Zype Platform and Zype API:&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;These assets get loaded via a call to the Zype API everytime the Roku Channel gets loaded.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/Creating an App/roku_info.png&quot; alt=&quot;zype roku app&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/Creating an App/more_roku_info.png&quot; alt=&quot;zype roku app&quot; /&gt;&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;Logo - logo used in the overhang. Suggested size is 125 x 104 pixels for HD and 80 x 67 pixels, PNG format.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Slice - image tiled to create the overhang. Suggested size is 1 x 124 pixels for HD and 1 x 83 for SD pixels, PNG format.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Grid Description Image - image used to contain text on the grid screen. Suggested size is 968 x 258 pixels, PNG format.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Grid Border Image - image used for the highlight border on the grid screen. Suggested size is 268 x 190 pixels, PNG format.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Info Poster - image used to link to the info page. Suggested size is 266 x 150 pixels, PNG format.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Search Poster - image used to link to the search page. Suggested size is 266 x 150 pixels, PNG format.&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-</description>
-        <pubDate>Wed, 03 Dec 2014 07:37:55 -0500</pubDate>
-        <link>http://localhost:4000//posts/2014/12/03/zype-roku-assets</link>
-        <guid isPermaLink="true">http://localhost:4000//posts/2014/12/03/zype-roku-assets</guid>
-        
-        
-        <category>developers</category>
         
       </item>
     
