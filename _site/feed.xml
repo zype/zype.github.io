@@ -6,8 +6,8 @@
 </description>
     <link>http://localhost:4000//</link>
     <atom:link href="http://localhost:4000//feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sun, 15 Feb 2015 12:57:54 -0500</pubDate>
-    <lastBuildDate>Sun, 15 Feb 2015 12:57:54 -0500</lastBuildDate>
+    <pubDate>Sun, 15 Feb 2015 13:14:54 -0500</pubDate>
+    <lastBuildDate>Sun, 15 Feb 2015 13:14:54 -0500</lastBuildDate>
     <generator>Jekyll v2.3.0</generator>
     
       <item>
@@ -43,6 +43,30 @@ preexisting videos in your video library.&lt;/p&gt;
         <pubDate>Sun, 15 Feb 2015 05:37:55 -0500</pubDate>
         <link>http://localhost:4000//posts/2015/02/15/importing-videos-from-third-party-source</link>
         <guid isPermaLink="true">http://localhost:4000//posts/2015/02/15/importing-videos-from-third-party-source</guid>
+        
+        
+        <category>developers</category>
+        
+      </item>
+    
+      <item>
+        <title>Bulk Video Importing</title>
+        <description>&lt;p&gt;To bulk add video imports to your video library, check the videos that you want to add and click
+the button “Add to Library.” This will automatically add new videos to your video library. If you
+would like to merge videos into preexisting videos in your video library, you will need to click
+the merge chain for each video.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/video_imports/bulk_add.png&quot; alt=&quot;add to library&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;To bulk remove video imports from your video library, check the videos that you want to remove
+and click the button “Remove from Library.” Note, this does not delete the video, it only removes
+the chosen video import data source from your video.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/video_imports/bulk_remove.png&quot; alt=&quot;remove from library&quot; /&gt;&lt;/p&gt;
+</description>
+        <pubDate>Sun, 15 Feb 2015 05:37:55 -0500</pubDate>
+        <link>http://localhost:4000//posts/2015/02/15/bulk-video-importing</link>
+        <guid isPermaLink="true">http://localhost:4000//posts/2015/02/15/bulk-video-importing</guid>
         
         
         <category>developers</category>
@@ -414,38 +438,6 @@ check by going to the video and looking at its metadata.&lt;/p&gt;
         
         
         <category>developers</category>
-        
-      </item>
-    
-      <item>
-        <title>Defining Categories and Playlists</title>
-        <description>&lt;p&gt;As you make your way through the &lt;a href=&quot;http://admin.zype.com&quot;&gt;Zype Platform&lt;/a&gt;, you might have some
-questions about the differences between a playlist and a category. At the end of the day, both
-are used to return a set of videos, but they aren’t exactly the same thing. This blog post
-will look at categories and playlists and help you better understand how and when to use them.&lt;/p&gt;
-
-&lt;h3 id=&quot;what-are-playlists-and-how-do-i-use-them&quot;&gt;What are playlists and how do I use them?&lt;/h3&gt;
-&lt;p&gt;A playlist on the Zype Platform is a collection of videos that you assemble under a title.
-Common playlists might include: Trending Videos, Most Popular, Editor’s Choice, etc. Playlists
-are great for when you want to create and curate, by hand, a set of videos that might not fall
-under a specific category.&lt;/p&gt;
-
-&lt;h3 id=&quot;what-are-categories-and-how-do-i-use-them&quot;&gt;What are categories and how do I use them?&lt;/h3&gt;
-&lt;p&gt;A category on the Zype Platform is a label that you can create and assign to any number of
-videos. Common categories for video content might include: Genre, Tag, Type, Season, Series,
- etc. Categories are more generic than playlists and can be mass assigned to videos in your
-&lt;a href=&quot;http://admin.zype.com/videos&quot;&gt;Video Library.&lt;/a&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;im-using-the-zype-platform-to-create-a-roku-app-whats-the-difference-for-me&quot;&gt;I’m using the Zype Platform to create a Roku app, what’s the difference for me?&lt;/h3&gt;
-&lt;p&gt;Roku apps will treat categories and playlists the same, as they are both just a collection of
-videos. For an in-depth guide on how to create your Roku App, make sure you check out &lt;a href=&quot;http://dev.zype.com/posts/2014/12/03/categories-playlists-zobjects-roku/&quot;&gt;this blog post&lt;/a&gt;&lt;/p&gt;
-</description>
-        <pubDate>Thu, 04 Dec 2014 06:16:55 -0500</pubDate>
-        <link>http://localhost:4000//posts/2014/12/04/defining-categories-and-playlists</link>
-        <guid isPermaLink="true">http://localhost:4000//posts/2014/12/04/defining-categories-and-playlists</guid>
-        
-        
-        <category>platform</category>
         
       </item>
     

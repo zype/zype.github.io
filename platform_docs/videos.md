@@ -51,18 +51,22 @@ geographic location desired.
   </div>
   <div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>
     <a href="#11">
-    Uploading Videos to Zype Using Our Ruby Gem</a>
+    Bulk Importing of Third Party Video Sources (Advanced)</a>
   </div>
   <div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>
     <a href="#12">
-    Walkthrough of the Zype API with a Sample Rails App</a>
+    Uploading Videos to Zype Using Our Ruby Gem</a>
   </div>
   <div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>
     <a href="#13">
-    Embedding a Player on Your Site</a>
+    Walkthrough of the Zype API with a Sample Rails App</a>
   </div>
   <div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>
     <a href="#14">
+    Embedding a Player on Your Site</a>
+  </div>
+  <div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>
+    <a href="#15">
     Search Filters on the Zype Platform</a>
   </div>
 </div>
@@ -446,7 +450,24 @@ You can confirm that your videos were added by clicking on the videos tab and se
 
 ![videos]({{site.url}}assets/Adding Your Crunchyroll Videos to Zype/show_video_imports.png)
 
-<hr id="11">
+<hr id='11'>
+
+## Bulk Importing of Third Party Video Sources (Advanced)
+
+To bulk add video imports to your video library, check the videos that you want to add and click
+the button “Add to Library.” This will automatically add new videos to your video library. If you
+would like to merge videos into preexisting videos in your video library, you will need to click
+the merge chain for each video.
+
+![add to library]({{site.url}}assets/video_imports/bulk_add.png)
+
+To bulk remove video imports from your video library, check the videos that you want to remove
+and click the button “Remove from Library.” Note, this does not delete the video, it only removes
+the chosen video import data source from your video.
+
+![remove from library]({{site.url}}assets/video_imports/bulk_remove.png)
+
+<hr id="12">
 
 ## Uploading Videos to Zype Using Our Ruby Gem
 We're rolling out a bunch of new ways to add video content to the Zype Platform, like [Youtube Channel Import](http://dev.zype.com/posts/2014/11/18/search-youtube-in-zype/) and [Crunchyroll Video Import](http://dev.zype.com/posts/2014/11/19/adding-crunchyroll-as-a-video-source/). In this post we'll show you how to use the Zype Command Line Interface (or CLI) to upload videos that you have stored on a harddrive.
@@ -510,7 +531,7 @@ You can confirm that your videos were added by clicking on the videos tab and se
 
 ![videos]({{site.url}}assets/Uploading Videos to Zype Using Our Ruby Gem/confirm.png)
 
-<hr id="12">
+<hr id="13">
 
 ## Walkthrough of the Zype API with a Sample Rails App
 We want to make the Zype Platform accessible to as many types of developers as possible. To do this,
@@ -565,7 +586,7 @@ player based on where the video source comes from and what Player Rules you set.
 Have questions about implementing our sample Rails app or want to see examples of
 other features or in other languages? Feel free to comment below!
 
-<hr id="13">
+<hr id="14">
 
 ## Embedding a Player on Your Site
 The Zype Platform allows you to manage all of your video content in one place and
@@ -601,7 +622,7 @@ are optional.
 
 {% endhighlight %}
 
-<hr id="14">
+<hr id="15">
 
 ## Search Filters on the Zype Platform
 If you've been busy adding video content to the [Zype Platform](http://admin.zype.com) and creating playlists, you might be at the point where you've got a few pages of each. To help you better manage your content, we've added a set of filters to the videos and playlists pages:
