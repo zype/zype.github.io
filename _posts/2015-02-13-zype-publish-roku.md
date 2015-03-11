@@ -56,7 +56,8 @@ Roku Channel to the Roku Channel Store.
 Typically, once your Roku Channel is submitted to the Roku Channel Store, it takes
 3-4 weeks to get to the front of the QA queue and then another 1-2 weeks for approval.
 You should expect to wait atleast 4-6 weeks for your Roku Channel to be available
-on the Roku Channel Store.
+on the Roku Channel Store. If you would like to immediately share your Roku Channel,
+you can create a private Roku Channel that can be shared immediately via url.
 
 **Step 4: Edit Channel Settings**
 

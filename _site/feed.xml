@@ -6,8 +6,8 @@
 </description>
     <link>http://localhost:4000//</link>
     <atom:link href="http://localhost:4000//feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Wed, 11 Mar 2015 14:05:10 -0400</pubDate>
-    <lastBuildDate>Wed, 11 Mar 2015 14:05:10 -0400</lastBuildDate>
+    <pubDate>Wed, 11 Mar 2015 17:53:56 -0400</pubDate>
+    <lastBuildDate>Wed, 11 Mar 2015 17:53:56 -0400</lastBuildDate>
     <generator>Jekyll v2.3.0</generator>
     
       <item>
@@ -126,7 +126,8 @@ Roku Channel to the Roku Channel Store.&lt;/p&gt;
 &lt;p&gt;Typically, once your Roku Channel is submitted to the Roku Channel Store, it takes
 3-4 weeks to get to the front of the QA queue and then another 1-2 weeks for approval.
 You should expect to wait atleast 4-6 weeks for your Roku Channel to be available
-on the Roku Channel Store.&lt;/p&gt;
+on the Roku Channel Store. If you would like to immediately share your Roku Channel,
+you can create a private Roku Channel that can be shared immediately via url.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Step 4: Edit Channel Settings&lt;/strong&gt;&lt;/p&gt;
 
