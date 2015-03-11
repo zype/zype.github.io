@@ -6,9 +6,302 @@
 </description>
     <link>http://localhost:4000//</link>
     <atom:link href="http://localhost:4000//feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Fri, 13 Feb 2015 15:52:18 -0500</pubDate>
-    <lastBuildDate>Fri, 13 Feb 2015 15:52:18 -0500</lastBuildDate>
+    <pubDate>Wed, 11 Mar 2015 14:05:10 -0400</pubDate>
+    <lastBuildDate>Wed, 11 Mar 2015 14:05:10 -0400</lastBuildDate>
     <generator>Jekyll v2.3.0</generator>
+    
+      <item>
+        <title>Importing Videos from a Third Party Source</title>
+        <description>&lt;p&gt;We’ve made it easier to import your videos from third party sources like YouTube, Vimeo, or Hulu
+to your video library! Now, the default option is to automatically add all video imports to your
+video library as new videos.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Step 1: Add your video source and make sure that add videos is turned on&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/video_sources/add_source.png&quot; alt=&quot;add video source&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Step 2: Navigate to your Video Library, you should see new videos from your video source that
+are active! Note, videos will be added to your video library as they become available&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/video_sources/video_library.png&quot; alt=&quot;video library&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Advanced Importing&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;If you do not want to automatically import all of the videos from a video source to your video
+library or if you want to merge your video imports to videos preexisting in your library, you can
+turn add video ‘off’ when you create a video source and use the “Advanced Video Importing”
+option.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/video_sources/add_source_not_auto.png&quot; alt=&quot;add video source not-auto&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Then, navigate to the video imports screen and click on the add button for the videos that you
+want to add to your video library or the merge button if you want to merge your video imports to
+preexisting videos in your video library.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/video_sources/advanced_video_imports.png&quot; alt=&quot;advanced video importing&quot; /&gt;&lt;/p&gt;
+</description>
+        <pubDate>Sun, 15 Feb 2015 05:37:55 -0500</pubDate>
+        <link>http://localhost:4000//posts/2015/02/15/importing-videos-from-third-party-source</link>
+        <guid isPermaLink="true">http://localhost:4000//posts/2015/02/15/importing-videos-from-third-party-source</guid>
+        
+        
+        <category>developers</category>
+        
+      </item>
+    
+      <item>
+        <title>Bulk Video Importing</title>
+        <description>&lt;p&gt;To bulk add video imports to your video library, check the videos that you want to add and click
+the button “Add to Library.” This will automatically add new videos to your video library. If you
+would like to merge videos into preexisting videos in your video library, you will need to click
+the merge chain for each video.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/video_imports/bulk_add.png&quot; alt=&quot;add to library&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;To bulk remove video imports from your video library, check the videos that you want to remove
+and click the button “Remove from Library.” Note, this does not delete the video, it only removes
+the chosen video import data source from your video.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/video_imports/bulk_remove.png&quot; alt=&quot;remove from library&quot; /&gt;&lt;/p&gt;
+</description>
+        <pubDate>Sun, 15 Feb 2015 05:37:55 -0500</pubDate>
+        <link>http://localhost:4000//posts/2015/02/15/bulk-video-importing</link>
+        <guid isPermaLink="true">http://localhost:4000//posts/2015/02/15/bulk-video-importing</guid>
+        
+        
+        <category>developers</category>
+        
+      </item>
+    
+      <item>
+        <title>Publishing a Roku Channel on the Zype Platform</title>
+        <description>&lt;p&gt;We have simplified the process of publishing a Roku Channel from the Zype Platform.
+The process now has three parts. First, you need to set up your channel.
+Then, Zype will build your Channel for you or you can
+&lt;a href=&quot;http://localhost:4000/posts/2015/02/13/self-publish-roku/&quot;&gt;self-publish your Channel&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Step 1: Set Up Your Video Library and Channel&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;First, you will need to upload and transcode videos onto the Zype Platform.
+Currently, Roku Channels only support videos with a Zype video source.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/Uploading Videos to the Zype Platform from the Web/upload_video_1.png&quot; alt=&quot;upload and transcode&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Second, you will need to set up your Roku Channel. Navigate to the Video Apps page&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/Publishing Your Roku App/dashboard_to_video_app.png&quot; alt=&quot;video apps page&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Click on Roku to set up a new Roku Channel for publishing&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/Publishing Your Roku App/set_up_roku_app.png&quot; alt=&quot;Roku publishing&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Set up your Roku Channel by supplying a title, subtitle, a channel image, and
+select a channel template. Zype will create multiple images from your one supplied
+channel image including your channel logo, poster art, and loading screen.
+It is suggested to have a 640 px by 480 px PNG image because the image will be used
+in many different sizes.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/Publishing Your Roku App/set_up_roku_screen.png&quot; alt=&quot;roku set up&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Step 2: Zype Builds Your Roku Channel&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Once you set up your Channel, Zype will bundle the necessary images and prepare the
+code for your Roku Channel. All you have to do is wait a couple of minutes!
+The page will automatically refresh once your Channel is ready.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/Publishing Your Roku App/roku_bundling.png&quot; alt=&quot;roku bundling&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Step 3: Publish Channel&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;You can choose to either self-publish or have Zype publish your Roku Channel for you.
+If you choose to self publish &lt;a href=&quot;http://localhost:4000/posts/2015/02/13/self-publish-roku/&quot;&gt;click here&lt;/a&gt;
+to read our guide to self publish your Roku Channel.
+If you choose to have Zype publish your channel, you will be sent to a checkout
+page to redeem your publishing package or pay for a publishing package.
+Once you checkout, a member of the Zype team will package, QA, and submit your
+Roku Channel to the Roku Channel Store.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/Publishing Your Roku App/roku_publishing.png&quot; alt=&quot;roku publishing options&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Typically, once your Roku Channel is submitted to the Roku Channel Store, it takes
+3-4 weeks to get to the front of the QA queue and then another 1-2 weeks for approval.
+You should expect to wait atleast 4-6 weeks for your Roku Channel to be available
+on the Roku Channel Store.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Step 4: Edit Channel Settings&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;The majority of settings for your Roku Channel are configured at run-time.
+Thus, you can edit Channel settings such as your featured playlist, your logos and
+themes without having to re-publish. &lt;a href=&quot;http://localhost:4000/posts/2015/02/13/roku-advanced-settings/&quot;&gt;Click here&lt;/a&gt;
+to read how to edit your Roku Channel.&lt;/p&gt;
+</description>
+        <pubDate>Fri, 13 Feb 2015 05:37:55 -0500</pubDate>
+        <link>http://localhost:4000//posts/2015/02/13/zype-publish-roku</link>
+        <guid isPermaLink="true">http://localhost:4000//posts/2015/02/13/zype-publish-roku</guid>
+        
+        
+        <category>developers</category>
+        
+      </item>
+    
+      <item>
+        <title>Self Publishing a Roku Channel on the Zype Platform</title>
+        <description>&lt;p&gt;Before being ready to self-publish, you will need to set up your Roku Channel on the Zype
+Platform. &lt;a href=&quot;http://localhost:4000/posts/2015/02/13/zype-publish-roku&quot;&gt;Click here&lt;/a&gt; to read up on
+how to set up your Roku Channel for publishing.
+To self-publish your Roku Channel, you will need to have a Roku device and be
+comfortable using the terminal. This tutorial is focused for those users who are
+on Mac or linux. If you are on Windows, you can follow along with the tutorial,
+but you will need to use the &lt;a href=&quot;http://sdkdocs.roku.com/display/sdkdoc/Eclipse+Plugin+Guide&quot;&gt;Eclipse BrightScript plug-in to package your Roku Channel&lt;/a&gt; (step 2).&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Step 1: Enable Roku Development Mode on Your Box&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;You will need to enable Roku Development Mode on your Roku device. Read through the &lt;a href=&quot;http://sdkdocs.roku.com/display/sdkdoc/Developer+Guide#DeveloperGuide-70LoadingandRunningyourApplicationWalkthrough&quot;&gt;Roku
+Documentation&lt;/a&gt;
+on how to load and run your Roku Channel.&lt;/p&gt;
+
+&lt;p&gt;Please store your ROKU_DEV_TARGET (the IP address
+of your Roku) and DEVPASSWORD (you will get to choose this when you set up your Roku Developer Device). You will need both of these to side load
+your Roku Channel into your Roku device.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Step 2: Unzip your bundled channel and test out locally (Mac/Linux)&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Zype will email you a bundled channel zip that contains the BrightScript code for your Roku Channel. You will need to unzip your channel and, in your terminal, navigate to the Roku code.&lt;/p&gt;
+
+&lt;p&gt;Next, open up app.mk in your text editor of choice and change the ROKU_DEV_TARGET
+and DEVPASSWORD to match your Roku device.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/Publishing Your Roku App/replace_appmk_vars.png&quot; alt=&quot;app.mk replacement&quot; /&gt;)&lt;/p&gt;
+
+&lt;p&gt;Then, run make install inside the Roku Channel directory in your terminal to side load your Roku Channel to your Roku device.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/Publishing Your Roku App/make_install.png&quot; alt=&quot;make install&quot; /&gt;)&lt;/p&gt;
+
+&lt;p&gt;If the command is successful, your Roku Channel will load automatically to your Roku Device.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Step 3: Package Your Roku Channel for Publishing&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;You will need to key your Roku Channel using your Roku device.
+Please read the official &lt;a href=&quot;http://sdkdocs.roku.com/display/sdkdoc/Channel+Packaging+And+Publishing#ChannelPackagingAndPublishing-30PackagingYourApplication&quot;&gt;Roku
+documentation&lt;/a&gt;
+on how to generate your key and key your device.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Step 4: Submit Your Roku Channel to the Roku Channel Store&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Now that you have a packaged Roku Channel, you will need to submit your Roku Channel to the Roku Channel Store. You can choose to either publish
+a private channel or a public channel. A private channel will be published right away, but is not searchable via the Roku Channel Store. You will
+be given a Channel URL that you can share to others to add your private channel. To publish a public channel, you will added to the Roku
+Publishing Queue for Roku QA. This queue takes approximately 3-4 to get to the front of. You should expect it to take 4-6 weeks to get your
+public Roku Channel available on the Roku Channel Store.&lt;/p&gt;
+
+&lt;p&gt;Click &lt;a href=&quot;https://owner.roku.com/Developer/Apps&quot;&gt;here&lt;/a&gt; to submit your Roku Channel!
+You will have to be logged into your Roku Developer Account.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Please feel free to reach out to Zype using the question box &lt;a href=&quot;https://admin.zype.com/&quot;&gt;in the lower left hand corner&lt;/a&gt;
+if you have any questions or would like Zype to publish your Roku Channel for you!&lt;/em&gt;&lt;/p&gt;
+</description>
+        <pubDate>Fri, 13 Feb 2015 05:37:55 -0500</pubDate>
+        <link>http://localhost:4000//posts/2015/02/13/self-publish-roku</link>
+        <guid isPermaLink="true">http://localhost:4000//posts/2015/02/13/self-publish-roku</guid>
+        
+        
+        <category>developers</category>
+        
+      </item>
+    
+      <item>
+        <title>Advanced Settings for Your Roku Channel</title>
+        <description>&lt;p&gt;Selecting a Channel Template and uploading a Channel Image takes most of the hard
+work out of branding your Roku Channel. However, if you want to further specialize
+your Roku Channel, you can click on Edit Advanced Settings for your Roku Channel.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/Publishing Your Roku App/roku_advanced_settings_btn.png&quot; alt=&quot;advanced settings btn&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The Advanced Settings have a lot of options! The highest impact advanced settings
+that you can change are in the Main Configurations Tab and the Image Configurations Tab.&lt;/p&gt;
+
+&lt;p&gt;In particular, in the Main Configurations, you can change which playlist is to
+be featured at the top of your Roku Channel and you can change the category to
+iterate through for the rest of your Roku Channel.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/Publishing Your Roku App/main_configs.png&quot; alt=&quot;main configs&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;In the Image Configurations, you can change the run time images such as your logo, slice images,
+and grid images. These images are grabbed through the Zype API each time your Roku
+Channel gets loaded, so you can upload a new image and refresh your Roku Channel to see
+it being changed in real time.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/Publishing Your Roku App/image_configs.png&quot; alt=&quot;image configs&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;You can also change your Channel Build Details. Note, however, that if you change
+images in your Channel Build Details like your store or focus image, you will
+need to resubmit your Channel to the Roku Channel Store.
+If you have not yet submitted your Roku Channel, you will need to grab a new bundle of your Roku Channel.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/Publishing Your Roku App/build_configs.png&quot; alt=&quot;image configs&quot; /&gt;&lt;/p&gt;
+</description>
+        <pubDate>Fri, 13 Feb 2015 05:37:55 -0500</pubDate>
+        <link>http://localhost:4000//posts/2015/02/13/roku-advanced-settings</link>
+        <guid isPermaLink="true">http://localhost:4000//posts/2015/02/13/roku-advanced-settings</guid>
+        
+        
+        <category>developers</category>
+        
+      </item>
+    
+      <item>
+        <title>Publish an iPhone App from the Zype Platform</title>
+        <description>&lt;p&gt;Before we start, lets look at what the end result of what your iPhone App will look like!&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/iphone/mockup.png&quot; alt=&quot;iphone preview&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;To configure your iPhone App using the Zype Platform, navigate to the Video Apps page and click
+on the iPhone logo.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/iphone/apps_screen.png&quot; alt=&quot;select iphone&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Next, fill in the App Details. This includes the title, the version number, and the store icon.
+The store icon will be the icon that users click to on your iPhone screen to enter your app.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/iphone/app_details_screen.png&quot; alt=&quot;app details&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Then, fill out the Channel Information. The banner image is what appears at the top of your home
+screen. The larger banner is for higher quality displays. Check out the mock up of an iPhone App
+below to see where the banner gets displayed in the home screen.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/iphone/channel_screen.png&quot; alt=&quot;channel screen&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/iphone/mockup-help.png&quot; alt=&quot;banner display&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Next, add tiles. Tiles are what a user can click on in the app’s home screen to go to the appropriate page. An iPhone app can have up to 9 tiles.
+Tiles can include links to Twitter, Facebook, Google+, your blog, your personal website,
+favorites, videos, and messages. You can drag the tiles in the editor to change their order on
+the iPhone Screen. Check out the mock up tosee where the tiles get displayed.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/iphone/tiles_screen.png&quot; alt=&quot;tile screen&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/iphone/mockup-help.png&quot; alt=&quot;tiles display&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;If you would like to add a message to your users at this time, you can click on the Message tab
+and add a message.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/iphone/message_screen.png&quot; alt=&quot;message screen&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Once you are finished, click save changes. You will be redirected to the iPhone App details
+screen where you will see a mock up of your channel home screen. You can either
+use Zype’s &lt;a href=&quot;&quot;&gt;API documentation&lt;/a&gt; to self-publish or have Zype publish
+for you!&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/iphone/iphone_show.png&quot; alt=&quot;iphone preview&quot; /&gt;&lt;/p&gt;
+</description>
+        <pubDate>Fri, 13 Feb 2015 05:37:55 -0500</pubDate>
+        <link>http://localhost:4000//posts/2015/02/13/publish-iphone-advanced</link>
+        <guid isPermaLink="true">http://localhost:4000//posts/2015/02/13/publish-iphone-advanced</guid>
+        
+        
+        <category>developers</category>
+        
+      </item>
     
       <item>
         <title>Adding a YouTube Video from a Link</title>
@@ -142,313 +435,6 @@ check by going to the video and looking at its metadata.&lt;/p&gt;
         <pubDate>Thu, 04 Dec 2014 07:37:55 -0500</pubDate>
         <link>http://localhost:4000//posts/2014/12/04/zobjects-in-the-zype-platform</link>
         <guid isPermaLink="true">http://localhost:4000//posts/2014/12/04/zobjects-in-the-zype-platform</guid>
-        
-        
-        <category>developers</category>
-        
-      </item>
-    
-      <item>
-        <title>Defining Categories and Playlists</title>
-        <description>&lt;p&gt;As you make your way through the &lt;a href=&quot;http://admin.zype.com&quot;&gt;Zype Platform&lt;/a&gt;, you might have some
-questions about the differences between a playlist and a category. At the end of the day, both
-are used to return a set of videos, but they aren’t exactly the same thing. This blog post
-will look at categories and playlists and help you better understand how and when to use them.&lt;/p&gt;
-
-&lt;h3 id=&quot;what-are-playlists-and-how-do-i-use-them&quot;&gt;What are playlists and how do I use them?&lt;/h3&gt;
-&lt;p&gt;A playlist on the Zype Platform is a collection of videos that you assemble under a title.
-Common playlists might include: Trending Videos, Most Popular, Editor’s Choice, etc. Playlists
-are great for when you want to create and curate, by hand, a set of videos that might not fall
-under a specific category.&lt;/p&gt;
-
-&lt;h3 id=&quot;what-are-categories-and-how-do-i-use-them&quot;&gt;What are categories and how do I use them?&lt;/h3&gt;
-&lt;p&gt;A category on the Zype Platform is a label that you can create and assign to any number of
-videos. Common categories for video content might include: Genre, Tag, Type, Season, Series,
- etc. Categories are more generic than playlists and can be mass assigned to videos in your
-&lt;a href=&quot;http://admin.zype.com/videos&quot;&gt;Video Library.&lt;/a&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;im-using-the-zype-platform-to-create-a-roku-app-whats-the-difference-for-me&quot;&gt;I’m using the Zype Platform to create a Roku app, what’s the difference for me?&lt;/h3&gt;
-&lt;p&gt;Roku apps will treat categories and playlists the same, as they are both just a collection of
-videos. For an in-depth guide on how to create your Roku App, make sure you check out &lt;a href=&quot;http://dev.zype.com/posts/2014/12/03/categories-playlists-zobjects-roku/&quot;&gt;this blog post&lt;/a&gt;&lt;/p&gt;
-</description>
-        <pubDate>Thu, 04 Dec 2014 06:16:55 -0500</pubDate>
-        <link>http://localhost:4000//posts/2014/12/04/defining-categories-and-playlists</link>
-        <guid isPermaLink="true">http://localhost:4000//posts/2014/12/04/defining-categories-and-playlists</guid>
-        
-        
-        <category>platform</category>
-        
-      </item>
-    
-      <item>
-        <title>Zype Assets for a Roku Channel</title>
-        <description>&lt;p&gt;Adding image assets to your Roku Channel allow your to make the channel your own!
-Using the Zype Platform and Zype API, you will be able to change the majority of
-images on the fly without having to republish your app. However, there are a few images
-that need to be bundled during installation because they make up your
-application icon set. These images live on the Roku Channel store.
-This tutorial will describe the images that need to be bundled, the images that can
-be updated via the Zype Platform, and the specs for both.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Assets that can only be configured during publication:&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Example assets are included in our &lt;a href=&quot;https://github.com/zype/zype-roku/tree/master/images&quot;&gt;Roku SDK&lt;/a&gt; and
-need to be packaged with the Roku Channel are because they make up your application
-icon set. They do not get loaded via a call to the Zype API:&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;https://github.com/zype/zype-roku/blob/master/images/mm_icon_focus_hd.png&quot;&gt;Image Home (Center Focus Icon)&lt;/a&gt; - your large icon. HD is 366 x 210 pixels, SD is 248 x 140 pixels. PNG format.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;https://github.com/zype/zype-roku/blob/master/images/mm_icon_side_hd.png&quot;&gt;Image Brand (Side Icon)&lt;/a&gt; - your small icon. HD is 108 x 69 pixels, SD is 80 x 46 pixels. PNG format.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;https://github.com/zype/zype-roku/blob/master/images/splash_screen_hd.png&quot;&gt;Image Splash&lt;/a&gt; - the splash screen (what appears while your Roku Channel loads). 640 x 480 pixels. JPG format.&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;When publishing, you will also need a HD Poster that is a 290 x 218 JPG format and
-an SD Poster that is a 214 x 144 JPG format. We call that the Image Store in our Zype Roku App.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Assets that can be changed using the Zype Platform and Zype API:&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;These assets get loaded via a call to the Zype API everytime the Roku Channel gets loaded.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/Creating an App/roku_info.png&quot; alt=&quot;zype roku app&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/Creating an App/more_roku_info.png&quot; alt=&quot;zype roku app&quot; /&gt;&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;Logo - logo used in the overhang. Suggested size is 125 x 104 pixels for HD and 80 x 67 pixels, PNG format.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Slice - image tiled to create the overhang. Suggested size is 1 x 124 pixels for HD and 1 x 83 for SD pixels, PNG format.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Grid Description Image - image used to contain text on the grid screen. Suggested size is 968 x 258 pixels, PNG format.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Grid Border Image - image used for the highlight border on the grid screen. Suggested size is 268 x 190 pixels, PNG format.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Info Poster - image used to link to the info page. Suggested size is 266 x 150 pixels, PNG format.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Search Poster - image used to link to the search page. Suggested size is 266 x 150 pixels, PNG format.&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-</description>
-        <pubDate>Wed, 03 Dec 2014 07:37:55 -0500</pubDate>
-        <link>http://localhost:4000//posts/2014/12/03/zype-roku-assets</link>
-        <guid isPermaLink="true">http://localhost:4000//posts/2014/12/03/zype-roku-assets</guid>
-        
-        
-        <category>developers</category>
-        
-      </item>
-    
-      <item>
-        <title>Playlists, Categories, and Zobjects on Roku</title>
-        <description>&lt;p&gt;We aim to make the development process of a Roku Channel as easy as possible using
-our &lt;a href=&quot;https://github.com/zype/zype-roku&quot;&gt;Zype Roku SDK&lt;/a&gt;. To do this, our sample Roku Channel
-focuses on three major components of the Zype Platform: playlists, categories, and zobjects.
-Since the playlists, categories, and zobjects are being pulled into your Roku channel
-using the Zype API, they are all editable using the Zype Platform and do not require
-republishing to the Roku Channel Store to make a change.&lt;/p&gt;
-
-&lt;p&gt;We will be using screenshots from our sample Roku Channel to highlight what you can do.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/Categories, Playlists and Your Roku App/roku_playlist.png&quot; alt=&quot;playlists and categories&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Featured Playlist&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;The first slider of the home screen is the featured playlist. This can be any playlist
-that you have created using the Zype Platform. Note, only Zype Videos will play.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Categories&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Below the first slider are category sliders. Note that the category sliders and the featured playlist slider are identical.
-The only difference is how we are calling the Zype API to return us the videos in each slider.
-On the Zype Platform, you select a category that you want to iterate through for the rest
-of the home screen. In the picture above, we are iterating through the category ‘Genre.’
-Thus, the first category slider is the ‘Genre’ with a value of ‘Adventure’ and the second
-category slider will be the next ‘Genre’, which is ‘Comedy’.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Zobjects&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/Categories, Playlists and Your Roku App/roku_zobject.png&quot; alt=&quot;Zobjects in video detail&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;You also have the option to provide additional metadata about your videos in the video
-detail screen. You select one zobject to be above the description and one zobject to be
-below the description. In the example above, we selected the Zobject ‘Actor’ to be above the description
-and it lists the actors that we have associated with the video. Similarly, we selected
-the Zobject ‘Director’ to be below the description.&lt;/p&gt;
-</description>
-        <pubDate>Wed, 03 Dec 2014 05:37:55 -0500</pubDate>
-        <link>http://localhost:4000//posts/2014/12/03/categories-playlists-zobjects-roku</link>
-        <guid isPermaLink="true">http://localhost:4000//posts/2014/12/03/categories-playlists-zobjects-roku</guid>
-        
-        
-        <category>developers</category>
-        
-      </item>
-    
-      <item>
-        <title>Accessing your API and Player Keys</title>
-        <description>&lt;p&gt;To interact with the Zype API, you will need your API Key and Player Key. This
-tutorial will show you how to find these keys from the Zype Platform.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Step 1&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Click the settings icon in the top navbar.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/API Blog/1.png&quot; alt=&quot;click settings&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Step 2&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;In the dropdown, select API&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/API Blog/2.png&quot; alt=&quot;select API&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Step 3&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;You will be directed to the API credentials page.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/API Blog/3.png&quot; alt=&quot;api player keys&quot; /&gt;&lt;/p&gt;
-</description>
-        <pubDate>Mon, 01 Dec 2014 07:37:55 -0500</pubDate>
-        <link>http://localhost:4000//posts/2014/12/01/api-keys</link>
-        <guid isPermaLink="true">http://localhost:4000//posts/2014/12/01/api-keys</guid>
-        
-        
-        <category>developers</category>
-        
-      </item>
-    
-      <item>
-        <title>Sample Rails App using the Zype Platform and API</title>
-        <description>&lt;p&gt;We want to make the Zype Platform accessible to as many types of developers as possible. To do this,
-we have provided &lt;a href=&quot;http://dev.zype.com/api_docs/intro/&quot;&gt;API documentation&lt;/a&gt; and are happy
-to &lt;a href=&quot;mailto:contact@zypemedia.com&quot;&gt;talk with you&lt;/a&gt; about creating a turnkey app.&lt;/p&gt;
-
-&lt;p&gt;As a developer, I always like to learn by example, so we have created
-a template Rails app to show you what you can do with the Zype Platform using our Ruby Gem and also provide you with a starter template if you want to build off of it for your own web app.&lt;/p&gt;
-
-&lt;p&gt;We intentionally kept the styling simple and used &lt;a href=&quot;http://getbootstrap.com/&quot;&gt;Bootstrap&lt;/a&gt; if
-you would like to use this example as a foundation to your Rails app.
-Feel free to clone the repo &lt;a href=&quot;https://github.com/zype/zype-rails&quot;&gt;here&lt;/a&gt;. You will
-need your Zype API and Player Keys from the Zype Platform. The README has directions
-to how you can find your keys.&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;The Zype Rails Sample App has the following pages and features.&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Home Page&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;The homepage includes all of your playlists, a link in the header to view all videos,
-and a search box to search for a specific video. The Playlists can be configured
-in the Zype Platform and can be fetched via the Ruby Gem.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/Walkthrough of the Zype API with a Sample Rails App/home.png&quot; alt=&quot;homepage&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Playlist Page&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;You can click on any playlist to view all the videos that belong to that playlist. You can sort
-the videos based on release date, name, or popularity. Also note that there are Zype Videos
-and YouTube videos in the same player. The Zype Platform and Zype API allows you to
-seamlessly combine the two.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/Walkthrough of the Zype API with a Sample Rails App/playlist.png&quot; alt=&quot;playlist page&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Browse all Videos&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;The browse all videos uses the Ruby Gem to query the Zype API to get all the videos.
-When you hover over a video, you will see the description. Feel free to read the &lt;a href=&quot;http://dev.zype.com/api_docs/videos/&quot;&gt;Video API Documentation&lt;/a&gt; to see what other information
-gtes returned when you query for the videos.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/Walkthrough of the Zype API with a Sample Rails App/browse.png&quot; alt=&quot;browse videos&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Video Page&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;When you click on a video’s thumbnail, you get directed to the video’s page. The video’s page
-contains the title, description, and video player. The Zype API will deliver the appropriate
-player based on where the video source comes from and what Player Rules you set.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/Walkthrough of the Zype API with a Sample Rails App/video.png&quot; alt=&quot;video page&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Have questions about implementing our sample Rails app or want to see examples of
-other features or in other languages? Feel free to comment below!&lt;/p&gt;
-</description>
-        <pubDate>Sat, 29 Nov 2014 07:37:55 -0500</pubDate>
-        <link>http://localhost:4000//posts/2014/11/29/sample-rails-zype</link>
-        <guid isPermaLink="true">http://localhost:4000//posts/2014/11/29/sample-rails-zype</guid>
-        
-        
-        <category>developers</category>
-        
-      </item>
-    
-      <item>
-        <title>Publishing a Roku Channel: Part III - Publishing the Channel</title>
-        <description>&lt;p&gt;In &lt;a href=&quot;http://dev.zype.com/posts/2014/11/28/develop-roku-app-with-zype-sdk/&quot;&gt;part two&lt;/a&gt; of publishing a Roku Channel, we described how to develop a Roku app using the Zype SDK and running it locally.
-In this tutorial, we will walk through how to publish a Private Roku Channel that you can
-share immediately with anyone that owns a Roku. If you are interested in publishing a Public Roku Channel, the steps are very similar, just you have to wait for Roku to approve your channel before it can be accessed in the Roku Channel Store. It is recommended that you first publish a private channel, test the channel out to beta users, and then publish the channel publicly.&lt;/p&gt;
-
-&lt;p&gt;Before starting this tutorial, we will assume that you have already tested a Roku App
-locally and are a registered Roku developer.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Step 1&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Log into your Roku developer account and click Manage My Channels&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/Publishing Your Roku App/1.png&quot; alt=&quot;step 1&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Step 2&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Click add Private Channel. If you want to publish a Public Channel, click add Public Channel.
-The steps are the same for private and public channels, except that you will need to
-give contact information in case Roku has questions when they are reviewing your app.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/Publishing Your Roku App/2.png&quot; alt=&quot;step 2&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Step 3&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Fill out Channel Properties for your channel.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/Publishing Your Roku App/3.png&quot; alt=&quot;step 3&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Step 4&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Fill our Channel Descriptions for your channel. You will need to have an HD Poster
-that is a 290 x 218 JPEG file and an SD Poster that is a 214 x 144 JPEG file.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/Publishing Your Roku App/4.png&quot; alt=&quot;step 4&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Step 5&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;You can optionally upload screenshots of your Roku Channel. Read the &lt;a href=&quot;http://sdkdocs.roku.com/display/sdkdoc/Channel+Packaging+And+Publishing#ChannelPackagingAndPublishing-38GeneratingScreenshotsSincev31onRoku1andv43onRoku2&quot;&gt;Roku documentation&lt;/a&gt; on how to generate a screenshot.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/Publishing Your Roku App/5.png&quot; alt=&quot;step 5&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Step 6&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Last, you will need to upload your application package. Follow the instructions from the &lt;a href=&quot;http://sdkdocs.roku.com/display/sdkdoc/Channel+Packaging+And+Publishing#ChannelPackagingAndPublishing-30PackagingYourApplication&quot;&gt;Roku documentation&lt;/a&gt; on how to generate a key and then package your channel.&lt;/p&gt;
-
-&lt;p&gt;Once you have downloaded your Roku Channel package, upload the application package and click the “Publish” arrow. You will get an access code url that can be used to download the private
-Roku channel on your individual Roku account.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/Publishing Your Roku App/6.png&quot; alt=&quot;step 6&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;More tutorials in this series:&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Part I: &lt;a href=&quot;http://dev.zype.com/posts/2014/11/25/create-roku-app-on-zype/&quot;&gt;Creating a Roku Channel using the Zype Platform&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Part II: &lt;a href=&quot;http://dev.zype.com/posts/2014/11/28/develop-roku-app-with-zype-sdk/&quot;&gt;Developing the Roku Channel using the Zype SDK&lt;/a&gt;&lt;/p&gt;
-</description>
-        <pubDate>Fri, 28 Nov 2014 07:37:55 -0500</pubDate>
-        <link>http://localhost:4000//posts/2014/11/28/publish-roku-app</link>
-        <guid isPermaLink="true">http://localhost:4000//posts/2014/11/28/publish-roku-app</guid>
         
         
         <category>developers</category>

@@ -5,6 +5,9 @@ date:   2014-11-28 12:37:55
 categories: developers
 ---
 
+**Note, this article is depreciated as of 2/13/15. To find an up to date version
+of publishing a Roku Channel, [click here]({{site.url}}posts/2015/02/13/zype-publish-roku/).**
+
 In [part two](http://dev.zype.com/posts/2014/11/28/develop-roku-app-with-zype-sdk/) of publishing a Roku Channel, we described how to develop a Roku app using the Zype SDK and running it locally.
 In this tutorial, we will walk through how to publish a Private Roku Channel that you can
 share immediately with anyone that owns a Roku. If you are interested in publishing a Public Roku Channel, the steps are very similar, just you have to wait for Roku to approve your channel before it can be accessed in the Roku Channel Store. It is recommended that you first publish a private channel, test the channel out to beta users, and then publish the channel publicly.

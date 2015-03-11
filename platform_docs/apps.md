@@ -7,83 +7,195 @@ permalink: /platform_docs/apps/
 The Zype Platform will help you configure apps that you will need to build and publish
 to the respective application stores.
 
-If you want a full walkthrough of creating an app, we suggest you look at the [creating an app guide.](http://dev.zype.com/platform_docs/creating_an_app/)
+If you want a full walkthrough of creating an app, we suggest you look at the [creating an app guide.]({{site.url}}platform_docs/creating_an_app/)
 
 <div style="width: 100%">
   <div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>
     <a href="#1">
-    Starting a Roku App on the Zype Platform</a>
+    Publishing a Roku Channel Through Zype</a>
   </div>
   <div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>
     <a href="#2">
-    Adding Assets to Your Roku App</a>
+    Self Publishing a Roku Channel Through Zype</a>
   </div>
   <div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>
     <a href="#3">
-    Categories, Playlists and Your Roku App</a>
+    Advanced Settings for Your Roku Channel</a>
   </div>
   <div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>
     <a href="#4">
-    Building Your Roku App</a>
+    Adding Assets to Your Roku Channel</a>
   </div>
   <div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>
     <a href="#5">
-    Publishing Your Roku App</a>
+    Categories, Playlists and Your Roku Channel</a>
+  </div>
+  <div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>
+    <a href="#6">
+    Publishing an iPhone App from the Zype Platform</a>
   </div>
 </div>
 
 
 <hr id="1">
 
-## Starting a Roku App on the Zype Platform
-One of the biggest strengths of the Zype Platfom is its ability to distribute your
-video content on multiple platforms like Roku. In this tutorial, we will describe how to use
-the Zype Platform to create a Roku app that looks like the screen shot below.
+## Publishing a Roku Channel Through Zype
 
-![Roku Home]({{site.url}}assets/Creating an App/roku.png)
+We have simplified the process of publishing a Roku Channel from the Zype Platform.
+The process now has three parts. First, you need to set up your channel.
+Then, Zype will build your Channel for you or you can
+[self-publish your Channel](#2).
 
-**Step 1**
+**Step 1: Set Up Your Video Library and Channel**
 
-Upload your videos into the Zype Platform. Roku will only serve videos from the Zype
-video source. Don't worry if you have videos from other sources like Hulu and YouTube.
-The Zype API can query to only show Zype Videos in your Roku App.
+First, you will need to upload and transcode videos onto the Zype Platform.
+Currently, Roku Channels only support videos with a Zype video source.
 
-![Video Catalogue]({{site.url}}assets/Creating an App/videos.png)
+![upload and transcode]({{site.url}}assets/Uploading Videos to the Zype Platform from the Web/upload_video_1.png)
 
-**Step 2**
+Second, you will need to set up your Roku Channel. Navigate to the Video Apps page
 
-Navigate to the Video Apps screen using the left hand navigation and click on the Roku
-icon to start the process of creating a new Roku App.
+![video apps page]({{site.url}}assets/Publishing Your Roku App/dashboard_to_video_app.png)
 
-![Select App]({{site.url}}assets/Creating an App/vid_app.png)
+Click on Roku to set up a new Roku Channel for publishing
 
-**Step 3**
+![Roku publishing]({{site.url}}assets/Publishing Your Roku App/set_up_roku_app.png)
 
-You will be prompted to answer questions about how you want to set up your Roku App.
-Don't worry if you want to change these configurations down the road.
-The Zype Platform and API are designed so that these changes can be updated without having to republish your app!
+Set up your Roku Channel by supplying a title, subtitle, a channel image, and
+select a channel template. Zype will create multiple images from your one supplied
+channel image including your channel logo, poster art, and loading screen.
+It is suggested to have a 640 px by 480 px PNG image because the image will be used
+in many different sizes.
 
-For example, you can set the featured playlist, the category to iterate through, copy text, and
-the colors of your Roku App any time you want from the Zype Platform. These changes will be reflected the
-next time your Roku App is loaded. Only the Splash Screen and the Roku Store Icons cannot
-be updated via the Zype Platform.
+![roku set up]({{site.url}}assets/Publishing Your Roku App/set_up_roku_screen.png)
 
-![New Roku App]({{site.url}}assets/Creating an App/new_video_app.png)
+**Step 2: Zype Builds Your Roku Channel**
 
-**Step 4**
+Once you set up your Channel, Zype will bundle the necessary images and prepare the
+code for your Roku Channel. All you have to do is wait a couple of minutes!
+The page will automatically refresh once your Channel is ready.
 
-Once you create your Roku App, you will need to publish the App on the Zype Platform
-by clicking on the Publish App button so that your App's API goes live.
-Then, you can use our API, Roku SDK, or reach out to Zype to help you build and publish the App on the Roku Channel Store!
+![roku bundling]({{site.url}}assets/Publishing Your Roku App/roku_bundling.png)
 
-**More tutorials in this series:**
-Part II: [Developing the Roku Channel using the Zype SDK](http://dev.zype.com/posts/2014/11/28/develop-roku-app-with-zype-sdk/)
+**Step 3: Publish Channel**
 
-Part III: [Publishing the Private Roku Channel](http://dev.zype.com/posts/2014/11/28/publish-roku-app/)
+You can choose to either self-publish or have Zype publish your Roku Channel for you.
+If you choose to self publish [click here](#2)
+to read our guide to self publish your Roku Channel.
+If you choose to have Zype publish your channel, you will be sent to a checkout
+page to redeem your publishing package or pay for a publishing package.
+Once you checkout, a member of the Zype team will package, QA, and submit your
+Roku Channel to the Roku Channel Store.
+
+![roku publishing options]({{site.url}}assets/Publishing Your Roku App/roku_publishing.png)
+
+Typically, once your Roku Channel is submitted to the Roku Channel Store, it takes
+3-4 weeks to get to the front of the QA queue and then another 1-2 weeks for approval.
+You should expect to wait atleast 4-6 weeks for your Roku Channel to be available
+on the Roku Channel Store.
+
+**Step 4: Edit Channel Settings**
+
+The majority of settings for your Roku Channel are configured at run-time.
+Thus, you can edit Channel settings such as your featured playlist, your logos and
+themes without having to re-publish. [Click here](#3)
+to read how to edit your Roku Channel.
 
 <hr id="2">
 
-## Adding Assets to Your Roku App
+## Self Publishing a Roku Channel Through Zype
+Before being ready to self-publish, you will need to set up your Roku Channel on the Zype
+Platform. [Click here](#1) to read up on
+how to set up your Roku Channel for publishing.
+To self-publish your Roku Channel, you will need to have a Roku device and be
+comfortable using the terminal. This tutorial is focused for those users who are
+on Mac or linux. If you are on Windows, you can follow along with the tutorial,
+but you will need to use the [Eclipse BrightScript plug-in to package your Roku Channel](http://sdkdocs.roku.com/display/sdkdoc/Eclipse+Plugin+Guide) (step 2).
+
+**Step 1: Enable Roku Development Mode on Your Box**
+
+You will need to enable Roku Development Mode on your Roku device. Read through the [Roku
+Documentation](http://sdkdocs.roku.com/display/sdkdoc/Developer+Guide#DeveloperGuide-70LoadingandRunningyourApplicationWalkthrough)
+on how to load and run your Roku Channel.
+
+Please store your ROKU_DEV_TARGET (the IP address
+of your Roku) and DEVPASSWORD (you will get to choose this when you set up your Roku Developer Device). You will need both of these to side load
+your Roku Channel into your Roku device.
+
+
+**Step 2: Unzip your bundled channel and test out locally (Mac/Linux)**
+
+Zype will email you a bundled channel zip that contains the BrightScript code for your Roku Channel. You will need to unzip your channel and, in your terminal, navigate to the Roku code.
+
+Next, open up app.mk in your text editor of choice and change the ROKU_DEV_TARGET
+and DEVPASSWORD to match your Roku device.
+
+![app.mk replacement]({{site.url}}assets/Publishing Your Roku App/replace_appmk_vars.png))
+
+Then, run make install inside the Roku Channel directory in your terminal to side load your Roku Channel to your Roku device.
+
+![make install]({{site.url}}assets/Publishing Your Roku App/make_install.png))
+
+If the command is successful, your Roku Channel will load automatically to your Roku Device.
+
+**Step 3: Package Your Roku Channel for Publishing**
+
+You will need to key your Roku Channel using your Roku device.
+Please read the official [Roku
+documentation](http://sdkdocs.roku.com/display/sdkdoc/Channel+Packaging+And+Publishing#ChannelPackagingAndPublishing-30PackagingYourApplication)
+on how to generate your key and key your device.
+
+**Step 4: Submit Your Roku Channel to the Roku Channel Store**
+
+Now that you have a packaged Roku Channel, you will need to submit your Roku Channel to the Roku Channel Store. You can choose to either publish
+a private channel or a public channel. A private channel will be published right away, but is not searchable via the Roku Channel Store. You will
+be given a Channel URL that you can share to others to add your private channel. To publish a public channel, you will added to the Roku
+Publishing Queue for Roku QA. This queue takes approximately 3-4 to get to the front of. You should expect it to take 4-6 weeks to get your
+public Roku Channel available on the Roku Channel Store.
+
+Click [here](https://owner.roku.com/Developer/Apps) to submit your Roku Channel!
+You will have to be logged into your Roku Developer Account.
+
+*Please feel free to reach out to Zype using the question box [in the lower left hand corner](https://admin.zype.com/)
+if you have any questions or would like Zype to publish your Roku Channel for you!*
+
+
+<hr id="3">
+
+## Advanced Settings for Your Roku Channel
+
+Selecting a Channel Template and uploading a Channel Image takes most of the hard
+work out of branding your Roku Channel. However, if you want to further specialize
+your Roku Channel, you can click on Edit Advanced Settings for your Roku Channel.
+
+![advanced settings btn]({{site.url}}assets/Publishing Your Roku App/roku_advanced_settings_btn.png)
+
+The Advanced Settings have a lot of options! The highest impact advanced settings
+that you can change are in the Main Configurations Tab and the Image Configurations Tab.
+
+In particular, in the Main Configurations, you can change which playlist is to
+be featured at the top of your Roku Channel and you can change the category to
+iterate through for the rest of your Roku Channel.
+
+![main configs]({{site.url}}assets/Publishing Your Roku App/main_configs.png)
+
+In the Image Configurations, you can change the run time images such as your logo, slice images,
+and grid images. These images are grabbed through the Zype API each time your Roku
+Channel gets loaded, so you can upload a new image and refresh your Roku Channel to see
+it being changed in real time.
+
+![image configs]({{site.url}}assets/Publishing Your Roku App/image_configs.png)
+
+You can also change your Channel Build Details. Note, however, that if you change
+images in your Channel Build Details like your store or focus image, you will
+need to resubmit your Channel to the Roku Channel Store.
+If you have not yet submitted your Roku Channel, you will need to grab a new bundle of your Roku Channel.
+
+![image configs]({{site.url}}assets/Publishing Your Roku App/build_configs.png)
+
+<hr id='4'>
+
+## Adding Assets to Your Roku Channel
 Adding image assets to your Roku Channel allow your to make the channel your own!
 Using the Zype Platform and Zype API, you will be able to change the majority of
 images on the fly without having to republish your app. However, there are a few images
@@ -128,9 +240,9 @@ These assets get loaded via a call to the Zype API everytime the Roku Channel ge
 
 6. Search Poster - image used to link to the search page. Suggested size is 266 x 150 pixels HD & SD, PNG format.
 
-<hr id="3">
+<hr id="5">
 
-## Categories, Playlists and Your Roku App
+## Categories, Playlists and Your Roku Channel
 We aim to make the development process of a Roku Channel as easy as possible using
 our [Zype Roku SDK](https://github.com/zype/zype-roku). To do this, our sample Roku Channel
 focuses on three major components of the Zype Platform: playlists, categories, and zobjects.
@@ -166,135 +278,49 @@ below the description. In the example above, we selected the Zobject 'Actor' to 
 and it lists the actors that we have associated with the video. Similarly, we selected
 the Zobject 'Director' to be below the description.
 
-<hr id="4">
+<hr id='6'>
 
-## Building Your Roku App
-In a [previous tutorial](http://dev.zype.com/posts/2014/11/25/create-roku-app-on-zype/),
-we described how to create a Roku App using the Zype Platform. In this tutorial,
-we will walk through how to develop a Roku app using the Zype SDK and testing it locally.
+## Publishing an iPhone App from the Zype Platform
 
-To complete this tutorial, we expect that you know how to clone a repo on GitHub. You do
-not need to have prior experience with the [BrightScript language](http://sdkdocs.roku.com/display/sdkdoc/BrightScript+Language+Reference)
-that Roku uses to create Roku Channels, but you should be comfortable with programming because
-you will need to update some variables within the cloned app and [telnet](http://en.wikipedia.org/wiki/Telnet).
+Before we start, lets look at what the end result of what your iPhone App will look like!
 
-Moreover, you need to have a Roku available to test out your app and a developer account with Roku to publish the app. [Register here](https://www.roku.com/developer) for a Roku developer account.
+![iphone preview]({{site.url}}assets/iphone/mockup.png)
 
-**Step 1**
+To configure your iPhone App using the Zype Platform, navigate to the Video Apps page and click
+on the iPhone logo.
 
-You should have already created a Roku App on the Zype Platform. If you need help
-creating a Roku App from the Zype Platform, please read our [previous tutorial](http://dev.zype.com/posts/2014/11/25/create-roku-app-on-zype/).
+![select iphone]({{site.url}}assets/iphone/apps_screen.png)
 
-**Step 2**
+Next, fill in the App Details. This includes the title, the version number, and the store icon.
+The store icon will be the icon that users click to on your iPhone screen to enter your app.
 
-Now that you have a Roku App created on the Zype Platform, you will need to turn developer mode
-on for your Roku. This will allow you to test out your app before you publish it on your local Roku.
+![app details]({{site.url}}assets/iphone/app_details_screen.png)
 
-To set up your Roku for developer mode, navigate to the home screen of your Roku
-and, with your Roku remote control, click the following:
+Then, fill out the Channel Information. The banner image is what appears at the top of your home
+screen. The larger banner is for higher quality displays. Check out the mock up of an iPhone App
+below to see where the banner gets displayed in the home screen.
 
-<pre><code>Home 3x, Up 2x, Right, Left, Right, Left, Right.</code></pre>
+![channel screen]({{site.url}}assets/iphone/channel_screen.png)
 
-On your Roku, you will be prompted to enter a developer password for the Roku device.
-Record the password that you enter because it will be used to load your channel in development mode.
+![banner display]({{site.url}}assets/iphone/mockup-help.png)
 
-You will also need to record your Roku Player's IP address. In your Roku, go to
-Settings > Network to find it.
+Next, add tiles. Tiles are what a user can click on in the app’s home screen to go to the appropriate page. An iPhone app can have up to 9 tiles.
+Tiles can include links to Twitter, Facebook, Google+, your blog, your personal website,
+favorites, videos, and messages. You can drag the tiles in the editor to change their order on
+the iPhone Screen. Check out the mock up tosee where the tiles get displayed.
 
-**Step 3**
+![tile screen]({{site.url}}assets/iphone/tiles_screen.png)
 
-Now that your Roku is set up for developer mode and you have recorded your Developer Password
-and your Roku Player's IP address, you are set to grab the Zype Roku SDK from our GitHub account.
+![tiles display]({{site.url}}assets/iphone/mockup-help.png)
 
-Clone the repo [here](http://github.com/zype/zype-roku).
+If you would like to add a message to your users at this time, you can click on the Message tab
+and add a message.
 
-**Step 4**
+![message screen]({{site.url}}assets/iphone/message_screen.png)
 
-Once you have the code on your computer, you will need to do 3 things to customize the Roku app
-for your own app.
+Once you are finished, click save changes. You will be redirected to the iPhone App details
+screen where you will see a mock up of your channel home screen. You can either
+use Zype's [API documentation]({{site.url/api_docs/apps}}) to self-publish or have Zype publish
+for you!
 
-First, you need to open the app.mk file and set the ROKU_DEV_TARGET to your Roku Player's IP
-address and set the DEVPASSWORD to your Developer Password.
-
-Second, you will need to change the hard coded keys/initialization variables that are
-located in source/objects/config.brs. You will be able to find your api_key, app_key, and
-player_key in the Zype Platform.
-
-Third, you need to make sure that the APPNAME in the Makefile matches the name of the Roku App's directory that you cloned into. If you do not change anything from cloning, the Makefile and the
-directory name should both be zype-roku.
-
-**Step 5**
-
-Now, its time to test run your Roku App on your local Roku. Navigate to the Roku app's directory in your computer's terminal and run:
-
-<pre><code>$ make install</code></pre>
-
-This will build the app onto your local Roku. Once the build is finished, the channel will automatically load. Test to make sure everything works appropriately.
-
-Now that your Roku app is built, you will need to publish the app to the Roku Channel store.
-[Click here](http://dev.zype.com/posts/2014/11/28/publish-roku-app/) to read how to publish your Roku App.
-
-**More tutorials in this series:**
-
-Part I: [Creating a Roku Channel using the Zype Platform](http://dev.zype.com/posts/2014/11/25/create-roku-app-on-zype/)
-
-Part III: [Publishing the Private Roku Channel](http://dev.zype.com/posts/2014/11/28/publish-roku-app/)
-
-<hr id="5">
-
-## Publishing Your Roku App
-In [part two](http://dev.zype.com/posts/2014/11/28/develop-roku-app-with-zype-sdk/) of publishing a Roku Channel, we described how to develop a Roku app using the Zype SDK and running it locally.
-In this tutorial, we will walk through how to publish a Private Roku Channel that you can
-share immediately with anyone that owns a Roku. If you are interested in publishing a Public Roku Channel, the steps are very similar, just you have to wait for Roku to approve your channel before it can be accessed in the Roku Channel Store. It is recommended that you first publish a private channel, test the channel out to beta users, and then publish the channel publicly.
-
-Before starting this tutorial, we will assume that you have already tested a Roku App
-locally and are a registered Roku developer.
-
-**Step 1**
-
-Log into your Roku developer account and click Manage My Channels
-
-![step 1]({{site.url}}assets/Publishing Your Roku App/1.png)
-
-**Step 2**
-
-Click add Private Channel. If you want to publish a Public Channel, click add Public Channel.
-The steps are the same for private and public channels, except that you will need to
-give contact information in case Roku has questions when they are reviewing your app.
-
-![step 2]({{site.url}}assets/Publishing Your Roku App/2.png)
-
-**Step 3**
-
-Fill out Channel Properties for your channel.
-
-![step 3]({{site.url}}assets/Publishing Your Roku App/3.png)
-
-**Step 4**
-
-Fill our Channel Descriptions for your channel. You will need to have an HD Poster
-that is a 290 x 218 JPEG file and an SD Poster that is a 214 x 144 JPEG file.
-
-![step 4]({{site.url}}assets/Publishing Your Roku App/4.png)
-
-**Step 5**
-
-You can optionally upload screenshots of your Roku Channel. Read the [Roku documentation](http://sdkdocs.roku.com/display/sdkdoc/Channel+Packaging+And+Publishing#ChannelPackagingAndPublishing-38GeneratingScreenshotsSincev31onRoku1andv43onRoku2) on how to generate a screenshot.
-
-![step 5]({{site.url}}assets/Publishing Your Roku App/5.png)
-
-**Step 6**
-
-Last, you will need to upload your application package. Follow the instructions from the [Roku documentation](http://sdkdocs.roku.com/display/sdkdoc/Channel+Packaging+And+Publishing#ChannelPackagingAndPublishing-30PackagingYourApplication) on how to generate a key and then package your channel.
-
-Once you have downloaded your Roku Channel package, upload the application package and click the "Publish" arrow. You will get an access code url that can be used to download the private
-Roku channel on your individual Roku account.
-
-
-![step 6]({{site.url}}assets/Publishing Your Roku App/6.png)
-
-**More tutorials in this series:**
-
-Part I: [Creating a Roku Channel using the Zype Platform](http://dev.zype.com/posts/2014/11/25/create-roku-app-on-zype/)
-
-Part II: [Developing the Roku Channel using the Zype SDK](http://dev.zype.com/posts/2014/11/28/develop-roku-app-with-zype-sdk/)
+![iphone preview]({{site.url}}assets/iphone/iphone_show.png)
