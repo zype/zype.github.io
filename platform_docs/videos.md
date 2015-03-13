@@ -69,6 +69,10 @@ geographic location desired.
     <a href="#15">
     Search Filters on the Zype Platform</a>
   </div>
+  <div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>
+    <a href="#16">
+    Choosing thumbnails for your videos</a>
+  </div>
 </div>
 
 <hr id="1">
@@ -642,3 +646,21 @@ You can search by entering a search term, using the filters or both!
 If the filter buttons are greyed out, that's because you don't have any videos or playlists yet.
 
 Check out our previous blog post on [defining categories and playlists](http://dev.zype.com/posts/2014/12/04/defining-categories-and-playlists/), if you have questions about getting started.
+
+<hr id="16">
+
+## Choosing thumbnails for your videos
+The [Zype Platform](http://admin.zype.com) helps you manage your video content and that includes the thumbnail displayed as the background of our Zype Player. Videos that you have uploaded and transcoded will have a set of thumbnails attached to them (1 per minute of content). You can choose which thumbnail is displayed by first navigating to the video's video sources:
+
+![video sources]({{site.url}}assets/Choosing Thumbnails for Your Videos/find_data_sources.png)
+
+
+Then clicking the edit button on the Zype video source:
+
+![zype video source]({{site.url}}assets/Choosing Thumbnails for Your Videos/edit_data_source.png)
+
+You'll now see a large display showing you the video's current thumbnail image and a grid of other images to choose from:
+
+![zype video source]({{site.url}}assets/Choosing Thumbnails for Your Videos/thumbnails.png)
+
+Clicking on an image will set that video's thumbnail to the image you've clicked. It's that simple!
