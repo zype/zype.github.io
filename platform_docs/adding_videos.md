@@ -153,19 +153,19 @@ We just added a brand new feature to our platform that lets you better distribut
 
 Import all of your Vimeo PRO videos to the platform and stream them through the ad-supported Zype player. Here's how.
 
-Start by clicking the Vimeo PRO link on the [Import & Upload page](https://admin.zype.com/import_upload):
+### Start by clicking the Vimeo PRO link on the [Import & Upload page](https://admin.zype.com/import_upload):
 
 ![video imports]({{site.url}}assets/Adding Videos from a Vimeo PRO Account/Zype___Import___Upload.png)
 
-Log in to your Vimeo PRO account:
+### Log in to your Vimeo PRO account:
 
 ![video imports]({{site.url}}assets/Adding Videos from a Vimeo PRO Account/Log_In.png)
 
-Allow Zype to have access to your videos:
+### Allow Zype to have access to your videos:
 
 ![video imports]({{site.url}}assets/Adding Videos from a Vimeo PRO Account/Vimeo_Auth.png)
 
-Choose a custom name for this video source or simply click Import from Vimeo PRO:
+### Choose a custom name for this video source or simply click Import from Vimeo PRO:
 
 ![video imports]({{site.url}}assets/Adding Videos from a Vimeo PRO Account/Zype___New_Vimeo_PRO_Source.png)
 
