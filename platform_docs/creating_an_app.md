@@ -147,8 +147,8 @@ on how to generate your key and key your device.
 Now that you have a packaged Roku Channel, you will need to submit your Roku Channel to the Roku Channel Store. You can choose to either publish
 a private channel or a public channel. A private channel will be published right away, but is not searchable via the Roku Channel Store. You will
 be given a Channel URL that you can share to others to add your private channel. To publish a public channel, you will added to the Roku
-Publishing Queue for Roku QA. This queue takes approximately 3-4 to get to the front of. You should expect it to take 4-6 weeks to get your
-public Roku Channel available on the Roku Channel Store.
+Publishing Queue for Roku QA. Based on high demand, it can take anywhere from 2 to 3 months to
+get approved by Roku into the Roku Channel Store.
 
 Click [here](https://owner.roku.com/Developer/Apps) to submit your Roku Channel!
 You will have to be logged into your Roku Developer Account.
