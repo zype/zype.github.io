@@ -373,7 +373,7 @@ header h4 {
 
 .player-tile {
   width: 360px;
-  height: 130px;
+  height: 170px;
   float: left;
   border-radius: 10px;
   margin-right: 50px;
@@ -392,6 +392,27 @@ header h4 {
 
 .player-info {
   margin-bottom: 2px; }
+
+.player-text {
+  width: 292px;
+  float: left; }
+  @media print, screen and (max-width: 551px) {
+    .player-text {
+      width: 220px; } }
+
+.vimeo-player-text {
+  width: 280px;
+  float: left; }
+  @media print, screen and (max-width: 551px) {
+    .vimeo-player-text {
+      width: 220px; } }
+
+.player-image {
+  float: left;
+  margin-bottom: 28px; }
+  @media print, screen and (max-width: 551px) {
+    .player-image {
+      margin-bottom: 5px; } }
 
 .highlight {
   background: #ffffff; }

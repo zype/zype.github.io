@@ -485,7 +485,7 @@ header {
 
 .player-tile {
   width: 360px;
-  height: 130px;
+  height: 170px;
   float: left;
   border-radius: 10px;
   margin-right: 50px;
@@ -508,4 +508,31 @@ header {
 
 .player-info {
     margin-bottom: 2px;
+}
+
+.player-text {
+  width: 292px;
+  float: left;
+
+  @media print, screen and (max-width: 551px) {
+    width: 220px;
+  }
+}
+
+.vimeo-player-text {
+  width: 280px;
+  float: left;
+
+  @media print, screen and (max-width: 551px) {
+    width: 220px;
+  }
+}
+
+.player-image {
+  float: left;
+  margin-bottom: 28px;
+
+  @media print, screen and (max-width: 551px) {
+    margin-bottom: 5px;
+  }
 }
