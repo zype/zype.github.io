@@ -357,7 +357,8 @@ header h4 {
 
 .page-intro {
   width: 80%;
-  max-width: 875px; }
+  max-width: 875px;
+  margin-bottom: 30px; }
   @media print, screen and (max-width: 1386px) {
     .page-intro {
       width: 64%; } }
@@ -430,6 +431,56 @@ header h4 {
   @media print, screen and (max-width: 551px) {
     .player-image {
       margin-bottom: 25px; } }
+
+table {
+  color: #333;
+  font-family: Helvetica, Arial, sans-serif;
+  width: 640px;
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+td, th {
+  border: 0 none;
+  height: 30px; }
+
+th {
+  background: linear-gradient(#333 0%, #444 100%);
+  color: #FFF;
+  font-weight: bold;
+  height: 40px; }
+
+td {
+  background: #FAFAFA;
+  text-align: center;
+  padding: 2px 10px; }
+
+tr:nth-child(even) td {
+  background: #EEE; }
+
+tr:nth-child(odd) td {
+  background: #FDFDFD; }
+
+tr td:first-child, tr th:first-child {
+  background: none;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 14px;
+  text-align: right;
+  padding-right: 10px;
+  width: 80px; }
+
+tr:first-child th:nth-child(2) {
+  border-radius: 5px 0 0 0; }
+
+tr:first-child th:last-child {
+  border-radius: 0 5px 0 0; }
+
+.check {
+  color: green;
+  font-size: 20px !important; }
+
+.table-border-right {
+  border-right: 1px solid black; }
 
 .highlight {
   background: #ffffff; }
