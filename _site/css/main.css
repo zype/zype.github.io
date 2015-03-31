@@ -432,55 +432,48 @@ header h4 {
     .player-image {
       margin-bottom: 25px; } }
 
-table {
+#player-matrix table {
   color: #333;
   font-family: Helvetica, Arial, sans-serif;
   width: 640px;
   border-collapse: collapse;
   border-spacing: 0; }
-
-td, th {
+#player-matrix td, #player-matrix th {
   border: 0 none;
   height: 30px; }
-
-th {
+#player-matrix th {
   background: linear-gradient(#333 0%, #444 100%);
   color: #FFF;
   font-weight: bold;
-  height: 40px; }
-
-td {
+  height: 40px;
+  text-align: center; }
+#player-matrix td {
   background: #FAFAFA;
   text-align: center;
   padding: 2px 10px; }
-
-tr:nth-child(even) td {
+#player-matrix tr:nth-child(even) td {
   background: #EEE; }
-
-tr:nth-child(odd) td {
+#player-matrix tr:nth-child(odd) td {
   background: #FDFDFD; }
-
-tr td:first-child, tr th:first-child {
+#player-matrix tr td:first-child, #player-matrix tr th:first-child {
   background: none;
   font-style: italic;
   font-weight: bold;
   font-size: 14px;
   text-align: right;
   padding-right: 10px;
-  width: 80px; }
-
-tr:first-child th:nth-child(2) {
+  width: 80px;
+  border: none; }
+#player-matrix tr:first-child th:nth-child(2) {
   border-radius: 5px 0 0 0; }
-
-tr:first-child th:last-child {
+#player-matrix tr:first-child th:last-child {
   border-radius: 0 5px 0 0; }
+#player-matrix td {
+  border: 1px solid #777; }
 
 .check {
   color: green;
   font-size: 20px !important; }
-
-.table-border-right {
-  border-right: 1px solid black; }
 
 .highlight {
   background: #ffffff; }

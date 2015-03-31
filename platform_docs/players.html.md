@@ -13,53 +13,35 @@ permalink: /platform_docs/players/
   target="_blank">player rules</a> which will serve your content accordingly.
 </div>
 
-<!-- <table>
-  <tr>
-  	<th></th>
-      <th style="max-width: 60px;">Column</th>
-      <th>Color</th>
-  </tr>
-  <tr>
-    <td></td>
-    <td>Response Types</td>
-    <td style="background-color: blue;"></td>
-  </tr>
-  <tr>
-    <td></td>
-    <td>Response Formats</td>
-    <td style="background-color: orange;"></td>
-  </tr>
-  <tr>
-    <td></td>
-    <td>Monetization</td>
-    <td style="background-color: green;"></td>
-  </tr>
-  <tr>
-    <td></td>
-    <td>Devices</td>
-    <td style="background-color: red;"></td>
-  </tr>
-</table> -->
-
+<div id="player-matrix">
 <table>
 <tr>
-	<th></th>
-    <th style="min-width: 25px;"></th>
-    <th style="min-width: 140px;"></th>
-    <th>iFrame</th>
-    <th>Player</th>
-    <th>JSON</th>
-    <th>Flash</th>
-    <th>JavaScript</th>
-    <th>HTML5</th>
-    <th>AVOD</th>
-    <th>SVOD</th>
-    <th>EST</th>
-    <th>Web</th>
-    <th style="min-width: 78px;">Mobile Web</th>
-    <th>iOS</th>
-    <th>Android</th>
-    <th>Roku</th>
+  <th></th>
+  <th></th>
+  <th></th>
+  <th colspan="2" style="min-width: 125px;">Response Types</th>
+  <th colspan="4">Response Formats</th>
+  <th colspan="3">Monetization</th>
+  <th colspan="5">Response Formats</th>
+</tr>
+<tr>
+	<td></td>
+    <td style="min-width: 25px;"></td>
+    <td style="min-width: 140px;"></td>
+    <td>iFrame</td>
+    <td>Player</td>
+    <td>JSON</td>
+    <td>Flash</td>
+    <td>JavaScript</td>
+    <td>HTML5</td>
+    <td>AVOD</td>
+    <td>SVOD</td>
+    <td>EST</td>
+    <td>Web</td>
+    <td style="min-width: 78px;">Mobile Web</td>
+    <td>iOS</td>
+    <td>Android</td>
+    <td>Roku</td>
 </tr>
 <tr>
 	<td></td>
@@ -385,6 +367,7 @@ permalink: /platform_docs/players/
     <td></td>
 </tr>
 </table>
+</div>
 
 
 <!--
