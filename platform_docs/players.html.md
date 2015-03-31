@@ -6,6 +6,13 @@ permalink: /platform_docs/players/
 
 <h2 class="hidden-mobile">Zype Player Matrix</h2>
 
+<div class="page-intro">
+  The Zype platform offers powerful ways to determine which players are used to serve your video content.
+  Below is a list that shows which players are available on which device endpoints and the format for each
+  player. Use the Zype platform to create <a href='https://admin.zype.com/player_rules'
+  target="_blank">player rules</a> which will serve your content accordingly.
+</div>
+
 <div id="player-container">
   <div class="player-tile">
     <div class="player-text">

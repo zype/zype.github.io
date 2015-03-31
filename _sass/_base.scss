@@ -464,8 +464,25 @@ header {
   }
 }
 
+.page-intro {
+  width: 80%;
+  max-width: 875px;
+
+  @media print, screen and (max-width: 1386px) {
+    width: 64%;
+  }
+
+  @media print, screen and (max-width: 961px) {
+    width: 110%;
+  }
+
+  @media print, screen and (max-width: 551px) {
+    width: 130%;
+  }
+}
+
 #player-main {
-  width: 60%;
+  width: 67%;
   padding-bottom: 50px;
   padding-top: 80px;
   padding-left: 100px;
@@ -485,7 +502,7 @@ header {
 
 .player-tile {
   width: 360px;
-  height: 170px;
+  min-height: 175px;
   float: left;
   border-radius: 10px;
   margin-right: 50px;
@@ -508,6 +525,11 @@ header {
 
 .player-info {
     margin-bottom: 2px;
+    font-size: 16px;
+
+  @media print, screen and (max-width: 551px) {
+    font-size: 14px;
+  }
 }
 
 .player-text {
@@ -533,6 +555,6 @@ header {
   margin-bottom: 28px;
 
   @media print, screen and (max-width: 551px) {
-    margin-bottom: 5px;
+    margin-bottom: 25px;
   }
 }
