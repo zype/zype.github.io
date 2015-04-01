@@ -18,46 +18,43 @@ permalink: /platform_docs/players/
 <tr>
   <th></th>
   <th></th>
-  <th></th>
-  <th colspan="2" style="min-width: 125px;">Response Types</th>
-  <th colspan="4">Response Formats</th>
-  <th colspan="3">Monetization</th>
-  <th colspan="5">Response Formats</th>
+  <!-- <th></th> -->
+  <th style="border-right: solid 1px white"></th>
+  <th colspan="2" style="min-width: 125px; border-right: solid 1px white">Response</th>
+  <th colspan="2" style="border-right: solid 1px white">Format</th>
+  <th colspan="3" style="border-right: solid 1px white">Monetization</th>
+  <th colspan="5">Devices</th>
 </tr>
 <tr>
 	<td></td>
     <td style="min-width: 25px;"></td>
     <td style="min-width: 140px;"></td>
-    <td>iFrame</td>
-    <td>Player</td>
+    <!-- <td>iFrame</td> -->
     <td>JSON</td>
-    <td>Flash</td>
     <td>JavaScript</td>
+    <td>Flash</td>
     <td>HTML5</td>
     <td>AVOD</td>
     <td>SVOD</td>
     <td>EST</td>
     <td>Web</td>
-    <td style="min-width: 78px;">Mobile Web</td>
+    <td>Mobile</td>
     <td>iOS</td>
-    <td>Android</td>
     <td>Roku</td>
 </tr>
 <tr>
 	<td></td>
     <td><img src="http://dev.zype.com/assets/provider_logos/icon-crunchyroll.png"></td>
-    <td class="table-border-right">Crunchyroll</td>
-    <td><span class="fa fa-check check"></span></td>
-    <td class="table-border-right"></td>
+    <td >Crunchyroll</td>
+    <!-- <td><span class="fa fa-check check"></span></td> -->
     <td></td>
     <td><span class="fa fa-check check"></span></td>
     <td><span class="fa fa-check check"></span></td>
-    <td class="table-border-right"></td>
+    <td ></td>
     <td><span class="fa fa-check check"></span></td>
     <td></td>
-    <td class="table-border-right"></td>
+    <td ></td>
     <td><span class="fa fa-check check"></span></td>
-    <td></td>
     <td></td>
     <td></td>
     <td></td>
@@ -65,36 +62,15 @@ permalink: /platform_docs/players/
 <tr>
 	<td></td>
     <td><img src="http://dev.zype.com/assets/provider_logos/icon-hulu.png"></td>
-    <td class="table-border-right">Hulu</td>
-    <td><span class="fa fa-check check"></span></td>
-    <td class="table-border-right"></td>
+    <td >Hulu</td>
+    <!-- <td><span class="fa fa-check check"></span></td> -->
+    <td></td>
     <td></td>
     <td><span class="fa fa-check check"></span></td>
-    <td></td>
-    <td class="table-border-right"></td>
-    <td><span class="fa fa-check check"></span></td>
-    <td></td>
-    <td class="table-border-right"></td>
+    <td ></td>
     <td><span class="fa fa-check check"></span></td>
     <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-</tr>
-<tr>
-	<td></td>
-    <td><img src="http://dev.zype.com/assets/provider_logos/icon-livestream-clip.png"></td>
-    <td class="table-border-right">Livestream Clip</td>
-    <td><span class="fa fa-check check"></span></td>
-    <td class="table-border-right"></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td class="table-border-right"><span class="fa fa-check check"></span></td>
-    <td></td>
-    <td></td>
-    <td class="table-border-right"></td>
-    <td><span class="fa fa-check check"></span></td>
+    <td ></td>
     <td><span class="fa fa-check check"></span></td>
     <td></td>
     <td></td>
@@ -103,36 +79,15 @@ permalink: /platform_docs/players/
 <tr>
 	<td></td>
     <td><img src="http://dev.zype.com/assets/provider_logos/icon-livestream-clip.png"></td>
-    <td class="table-border-right">Livestream Clip iOS</td>
-    <td></td>
-    <td class="table-border-right"><span class="fa fa-check check"></span></td>
-    <td><span class="fa fa-check check"></span></td>
-    <td></td>
-    <td></td>
-    <td class="table-border-right"></td>
-    <td></td>
-    <td></td>
-    <td class="table-border-right"></td>
-    <td></td>
-    <td></td>
-    <td><span class="fa fa-check check"></span></td>
-    <td></td>
-    <td></td>
-</tr>
-<tr>
-	<td></td>
-    <td><img src="http://dev.zype.com/assets/provider_logos/icon-livestream.png"></td>
-    <td class="table-border-right">Livestream Event</td>
-    <td><span class="fa fa-check check"></span></td>
-    <td class="table-border-right"></td>
+    <td >Livestream Clip</td>
+    <!-- <td><span class="fa fa-check check"></span></td> -->
     <td></td>
     <td></td>
     <td></td>
-    <td class="table-border-right"></td>
-    <td><span class="fa fa-check check"></span></td>
+    <td ><span class="fa fa-check check"></span></td>
     <td></td>
-    <td class="table-border-right"></td>
     <td></td>
+    <td ></td>
     <td><span class="fa fa-check check"></span></td>
     <td><span class="fa fa-check check"></span></td>
     <td></td>
@@ -140,94 +95,118 @@ permalink: /platform_docs/players/
 </tr>
 <tr>
 	<td></td>
+    <td><img src="http://dev.zype.com/assets/provider_logos/icon-livestream-clip.png"></td>
+    <td >Livestream Clip iOS</td>
+    <!-- <td></td> -->
+    <td><span class="fa fa-check check"></span></td>
+    <td></td>
+    <td></td>
+    <td ></td>
+    <td></td>
+    <td></td>
+    <td ></td>
+    <td></td>
+    <td></td>
+    <td><span class="fa fa-check check"></span></td>
+    <td></td>
+</tr>
+<tr>
+	<td></td>
     <td><img src="http://dev.zype.com/assets/provider_logos/icon-livestream.png"></td>
-    <td class="table-border-right">Livestream Event iOS</td>
+    <td >Livestream Event</td>
+    <!-- <td><span class="fa fa-check check"></span></td> -->
     <td></td>
-    <td class="table-border-right"><span class="fa fa-check check"></span></td>
+    <td></td>
+    <td></td>
+    <td ></td>
+    <td><span class="fa fa-check check"></span></td>
+    <td></td>
+    <td ></td>
+    <td></td>
+    <td><span class="fa fa-check check"></span></td>
+    <td><span class="fa fa-check check"></span></td>
+    <td></td>
+</tr>
+<tr>
+	<td></td>
+    <td><img src="http://dev.zype.com/assets/provider_logos/icon-livestream.png"></td>
+    <td >Livestream Event iOS</td>
+    <!-- <td></td> -->
     <td><span class="fa fa-check check"></span></td>
     <td></td>
     <td></td>
-    <td class="table-border-right"></td>
+    <td ></td>
     <td></td>
     <td></td>
-    <td class="table-border-right"></td>
+    <td ></td>
     <td></td>
     <td></td>
     <td><span class="fa fa-check check"></span></td>
-    <td></td>
     <td></td>
 </tr>
 <tr>
 	<td></td>
     <td><img src="http://dev.zype.com/assets/provider_logos/icon-vimeo.png"></td>
-    <td class="table-border-right">Vimeo</td>
+    <td >Vimeo</td>
+    <!-- <td><span class="fa fa-check check"></span></td> -->
+    <td></td>
+    <td></td>
+    <td></td>
+    <td ><span class="fa fa-check check"></span></td>
+    <td></td>
+    <td></td>
+    <td ></td>
     <td><span class="fa fa-check check"></span></td>
-    <td class="table-border-right"></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td class="table-border-right"><span class="fa fa-check check"></span></td>
-    <td></td>
-    <td></td>
-    <td class="table-border-right"></td>
     <td><span class="fa fa-check check"></span></td>
-    <td><span class="fa fa-check check"></span></td>
-    <td></td>
     <td></td>
     <td></td>
 </tr>
 <tr>
 	<td></td>
     <td><img src="http://dev.zype.com/assets/provider_logos/icon-vimeo-black.png"></td>
-    <td class="table-border-right">Vimeo PRO (Native)</td>
+    <td >Vimeo PRO (Native)</td>
+    <!-- <td><span class="fa fa-check check"></span></td> -->
+    <td></td>
+    <td></td>
+    <td></td>
+    <td ><span class="fa fa-check check"></span></td>
+    <td></td>
+    <td></td>
+    <td ></td>
     <td><span class="fa fa-check check"></span></td>
-    <td class="table-border-right"></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td class="table-border-right"><span class="fa fa-check check"></span></td>
-    <td></td>
-    <td></td>
-    <td class="table-border-right"></td>
     <td><span class="fa fa-check check"></span></td>
-    <td><span class="fa fa-check check"></span></td>
-    <td></td>
     <td></td>
     <td></td>
 </tr>
 <tr>
 	<td></td>
     <td><img src="http://dev.zype.com/assets/provider_logos/icon-vimeo-black.png"></td>
-    <td class="table-border-right">Vimeo PRO (Zype)</td>
-    <td></td>
-    <td class="table-border-right"><span class="fa fa-check check"></span></td>
+    <td >Vimeo PRO (Zype)</td>
+    <!-- <td></td> -->
     <td></td>
     <td><span class="fa fa-check check"></span></td>
     <td><span class="fa fa-check check"></span></td>
-    <td class="table-border-right"></td>
+    <td ></td>
     <td></td>
     <td></td>
-    <td class="table-border-right"></td>
+    <td ></td>
     <td><span class="fa fa-check check"></span></td>
     <td><span class="fa fa-check check"></span></td>
-    <td></td>
     <td></td>
     <td></td>
 </tr>
 <tr>
 	<td></td>
     <td><img src="http://dev.zype.com/assets/provider_logos/icon-vimeo-black.png"></td>
-    <td class="table-border-right">Vimeo PRO Roku</td>
-    <td></td>
-    <td class="table-border-right"><span class="fa fa-check check"></span></td>
+    <td >Vimeo PRO Roku</td>
+    <!-- <td></td> -->
     <td><span class="fa fa-check check"></span></td>
     <td></td>
     <td></td>
-    <td class="table-border-right"></td>
+    <td ></td>
     <td></td>
     <td></td>
-    <td class="table-border-right"></td>
-    <td></td>
+    <td ></td>
     <td></td>
     <td></td>
     <td></td>
@@ -236,74 +215,66 @@ permalink: /platform_docs/players/
 <tr>
 	<td></td>
     <td><img src="http://dev.zype.com/assets/provider_logos/icon-youtube.png"></td>
-    <td class="table-border-right">YouTube iOS</td>
-    <td></td>
-    <td class="table-border-right"><span class="fa fa-check check"></span></td>
+    <td >YouTube iOS</td>
+    <!-- <td></td> -->
     <td><span class="fa fa-check check"></span></td>
     <td></td>
     <td></td>
-    <td class="table-border-right"></td>
+    <td ></td>
     <td></td>
     <td></td>
-    <td class="table-border-right"></td>
+    <td ></td>
     <td></td>
     <td></td>
     <td><span class="fa fa-check check"></span></td>
-    <td></td>
     <td></td>
 </tr>
 <tr>
 	<td></td>
     <td><img src="http://dev.zype.com/assets/provider_logos/icon-youtube.png"></td>
-    <td class="table-border-right">YouTube</td>
+    <td >YouTube</td>
+    <!-- <td><span class="fa fa-check check"></span></td> -->
+    <td></td>
+    <td></td>
+    <td></td>
+    <td ><span class="fa fa-check check"></span></td>
+    <td></td>
+    <td></td>
+    <td ></td>
     <td><span class="fa fa-check check"></span></td>
-    <td class="table-border-right"></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td class="table-border-right"><span class="fa fa-check check"></span></td>
-    <td></td>
-    <td></td>
-    <td class="table-border-right"></td>
     <td><span class="fa fa-check check"></span></td>
-    <td><span class="fa fa-check check"></span></td>
-    <td></td>
     <td></td>
     <td></td>
 </tr>
 <tr>
 	<td></td>
     <td><img src="http://dev.zype.com/assets/provider_logos/icon-zype.png"></td>
-    <td class="table-border-right">Zype</td>
+    <td >Zype</td>
+    <!-- <td></td> -->
     <td></td>
-    <td class="table-border-right"><span class="fa fa-check check"></span></td>
-    <td></td>
     <td><span class="fa fa-check check"></span></td>
     <td><span class="fa fa-check check"></span></td>
-    <td class="table-border-right"><span class="fa fa-check check"></span></td>
+    <td ><span class="fa fa-check check"></span></td>
     <td><span class="fa fa-check check"></span></td>
     <td><span class="fa fa-check check"></span></td>
-    <td class="table-border-right"></td>
+    <td ></td>
     <td><span class="fa fa-check check"></span></td>
     <td><span class="fa fa-check check"></span></td>
-    <td></td>
     <td></td>
     <td></td>
 </tr>
 <tr>
 	<td></td>
     <td><img src="http://dev.zype.com/assets/provider_logos/icon-zype.png"></td>
-    <td class="table-border-right">Roku</td>
-    <td></td>
-    <td class="table-border-right"><span class="fa fa-check check"></span></td>
+    <td>Zype Roku</td>
+    <!-- <td></td> -->
     <td><span class="fa fa-check check"></span></td>
     <td></td>
     <td></td>
-    <td class="table-border-right"></td>
+    <td ></td>
     <td></td>
     <td></td>
-    <td class="table-border-right"></td>
-    <td></td>
+    <td ></td>
     <td></td>
     <td></td>
     <td></td>
@@ -312,58 +283,52 @@ permalink: /platform_docs/players/
 <tr>
 	<td></td>
     <td><img src="http://dev.zype.com/assets/provider_logos/icon-zype.png"></td>
-    <td class="table-border-right">Zype Audio</td>
-    <td></td>
-    <td class="table-border-right"><span class="fa fa-check check"></span></td>
+    <td >Zype Audio</td>
+    <!-- <td></td> -->
     <td><span class="fa fa-check check"></span></td>
     <td></td>
     <td></td>
-    <td class="table-border-right"><span class="fa fa-check check"></span></td>
+    <td ><span class="fa fa-check check"></span></td>
     <td></td>
     <td><span class="fa fa-check check"></span></td>
-    <td class="table-border-right"><span class="fa fa-check check"></span></td>
+    <td ><span class="fa fa-check check"></span></td>
     <td></td>
     <td></td>
     <td><span class="fa fa-check check"></span></td>
-    <td></td>
     <td></td>
 </tr>
 <tr>
 	<td></td>
     <td><img src="http://dev.zype.com/assets/provider_logos/icon-zype.png"></td>
-    <td class="table-border-right">Zype Download</td>
-    <td></td>
-    <td class="table-border-right"><span class="fa fa-check check"></span></td>
+    <td >Zype Download</td>
+    <!-- <td></td> -->
     <td><span class="fa fa-check check"></span></td>
     <td></td>
     <td></td>
-    <td class="table-border-right"></td>
+    <td ></td>
     <td></td>
     <td></td>
-    <td class="table-border-right"></td>
+    <td ></td>
     <td></td>
     <td></td>
     <td><span class="fa fa-check check"></span></td>
-    <td></td>
     <td></td>
 </tr>
 <tr>
 	<td></td>
     <td><img src="http://dev.zype.com/assets/provider_logos/icon-zype.png"></td>
-    <td class="table-border-right">Zype iOS</td>
-    <td></td>
-    <td class="table-border-right"><span class="fa fa-check check"></span></td>
+    <td >Zype iOS</td>
+    <!-- <td></td> -->
     <td><span class="fa fa-check check"></span></td>
     <td></td>
     <td></td>
-    <td class="table-border-right"></td>
+    <td ></td>
     <td></td>
     <td></td>
-    <td class="table-border-right"></td>
+    <td ></td>
     <td></td>
     <td></td>
     <td><span class="fa fa-check check"></span></td>
-    <td></td>
     <td></td>
 </tr>
 </table>

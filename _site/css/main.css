@@ -470,6 +470,9 @@ header h4 {
   border-radius: 0 5px 0 0; }
 #player-matrix td {
   border: 1px solid #777; }
+#player-matrix img {
+  margin-top: 1px;
+  margin-bottom: -6px; }
 
 .check {
   color: green;
