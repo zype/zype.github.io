@@ -499,6 +499,7 @@ header {
   	color: #FFF; font-weight: bold;
   	height: 40px;
     text-align: center;
+    border-radius: 10px 10px 0 0;
   }
 
   td {
@@ -522,17 +523,22 @@ header {
     border: none;
   }
 
-  tr:first-child th:nth-child(2) {
-    border-radius: 5px 0 0 0;
-  }
-
-  tr:first-child th:last-child {
-    border-radius: 0 5px 0 0;
-  }
-
   img {
     margin-top: 0px;
     margin-bottom: -4px;
+  }
+
+  .no-show {
+    border: none !important;
+    background: none !important;
+  }
+
+  .header-divider {
+    border-right: 1px white solid;
+  }
+
+  .section-divider {
+    border-right: 2px black solid;
   }
 }
 

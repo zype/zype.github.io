@@ -386,7 +386,8 @@ header h4 {
     color: #FFF;
     font-weight: bold;
     height: 40px;
-    text-align: center; }
+    text-align: center;
+    border-radius: 10px 10px 0 0; }
   #player-matrix td {
     background: #FAFAFA;
     text-align: center;
@@ -405,13 +406,16 @@ header h4 {
     padding-right: 10px;
     width: 80px;
     border: none; }
-  #player-matrix tr:first-child th:nth-child(2) {
-    border-radius: 5px 0 0 0; }
-  #player-matrix tr:first-child th:last-child {
-    border-radius: 0 5px 0 0; }
   #player-matrix img {
     margin-top: 0px;
     margin-bottom: -4px; }
+  #player-matrix .no-show {
+    border: none !important;
+    background: none !important; }
+  #player-matrix .header-divider {
+    border-right: 1px white solid; }
+  #player-matrix .section-divider {
+    border-right: 2px black solid; }
 
 .check {
   color: green;
