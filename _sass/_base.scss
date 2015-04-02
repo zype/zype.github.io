@@ -580,7 +580,8 @@ header {
   td {
     background: #FAFAFA;
     text-align: center;
-    padding: 2px 10px;
+    padding: 4px 10px 0px 10px;
+    border: 1px solid #777;
     }
 
   tr:nth-child(even) td { background: #EEE; }
@@ -605,13 +606,9 @@ header {
     border-radius: 0 5px 0 0;
   }
 
-  td {
-    border: 1px solid #777;
-  }
-
   img {
-    margin-top: 1px;
-    margin-bottom: -6px;
+    margin-top: 0px;
+    margin-bottom: -4px;
   }
 }
 

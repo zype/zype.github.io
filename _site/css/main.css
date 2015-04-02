@@ -450,7 +450,8 @@ header h4 {
 #player-matrix td {
   background: #FAFAFA;
   text-align: center;
-  padding: 2px 10px; }
+  padding: 4px 10px 0px 10px;
+  border: 1px solid #777; }
 #player-matrix tr:nth-child(even) td {
   background: #EEE; }
 #player-matrix tr:nth-child(odd) td {
@@ -468,11 +469,9 @@ header h4 {
   border-radius: 5px 0 0 0; }
 #player-matrix tr:first-child th:last-child {
   border-radius: 0 5px 0 0; }
-#player-matrix td {
-  border: 1px solid #777; }
 #player-matrix img {
-  margin-top: 1px;
-  margin-bottom: -6px; }
+  margin-top: 0px;
+  margin-bottom: -4px; }
 
 .check {
   color: green;
