@@ -356,18 +356,9 @@ header h4 {
     display: none; } }
 
 .page-intro {
-  width: 80%;
   max-width: 875px;
-  margin-bottom: 30px; }
-  @media print, screen and (max-width: 1386px) {
-    .page-intro {
-      width: 64%; } }
-  @media print, screen and (max-width: 961px) {
-    .page-intro {
-      width: 110%; } }
-  @media print, screen and (max-width: 551px) {
-    .page-intro {
-      width: 130%; } }
+  margin-bottom: 30px;
+  font-size: 16px; }
 
 #player-main {
   width: 67%;
@@ -379,99 +370,48 @@ header h4 {
     #player-main {
       padding: 25px !important; } }
 
-#player-container {
-  display: inline-table; }
-  @media print, screen and (max-width: 551px) {
-    #player-container {
-      margin-left: 1%; } }
-
-.player-tile {
-  width: 360px;
-  min-height: 175px;
-  float: left;
-  border-radius: 10px;
-  margin-right: 50px;
-  margin-top: 30px;
-  border: solid gray 2px;
-  padding: 25px; }
-  @media print, screen and (max-width: 551px) {
-    .player-tile {
-      width: 300px;
-      margin-right: 30px;
-      padding: 20px; } }
-
-@media print, screen and (max-width: 551px) {
-  .player-name {
-    margin-bottom: 5px; } }
-
-.player-info {
-  margin-bottom: 2px;
-  font-size: 16px; }
-  @media print, screen and (max-width: 551px) {
-    .player-info {
-      font-size: 14px; } }
-
-.player-text {
-  width: 292px;
-  float: left; }
-  @media print, screen and (max-width: 551px) {
-    .player-text {
-      width: 220px; } }
-
-.vimeo-player-text {
-  width: 280px;
-  float: left; }
-  @media print, screen and (max-width: 551px) {
-    .vimeo-player-text {
-      width: 220px; } }
-
-.player-image {
-  float: left;
-  margin-bottom: 28px; }
-  @media print, screen and (max-width: 551px) {
-    .player-image {
-      margin-bottom: 25px; } }
-
-#player-matrix table {
-  color: #333;
-  font-family: Helvetica, Arial, sans-serif;
-  width: 640px;
-  border-collapse: collapse;
-  border-spacing: 0; }
-#player-matrix td, #player-matrix th {
-  border: 0 none;
-  height: 30px; }
-#player-matrix th {
-  background: linear-gradient(#333 0%, #444 100%);
-  color: #FFF;
-  font-weight: bold;
-  height: 40px;
-  text-align: center; }
-#player-matrix td {
-  background: #FAFAFA;
-  text-align: center;
-  padding: 4px 10px 0px 10px;
-  border: 1px solid #777; }
-#player-matrix tr:nth-child(even) td {
-  background: #EEE; }
-#player-matrix tr:nth-child(odd) td {
-  background: #FDFDFD; }
-#player-matrix tr td:first-child, #player-matrix tr th:first-child {
-  background: none;
-  font-style: italic;
-  font-weight: bold;
-  font-size: 14px;
-  text-align: right;
-  padding-right: 10px;
-  width: 80px;
-  border: none; }
-#player-matrix tr:first-child th:nth-child(2) {
-  border-radius: 5px 0 0 0; }
-#player-matrix tr:first-child th:last-child {
-  border-radius: 0 5px 0 0; }
-#player-matrix img {
-  margin-top: 0px;
-  margin-bottom: -4px; }
+#player-matrix {
+  margin-left: -20px; }
+  #player-matrix table {
+    color: #333;
+    font-family: Helvetica, Arial, sans-serif;
+    width: 640px;
+    border-collapse: collapse;
+    border-spacing: 0; }
+  #player-matrix td, #player-matrix th {
+    border: 0 none;
+    height: 30px; }
+  #player-matrix th {
+    background: linear-gradient(#333 0%, #444 100%);
+    color: #FFF;
+    font-weight: bold;
+    height: 40px;
+    text-align: center; }
+  #player-matrix td {
+    background: #FAFAFA;
+    text-align: center;
+    padding: 4px 10px 0px 10px;
+    border: 1px solid #777; }
+  #player-matrix tr:nth-child(even) td {
+    background: #EEE; }
+  #player-matrix tr:nth-child(odd) td {
+    background: #FDFDFD; }
+  #player-matrix tr td:first-child, #player-matrix tr th:first-child {
+    background: none;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 14px;
+    text-align: right;
+    padding-right: 10px;
+    width: 80px;
+    border: none; }
+  #player-matrix tr:first-child th:nth-child(2) {
+    border-radius: 5px 0 0 0; }
+  #player-matrix tr:first-child th:last-child {
+    border-radius: 0 5px 0 0; }
+  #player-matrix img {
+    margin-top: 0px;
+    margin-bottom: -4px; }
 
 .check {
   color: green;

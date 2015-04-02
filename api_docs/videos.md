@@ -33,6 +33,7 @@ zobject_id  | Query for videos with a specific zobject associated with them | St
 zobject_id! | Exclude videos with a specfific zobject associated with them | String
 created_at | Filter the records returned by created date. You can use greater than or less than filters by adding a suffix: '.gt', '.gte', '.lt', 'lte'. Example: created_at.gte=2015-01-01 | Date
 published_at | Filter the records returned by published date. You can use greater than or less than filters by adding a suffix: '.gt', '.gte', '.lt', 'lte'. Example: published_at.gte=2015-01-01 | Date
+dpt | Only shows videos that are available to the end user based on device and country | Boolean
 
 #### Response
 200
