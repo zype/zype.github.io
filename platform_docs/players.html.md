@@ -28,7 +28,7 @@ At Zype, it's our job to evaluate different video sources and endpoints to offer
     <tr>
     	<td></td>
         <td class="no-show" style="min-width: 25px;"></td>
-        <td class="section-divider no-show" style="min-width: 120px;"></td>
+        <td class="section-divider no-show" style="min-width: 140px;"></td>
         <td>JSON</td>
         <td class="section-divider">JavaScript</td>
         <td>Flash</td>
