@@ -409,9 +409,6 @@ header h4 {
   #player-matrix img {
     margin-top: 0px;
     margin-bottom: -4px; }
-  #player-matrix .no-show {
-    border: none !important;
-    background: none !important; }
   #player-matrix .header-divider {
     border-right: 1px white solid; }
   #player-matrix .section-divider {
