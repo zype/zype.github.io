@@ -23,7 +23,7 @@ At Zype, it's our job to evaluate different video sources and endpoints to offer
       <th colspan="2" style="min-width: 125px;" class="header-divider">Response</th>
       <th colspan="3" class="header-divider">Player Type</th>
       <th colspan="3" class="header-divider">Monetization</th>
-      <th colspan="5">Devices</th>
+      <th colspan="6">Devices</th>
     </tr>
     <tr>
     	<td></td>
@@ -39,6 +39,7 @@ At Zype, it's our job to evaluate different video sources and endpoints to offer
         <td class="section-divider">EST</td>
         <td>Web</td>
         <td>Mobile</td>
+        <td>Android</td>
         <td>iOS</td>
         <td class="section-divider">Roku</td>
     </tr>
@@ -55,6 +56,7 @@ At Zype, it's our job to evaluate different video sources and endpoints to offer
         <td></td>
         <td class="section-divider"></td>
         <td><span class="fa fa-check check"></span></td>
+        <td></td>
         <td></td>
         <td></td>
         <td class="section-divider"></td>
@@ -74,6 +76,7 @@ At Zype, it's our job to evaluate different video sources and endpoints to offer
         <td><span class="fa fa-check check"></span></td>
         <td></td>
         <td></td>
+        <td></td>
         <td class="section-divider"></td>
     </tr>
     <tr>
@@ -91,6 +94,7 @@ At Zype, it's our job to evaluate different video sources and endpoints to offer
         <td><span class="fa fa-check check"></span></td>
         <td><span class="fa fa-check check"></span></td>
         <td></td>
+        <td></td>
         <td class="section-divider"></td>
     </tr>
     <tr>
@@ -105,6 +109,7 @@ At Zype, it's our job to evaluate different video sources and endpoints to offer
         <td></td>
         <td></td>
         <td class="section-divider"></td>
+        <td></td>
         <td></td>
         <td></td>
         <td><span class="fa fa-check check"></span></td>
@@ -125,6 +130,7 @@ At Zype, it's our job to evaluate different video sources and endpoints to offer
         <td><span class="fa fa-check check"></span></td>
         <td><span class="fa fa-check check"></span></td>
         <td></td>
+        <td></td>
         <td class="section-divider"></td>
     </tr>
     <tr>
@@ -139,6 +145,7 @@ At Zype, it's our job to evaluate different video sources and endpoints to offer
         <td></td>
         <td></td>
         <td class="section-divider"></td>
+        <td></td>
         <td></td>
         <td></td>
         <td><span class="fa fa-check check"></span></td>
@@ -159,6 +166,7 @@ At Zype, it's our job to evaluate different video sources and endpoints to offer
         <td><span class="fa fa-check check"></span></td>
         <td><span class="fa fa-check check"></span></td>
         <td></td>
+        <td></td>
         <td class="section-divider"></td>
     </tr>
     <tr>
@@ -175,6 +183,7 @@ At Zype, it's our job to evaluate different video sources and endpoints to offer
         <td class="section-divider"><span class="fa fa-check check"></span></td>
         <td><span class="fa fa-check check"></span></td>
         <td><span class="fa fa-check check"></span></td>
+        <td></td>
         <td></td>
         <td class="section-divider"></td>
     </tr>
@@ -193,6 +202,7 @@ At Zype, it's our job to evaluate different video sources and endpoints to offer
         <td><span class="fa fa-check check"></span></td>
         <td><span class="fa fa-check check"></span></td>
         <td></td>
+        <td></td>
         <td class="section-divider"></td>
     </tr>
     <tr>
@@ -207,6 +217,7 @@ At Zype, it's our job to evaluate different video sources and endpoints to offer
         <td><span class="fa fa-check check"></span></td>
         <td></td>
         <td class="section-divider"></td>
+        <td></td>
         <td></td>
         <td></td>
         <td></td>
@@ -228,6 +239,7 @@ At Zype, it's our job to evaluate different video sources and endpoints to offer
         <td><span class="fa fa-check check"></span></td>
         <td><span class="fa fa-check check"></span></td>
         <td></td>
+        <td></td>
         <td class="section-divider"></td>
     </tr>
     <tr>
@@ -242,6 +254,7 @@ At Zype, it's our job to evaluate different video sources and endpoints to offer
         <td><span class="fa fa-check check"></span></td>
         <td></td>
         <td class="section-divider"></td>
+        <td></td>
         <td></td>
         <td></td>
         <td><span class="fa fa-check check"></span></td>
@@ -262,6 +275,7 @@ At Zype, it's our job to evaluate different video sources and endpoints to offer
         <td><span class="fa fa-check check"></span></td>
         <td><span class="fa fa-check check"></span></td>
         <td></td>
+        <td></td>
         <td class="section-divider"></td>
     </tr>
     <tr>
@@ -276,6 +290,7 @@ At Zype, it's our job to evaluate different video sources and endpoints to offer
         <td><span class="fa fa-check check"></span></td>
         <td></td>
         <td class="section-divider"></td>
+        <td></td>
         <td></td>
         <td></td>
         <td></td>
@@ -295,6 +310,7 @@ At Zype, it's our job to evaluate different video sources and endpoints to offer
         <td class="section-divider"><span class="fa fa-check check"></span></td>
         <td></td>
         <td></td>
+        <td></td>
         <td><span class="fa fa-check check"></span></td>
         <td class="section-divider"></td>
     </tr>
@@ -312,6 +328,7 @@ At Zype, it's our job to evaluate different video sources and endpoints to offer
         <td class="section-divider"><span class="fa fa-check check"></span></td>
         <td></td>
         <td></td>
+        <td></td>
         <td><span class="fa fa-check check"></span></td>
         <td class="section-divider"></td>
     </tr>
@@ -327,6 +344,7 @@ At Zype, it's our job to evaluate different video sources and endpoints to offer
         <td></td>
         <td><span class="fa fa-check check"></span></td>
         <td class="section-divider"></td>
+        <td></td>
         <td></td>
         <td></td>
         <td><span class="fa fa-check check"></span></td>
