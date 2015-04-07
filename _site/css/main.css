@@ -384,10 +384,10 @@ header h4 {
   #player-matrix th {
     background: linear-gradient(#333 0%, #444 100%);
     color: #FFF;
-    font-weight: bold;
     height: 40px;
+    font-weight: 100;
     text-align: center;
-    border-radius: 10px 10px 0 0; }
+    border-radius: 7px 7px 0 0; }
   #player-matrix td {
     background: #FAFAFA;
     text-align: center;
