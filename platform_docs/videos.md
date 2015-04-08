@@ -251,7 +251,7 @@ like to change this, toggle Add Video or Activate Video off. Then, select the fi
 **Step 3:**
 
 When the file is finished uploading, you will be redirected to the video's page where you
-can add additional metadata. Once your video is finished being transcoded, you will
+can add additional metadata. Once your video is finished [transcoding](http://en.wikipedia.org/wiki/Transcoding), you will
 be able to play your video and select your video thumbnail.
 
 ![add video metadata]({{ site.url }}/assets/Uploading Videos to the Zype Platform from the Web/add_metadata_to_video.png)
