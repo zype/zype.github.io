@@ -47,18 +47,29 @@ Video Source, all other videos will have a video source from the respected third
 ## Uploading Videos to the Zype Platform from the Web
 The easiest way to add a video to your video library is to upload a video to the Zype Platform.
 
+We support many popular media formats such as: 3GP, AAC, AVI, FLV, MP4 and MPEG-2.
+We do not currently support Apple ProRes, ARRI and RED.
+
 **Step 1:**
 
-Go to Uploads, click the upload button, and select the video that you want from your computer.
+Go to Import & Upload, and click the "Upload from My Web Browser" button.
 
-![Upload Videos]({{ site.url }}/assets/Uploading Videos to the Zype Platform from the Web/upload_video_1.png)
+![Upload Videos]({{ site.url }}/assets/Uploading Videos to the Zype Platform from the Web/upload_web_browser.png)
 
 **Step 2:**
 
-When the video is finished uploading, click add video. This will start to transcode your video.
-All uploaded videos will need to be transcoded before being able to be viewed.
+By default, we automatically add the video to your library and we activate the video. If you would
+like to change this, toggle Add Video or Activate Video off. Then, select the file that you want to upload.
 
-![add video]({{ site.url }}/assets/Uploading Videos to the Zype Platform from the Web/add_video_import_button.png)
+![upload video]({{ site.url }}/assets/Uploading Videos to the Zype Platform from the Web/upload_video_options.png)
+
+**Step 3:**
+
+When the file is finished uploading, you will be redirected to the video's page where you
+can add additional metadata. Once your video is finished being transcoded, you will
+be able to play your video and select your video thumbnail.
+
+![add video metadata]({{ site.url }}/assets/Uploading Videos to the Zype Platform from the Web/add_metadata_to_video.png)
 
 <hr id="1">
 
