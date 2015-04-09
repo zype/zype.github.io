@@ -9,14 +9,14 @@ permalink: /api_docs/device_linking/
 <hr>
 
 You can use Zype to link a consumer to a device. At a high level, the Zype API
-can check to see if the device has been linked to a consumer, can acquire a pin for
-a consumer to link her device, and link the device to the consumer via the acquired pin.
+can check to see if the device has been linked to a Zype consumer, can acquire a pin for
+a Zype consumer to link her device, and link the device to the Zype consumer via the acquired pin.
 
 <hr>
 
 ### Check to see if the device has been linked to a consumer
 
-You will first want to see if the current device id has been linked to a consumer.
+You will first want to see if the current device id has been linked to a Zype consumer.
 <hr>
 <pre><code>GET - https://api.zype.com/pin/status/?linked_device_id=linked_device_id
 </code></pre>
@@ -53,10 +53,10 @@ You will need to acquire a pin for this device.
   }
 </code></pre>
 
-Consumer id will be nil and linked will be false if device has not been linked to a consumer.
+Consumer id will be nil and linked will be false if device has not been linked to a Zype consumer.
 Note, pin expires every 30 minutes. You will need to reacquire the pin after 30 minutes.
 Consumer id will be the id of the consumer and linked will be true if device has been successfully
-linked to a consumer.
+linked to a Zype consumer.
 
 <hr>
 
@@ -102,7 +102,7 @@ type | Type of device. Example: roku | String
 
 ### Link the consumer to the pinned device
 
-Takes the pin and the consumer id and links the consumer to the device.
+Takes the pin and the consumer id and links the Zype consumer to the device.
 
 <hr>
 
