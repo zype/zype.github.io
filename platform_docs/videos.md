@@ -712,7 +712,7 @@ is released, and video favorites/ratings are removed.
 
 ## Upload Formats
 
-Zype supports [uploading](https://admin.zype.com/uploads/new) of the following popular media formats:
+Zype supports [uploading](https://admin.zype.com/uploads/new) in the following popular media formats:
 
 - 3GP
 - AAC
