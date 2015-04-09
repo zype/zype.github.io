@@ -105,6 +105,14 @@ Based on countries and devices, you will be given player options that can be ser
 
 ![player rule form]({{site.url}}assets/DPT/player_rule_form.png)
 
+### Using the API
+
+You can query the Zype API to only show videos that dynamically conform to your DPT rules
+given an end user's device and geolocation. Set dpt to equal true in your GET request.
+
+<pre><code> GET - https://api.zype.com/videos?dpt=true
+</code></pre>
+
 ### Using the Player API
 
 1\. Once you have set up your video catalogue in the Zype Platform and you have created your player rules, you are ready to use the Zype Player API!
