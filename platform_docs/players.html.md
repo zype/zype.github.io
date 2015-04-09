@@ -45,7 +45,7 @@ At Zype, it's our job to evaluate different video sources and endpoints to offer
     </tr>
     <tr>
     	<td></td>
-        <td><img src="http://dev.zype.com/assets/provider_logos/icon-crunchyroll.png"></td>
+        <td class='player-img-holder'><img src="http://dev.zype.com/assets/provider_logos/icon-crunchyroll.png"></td>
         <td class="section-divider">Crunchyroll Web</td>
         <td></td>
         <td class="section-divider"><span class="fa fa-check check"></span></td>
@@ -63,7 +63,7 @@ At Zype, it's our job to evaluate different video sources and endpoints to offer
     </tr>
     <tr>
     	<td></td>
-        <td><img src="http://dev.zype.com/assets/provider_logos/icon-hulu.png"></td>
+        <td class='player-img-holder'><img src="http://dev.zype.com/assets/provider_logos/icon-hulu.png"></td>
         <td class="section-divider">Hulu Web</td>
         <td></td>
         <td class="section-divider"><span class="fa fa-check check"></td>
@@ -81,7 +81,7 @@ At Zype, it's our job to evaluate different video sources and endpoints to offer
     </tr>
     <tr>
     	<td></td>
-        <td><img src="http://dev.zype.com/assets/provider_logos/icon-livestream-clip.png"></td>
+        <td class='player-img-holder'><img src="http://dev.zype.com/assets/provider_logos/icon-livestream-clip.png"></td>
         <td class="section-divider">Livestream Clip</td>
         <td></td>
         <td class="section-divider"><span class="fa fa-check check"></td>
@@ -99,7 +99,7 @@ At Zype, it's our job to evaluate different video sources and endpoints to offer
     </tr>
     <tr>
     	<td></td>
-        <td><img src="http://dev.zype.com/assets/provider_logos/icon-livestream-clip.png"></td>
+        <td class='player-img-holder'><img src="http://dev.zype.com/assets/provider_logos/icon-livestream-clip.png"></td>
         <td class="section-divider">Livestream Clip iOS</td>
         <td><span class="fa fa-check check"></span></td>
         <td class="section-divider"></td>
@@ -117,7 +117,7 @@ At Zype, it's our job to evaluate different video sources and endpoints to offer
     </tr>
     <tr>
     	<td></td>
-        <td><img src="http://dev.zype.com/assets/provider_logos/icon-livestream.png"></td>
+        <td class='player-img-holder'><img src="http://dev.zype.com/assets/provider_logos/icon-livestream.png"></td>
         <td class="section-divider">Livestream Event</td>
         <td></td>
         <td class="section-divider"><span class="fa fa-check check"></td>
@@ -135,7 +135,7 @@ At Zype, it's our job to evaluate different video sources and endpoints to offer
     </tr>
     <tr>
     	<td></td>
-        <td><img src="http://dev.zype.com/assets/provider_logos/icon-livestream.png"></td>
+        <td class='player-img-holder'><img src="http://dev.zype.com/assets/provider_logos/icon-livestream.png"></td>
         <td class="section-divider">Livestream Event iOS</td>
         <td><span class="fa fa-check check"></span></td>
         <td class="section-divider"></td>
@@ -153,7 +153,7 @@ At Zype, it's our job to evaluate different video sources and endpoints to offer
     </tr>
     <tr>
     	<td></td>
-        <td><img src="http://dev.zype.com/assets/provider_logos/icon-vimeo.png"></td>
+        <td class='player-img-holder'><img src="http://dev.zype.com/assets/provider_logos/icon-vimeo.png"></td>
         <td class="section-divider">Vimeo Web</td>
         <td></td>
         <td class="section-divider"><span class="fa fa-check check"></td>
@@ -171,7 +171,7 @@ At Zype, it's our job to evaluate different video sources and endpoints to offer
     </tr>
     <tr>
     	<td></td>
-        <td><img src="http://dev.zype.com/assets/provider_logos/icon-vimeo-black.png"></td>
+        <td class='player-img-holder'><img src="http://dev.zype.com/assets/provider_logos/icon-vimeo-black.png"></td>
         <td class="section-divider">Vimeo PRO (Native)</td>
         <td></td>
         <td class="section-divider"><span class="fa fa-check check"></td>
@@ -189,7 +189,7 @@ At Zype, it's our job to evaluate different video sources and endpoints to offer
     </tr>
     <tr>
     	<td></td>
-        <td><img src="http://dev.zype.com/assets/provider_logos/icon-vimeo-black.png"></td>
+        <td class='player-img-holder'><img src="http://dev.zype.com/assets/provider_logos/icon-vimeo-black.png"></td>
         <td class="section-divider">Vimeo PRO (Zype)</td>
         <td></td>
         <td class="section-divider"><span class="fa fa-check check"></span></td>
@@ -207,7 +207,7 @@ At Zype, it's our job to evaluate different video sources and endpoints to offer
     </tr>
     <tr>
     	<td></td>
-        <td><img src="http://dev.zype.com/assets/provider_logos/icon-vimeo-black.png"></td>
+        <td class='player-img-holder'><img src="http://dev.zype.com/assets/provider_logos/icon-vimeo-black.png"></td>
         <td class="section-divider">Vimeo PRO Roku</td>
         <td><span class="fa fa-check check"></span></td>
         <td class="section-divider"></td>
@@ -226,7 +226,7 @@ At Zype, it's our job to evaluate different video sources and endpoints to offer
 
     <tr>
     	<td></td>
-        <td><img src="http://dev.zype.com/assets/provider_logos/icon-youtube.png"></td>
+        <td class='player-img-holder'><img src="http://dev.zype.com/assets/provider_logos/icon-youtube.png"></td>
         <td class="section-divider">YouTube Web</td>
         <td></td>
         <td class="section-divider"><span class="fa fa-check check"></td>
@@ -244,7 +244,7 @@ At Zype, it's our job to evaluate different video sources and endpoints to offer
     </tr>
     <tr>
         <td></td>
-        <td><img src="http://dev.zype.com/assets/provider_logos/icon-youtube.png"></td>
+        <td class='player-img-holder'><img src="http://dev.zype.com/assets/provider_logos/icon-youtube.png"></td>
         <td class="section-divider">YouTube iOS</td>
         <td><span class="fa fa-check check"></span></td>
         <td class="section-divider"></td>
@@ -262,7 +262,7 @@ At Zype, it's our job to evaluate different video sources and endpoints to offer
     </tr>
     <tr>
     	<td></td>
-        <td><img src="http://dev.zype.com/assets/provider_logos/icon-zype.png"></td>
+        <td class='player-img-holder'><img src="http://dev.zype.com/assets/provider_logos/icon-zype.png"></td>
         <td class="section-divider">Zype Web</td>
         <td></td>
         <td class="section-divider"><span class="fa fa-check check"></span></td>
@@ -280,7 +280,7 @@ At Zype, it's our job to evaluate different video sources and endpoints to offer
     </tr>
     <tr>
     	<td></td>
-        <td><img src="http://dev.zype.com/assets/provider_logos/icon-zype.png"></td>
+        <td class='player-img-holder'><img src="http://dev.zype.com/assets/provider_logos/icon-zype.png"></td>
         <td class="section-divider">Zype Roku</td>
         <td><span class="fa fa-check check"></span></td>
         <td class="section-divider"></td>
@@ -298,7 +298,7 @@ At Zype, it's our job to evaluate different video sources and endpoints to offer
     </tr>
     <tr>
     	<td></td>
-        <td><img src="http://dev.zype.com/assets/provider_logos/icon-zype.png"></td>
+        <td class='player-img-holder'><img src="http://dev.zype.com/assets/provider_logos/icon-zype.png"></td>
         <td class="section-divider">Zype Audio</td>
         <td><span class="fa fa-check check"></span></td>
         <td class="section-divider"></td>
@@ -316,7 +316,7 @@ At Zype, it's our job to evaluate different video sources and endpoints to offer
     </tr>
     <tr>
     	<td></td>
-        <td><img src="http://dev.zype.com/assets/provider_logos/icon-zype.png"></td>
+        <td class='player-img-holder'><img src="http://dev.zype.com/assets/provider_logos/icon-zype.png"></td>
         <td class="section-divider">Zype Download</td>
         <td><span class="fa fa-check check"></span></td>
         <td class="section-divider"></td>
@@ -334,7 +334,7 @@ At Zype, it's our job to evaluate different video sources and endpoints to offer
     </tr>
     <tr>
     	<td></td>
-        <td><img src="http://dev.zype.com/assets/provider_logos/icon-zype.png"></td>
+        <td class='player-img-holder'><img src="http://dev.zype.com/assets/provider_logos/icon-zype.png"></td>
         <td class="section-divider">Zype iOS</td>
         <td><span class="fa fa-check check"></span></td>
         <td class="section-divider"></td>
