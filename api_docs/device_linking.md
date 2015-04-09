@@ -20,16 +20,19 @@ You will first want to see if the current device id has been linked to a consume
 <hr>
 <pre><code>GET - https://api.zype.com/pin/status/?linked_device_id=linked_device_id
 </code></pre>
-<hr>
-#### Response - Device has never been pinned
-<pre><code>Error 404</code></pre>
 
-<hr>
+#### Parameters
+
+Parameter | Function | Type
+--------- | -------- | ----
+linked_device_id      | Unique id of the end user's device | String
+
+#### Response - Device has never been pinned.
+<pre><code>404</code></pre>
+
+You will need to acquire a pin for this device.
+
 #### Response - Device has been pinned.
-
-Consumer id will be nil and linked will be false if device has not been linked to a consumer.
-Consumer id will be the id of the consumer and linked will be true if device has been successfully
-linked to a consumer.
 
 200 Content-Type: application/json
 <pre><code>{
@@ -50,17 +53,14 @@ linked to a consumer.
   }
 </code></pre>
 
-<hr>
-
-#### Parameters
-
-Parameter | Function | Type
---------- | -------- | ----
-linked_device_id      | Unique id of the end user's device | String
+Consumer id will be nil and linked will be false if device has not been linked to a consumer.
+Note, pin expires every 30 minutes. You will need to reacquire the pin after 30 minutes.
+Consumer id will be the id of the consumer and linked will be true if device has been successfully
+linked to a consumer.
 
 <hr>
 
-### Acquire the pin for the device
+### Acquire pin for a device
 
 Takes the linked device id and creates a 7 digit pin for the device. Note, pin expires
 every 30 minutes. You will need to reacquire the pin after 30 minutes.
@@ -70,16 +70,12 @@ every 30 minutes. You will need to reacquire the pin after 30 minutes.
 <pre><code>POST - https://api.zype.com/pin/acquire/?linked_device_id=linked_device_id&type=type
 </code></pre>
 
-<hr>
-
 #### Parameters
 
 Parameter | Function | Type
 --------- | -------- | ----
 linked_device_id      | Unique id of the end user's device | String
-type | Type of device Ex. roku | String
-
-<hr>
+type | Type of device. Example: roku | String
 
 #### Response
 
@@ -108,19 +104,17 @@ type | Type of device Ex. roku | String
 
 Takes the pin and the consumer id and links the consumer to the device.
 
+<hr>
+
 <pre><code> PUT - https://api.zype.com/pin/link/?consumer_id=consumer_id&pin=pin
 </code></pre>
-
-<hr>
 
 #### Parameters
 
 Parameter | Function | Type
 --------- | -------- | ----
-consumer_id      | Id of your consumer | String
-pin | The acquired pin Ex. zabc123 | String
-
-<hr>
+consumer_id      | Zype id of your consumer | String
+pin | The acquired pin. Example: zabc123 | String
 
 #### Response
 
@@ -143,3 +137,5 @@ pin | The acquired pin Ex. zabc123 | String
       }
     }
 </code></pre>
+
+<hr>

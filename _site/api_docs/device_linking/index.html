@@ -93,39 +93,6 @@ a consumer to link her device, and link the device to the consumer via the acqui
 
 <pre><code>GET - https://api.zype.com/pin/status/?linked_device_id=linked_device_id
 </code></pre>
-<hr />
-
-<h4 id="response---device-has-never-been-pinned">Response - Device has never been pinned</h4>
-<pre><code>Error 404</code></pre>
-
-<hr />
-
-<h4 id="response---device-has-been-pinned">Response - Device has been pinned.</h4>
-
-<p>Consumer id will be nil and linked will be false if device has not been linked to a consumer.
-Consumer id will be the id of the consumer and linked will be true if device has been successfully
-linked to a consumer.</p>
-
-<p>200 Content-Type: application/json</p>
-<pre><code>{
-  "response"=&gt;
-    {
-      "_id"=&gt;"1234abc",
-      "consumer_id"=&gt;nil,
-      "created_at"=&gt;"2015-02-05T15:12:07.814-05:00",
-      "deleted_at"=&gt;nil,
-      "device_id"=&gt;"5429b1c769702d2f7c120000",
-      "linked_device_id"=&gt;"1234ABCXY",
-      "pin"=&gt;"znvm947",
-      "pin_expiration"=&gt;"2015-02-05T15:42:07.823-05:00",
-      "site_id"=&gt;"abc123",
-      "updated_at"=&gt;"2015-02-05T15:12:07.814-05:00",
-      "linked"=&gt;false}
-    }
-  }
-</code></pre>
-
-<hr />
 
 <h4 id="parameters">Parameters</h4>
 
@@ -146,9 +113,40 @@ linked to a consumer.</p>
   </tbody>
 </table>
 
+<h4 id="response---device-has-never-been-pinned">Response - Device has never been pinned.</h4>
+<pre><code>404</code></pre>
+
+<p>You will need to acquire a pin for this device.</p>
+
+<h4 id="response---device-has-been-pinned">Response - Device has been pinned.</h4>
+
+<p>200 Content-Type: application/json</p>
+<pre><code>{
+  "response"=&gt;
+    {
+      "_id"=&gt;"1234abc",
+      "consumer_id"=&gt;nil,
+      "created_at"=&gt;"2015-02-05T15:12:07.814-05:00",
+      "deleted_at"=&gt;nil,
+      "device_id"=&gt;"5429b1c769702d2f7c120000",
+      "linked_device_id"=&gt;"1234ABCXY",
+      "pin"=&gt;"znvm947",
+      "pin_expiration"=&gt;"2015-02-05T15:42:07.823-05:00",
+      "site_id"=&gt;"abc123",
+      "updated_at"=&gt;"2015-02-05T15:12:07.814-05:00",
+      "linked"=&gt;false}
+    }
+  }
+</code></pre>
+
+<p>Consumer id will be nil and linked will be false if device has not been linked to a consumer.
+Note, pin expires every 30 minutes. You will need to reacquire the pin after 30 minutes.
+Consumer id will be the id of the consumer and linked will be true if device has been successfully
+linked to a consumer.</p>
+
 <hr />
 
-<h3 id="acquire-the-pin-for-the-device">Acquire the pin for the device</h3>
+<h3 id="acquire-pin-for-a-device">Acquire pin for a device</h3>
 
 <p>Takes the linked device id and creates a 7 digit pin for the device. Note, pin expires
 every 30 minutes. You will need to reacquire the pin after 30 minutes.</p>
@@ -157,8 +155,6 @@ every 30 minutes. You will need to reacquire the pin after 30 minutes.</p>
 
 <pre><code>POST - https://api.zype.com/pin/acquire/?linked_device_id=linked_device_id&amp;type=type
 </code></pre>
-
-<hr />
 
 <h4 id="parameters-1">Parameters</h4>
 
@@ -178,13 +174,11 @@ every 30 minutes. You will need to reacquire the pin after 30 minutes.</p>
     </tr>
     <tr>
       <td>type</td>
-      <td>Type of device Ex. roku</td>
+      <td>Type of device. Example: roku</td>
       <td>String</td>
     </tr>
   </tbody>
 </table>
-
-<hr />
 
 <h4 id="response">Response</h4>
 
@@ -213,10 +207,10 @@ every 30 minutes. You will need to reacquire the pin after 30 minutes.</p>
 
 <p>Takes the pin and the consumer id and links the consumer to the device.</p>
 
+<hr />
+
 <pre><code> PUT - https://api.zype.com/pin/link/?consumer_id=consumer_id&amp;pin=pin
 </code></pre>
-
-<hr />
 
 <h4 id="parameters-2">Parameters</h4>
 
@@ -231,18 +225,16 @@ every 30 minutes. You will need to reacquire the pin after 30 minutes.</p>
   <tbody>
     <tr>
       <td>consumer_id</td>
-      <td>Id of your consumer</td>
+      <td>Zype id of your consumer</td>
       <td>String</td>
     </tr>
     <tr>
       <td>pin</td>
-      <td>The acquired pin Ex. zabc123</td>
+      <td>The acquired pin. Example: zabc123</td>
       <td>String</td>
     </tr>
   </tbody>
 </table>
-
-<hr />
 
 <h4 id="response-1">Response</h4>
 
@@ -265,6 +257,9 @@ every 30 minutes. You will need to reacquire the pin after 30 minutes.</p>
       }
     }
 </code></pre>
+
+<hr />
+
 
     </section>
 
