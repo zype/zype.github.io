@@ -312,7 +312,7 @@ below to see where the banner gets displayed in the home screen.
 Next, add tiles. Tiles are what a user can click on in the app’s home screen to go to the appropriate page. An iPhone app can have up to 9 tiles.
 Tiles can include links to Twitter, Facebook, Google+, your blog, your personal website,
 favorites, videos, and messages. You can drag the tiles in the editor to change their order on
-the iPhone Screen. Check out the mock up tosee where the tiles get displayed.
+the iPhone Screen. Check out the mock up to see where the tiles get displayed.
 
 ![tile screen]({{site.url}}assets/iphone/tiles_screen.png)
 
