@@ -34,6 +34,10 @@ If you want a full walkthrough of creating an app, we suggest you look at the [c
     <a href="#6">
     Publishing an iPhone App from the Zype Platform</a>
   </div>
+  <div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>
+    <a href="#7">
+    Deleting an App</a>
+  </div>
 </div>
 
 
@@ -325,3 +329,16 @@ use Zype's [API documentation]({{site.url/api_docs/apps}}) to self-publish or ha
 for you!
 
 ![iphone preview]({{site.url}}assets/iphone/iphone_show.png)
+
+<hr id='7'>
+
+## Deleting an App
+
+To delete an app from the Zype Platform, navigate to your [video apps](https://admin.zype.com/apps)
+and click on the app that you want to delete.
+
+![delete app 1]({{site.url}}assets/apps/delete_1.png)
+
+Then, click on the delete button in the upper right hand corner.
+
+![delete app 2]({{site.url}}assets/apps/delete_2.png)
