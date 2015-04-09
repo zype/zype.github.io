@@ -41,6 +41,10 @@ Video Source, all other videos will have a video source from the respected third
   <a href="#7">
   Adding Vimeo Videos from a URL</a>
   </div>
+  <div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>
+  <a href="#8">
+  Adding Livestream.com Events and Clips</a>
+  </div>
 </div>
 
 <hr id="0">
@@ -339,3 +343,22 @@ Then click the 'Save Changes' button.
 ![save changes]({{site.url}}assets/Adding Vimeo Video from a URL/save_changes.png)
 
 If everything went according to plan, you should see the video imports screen again, with a new import from the link you provided. If you're interested in grabbing a bunch of videos from Vimeo, you may want to follow our guides under [Adding Videos.](http://dev.zype.com/platform_docs/adding_videos/)
+
+<hr id='8'>
+
+## Adding Livestream.com Events and Clips
+
+Navigate to the [Import & Upload dashboard](https://admin.zype.com/import_upload) and click on Livestream.
+
+![livestream 1]({{site.url}}assets/livestream/livestream_1.png)
+
+Enter the Livestream.com Event or Livestream.com Clip url for the video that you want
+to import. You can add additional metadata such as the title and the description. If
+the "Add Video" button is toggled on, your Livestream.com video will automatically be
+added into your video library.
+
+![livestream 2]({{site.url}}assets/livestream/livestream_2.png)
+
+**What is the difference between an event and a clip?**
+
+An event is a live event that is currently streaming. A clip is a recorded video.
