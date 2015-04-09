@@ -81,6 +81,10 @@ geographic location desired.
     <a href="#18">
     Upload Formats</a>
   </div>
+  <div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>
+    <a href="#19">
+    Managing Video Segments</a>
+  </div>
 </div>
 
 <hr id="1">
@@ -726,3 +730,17 @@ We do not currently support the following:
 - Apple ProRes
 - ARRI
 - RED
+
+<hr id='19'>
+
+## Managing Video Segments
+
+Video segments help you to highlight specific time blocks in your video.
+This is additional metadata for your video that is exposed via the Zype API.
+Each segment can have a start time, an end time, and a description.
+
+To manage a video's segments, navigate to the video's details page and click on
+the "Segments" tab. Then, click on the "New Segment" button. You will be prompted
+to enter the time in HH:MM:SS format.
+
+![manage segments]({{site.url}}assets/videos/segments.png)
