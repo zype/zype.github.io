@@ -6,8 +6,8 @@
 </description>
     <link>http://dev.zype.com//</link>
     <atom:link href="http://dev.zype.com//feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Thu, 09 Apr 2015 14:44:07 -0400</pubDate>
-    <lastBuildDate>Thu, 09 Apr 2015 14:44:07 -0400</lastBuildDate>
+    <pubDate>Thu, 09 Apr 2015 15:23:09 -0400</pubDate>
+    <lastBuildDate>Thu, 09 Apr 2015 15:23:09 -0400</lastBuildDate>
     <generator>Jekyll v2.3.0</generator>
     
       <item>
@@ -42,6 +42,35 @@ and following the photo tutorial below.&lt;/p&gt;
         <pubDate>Thu, 09 Apr 2015 06:37:55 -0400</pubDate>
         <link>http://dev.zype.com//posts/2015/04/09/forgot-password</link>
         <guid isPermaLink="true">http://dev.zype.com//posts/2015/04/09/forgot-password</guid>
+        
+        
+        <category>developers</category>
+        
+      </item>
+    
+      <item>
+        <title>Change Video Thumbnails</title>
+        <description>&lt;p&gt;When you upload a video to the Zype Platform, Zype will create thumbnails for your video.
+To change your the thumbnail for your video, follow the steps below. Note, this is only
+to change your thumbnail from a video uploaded directly to the Zype Platform. It does not apply to
+thumbnails from an external data source like YouTube or Vimeo.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Step 1:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://dev.zype.com/assets/thumbnails/thumbnails_1.png&quot; alt=&quot;thumbnail 1&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;From your video library, click on the video that you want to change the thumbnail
+for and click on the “Thumbnails” tab.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Step 2:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://dev.zype.com/assets/thumbnails/thumbnails_2.png&quot; alt=&quot;thumbnail 2&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Select the thumbnail that you want. The thumbnail will automatically be updated!&lt;/p&gt;
+</description>
+        <pubDate>Thu, 09 Apr 2015 06:37:55 -0400</pubDate>
+        <link>http://dev.zype.com//posts/2015/04/09/change-thumbnails</link>
+        <guid isPermaLink="true">http://dev.zype.com//posts/2015/04/09/change-thumbnails</guid>
         
         
         <category>developers</category>
@@ -394,25 +423,6 @@ for you!&lt;/p&gt;
         <pubDate>Wed, 10 Dec 2014 07:16:55 -0500</pubDate>
         <link>http://dev.zype.com//posts/2014/12/10/filtering-videos-and-playlists</link>
         <guid isPermaLink="true">http://dev.zype.com//posts/2014/12/10/filtering-videos-and-playlists</guid>
-        
-        
-        <category>platform</category>
-        
-      </item>
-    
-      <item>
-        <title>Using Embed Codes on Your Site</title>
-        <description>&lt;p&gt;We’re happy to announce that the &lt;a href=&quot;http://admin.zype.com&quot;&gt;Zype Platform&lt;/a&gt; now grants you the power to “grab and go” with embed codes! Each video that you add to the platform has a snippet of code located under the Embed Code tab. You can navigate to the tab by finding a video that you want to embed and clicking on the edit button. The tab appears along the top of the menu.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://dev.zype.com/assets/Embedding a Player on Your Site/embed_tab.png&quot; alt=&quot;Go to Embed Code&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;The embed codes are designed to be dropped into a webpage, wherever you need them. The div id must remain the same, but other than that, you’re free to do as you please. As the page states, we recommend that you include the javascript portion of the embed code before the closing body tag on the page.&lt;/p&gt;
-
-&lt;p&gt;We hope you use this feature to get up and running with Zype videos on your site in the blink of an eye!&lt;/p&gt;
-</description>
-        <pubDate>Sun, 07 Dec 2014 23:16:55 -0500</pubDate>
-        <link>http://dev.zype.com//posts/2014/12/07/using-embed-codes</link>
-        <guid isPermaLink="true">http://dev.zype.com//posts/2014/12/07/using-embed-codes</guid>
         
         
         <category>platform</category>
