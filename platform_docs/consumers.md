@@ -3,7 +3,7 @@ layout: platform
 title: Zype Developer Portal | Platform Docs
 permalink: /platform_docs/consumers/
 ---
-##All About Consumers
+## Consumers
 Consumers are the backbone of Zype's Subscription Service. Consumers, with a plan,
 create a subscription. The Zype Platform supports Stripe for credit card processing of consumers.
 

@@ -3,7 +3,7 @@ layout: platform
 title: Zype Developer Portal | Platform Docs
 permalink: /platform_docs/categories/
 ---
-##All About Categories
+## Categories
 Categories are a way to tag your videos and your playlists.
 
 <div style="width: 100%;">

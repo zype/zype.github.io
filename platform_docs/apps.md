@@ -3,7 +3,7 @@ layout: platform
 title: Zype Developer Portal | Platform Docs
 permalink: /platform_docs/apps/
 ---
-##All About Apps
+## Apps
 The Zype Platform will help you configure apps that you will need to build and publish
 to the respective application stores.
 

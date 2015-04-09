@@ -3,7 +3,7 @@ layout: platform
 title: Zype Developer Portal | Platform Docs
 permalink: /platform_docs/playlists/
 ---
-##All About Playlists
+## Playlists
 A playlist can have multiple videos and categories.
 
 <div style="width: 100%;">

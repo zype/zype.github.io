@@ -3,7 +3,7 @@ layout: platform
 title: Zype Developer Portal | Platform Docs
 permalink: /platform_docs/zobjects/
 ---
-##All About Zobjects
+## Zobjects
 A zobject is additional metadata that you can create and associate with your videos.
 
 <div style="width: 100%;">

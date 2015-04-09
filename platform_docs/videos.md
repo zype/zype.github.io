@@ -3,7 +3,7 @@ layout: platform
 title: Zype Developer Portal | Platform Docs
 permalink: /platform_docs/videos/
 ---
-##All about videos
+## Videos
 Videos are at the core of the Zype experience. You can upload videos or import videos
 from a third party source and use Zype to deliver your video content to any device or
 geographic location desired.
@@ -72,6 +72,10 @@ geographic location desired.
   <div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>
     <a href="#16">
     Choosing thumbnails for your videos</a>
+  </div>
+  <div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>
+    <a href="#17">
+    Deleting a Video</a>
   </div>
 </div>
 
@@ -687,3 +691,15 @@ for and click on the "Thumbnails" tab.
 ![thumbnail 2]({{site.url}}assets/thumbnails/thumbnails_2.png)
 
 Select the thumbnail that you want. The thumbnail will automatically be updated!
+
+<hr id='17'>
+
+## Deleting a video
+
+To delete a video, navigate to your Video Library and click on the trash can for the video
+that you want to remove.
+
+![remove video]({{site.url}}assets/videos/remove_video.png)
+
+Note, when you delete a video, the video is removed from all playlists, the video import and/or upload
+is released, and video favorites/ratings are removed.
