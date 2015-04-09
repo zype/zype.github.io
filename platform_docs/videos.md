@@ -77,6 +77,10 @@ geographic location desired.
     <a href="#17">
     Deleting a Video</a>
   </div>
+  <div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>
+    <a href="#18">
+    Upload Formats</a>
+  </div>
 </div>
 
 <hr id="1">
@@ -703,3 +707,22 @@ that you want to remove.
 
 Note, when you delete a video, the video is removed from all playlists, the video import and/or upload
 is released, and video favorites/ratings are removed.
+
+<hr id='18'>
+
+## Upload Formats
+
+Zype supports [uploading](https://admin.zype.com/uploads/new) of the following popular media formats:
+
+- 3GP
+- AAC
+- AVI
+- FLV
+- MP4
+- MPEG-2
+
+We do not currently support the following:
+
+- Apple ProRes
+- ARRI
+- RED
