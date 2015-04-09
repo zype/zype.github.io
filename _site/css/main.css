@@ -385,7 +385,6 @@ header h4 {
     background: linear-gradient(#333 0%, #444 100%);
     color: #FFF;
     height: 40px;
-    font-weight: normal;
     text-align: center;
     border-radius: 7px 7px 0 0; }
   #player-matrix td {
@@ -698,11 +697,3 @@ header h4 {
 
 .type-csharp .highlight .sc {
   color: #A31515; }
-
-.player-img-holder img {
-  width: 25px;
-}
-
-.player-img-holder {
-  padding: 0;
-}
