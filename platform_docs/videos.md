@@ -735,7 +735,7 @@ We do not currently support the following:
 
 ## Managing Video Segments
 
-Video segments help you to highlight specific time blocks in your video.
+Video segments help you highlight specific time blocks in a video.
 This is additional metadata for your video that is exposed via the Zype API.
 Each segment can have a start time, an end time, and a description.
 
