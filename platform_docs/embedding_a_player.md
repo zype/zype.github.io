@@ -15,6 +15,10 @@ One of the quickest ways to get up and running with Zype videos is to simply dro
   <a href="#2">
   Configuring Player Expiration for Your Site</a>
   </div>
+  <div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>
+  <a href="#3">
+  Enabling Social Sharing Controls for Zype Players</a>
+  </div>
 </div>
 
 <hr id="1">
@@ -43,3 +47,17 @@ At the bottom of the Site Settings page is a value for Player Expiration, the de
 ![player expiration]({{site.url}}assets/Embedding a Player on Your Site2/300.png)
 
 That's it! You can confirm by clicking on Site Settings again scrolling to the bottom to see your changes.
+
+<hr id="3">
+
+## Enabling Social Sharing Controls for Zype Players
+
+You can enable social sharing to allow viewers to easily share your videos on Facebook and Twitter!
+
+Navigate to your [settings page](https://admin.zype.com/site/edit) and click on the "Player" tab.
+
+![social sharing 1]({{site.url}}assets/social_sharing/social_sharing_1.png)
+
+Then, toggle "Player Sharing Enabled" on towards the button of the page.
+
+![social sharing 2]({{site.url}}assets/social_sharing/social_sharing_2.png)
