@@ -75,15 +75,15 @@ geographic location desired.
   </div>
   <div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>
     <a href="#17">
-    Deleting a Video</a>
+    Deleting a video</a>
   </div>
   <div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>
     <a href="#18">
-    Upload Formats</a>
+    Upload formats</a>
   </div>
   <div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>
     <a href="#19">
-    Managing Video Segments</a>
+    Managing video segments</a>
   </div>
 </div>
 
@@ -187,7 +187,7 @@ Created | The date and time the request was created
 
 The request logs screen gives you a snapshot of the most recent requests by default.
 
-Sorting the request logs is easy: use the four drop down menus to select your search parameters
+Sorting the request logs is easy: use the four dropdown menus to select your search parameters
 and then click on the search button.
 
 
@@ -248,7 +248,7 @@ on how to set up your Rails app with the Zype Gem!*
 
 <hr id="4">
 
-## Uploading Videos to the Zype Platform from the Web
+## Uploading videos to the Zype Platform from the web
 
 The easiest way to add a video to your video library is to upload a video to the Zype Platform.
 
@@ -294,7 +294,7 @@ are active! Note, videos will be added to your video library as they become avai
 
 ![video library]({{site.url}}assets/video_sources/video_library.png)
 
-**Advanced Importing**
+**Advanced importing**
 
 If you do not want to automatically import all of the videos from a video source to your video
 library or if you want to merge your video imports to videos preexisting in your library, you can
@@ -354,7 +354,7 @@ If everything went according to plan, you can see your new video imports by clic
 
 <hr id="7">
 
-## Adding Vimeo Video from a URL
+## Adding Vimeo video from a URL
 Check out the [Video Imports Screen](http://admin.zype.com/video_imports) and click on the "Add  Video Import" button to get started.
 
 
@@ -381,7 +381,7 @@ If everything went according to plan, you should see the video imports screen ag
 
 <hr id="8">
 
-## Adding Videos from a YouTube Channel to the Zype Platform
+## Adding videos from a YouTube Channel to the Zype Platform
 We simplified the process of searching for and importing a YouTube Channel into the Zype Platform.
 Before, you had to manually go to YouTube and find your Channel ID. This was a cumbersome
 process. Now you can search for a YouTube Channel from the Zype Platform and we will get the Channel ID for you.
@@ -416,7 +416,7 @@ and the Zype Platform will start to import all of the videos from the channel th
 
 **Step 5:**
 
-Your imported videos are in your import videos page. You can add videos to your catalogue
+Your imported videos are in your import videos page. You can add videos to your catalog
 from there.
 
 ![import videos]({{site.url}}assets/Adding Videos from a YouTube Channel to the Zype Platform/add_video.png)
@@ -505,7 +505,7 @@ the chosen video import data source from your video.
 
 <hr id="12">
 
-## Uploading Videos to Zype Using Our Ruby Gem
+## Uploading videos to Zype using our Ruby Gem
 We're rolling out a bunch of new ways to add video content to the Zype Platform, like [Youtube Channel Import](http://dev.zype.com/posts/2014/11/18/search-youtube-in-zype/) and [Crunchyroll Video Import](http://dev.zype.com/posts/2014/11/19/adding-crunchyroll-as-a-video-source/). In this post we'll show you how to use the Zype Command Line Interface (or CLI) to upload videos that you have stored on a harddrive.
 
 ### Downloading and installing the Zype CLI
@@ -541,7 +541,7 @@ Enter the command below:
 <pre><code>$ zype account:login
 </code></pre>
 
-You'll be prompted to enter your Zype API key. You can find this by logging in to the [Zype Platform](https://admin.zype.com) and clicking on API within the settings menu at the top of the screen. Grab your API key and enter it into the terminal to continue.
+You'll be prompted to enter your Zype API Key. You can find this by logging in to the [Zype Platform](https://admin.zype.com) and clicking on API within the settings menu at the top of the screen. Grab your API key and enter it into the terminal to continue.
 
 ### Uploading your videos
 
@@ -596,7 +596,7 @@ in the Zype Platform and can be fetched via the Ruby Gem.
 **Playlist Page**
 
 You can click on any playlist to view all the videos that belong to that playlist. You can sort
-the videos based on release date, name, or popularity. Also note that there are Zype Videos
+the videos based on release date, name, or popularity. Also note that there are Zype videos
 and YouTube videos in the same player. The Zype Platform and Zype API allows you to
 seamlessly combine the two.
 
@@ -627,7 +627,7 @@ other features or in other languages? Feel free to comment below!
 ## Embedding a player on your site
 The Zype Platform allows you to manage all of your video content in one place and
 then deliver your video content across any platform or device. In this tutorial, I
-will map out how to embed a video uploaded to the Zype Platform on any webpage.
+will map out how to embed a video uploaded to the Zype Platform on any web page.
 
 **Step 1**
 
@@ -675,7 +675,7 @@ Once you've selected all of the filters you want to use, click the search button
 
 You can search by entering a search term, using the filters or both!
 
-If the filter buttons are greyed out, that's because you don't have any videos or playlists yet.
+If the filter buttons are grayed out, that's because you don't have any videos or playlists yet.
 
 Check out our previous blog post on [defining categories and playlists](http://dev.zype.com/posts/2014/12/04/defining-categories-and-playlists/), if you have questions about getting started.
 
@@ -714,7 +714,7 @@ is released, and video favorites/ratings are removed.
 
 <hr id='18'>
 
-## Upload Formats
+## Upload formats
 
 Zype supports [uploading](https://admin.zype.com/uploads/new) in the following popular media formats:
 
@@ -733,7 +733,7 @@ We do not currently support the following:
 
 <hr id='19'>
 
-## Managing Video Segments
+## Managing video segments
 
 Video segments help you highlight specific time blocks in a video.
 This is additional metadata for your video that is exposed via the Zype API.

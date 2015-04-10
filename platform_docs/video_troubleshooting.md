@@ -3,7 +3,7 @@ layout: platform
 title: Zype Developer Portal | Platform Docs
 permalink: /platform_docs/video_troubleshooting/
 ---
-## Video Troubleshooting
+## Video troubleshooting
 
 Below are some frequently asked playing videos from the Zype Platform.
 Please reach out to Zype by hitting the [?] box in the lower left hand corner in the [Zype Platform](https://admin.zype.com/) if you have other questions or want additional guidance!

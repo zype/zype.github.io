@@ -3,7 +3,7 @@ layout: platform
 title: Zype Developer Portal | Platform Docs
 permalink: /platform_docs/creating_an_app/
 ---
-## Creating an App Using the Zype Platform
+## Creating an app using the Zype Platform
 If you're ready to start creating a video app for devices like Roku, Chromecast, Xbox, etc, take a look at the guides below and follow them in order to reach your goal!
 
 <div style="width: 100%;">
@@ -39,9 +39,9 @@ If you're ready to start creating a video app for devices like Roku, Chromecast,
 We have simplified the process of publishing a Roku Channel from the Zype Platform.
 The process now has three parts. First, you need to set up your channel.
 Then, Zype will build your Channel for you or you can
-[self-publish your Channel](#2).
+[self-publish your channel](#2).
 
-**Step 1: Set Up Your Video Library and Channel**
+**Step 1: Set up your video library and channel**
 
 First, you will need to upload and transcode videos onto the Zype Platform.
 Currently, Roku Channels only support videos with a Zype video source.
