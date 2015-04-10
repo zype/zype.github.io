@@ -9,21 +9,21 @@ Categories are a way to tag your videos and your playlists.
 <div style="width: 100%;">
   <div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>
     <a href="#1">
-    Categories and Playlists on the Zype Platform</a>
+    Categories and playlists on the Zype Platform</a>
   </div>
   <div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>
     <a href="#2">
-    Categories, Playlists and Your Roku App</a>
+    Categories, playlists and your Roku app</a>
   </div>
   <div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>
     <a href="#3">
-    Search Filters on the Zype Platform</a>
+    Search filters on the Zype Platform</a>
   </div>
 </div>
 
 <hr id="1">
 
-## Categories and Playlists on the Zype Platform
+## Categories and playlists on the Zype Platform
 As you make your way through the [Zype Platform](http://admin.zype.com), you might have some
 questions about the differences between a playlist and a category. At the end of the day, both
 are used to return a set of videos, but they aren't exactly the same thing. This blog post
@@ -41,14 +41,14 @@ videos. Common categories for video content might include: Genre, Tag, Type, Sea
 etc. Categories are more generic than playlists and can be mass assigned to videos in your
 [Video Library.](http://admin.zype.com/videos)
 
-### I'm using the Zype Platform to create a Roku app, what's the difference for me?
+### I'm using the Zype Platform to create a Roku app. What's the difference for me?
 Roku apps will treat categories and playlists the same, as they are both just a collection of
-videos. For an in-depth guide on how to create your Roku App, make sure you check out [this blog post](http://dev.zype.com/posts/2014/12/03/categories-playlists-zobjects-roku/)
+videos. For an in-depth guide on how to create your Roku app, make sure you check out [this blog post](http://dev.zype.com/posts/2014/12/03/categories-playlists-zobjects-roku/)
 
 
 <hr id="2">
 
-## Categories, Playlists and Your Roku App
+## Categories, playlists and your Roku app
 We aim to make the development process of a Roku Channel as easy as possible using
 our [Zype Roku SDK](https://github.com/zype/zype-roku). To do this, our sample Roku Channel
 focuses on three major components of the Zype Platform: playlists, categories, and zobjects.
@@ -79,7 +79,7 @@ category slider will be the next 'Genre', which is 'Comedy'.
 ![Zobjects in video detail]({{site.url}}assets/Categories, Playlists and Your Roku App/roku_zobject.png)
 
 You also have the option to provide additional metadata about your videos in the video
-detail screen. You select one zobject to be above the description and one zobject to be
+detail screen. You select one Zobject to be above the description and one Zobject to be
 below the description. In the example above, we selected the Zobject 'Actor' to be above the description
 and it lists the actors that we have associated with the video. Similarly, we selected
 the Zobject 'Director' to be below the description.
@@ -87,7 +87,7 @@ the Zobject 'Director' to be below the description.
 
 <hr id="3">
 
-## Search Filters on the Zype Platform
+## Search filters on the Zype Platform
 If you've been busy adding video content to the [Zype Platform](http://admin.zype.com) and creating playlists, you might be at the point where you've got a few pages of each. To help you better manage your content, we've added a set of filters to the videos and playlists pages:
 
 ![video filtering]({{site.url}}assets/Search Filters on the Zype Platform/video_lib.png)
@@ -102,6 +102,6 @@ Once you've selected all of the filters you want to use, click the search button
 
 You can search by entering a search term, using the filters or both!
 
-If the filter buttons are greyed out, that's because you don't have any videos or playlists yet.
+If the filter buttons are grayed out, that's because you don't have any videos or playlists yet.
 
 Check out our previous blog post on [defining categories and playlists](http://dev.zype.com/posts/2014/12/04/defining-categories-and-playlists/), if you have questions about getting started.

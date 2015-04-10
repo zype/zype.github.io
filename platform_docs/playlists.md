@@ -9,25 +9,25 @@ A playlist can have multiple videos and categories.
 <div style="width: 100%;">
   <div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>
     <a href="#1">
-    Categories and Playlists on the Zype Platform</a>
+    Categories and playlists on the Zype Platform</a>
   </div>
   <div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>
     <a href="#2">
-    Search Filters on the Zype Platform</a>
+    Search filters on the Zype Platform</a>
   </div>
   <div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>
     <a href="#3">
-    Related Playlists</a>
+    Related playlists</a>
   </div>
   <div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>
     <a href="#4">
-    Categories, Playlists and Your Roku App</a>
+    Categories, playlists and your Roku app</a>
   </div>
 </div>
 
 <hr id="1">
 
-## Categories and Playlists on the Zype Platform
+## Categories and playlists on the Zype Platform
 As you make your way through the [Zype Platform](http://admin.zype.com), you might have some
 questions about the differences between a playlist and a category. At the end of the day, both
 are used to return a set of videos, but they aren't exactly the same thing. This blog post
@@ -47,11 +47,11 @@ etc. Categories are more generic than playlists and can be mass assigned to vide
 
 ### I'm using the Zype Platform to create a Roku app, what's the difference for me?
 Roku apps will treat categories and playlists the same, as they are both just a collection of
-videos. For an in-depth guide on how to create your Roku App, make sure you check out [this blog post](http://dev.zype.com/posts/2014/12/03/categories-playlists-zobjects-roku/)
+videos. For an in-depth guide on how to create your Roku app, make sure you check out [this blog post](http://dev.zype.com/posts/2014/12/03/categories-playlists-zobjects-roku/)
 
 <hr id="2">
 
-## Search Filters on the Zype Platform
+## Search filters on the Zype Platform
 If you've been busy adding video content to the [Zype Platform](http://admin.zype.com) and creating playlists, you might be at the point where you've got a few pages of each. To help you better manage your content, we've added a set of filters to the videos and playlists pages:
 
 ![video filtering]({{site.url}}assets/Search Filters on the Zype Platform/video_lib.png)
@@ -68,15 +68,15 @@ Once you've selected all of the filters you want to use, click the search button
 
 You can search by entering a search term, using the filters or both!
 
-If the filter buttons are greyed out, that's because you don't have any videos or playlists yet.
+If the filter buttons are grayed out, that's because you don't have any videos or playlists yet.
 
 Check out our previous blog post on [defining categories and playlists](http://dev.zype.com/posts/2014/12/04/defining-categories-and-playlists/), if you have questions about getting started.
 
 
 <hr id="3">
 
-## Related Playlists
-Let's say you've already got some video content on your zype destination site, but now you'd like to recommend
+## Related playlists
+Let's say you've already got some video content on your Zype destination site, but now you'd like to recommend
 additional content based on what your users are watching. The solution we've implemented is called related videos.
 In this post, we'll be covering how to create a playlist of related videos that are recommended to a viewer
 based on what the video they're watching. Here's an example of the finished product:
@@ -113,7 +113,7 @@ Click "Save Changes" when you're done.
 
 ### Let's confirm
 
-You should take a second and make sure everything's going according to plan. Go to your site and view a video
+You should take a second and make sure everything is going according to plan. Go to your site and view a video
 that you added to selected videos in the previous step. Below the video, under the section "Related Videos",
 you should see the playlist you just created and the first few videos you added. You can also update any of your
 current playlists to act as a playlist of related videos by following these same steps.
@@ -125,7 +125,7 @@ on how to set up your Rails App with the Zype Gem!*
 
 <hr id="4">
 
-## Categories, Playlists and Your Roku App
+## Categories, playlists and Your Roku app
 We aim to make the development process of a Roku Channel as easy as possible using
 our [Zype Roku SDK](https://github.com/zype/zype-roku). To do this, our sample Roku Channel
 focuses on three major components of the Zype Platform: playlists, categories, and zobjects.
@@ -140,7 +140,7 @@ We will be using screenshots from our sample Roku Channel to highlight what you 
 **Featured Playlist**
 
 The first slider of the home screen is the featured playlist. This can be any playlist
-that you have created using the Zype Platform. Note, only Zype Videos will play.
+that you have created using the Zype Platform. Note, only Zype videos will play.
 
 **Categories**
 
