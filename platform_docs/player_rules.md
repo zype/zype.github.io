@@ -87,7 +87,6 @@ on how to set up your Rails App with the Zype Gem!*
 
 ## Setting up Player Rules
 
-Player rules determine which player gets served to your end user based on device and geolocation.
 If a player rule is not set up for the device or geography that your end user is coming from,
 she will not be able to view the video. Moreover, if a player rule is not set up for
 the video source where your video is coming from, your video will not be able to be viewed.
