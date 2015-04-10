@@ -75,42 +75,48 @@
 
   <section id="main">
     <h2 id="consumers">Consumers</h2>
-<p>Consumers are the backbone of Zype’s Subscription Service. Consumers, with a plan,
-create a subscription. The Zype Platform supports Stripe for credit card processing of consumers.</p>
+<p>Zype can manage the end users of your application.
+You can store metadata of your end users including name, address,
+birthday. Moreover, Zype consumers can be used as an authentication end point for your
+end users using your application.</p>
 
 <div style="width: 100%;">
 <div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>
 <a href="#1">
-Connecting Stripe</a>
-</div>
-<div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>
-<a href="#2">
 Creating a Consumer</a>
 </div>
+
 <div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>
-<a href="#3">
+<a href="#2">
 Getting a Consumer's Details</a>
 </div>
+
+<div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>
+<a href="#3">
+Removing a Consumer</a>
+</div>
+
 <div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>
 <a href="#4">
-Removing a Consumer</a>
+Connecting Stripe</a>
 </div>
 </div>
 
 <hr id="1" />
 
-<h2 id="connecting-stripe">Connecting Stripe</h2>
-<p>Before creating a consumer, you will need to link your Stripe Account to the Zype Platform.
-In the Zype Platform, navigate to settings and enter your Stripe Secret Key. Your Stripe Secret Key can be found under your Stripe <a href="https://dashboard.stripe.com/account/apikeys">account settings</a>.</p>
+<h2 id="creating-a-consumer">Creating a Consumer</h2>
 
-<p><img src="http://dev.zype.com/assets/Connecting Stripe/stripe_key.png" alt="stripe settings" /></p>
+<p>To create a consumer on the Zype Platform, navigate to the <a href="https://admin.zype.com/subscription_overview">subscriptions dashboard</a> and click on consumers.</p>
+
+<p><img src="http://dev.zype.com/assets/consumers/dashboard.png" alt="subscriptions dashboard" /></p>
+
+<p>Then, click on the “New Consumer” button and fill out your consumer’s information!</p>
+
+<p><img src="http://dev.zype.com/assets/consumers/new_consumer.png" alt="subscription new" /></p>
+
+<p><img src="http://dev.zype.com/assets/consumers/form.png" alt="subscription form" /></p>
 
 <hr id="2" />
-
-<h2 id="creating-a-consumer">Creating a Consumer</h2>
-<p>You will need to <a href="http://dev.zype.com/api_docs/consumers/">use our API</a> to create consumers.</p>
-
-<hr id="3" />
 
 <h2 id="getting-a-consumers-details">Getting a Consumer’s Details</h2>
 <p>You can use the Zype Platform to get details about a consumer. To get a consumer’s details, go to the <a href="https://admin.zype.com/consumers">consumers page</a> and click on the appropriate consumer.
@@ -118,7 +124,7 @@ Information includes a consumer’s email and his or her subscriptions.</p>
 
 <p><img src="http://dev.zype.com/assets/Connecting Stripe/customer_details.png" alt="consumer information" /></p>
 
-<hr id="4" />
+<hr id="3" />
 
 <h2 id="removing-a-consumer">Removing a Consumer</h2>
 <p>You can remove a consumer from the Zype Platform. To do so, navigate to the <a href="https://admin.zype.com/consumers">consumers’ page</a>
@@ -127,6 +133,15 @@ and click on the red delete button for the appropriate consumer.</p>
 <p><img src="http://dev.zype.com/assets/Connecting Stripe/delete_cust.png" alt="delete consumer" /></p>
 
 <p>Note, deleting a consumer will also cancel all of his or her subscriptions.</p>
+
+<hr id="4" />
+
+<h2 id="connecting-stripe">Connecting Stripe</h2>
+<p>If you want to have your consumers pay with Stripe, you will need to link
+your Stripe account to the Zype Platform. To do this, navigate to your
+<a href="https://admin.zype.com/site/edit">settings</a> and click on the “Monetization” tab. You can find your Stripe secret key via <a href="https://dashboard.stripe.com/account/apikeys">account settings</a>.</p>
+
+<p><img src="http://dev.zype.com/assets/Connecting Stripe/stripe_key.png" alt="stripe settings" /></p>
 
   </section>
 
