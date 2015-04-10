@@ -19,7 +19,7 @@ If you're ready to start creating a video app for devices like Roku, Chromecast,
   <div style="margin: 20px;"> 2)
     <span class="fa fa-file-text" style="margin-right: 4px; margin-left: 10px;"></span>
     <a href="#2">
-    Self Publishing a Roku Channel with Zype</a>
+    Self publishing a Roku Channel with Zype</a>
   </div>
   <div style="margin: 20px;">
     <h3>iPhone</h3>
@@ -27,7 +27,7 @@ If you're ready to start creating a video app for devices like Roku, Chromecast,
     <div> 1)
       <span class="fa fa-file-text" style="margin-right: 4px; margin-left: 10px;"></span>
       <a href="#3">
-      Publishing an iPhone App with Zype</a>
+      Publishing an iPhone app with Zype</a>
     </div>
   </div>
 </div>
@@ -64,15 +64,15 @@ in many different sizes.
 
 ![roku set up]({{site.url}}assets/Publishing Your Roku App/set_up_roku_screen.png)
 
-**Step 2: Zype Builds Your Roku Channel**
+**Step 2: Zype builds your Roku Channel**
 
-Once you set up your Channel, Zype will bundle the necessary images and prepare the
+Once you set up your channel, Zype will bundle the necessary images and prepare the
 code for your Roku Channel. All you have to do is wait a couple of minutes!
-The page will automatically refresh once your Channel is ready.
+The page will automatically refresh once your channel is ready.
 
 ![roku bundling]({{site.url}}assets/Publishing Your Roku App/roku_bundling.png)
 
-**Step 3: Publish Channel**
+**Step 3: Publish channel**
 
 You can choose to either self-publish or have Zype publish your Roku Channel for you.
 If you choose to self publish [click here]({{site.url}}posts/2015/02/13/self-publish-roku/)
@@ -88,9 +88,9 @@ Typically, once your Roku Channel is submitted to the Roku Channel Store, it tak
 3-4 weeks to get to the front of the QA queue and then another 1-2 weeks for approval.
 You should expect to wait atleast 4-6 weeks for your Roku Channel to be available
 on the Roku Channel Store. If you would like to immediately share your Roku Channel,
-you can create a private Roku Channel that can be shared immediately via url.
+you can create a private Roku Channel that can be shared immediately via URL.
 
-**Step 4: Edit Channel Settings**
+**Step 4: Edit channel settings**
 
 The majority of settings for your Roku Channel are configured at run-time.
 Thus, you can edit Channel settings such as your featured playlist, your logos and
@@ -99,17 +99,17 @@ to read how to edit your Roku Channel.
 
 <hr id="2">
 
-## Self Publishing a Roku Channel with Zype
+## Self publishing a Roku Channel with Zype
 
 Before being ready to self-publish, you will need to set up your Roku Channel on the Zype
 Platform. [Click here](#1) to read up on
 how to set up your Roku Channel for publishing.
 To self-publish your Roku Channel, you will need to have a Roku device and be
 comfortable using the terminal. This tutorial is focused for those users who are
-on Mac or linux. If you are on Windows, you can follow along with the tutorial,
+on Mac or Linux. If you are on Windows, you can follow along with the tutorial,
 but you will need to use the [Eclipse BrightScript plug-in to package your Roku Channel](http://sdkdocs.roku.com/display/sdkdoc/Eclipse+Plugin+Guide) (step 2).
 
-**Step 1: Enable Roku Development Mode on Your Box**
+**Step 1: Enable Roku Development Mode on your box**
 
 You will need to enable Roku Development Mode on your Roku device. Read through the [Roku
 Documentation](http://sdkdocs.roku.com/display/sdkdoc/Developer+Guide#DeveloperGuide-70LoadingandRunningyourApplicationWalkthrough)
@@ -133,20 +133,20 @@ Then, run make install inside the Roku Channel directory in your terminal to sid
 
 ![make install]({{site.url}}assets/Publishing Your Roku App/make_install.png))
 
-If the command is successful, your Roku Channel will load automatically to your Roku Device.
+If the command is successful, your Roku Channel will load automatically to your Roku device.
 
-**Step 3: Package Your Roku Channel for Publishing**
+**Step 3: Package your Roku Channel for publishing**
 
 You will need to key your Roku Channel using your Roku device.
 Please read the official [Roku
 documentation](http://sdkdocs.roku.com/display/sdkdoc/Channel+Packaging+And+Publishing#ChannelPackagingAndPublishing-30PackagingYourApplication)
 on how to generate your key and key your device.
 
-**Step 4: Submit Your Roku Channel to the Roku Channel Store**
+**Step 4: Submit your Roku Channel to the Roku Channel Store**
 
 Now that you have a packaged Roku Channel, you will need to submit your Roku Channel to the Roku Channel Store. You can choose to either publish
 a private channel or a public channel. A private channel will be published right away, but is not searchable via the Roku Channel Store. You will
-be given a Channel URL that you can share to others to add your private channel. To publish a public channel, you will added to the Roku
+be given a channel URL that you can share to others to add your private channel. To publish a public channel, you will added to the Roku
 Publishing Queue for Roku QA. Based on high demand, it can take anywhere from 2 to 3 months to
 get approved by Roku into the Roku Channel Store.
 
@@ -158,24 +158,24 @@ if you have any questions or would like Zype to publish your Roku Channel for yo
 
 <hr id="3">
 
-## Publishing an iPhone App with Zype
+## Publishing an iPhone app with Zype
 
-Before we start, lets look at what the end result of what your iPhone App will look like!
+Before we start, lets look at what the end result of what your iPhone app will look like!
 
 ![iphone preview]({{site.url}}assets/iphone/mockup.png)
 
-To configure your iPhone App using the Zype Platform, navigate to the Video Apps page and click
+To configure your iPhone app using the Zype Platform, navigate to the Video Apps page and click
 on the iPhone logo.
 
 ![select iphone]({{site.url}}assets/iphone/apps_screen.png)
 
-Next, fill in the App Details. This includes the title, the version number, and the store icon.
+Next, fill in the app details. This includes the title, the version number, and the store icon.
 The store icon will be the icon that users click to on your iPhone screen to enter your app.
 
 ![app details]({{site.url}}assets/iphone/app_details_screen.png)
 
-Then, fill out the Channel Information. The banner image is what appears at the top of your home
-screen. The larger banner is for higher quality displays. Check out the mock up of an iPhone App
+Then, fill out the channel information. The banner image is what appears at the top of your home
+screen. The larger banner is for higher quality displays. Check out the mock up of an iPhone app
 below to see where the banner gets displayed in the home screen.
 
 ![channel screen]({{site.url}}assets/iphone/channel_screen.png)
@@ -185,7 +185,7 @@ below to see where the banner gets displayed in the home screen.
 Next, add tiles. Tiles are what a user can click on in the app’s home screen to go to the appropriate page. An iPhone app can have up to 9 tiles.
 Tiles can include links to Twitter, Facebook, Google+, your blog, your personal website,
 favorites, videos, and messages. You can drag the tiles in the editor to change their order on
-the iPhone Screen. Check out the mock up tosee where the tiles get displayed.
+the iPhone screen. Check out the mock up to see where the tiles get displayed.
 
 ![tile screen]({{site.url}}assets/iphone/tiles_screen.png)
 
@@ -196,7 +196,7 @@ and add a message.
 
 ![message screen]({{site.url}}assets/iphone/message_screen.png)
 
-Once you are finished, click save changes. You will be redirected to the iPhone App details
+Once you are finished, click save changes. You will be redirected to the iPhone app details
 screen where you will see a mock up of your channel home screen. You can either
 use Zype's [API documentation]({{site.url/api_docs/apps}}) to self-publish or have Zype publish
 for you!

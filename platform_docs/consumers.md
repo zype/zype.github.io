@@ -12,22 +12,22 @@ end users using your application.
 <div style="width: 100%;">
 <div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>
 <a href="#1">
-Creating a Consumer</a>
+Creating a consumer</a>
 </div>
 
 <div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>
 <a href="#2">
-Manage a Consumer</a>
+Manage a consumer</a>
 </div>
 
 <div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>
 <a href="#3">
-Removing a Consumer</a>
+Removing a consumer</a>
 </div>
 
 <div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>
 <a href="#4">
-Exporting Consumers</a>
+Exporting consumers</a>
 </div>
 
 
@@ -39,7 +39,7 @@ Connecting Stripe</a>
 
 <hr id="1">
 
-## Creating a Consumer
+## Creating a consumer
 
 To create a consumer on the Zype Platform, navigate to the [subscriptions dashboard](https://admin.zype.com/subscription_overview) and click on consumers.
 
@@ -53,14 +53,14 @@ Then, click on the "New Consumer" button and fill out your consumer's informatio
 
 <hr id="2">
 
-## Manage a Consumer
+## Manage a consumer
 You can use the Zype Platform to manage an individual consumer. To get a consumer's details, go to the [consumers page](https://admin.zype.com/consumers) and click on the appropriate consumer.
 
 ![consumer information]({{site.url}}assets/Connecting Stripe/consumer_details.png)
 
 <hr id='3'>
 
-## Removing a Consumer
+## Removing a consumer
 You can remove a consumer from the Zype Platform. To do so, navigate to the [consumers' page](https://admin.zype.com/consumers)
 and click on the red delete button for the appropriate consumer.
 
@@ -70,7 +70,7 @@ Note, deleting a consumer will also cancel all of his or her subscriptions.
 
 <hr id='4'>
 
-## Exporting Consumers
+## Exporting consumers
 
 To export your consumers' information into a spreadsheet, navigate to the [consumers' page](https://admin.zype.com/consumers) and click on the "Export CSV" button.
 
