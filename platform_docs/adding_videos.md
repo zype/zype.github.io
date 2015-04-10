@@ -216,7 +216,7 @@ Confirm that you have the appropriate player rules set up to expose your Vimeo P
 that it can deliver content to all devices including web and Roku. Go to [player rules](https://admin.zype.com/player_rules)
 and make sure that you have a Vimeo Pro (Native) Player, a Vimeo Pro (Zype) Player, and a Zype Roku Pro Player. If you do
 not have a proper player rule, click on the "New Player Rule" button and create Vimeo PRO player rules for the
-desired device and Vimeo PRO Player.
+desired device and Vimeo PRO Player. For more information on player rules, go to the [player rules platform docs](http://dev.zype.com/platform_docs/player_rules/).
 
 ![vimeo pro player rule]({{site.url}}assets/Adding Videos from a Vimeo PRO Account/player_rules.png
 
