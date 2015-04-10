@@ -3,7 +3,7 @@ layout: platform
 title: Zype Developer Portal | Platform Docs
 permalink: /platform_docs/assets/
 ---
-##All About Assets
+##Assets
 The Zype Roku SDK uses a lot of different assets to deliver your personalized Roku Channel.
 
 <div style="width: 100%;">
@@ -15,7 +15,7 @@ The Zype Roku SDK uses a lot of different assets to deliver your personalized Ro
 
 <hr id="1">
 
-## Adding Assets to Your Roku App
+##Adding assets to Your Roku app
 Adding image assets to your Roku Channel allow your to make the channel your own!
 Using the Zype Platform and Zype API, you will be able to change the majority of
 images on the fly without having to republish your app. However, there are a few images
@@ -42,7 +42,7 @@ an SD Poster that is a 214 x 144 JPG format. We call that the Image Store in our
 
 **Assets that can be changed using the Zype Platform and Zype API:**
 
-These assets get loaded via a call to the Zype API everytime the Roku Channel gets loaded.
+These assets get loaded via a call to the Zype API every time the Roku Channel gets loaded.
 
 ![zype roku app]({{site.url}}assets/Assets/roku1.png)
 
