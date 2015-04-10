@@ -5,7 +5,7 @@ permalink: /platform_docs/video_troubleshooting/
 ---
 ## Video Troubleshooting
 
-Below are some frequently asked video troubleshooting questions.
+Below are some frequently asked playing videos from the Zype Platform.
 Please reach out to Zype by hitting the [?] box in the lower left hand corner in the [Zype Platform](https://admin.zype.com/) if you have other questions or want additional guidance!
 
 <div style="width: 100%;">
