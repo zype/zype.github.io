@@ -50,6 +50,7 @@
           <p><a href="/platform_docs/creating_an_app/">Creating an App</a></p>
           <p><a href="/platform_docs/embedding_a_player/">Embedding a Player</a></p>
           <p><a href="/platform_docs/reports_and_analytics/">Reports and Analytics</a></p>
+          <p><a href="/platform_docs/video_troubleshooting/">Video Troubleshooting</a></p>
         <h4 class="api-header">Learn About:</h4>
           <p><a href="/platform_docs/videos/">Videos</a></p>
           <p><a href="/platform_docs/apps/">Apps</a></p>
@@ -74,7 +75,7 @@
 
 
   <section id="main">
-    <h2 id="all-about-videos">All about videos</h2>
+    <h2 id="videos">Videos</h2>
 <p>Videos are at the core of the Zype experience. You can upload videos or import videos
 from a third party source and use Zype to deliver your video content to any device or
 geographic location desired.</p>
@@ -143,6 +144,18 @@ geographic location desired.</p>
   <div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>
     <a href="#16">
     Choosing thumbnails for your videos</a>
+  </div>
+  <div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>
+    <a href="#17">
+    Deleting a Video</a>
+  </div>
+  <div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>
+    <a href="#18">
+    Upload Formats</a>
+  </div>
+  <div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>
+    <a href="#19">
+    Managing Video Segments</a>
   </div>
 </div>
 
@@ -739,19 +752,72 @@ are optional.</p>
 <hr id="16" />
 
 <h2 id="choosing-thumbnails-for-your-videos">Choosing thumbnails for your videos</h2>
-<p>The <a href="http://admin.zype.com">Zype Platform</a> helps you manage your video content and that includes the thumbnail displayed as the background of our Zype Player. Videos that you have uploaded and transcoded will have a set of thumbnails attached to them (1 per minute of content). You can choose which thumbnail is displayed by first navigating to the video’s video sources:</p>
+<p>When you upload a video to the Zype Platform, Zype will create thumbnails for your video.
+To change your the thumbnail for your video, follow the steps below. Note, this is only
+to change your thumbnail from a video uploaded directly to the Zype Platform. It does not apply to
+thumbnails from an external data source like YouTube or Vimeo.</p>
 
-<p><img src="http://dev.zype.com/assets/Choosing Thumbnails for Your Videos/find_data_sources.png" alt="video sources" /></p>
+<p><strong>Step 1:</strong></p>
 
-<p>Then clicking the edit button on the Zype video source:</p>
+<p><img src="http://dev.zype.com/assets/thumbnails/thumbnails_1.png" alt="thumbnail 1" /></p>
 
-<p><img src="http://dev.zype.com/assets/Choosing Thumbnails for Your Videos/edit_data_source.png" alt="zype video source" /></p>
+<p>From your video library, click on the video that you want to change the thumbnail
+for and click on the “Thumbnails” tab.</p>
 
-<p>You’ll now see a large display showing you the video’s current thumbnail image and a grid of other images to choose from:</p>
+<p><strong>Step 2:</strong></p>
 
-<p><img src="http://dev.zype.com/assets/Choosing Thumbnails for Your Videos/thumbnails.png" alt="zype video source" /></p>
+<p><img src="http://dev.zype.com/assets/thumbnails/thumbnails_2.png" alt="thumbnail 2" /></p>
 
-<p>Clicking on an image will set that video’s thumbnail to the image you’ve clicked. It’s that simple!</p>
+<p>Select the thumbnail that you want. The thumbnail will automatically be updated!</p>
+
+<hr id="17" />
+
+<h2 id="deleting-a-video">Deleting a video</h2>
+
+<p>To delete a video, navigate to your Video Library and click on the trash can for the video
+that you want to remove.</p>
+
+<p><img src="http://dev.zype.com/assets/videos/remove_video.png" alt="remove video" /></p>
+
+<p>Note, when you delete a video, the video is removed from all playlists, the video import and/or upload
+is released, and video favorites/ratings are removed.</p>
+
+<hr id="18" />
+
+<h2 id="upload-formats">Upload Formats</h2>
+
+<p>Zype supports <a href="https://admin.zype.com/uploads/new">uploading</a> in the following popular media formats:</p>
+
+<ul>
+  <li>3GP</li>
+  <li>AAC</li>
+  <li>AVI</li>
+  <li>FLV</li>
+  <li>MP4</li>
+  <li>MPEG-2</li>
+</ul>
+
+<p>We do not currently support the following:</p>
+
+<ul>
+  <li>Apple ProRes</li>
+  <li>ARRI</li>
+  <li>RED</li>
+</ul>
+
+<hr id="19" />
+
+<h2 id="managing-video-segments">Managing Video Segments</h2>
+
+<p>Video segments help you highlight specific time blocks in a video.
+This is additional metadata for your video that is exposed via the Zype API.
+Each segment can have a start time, an end time, and a description.</p>
+
+<p>To manage a video’s segments, navigate to the video’s details page and click on
+the “Segments” tab. Then, click on the “New Segment” button. You will be prompted
+to enter the time in HH:MM:SS format.</p>
+
+<p><img src="http://dev.zype.com/assets/videos/segments.png" alt="manage segments" /></p>
 
   </section>
 

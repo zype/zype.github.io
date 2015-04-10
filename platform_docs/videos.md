@@ -3,7 +3,7 @@ layout: platform
 title: Zype Developer Portal | Platform Docs
 permalink: /platform_docs/videos/
 ---
-##All about videos
+## Videos
 Videos are at the core of the Zype experience. You can upload videos or import videos
 from a third party source and use Zype to deliver your video content to any device or
 geographic location desired.
@@ -72,6 +72,18 @@ geographic location desired.
   <div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>
     <a href="#16">
     Choosing thumbnails for your videos</a>
+  </div>
+  <div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>
+    <a href="#17">
+    Deleting a Video</a>
+  </div>
+  <div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>
+    <a href="#18">
+    Upload Formats</a>
+  </div>
+  <div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>
+    <a href="#19">
+    Managing Video Segments</a>
   </div>
 </div>
 
@@ -670,17 +682,65 @@ Check out our previous blog post on [defining categories and playlists](http://d
 <hr id="16">
 
 ## Choosing thumbnails for your videos
-The [Zype Platform](http://admin.zype.com) helps you manage your video content and that includes the thumbnail displayed as the background of our Zype Player. Videos that you have uploaded and transcoded will have a set of thumbnails attached to them (1 per minute of content). You can choose which thumbnail is displayed by first navigating to the video's video sources:
+When you upload a video to the Zype Platform, Zype will create thumbnails for your video.
+To change your the thumbnail for your video, follow the steps below. Note, this is only
+to change your thumbnail from a video uploaded directly to the Zype Platform. It does not apply to
+thumbnails from an external data source like YouTube or Vimeo.
 
-![video sources]({{site.url}}assets/Choosing Thumbnails for Your Videos/find_data_sources.png)
+**Step 1:**
 
+![thumbnail 1]({{site.url}}assets/thumbnails/thumbnails_1.png)
 
-Then clicking the edit button on the Zype video source:
+From your video library, click on the video that you want to change the thumbnail
+for and click on the "Thumbnails" tab.
 
-![zype video source]({{site.url}}assets/Choosing Thumbnails for Your Videos/edit_data_source.png)
+**Step 2:**
 
-You'll now see a large display showing you the video's current thumbnail image and a grid of other images to choose from:
+![thumbnail 2]({{site.url}}assets/thumbnails/thumbnails_2.png)
 
-![zype video source]({{site.url}}assets/Choosing Thumbnails for Your Videos/thumbnails.png)
+Select the thumbnail that you want. The thumbnail will automatically be updated!
 
-Clicking on an image will set that video's thumbnail to the image you've clicked. It's that simple!
+<hr id='17'>
+
+## Deleting a video
+
+To delete a video, navigate to your Video Library and click on the trash can for the video
+that you want to remove.
+
+![remove video]({{site.url}}assets/videos/remove_video.png)
+
+Note, when you delete a video, the video is removed from all playlists, the video import and/or upload
+is released, and video favorites/ratings are removed.
+
+<hr id='18'>
+
+## Upload Formats
+
+Zype supports [uploading](https://admin.zype.com/uploads/new) in the following popular media formats:
+
+- 3GP
+- AAC
+- AVI
+- FLV
+- MP4
+- MPEG-2
+
+We do not currently support the following:
+
+- Apple ProRes
+- ARRI
+- RED
+
+<hr id='19'>
+
+## Managing Video Segments
+
+Video segments help you highlight specific time blocks in a video.
+This is additional metadata for your video that is exposed via the Zype API.
+Each segment can have a start time, an end time, and a description.
+
+To manage a video's segments, navigate to the video's details page and click on
+the "Segments" tab. Then, click on the "New Segment" button. You will be prompted
+to enter the time in HH:MM:SS format.
+
+![manage segments]({{site.url}}assets/videos/segments.png)

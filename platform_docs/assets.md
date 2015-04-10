@@ -3,8 +3,8 @@ layout: platform
 title: Zype Developer Portal | Platform Docs
 permalink: /platform_docs/assets/
 ---
-##Assets
-The Zype Roku SDK uses a lot of different assets to deliver your personalized Roku Channel.
+
+## Assets
 
 <div style="width: 100%;">
   <div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>

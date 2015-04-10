@@ -87,7 +87,10 @@ Below are a bunch of short tutorials (with pictures!) to help you with a number 
     </div>
 
 
-
+    <div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>
+      <a href="/posts/2015/04/09/change-thumbnails/">
+      Change Thumbnails</a>
+    </div>
     <div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>  
       <a href="/posts/2014/12/01/api-keys/">
       Help Finding Your API/Player Keys</a>
@@ -107,6 +110,10 @@ Below are a bunch of short tutorials (with pictures!) to help you with a number 
     <div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>
       <a href="/posts/2014/12/10/filtering-videos-and-playlists/">
       Search Filters</a>
+    </div>
+    <div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>
+      <a href="/posts/2015/04/09/forgot-password/">
+      Forgot Password</a>
     </div>
   </div>
 </div>

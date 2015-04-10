@@ -3,7 +3,7 @@ layout: platform
 title: Zype Developer Portal | Platform Docs
 permalink: /platform_docs/apps/
 ---
-##All About Apps
+## Apps
 The Zype Platform will help you configure apps that you will need to build and publish
 to the respective application stores.
 
@@ -33,6 +33,10 @@ If you want a full walkthrough of creating an app, we suggest you look at the [c
   <div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>
     <a href="#6">
     Publishing an iPhone App from the Zype Platform</a>
+  </div>
+  <div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>
+    <a href="#7">
+    Deleting an App</a>
   </div>
 </div>
 
@@ -308,7 +312,7 @@ below to see where the banner gets displayed in the home screen.
 Next, add tiles. Tiles are what a user can click on in the app’s home screen to go to the appropriate page. An iPhone app can have up to 9 tiles.
 Tiles can include links to Twitter, Facebook, Google+, your blog, your personal website,
 favorites, videos, and messages. You can drag the tiles in the editor to change their order on
-the iPhone Screen. Check out the mock up tosee where the tiles get displayed.
+the iPhone Screen. Check out the mock up to see where the tiles get displayed.
 
 ![tile screen]({{site.url}}assets/iphone/tiles_screen.png)
 
@@ -325,3 +329,16 @@ use Zype's [API documentation]({{site.url/api_docs/apps}}) to self-publish or ha
 for you!
 
 ![iphone preview]({{site.url}}assets/iphone/iphone_show.png)
+
+<hr id='7'>
+
+## Deleting an App
+
+To delete an app from the Zype Platform, navigate to your [video apps](https://admin.zype.com/apps)
+and click on the app that you want to delete.
+
+![delete app 1]({{site.url}}assets/apps/delete_1.png)
+
+Then, click on the delete button in the upper right hand corner.
+
+![delete app 2]({{site.url}}assets/apps/delete_2.png)

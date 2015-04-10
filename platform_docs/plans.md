@@ -3,7 +3,7 @@ layout: platform
 title: Zype Developer Portal | Platform Docs
 permalink: /platform_docs/plans/
 ---
-##All About Plans
+## Plans
 To require your consumers to pay for access to your videos, you will need to create subscription plans.
 The Zype Platform supports Stripe for credit card processing.
 

@@ -3,7 +3,7 @@ layout: platform
 title: Zype Developer Portal | Platform Docs
 permalink: /platform_docs/creating_an_app/
 ---
-##Creating an App Using the Zype Platform
+## Creating an App Using the Zype Platform
 If you're ready to start creating a video app for devices like Roku, Chromecast, Xbox, etc, take a look at the guides below and follow them in order to reach your goal!
 
 <div style="width: 100%;">

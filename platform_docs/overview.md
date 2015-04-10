@@ -17,6 +17,10 @@ Zype’s proprietary VideoMeta technology allows import and matching of data - s
 
 To sign up for a free account, visit [the zype platform.](https://admin.zype.com/) You'll need to enter some basic information including your company name and the name of your media property. Once you've created an account, check out the [adding videos guide](https://admin.zype.com/) to get started.
 
+### Forgot Password
+
+You can reset your password by following [this link](https://admin.zype.com/auth/password/new).
+
 ### What can I Accomplish?
 
 At the core, our mission is to enable you to give your consumers what they want - instant and easy direct access to the content they love, on any device, anywhere.

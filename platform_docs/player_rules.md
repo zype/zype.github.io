@@ -3,7 +3,7 @@ layout: platform
 title: Zype Developer Portal | Platform Docs
 permalink: /platform_docs/player_rules/
 ---
-##All About Player Rules and Dynamic Player Technology (DPT)
+## Player Rules and Dynamic Player Technology (DPT)
 Dynamic Player Technology allows you to create player rules based on geography and device.
 
 <div style="width: 100%">
@@ -13,6 +13,10 @@ Dynamic Player Technology allows you to create player rules based on geography a
   </div>
   <div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>
     <a href="#2">
+    Setting up Player Rules</a>
+  </div>
+  <div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>
+    <a href="#3">
     Monitoring Your Views</a>
   </div>
 </div>
@@ -37,11 +41,11 @@ on the Zype Platform.
 
 ### What you need to do in the Zype Platform
 
-1\. Visit the [Player Rule Page](https://admin.zype.com/player_rules) and click on New Player Rule
+1\. Visit the [Player rule page](https://admin.zype.com/player_rules) and click on "New Player Rule."
 
 ![player rules]({{site.url}}assets/DPT/player_rule.png)
 
-2\. Complete the Player Rules Form. You will need to know the countries and devices you want for your rule.
+2\. Complete the player rules form. You will need to know the countries and devices you want for your rule.
 Based on countries and devices, you will be given player options that can be served to the end user.
 
 ![player rule form]({{site.url}}assets/DPT/player_rule_form.png)
@@ -79,7 +83,40 @@ GET http://api.zype.com/videos/{video_id}/player/?api_key={api_key}&player_key={
 on how to set up your Rails App with the Zype Gem!*
 
 
-<hr id="2">
+<hr id='2'>
+
+## Setting up Player Rules
+
+If a player rule is not set up for the device or geography that your end user is coming from,
+she will not be able to view the video. Moreover, if a player rule is not set up for
+the video source where your video is coming from, your video will not be able to be viewed.
+
+To see if you have the appropriate player rules set up, go to the [player rules page](https://admin.zype.com/player_rules)
+and check the player rules that you have set up and active. Inactive player rules are grayed out.
+
+![player rule index]({{ site.url }}/assets/player_rules/index.png)
+
+If the player rule you want is inactive, click on the player rule. Then, click on the activate button.
+
+![player rule activate]({{ site.url }}/assets/player_rules/activate.png)
+
+If you do not see the appropriate player rule based on player, device, and geolocation, click on the "New Player Rule" button.
+
+![player rule button]({{ site.url }}/assets/player_rules/new_button.png)
+
+Then, you will need to select the geolocation, device, and player that you want for the rule.
+
+![player rule step]({{ site.url }}/assets/player_rules/geolocation.png)
+
+![player rule step]({{ site.url }}/assets/player_rules/device.png)
+
+![player rule step]({{ site.url }}/assets/player_rules/player.png)
+
+![player rule step]({{ site.url }}/assets/player_rules/confirm.png)
+
+Player rules can be tricky. Please reach out to Zype by hitting the [?] box in the lower left hand corner in the [Zype Platform](https://admin.zype.com/) if you have any questions!
+
+<hr id="3">
 
 ## Monitoring Your Views
 In a previous post, we covered how to use Zype’s Dynamic Player Technology (DPT).
@@ -89,7 +126,7 @@ of who's viewing your content and what times of the day are most popular for vie
 
 ### Where can I find my logs?
 
-After you've uploaded some video content to the Zype platform, log in through the [admin portal](http://admin.zype.com/)
+After you've uploaded some video content to the Zype Platform, log in through the [admin portal](http://admin.zype.com/)
 and navigate to the logs section under the settings dropdown menu. In this post, we'll cover the request logs,
 so feel free to click on that link once you see the logs menu.  
 
@@ -103,12 +140,12 @@ Here are the most pertinent pieces of information:
 Data | Description
 ---- | -----------
 Video	| The video that was requested
-IP Address | The IP address of the requester
+IP address | The IP address of the requester
 Country | The country the request was made from
 Device	| The device the request was made from
 Player	| The player that served the video
 Provider | The provider of the content
-Revenue Model	| The revenue model of the viewer
+Revenue model	| The revenue model of the viewer
 Status	| The status of the request
 Created | The date and time the request was created
 

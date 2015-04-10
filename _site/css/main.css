@@ -417,6 +417,12 @@ header h4 {
   color: green;
   font-size: 20px !important; }
 
+.player-img-holder {
+  padding: 0; }
+
+.player-img-holder img {
+  width: 25px; }
+
 .highlight {
   background: #ffffff; }
 

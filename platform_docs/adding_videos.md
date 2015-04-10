@@ -41,6 +41,10 @@ video source, all other videos will have a video source from the respected third
   <a href="#7">
   Adding Vimeo videos from a URL</a>
   </div>
+  <div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>
+  <a href="#8">
+  Adding Livestream.com Events and Clips</a>
+  </div>
 </div>
 
 <hr id="0">
@@ -160,29 +164,61 @@ If everything went according to plan, you can see your new video imports by clic
 
 ## Adding videos from a Vimeo PRO account
 
-We just added a brand new feature to our platform that lets you better distribute and monetize your Vimeo content. Introducing Vimeo PRO for Zype!
+You can import videos from Vimeo PRO to your Video Library. Videos that have a Vimeo PRO video source are
+playable on all devices including Roku and Fire TV and plays natively on iPhone and Android just
+like videos that are uploaded directly to the Zype Platform.
 
-Import all of your Vimeo PRO videos to the platform and stream them through the ad-supported Zype player. Here's how.
+Here's how.
 
-### Start by clicking the Vimeo PRO link on the [Import & Upload page](https://admin.zype.com/import_upload):
+**Step 1:**
 
-![video imports]({{site.url}}assets/Adding Videos from a Vimeo PRO Account/Zype___Import___Upload.png)
+Navigate to the [Import & Upload dashboard](https://admin.zype.com/import_upload) and
+click on Vimeo PRO.
 
-### Log in to your Vimeo PRO account:
+![video imports]({{site.url}}assets/Adding Videos from a Vimeo PRO Account/dashboard.png)
+
+**Step 2:**
+
+Click on the "Import from Vimeo PRO" button to send you to vimeo.com to authenticate.
+
+![video imports]({{site.url}}assets/Adding Videos from a Vimeo PRO Account/go_to_vimeo.png)
+
+**Step 3:**
+
+Enter your Vimeo PRO email and password credentials.
 
 ![video imports]({{site.url}}assets/Adding Videos from a Vimeo PRO Account/Log_In.png)
 
-### Allow Zype to have access to your videos:
+**Step 4:**
+
+Agree to connect "Zype" to your Vimeo account.
 
 ![video imports]({{site.url}}assets/Adding Videos from a Vimeo PRO Account/Vimeo_Auth.png)
 
-### Choose a custom name for this video source or simply click Import from Vimeo PRO:
+**Step 5:**
 
-![video imports]({{site.url}}assets/Adding Videos from a Vimeo PRO Account/Zype___New_Vimeo_PRO_Source.png)
+Decide whether you want your Vimeo PRO imports to automatically get added to your video library
+and whether these videos should automatically be active when they appear in your video library.
 
-If everything went according to plan, you should see a success message at the top of your screen and a link to your videos. It's just that easy.
+![video imports]({{site.url}}assets/Adding Videos from a Vimeo PRO Account/import.png)
 
-HINT: Make sure to take full advantage of your player rules to determine whether your Vimeo PRO videos are streamed through the Vimeo player or the Zype player.
+**Step 6:**
+
+Congrats, you have linked Viemo PRO successfully! If the videos are automatically add your
+Vimeo PRO imports to your video library, they can be found in your [video library](https://admin.zype.com/videos).
+If not, they can be found in your [video imports](https://admin.zype.com/video_imports).
+
+![video imports]({{site.url}}assets/Adding Videos from a Vimeo PRO Account/success.png)
+
+**Step 7:**
+
+Confirm that you have the appropriate player rules set up to expose your Vimeo PRO players so
+that it can deliver content to all devices including web and Roku. Go to [player rules](https://admin.zype.com/player_rules)
+and make sure that you have a Vimeo Pro (Native) Player, a Vimeo Pro (Zype) Player, and a Zype Roku Pro Player. If you do
+not have a proper player rule, click on the "New Player Rule" button and create Vimeo PRO player rules for the
+desired device and Vimeo PRO Player. For more information on player rules, go to the [player rules platform docs](http://dev.zype.com/platform_docs/player_rules/).
+
+![vimeo pro player rule]({{site.url}}assets/Adding Videos from a Vimeo PRO Account/player_rules.png
 
 <hr id="4">
 
@@ -338,4 +374,24 @@ Then click the 'Save Changes' button.
 
 ![save changes]({{site.url}}assets/Adding Vimeo Video from a URL/save_changes.png)
 
-If everything went according to plan, you should see the Video Imports screen again, with a new import from the link you provided. If you're interested in grabbing a bunch of videos from Vimeo, you may want to follow our guides under [Adding Videos.](http://dev.zype.com/platform_docs/adding_videos/)
+If everything went according to plan, you should see the video imports screen again, with a new import from the link you provided. If you're interested in grabbing a bunch of videos from Vimeo, you may want to follow our guides under [Adding Videos.](http://dev.zype.com/platform_docs/adding_videos/)
+
+<hr id='8'>
+
+## Adding Livestream.com Events and Clips
+
+Navigate to the [Import & Upload dashboard](https://admin.zype.com/import_upload) and click on Livestream.
+
+![livestream 1]({{site.url}}assets/livestream/livestream_1.png)
+
+Enter the Livestream.com Event or Livestream.com Clip url for the video that you want
+to import. You can add additional metadata such as the title and the description. If
+the "Add Video" button is toggled on, your Livestream.com video will automatically be
+added into your video library.
+
+![livestream 2]({{site.url}}assets/livestream/livestream_2.png)
+
+**What is the difference between an event and a clip?**
+
+An event is a live event that is currently streaming. A clip is a recorded video.
+>>>>>>> upstream/master

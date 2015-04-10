@@ -3,7 +3,7 @@ layout: platform
 title: Zype Developer Portal | Platform Docs
 permalink: /platform_docs/subscriptions/
 ---
-##All About Subscriptions
+## Subscriptions
 Subscriptions combine consumers and plans and allow you to make money from your videos.
 The Zype Platform supports Stripe for credit card processing of consumers.
 
