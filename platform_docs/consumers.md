@@ -17,7 +17,7 @@ Creating a Consumer</a>
 
 <div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>
 <a href="#2">
-Getting a Consumer's Details</a>
+Manage a Consumer</a>
 </div>
 
 <div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>
@@ -27,6 +27,12 @@ Removing a Consumer</a>
 
 <div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>
 <a href="#4">
+Exporting Consumers</a>
+</div>
+
+
+<div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>
+<a href="#5">
 Connecting Stripe</a>
 </div>
 </div>
@@ -47,11 +53,10 @@ Then, click on the "New Consumer" button and fill out your consumer's informatio
 
 <hr id="2">
 
-## Getting a Consumer's Details
-You can use the Zype Platform to get details about a consumer. To get a consumer's details, go to the [consumers page](https://admin.zype.com/consumers) and click on the appropriate consumer.
-Information includes a consumer's email and his or her subscriptions.
+## Manage a Consumer
+You can use the Zype Platform to manage an individual consumer. To get a consumer's details, go to the [consumers page](https://admin.zype.com/consumers) and click on the appropriate consumer.
 
-![consumer information]({{site.url}}assets/Connecting Stripe/customer_details.png)
+![consumer information]({{site.url}}assets/Connecting Stripe/consumer_details.png)
 
 <hr id='3'>
 
@@ -63,7 +68,15 @@ and click on the red delete button for the appropriate consumer.
 
 Note, deleting a consumer will also cancel all of his or her subscriptions.
 
-<hr id="4">
+<hr id='4'>
+
+## Exporting Consumers
+
+To export your consumers' information into a spreadsheet, navigate to the [consumers' page](https://admin.zype.com/consumers) and click on the "Export CSV" button.
+
+![export consumer]({{site.url}}assets/Connecting Stripe/export.png)
+
+<hr id="5">
 
 ## Connecting Stripe
 If you want to have your consumers pay with Stripe, you will need to link
