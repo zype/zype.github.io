@@ -394,4 +394,3 @@ added into your video library.
 **What is the difference between an event and a clip?**
 
 An event is a live event that is currently streaming. A clip is a recorded video.
->>>>>>> upstream/master
