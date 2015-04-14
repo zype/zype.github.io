@@ -30,10 +30,14 @@ Removing a Consumer</a>
 Exporting Consumers</a>
 </div>
 
-
 <div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>
 <a href="#5">
 Connecting Stripe</a>
+</div>
+
+<div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>
+<a href="#6">
+Authorizing Consumers</a>
 </div>
 </div>
 
@@ -84,3 +88,9 @@ your Stripe account to the Zype Platform. To do this, navigate to your
 [settings](https://admin.zype.com/site/edit) and click on the "Monetization" tab. You can find your Stripe secret key via [account settings](https://dashboard.stripe.com/account/apikeys).
 
 ![stripe settings]({{site.url}}assets/Connecting Stripe/stripe_key.png)
+
+<hr id='6'>
+
+## Authorizing Consumers
+You can use Zype's OAuth to authenticate within the Zype Platform. Please refer to our
+[API documentation](#) for how to set this up!
