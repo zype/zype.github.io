@@ -182,6 +182,19 @@ keyword=keyword&amp;status=status&amp;active=true&amp;type=type&amp;category=cat
   </tbody>
 </table>
 
+<h3 id="sorting">Sorting</h3>
+
+<p>By default, videos are ordered by the time they get added to the Zype Platform.
+To change sorting, pass the parameter sort and the field that you want to sort on into your API call.
+You can also pass the order that you want to sort by (either ascending or descending).</p>
+
+<p>Example:</p>
+
+<pre><code>https://api.zype.com/videos?sort=published_at&amp;order=desc
+
+https://api.zype.com/videos?sort=title&amp;order=asc
+</code></pre>
+
 <h4 id="response">Response</h4>
 <p>200
 Content-Type: application/json</p>

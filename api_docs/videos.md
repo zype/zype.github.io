@@ -35,6 +35,19 @@ created_at | Filter the records returned by created date. You can use greater th
 published_at | Filter the records returned by published date. You can use greater than or less than filters by adding a suffix: '.gt', '.gte', '.lt', 'lte'. Example: published_at.gte=2015-01-01 | Date
 dpt | Only shows videos that are available to the end user based on device and country | Boolean
 
+### Sorting
+
+By default, videos are ordered by the time they get added to the Zype Platform.
+To change sorting, pass the parameter sort and the field that you want to sort on into your API call.
+You can also pass the order that you want to sort by (either ascending or descending).
+
+Example:
+
+<pre><code>https://api.zype.com/videos?sort=published_at&order=desc
+
+https://api.zype.com/videos?sort=title&order=asc
+</code></pre>
+
 #### Response
 200
 Content-Type: application/json
