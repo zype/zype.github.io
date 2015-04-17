@@ -700,6 +700,94 @@ Content-Type: application/json
 }
 </code></pre>
 
+###Publish a Video
+<hr>
+<pre><code>POST - https://api.zype.com/videos/{id}/publish
+</code></pre>
+
+#### Parameters
+
+Parameter | Function | Type
+--------- | -------- | ----
+id        | String id of the Video to publish. Example: 5389352e69702d401b000000. | String
+vhx_endpoint | String id of the VHX video source where the video will be published. | String
+
+#### Request
+Content-Type: application/json
+
+#### Response
+200
+Content-Type: application/json
+
+<pre><code>{
+  "response":
+  {
+    "_id": "546529b669702d534fb00000",
+    "active": true,
+    "categories": [
+      {
+        "title": "Genre",
+        "value": [
+          "Adventure"
+        ]
+      },
+      {
+        "title": "Additional Videos from YouTube",
+        "value": []
+      },
+      {
+        "title": "series",
+        "value": []
+      }
+    ],
+    "country": "",
+    "created_at": "2014-11-13T16:59:18.970-05:00",
+    "description": "New trailer for Marvel's Avengers: The Age of Ultron!",
+    "duration": 151,
+    "episode": null,
+    "featured": true,
+    "foreign_id": null,
+    "keywords": [],
+    "segments": [],
+    "mature_content": false,
+    "published_at": "2014-11-13T16:57:02.000-05:00",
+    "rating": 0,
+    "related_playlist_ids": [],
+    "request_count": 39,
+    "season": null,
+    "site_id": "5463c68e69702d24db490000",
+    "status": "created",
+    "subscription_required": false,
+    "title": "Avengers: Age of Ultron",
+    "updated_at": "2014-12-17T23:00:14.215-05:00",
+    "zobject_ids": [],
+    "thumbnails": [
+      {
+      "aspect_ratio": null,
+      "height": 90,
+      "name": null,
+      "url": "https://i.ytimg.com/vi/Kno4FTxWycI/default.jpg",
+      "width": 120
+      },
+      {
+      "aspect_ratio": null,
+      "height": 180,
+      "name": null,
+      "url": "https://i.ytimg.com/vi/Kno4FTxWycI/mqdefault.jpg",
+      "width": 320
+      },
+      {
+        "aspect_ratio": null,
+        "height": 360,
+        "name": null,
+        "url": "https://i.ytimg.com/vi/Kno4FTxWycI/hqdefault.jpg",
+        "width": 480
+      }
+    ]
+  }
+}
+</code></pre>
+
 ## Player
 Lists player content. You need to supply your player key in addition to your API key.
 <hr>
