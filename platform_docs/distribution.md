@@ -20,24 +20,23 @@ Interested in selling individual or bundled videos on the VHX Marketplace? You'v
 If you've got a VHX account and some Zype videos, we'll make it easy to connect the two. Here's how:
 
 ### Go to the [Publishing homepage](https://admin.zype.com/publishing)
-Click on 'VHX Marketplace'
+
 ![Publishing Homepage]({{site.url}}assets/distribution_vhx/Zype___Publishing.png)
 
 ### Connect your [VHX Account](https://www.vhx.tv)
-Make sure you have a VHX acocunt set up before attempting this step!
 
-You'll be prmopted to login to your VHX account to allow Zype to distribute to your site.
-![Publishing Homepage]({{site.url}}assets/distribution_vhx/Zype___VHX_Marketplace_1.png)
+![Connect VHX Account]({{site.url}}assets/distribution_vhx/Zype___VHX_Marketplace_1.png)
 
 ### Choose your VHX Site
 If everything went smoothly, you'll see a list of the sites on your VHX account. Give this distribution endpoint a name you'll remember and select which site to distribute to.
-![Publishing Homepage]({{site.url}}assets/distribution_vhx/Zype___VHX_Marketplace.png)
+
+![Choose VHX Site]({{site.url}}assets/distribution_vhx/Zype___VHX_Marketplace.png)
 
 ### Choose which Zype videos to distribute
-You're now at the video library screen where you can select videos to send to the VHX Marketplace.
+You're now at the video library screen where you can choose which Zype videos to send to the VHX Marketplace.
 
-![Publishing Homepage]({{site.url}}assets/distribution_vhx/Zype___Video_Library_1.png)
+![Choose Videos]({{site.url}}assets/distribution_vhx/Zype___Video_Library_1.png)
 
 Use the distribute button to select which endpoint you want to use and you're good to go.
 
-![Publishing Homepage]({{site.url}}assets/distribution_vhx/Zype___Video_Library.png)
+![Distribute]({{site.url}}assets/distribution_vhx/Zype___Video_Library.png)
