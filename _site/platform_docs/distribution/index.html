@@ -6,12 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>Zype Developer Portal | Google Analytics Integration</title>
+    <title>Zype Developer Portal | Platform Docs</title>
     <meta name="description" content="This is the devloper portal for Zype Media. Zype is Revenue and Reach Magic for Online Video. We help content owners deliver fully branded video experiences.
 ">
 
     <link rel="stylesheet" href="/css/main.css">
-    <link rel="canonical" href="http://dev.zype.com//platform_docs/google_analytics/">
+    <link rel="canonical" href="http://dev.zype.com//platform_docs/distribution/">
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 
     <!--[if lt IE 9]>
@@ -76,65 +76,44 @@
 
 
   <section id="main">
-    <h2 id="enabling-google-analytics-integration">Enabling Google Analytics Integration</h2>
-<p>Zype Analytics can integrate with Google Analytics to deliver a consolidated source of analytics for your web destination.</p>
+    <h2 id="distribution">Distribution</h2>
+<p>Zype makes it easy to distribute your videos for sale through other video platforms</p>
 
 <div style="width: 100%;">
-<div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>
-<a href="#1">
-Requirements</a>
-</div>
-<div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>
-<a href="#2">
-Enabling Google Analytics Integration</a>
-</div>
-<div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>
-<a href="#3">
-Events Overview</a>
-</div>
+  <div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>
+    <a href="#1">
+    VHX Marketplace</a>
+  </div>
 </div>
 
 <hr id="1" />
 
-<h2 id="requirements">Requirements</h2>
+<h2 id="distributing-zype-videos-to-the-vhx-marketplace">Distributing Zype videos to the VHX Marketplace</h2>
+<p>Interested in selling individual or bundled videos on the VHX Marketplace? You’ve come to the right place.
+If you’ve got a VHX account and some Zype videos, we’ll make it easy to connect the two. Here’s how:</p>
 
-<p>To use Google Analytics with Zype Analytics you need to have a <a href="http://www.google.com/analytics/">Google Analytics</a> account and a web tracking code installed on your web destination.</p>
+<h3 id="go-to-the-publishing-homepagehttpsadminzypecompublishing">Go to the <a href="https://admin.zype.com/publishing">Publishing homepage</a></h3>
+<p>Click on ‘VHX Marketplace’
+<img src="http://dev.zype.com/assets/distribution_vhx/Zype___Publishing.png" alt="Publishing Homepage" /></p>
 
-<p>A web tracking code for Google Analytics looks similar to the following:</p>
+<h3 id="connect-your-vhx-accounthttpswwwvhxtv">Connect your <a href="https://www.vhx.tv">VHX Account</a></h3>
+<p>Make sure you have a VHX acocunt set up before attempting this step!</p>
 
-<pre>
-&lt;script&gt;
-  (function(i,s,o,g,r,a,m){i[&#39;GoogleAnalyticsObject&#39;]=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,&#39;script&#39;,&#39;//www.google-analytics.com/analytics.js&#39;,&#39;ga&#39;);
+<p>You’ll be prmopted to login to your VHX account to allow Zype to distribute to your site.
+<img src="http://dev.zype.com/assets/distribution_vhx/Zype___VHX_Marketplace_1.png" alt="Publishing Homepage" /></p>
 
-  ga(&#39;create&#39;, &#39;YOUR-TRACKING-ID&#39;, &#39;auto&#39;);
-  ga(&#39;send&#39;, &#39;pageview&#39;);
-&lt;/script&gt;
-</pre>
+<h3 id="choose-your-vhx-site">Choose your VHX Site</h3>
+<p>If everything went smoothly, you’ll see a list of the sites on your VHX account. Give this distribution endpoint a name you’ll remember and select which site to distribute to.
+<img src="http://dev.zype.com/assets/distribution_vhx/Zype___VHX_Marketplace.png" alt="Publishing Homepage" /></p>
 
-<hr id="2" />
+<h3 id="choose-which-zype-videos-to-distribute">Choose which Zype videos to distribute</h3>
+<p>You’re now at the video library screen where you can select videos to send to the VHX Marketplace.</p>
 
-<h2 id="enabling-google-analytics-integration-1">Enabling Google Analytics Integration</h2>
+<p><img src="http://dev.zype.com/assets/distribution_vhx/Zype___Video_Library_1.png" alt="Publishing Homepage" /></p>
 
-<p>To enable Google Analytics integration select the ‘Enable Google Analytics’ option under ‘Zype Analytics settings’. The integration will use the existing Google Analytics tracking object on the page so you don’t need to enter your Google Analytics Tracking ID.</p>
+<p>Use the distribute button to select which endpoint you want to use and you’re good to go.</p>
 
-<p>You can optionally change the tracking object name. Most installations use the default name ‘ga’. If you have not changed the name of the tracking object on your web destination you should use the default setting.</p>
-
-<p><img src="http://dev.zype.com/assets/Analytics/analytics.png" alt="google analytics" /></p>
-
-<hr id="3" />
-
-<h2 id="events-overview">Events Overview</h2>
-
-<p>After you’ve enabled Google Analytics integration and watched a few videos on your web destination you will start seeing the following events in your Google Analytics dashboard.</p>
-
-<p><img src="http://dev.zype.com/assets/Analytics/report.png" alt="consumer information" /></p>
-
-<p><strong>JW Player Video</strong>: This category contains events for starts, stops, resumes and buffers along with the name of the video.</p>
-<p><strong>JW Player Video Plays</strong>: This category contains play events along with the name of the video and the referring URL.</p>
-<p><strong>JW Player Video Completes</strong>: This category contains completion events along with the name of the video and the referring URL.</p>
+<p><img src="http://dev.zype.com/assets/distribution_vhx/Zype___Video_Library.png" alt="Publishing Homepage" /></p>
 
   </section>
 
