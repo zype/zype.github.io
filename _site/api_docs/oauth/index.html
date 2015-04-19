@@ -77,7 +77,157 @@
 
 
     <section id="main">
-      <h2 id="zype-oauth">Zype OAuth</h2>
+      <h2 id="consumer-oauth">Consumer OAuth</h2>
+
+<p>Zype provides an authentication mechanism for consumer authentication. First, you need
+to have a consumer created (<a href="http://dev.zype.com/api_docs/consumers/">see our consumer docs on how to create a
+consumer</a>). Once a consumer has been created,
+you can authenticate to get an access token. This authentication
+token is then used to authenticate API requests on the behalf of your end user.</p>
+
+<h3 id="how-to-get-an-access-token">How to get an access token</h3>
+
+<h4 id="via-password-grant-flow">Via password grant flow</h4>
+
+<p>The password grant flow allows you to pass in a user’s email address and password
+and get an authentication token in return.</p>
+
+<hr />
+
+<pre><code> POST - https://api.zype.com/oauth/token/?client_id=client_id&amp;client_secret=client_secret&amp;email=email&amp;password=password&amp;redirect_uri=redirect_uri
+</code></pre>
+
+<h4 id="parameters">Parameters</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Function</th>
+      <th>Type</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>client_id</td>
+      <td> </td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>client_secret</td>
+      <td> </td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>email</td>
+      <td>Email of the end user</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>password</td>
+      <td>Password of the end user</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>redirect_uri</td>
+      <td> </td>
+      <td>String</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="response">Response</h4>
+<p>200
+Content-Type: application/json</p>
+
+<pre><code>{
+  "access_token":"dbaf9757982a9e738f05d249b7b5b4a266b3a139049317c4909f2f263572c781",
+  "token_type":"bearer",
+  "expires_in":7200,
+  "refresh_token":"76ba4c5c75c96f6087f58a4de10be6c00b29ea1ddc3b2022ee2016d1363e3a7c",
+  "scope":"public"
+}
+</code></pre>
+
+<h4 id="via-authorization-code-flow">Via authorization code flow</h4>
+
+<p>We will be supporting this flow in the future. If you have a need for this type of
+oauth flow. Please <a href="mailto:developers@zype.com">reach out</a>.</p>
+
+<h3 id="how-to-check-the-status-of-an-access-token">How to check the status of an access token</h3>
+
+<p>To check the status of an access token, you can get the details about the token
+used for authentication.</p>
+
+<hr />
+
+<pre><code>
+</code></pre>
+
+<h4 id="parameters-1">Parameters</h4>
+
+<p>Parameter | Function | Type
+——— | ——– | —-</p>
+
+<h4 id="response-1">Response</h4>
+
+<h4 id="check-if-expired">Check if expired</h4>
+
+<h4 id="check-expiration-time">Check expiration time</h4>
+
+<h3 id="how-to-refresh-access-token">How to refresh access token</h3>
+
+<p>Your access token will expire after BLANK. To refresh your access token, you will need
+to post your refresh token and get a new authentication token in return.</p>
+
+<hr />
+
+<pre><code> POST - https://api.zype.com/oauth/token/?client_id=client_id&amp;client_secret=client_secret&amp;refresh_token=refresh_token
+</code></pre>
+
+<h4 id="parameters-2">Parameters</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Function</th>
+      <th>Type</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>client_id</td>
+      <td> </td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>client_secret</td>
+      <td> </td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>refresh_token</td>
+      <td>Token that allows you to refresh your access token</td>
+      <td>String</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="response-2">Response</h4>
+<p>200
+Content-Type: application/json</p>
+
+<pre><code>{  
+    "access_token":"ad0b5847cb7d254f1e2ff1910275fe9dcb95345c9d54502d156fe35a37b93e80",
+    "token_type":"bearer",
+    "expires_in":30,
+    "refresh_token":"cc38f78a5b8abe8ee81cdf25b1ca74c3fa10c3da2309de5ac37fde00cbcf2815",
+    "scope":"public"
+  }
+</code></pre>
+
+<h3 id="authenticate-an-api-request-on-the-behalf-of-a-consumer">Authenticate an API request on the behalf of a consumer</h3>
 
     </section>
 
