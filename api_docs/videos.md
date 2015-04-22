@@ -700,9 +700,9 @@ Content-Type: application/json
 }
 </code></pre>
 
-###Publish a Video
+###Distribute a Video
 <hr>
-<pre><code>POST - https://api.zype.com/videos/{id}/publish
+<pre><code>POST - https://api.zype.com/videos/{id}/distribute
 </code></pre>
 
 #### Parameters
@@ -710,7 +710,7 @@ Content-Type: application/json
 Parameter | Function | Type
 --------- | -------- | ----
 id        | String id of the Video to publish. Example: 5389352e69702d401b000000. | String
-vhx_endpoint | String id of the VHX video source where the video will be published. | String
+endpoint | String id of the Distribution Endpoint where the video will be distributed. | String
 
 #### Request
 Content-Type: application/json
