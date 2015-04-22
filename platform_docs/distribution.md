@@ -4,7 +4,8 @@ title: Zype Developer Portal | Platform Docs
 permalink: /platform_docs/distribution/
 ---
 ## Distribution
-Zype makes it easy to distribute your videos for sale through other video platforms
+Zype makes it easy to distribute your videos for sale through other video platforms. Click one of the
+distribution endpoints
 
 <div style="width: 100%;">
   <div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>
@@ -43,5 +44,6 @@ Use the distribute button to select which endpoint you want to use.
 ![Distribute]({{site.url}}assets/distribution_vhx/Zype___Video_Library.png)
 
 You're done! You'll get a brief message about what happens next if everything went smoothly.
+For VHX, that means you'll get an email from them when your video is ready to be packaged for sale.
 
 ![Distribute]({{site.url}}assets/distribution_vhx/Confirmation.png)
