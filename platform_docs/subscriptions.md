@@ -46,7 +46,7 @@ You will need to [use our API](http://dev.zype.com/api_docs/subscriptions/) to c
 ## Viewing subscriptions
 To view subscriptions, go to the [subscriptions page](https://admin.zype.com/subscriptions).
 
-![viewing subscriptions]({{site.url}}assets/Connecting Stripe/customer_details.png)
+![viewing subscriptions]({{site.url}}assets/Connecting Stripe/consumer_details.png)
 
 You can search by subscription and see each subscription's consumer, plan, amount, currency,
 interval, trial period, and when it was created.
