@@ -3,13 +3,13 @@ layout: platform
 title: Zype Developer Portal | Platform Docs
 permalink: /platform_docs/player_rules/
 ---
-## Player Rules and Dynamic Player Technology (DPT)
+## Player rules and Dynamic Player Technology (DPT)
 Dynamic Player Technology allows you to create player rules based on geography and device.
 
 <div style="width: 100%">
   <div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>
     <a href="#1">
-    Learn About Dynamic Player Technology (DPT)</a>
+    Learn about Dynamic Player Technology (DPT)</a>
   </div>
   <div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>
     <a href="#2">
@@ -17,13 +17,13 @@ Dynamic Player Technology allows you to create player rules based on geography a
   </div>
   <div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>
     <a href="#3">
-    Monitoring Your Views</a>
+    Monitoring your views</a>
   </div>
 </div>
 
 <hr id="1">
 
-## Learn About Dynamic Player Technology (DPT)
+## Learn about Dynamic Player Technology (DPT)
 Zype’s DPT allows you to create player rules based on geography and device.
 For example, you could declare that end users will receive the Hulu Player if he
 or she is accessing your video via desktop in the United States or the Zype Player
@@ -59,11 +59,11 @@ given an end user's device and geolocation. Set dpt to equal true in your GET re
 </code></pre>
 
 
-### Using the Player API
+### Using the player API
 
-1\. Once you have set up your video catalogue in the Zype Platform and you have created your player rules, you are ready to use the Zype Player API!
+1\. Once you have set up your video catalog in the Zype Platform and you have created your player rules, you are ready to use the Zype Player API!
 
-2\. You can find your player key and api key using the [Zype Platform](https://admin.zype.com/site/api)
+2\. You can find your player key and API key using the [Zype Platform](https://admin.zype.com/site/api)
 
 ![site keys]({{site.url}}assets/API/site_key.png)
 
@@ -85,7 +85,7 @@ on how to set up your Rails App with the Zype Gem!*
 
 <hr id='2'>
 
-## Setting up Player Rules
+## Setting up player rules
 
 If a player rule is not set up for the device or geography that your end user is coming from,
 she will not be able to view the video. Moreover, if a player rule is not set up for
@@ -118,7 +118,7 @@ Player rules can be tricky. Please reach out to Zype by hitting the [?] box in t
 
 <hr id="3">
 
-## Monitoring Your Views
+## Monitoring your views
 In a previous post, we covered how to use Zype’s Dynamic Player Technology (DPT).
 In this post, we'll be covering how to use the DPT logs to see what requests are being made for your video content.
 For example, let's say you've uploaded a batch of new videos and after the first 30 days, you'd like to get an idea
@@ -134,7 +134,7 @@ so feel free to click on that link once you see the logs menu.
 
 ### What type of information can I see in my request logs?
 
-The request logs screen shows you lots of information about the requests made to view your videos.
+The request log's screen shows you a lot of information about the requests made to view your videos.
 Here are the most pertinent pieces of information:
 
 Data | Description

@@ -5,7 +5,7 @@ permalink: /platform_docs/overview/
 ---
 ## Overview
 
-### What's Zype All About?
+### What is Zype all about?
 
 The Zype Platform includes everything a premium content owner needs to deliver web, mobile, and set-top apps direct to consumers.
 
@@ -13,15 +13,15 @@ Video from anywhere, including YouTube and Hulu, or even raw video source files 
 
 Zype’s proprietary VideoMeta technology allows import and matching of data - scripts, set lists, art, and related content without data entry headaches.  Powerful for SEO and deep, engaging branded video experiences. You can see this in action on [yugioh.com](http://www.yugioh.com).
 
-### Creating an Account
+### Creating an account
 
 To sign up for a free account, visit [the zype platform.](https://admin.zype.com/) You'll need to enter some basic information including your company name and the name of your media property. Once you've created an account, check out the [adding videos guide](https://admin.zype.com/) to get started.
 
-### Forgot Password
+### Forgot password
 
 You can reset your password by following [this link](https://admin.zype.com/auth/password/new).
 
-### What can I Accomplish?
+### What can I accomplish?
 
 At the core, our mission is to enable you to give your consumers what they want - instant and easy direct access to the content they love, on any device, anywhere.
 

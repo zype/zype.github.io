@@ -3,7 +3,7 @@ layout: platform
 title: Zype Developer Portal | Google Analytics Integration
 permalink: /platform_docs/google_analytics/
 ---
-##Enabling Google Analytics Integration
+##Enabling Google Analytics integration
 Zype Analytics can integrate with Google Analytics to deliver a consolidated source of analytics for your web destination.
 
 <div style="width: 100%;">
@@ -45,7 +45,7 @@ A web tracking code for Google Analytics looks similar to the following:
 
 <hr id="2">
 
-## Enabling Google Analytics Integration
+## Enabling Google Analytics integration
 
 To enable Google Analytics integration select the 'Enable Google Analytics' option under 'Zype Analytics settings'. The integration will use the existing Google Analytics tracking object on the page so you don't need to enter your Google Analytics Tracking ID.
 

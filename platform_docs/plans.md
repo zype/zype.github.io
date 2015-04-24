@@ -14,11 +14,11 @@ Connecting Stripe</a>
 </div>
 <div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>
 <a href="#2">
-Creating a Plan</a>
+Creating a plan</a>
 </div>
 <div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>
 <a href="#3">
-Deactivating a Plan</a>
+Deactivating a plan</a>
 </div>
 </div>
 
@@ -33,7 +33,7 @@ Your Stripe Secret Key can be found under your Stripe [account settings](https:/
 
 <hr id="2">
 
-## Creating a Plan
+## Creating a plan
 Once you have your Stripe Secret Key in the Zype Platform, you can create plans from the
 Zype Platform that connect to your Stripe Account. To create a plan, go to the [plans page](https://admin.zype.com/plans).
 
@@ -41,7 +41,7 @@ Zype Platform that connect to your Stripe Account. To create a plan, go to the [
 
 You will be prompted to enter the name, plan id, statement description, trial period days,
 amount, currency type, interval, and whether or not the plan is active. Note, the Plan ID has to
-be a unique idenitifier for the plans and is what Stripe uses in its API queries.
+be a unique identifier for the plans and is what Stripe uses in its API queries.
 
 ![new plan form]({{site.url}}assets/Plan/plan_details.png)
 
@@ -49,7 +49,7 @@ If your plan is active, you will be ready to have consumers subscribe to your pl
 
 <hr id="3">
 
-## Deactivating a Plan
+## Deactivating a plan
 You can make a plan inactive by navigating to your plan and toggling the plan to be
 inactive.
 
