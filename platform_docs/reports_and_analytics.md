@@ -3,7 +3,7 @@ layout: platform
 title: Zype Developer Portal | Platform Docs
 permalink: /platform_docs/reports_and_analytics/
 ---
-## Reports and Analytics on the Zype Platform
+## Reports and analytics on the Zype Platform
 We know that it's all about views at the end of the day. These guides are designed to walk you through the different reports you can generate and help you understand how to get the most out of your video content.
 
 <div style="width: 100%;">
@@ -15,7 +15,7 @@ We know that it's all about views at the end of the day. These guides are design
 
 <hr id="1">
 
-## Monitoring Your Views
+## Monitoring your views
 In a previous post, we covered how to use Zype’s Dynamic Player Technology (DPT).
 In this post, we'll be covering how to use the DPT logs to see what requests are being made for your video content.
 For example, let's say you've uploaded a batch of new videos and after the first 30 days, you'd like to get an idea
@@ -23,7 +23,7 @@ of who's viewing your content and what times of the day are most popular for vie
 
 ### Where can I find my logs?
 
-After you've uploaded some video content to the Zype platform, log in through the [admin portal](http://admin.zype.com/)
+After you've uploaded some video content to the Zype Platform, log in through the [admin portal](http://admin.zype.com/)
 and navigate to the logs section under the settings dropdown menu. In this post, we'll cover the request logs,
 so feel free to click on that link once you see the logs menu.  
 
@@ -52,7 +52,7 @@ Created | The date and time the request was created
 
 The request logs screen gives you a snapshot of the most recent requests by default.
 
-Sorting the request logs is easy: use the four drop down menus to select your search parameters
+Sorting the request logs is easy: use the four dropdown menus to select your search parameters
 and then click on the search button.
 
 

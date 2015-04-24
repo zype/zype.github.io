@@ -14,15 +14,15 @@ Connecting Stripe</a>
 </div>
 <div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>
 <a href="#2">
-Creating a Subscription</a>
+Creating a subscription</a>
 </div>
 <div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>
 <a href="#3">
-Viewing Subscriptions</a>
+Viewing subscriptions</a>
 </div>
 <div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>
 <a href="#4">
-Cancelling a Subscription</a>
+Canceling a subscription</a>
 </div>
 </div>
 
@@ -38,12 +38,12 @@ Your Stripe Secret Key can be found under your Stripe [account settings](https:/
 
 <hr id="2">
 
-## Creating a Subscription
+## Creating a subscription
 You will need to [use our API](http://dev.zype.com/api_docs/subscriptions/) to create a subscription.
 
 <hr id="3">
 
-## Viewing Subscriptions
+## Viewing subscriptions
 To view subscriptions, go to the [subscriptions page](https://admin.zype.com/subscriptions).
 
 ![viewing subscriptions]({{site.url}}assets/Connecting Stripe/customer_details.png)
@@ -53,11 +53,11 @@ interval, trial period, and when it was created.
 
 <hr id="4">
 
-## Cancelling a Subscription
+## Canceling a subscription
 To cancel a subscription, click on the
 "Subscription" on the left hand menu and click on subscriptions to get to the [subscriptions page](https://admin.zype.com/subscriptions).
 Then, click the red button for the subscription that you want to cancel.
 
-![cancelling a subscription]({{site.url}}assets/Connecting Stripe/delete_cust.png)
+![canceling a subscription]({{site.url}}assets/Connecting Stripe/delete_cust.png)
 
 This will remove the subscription from Stripe.
