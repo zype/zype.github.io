@@ -204,7 +204,7 @@ and whether these videos should automatically be active when they appear in your
 
 **Step 6:**
 
-Congrats, you have linked Viemo PRO successfully! If the videos are automatically add your
+Congrats, you have linked Vimeo PRO successfully! If the videos are automatically add your
 Vimeo PRO imports to your video library, they can be found in your [video library](https://admin.zype.com/videos).
 If not, they can be found in your [video imports](https://admin.zype.com/video_imports).
 
@@ -218,7 +218,7 @@ and make sure that you have a Vimeo Pro (Native) Player, a Vimeo Pro (Zype) Play
 not have a proper player rule, click on the "New Player Rule" button and create Vimeo PRO player rules for the
 desired device and Vimeo PRO Player. For more information on player rules, go to the [player rules platform docs](http://dev.zype.com/platform_docs/player_rules/).
 
-![vimeo pro player rule]({{site.url}}assets/Adding Videos from a Vimeo PRO Account/player_rules.png
+![vimeo pro player rule]({{site.url}}assets/Adding Videos from a Vimeo PRO Account/player_rules.png)
 
 <hr id="4">
 
