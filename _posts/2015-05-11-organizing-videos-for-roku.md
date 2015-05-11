@@ -27,7 +27,8 @@ name of the video row on your Roku Channel. Make sure that you mark the playlist
 
 Next, you need to add videos to your playlists. Go to the playlist and click "Add Videos."
 Note, Roku can only play videos that are from Zype or Vimeo Pro. If you want this playlist
-to play on Roku, you will need to only add videos that have these video sources.
+to play on Roku, you will need to only add videos that have these video sources. You
+can order videos in your playlists by dragging the videos.
 
 ![playlist 2b]({{site.url}}assets/roku/playlist_2b.png)
 
@@ -46,7 +47,8 @@ menu and click on "New Category"
 Then, fill in the information for your category. The values of the category are what get
 seen on your Roku. They are displayed in the order that are in the list. Each value
 gets its own row on Roku. You can determine whether or not to prepend the category name
-to the value in your advanced Roku settings.
+to the value in your advanced Roku settings. You can order videos in your category by setting
+the episode number.
 
 ![category 2]({{site.url}}assets/roku/category_2.png)
 
