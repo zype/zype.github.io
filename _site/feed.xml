@@ -6,8 +6,8 @@
 </description>
     <link>http://dev.zype.com//</link>
     <atom:link href="http://dev.zype.com//feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Mon, 11 May 2015 11:28:16 -0400</pubDate>
-    <lastBuildDate>Mon, 11 May 2015 11:28:16 -0400</lastBuildDate>
+    <pubDate>Mon, 11 May 2015 11:29:06 -0400</pubDate>
+    <lastBuildDate>Mon, 11 May 2015 11:29:06 -0400</lastBuildDate>
     <generator>Jekyll v2.3.0</generator>
     
       <item>
@@ -63,14 +63,15 @@ that you want and click save. You can also mass assign categories from the Video
 
 &lt;p&gt;&lt;img src=&quot;http://dev.zype.com/assets/roku/category_3.png&quot; alt=&quot;category 3&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Configure your Roku Channel&lt;/strong&gt;
-Once you have a featured playlist and a featured category, go to your Roku Channel and
+&lt;p&gt;&lt;strong&gt;Configure your Roku Channel&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Once you have a featured playlist and a featured category, go to your Roku Channel and
 click on Edit Advanced Settings. In the “Main Configurations” tab, you can select
 the featured playlist, featured category, and whether or not to prepend your category name.
 Click save changes.&lt;/p&gt;
 
 &lt;p&gt;Reload your Roku Channel, you should see the first row be your featured playlist and the
-remaining rows be the your category values.&lt;/p&gt;
+remaining rows be the your category values!&lt;/p&gt;
 </description>
         <pubDate>Mon, 11 May 2015 06:37:55 -0400</pubDate>
         <link>http://dev.zype.com//posts/2015/05/11/organizing-videos-for-roku</link>
