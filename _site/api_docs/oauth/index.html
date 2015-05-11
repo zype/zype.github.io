@@ -6,12 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>Zype Developer Portal | Categories</title>
+    <title>Zype Developer Portal | OAuth</title>
     <meta name="description" content="This is the devloper portal for Zype Media. Zype is Revenue and Reach Magic for Online Video. We help content owners deliver fully branded video experiences.
 ">
 
     <link rel="stylesheet" href="/css/main.css">
-    <link rel="canonical" href="http://dev.zype.com//api_docs/categories/">
+    <link rel="canonical" href="http://dev.zype.com//api_docs/oauth/">
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 
     <!--[if lt IE 9]>
@@ -78,15 +78,29 @@
 
 
     <section id="main">
-      <h2 id="categories-collection">Categories Collection</h2>
+      <h2 id="consumer-oauth">Consumer OAuth</h2>
 
-<p>Lists all Categories.</p>
+<p>Zype provides an authentication mechanism for consumer authentication.
+You will need to create a consumer before you can authenticate her.
+Please <a href="http://dev.zype.com/api_docs/consumers/">check out our consumer docs</a> to learn how to create a consumer. Once a consumer
+has been created, you will authenticate her to get an access token. This access
+token is then used to authenticate API requests on the behalf of your end user.</p>
+
+<h3 id="getting-your-client-id-and-client-secret">Getting your client id and client secret</h3>
+
+<p>To make consumer authentication requests, you will need to use your client id and client secret keys.
+Please <a href="mailto:developers@zypemedia.com">email Zype</a> to get your client id and client secret keys.</p>
+
+<h3 id="retrieving-an-access-token">Retrieving an access token</h3>
+
+<h4 id="via-password-grant-flow">Via password grant flow</h4>
+
+<p>The password grant flow allows you to pass in a user’s email address and password
+to get an access token in return.</p>
+
 <hr />
 
-<h3 id="list-all-categories">List all Categories</h3>
-<hr />
-
-<pre><code>GET - https://api.zype.com/categories?page=page&amp;per_page=per_page
+<pre><code> POST - https://live.zype.com/oauth/token/?client_id=client_id&amp;client_secret=client_secret&amp;email=email&amp;password=password&amp;grant_type=password
 </code></pre>
 
 <h4 id="parameters">Parameters</h4>
@@ -101,91 +115,60 @@
   </thead>
   <tbody>
     <tr>
-      <td>page</td>
-      <td>The page number of records to return (zero indexed). Example: 0.</td>
-      <td>Number</td>
+      <td>client_id</td>
+      <td>Your Zype App’s client id</td>
+      <td>String</td>
     </tr>
     <tr>
-      <td>per_page</td>
-      <td>The number of records to return. Example: 10.</td>
-      <td>Number</td>
+      <td>client_secret</td>
+      <td>Your Zype App’s client secret</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>email</td>
+      <td>Email of the end user</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>password</td>
+      <td>Password of the end user</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>grant_type</td>
+      <td>Grant Type. Use: ‘password’</td>
+      <td>String</td>
     </tr>
   </tbody>
 </table>
-
-<h4 id="request">Request</h4>
-<p>Content-Type: application/json</p>
 
 <h4 id="response">Response</h4>
 <p>200
 Content-Type: application/json</p>
 
 <pre><code>{
-  "response": [
-  {
-    "_id": "546782ee69702d2328350000",
-    "_keywords": [
-    "additional",
-    "videos",
-    "youtube"
-    ],
-    "created_at": "2014-11-15T11:44:30.700-05:00",
-    "site_id": "5463c68e69702d24db490000",
-    "title": "Additional Videos from YouTube",
-    "updated_at": "2014-11-15T11:44:30.700-05:00",
-    "values": [
-    "Yes"
-    ]
-  },
-  {
-    "_id": "546763ee69702d4efa260000",
-    "_keywords": [
-      "series"
-    ],
-    "created_at": "2014-11-15T09:32:14.575-05:00",
-    "site_id": "5463c68e69702d24db490000",
-    "title": "series",
-    "updated_at": "2014-11-15T11:02:59.329-05:00",
-    "values": [
-      "12 Monkeys",
-      "13 Assassins",
-      "2 Fast 2 Furious",
-      "A Little Princess",
-      "A Night at the Roxbury"
-    ]
-  },
-  {
-    "_id": "5463e49f69702d34ff0d0000",
-    "_keywords": [
-      "genre"
-    ],
-    "created_at": "2014-11-12T17:52:15.547-05:00",
-    "site_id": "5463c68e69702d24db490000",
-    "title": "Genre",
-    "updated_at": "2014-11-15T09:53:12.784-05:00",
-    "values": [
-      "Adventure",
-      "Comedy",
-      "Horror"
-    ]
-  }
-  ],
-  "pagination": {
-    "current": 1,
-    "previous": null,
-    "next": null,
-    "per_page": 10,
-    "pages": 1
-  }
+  "access_token":"abc123",
+  "token_type":"bearer",
+  "expires_in":7200,
+  "refresh_token":"def456",
+  "scope":"public"
 }
 </code></pre>
 
+<h4 id="via-authorization-code-grant-flow">Via authorization code grant flow</h4>
+
+<p>We will be supporting the authorization code grant flow in the future. If you have a need for this type of
+oauth flow now, please <a href="mailto:developers@zype.com">reach out</a>!</p>
+
+<h3 id="getting-access-token-metadata">Getting access token metadata</h3>
+
+<p>You can get additional metadata from your access token. This includes when the access token
+expires, when the access token was created, and the consumer id linked to the access token.
+Note, the consumer id is found in the returned “resource_owner_id” value.</p>
+
 <hr />
 
-<h3 id="create-a-category">Create a Category</h3>
-<hr />
-
-<pre><code>POST - https://api.zype.com/categories?page=page&amp;per_page=per_page
+<pre>GET - https://login.zype.com/oauth/token/info?access_token=access_token<code>
 </code></pre>
 
 <h4 id="parameters-1">Parameters</h4>
@@ -200,62 +183,37 @@ Content-Type: application/json</p>
   </thead>
   <tbody>
     <tr>
-      <td>category</td>
-      <td>A set of key value pairs that describe the Category</td>
-      <td>Hash</td>
-    </tr>
-    <tr>
-      <td>title</td>
-      <td>Title of the category</td>
+      <td>access_token</td>
+      <td>The access token created via oauth</td>
       <td>String</td>
-    </tr>
-    <tr>
-      <td>values</td>
-      <td>Values for the category</td>
-      <td>Array</td>
     </tr>
   </tbody>
 </table>
 
-<h4 id="request-1">Request</h4>
-<p>Content-Type: application/json</p>
-
 <h4 id="response-1">Response</h4>
-<p>201
+<p>200
 Content-Type: application/json</p>
 
-<pre><code>{  
-  "response":
-  {  
-    "_id": "54907f944c616e20e7270000",
-    "_keywords":
-    [
-    "favorite",
-    "pizza",
-    "toppings"
+<pre><code>{
+  "resource_owner_id": "abc123",
+  "scopes": [
+    "consumer"
     ],
-    "created_at": "2014-12-16T13:53:08.564-05:00",
-    "site_id": "545932274c616e2359000000",
-    "title": "Favorite Pizza Toppings",
-    "updated_at": "2014-12-16T13:53:08.564-05:00",
-    "values":
-    [
-      "Mushroom,
-      Pepperoni"
-    ]
-  }
+  "expires_in_seconds": 7026,
+  "application": {
+    "uid": "abc123"
+    },
+  "created_at": 1429544923
 }
 </code></pre>
 
-<h2 id="category">Category</h2>
+<h3 id="refreshing-an-access-token">Refreshing an access token</h3>
 
-<p>Lists descriptive information about a Category.</p>
+<p>Your access token will expire after 2 hours. To refresh your access token, post your refresh token and you will get a new access token in return.</p>
+
 <hr />
 
-<h3 id="retrieve-a-category">Retrieve a Category</h3>
-<hr />
-
-<pre><code>GET - https://api.zype.com/categories/{id}
+<pre><code> POST - https://api.zype.com/oauth/token/?client_id=client_id&amp;client_secret=client_secret&amp;refresh_token=refresh_token&amp;grant_type=refresh_token
 </code></pre>
 
 <h4 id="parameters-2">Parameters</h4>
@@ -270,50 +228,49 @@ Content-Type: application/json</p>
   </thead>
   <tbody>
     <tr>
-      <td>id</td>
-      <td>String id of the Category to retrieve. Example: 540731274c616e047a000000.</td>
+      <td>client_id</td>
+      <td>Your Zype App’s client id</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>client_secret</td>
+      <td>Your Zype App’s client secret</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>refresh_token</td>
+      <td>Token that allows you to refresh your access token</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>grant_type</td>
+      <td>Grant type. Use: ‘refresh_token’</td>
       <td>String</td>
     </tr>
   </tbody>
 </table>
 
-<h4 id="request-2">Request</h4>
-<p>Content-Type: application/json</p>
-
-<h3 id="response-2">Response</h3>
+<h4 id="response-2">Response</h4>
 <p>200
 Content-Type: application/json</p>
 
-<pre><code>{
-  "response":
-  {
-    "_id": "548f5b8e4c616e8031010000",
-    "_keywords":
-    [
-      "Over",
-      "9000"
-    ],
-    "created_at": "2014-12-15T17:07:10.481-05:00",
-    "site_id": "545932274c616e2359000000",
-    "title": "Is it over 9000?",
-    "updated_at": "2014-12-15T17:07:10.481-05:00",
-    "values":
-    [
-      "yes",
-      "no"
-    ]
+<pre><code>{  
+    "access_token":"abc123",
+    "token_type":"bearer",
+    "expires_in":30,
+    "refresh_token":"def456",
+    "scope":"public"
   }
-}
-</code></pre>
-<hr />
-
-<h3 id="update-a-category">Update a Category</h3>
-<hr />
-
-<pre><code>PUT - https://api.zype.com/categories/{id}
 </code></pre>
 
-<h4 id="parameters-3">Parameters</h4>
+<h3 id="authenticating-an-api-request-on-the-behalf-of-a-consumer">Authenticating an API request on the behalf of a consumer</h3>
+
+<p>To authenticate an API request on the behalf of a consumer, you can pass the access token
+into your API request with the access_token parameter. For example, see below how to
+request a player for a SVOD video using your access token.</p>
+
+<pre><code> GET - https://player.zype.com/embed/abc123.js?access_token=access_token
+</code></pre>
 
 <table>
   <thead>
@@ -325,53 +282,12 @@ Content-Type: application/json</p>
   </thead>
   <tbody>
     <tr>
-      <td>id</td>
-      <td>String id of the Category to update. Example: 5389352e69702d401b000000.</td>
+      <td>access_token</td>
+      <td>The access token retrieved via oauth</td>
       <td>String</td>
-    </tr>
-    <tr>
-      <td>title</td>
-      <td>Title of the category</td>
-      <td>String</td>
-    </tr>
-    <tr>
-      <td>values</td>
-      <td>Values for the category</td>
-      <td>Array</td>
     </tr>
   </tbody>
 </table>
-
-<h4 id="request-3">Request</h4>
-<p>Content-Type: application/json</p>
-
-<h4 id="response-3">Response</h4>
-<p>201
-Content-Type: application/json</p>
-
-<pre><code>
-{
-  "response":
-  {
-    "_id": "548f5b8e4c616e8031010000",
-    "_keywords":
-    [
-      "Definitely",
-      "Over",
-      "9000"
-    ],
-    "created_at": "2014-12-15T17:07:10.481-05:00",
-    "site_id": "545932274c616e2359000000",
-    "title": "Definitely Over 9000",
-    "updated_at": "2014-12-16T13:53:08.266-05:00",
-    "values":
-    [
-      "yes",
-      "no"
-    ]
-  }
-}
-</code></pre>
 
     </section>
 
