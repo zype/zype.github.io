@@ -6,8 +6,8 @@
 </description>
     <link>http://dev.zype.com//</link>
     <atom:link href="http://dev.zype.com//feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Tue, 12 May 2015 13:59:48 -0400</pubDate>
-    <lastBuildDate>Tue, 12 May 2015 13:59:48 -0400</lastBuildDate>
+    <pubDate>Tue, 12 May 2015 14:00:59 -0400</pubDate>
+    <lastBuildDate>Tue, 12 May 2015 14:00:59 -0400</lastBuildDate>
     <generator>Jekyll v2.3.0</generator>
     
       <item>
@@ -39,12 +39,12 @@ can order videos in your playlists by dragging the videos.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;http://dev.zype.com/assets/roku/playlist_2b.png&quot; alt=&quot;playlist 2b&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://dev.zype.com/assets/roku/playlist_2c.png&quot; alt=&quot;playlist 4&quot; /&gt;&lt;/p&gt;
-
 &lt;p&gt;Last, search for the videos that you would like to be included in your playlist. You
 can search for the videos by title in the search box.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;http://dev.zype.com/assets/roku/playlist_3.png&quot; alt=&quot;playlist 3&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://dev.zype.com/assets/roku/playlist_2c.png&quot; alt=&quot;playlist 4&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Once you have a featured playlist, go to your Roku Channel in the Zype Platform and
 click on Edit Advanced Settings. In the “Main Configurations” tab, you can select

@@ -32,12 +32,12 @@ can order videos in your playlists by dragging the videos.
 
 ![playlist 2b]({{site.url}}assets/roku/playlist_2b.png)
 
-![playlist 4]({{site.url}}assets/roku/playlist_2c.png)
-
 Last, search for the videos that you would like to be included in your playlist. You
 can search for the videos by title in the search box.
 
 ![playlist 3]({{site.url}}assets/roku/playlist_3.png)
+
+![playlist 4]({{site.url}}assets/roku/playlist_2c.png)
 
 Once you have a featured playlist, go to your Roku Channel in the Zype Platform and
 click on Edit Advanced Settings. In the "Main Configurations" tab, you can select
