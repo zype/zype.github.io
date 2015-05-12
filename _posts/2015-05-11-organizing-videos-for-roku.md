@@ -32,7 +32,7 @@ can order videos in your playlists by dragging the videos.
 
 ![playlist 2b]({{site.url}}assets/roku/playlist_2b.png)
 
-![playlist 4]({{site.url}}assets/roku/playlist_4.png)
+
 
 Last, search for the videos that you would like to be included in your playlist. You
 can search for the videos by title in the search box.
