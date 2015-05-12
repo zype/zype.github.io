@@ -37,6 +37,13 @@ can search for the videos by title in the search box.
 
 ![playlist 3]({{site.url}}assets/roku/playlist_3.png)
 
+Once you have a featured playlist, go to your Roku Channel in the Zype Platform and
+click on Edit Advanced Settings. In the "Main Configurations" tab, you can select
+the featured playlist. Click save changes.
+
+![category playlist update]({{site.url}}assets/roku/update_channel_playlist.png)
+
+
 **Create your featured category**
 
 To create your featured category, navigate to the Category dashboard via the lefthand
@@ -58,12 +65,12 @@ that you want and click save. You can also mass assign categories from the Video
 
 ![category 3]({{site.url}}assets/roku/category_3.png)
 
-**Configure your Roku Channel**
-
-Once you have a featured playlist and a featured category, go to your Roku Channel and
+Once you have a featured category, go to your Roku Channel in the Zype Platform and
 click on Edit Advanced Settings. In the "Main Configurations" tab, you can select
-the featured playlist, featured category, and whether or not to prepend your category name.
+the featured category, and whether or not to prepend your category name.
 Click save changes.
+
+![category playlist update]({{site.url}}assets/roku/update_channel_playlist.png)
 
 Reload your Roku Channel, you should see the first row be your featured playlist and the
 remaining rows be the your category values!
