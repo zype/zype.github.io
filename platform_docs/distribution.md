@@ -5,7 +5,7 @@ permalink: /platform_docs/distribution/
 ---
 ## Distribution
 Zype makes it easy to distribute your videos for sale through other video platforms. Click one of the
-distribution endpoints
+distribution endpoints.
 
 <div style="width: 100%;">
   <div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>

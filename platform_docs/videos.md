@@ -85,6 +85,10 @@ geographic location desired.
     <a href="#19">
     Managing video segments</a>
   </div>
+  <div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>
+    <a href="#20">
+    Discovery URLs</a>
+  </div>
 </div>
 
 <hr id="1">
@@ -744,3 +748,29 @@ the "Segments" tab. Then, click on the "New Segment" button. You will be prompte
 to enter the time in HH:MM:SS format.
 
 ![manage segments]({{site.url}}assets/videos/segments.png)
+
+<hr id='20'>
+
+## Discovery URLs
+
+You can set a discovery URL for each of your videos. The discovery URL is the URL
+where a viewer can access the video in their web browser. This is particularly useful
+for services that aggregate where viewers can access your content like [GoWatchIt](http://gowatchit.com/).
+
+To set the discovery url for a video, navigate to the video's detail page and in the
+"Details" tab scroll down to the "Discovery URL" field. You should enter the URL of the video
+on your website.
+
+![video detail]({{site.url}}assets/videos/discovery_url.png)
+
+You can access the discovery url in two different ways with the Zype Platform. First,
+you can use our [video API](http://dev.zype.com/api_docs/videos/) to get your discovery URL.
+Moreover, the discovery url is used in your RSS feeds powered by Zype.
+To get your RSS feed, first click on Publishing in the left hand menu on the Zype Platform.
+
+![publishing page]({{site.url}}assets/videos/mrss_feeds.png)
+
+Then, click on "MRSS feeds." You can choose the type of feed for importing into your website
+or syndicating to partners. The discovery url is located in the <link> attribute in Zype's RSS feeds.
+
+![rss feeds]({{site.url}}assets/videos/select_mrss.png)
