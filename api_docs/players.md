@@ -54,7 +54,8 @@ get a different device response, or a native device response in a web browser, y
     {
       :url => "https://player.zype.com/manifest/abc123.m3u8",
       :name => "hls"
-    },
+    }
+  ]
   :advertising =>
     {
       :client => "vast",
@@ -65,6 +66,5 @@ get a different device response, or a native device response in a web browser, y
         }
       ]
     }
-  ]
 }
 </code></pre>
