@@ -89,6 +89,10 @@ geographic location desired.
     <a href="#20">
     Discovery URLs</a>
   </div>
+  <div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>
+    <a href="#21">
+    Subtitles</a>
+  </div>
 </div>
 
 <hr id="1">
@@ -774,3 +778,35 @@ Then, click on "MRSS feeds." You can choose the type of feed for importing into 
 or syndicating to partners. The discovery url is located in the <link> attribute in Zype's RSS feeds.
 
 ![rss feeds]({{site.url}}assets/videos/select_mrss.png)
+
+<hr id='21'>
+
+## Subtitles
+
+You can set soft subtitles per video. Soft subtitles
+are text files that live outside of the video file, but can be toggled on or off
+in the video player. Zype currently accepts .srt and .vtt subtitle files for web play
+and .srt files for Roku play.
+
+To upload a subtitle, first navigate to the video that you want to add subtitles to
+and click on the "Subtitles" tab.
+
+![subtitle tab]({{site.url}}assets/videos/subtitles_tab.png)
+
+Next, click the "Add Subtitles" button.
+
+![subtitle add]({{site.url}}assets/videos/subtitles_add.png)
+
+Then, select the language and upload the .srt or .vtt file. You can choose to
+have the subtitles active or not. Only active subtitles will be available on the video player.
+
+![subtitle add]({{site.url}}assets/videos/subtitles_upload.png)
+
+Click "Save Changes" to complete uploading your subtitles onto the Zype Platform!
+Your players will now have the options to display subtitles for the languages that you
+have uploaded.
+
+There are a lot of ways to create soft subtitles to upload to Zype. Here are some subtitling
+services available: [Annotation Edit](http://www.zeitanker.com/content/tools/zeitanker_tools/zeitanker_annotation_edit/), [Dotsub](https://dotsub.com/), [FinalSub](http://www.finalsub.com/index_en.html), [Inqscribe](https://www.inqscribe.com/),
+[Jubler](http://www.jubler.org/), [Kolibri](http://www.kallysta.com/index.php?kall=11),
+[Subsandcaps](http://www.subsandcaps.com/), [Aegisub](http://www.aegisub.org/).
