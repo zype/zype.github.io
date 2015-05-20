@@ -6,8 +6,7 @@ permalink: /api_docs/players/
 
 ## Native Players
 
-For native players like iOS, Android, and OTT devices, you can get a player response from Zype that
-returns JSON. The following are included in the player response: player manifest url, type of video file, and ad tags.
+For native players like iOS, Android, and OTT devices, Zype returns a JSON player response for you to use to play your video. The following are included in the player response: player manifest url, type of video file, and ad tags.
 You should utilize best practices for the specific native device on how to insert your video files and ad tags. For reference,
 please checkout [Zype's Github](https://github.com/zype/) for our open sourced SDKs.
 
