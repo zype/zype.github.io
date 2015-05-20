@@ -118,9 +118,18 @@ get a different device response, or a native device response in a web browser, y
           :tag =&gt; "vast_tag"
         }
       ]
-    }
+    },
+    :subtitles =&gt;
+      [
+        {
+          :file =&gt; "=&gt;"http://zype-upload.s3.amazonaws.com/video/{video_id}/subtitles/English.srt?1432132167",
+          :label =&gt; "English"
+        }
+      ]
   }
 </code></pre>
+
+<p>:subtitles=&gt;[{:file=&gt;”http://zype-upload-dev.s3.amazonaws.com/video/5463e20f69702d76be200000/subtitles/English.srt?1432132167”, :label=&gt;”English”}]</p>
 
 <h4 id="ios-json-response">iOS JSON Response</h4>
 
@@ -129,7 +138,8 @@ get a different device response, or a native device response in a web browser, y
     {
       :url =&gt; "https://player.zype.com/manifest/abc123.m3u8",
       :name =&gt; "hls"
-    },
+    }
+  ],
   :advertising =&gt;
     {
       :client =&gt; "vast",
@@ -140,7 +150,13 @@ get a different device response, or a native device response in a web browser, y
         }
       ]
     }
-  ]
+  :subtitles =&gt;
+    [
+      {
+        :file =&gt; "=&gt;"http://zype-upload.s3.amazonaws.com/video/{video_id}/subtitles/English.srt?1432132167",
+        :label =&gt; "English"
+      }
+    ]
 }
 </code></pre>
 
