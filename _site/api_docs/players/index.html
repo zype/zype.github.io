@@ -6,12 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>Zype Developer Portal | Plans</title>
+    <title>Zype Developer Portal | Native Players</title>
     <meta name="description" content="This is the devloper portal for Zype Media. Zype is Revenue and Reach Magic for Online Video. We help content owners deliver fully branded video experiences.
 ">
 
     <link rel="stylesheet" href="/css/main.css">
-    <link rel="canonical" href="http://dev.zype.com//api_docs/plans/">
+    <link rel="canonical" href="http://dev.zype.com//api_docs/players/">
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 
     <!--[if lt IE 9]>
@@ -79,142 +79,72 @@
 
 
     <section id="main">
-      <h2 id="plans-collection">Plans Collection</h2>
-<p>Lists all plans.</p>
-<hr />
+      <h2 id="native-players">Native Players</h2>
 
-<h3 id="list-all-plans">List all Plans</h3>
-<hr />
+<p>For native players like iOS, Android, and OTT devices, the Zype player
+returns JSON for you to utilize. The following are included in the
+player response JSON: player manifest url, type of video file, and ad tags.
+You should utilize best practices for the specific
+native device on how to insert your video files and ad tags. For reference,
+please checkout <a href="https://github.com/zype/">Zype’s Github</a> for our open
+sourced SDKs.</p>
 
-<pre><code>GET - https://api.zype.com/plans/?page=page&amp;per_page=per_page
+<h3 id="what-to-expect-from-the-json-responses">What to expect from the JSON responses</h3>
+
+<p>Videos from the Zype Platform in either “HLS” or “MP4” format. For advertising,
+the offset is the time in milliseconds from the start of the video for when the
+advertising is scheduled. You will need to parse the advertising tag natively.</p>
+
+<h3 id="how-to-get-the-native-player-json">How to get the Native Player JSON</h3>
+
+<p>Because of Zype’s Dynamic Player Technology, the Zype Platform will automatically
+detect which device you are coming from to get your player. If you would like to
+get a different device response, or a native device response in a web browser, you will need to spoof the device.</p>
+
+<pre><code> GET - https://player.zype.com/embed/{video_id}.js?api_key={api_key}
 </code></pre>
 
-<h4 id="parameters">Parameters</h4>
-
-<table>
-  <thead>
-    <tr>
-      <th>Parameter</th>
-      <th>Function</th>
-      <th>Type</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>page</td>
-      <td>The page number of records to return (zero indexed). Example: 0.</td>
-      <td>Number</td>
-    </tr>
-    <tr>
-      <td>per_page</td>
-      <td>The number of records to return. Example: 10.</td>
-      <td>Number</td>
-    </tr>
-    <tr>
-      <td>q</td>
-      <td>A query string for searching for plans</td>
-      <td>String</td>
-    </tr>
-    <tr>
-      <td>id</td>
-      <td>Query for a plan by id</td>
-      <td>String</td>
-    </tr>
-    <tr>
-      <td>id!</td>
-      <td>Exclude a plan from the query</td>
-      <td>String</td>
-    </tr>
-  </tbody>
-</table>
-
-<h4 id="response">Response</h4>
-<p>200
-Content-Type: application/json</p>
-
+<h4 id="roku-json-response">Roku JSON Response</h4>
 <pre><code>{
-  "response": [
+  :outputs=&gt;
+    [
+      {
+        :url =&gt; "https://player.zype.com/manifest/abc123.m3u8",
+        :name =&gt; "hls"
+      }
+    ],
+  :advertising =&gt;
     {
-      "_id": "544813e74c616e0dc0000000",
-      "_keywords": [],
-      "active": true,
-      "amount": "7.99",
-      "created_at": "2014-10-22T20:30:31.792Z",
-      "currency": "USD",
-      "description": 'Description for the plan',
-      "interval": "month",
-      "name": "Zype Monthly Subscription",
-      "stripe_id": "zype-monthly",
-      "stripe_public_key": "pk_test_123456",
-      "trial_period_days": 0,
-      "updated_at": "2014-10-23T13:02:20.075Z"
+      :client =&gt; "vast",
+      :schedule =&gt; [
+        {
+          :offset =&gt; 0
+          :tag =&gt; "vast_tag"
+        }
+      ]
     }
-  ],
-  "pagination": {
-    "current": 1,
-    "previous": null,
-    "next": null,
-    "per_page": 1,
-    "pages": 1
   }
-}
 </code></pre>
 
-<hr />
-
-<h2 id="plan">Plan</h2>
-<p>Lists descriptive information about a plan</p>
-<hr />
-
-<h3 id="retrieve-a-plan">Retrieve a Plan</h3>
-<hr />
-
-<pre><code>GET - https://api.zype.com/plan/{id}
-</code></pre>
-
-<h4 id="parameters-1">Parameters</h4>
-
-<table>
-  <thead>
-    <tr>
-      <th>Parameter</th>
-      <th>Function</th>
-      <th>Type</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>id</td>
-      <td>String id of the Plan to retrieve. Example: 5389352e69702d401b000000.</td>
-      <td>String</td>
-    </tr>
-  </tbody>
-</table>
-
-<h4 id="request">Request</h4>
-<p>Content-Type: application/json</p>
-
-<h4 id="response-1">Response</h4>
-<p>200
-Content-Type: application/json</p>
+<h4 id="ios-json-response">iOS JSON Response</h4>
 
 <pre><code>{
-  "response": {
-      "_id": "544813e74c616e0dc0000000",
-      "_keywords": [],
-      "active": true,
-      "amount": "7.99",
-      "created_at": "2014-10-22T20:30:31.792Z",
-      "currency": "USD",
-      "description": 'Description for the plan',
-      "interval": "month",
-      "name": "Zype Monthly Subscription",
-      "stripe_id": "zype-monthly",
-      "stripe_public_key": "abcde12345",
-      "trial_period_days": 0,
-      "updated_at": "2014-10-23T13:02:20.075Z"
+  :files =&gt; [
+    {
+      :url =&gt; "https://player.zype.com/manifest/abc123.m3u8",
+      :name =&gt; "hls"
+    },
+  :advertising =&gt;
+    {
+      :client =&gt; "vast",
+      :schedule =&gt; [
+        {
+          :offset =&gt; 0
+          :tag =&gt; "vast_tag"
+        }
+      ]
     }
-  }
+  ]
 }
 </code></pre>
 
