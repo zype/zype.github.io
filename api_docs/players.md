@@ -54,8 +54,6 @@ get a different device response, or a native device response in a web browser, y
   }
 </code></pre>
 
-:subtitles=>[{:file=>"http://zype-upload-dev.s3.amazonaws.com/video/5463e20f69702d76be200000/subtitles/English.srt?1432132167", :label=>"English"}]
-
 #### iOS JSON Response
 
 <pre><code>{

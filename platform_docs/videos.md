@@ -783,7 +783,7 @@ or syndicating to partners. The discovery url is located in the <link> attribute
 
 ## Subtitles
 
-You can set soft subtitles per video. Soft subtitles
+You can set soft subtitles on a per video basis. Soft subtitles
 are text files that live outside of the video file, but can be toggled on or off
 in the video player. Zype currently accepts .srt and .vtt subtitle files for web play
 and .srt files for Roku play.
@@ -793,11 +793,12 @@ and click on the "Subtitles" tab.
 
 ![subtitle tab]({{site.url}}assets/videos/subtitles_tab.png)
 
-Next, click the "Add Subtitles" button.
+Next, click the "Add Subtitles" button. This will pop up a new form field to enter your
+subtitle data.
 
 ![subtitle add]({{site.url}}assets/videos/subtitles_add.png)
 
-Then, select the language and upload the .srt or .vtt file. You can choose to
+Then, select the language and upload the .srt or .vtt file for your subtitles. You can choose to
 have the subtitles active or not. Only active subtitles will be available on the video player.
 
 ![subtitle add]({{site.url}}assets/videos/subtitles_upload.png)
@@ -806,7 +807,7 @@ Click "Save Changes" to complete uploading your subtitles onto the Zype Platform
 Your players will now have the options to display subtitles for the languages that you
 have uploaded.
 
-There are a lot of ways to create soft subtitles to upload to Zype. Here are some subtitling
-services available: [Annotation Edit](http://www.zeitanker.com/content/tools/zeitanker_tools/zeitanker_annotation_edit/), [Dotsub](https://dotsub.com/), [FinalSub](http://www.finalsub.com/index_en.html), [Inqscribe](https://www.inqscribe.com/),
-[Jubler](http://www.jubler.org/), [Kolibri](http://www.kallysta.com/index.php?kall=11),
-[Subsandcaps](http://www.subsandcaps.com/), [Aegisub](http://www.aegisub.org/).
+There are a lot of ways to create soft subtitles to upload to Zype. We like to use
+[Aegisub](http://www.aegisub.org/) to create our SRT and VTT subtitle files. This is
+a free software to download that allows you to enter captions alongside the video
+playing and then converts your captions to SRT or VTT formats.
