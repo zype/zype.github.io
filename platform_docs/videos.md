@@ -807,7 +807,7 @@ Click "Save Changes" to complete uploading your subtitles onto the Zype Platform
 Your players will now have the options to display subtitles for the languages that you
 have uploaded.
 
-There are a lot of ways to create soft subtitles to upload to Zype. We like to use
+There are a lot of ways to create soft subtitles to upload to Zype. At Zype, we use
 [Aegisub](http://www.aegisub.org/) to create our SRT and VTT subtitle files. This is
-a free software to download that allows you to enter captions alongside the video
-playing and then converts your captions to SRT or VTT formats.
+a free software that allows you to enter captions alongside the video
+playing. Then, it converts your captions to SRT or VTT files for you to upload.
