@@ -786,7 +786,10 @@ or syndicating to partners. The discovery url is located in the <link> attribute
 You can set soft subtitles on a per video basis. Soft subtitles
 are text files that live outside of the video file, but can be toggled on or off
 in the video player. Zype currently accepts .srt and .vtt subtitle files for web play
-and .srt files for Roku play.
+and .srt files for Roku play. Check the image below to see what subtitles will look
+like in your Zype Player!
+
+![subtitle example]({{site.url}}assets/videos/subtitles_example.png)
 
 To upload a subtitle, first navigate to the video that you want to add subtitles to
 and click on the "Subtitles" tab.
@@ -801,7 +804,7 @@ subtitle data.
 Then, select the language and upload the .srt or .vtt file for your subtitles. You can choose to
 have the subtitles active or not. Only active subtitles will be available on the video player.
 
-![subtitle add]({{site.url}}assets/videos/subtitles_upload.png)
+![subtitle upload]({{site.url}}assets/videos/subtitles_upload.png)
 
 Click "Save Changes" to complete uploading your subtitles onto the Zype Platform!
 Your players will now have the options to display subtitles for the languages that you
@@ -810,4 +813,5 @@ have uploaded.
 There are a lot of ways to create soft subtitles to upload to Zype. At Zype, we use
 [Aegisub](http://www.aegisub.org/) to create our SRT and VTT subtitle files. This is
 a free software that allows you to enter captions alongside the video
-playing. Then, it converts your captions to SRT or VTT files for you to upload.
+playing. Then, it converts your captions to SRT or VTT files for you to upload onto
+the Zype Platform.
