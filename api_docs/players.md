@@ -22,7 +22,7 @@ Because of Zype's Dynamic Player Technology, the Zype Platform will automaticall
 detect which device you are coming from to get your player. If you would like to
 get a different device response, or a native device response in a web browser, you will need to spoof the device.
 
-<pre><code> GET - https://player.zype.com/embed/{video_id}.js?api_key={api_key}
+<pre><code> GET - https://player.zype.com/embed/{video_id}.json?api_key={api_key}
 </code></pre>
 
 #### Roku JSON Response
