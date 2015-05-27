@@ -81,7 +81,7 @@
     <section id="main">
       <h2 id="native-players">Native Players</h2>
 
-<p>For native players like iOS, Android, and OTT devices, Zype returns a JSON player response for you to use to play your video. The following are included in the player response: player manifest url, type of video file, and ad tags.
+<p>For native players like iOS, Android, and OTT devices, Zype returns a JSON player response for you to use to play your video. The following are included in the player response: player manifest url, type of video file, ad tags, and subtitles.
 You should utilize best practices for the specific native device on how to insert your video files and ad tags. For reference,
 please checkout <a href="https://github.com/zype/">Zype’s Github</a> for our open sourced SDKs.</p>
 
@@ -89,7 +89,8 @@ please checkout <a href="https://github.com/zype/">Zype’s Github</a> for our o
 
 <p>Videos from the Zype Platform are in either “HLS” or “MP4” format. For advertising,
 the offset is the time in milliseconds from the start of the video for when the
-advertising is scheduled. You will need to parse the advertising tag natively.</p>
+advertising is scheduled. You will need to parse the advertising tag natively. If there
+are subtitles, you will get the path and label of each subtitle.</p>
 
 <h3 id="how-to-get-the-native-player-json">How to get the Native Player JSON</h3>
 
@@ -97,7 +98,7 @@ advertising is scheduled. You will need to parse the advertising tag natively.</
 detect which device you are coming from to get your player. If you would like to
 get a different device response, or a native device response in a web browser, you will need to spoof the device.</p>
 
-<pre><code> GET - https://player.zype.com/embed/{video_id}.js?api_key={api_key}
+<pre><code> GET - https://player.zype.com/embed/{video_id}.json?api_key={api_key}
 </code></pre>
 
 <h4 id="roku-json-response">Roku JSON Response</h4>
@@ -118,7 +119,14 @@ get a different device response, or a native device response in a web browser, y
           :tag =&gt; "vast_tag"
         }
       ]
-    }
+    },
+    :subtitles =&gt;
+      [
+        {
+          :file =&gt; "http://u.zype.com/video/{video_id}/subtitles/English.srt?1432132167",
+          :label =&gt; "en"
+        }
+      ]
   }
 </code></pre>
 
@@ -130,7 +138,7 @@ get a different device response, or a native device response in a web browser, y
       :url =&gt; "https://player.zype.com/manifest/abc123.m3u8",
       :name =&gt; "hls"
     }
-  ]
+  ],
   :advertising =&gt;
     {
       :client =&gt; "vast",
@@ -141,6 +149,13 @@ get a different device response, or a native device response in a web browser, y
         }
       ]
     }
+  :subtitles =&gt;
+    [
+      {
+        :file =&gt; "http://u.zype.com/video/{video_id}/subtitles/English.srt?1432132167",
+        :label =&gt; "en"
+      }
+    ]
 }
 </code></pre>
 
