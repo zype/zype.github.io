@@ -796,7 +796,7 @@ and click on the "Subtitles" tab.
 
 ![subtitle tab]({{site.url}}assets/videos/subtitles_tab.png)
 
-Next, click the "Add Subtitles" button. This will pop up a new form field to enter your
+Next, click the "New Subtitle" button. This will pop up a new form field to enter your
 subtitle data.
 
 ![subtitle add]({{site.url}}assets/videos/subtitles_add.png)
