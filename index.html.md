@@ -10,38 +10,38 @@ If you're a developer, you've come to the right place! Here we'll discuss the Zy
 
 
 <div id="homepage-container">
-  <div class="homepage-tile">
-    <a href="/api_docs/intro/">
+  <a href="/api_docs/intro/">
+    <div class="homepage-tile">
       <span class="fa fa-code homepage-icon"></span>
       <span class="homepage-text">API Docs</span>
-    </a>
-  </div>
+    </div>
+  </a>
 
-  <div class="homepage-tile">
-    <a href="/platform_docs/">
+  <a href="/platform_docs/">
+    <div class="homepage-tile">
       <span class="fa fa-file-text homepage-icon"></span>
       <span class="homepage-text">Platform Docs</span>
-    </a>
-  </div>
+    </div>
+  </a>
 
-  <div class="homepage-tile end-of-row">
-    <a href="/glossary/">
+  <a href="/glossary/">
+    <div class="homepage-tile end-of-row">
       <span class="fa fa-book homepage-icon"></span>
       <span class="homepage-text">Zype Glossary</span>
-    </a>
-  </div>
+    </div>
+  </a>
 
-  <div class="homepage-tile">
-    <a href="http://status.zype.com/">
+  <a href="http://status.zype.com/">
+    <div class="homepage-tile">
       <span class="fa fa-cogs homepage-icon"></span>
       <span class="homepage-text">System Status</span>
-    </a>
-  </div>
+    </div>
+  </a>
 
-  <div class="homepage-tile">
-    <a href="/faq/">
+  <a href="/faq/">
+    <div class="homepage-tile">
       <span class="fa fa-question homepage-icon"></span>
       <span class="homepage-text">FAQ</span>
-    </a>
-  </div>
+    </div>
+  </a>
 </div>
