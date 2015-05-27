@@ -47,7 +47,7 @@ get a different device response, or a native device response in a web browser, y
     :subtitles =>
       [
         {
-          :file => "http://zype-upload.s3.amazonaws.com/video/{video_id}/subtitles/English.srt?1432132167",
+          :file => "http://zype-u.zype.com/video/{video_id}/subtitles/English.srt?1432132167",
           :label => "en"
         }
       ]
@@ -76,7 +76,7 @@ get a different device response, or a native device response in a web browser, y
   :subtitles =>
     [
       {
-        :file => "http://zype-upload.s3.amazonaws.com/video/{video_id}/subtitles/English.srt?1432132167",
+        :file => "http://u.zype.com/video/{video_id}/subtitles/English.srt?1432132167",
         :label => "en"
       }
     ]
