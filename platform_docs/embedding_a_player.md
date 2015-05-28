@@ -70,7 +70,7 @@ Then, toggle "Player Sharing Enabled" on towards the button of the page.
 
 ## Adding a Player Logo
 
-You can configure a logo or 'bug' that will appear on videos you've uploaded to the Zype platform. This guide will show you where to get started.
+You can configure a logo or 'bug' that will appear on videos you've uploaded to the Zype platform.
 
 Navigate to your [settings page](https://admin.zype.com/site/edit) and click on the "Player Branding" tab.
 
@@ -92,8 +92,10 @@ Once you've uploaded an image, use the form to configure how it will be position
 
 Click the save changes button when complete to test out your new player logo.
 
+
 ![save changes]({{site.url}}assets/player_logo/save_changes.png)
 
 If you've already uploaded a video to Zype, you can preview it from the video library to see your player logo in action.
+
 
 ![confirm]({{site.url}}assets/player_logo/confirm.png)
