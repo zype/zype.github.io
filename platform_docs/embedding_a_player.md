@@ -19,6 +19,10 @@ One of the quickest ways to get up and running with Zype videos is to simply dro
   <a href="#3">
   Enabling Social Sharing Controls for Zype players</a>
   </div>
+  <div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>
+  <a href="#4">
+  Adding a Player Logo</a>
+  </div>
 </div>
 
 <hr id="1">
@@ -61,3 +65,35 @@ Navigate to your [settings page](https://admin.zype.com/site/edit) and click on 
 Then, toggle "Player Sharing Enabled" on towards the button of the page.
 
 ![social sharing 2]({{site.url}}assets/social_sharing/social_sharing_2.png)
+
+<hr id="4">
+
+## Adding a Player Logo
+
+You can configure a logo or 'bug' that will appear on videos you've uploaded to the Zype platform. This guide will show you where to get started.
+
+Navigate to your [settings page](https://admin.zype.com/site/edit) and click on the "Player Branding" tab.
+
+![settings]({{site.url}}assets/player_logo/settings.png)
+
+![player branding]({{site.url}}assets/player_logo/player_branding.png)
+
+Click on the upload button to add an image right from your local machine. There are a few recommendations that we have regarding the image you upload as the player logo or bug.
+
+1) The image will be scaled to a maximum of 48px by 48px so keep your logo small and not too 'busy'.
+
+2) The image should not be opaque, so that it doesn't block the video content behind it. We recommend an opacity of 50%.
+
+![upload]({{site.url}}assets/player_logo/help.png)
+
+Once you've uploaded an image, use the form to configure how it will be positioned by choosing a position and margins. You can also add a URL to redirect viewers when they click your logo and choose whether or not to hide your logo when other player elements fade out.
+
+![preview]({{site.url}}assets/player_logo/player_logo.png)
+
+Click the save changes button when complete to test out your new player logo.
+
+![save changes]({{site.url}}assets/player_logo/save_changes.png)
+
+If you've already uploaded a video to Zype, you can preview it from the video library to see your player logo in action.
+
+![confirm]({{site.url}}assets/player_logo/confirm.png)
