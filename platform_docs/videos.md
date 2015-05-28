@@ -518,9 +518,7 @@ We're rolling out a bunch of new ways to add video content to the Zype Platform,
 
 ### Downloading and installing the Zype CLI
 
-First, you'll need to download and set up the Zype CLI. You can find the tool on [gitHub](https://github.com/edla/zype-cli).
-
-![gitHub]({{site.url}}assets/Uploading Videos to Zype Using Our Ruby Gem/copy_clone.png)
+First, you'll need to download and set up the Zype CLI. You can find the tool on [gitHub](https://github.com/zype/zype-ruby).
 
 You'll need to clone down the repo, then run the following commands:
 
@@ -550,6 +548,7 @@ Enter the command below:
 </code></pre>
 
 You'll be prompted to enter your Zype API Key. You can find this by logging in to the [Zype Platform](https://admin.zype.com) and clicking on API within the settings menu at the top of the screen. Grab your API key and enter it into the terminal to continue.
+You should use your admin api key.
 
 ### Uploading your videos
 
