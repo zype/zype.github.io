@@ -49,7 +49,7 @@ get a different device response, or a native device response in a web browser, y
       [
         {
           :file => "http://u.zype.com/video/{video_id}/subtitles/English.srt?1432132167",
-          :label => "en"
+          :label => "English"
         }
       ]
   }
@@ -78,7 +78,7 @@ get a different device response, or a native device response in a web browser, y
     [
       {
         :file => "http://u.zype.com/video/{video_id}/subtitles/English.srt?1432132167",
-        :label => "en"
+        :label => "English"
       }
     ]
 }
