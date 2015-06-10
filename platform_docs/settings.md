@@ -52,7 +52,7 @@ mature content. You can set mature content for each video in the video detail sc
 
 Below is what age gating looks like:
 
-![mature content]({{site.url}}assets/settings/mature_content.png)
+![mature content]({{site.url}}assets/settings/age_gate.png)
 
 ###Social Sharing
 
