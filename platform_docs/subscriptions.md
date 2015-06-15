@@ -10,11 +10,11 @@ The Zype Platform supports Stripe for credit card processing of consumers.
 <div style="width: 100%;">
 <div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>
 <a href="#1">
-All-In-One Embeddable Subscription Widget</a>
+All-In-One embeddable subscription Widget</a>
 </div>
 <div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>
 <a href="#2">
-Connecting Stripe</a>
+Overriding the subscription embed</a>
 </div>
 <div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>
 <a href="#3">
@@ -48,13 +48,20 @@ When you return to the Monetization page, you'll now see a breakdown of your sub
 
 <hr id="2">
 
-## Connecting Stripe
-Before creating a subscription, you will need to link your Stripe Account to the Zype Platform.
-In the Zype Platform, navigate to settings and enter your Stripe Secret Key.
-Your Stripe Secret Key can be found under your Stripe [account settings](https://dashboard.stripe.com/account/apikeys).
+## Overriding the subscription embed
 
+You are able to override the default subscription embed settings on a per embed basis using JavaScript.
+For example, when you copy your subscription embed code, you can add additional JS inside
+your script tag.
 
-![stripe settings]({{site.url}}assets/Connecting Stripe/stripe_key.png)
+The following are variables that you enter to overwrite:
+
+Variable | Example | Description
+--------- | -------- | ----
+backgroundColor | zype.backgroundColor = '#264547'; | Hexcolor of background if no video thumbnail
+autoPlay | zype.autoPlay = true;   | Whether or not videos should autoplay
+appName | zype.appName = 'My app name'; | Name of your app
+showZype | zype.showZype = true; | Whether or not to show "Powered by Zype"
 
 <hr id="3">
 
