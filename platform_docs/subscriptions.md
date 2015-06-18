@@ -18,14 +18,18 @@ Overriding the subscription embed</a>
 </div>
 <div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>
 <a href="#3">
-Creating a subscription</a>
+Coupons</a>
 </div>
 <div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>
 <a href="#4">
-Viewing subscriptions</a>
+Creating a subscription</a>
 </div>
 <div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>
 <a href="#5">
+Viewing subscriptions</a>
+</div>
+<div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>
+<a href="#6">
 Canceling a subscription</a>
 </div>
 </div>
@@ -63,12 +67,45 @@ autoPlay | zype.autoPlay = true;   | Whether or not videos should autoplay
 appName | zype.appName = 'My app name'; | Name of your app
 showZype | zype.showZype = true; | Whether or not to show "Powered by Zype"
 
-<hr id="3">
+<hr id='3'>
+
+## Subscription Coupons
+
+You can provide coupon codes to offer discounts to future subscribers when they subscribe
+to your content.
+
+![coupon code]({{site.url}}assets/coupons/pay_with_coupons.png)
+
+Currently, to enable coupons, you need to do two things. First, you need to enable coupons
+on in the Zype Platform.
+
+![enable coupons]({{site.url}}assets/coupons/zype_enable.png)
+
+Then, you need to create your coupons on Stripe. To create coupons on Stripe, go to your Stripe Dashboard [coupon screen](https://dashboard.stripe.com/coupons) and click on "+ New".
+
+![add coupons]({{site.url}}assets/coupons/stripe_add_coupon.png)
+
+This will pop up the form to create your coupon. There are multiple coupon combinations to
+choose from. You can choose to have a coupon be a percentage off or an amount off of your
+subscription price. You can also choose to have a coupon be applied for one pay period, multiple
+monthly pay periods, or forever. In addition, you can choose to have a maximum number of times
+a coupon can be redeemed and you can choose to have a redemption deadline for your coupon.
+
+![add coupons]({{site.url}}assets/coupons/create_coupon.png)
+
+When you fill out your coupon form in Stripe, keep track of your ID (Code). This is the
+coupon code that you can give to people who want to subscribe to your content.
+
+Once you click "Create Coupon", share your coupon code out to future subscribers! Feel
+free to create as many coupons as you would like, they can be applied to any subscription
+plan that you offer.
+
+<hr id="4">
 
 ## Creating a subscription
 You will need to [use our API](http://dev.zype.com/api_docs/subscriptions/) to create a subscription.
 
-<hr id="4">
+<hr id="5">
 
 ## Viewing subscriptions
 To view subscriptions, go to the [subscriptions page](https://admin.zype.com/subscriptions).
@@ -78,7 +115,7 @@ To view subscriptions, go to the [subscriptions page](https://admin.zype.com/sub
 You can search by subscription and see each subscription's consumer, plan, amount, currency,
 interval, trial period, and when it was created.
 
-<hr id="5">
+<hr id="6">
 
 ## Canceling a subscription
 To cancel a subscription, click on the
