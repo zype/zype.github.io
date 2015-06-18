@@ -66,6 +66,7 @@ backgroundColor | zype.backgroundColor = '#264547'; | Hexcolor of background if 
 autoPlay | zype.autoPlay = true;   | Whether or not videos should autoplay
 appName | zype.appName = 'My app name'; | Name of your app
 showZype | zype.showZype = true; | Whether or not to show "Powered by Zype"
+couponsEnabled | zype.couponsEnabled = true | Whether or not to have the coupon code field on new subscription sign ups
 
 <hr id='3'>
 
