@@ -690,6 +690,7 @@ Check out our previous blog post on [defining categories and playlists](http://d
 
 ## Choosing thumbnails for your videos
 When you upload a video to the Zype Platform, Zype will create thumbnails for your video.
+You can also upload your own custom image that will be displayed as a video's thumbnail.
 To change your the thumbnail for your video, follow the steps below. Note, this is only
 to change your thumbnail from a video uploaded directly to the Zype Platform. It does not apply to
 thumbnails from an external data source like YouTube or Vimeo.
@@ -705,7 +706,16 @@ for and click on the "Thumbnails" tab.
 
 ![thumbnail 2]({{site.url}}assets/thumbnails/thumbnails_2.png)
 
-Select the thumbnail that you want. The thumbnail will automatically be updated!
+Select the thumbnail that you want OR choose to upload one from your harddrive.
+The thumbnail will automatically be updated!
+
+**Step 3:**
+
+![thumbnail 3]({{site.url}}assets/thumbnails/thumbnails_3.png)
+
+You can click the 'clear' button to remove custom thumbnails from a video.
+Once you've clicked clear, upload another image or choose from the auto-generated images we provide.
+Make sure to save your changes when done!
 
 <hr id='17'>
 
