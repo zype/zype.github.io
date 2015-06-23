@@ -704,17 +704,22 @@ for and click on the "Thumbnails" tab.
 
 **Step 2:**
 
+Select a thumbnail from our auto-generated selection
+
 ![thumbnail 2]({{site.url}}assets/thumbnails/thumbnails_2.png)
 
-Select the thumbnail that you want OR choose to upload one from your harddrive.
+OR choose to upload one from your harddrive.
+
+![thumbnail 3]({{site.url}}assets/thumbnails/thumbnails_3.png)
+
 The thumbnail will automatically be updated!
 
 **Step 3:**
 
-![thumbnail 3]({{site.url}}assets/thumbnails/thumbnails_3.png)
+![thumbnail 4]({{site.url}}assets/thumbnails/thumbnails_4.png)
 
-You can click the 'clear' button to remove custom thumbnails from a video.
-Once you've clicked clear, upload another image or choose from the auto-generated images we provide.
+You can click the 'remove' button to remove custom thumbnails from a video.
+Once you've clicked remove, upload another image or choose from the auto-generated images we provide.
 Make sure to save your changes when done!
 
 <hr id='17'>
