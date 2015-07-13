@@ -119,7 +119,7 @@ from there.
 <hr id="2">
 
 ## Adding videos from a Vimeo Channel, Group or User
-We're happy to provide you with a simple and powerful for importing your Vimeo videos to the Zype Platform. Below are the steps for grabbing your videos, no matter where they exist in Vimeo.
+We're happy to provide you with a simple and powerful tool for importing your Vimeo videos to the Zype Platform. Below are the steps for grabbing your videos, no matter where they exist in Vimeo.
 
 **Step 1:**
 
