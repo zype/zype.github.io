@@ -52,15 +52,13 @@ If you'd like more options, you can configure the embed code to meet your needs.
 
 One of the ways that Zype defends your video content is by expiring our video URLs after a set amount of time. We let you configure the time before expiration using the [Zype Platform.](http://admin.zype.com).
 
-If you want to edit your Player Expiration value, head over to your Site Settings by clicking on the gear at the top of the screen and clicking on settings.
+If you want to edit your **Player Expiration** value, head over to your **Player Settings** by clicking on the gear at the top of the screen and clicking on settings, then click the **Player Settings** tab.
 
-![site settings]({{site.url}}assets/Embedding a Player on Your Site2/setting.png)
+![embed code]({{site.url}}assets/embed_code/settings_menu.png)
 
-At the bottom of the Site Settings page is a value for Player Expiration, the default is 300 seconds or 5 minutes. You can change this value by typing directly into the box or using the step arrows on the side. The minimum value is 0, which means that your video url's will never expire. The maximum value is 2592000 seconds or one month. Edit the value as needed and click save changes.
+On the **Player Settings** tab, at the bottom of the page is a value for **Player Expiration,** the default is 300 seconds or 5 minutes. You can change this value by typing directly into the box or using the step arrows on the side. The minimum value is 0, which means that your video url's will never expire. The maximum value is 2592000 seconds or one month. Edit the value as needed and click **Save Changes.**
 
-![player expiration]({{site.url}}assets/Embedding a Player on Your Site2/300.png)
-
-That's it! You can confirm by clicking on Site Settings again scrolling to the bottom to see your changes.
+![embed code]({{site.url}}assets/embed_code/player_expiration.png)
 
 <hr id="3">
 
