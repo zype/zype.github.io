@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Zype Developer Portal | Platform Docs</title>
+    <meta name="description" content="This is the devloper portal for Zype Media. Zype is Revenue and Reach Magic for Online Video. We help content owners deliver fully branded video experiences.
+">
+
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="canonical" href="http://dev.zype.com//platform_docs/purchase_and_rental/">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-1376128-30', 'auto');
+    ga('create', 'UA-1376128-21', 'auto', {'name': 'global'});
+
+    ga('send', 'pageview');
+    ga('global.send', 'pageview');
+
+    </script>
+</head>
+
+
+<body>
+
+  <header id="header" style="overflow-y: scroll;">
+  <div id="content">
+    <a href="/"><img src="http://dev.zype.com/assets/logo.png" alt="Zype" />
+      <h1 id="title">Developer Portal</h1></a>
+      <p>a knowledge base</p>
+      <br>
+      <p class="category"><a href="/api_docs/intro/" style="color: #8acfef;">API Documentation</a></p>
+      <p class="category"><a href="/platform_docs/" style="color: #8acfef;">Platform Documentation</a></p>
+        <h4 class="api-header">Getting Started:</h4>
+          <p><a href="/platform_docs/overview/">Overview</a></p>
+          <p><a href="/platform_docs/adding_videos/">Adding Videos</a></p>
+          <p><a href="/platform_docs/creating_an_app/">Creating an App</a></p>
+          <p><a href="/platform_docs/embedding_a_player/">Embedding a Player</a></p>
+          <p><a href="/platform_docs/settings/">Settings</a></p>
+          <p><a href="/platform_docs/advertising/">Advertising</a></p>
+          <p><a href="/platform_docs/reports_and_analytics/">Reports and Analytics</a></p>
+          <p><a href="/platform_docs/video_troubleshooting/">Video Troubleshooting</a></p>
+        <h4 class="api-header">Learn About:</h4>
+          <p><a href="/platform_docs/videos/">Videos</a></p>
+          <p><a href="/platform_docs/apps/">Apps</a></p>
+          <p><a href="/platform_docs/player_rules/">Player Rules</a></p>
+          <p><a href="/platform_docs/playlists/">Playlists</a></p>
+          <p><a href="/platform_docs/categories/">Categories</a></p>
+          <p><a href="/platform_docs/assets/">Assets</a></p>
+          <p><a href="/platform_docs/consumers/">Consumers</a></p>
+          <p><a href="/platform_docs/plans/">Plans</a></p>
+          <p><a href="/platform_docs/subscriptions/">Subscriptions</a></p>
+          <p><a href="/platform_docs/purchase_and_rental/">Purchase and Rental</a></p>
+          <p><a href="/platform_docs/distribution/">Distribution</a></p>
+          <p><a href="/platform_docs/zobjects/">Zobjects</a></p>
+        <br>
+      <p class="category"><a href="/glossary/" style="color: #8acfef;">Glossary</a></p>
+      <p class="category"><a href="http://status.zype.com" style="color: #8acfef;">System Status</a></p>
+      <p class="category"><a href="/faq/" style="color: #8acfef;">FAQ</a></p>
+      <br>
+      <div class="hidden-mobile">
+        © 2015 Zype Media Group
+      </div>
+    </div>
+  </header>
+
+
+  <section id="main">
+    <h1 id="purchase-and-rental">Purchase and Rental</h1>
+<p>Purchase &amp; Rental allows you to make money from your videos by selling or renting them to your consumers. The Zype Platform supports Stripe and Braintree for credit card processing of transactions. You can also use the Zype Transaction API to extend the functionality listed here. Contact us for more info.</p>
+
+<div style="width: 100%;">
+  <div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>
+    <a href="#setup">Setting Up Purchase &amp; Rental</a>
+  </div>
+  <div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>
+    <a href="#enabling">Enabling Purchase &amp; Rental on Videos</a>
+  </div>
+  <div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>
+    <a href="#publishing">Publishing Your Videos</a>
+  </div>
+  <div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>
+    <a href="#overriding">Overriding the subscription embed</a>
+  </div>
+  <div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>
+    <a href="#managing">Managing Your Purchase/Rental Settings &amp; Consumers</a>
+  </div>
+  <div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>
+    <a href="#analytics">Purchase &amp; Rental Analytics</a>
+  </div>
+</div>
+
+<hr id="setup" />
+
+<h2 id="setting-up-purchase--rental">Setting Up Purchase &amp; Rental</h2>
+<p>To get started using Purchase &amp; Rental with Zype, login to your account and click on ‘Monetization’ in the sidebar.</p>
+
+<p>Click ‘Enable Purchase &amp; Rental’ and follow the prompts to get everything set up.</p>
+
+<p><img src="http://dev.zype.com/assets/purchase_and_rental_setup/monetization.png" alt="stripe settings" /></p>
+
+<p>Your subscription payments can be processed by Stripe or Braintree so you’ll need a Stripe or Braintree account to complete this process.</p>
+
+<p><strong>Stripe:</strong> <a href="https://dashboard.stripe.com/register">Click here</a> to sign up for a Stripe account or <a href="https://dashboard.stripe.com/account/apikeys">click here</a> to sign in and get your Stripe API Keys.</p>
+
+<p><strong>Braintree:</strong> <a href="https://www.braintreepayments.com/signup">Click here</a> to sign up for a Braintree account or <a href="https://www.braintreegateway.com/login">click here</a> to sign in and get your Braintree API Keys.</p>
+
+<p>Once completed setting up your account, you’ll either be shown an example embed code for the first video you added or a prompt to add videos if you haven’t done that already.</p>
+
+<p>When you return to the Monetization page, you’ll now see a breakdown of your purchases, rentals, consumers, and plans. Click on any one of these to find out more about your purchase &amp; rental business through Zype.</p>
+
+<hr id="enabling" />
+
+<h2 id="enabling-purchase--rental-on-videos">Enabling Purchase &amp; Rental on Videos</h2>
+
+<p>After you’ve setup your Stripe or Braintree info and completed the Purchase &amp; Rental Setup Wizard from the previous step, you will be prompted to turn “purchase” or “rental” on for all of your videos. To manage these settings on each video, go to the “Video Library” in the sidebar nav and then go to the Edit Video section by clicking on the video you want to edit. Once in the Edit Video screen, click on the “Monetization” tab.</p>
+
+<p><img src="http://dev.zype.com/assets/purchase_and_rental_setup/monetization-tab.png" alt="monetization tab" /></p>
+
+<p>Once you click the monetization tab, you can edit the settings for your video. You can only enable one type of monetization per video at any given time. For example, if you enable subscription then you cannot enable purchase or rental and vice versa. This screen also let’s you set the purchase or rental price for the individual video as well as setting the rental duration.</p>
+
+<p><img src="http://dev.zype.com/assets/purchase_and_rental_setup/monetization-tab-detail.png" alt="monetization tab detail" /></p>
+
+<hr id="publishing" />
+
+<h2 id="publishing-your-videos">Publishing Your Videos</h2>
+
+<p>To publish your videos on your website, simply grab the embed code from the “Embed” tab of the Edit Video screen from the previous step and paste it into your web site code:</p>
+
+<p>Make sure the “Paywall” toggle is set to “ON” to enable the purchase, rental, or subscription paywalls in the player.</p>
+
+<p><img src="http://dev.zype.com/assets/purchase_and_rental_setup/embed-code.png" alt="embed code" /></p>
+
+<hr id="overriding" />
+
+<h2 id="overriding-the-subscription-embed">Overriding the subscription embed</h2>
+
+<p>You are able to override the default embed settings on a per embed basis using JavaScript. For example, when you copy your embed code, you can add additional JS inside your script tag.</p>
+
+<table>
+  <tr>
+    <th>Variable</th>
+    <th>Example</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>backgroundColor</td>
+    <td>zype.backgroundColor = ‘#264547’;</td>
+    <td>Hexcolor of background if no video thumbnail</td>
+  </tr>
+  <tr>
+    <td>autoPlay</td>
+    <td>zype.autoPlay = true;</td>
+    <td>Whether or not videos should autoplay</td>
+  </tr>
+  <tr>
+    <td>appName</td>
+    <td>zype.appName = ‘My app name’;</td>
+    <td>Name of your app</td>
+  </tr>
+  <tr>
+    <td>showZype</td>
+    <td>zype.showZype = true;</td>
+    <td>Whether or not to show “Powered by Zype”</td>
+  </tr>
+  <tr>
+    <td>couponsEnabled</td>
+    <td>zype.couponsEnabled = true</td>
+    <td>Whether or not to have the coupon code field on new subscription sign ups</td>
+  </tr>
+</table>
+
+<hr id="managing" />
+
+<h2 id="managing-your-purchaserental-settings--consumers">Managing Your Purchase/Rental Settings &amp; Consumers</h2>
+
+<p>You can update your Purchase &amp; Rental settings, view your consumers, or each individual transaction.</p>
+
+<p><img src="http://dev.zype.com/assets/purchase_and_rental_setup/manage-purchase.png" alt="manage purchase" /></p>
+
+<p>Click on “Manage Purchase &amp; Rental Settings” to edit the default settings for your video business.</p>
+
+<p><img src="http://dev.zype.com/assets/purchase_and_rental_setup/edit-purchase.png" alt="edit purchase" /></p>
+
+<p>Click on “Consumers” to see a list of consumers that have purchased or rented your content. You can then easily edit the details or an individual consumer and see their unique activity:</p>
+
+<p><img src="http://dev.zype.com/assets/purchase_and_rental_setup/consumer-details.png" alt="consumer details" /></p>
+
+<p>Click “Transactions” to see a list of all your transactions:</p>
+
+<p><img src="http://dev.zype.com/assets/purchase_and_rental_setup/transactions.jpg" alt="transactions" /></p>
+
+<hr id="analytics" />
+
+<h2 id="purchase--rental-analytics">Purchase &amp; Rental Analytics</h2>
+
+<p>You can track how much revenue you’re generating easily on the Zype Platform. Just go to the Analytics section in the navbar and see your total monthly revenue, number of consumers, and engagement by video.</p>
+
+<p><img src="http://dev.zype.com/assets/purchase_and_rental_setup/analytics.png" alt="analytics" /></p>
+
+  </section>
+
+  <footer id="footer">
+  <p style="padding-top: 10px;">
+    © 2015 Zype Media Group
+  </p>
+</footer>
+
+
+</body>
+
+</html>

@@ -7,30 +7,24 @@ permalink: /platform_docs/purchase_and_rental/
 Purchase & Rental allows you to make money from your videos by selling or renting them to your consumers. The Zype Platform supports Stripe and Braintree for credit card processing of transactions. You can also use the Zype Transaction API to extend the functionality listed here. Contact us for more info.
 
 <div style="width: 100%;">
-<div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>
-<a href="#1">
-All-In-One embeddable subscription Widget</a>
-</div>
-<div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>
-<a href="#2">
-Overriding the subscription embed</a>
-</div>
-<div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>
-<a href="#3">
-Coupons</a>
-</div>
-<div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>
-<a href="#4">
-Creating a subscription</a>
-</div>
-<div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>
-<a href="#5">
-Viewing subscriptions</a>
-</div>
-<div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>
-<a href="#6">
-Canceling a subscription</a>
-</div>
+  <div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>
+    <a href="#setup">Setting Up Purchase & Rental</a>
+  </div>
+  <div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>
+    <a href="#enabling">Enabling Purchase & Rental on Videos</a>
+  </div>
+  <div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>
+    <a href="#publishing">Publishing Your Videos</a>
+  </div>
+  <div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>
+    <a href="#overriding">Overriding the subscription embed</a>
+  </div>
+  <div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>
+    <a href="#managing">Managing Your Purchase/Rental Settings & Consumers</a>
+  </div>
+  <div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>
+    <a href="#analytics">Purchase & Rental Analytics</a>
+  </div>
 </div>
 
 <hr id="setup">
