@@ -41,9 +41,9 @@ Your subscription payments can be processed by Stripe or Braintree so you’ll n
 
 **Braintree:** [Click here](https://www.braintreepayments.com/signup) to sign up for a Braintree account or [click here](https://www.braintreegateway.com/login) to sign in and get your Braintree API Keys.
 
-Once completed setting up your account, you’ll either be shown an example embed code for the first video you added or a prompt to add videos if you haven’t done that already.
+Once you’ve completed setting up your account, you’ll either be shown an example embed code for the first video you added or a prompt to add videos if you haven’t done that already.
 
-When you return to the Monetization page, you’ll now see a breakdown of your purchases, rentals, consumers, and plans. Click on any one of these to find out more about your purchase & rental business through Zype.
+When you return to the Monetization page, you’ll now see a breakdown of your purchases, rentals, consumers, and plans. Click on any one of these to find out more about your Purchase & Rental business through Zype.
 
 <hr id="enabling">
 ## Enabling Purchase & Rental on Videos
@@ -52,7 +52,7 @@ After you’ve setup your Stripe or Braintree info and completed the Purchase & 
 
 ![monetization tab]({{site.url}}assets/purchase_and_rental_setup/monetization-tab.png)
 
-Once you click the monetization tab, you can edit the settings for your video. You can only enable one type of monetization per video at any given time. For example, if you enable subscription then you cannot enable purchase or rental and vice versa. This screen also let’s you set the purchase or rental price for the individual video as well as setting the rental duration.
+Once you click the monetization tab, you can edit the settings for your video. You can only enable one type of monetization per video at any given time. For example, if you enable subscription then you cannot enable purchase or rental and vice versa. This screen also lets you set the purchase or rental price for the individual video as well as setting the rental duration.
 
 ![monetization tab detail]({{site.url}}assets/purchase_and_rental_setup/monetization-tab-detail.png)
 
