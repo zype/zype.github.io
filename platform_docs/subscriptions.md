@@ -5,7 +5,7 @@ permalink: /platform_docs/subscriptions/
 ---
 ## Subscriptions
 Subscriptions combine consumers and plans and allow you to make money from your videos.
-The Zype Platform supports Stripe for credit card processing of consumers.
+The Zype Platform supports Stripe and Braintree for credit card processing of consumers.
 
 <div style="width: 100%;">
 <div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>
