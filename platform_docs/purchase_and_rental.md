@@ -48,7 +48,7 @@ When you return to the Monetization page, you’ll now see a breakdown of your p
 <hr id="enabling">
 ## Enabling Purchase & Rental on Videos
 
-After you’ve setup your Stripe or Braintree info and completed the Purchase & Rental Setup Wizard from the previous step, you will be prompted to turn “purchase” or “rental” on for all of your videos. To manage these settings on each video, go to the “Video Library” in the sidebar nav and then go to the Edit Video section by clicking on the video you want to edit. Once in the Edit Video screen, click on the “Monetization” tab.
+After you’ve set up your Stripe or Braintree info and completed the Purchase & Rental Setup Wizard from the previous step, you will be prompted to turn “purchase” or “rental” on for all of your videos. To manage these settings on each video, go to the “Video Library” in the sidebar nav and then go to the Edit Video section by clicking on the video you want to edit. Once in the Edit Video screen, click on the “Monetization” tab.
 
 ![monetization tab]({{site.url}}assets/purchase_and_rental_setup/monetization-tab.png)
 
