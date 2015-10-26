@@ -172,6 +172,6 @@ This is what your customers will see on their credit card statement (22 characte
 
 ### Show Zype Branding
 
-By default we display a Zype logo at the bottom of your subscription embeds. To hide this it, switch off this setting.
+By default we display a Zype logo at the bottom of your subscription embeds. To hide it, switch off this setting.
 
 ![Powered by Zype]({{site.url}}assets/Connecting Stripe/powered-by-zype.jpg)
