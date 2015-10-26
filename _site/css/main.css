@@ -275,7 +275,8 @@ header h4 {
   padding-top: 80px;
   padding-left: 100px; }
   #main ul {
-    padding-left: 0 !important; }
+    padding-left: 0 !important;
+    margin-left: 20px; }
 
 #header {
   background-color: #423e3e;

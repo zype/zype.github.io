@@ -83,23 +83,27 @@
 <p>You can use the settings dashboard to set your global configurations.</p>
 
 <div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>
-<a href="#1">
+<a href="#monetization">
 Monetization</a>
 </div>
 <div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>
-<a href="#2">
+<a href="#player_settings">
 Player Settings</a>
 </div>
 <div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>
-<a href="#3">
+<a href="#player_branding">
 Player Branding</a>
 </div>
 <div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>
-<a href="#4">
+<a href="#player_messaging">
 Player Messaging</a>
 </div>
+<div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>
+<a href="#smtp">
+SMTP Settings</a>
+</div>
 
-<hr id="1" />
+<hr id="monetization" />
 
 <h2 id="monetization">Monetization</h2>
 
@@ -111,7 +115,7 @@ to utilize Zype subscription services.</p>
 
 <p><img src="http://dev.zype.com/assets/settings/monetization.png" alt="monetization" /></p>
 
-<hr id="2" />
+<hr id="player_settings" />
 
 <h2 id="player-settings">Player Settings</h2>
 
@@ -150,7 +154,7 @@ Tracking Object, <a href="https://support.google.com/analytics/answer/1008080?hl
 minutes). You can choose to change this time. If you prefer to not have your player
 url expires, you can set expiration to 0.</p>
 
-<hr id="3" />
+<hr id="player_branding" />
 
 <h2 id="player-branding">Player Branding</h2>
 
@@ -182,7 +186,7 @@ url expires, you can set expiration to 0.</p>
 
 <p><img src="http://dev.zype.com/assets/player_logo/confirm.png" alt="confirm" /></p>
 
-<hr id="4" />
+<hr id="player_messaging" />
 
 <h2 id="player-messaging">Player Messaging</h2>
 <p>Zype allows you to customize the messages a viewer sees if a video cannot be served
@@ -204,6 +208,30 @@ use the Settings Dashboard to customize these settings.</p>
 <p>This is an example of a player message:</p>
 
 <p><img src="http://dev.zype.com/assets/settings/messaging_ex.png" alt="player message example" /></p>
+
+<hr id="smtp" />
+
+<h2 id="smtp-settings">SMTP Settings</h2>
+<p>If you are using our Paywall Embed for Subscription, Purchase, or Rental, it is highly recommended that you use your own SMTP service for email delivery.</p>
+
+<p>Using your own SMTP service will allow for more reliable email sending for emails such as purchase/subscription confirmations, password reset emails, and other emails that our Paywall Embed will send on your behalf.</p>
+
+<p>You can use any mail sending service as long as it supports SMTP. If you’d like a recommendation, we suggest <a href="https://www.mailgun.com/">Mailgun</a>.</p>
+
+<p>Please note that the domain name you setup on your mail service should match the domain name of the site you are hosting you Paywall Embeds on.</p>
+
+<p>Once you have signed up for a mail service, you’ll need the following SMTP information:</p>
+
+<ul>
+  <li>SMTP Address</li>
+  <li>SMTP Port</li>
+  <li>SMTP User Name</li>
+  <li>SMTP Password</li>
+</ul>
+
+<p>To set these items on Zype go to <a href="https://admin.zype.com/site/edit">Settings</a> and click the SMTP tab. Enter the settings, then click Save Changes.</p>
+
+<p><img src="http://dev.zype.com/assets/settings/smtp.png" alt="SMTP Settings Example" /></p>
 
   </section>
 
