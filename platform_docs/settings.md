@@ -142,7 +142,7 @@ Using your own SMTP service will allow for more reliable email sending for email
 
 You can use any mail sending service as long as it supports SMTP. If you'd like a recommendation, we suggest [Mailgun](https://www.mailgun.com/).
 
-Please note that the domain name you setup on your mail service should match the domain name of the site you are hosting you Paywall Embeds on.
+Please note that the domain name you setup on your mail service should match the domain name of the site you are hosting your Paywall Embeds on.
 
 Once you have signed up for a mail service, you'll need the following SMTP information:
 
