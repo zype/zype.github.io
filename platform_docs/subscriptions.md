@@ -32,6 +32,10 @@ Viewing subscriptions</a>
 <a href="#6">
 Canceling a subscription</a>
 </div>
+<div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>
+<a href="#subscription_settings">
+Subscription Settings</a>
+</div>
 </div>
 
 <hr id="1">
@@ -126,3 +130,48 @@ Then, click the red button for the subscription that you want to cancel.
 ![canceling a subscription]({{site.url}}assets/Connecting Stripe/delete_cust.png)
 
 This will remove the subscription from Stripe.
+
+<hr id="subscription_settings">
+
+## Subscription Settings
+
+In order to manage your subscription settings:
+
+- In the nav on the left, click <b>Make Money</b>.
+- Click the <b>Manage Subscription Settings</b> button.
+
+![Settings]({{site.url}}assets/Connecting Stripe/settings.png)
+
+### Logo
+
+This logo will be displayed when users are interacting with your subscription service.
+
+### Background Color
+
+This color will be displayed in your player if the video being shown does not have a thumbnail.
+
+### Contact Email
+
+The email that messages to your customers will be sent from.
+
+### Terms of Service
+
+If you have a TOS that users must agree to before subscribing, add a link to it here.
+
+### Privacy policy
+
+We recommend a Privacy Policy URL that allows you to reflect the privacy policy of your service.
+
+### Coupons Enabled
+
+Determines whether or not subscribers can use coupons.
+
+### Statement Description
+
+This is what your customers will see on their credit card statement (22 character limit). Stripe only.
+
+### Show Zype Branding
+
+By default we display a Zype logo at the bottom of your subscription embeds. To hide it, switch off this setting.
+
+![Powered by Zype]({{site.url}}assets/Connecting Stripe/powered-by-zype.jpg)

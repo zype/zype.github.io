@@ -25,6 +25,9 @@ Purchase & Rental allows you to make money from your videos by selling or rentin
   <div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>
     <a href="#analytics">Purchase & Rental Analytics</a>
   </div>
+  <div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>
+    <a href="#purchase_rental_settings">Purchase & Rental Settings</a>
+  </div>
 </div>
 
 <hr id="setup">
@@ -128,3 +131,44 @@ Click “Transactions” to see a list of all your transactions:
 You can track how much revenue you’re generating easily on the Zype Platform. Just go to the Analytics section in the navbar and see your total monthly revenue, number of consumers, and engagement by video.
 
 ![analytics]({{site.url}}assets/purchase_and_rental_setup/analytics.png)
+
+<hr id="purchase_rental_settings">
+
+## Purchase & Rental Settings
+
+In order to manage your Purchase & Rental settings:
+
+- In the nav on the left, click <b>Make Money</b>.
+- Click the <b>Manage Purchase & Rental Settings</b> button.
+
+![settings]({{site.url}}assets/purchase_and_rental_setup/settings.png)
+
+### Logo
+
+This logo will be displayed when users are interacting with your subscription service.
+
+### Email
+
+The email that messages to your customers will be sent from.
+
+### Terms of Service
+
+If you have a TOS that users must agree to before subscribing, add a link to it here.
+
+### Show Zype Branding
+
+By default we display a Zype logo at the bottom of your subscription embeds. To hide it, switch off this setting.
+
+![Powered by Zype]({{site.url}}assets/Connecting Stripe/powered-by-zype.jpg)
+
+### Default Purchase Price
+
+The default price you'd like your videos to be purchased for.
+
+### Default Rental Price
+
+The default price you'd like your videos to be rented for.
+
+### Default Rental Duration (Days)
+
+The default length of time a rental for this video is valid for.
