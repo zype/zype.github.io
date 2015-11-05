@@ -6,13 +6,21 @@
 </description>
     <link>http://dev.zype.com//</link>
     <atom:link href="http://dev.zype.com//feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Thu, 05 Nov 2015 12:19:05 -0500</pubDate>
-    <lastBuildDate>Thu, 05 Nov 2015 12:19:05 -0500</lastBuildDate>
+    <pubDate>Thu, 05 Nov 2015 17:30:24 -0500</pubDate>
+    <lastBuildDate>Thu, 05 Nov 2015 17:30:24 -0500</lastBuildDate>
     <generator>Jekyll v2.3.0</generator>
     
       <item>
-        <title>Analytics: Adding Tracking Partner and Tracking Codes</title>
-        <description>&lt;p&gt;If you are embedding your videos on 3rd party sites and would like to track player impressions, you can add Tracking Partner ids and Tracking Code ids to your Embed Codes.&lt;/p&gt;
+        <title>Analytics: Domains, Tracking Partners, and Tracking Codes</title>
+        <description>&lt;h1 id=&quot;domains&quot;&gt;Domains&lt;/h1&gt;
+&lt;p&gt;You can now track your player impressions by domain. This comes in handy if you are embedding your videos on more than one site and want to see which is the most popular.&lt;/p&gt;
+
+&lt;p&gt;The &lt;a href=&quot;https://admin.zype.com/analytics&quot;&gt;Zype Analytics Dashboard&lt;/a&gt; will show you your top domain requests. Clicking the table will give you more details.&lt;/p&gt;
+
+&lt;h1 id=&quot;tracking-partner-and-tracking-codes&quot;&gt;Tracking Partner and Tracking Codes&lt;/h1&gt;
+
+&lt;p&gt;If you are embedding your videos on 3rd party sites and would like to track player impressions beyond just tracking the referring Domain, you can add Tracking Partner and Tracking Codes to your Embed Codes.
+This is useful if you have specific campaigns or goals. For example, if your player is part of a social media promotion campaign, you may want to map the Tracking Partner to your ad agency, and the tracking code to a specific campaign or project.&lt;/p&gt;
 
 &lt;p&gt;The general format for usage is:&lt;/p&gt;
 

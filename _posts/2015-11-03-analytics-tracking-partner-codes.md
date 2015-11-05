@@ -1,11 +1,19 @@
 ---
 layout: post
-title:  "Analytics: Adding Tracking Partner and Tracking Codes"
+title:  "Analytics: Domains, Tracking Partners, and Tracking Codes"
 date:   2015-11-03 10:04:55
 categories: developers
 ---
 
-If you are embedding your videos on 3rd party sites and would like to track player impressions, you can add Tracking Partner ids and Tracking Code ids to your Embed Codes.
+# Domains #
+You can now track your player impressions by domain. This comes in handy if you are embedding your videos on more than one site and want to see which is the most popular.
+
+The <a href="https://admin.zype.com/analytics">Zype Analytics Dashboard</a> will show you your top domain requests. Clicking the table will give you more details.
+
+# Tracking Partner and Tracking Codes #
+
+If you are embedding your videos on 3rd party sites and would like to track player impressions beyond just tracking the referring Domain, you can add Tracking Partner and Tracking Codes to your Embed Codes.
+This is useful if you have specific campaigns or goals. For example, if your player is part of a social media promotion campaign, you may want to map the Tracking Partner to your ad agency, and the tracking code to a specific campaign or project.
 
 The general format for usage is:
 
