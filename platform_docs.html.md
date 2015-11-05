@@ -57,9 +57,9 @@ Below are a bunch of short tutorials (with pictures!) to help you with a number 
     <a href="/posts/2014/12/04/zobjects-in-the-zype-platform/">
     Zobjects</a>
     </div>
-    <div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>
+    <!-- <div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>
       <a href="/posts/2015/11/03/analytics-tracking-partner-codes/">Analytics: Adding Tracking Partner and Tracking Codes</a>
-    </div>
+    </div> -->
 
   </div>
 
