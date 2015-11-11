@@ -31,6 +31,10 @@
     ga('global.send', 'pageview');
 
     </script>
+
+    <!-- Start of zypetrial Zendesk Widget script -->
+    <script>/*<![CDATA[*/window.zEmbed||function(e,t){var n,o,d,i,s,a=[],r=document.createElement("iframe");window.zEmbed=function(){a.push(arguments)},window.zE=window.zE||window.zEmbed,r.src="javascript:false",r.title="",r.role="presentation",(r.frameElement||r).style.cssText="display: none",d=document.getElementsByTagName("script"),d=d[d.length-1],d.parentNode.insertBefore(r,d),i=r.contentWindow,s=i.document;try{o=s}catch(c){n=document.domain,r.src='javascript:var d=document.open();d.domain="'+n+'";void(0);',o=s}o.open()._l=function(){var o=this.createElement("script");n&&(this.domain=n),o.id="js-iframe-async",o.src=e,this.t=+new Date,this.zendeskHost=t,this.zEQueue=a,this.body.appendChild(o)},o.write('<body onload="document._l();">'),o.close()}("https://assets.zendesk.com/embeddable_framework/main.js","zypetrial.zendesk.com");/*]]>*/</script>
+    <!-- End of zypetrial Zendesk Widget script -->
 </head>
 
 
@@ -218,13 +222,13 @@ given an end user’s device and geolocation. Set dpt to equal true in your GET 
 
 <p>3a. To make the API call to get the appropriate player</p>
 
-<div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="no">GET</span> <span class="ss">http</span><span class="p">:</span><span class="sr">//</span><span class="n">api</span><span class="o">.</span><span class="n">zype</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">videos</span><span class="o">/</span><span class="p">{</span><span class="n">video_id</span><span class="p">}</span><span class="o">/</span><span class="n">player</span><span class="o">/</span><span class="p">?</span><span class="n">api_key</span><span class="o">=</span><span class="p">{</span><span class="n">api_key</span><span class="p">}</span><span class="o">&amp;</span><span class="n">player_key</span><span class="o">=</span><span class="p">{</span><span class="n">player_key</span><span class="p">}</span></code></pre></div>
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="no">GET</span> <span class="n">http</span><span class="ss">:/</span><span class="o">/</span><span class="n">api</span><span class="p">.</span><span class="nf">zype</span><span class="p">.</span><span class="nf">com</span><span class="o">/</span><span class="n">videos</span><span class="o">/</span><span class="p">{</span><span class="n">video_id</span><span class="p">}</span><span class="o">/</span><span class="n">player</span><span class="o">/</span><span class="p">?</span><span class="n">api_key</span><span class="o">=</span><span class="p">{</span><span class="n">api_key</span><span class="p">}</span><span class="o">&amp;</span><span class="n">player_key</span><span class="o">=</span><span class="p">{</span><span class="n">player_key</span><span class="p">}</span></code></pre></figure>
 
 <p>3b. To use the <a href="https://github.com/edla/zype-cli">Zype Ruby Gem</a> to get the appropriate player</p>
 
-<div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="vi">@zype_cli</span> <span class="o">=</span> <span class="no">Zype</span><span class="o">::</span><span class="no">Client</span><span class="o">.</span><span class="n">new</span>
-<span class="vi">@video</span> <span class="o">=</span> <span class="vi">@zype_cli</span><span class="o">.</span><span class="n">videos</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="n">params</span><span class="o">[</span><span class="ss">:video_id</span><span class="o">]</span><span class="p">)</span>
-<span class="vi">@player</span> <span class="o">=</span> <span class="vi">@video</span><span class="o">.</span><span class="n">player</span><span class="p">(</span><span class="ss">player_key</span><span class="p">:</span> <span class="n">params</span><span class="o">[</span><span class="ss">:player_key</span><span class="o">]</span><span class="p">)</span></code></pre></div>
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="vi">@zype_cli</span> <span class="o">=</span> <span class="no">Zype</span><span class="o">::</span><span class="no">Client</span><span class="p">.</span><span class="nf">new</span>
+<span class="vi">@video</span> <span class="o">=</span> <span class="vi">@zype_cli</span><span class="p">.</span><span class="nf">videos</span><span class="p">.</span><span class="nf">find</span><span class="p">(</span><span class="n">params</span><span class="p">[</span><span class="ss">:video_id</span><span class="p">])</span>
+<span class="vi">@player</span> <span class="o">=</span> <span class="vi">@video</span><span class="p">.</span><span class="nf">player</span><span class="p">(</span><span class="ss">player_key: </span><span class="n">params</span><span class="p">[</span><span class="ss">:player_key</span><span class="p">])</span></code></pre></figure>
 
 <p><em>Check our <a href="http://dev.zype.com/posts/2014/10/10/adding-zype-to-rails/">previous post</a>
 on how to set up your Rails app with the Zype Gem!</em></p>
@@ -241,7 +245,7 @@ of who’s viewing your content and what times of the day are most popular for v
 
 <p>After you’ve uploaded some video content to the Zype platform, log in through the <a href="http://admin.zype.com/">admin portal</a>
 and navigate to the logs section under the settings dropdown menu. In this post, we’ll cover the request logs,
-so feel free to click on that link once you see the logs menu.  </p>
+so feel free to click on that link once you see the logs menu.</p>
 
 <p><img src="http://dev.zype.com/assets/Monitoring Your Views/log_navigation_1.png" alt="dpt logs navigation" /></p>
 
@@ -738,8 +742,8 @@ to be located on your page.</p>
 The player_key is required and can be found in Settings &gt; API. Autoplay and subscription_id
 are optional.</p>
 
-<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&#39;zype_player&#39;</span><span class="nt">&gt;&lt;/div&gt;</span>
-<span class="nt">&lt;script </span><span class="na">id=</span><span class="s">&#39;zype_player_js&#39;</span> <span class="na">src=</span><span class="s">&#39;https://api.zype.com/embed/{video_id}.js?autoplay={boolean}&amp;player_key={player_key}&amp;subscription_id={subscription_id}&#39;</span> <span class="na">type=</span><span class="s">&#39;text/javascript&#39;</span><span class="nt">&gt;&lt;/script&gt;</span></code></pre></div>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">'zype_player'</span><span class="nt">&gt;&lt;/div&gt;</span>
+<span class="nt">&lt;script </span><span class="na">id=</span><span class="s">'zype_player_js'</span> <span class="na">src=</span><span class="s">'https://api.zype.com/embed/{video_id}.js?autoplay={boolean}&amp;player_key={player_key}&amp;subscription_id={subscription_id}'</span> <span class="na">type=</span><span class="s">'text/javascript'</span><span class="nt">&gt;&lt;/script&gt;</span></code></pre></figure>
 
 <hr id="15" />
 

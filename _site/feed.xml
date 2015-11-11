@@ -6,9 +6,9 @@
 </description>
     <link>http://dev.zype.com//</link>
     <atom:link href="http://dev.zype.com//feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Fri, 06 Nov 2015 17:07:24 -0500</pubDate>
-    <lastBuildDate>Fri, 06 Nov 2015 17:07:24 -0500</lastBuildDate>
-    <generator>Jekyll v2.3.0</generator>
+    <pubDate>Wed, 11 Nov 2015 13:09:22 -0500</pubDate>
+    <lastBuildDate>Wed, 11 Nov 2015 13:09:22 -0500</lastBuildDate>
+    <generator>Jekyll v3.0.0</generator>
     
       <item>
         <title>Analytics: Domains, Tracking Partners, and Tracking Codes</title>
@@ -170,6 +170,35 @@ remaining rows be the your category values!&lt;/p&gt;
       </item>
     
       <item>
+        <title>Change Video Thumbnails</title>
+        <description>&lt;p&gt;When you upload a video to the Zype Platform, Zype will create thumbnails for your video.
+To change your the thumbnail for your video, follow the steps below. Note, this is only
+to change your thumbnail from a video uploaded directly to the Zype Platform. It does not apply to
+thumbnails from an external data source like YouTube or Vimeo.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Step 1:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://dev.zype.com/assets/thumbnails/thumbnails_1.png&quot; alt=&quot;thumbnail 1&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;From your video library, click on the video that you want to change the thumbnail
+for and click on the “Thumbnails” tab.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Step 2:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://dev.zype.com/assets/thumbnails/thumbnails_2.png&quot; alt=&quot;thumbnail 2&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Select the thumbnail that you want. The thumbnail will automatically be updated!&lt;/p&gt;
+</description>
+        <pubDate>Thu, 09 Apr 2015 06:37:55 -0400</pubDate>
+        <link>http://dev.zype.com//posts/2015/04/09/change-thumbnails</link>
+        <guid isPermaLink="true">http://dev.zype.com//posts/2015/04/09/change-thumbnails</guid>
+        
+        
+        <category>developers</category>
+        
+      </item>
+    
+      <item>
         <title>Forgot Password</title>
         <description>&lt;p&gt;You can reset your password by going to &lt;a href=&quot;https://admin.zype.com/&quot;&gt;the Zype Platform&lt;/a&gt;
 and following the photo tutorial below.&lt;/p&gt;
@@ -201,35 +230,6 @@ and following the photo tutorial below.&lt;/p&gt;
         <pubDate>Thu, 09 Apr 2015 06:37:55 -0400</pubDate>
         <link>http://dev.zype.com//posts/2015/04/09/forgot-password</link>
         <guid isPermaLink="true">http://dev.zype.com//posts/2015/04/09/forgot-password</guid>
-        
-        
-        <category>developers</category>
-        
-      </item>
-    
-      <item>
-        <title>Change Video Thumbnails</title>
-        <description>&lt;p&gt;When you upload a video to the Zype Platform, Zype will create thumbnails for your video.
-To change your the thumbnail for your video, follow the steps below. Note, this is only
-to change your thumbnail from a video uploaded directly to the Zype Platform. It does not apply to
-thumbnails from an external data source like YouTube or Vimeo.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Step 1:&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://dev.zype.com/assets/thumbnails/thumbnails_1.png&quot; alt=&quot;thumbnail 1&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;From your video library, click on the video that you want to change the thumbnail
-for and click on the “Thumbnails” tab.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Step 2:&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://dev.zype.com/assets/thumbnails/thumbnails_2.png&quot; alt=&quot;thumbnail 2&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Select the thumbnail that you want. The thumbnail will automatically be updated!&lt;/p&gt;
-</description>
-        <pubDate>Thu, 09 Apr 2015 06:37:55 -0400</pubDate>
-        <link>http://dev.zype.com//posts/2015/04/09/change-thumbnails</link>
-        <guid isPermaLink="true">http://dev.zype.com//posts/2015/04/09/change-thumbnails</guid>
         
         
         <category>developers</category>
