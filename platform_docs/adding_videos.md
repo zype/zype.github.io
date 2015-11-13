@@ -78,43 +78,64 @@ be able to play your video and select your video thumbnail.
 <hr id="1">
 
 ## Adding videos from a YouTube Channel
-We simplified the process of searching for and importing a YouTube Channel into the Zype Platform.
-Before, you had to manually go to YouTube and find your Channel ID. This was a cumbersome
-process. Now you can search for a YouTube Channel from the Zype Platform and we will get the Channel ID for you.
+We've made the process of importing videos from your YouTube Channel even simpler. You can upload a single video, a channel, or import videos from an authenticated YouTube account.
 
-**Step 1:**
+### Overview ###
 
-Go to Video Sources and click on the YouTube icon.
+Go to the Zype dashboard and from the left nav click Import & Upload, then click YouTube.
 
-![click youtube]({{site.url}}assets/Adding Videos from a YouTube Channel to the Zype Platform/click_youtube.png)
-**Step 2:**
+![click youtube]({{site.url}}assets/Adding Videos from a YouTube Channel to the Zype Platform/youtube-import/image06.png)
 
-Enter a name for your YouTube video source (something to help you remember it!) and click the
-Search YouTube Channel's button
+### Import a Single Video ###
 
-![search youtube channels]({{site.url}}assets/Adding Videos from a YouTube Channel to the Zype Platform/search_youtube_channel.png)
+To import a single video, paste a single video URL and click the Continue button:
 
-**Step 3:**
+![click youtube]({{site.url}}assets/Adding Videos from a YouTube Channel to the Zype Platform/youtube-import/image07.png)
 
-Enter the channel name that you are searching for and click Search. You will be
-given a list of YouTube Channels that match your search criteria. Click the Select Channel
-button for the YouTube Channel that you want to add.
+Once you’ve successfully imported your video you can view it by clicking the Manage Video button:
 
-![click select channel]({{site.url}}assets/Adding Videos from a YouTube Channel to the Zype Platform/select_channel.png)
+![click youtube]({{site.url}}assets/Adding Videos from a YouTube Channel to the Zype Platform/youtube-import/image03.png)
 
-**Step 4:**
+### Import a Channel ###
 
-This will prepopulate the Channel ID for you. All you need to do is click Save Changes
-and the Zype Platform will start to import all of the videos from the channel that you selected!
+To import an entire channel, paste a YouTube channel URL into the text field and click the Continue button:
 
-![click submit]({{site.url}}assets/Adding Videos from a YouTube Channel to the Zype Platform/youtube_save_changes.png)
+![click youtube]({{site.url}}assets/Adding Videos from a YouTube Channel to the Zype Platform/youtube-import/image02.png)
 
-**Step 5:**
+If you don’t have an URL, you can look for a channel using keywords in the same text field.
+If the search is successful you can see a drop-down with all YouTube channel suggestions. Select any channel name and click the Continue button to proceed.
 
-Your imported videos are in your import videos page. You can add videos to your catalog
-from there.
+![click youtube]({{site.url}}assets/Adding Videos from a YouTube Channel to the Zype Platform/youtube-import/image05.png)
 
-![import videos]({{site.url}}assets/Adding Videos from a YouTube Channel to the Zype Platform/add_video.png)
+### Import from a Connected Account ###
+
+You also have the ability to import videos from your own YouTube channel by clicking the
+Connect To Account button and proceeding with the Google authorization instructions:
+
+![click youtube]({{site.url}}assets/Adding Videos from a YouTube Channel to the Zype Platform/youtube-import/image08.png)
+
+The next step is to review and select videos from a chosen YouTube channel.
+Select the videos you'd like to add into Video Library and click the Next button. You may also filter video results using the text field in the table header or select all videos by clicking the choose all checkbox.
+
+![click youtube]({{site.url}}assets/Adding Videos from a YouTube Channel to the Zype Platform/youtube-import/image01.png)
+
+The next step allows you to customize your import.
+
+![click youtube]({{site.url}}assets/Adding Videos from a YouTube Channel to the Zype Platform/youtube-import/image00.png)
+
+There are several controls that allow you to customize your import:
+
+1. By clicking this checkbox only the metadata of selected videos will be imported.
+2. By clicking this checkbox the video content and metadata of selected videos will be imported.
+3. When turned on, new videos uploaded to this channel will automatically be added to your library.
+4. When turned on, new videos uploaded to this channel will automatically be made active when added to your video library.
+5. Name for the import (and newly created video source object ). Only you will see this name as a way of organizing your imports.
+
+When you’re all set, click the Complete Import button.
+
+Once you’ve successfully imported your YouTube channel you can find all the new videos in Video Imports and selected videos in Video Library.
+
+![click youtube]({{site.url}}assets/Adding Videos from a YouTube Channel to the Zype Platform/youtube-import/image04.png)
 
 <hr id="2">
 

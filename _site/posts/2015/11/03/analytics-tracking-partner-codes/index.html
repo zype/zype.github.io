@@ -11,7 +11,7 @@
 ">
 
     <link rel="stylesheet" href="/css/main.css">
-    <link rel="canonical" href="http://dev.zype.com//posts/2015/11/03/analytics-tracking-partner-codes">
+    <link rel="canonical" href="http://localhost:4000//posts/2015/11/03/analytics-tracking-partner-codes">
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 
     <!--[if lt IE 9]>
@@ -31,6 +31,10 @@
     ga('global.send', 'pageview');
 
     </script>
+
+    <!-- Start of zypetrial Zendesk Widget script -->
+    <script>/*<![CDATA[*/window.zEmbed||function(e,t){var n,o,d,i,s,a=[],r=document.createElement("iframe");window.zEmbed=function(){a.push(arguments)},window.zE=window.zE||window.zEmbed,r.src="javascript:false",r.title="",r.role="presentation",(r.frameElement||r).style.cssText="display: none",d=document.getElementsByTagName("script"),d=d[d.length-1],d.parentNode.insertBefore(r,d),i=r.contentWindow,s=i.document;try{o=s}catch(c){n=document.domain,r.src='javascript:var d=document.open();d.domain="'+n+'";void(0);',o=s}o.open()._l=function(){var o=this.createElement("script");n&&(this.domain=n),o.id="js-iframe-async",o.src=e,this.t=+new Date,this.zendeskHost=t,this.zEQueue=a,this.body.appendChild(o)},o.write('<body onload="document._l();">'),o.close()}("https://assets.zendesk.com/embeddable_framework/main.js","zypetrial.zendesk.com");/*]]>*/</script>
+    <!-- End of zypetrial Zendesk Widget script -->
 </head>
 
 
@@ -38,7 +42,7 @@
 
     <header id="header" style="overflow-y: scroll;">
   <div id="content">
-    <a href="/"><img src="http://dev.zype.com/assets/logo.png" alt="Zype" />
+    <a href="/"><img src="http://localhost:4000/assets/logo.png" alt="Zype" />
     <h1 id="title">Developer Portal</h1></a>
     <p>a knowledge base</p>
     <div class="hidden-mobile">
@@ -104,7 +108,7 @@ https://player.zype.com/embed/[video_id].html?autoplay=true&amp;api_key=[api_key
 
 <p>To find the embed code for your video go to the Zype Dashboard &gt; Video Library and then click the Video you’d like to edit. Go to the Embed Code tab on the top and you’ll see the video’s embed code.</p>
 
-<p><img src="http://dev.zype.com/assets/tracking_partner/embed.png" alt="embed code" /></p>
+<p><img src="http://localhost:4000/assets/tracking_partner/embed.png" alt="embed code" /></p>
 
 <h3 id="iframe-or-javascript-embed-code">iFrame or JavaScript Embed Code</h3>
 
@@ -118,7 +122,7 @@ https://player.zype.com/embed/[video_id].html?autoplay=true&amp;api_key=[api_key
 
 <p>If you have set up subscription, purchase, rental, or pass plans you can also add tracking_partner and tracking_code. First, grab your paywall embed code:</p>
 
-<p><img src="http://dev.zype.com/assets/tracking_partner/paywall_embed.png" alt="paywall embed code" /></p>
+<p><img src="http://localhost:4000/assets/tracking_partner/paywall_embed.png" alt="paywall embed code" /></p>
 
 <p><b>Copy</b> the paywall embed code. You’ll have to add <b>zype.tracking_partner=[tracking_partner]; zype.tracking_code=[tracking_code];</b> in the second script tag. Be sure to add it before the zype.VideoEmbed() function. For example:</p>
 

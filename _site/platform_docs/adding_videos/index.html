@@ -11,7 +11,7 @@
 ">
 
     <link rel="stylesheet" href="/css/main.css">
-    <link rel="canonical" href="http://dev.zype.com//platform_docs/adding_videos/">
+    <link rel="canonical" href="http://localhost:4000//platform_docs/adding_videos/">
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 
     <!--[if lt IE 9]>
@@ -42,7 +42,7 @@
 
   <header id="header" style="overflow-y: scroll;">
   <div id="content">
-    <a href="/"><img src="http://dev.zype.com/assets/logo.png" alt="Zype" />
+    <a href="/"><img src="http://localhost:4000/assets/logo.png" alt="Zype" />
       <h1 id="title">Developer Portal</h1></a>
       <p>a knowledge base</p>
       <br>
@@ -139,14 +139,14 @@ We do not currently support Apple ProRes, ARRI and RED.</p>
 
 <p>Go to Import &amp; Upload, and click the “Upload from My Web Browser” button.</p>
 
-<p><img src="http://dev.zype.com//assets/Uploading Videos to the Zype Platform from the Web/upload_web_browser.png" alt="Upload Videos" /></p>
+<p><img src="http://localhost:4000//assets/Uploading Videos to the Zype Platform from the Web/upload_web_browser.png" alt="Upload Videos" /></p>
 
 <p><strong>Step 2:</strong></p>
 
 <p>By default, we automatically add the video to your library and we activate the video. If you would
 like to change this, toggle Add Video or Activate Video off. Then, select the file that you want to upload.</p>
 
-<p><img src="http://dev.zype.com//assets/Uploading Videos to the Zype Platform from the Web/upload_video_options.png" alt="upload video" /></p>
+<p><img src="http://localhost:4000//assets/Uploading Videos to the Zype Platform from the Web/upload_video_options.png" alt="upload video" /></p>
 
 <p><strong>Step 3:</strong></p>
 
@@ -154,48 +154,71 @@ like to change this, toggle Add Video or Activate Video off. Then, select the fi
 can add additional metadata. Once your video is finished <a href="http://en.wikipedia.org/wiki/Transcoding">transcoding</a>, you will
 be able to play your video and select your video thumbnail.</p>
 
-<p><img src="http://dev.zype.com//assets/Uploading Videos to the Zype Platform from the Web/add_metadata_to_video.png" alt="add video metadata" /></p>
+<p><img src="http://localhost:4000//assets/Uploading Videos to the Zype Platform from the Web/add_metadata_to_video.png" alt="add video metadata" /></p>
 
 <hr id="1" />
 
 <h2 id="adding-videos-from-a-youtube-channel">Adding videos from a YouTube Channel</h2>
-<p>We simplified the process of searching for and importing a YouTube Channel into the Zype Platform.
-Before, you had to manually go to YouTube and find your Channel ID. This was a cumbersome
-process. Now you can search for a YouTube Channel from the Zype Platform and we will get the Channel ID for you.</p>
+<p>We’ve made the process of importing videos from your YouTube Channel even simpler. You can upload a single video, a channel, or import videos from an authenticated YouTube account.</p>
 
-<p><strong>Step 1:</strong></p>
+<h3 id="overview">Overview</h3>
 
-<p>Go to Video Sources and click on the YouTube icon.</p>
+<p>Go to the Zype dashboard and from the left nav click Import &amp; Upload, then click YouTube.</p>
 
-<p><img src="http://dev.zype.com/assets/Adding Videos from a YouTube Channel to the Zype Platform/click_youtube.png" alt="click youtube" />
-<strong>Step 2:</strong></p>
+<p><img src="http://localhost:4000/assets/Adding Videos from a YouTube Channel to the Zype Platform/youtube-import/image06.png" alt="click youtube" /></p>
 
-<p>Enter a name for your YouTube video source (something to help you remember it!) and click the
-Search YouTube Channel’s button</p>
+<h3 id="import-a-single-video">Import a Single Video</h3>
 
-<p><img src="http://dev.zype.com/assets/Adding Videos from a YouTube Channel to the Zype Platform/search_youtube_channel.png" alt="search youtube channels" /></p>
+<p>To import a single video, paste a single video URL and click the Continue button:</p>
 
-<p><strong>Step 3:</strong></p>
+<p><img src="http://localhost:4000/assets/Adding Videos from a YouTube Channel to the Zype Platform/youtube-import/image07.png" alt="click youtube" /></p>
 
-<p>Enter the channel name that you are searching for and click Search. You will be
-given a list of YouTube Channels that match your search criteria. Click the Select Channel
-button for the YouTube Channel that you want to add.</p>
+<p>Once you’ve successfully imported your video you can view it by clicking the Manage Video button:</p>
 
-<p><img src="http://dev.zype.com/assets/Adding Videos from a YouTube Channel to the Zype Platform/select_channel.png" alt="click select channel" /></p>
+<p><img src="http://localhost:4000/assets/Adding Videos from a YouTube Channel to the Zype Platform/youtube-import/image03.png" alt="click youtube" /></p>
 
-<p><strong>Step 4:</strong></p>
+<h3 id="import-a-channel">Import a Channel</h3>
 
-<p>This will prepopulate the Channel ID for you. All you need to do is click Save Changes
-and the Zype Platform will start to import all of the videos from the channel that you selected!</p>
+<p>To import an entire channel, paste a YouTube channel URL into the text field and click the Continue button:</p>
 
-<p><img src="http://dev.zype.com/assets/Adding Videos from a YouTube Channel to the Zype Platform/youtube_save_changes.png" alt="click submit" /></p>
+<p><img src="http://localhost:4000/assets/Adding Videos from a YouTube Channel to the Zype Platform/youtube-import/image02.png" alt="click youtube" /></p>
 
-<p><strong>Step 5:</strong></p>
+<p>If you don’t have an URL, you can look for a channel using keywords in the same text field.
+If the search is successful you can see a drop-down with all YouTube channel suggestions. Select any channel name and click the Continue button to proceed.</p>
 
-<p>Your imported videos are in your import videos page. You can add videos to your catalog
-from there.</p>
+<p><img src="http://localhost:4000/assets/Adding Videos from a YouTube Channel to the Zype Platform/youtube-import/image05.png" alt="click youtube" /></p>
 
-<p><img src="http://dev.zype.com/assets/Adding Videos from a YouTube Channel to the Zype Platform/add_video.png" alt="import videos" /></p>
+<h3 id="import-from-a-connected-account">Import from a Connected Account</h3>
+
+<p>You also have the ability to import videos from your own YouTube channel by clicking the
+Connect To Account button and proceeding with the Google authorization instructions:</p>
+
+<p><img src="http://localhost:4000/assets/Adding Videos from a YouTube Channel to the Zype Platform/youtube-import/image08.png" alt="click youtube" /></p>
+
+<p>The next step is to review and select videos from a chosen YouTube channel.
+Select the videos you’d like to add into Video Library and click the Next button. You may also filter video results using the text field in the table header or select all videos by clicking the choose all checkbox.</p>
+
+<p><img src="http://localhost:4000/assets/Adding Videos from a YouTube Channel to the Zype Platform/youtube-import/image01.png" alt="click youtube" /></p>
+
+<p>The next step allows you to customize your import.</p>
+
+<p><img src="http://localhost:4000/assets/Adding Videos from a YouTube Channel to the Zype Platform/youtube-import/image00.png" alt="click youtube" /></p>
+
+<p>There are several controls that allow you to customize your import:</p>
+
+<ol>
+  <li>By clicking this checkbox only the metadata of selected videos will be imported.</li>
+  <li>By clicking this checkbox the video content and metadata of selected videos will be imported.</li>
+  <li>When turned on, new videos uploaded to this channel will automatically be added to your library.</li>
+  <li>When turned on, new videos uploaded to this channel will automatically be made active when added to your video library.</li>
+  <li>Name for the import (and newly created video source object ). Only you will see this name as a way of organizing your imports.</li>
+</ol>
+
+<p>When you’re all set, click the Complete Import button.</p>
+
+<p>Once you’ve successfully imported your YouTube channel you can find all the new videos in Video Imports and selected videos in Video Library.</p>
+
+<p><img src="http://localhost:4000/assets/Adding Videos from a YouTube Channel to the Zype Platform/youtube-import/image04.png" alt="click youtube" /></p>
 
 <hr id="2" />
 
@@ -206,7 +229,7 @@ from there.</p>
 
 <p>Go to Video Sources and click on the Vimeo icon.</p>
 
-<p><img src="http://dev.zype.com/assets/Adding Videos from a Vimeo Channel, Group or User/click_vimeo.png" alt="click vimeo" /></p>
+<p><img src="http://localhost:4000/assets/Adding Videos from a Vimeo Channel, Group or User/click_vimeo.png" alt="click vimeo" /></p>
 
 <p><strong>Step 2:</strong></p>
 
@@ -225,11 +248,11 @@ https://vimeo.com/groups/animation
 
 <p>First, go to Vimeo and copy the link:</p>
 
-<p><img src="http://dev.zype.com/assets/Adding Videos from a Vimeo Channel, Group or User/vimeo_copy.png" alt="copy your link" /></p>
+<p><img src="http://localhost:4000/assets/Adding Videos from a Vimeo Channel, Group or User/vimeo_copy.png" alt="copy your link" /></p>
 
 <p>Then paste the link into the Vimeo Source form:</p>
 
-<p><img src="http://dev.zype.com/assets/Adding Videos from a Vimeo Channel, Group or User/paste_your_link.png" alt="paste your link" /></p>
+<p><img src="http://localhost:4000/assets/Adding Videos from a Vimeo Channel, Group or User/paste_your_link.png" alt="paste your link" /></p>
 
 <p>Then click the ‘Save Changes’ button.</p>
 
@@ -237,7 +260,7 @@ https://vimeo.com/groups/animation
 
 <p>If everything went according to plan, you can see your new video imports by clicking on the green ‘Video Imports’ button.</p>
 
-<p><img src="http://dev.zype.com/assets/Adding Videos from a Vimeo Channel, Group or User/video_imports_button.png" alt="video imports button" /></p>
+<p><img src="http://localhost:4000/assets/Adding Videos from a Vimeo Channel, Group or User/video_imports_button.png" alt="video imports button" /></p>
 
 <hr id="3" />
 
@@ -254,32 +277,32 @@ like videos that are uploaded directly to the Zype Platform.</p>
 <p>Navigate to the <a href="https://admin.zype.com/import_upload">Import &amp; Upload dashboard</a> and
 click on Vimeo PRO.</p>
 
-<p><img src="http://dev.zype.com/assets/Adding Videos from a Vimeo PRO Account/dashboard.png" alt="video imports" /></p>
+<p><img src="http://localhost:4000/assets/Adding Videos from a Vimeo PRO Account/dashboard.png" alt="video imports" /></p>
 
 <p><strong>Step 2:</strong></p>
 
 <p>Click on the “Import from Vimeo PRO” button to send you to vimeo.com to authenticate.</p>
 
-<p><img src="http://dev.zype.com/assets/Adding Videos from a Vimeo PRO Account/go_to_vimeo.png" alt="video imports" /></p>
+<p><img src="http://localhost:4000/assets/Adding Videos from a Vimeo PRO Account/go_to_vimeo.png" alt="video imports" /></p>
 
 <p><strong>Step 3:</strong></p>
 
 <p>Enter your Vimeo PRO email and password credentials.</p>
 
-<p><img src="http://dev.zype.com/assets/Adding Videos from a Vimeo PRO Account/Log_In.png" alt="video imports" /></p>
+<p><img src="http://localhost:4000/assets/Adding Videos from a Vimeo PRO Account/Log_In.png" alt="video imports" /></p>
 
 <p><strong>Step 4:</strong></p>
 
 <p>Agree to connect “Zype” to your Vimeo account.</p>
 
-<p><img src="http://dev.zype.com/assets/Adding Videos from a Vimeo PRO Account/Vimeo_Auth.png" alt="video imports" /></p>
+<p><img src="http://localhost:4000/assets/Adding Videos from a Vimeo PRO Account/Vimeo_Auth.png" alt="video imports" /></p>
 
 <p><strong>Step 5:</strong></p>
 
 <p>Decide whether you want your Vimeo PRO imports to automatically get added to your video library
 and whether these videos should automatically be active when they appear in your video library.</p>
 
-<p><img src="http://dev.zype.com/assets/Adding Videos from a Vimeo PRO Account/import.png" alt="video imports" /></p>
+<p><img src="http://localhost:4000/assets/Adding Videos from a Vimeo PRO Account/import.png" alt="video imports" /></p>
 
 <p><strong>Step 6:</strong></p>
 
@@ -287,7 +310,7 @@ and whether these videos should automatically be active when they appear in your
 Vimeo PRO imports to your video library, they can be found in your <a href="https://admin.zype.com/videos">video library</a>.
 If not, they can be found in your <a href="https://admin.zype.com/video_imports">video imports</a>.</p>
 
-<p><img src="http://dev.zype.com/assets/Adding Videos from a Vimeo PRO Account/success.png" alt="video imports" /></p>
+<p><img src="http://localhost:4000/assets/Adding Videos from a Vimeo PRO Account/success.png" alt="video imports" /></p>
 
 <p><strong>Step 7:</strong></p>
 
@@ -297,7 +320,7 @@ and make sure that you have a Vimeo Pro (Native) Player, a Vimeo Pro (Zype) Play
 not have a proper player rule, click on the “New Player Rule” button and create Vimeo PRO player rules for the
 desired device and Vimeo PRO Player. For more information on player rules, go to the <a href="http://dev.zype.com/platform_docs/player_rules/">player rules platform docs</a>.</p>
 
-<p><img src="http://dev.zype.com/assets/Adding Videos from a Vimeo PRO Account/player_rules.png" alt="vimeo pro player rule" /></p>
+<p><img src="http://localhost:4000/assets/Adding Videos from a Vimeo PRO Account/player_rules.png" alt="vimeo pro player rule" /></p>
 
 <hr id="4" />
 
@@ -310,26 +333,26 @@ desired device and Vimeo PRO Player. For more information on player rules, go to
 
 <p>First, let’s login to the <a href="https://admin.zype.com/">Zype Platform</a> and go to <a href="https://admin.zype.com/video_sources">Video Sources</a>. Now click on the Crunchyroll icon.</p>
 
-<p><img src="http://dev.zype.com/assets/Adding Your Crunchyroll Videos to Zype/click_crunchy.png" alt="click crunchyroll" /></p>
+<p><img src="http://localhost:4000/assets/Adding Your Crunchyroll Videos to Zype/click_crunchy.png" alt="click crunchyroll" /></p>
 
 <h3 id="adding-your-affiliate-code">Adding your affiliate code</h3>
 
 <p>Enter a name for your Crunchyroll video source (something you’ll remember!) and your Crunchyroll Affiliate code (this is provided to you by Crunchyroll when you become an affiliate.)</p>
 
-<p><img src="http://dev.zype.com/assets/Adding Your Crunchyroll Videos to Zype/new_crunchy_source.png" alt="add name and affiliate code" /></p>
+<p><img src="http://localhost:4000/assets/Adding Your Crunchyroll Videos to Zype/new_crunchy_source.png" alt="add name and affiliate code" /></p>
 
 <h3 id="importing-your-videos">Importing your videos</h3>
 
 <p>Now sit back while we go get all of your Crunchyroll videos and add them to the Zype Platform as video imports.
 Once we’ve imported all of your videos you will find them under the <a href="https://admin.zype.com/video_imports">Video Imports</a> tab. The last step is to create new videos from the imports or add the video imports to videos you already have on the Zype Platform.</p>
 
-<p><img src="http://dev.zype.com/assets/Adding Your Crunchyroll Videos to Zype/import_conformation.png" alt="video imports" /></p>
+<p><img src="http://localhost:4000/assets/Adding Your Crunchyroll Videos to Zype/import_conformation.png" alt="video imports" /></p>
 
 <h3 id="confirm">Confirm</h3>
 
 <p>You can confirm that your videos were added by clicking on the videos tab and searching for the ones you’ve just added.</p>
 
-<p><img src="http://dev.zype.com/assets/Adding Your Crunchyroll Videos to Zype/show_video_imports.png" alt="videos" /></p>
+<p><img src="http://localhost:4000/assets/Adding Your Crunchyroll Videos to Zype/show_video_imports.png" alt="videos" /></p>
 
 <hr id="5" />
 
@@ -340,7 +363,7 @@ Once we’ve imported all of your videos you will find them under the <a href="h
 
 <p>First, you’ll need to download and set up the Zype CLI. You can find the tool on <a href="https://github.com/edla/zype-cli">gitHub</a>.</p>
 
-<p><img src="http://dev.zype.com/assets/Uploading Videos to Zype Using Our Ruby Gem/copy_clone.png" alt="gitHub" /></p>
+<p><img src="http://localhost:4000/assets/Uploading Videos to Zype Using Our Ruby Gem/copy_clone.png" alt="gitHub" /></p>
 
 <p>You’ll need to clone down the repo, then run the following commands:</p>
 
@@ -357,7 +380,7 @@ Once we’ve imported all of your videos you will find them under the <a href="h
 
 <p>which will display a list of available commands for the Zype CLI. Remember this command in case you have questions about what the Zype CLI can do!</p>
 
-<p><img src="http://dev.zype.com/assets/Uploading Videos to Zype Using Our Ruby Gem/commands.png" alt="CLI Interface" /></p>
+<p><img src="http://localhost:4000/assets/Uploading Videos to Zype Using Our Ruby Gem/commands.png" alt="CLI Interface" /></p>
 
 <h3 id="logging-in-through-the-zype-cli">Logging in through the Zype CLI</h3>
 
@@ -386,13 +409,13 @@ Once we’ve imported all of your videos you will find them under the <a href="h
 
 <p>Now sit back while we upload all of your videos and add them to the Zype Platform as video imports. Once we’ve imported all of your videos you will find them under the <a href="https://admin.zype.com/video_imports">Video Imports</a> tab. The last step is to create new videos from the imports or add the video imports to videos you already have on the Zype Platform.</p>
 
-<p><img src="http://dev.zype.com/assets/Uploading Videos to Zype Using Our Ruby Gem/imports.png" alt="video imports" /></p>
+<p><img src="http://localhost:4000/assets/Uploading Videos to Zype Using Our Ruby Gem/imports.png" alt="video imports" /></p>
 
 <h3 id="confirm-1">Confirm</h3>
 
 <p>You can confirm that your videos were added by clicking on the videos tab and searching for the ones you’ve just added.</p>
 
-<p><img src="http://dev.zype.com/assets/Uploading Videos to Zype Using Our Ruby Gem/confirm.png" alt="videos" /></p>
+<p><img src="http://localhost:4000/assets/Uploading Videos to Zype Using Our Ruby Gem/confirm.png" alt="videos" /></p>
 
 <hr id="6" />
 
@@ -401,15 +424,15 @@ Once we’ve imported all of your videos you will find them under the <a href="h
 
 <p>Check out the <a href="http://admin.zype.com/video_imports">Video Imports Screen</a> and click on the “Add Video Import” button to get started.</p>
 
-<p><img src="http://dev.zype.com/assets/Adding YouTube Video from a URL/add_video_imports_1.png" alt="navigate to form" /></p>
+<p><img src="http://localhost:4000/assets/Adding YouTube Video from a URL/add_video_imports_1.png" alt="navigate to form" /></p>
 
 <p>The next step is to copy a URL from YouTube that shows the video you want to add.</p>
 
-<p><img src="http://dev.zype.com/assets/Adding YouTube Video from a URL/copy_url.png" alt="copy url" /></p>
+<p><img src="http://localhost:4000/assets/Adding YouTube Video from a URL/copy_url.png" alt="copy url" /></p>
 
 <p>Paste the URL into the field on this page and click “Add Video Import”.</p>
 
-<p><img src="http://dev.zype.com/assets/Adding YouTube Video from a URL/paste_url.png" alt="paste url" /></p>
+<p><img src="http://localhost:4000/assets/Adding YouTube Video from a URL/paste_url.png" alt="paste url" /></p>
 
 <p>If everything went according to plan, you should see the video imports screen again, with a new import from the link you provided. If you’re interested in grabbing a bunch of videos from YouTube, you may want to follow our guides under <a href="http://dev.zype.com/platform_docs/adding_videos/">Adding Videos.</a></p>
 
@@ -418,19 +441,19 @@ Once we’ve imported all of your videos you will find them under the <a href="h
 <h2 id="adding-vimeo-video-from-a-url">Adding Vimeo video from a URL</h2>
 <p>Check out the <a href="http://admin.zype.com/video_imports">Video Imports Screen</a> and click on the “Add  Video Import” button to get started.</p>
 
-<p><img src="http://dev.zype.com/assets/Adding Vimeo Video from a URL/import_videos.png" alt="navigate to form" /></p>
+<p><img src="http://localhost:4000/assets/Adding Vimeo Video from a URL/import_videos.png" alt="navigate to form" /></p>
 
 <p>The next step is to copy a URL from Vimeo that shows the video you want to add.</p>
 
-<p><img src="http://dev.zype.com/assets/Adding Vimeo Video from a URL/copy_url.png" alt="copy url" /></p>
+<p><img src="http://localhost:4000/assets/Adding Vimeo Video from a URL/copy_url.png" alt="copy url" /></p>
 
 <p>Paste the URL into the field on this page and click “Add Video Import”.</p>
 
-<p><img src="http://dev.zype.com/assets/Adding Vimeo Video from a URL/paste_your_url.png" alt="paste url" /></p>
+<p><img src="http://localhost:4000/assets/Adding Vimeo Video from a URL/paste_your_url.png" alt="paste url" /></p>
 
 <p>Then click the ‘Save Changes’ button.</p>
 
-<p><img src="http://dev.zype.com/assets/Adding Vimeo Video from a URL/save_changes.png" alt="save changes" /></p>
+<p><img src="http://localhost:4000/assets/Adding Vimeo Video from a URL/save_changes.png" alt="save changes" /></p>
 
 <p>If everything went according to plan, you should see the video imports screen again, with a new import from the link you provided. If you’re interested in grabbing a bunch of videos from Vimeo, you may want to follow our guides under <a href="http://dev.zype.com/platform_docs/adding_videos/">Adding Videos.</a></p>
 
@@ -440,14 +463,14 @@ Once we’ve imported all of your videos you will find them under the <a href="h
 
 <p>Navigate to the <a href="https://admin.zype.com/import_upload">Import &amp; Upload dashboard</a> and click on Livestream.</p>
 
-<p><img src="http://dev.zype.com/assets/livestream/livestream_1.png" alt="livestream 1" /></p>
+<p><img src="http://localhost:4000/assets/livestream/livestream_1.png" alt="livestream 1" /></p>
 
 <p>Enter the Livestream.com Event or Livestream.com Clip url for the video that you want
 to import. You can add additional metadata such as the title and the description. If
 the “Add Video” button is toggled on, your Livestream.com video will automatically be
 added into your video library.</p>
 
-<p><img src="http://dev.zype.com/assets/livestream/livestream_2.png" alt="livestream 2" /></p>
+<p><img src="http://localhost:4000/assets/livestream/livestream_2.png" alt="livestream 2" /></p>
 
 <p><strong>What is the difference between an event and a clip?</strong></p>
 
