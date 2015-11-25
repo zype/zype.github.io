@@ -11,7 +11,7 @@
 ">
 
     <link rel="stylesheet" href="/css/main.css">
-    <link rel="canonical" href="http://dev.zype.com//platform_docs/overview/">
+    <link rel="canonical" href="http://dev.zype.com//platform_docs/embeddable_playlist_widget/">
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 
     <!--[if lt IE 9]>
@@ -84,33 +84,94 @@
 
 
   <section id="main">
-    <h2 id="overview">Overview</h2>
+    <h1 id="embeddable-playlist-widget">Embeddable Playlist Widget</h1>
+<p>The Zype Embeddable Playlist Widget allows you to easily create and customize an embeddable playlist video player from any of your existing Zype Playlists. The playlist widget may be created in 3 simple steps and embedded on any website.</p>
 
-<h3 id="what-is-zype-all-about">What is Zype all about?</h3>
+<div style="width: 100%;">
+  <div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>
+    <a href="#1">
+    Select a Playlist</a>
+  </div>
+  <div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>
+  <a href="#2">
+  Customize the Playlist Widget</a>
+  </div>
+  <div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>
+  <a href="#3">
+  Embed the Playlist Widget</a>
+  </div>
+</div>
 
-<p>The Zype Platform includes everything a premium content owner needs to deliver web, mobile, and set-top apps direct to consumers.</p>
+<hr />
 
-<p>Video from anywhere, including YouTube and Hulu, or even raw video source files - can be imported, optimized and delivered based on viewer location, device, licensing rules or revenue models. Check it out using our <a href="http://demo.zype.com/test_harness">test harness</a>.</p>
+<div id="1"></div>
 
-<p>Zype’s proprietary VideoMeta technology allows import and matching of data - scripts, set lists, art, and related content without data entry headaches.  Powerful for SEO and deep, engaging branded video experiences. You can see this in action on <a href="http://www.yugioh.com">yugioh.com</a>.</p>
+<h1 id="select-a-playlist">Select a Playlist</h1>
+<ol>
+  <li>From the Zype admin, select Playlists. (For more information about Playlists and how to create them, see <a href="http://dev.zype.com/platform_docs/playlists/">http://dev.zype.com/platform_docs/playlists/</a>)</li>
+  <li>Your existing playlists are displayed in a table. On the rightmost column of each row is a set of icons. Click the “Preview” button (video camera icon) to configure the playlist widget of your choice. Note: only Active playlists may be embedded</li>
+</ol>
 
-<h3 id="creating-an-account">Creating an account</h3>
+<div id="2"></div>
 
-<p>To sign up for a free account, visit <a href="https://admin.zype.com/">the zype platform.</a> You’ll need to enter some basic information including your company name and the name of your media property. Once you’ve created an account, check out the <a href="https://admin.zype.com/">adding videos guide</a> to get started.</p>
+<h1 id="customize-the-playlist-widget">Customize the Playlist Widget</h1>
+<p>The <strong>Embed Code</strong> tab allows you to easily customize the visual appearance of the playlist widget using the options on the left side of the page. The right side of the page displays a live preview of what the playlist embed will look like.</p>
 
-<h3 id="forgot-password">Forgot password</h3>
+<h2 id="basic-options">Basic Options</h2>
 
-<p>You can reset your password by following <a href="https://admin.zype.com/auth/password/new">this link</a>.</p>
+<h3 id="format">Format</h3>
+<p>Choose <strong>JavaScript</strong> if you want your playlist widget to be <em>responsive</em> (automatically adapt to the width of the page it is on), otherwise choose <strong>iFrame</strong>.</p>
 
-<h3 id="what-can-i-accomplish">What can I accomplish?</h3>
+<h3 id="playlist-skin">Playlist Skin</h3>
+<p>There are 4 different types of pre-defined Playlist Skins, which control the appearance of the playlist widget:</p>
 
-<p>At the core, our mission is to enable you to give your consumers what they want - instant and easy direct access to the content they love, on any device, anywhere.</p>
+<ul>
+  <li>
+    <p><strong>Grid, Thumbnails, &amp; Titles</strong> — Playlist videos are displayed in a grid with thumbnails and titles.</p>
+  </li>
+  <li>
+    <p><strong>Grid, Thumbnails</strong> — Playlist videos are displayed in a grid with thumbnails only.</p>
+  </li>
+  <li>
+    <p><strong>List, Thumbnails, &amp; Titles</strong> — Playlist videos are displayed in a list with thumbnails and titles.</p>
+  </li>
+  <li>
+    <p><strong>List, Titles</strong> — Playlist videos are displayed in a list with titles only.</p>
+  </li>
+</ul>
 
-<h3 id="this-is-awesome">This is awesome!</h3>
+<h3 id="auto-play">Auto Play</h3>
+<p>Choose whether your playlist will automatically start playing. Defaults to “On”.</p>
 
-<p>We’re glad you think so! Any and all feedback through our our intercom system on <a href="https://admin.zype.com/">the zype platform</a>.</p>
+<h3 id="auto-loop">Auto Loop</h3>
+<p>Choose whether your playlist will automatically start playing from the beginning after the last videos ends. Defaults to “Off”.</p>
 
-<p><img src="http://dev.zype.com/assets/dash.png" alt="intercom with zype" /></p>
+<h2 id="advanced-options">Advanced Options</h2>
+
+<h3 id="playlist-background-color">Playlist Background Color</h3>
+<p>Choose the default color for the background of the playlist.</p>
+
+<h3 id="playlist-font-color">Playlist Font Color</h3>
+
+<ul>
+  <li>
+    <p><strong>Font Color</strong> — The font color for the playlist items</p>
+  </li>
+  <li>
+    <p><strong>Font Active Color</strong> — The font color for the playlist item currently being viewed</p>
+  </li>
+  <li>
+    <p><strong>Font Hover Color</strong> — The font color for the playlist item currently being hovered over</p>
+  </li>
+</ul>
+
+<h3 id="playlist-item-spacing">Playlist Item Spacing</h3>
+<p>Modify the spacing between playlist items</p>
+
+<div id="3"></div>
+
+<h1 id="embed-the-playlist-widget">Embed the Playlist Widget</h1>
+<p>When you’re ready to embed your playlist widget, simply click the <strong>Copy to Clipboard</strong> button located just above the playlist widget preview. Paste the embed code to website of your choice by using <strong>Edit &gt; Paste</strong> from your web browser or <strong>Control + V</strong> (<strong>Command + V on Mac</strong>) from your keyboard.</p>
 
   </section>
 
