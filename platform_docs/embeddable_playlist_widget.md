@@ -29,6 +29,8 @@ The Zype Embeddable Playlist Widget allows you to easily create and customize an
 1. From the Zype admin, select Playlists. (For more information about Playlists and how to create them, see [http://dev.zype.com/platform_docs/playlists/](http://dev.zype.com/platform_docs/playlists/))
 2. Your existing playlists are displayed in a table. On the rightmost column of each row is a set of icons. Click the "Preview" button (video camera icon) to configure the playlist widget of your choice. Note: only Active playlists may be embedded
 
+![select playlist]({{site.url}}assets/embeddable_playlist_widget/embed-playlist-01--select-playlist.jpg)
+
 <div id="2"></div>
 
 # Customize the Playlist Widget
@@ -56,6 +58,11 @@ Choose whether your playlist will automatically start playing. Defaults to "On".
 ### Auto Loop
 Choose whether your playlist will automatically start playing from the beginning after the last videos ends. Defaults to "Off".
 
+### Resolution (iFrame Only)
+Choose the dimensions of your embed.
+
+![basic options]({{site.url}}assets/embeddable_playlist_widget/embed-playlist-02--basic-options.jpg)
+
 ## Advanced Options
 
 ### Playlist Background Color
@@ -72,7 +79,11 @@ Choose the default color for the background of the playlist.
 ### Playlist Item Spacing
 Modify the spacing between playlist items
 
+![advanced options]({{site.url}}assets/embeddable_playlist_widget/embed-playlist-03--advanced-options.jpg)
+
 <div id="3"></div>
 
 # Embed the Playlist Widget
 When you're ready to embed your playlist widget, simply click the **Copy to Clipboard** button located just above the playlist widget preview. Paste the embed code to website of your choice by using **Edit > Paste** from your web browser or **Control + V** (**Command + V on Mac**) from your keyboard.
+
+![embed code]({{site.url}}assets/embeddable_playlist_widget/embed-playlist-04--copy-embed-code.jpg)
