@@ -11,7 +11,7 @@
 ">
 
     <link rel="stylesheet" href="/css/main.css">
-    <link rel="canonical" href="http://dev.zype.com//platform_docs/video_troubleshooting/">
+    <link rel="canonical" href="http://dev.zype.com//platform_docs/embeddable_playlist_widget/">
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 
     <!--[if lt IE 9]>
@@ -84,98 +84,105 @@
 
 
   <section id="main">
-    <h2 id="video-troubleshooting">Video troubleshooting</h2>
-
-<p>Below are some frequently asked playing videos from the Zype Platform.
-Please reach out to Zype by hitting the [?] box in the lower left hand corner in the <a href="https://admin.zype.com/">Zype Platform</a> if you have other questions or want additional guidance!</p>
+    <h1 id="embeddable-playlist-widget">Embeddable Playlist Widget</h1>
+<p>The Zype Embeddable Playlist Widget allows you to easily create and customize an embeddable playlist video player from any of your existing Zype Playlists. The playlist widget may be created in 3 simple steps and embedded on any website.</p>
 
 <div style="width: 100%;">
-<div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>
-  <a href="#0">
-    My video is in my video library, but the embed code does not work on my web browser. What do I need to do?
-  </a>
-</div>
   <div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>
     <a href="#1">
-      My video works on a desktop web browser, but does not work on my Roku Channel. What is wrong?
-    </a>
+    Select a Playlist</a>
   </div>
   <div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>
-    <a href="#1">
-      How do I make sure my player rules are set up correctly?
-    </a>
+  <a href="#2">
+  Customize the Playlist Widget</a>
+  </div>
+  <div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>
+  <a href="#3">
+  Embed the Playlist Widget</a>
   </div>
 </div>
 
-<hr id="0" />
+<hr />
 
-<h3 id="my-video-is-in-my-video-library-but-the-embed-code-does-not-work-on-my-web-browser-what-do-i-need-to-do">My video is in my video library, but the embed code does not work on my web browser. What do I need to do?</h3>
+<div id="1"></div>
 
-<p>First, make sure that your video is active. Videos that are inactive are in your video library,
-but are unable to be played externally.</p>
+<h1 id="select-a-playlist">Select a Playlist</h1>
+<ol>
+  <li>From the Zype admin, select Playlists. (For more information about Playlists and how to create them, see <a href="http://dev.zype.com/platform_docs/playlists/">http://dev.zype.com/platform_docs/playlists/</a>)</li>
+  <li>Your existing playlists are displayed in a table. On the rightmost column of each row is a set of icons. Click the “Preview” button (video camera icon) to configure the playlist widget of your choice. Note: only Active playlists may be embedded</li>
+</ol>
 
-<p><img src="http://dev.zype.com//assets/videos/inactive.png" alt="video inactive" /></p>
+<p><img src="http://dev.zype.com/assets/embeddable_playlist_widget/embed-playlist-01--select-playlist.jpg" alt="select playlist" /></p>
 
-<p>To activate your video, navigate to the video and toggle active on.</p>
+<div id="2"></div>
 
-<p>Next, check to make sure that your video plays in the Zype Dashboard. Navigate to your video and click on the
-“Video Sources” tab. For each video source click on the camera button to watch your video.</p>
+<h1 id="customize-the-playlist-widget">Customize the Playlist Widget</h1>
+<p>The <strong>Embed Code</strong> tab allows you to easily customize the visual appearance of the playlist widget using the options on the left side of the page. The right side of the page displays a live preview of what the playlist embed will look like.</p>
 
-<p><img src="http://dev.zype.com//assets/videos/preview.png" alt="preview videos" /></p>
+<h2 id="basic-options">Basic Options</h2>
 
-<p>If the video does not play from the Zype data source, then you will need to have Zype
-<a href="http://en.wikipedia.org/wiki/Transcoding">transcode</a> your video. Click on the “Transcode Now” button.</p>
+<h3 id="format">Format</h3>
+<p>Choose <strong>JavaScript</strong> if you want your playlist widget to be <em>responsive</em> (automatically adapt to the width of the page it is on), otherwise choose <strong>iFrame</strong>.</p>
 
-<p><img src="http://dev.zype.com//assets/videos/transcode.png" alt="preview videos" /></p>
+<h3 id="playlist-skin">Playlist Skin</h3>
+<p>There are 4 different types of pre-defined Playlist Skins, which control the appearance of the playlist widget:</p>
 
-<p>If your video still is not playing using the embed code in your browser, check to make sure
-that you have the proper <a href="#2">player rules set up</a>.</p>
+<ul>
+  <li>
+    <p><strong>Grid, Thumbnails, &amp; Titles</strong> — Playlist videos are displayed in a grid with thumbnails and titles.</p>
+  </li>
+  <li>
+    <p><strong>Grid, Thumbnails</strong> — Playlist videos are displayed in a grid with thumbnails only.</p>
+  </li>
+  <li>
+    <p><strong>List, Thumbnails, &amp; Titles</strong> — Playlist videos are displayed in a list with thumbnails and titles.</p>
+  </li>
+  <li>
+    <p><strong>List, Titles</strong> — Playlist videos are displayed in a list with titles only.</p>
+  </li>
+</ul>
 
-<hr id="1" />
+<h3 id="auto-play">Auto Play</h3>
+<p>Choose whether your playlist will automatically start playing. Defaults to “On”.</p>
 
-<h3 id="my-video-works-on-a-desktop-web-browser-but-does-not-work-on-my-roku-channel-whats-wrong">My video works on a desktop web browser, but does not work on my Roku Channel. What’s wrong?</h3>
+<h3 id="auto-loop">Auto Loop</h3>
+<p>Choose whether your playlist will automatically start playing from the beginning after the last videos ends. Defaults to “Off”.</p>
 
-<p>Currently, only videos that are uploaded directly to the Zype Platform or videos that are
-imported from Vimeo PRO are playable on Roku devices. We currently cannot distribute
-videos imported from YouTube, Vimeo, Hulu, and Crunchyroll onto Roku devices.</p>
+<h3 id="resolution-iframe-only">Resolution (iFrame Only)</h3>
+<p>Choose the dimensions of your embed.</p>
 
-<p>If you own your video content and it is currently on YouTube, Vimeo, Hulu, and/or Crunchyroll,
-Zype can help you streamline the process of getting your videos playable on Roku.
-Please reach out to Zype by hitting the [?] box in the lower left hand corner in the <a href="https://admin.zype.com/">Zype Platform</a>.</p>
+<p><img src="http://dev.zype.com/assets/embeddable_playlist_widget/embed-playlist-02--basic-options.jpg" alt="basic options" /></p>
 
-<hr id="2" />
+<h2 id="advanced-options">Advanced Options</h2>
 
-<h3 id="how-do-i-make-sure-my-player-rules-are-set-up-correctly">How do I make sure my player rules are set up correctly?</h3>
+<h3 id="playlist-background-color">Playlist Background Color</h3>
+<p>Choose the default color for the background of the playlist.</p>
 
-<p>Player rules determine which player gets served to your end user based on device and geolocation.
-If a player rule is not set up for the device or geography that your end user is coming from,
-she will not be able to view the video. Moreover, if a player rule is not set up for
-the video source where your video is coming from, your video will not be able to be viewed.</p>
+<h3 id="playlist-font-color">Playlist Font Color</h3>
 
-<p>To see if you have the appropriate player rules set up, go to the <a href="https://admin.zype.com/player_rules">player rules page</a>
-and check the player rules that you have set up and active. Inactive player rules are grayed out.</p>
+<ul>
+  <li>
+    <p><strong>Font Color</strong> — The font color for the playlist items</p>
+  </li>
+  <li>
+    <p><strong>Font Active Color</strong> — The font color for the playlist item currently being viewed</p>
+  </li>
+  <li>
+    <p><strong>Font Hover Color</strong> — The font color for the playlist item currently being hovered over</p>
+  </li>
+</ul>
 
-<p><img src="http://dev.zype.com//assets/player_rules/index.png" alt="player rule index" /></p>
+<h3 id="playlist-item-spacing">Playlist Item Spacing</h3>
+<p>Modify the spacing between playlist items</p>
 
-<p>If the player rule you want is inactive, click on the player rule. Then, click on the activate button.</p>
+<p><img src="http://dev.zype.com/assets/embeddable_playlist_widget/embed-playlist-03--advanced-options.jpg" alt="advanced options" /></p>
 
-<p><img src="http://dev.zype.com//assets/player_rules/activate.png" alt="player rule activate" /></p>
+<div id="3"></div>
 
-<p>If you do not see the appropriate player rule based on player, device, and geolocation, click on the “New Player Rule” button.</p>
+<h1 id="embed-the-playlist-widget">Embed the Playlist Widget</h1>
+<p>When you’re ready to embed your playlist widget, simply click the <strong>Copy to Clipboard</strong> button located just above the playlist widget preview. Paste the embed code to website of your choice by using <strong>Edit &gt; Paste</strong> from your web browser or <strong>Control + V</strong> (<strong>Command + V on Mac</strong>) from your keyboard.</p>
 
-<p><img src="http://dev.zype.com//assets/player_rules/new_button.png" alt="player rule button" /></p>
-
-<p>Then, you will need to select the geolocation, device, and player that you want for the rule.</p>
-
-<p><img src="http://dev.zype.com//assets/player_rules/geolocation.png" alt="player rule step" /></p>
-
-<p><img src="http://dev.zype.com//assets/player_rules/device.png" alt="player rule step" /></p>
-
-<p><img src="http://dev.zype.com//assets/player_rules/player.png" alt="player rule step" /></p>
-
-<p><img src="http://dev.zype.com//assets/player_rules/confirm.png" alt="player rule step" /></p>
-
-<p>Player rules can be tricky. Please reach out to Zype by hitting the [?] box in the lower left hand corner in the <a href="https://admin.zype.com/">Zype Platform</a> if you have any questions!</p>
+<p><img src="http://dev.zype.com/assets/embeddable_playlist_widget/embed-playlist-04--copy-embed-code.jpg" alt="embed code" /></p>
 
   </section>
 
