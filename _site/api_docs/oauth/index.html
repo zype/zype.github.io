@@ -100,7 +100,7 @@ Please <a href="mailto:developers@zypemedia.com">email Zype</a> to get your clie
 
 <h4 id="via-password-grant-flow">Via password grant flow</h4>
 
-<p>The password grant flow allows you to pass in a user’s email address and password
+<p>The password grant flow allows you to pass in a user’s username (email address) and password
 to get an access token in return.</p>
 
 <hr />
@@ -130,8 +130,8 @@ to get an access token in return.</p>
       <td>String</td>
     </tr>
     <tr>
-      <td>email</td>
-      <td>Email of the end user</td>
+      <td>username</td>
+      <td>The username (email) of the end user</td>
       <td>String</td>
     </tr>
     <tr>
@@ -259,7 +259,7 @@ Content-Type: application/json</p>
 <p>200
 Content-Type: application/json</p>
 
-<pre><code>{  
+<pre><code>{
     "access_token":"abc123",
     "token_type":"bearer",
     "expires_in":30,

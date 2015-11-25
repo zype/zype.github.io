@@ -20,7 +20,7 @@ Please <a href='mailto:developers@zypemedia.com'>email Zype</a> to get your clie
 
 #### Via password grant flow
 
-The password grant flow allows you to pass in a user's email address and password
+The password grant flow allows you to pass in a user's username (email address) and password
 to get an access token in return.
 
 <hr />
@@ -34,7 +34,7 @@ Parameter | Function | Type
 --------- | -------- | ----
 client_id | Your Zype App's client id      | String
 client_secret | Your Zype App's client secret   | String
-email | Email of the end user | String
+username | The username (email) of the end user | String
 password | Password of the end user | String
 grant_type | Grant Type. Use: 'password' | String
 
@@ -112,7 +112,7 @@ grant_type | Grant type. Use: 'refresh_token' | String
 200
 Content-Type: application/json
 
-<pre><code>{  
+<pre><code>{
     "access_token":"abc123",
     "token_type":"bearer",
     "expires_in":30,
