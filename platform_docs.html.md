@@ -73,6 +73,10 @@ Below are a bunch of short tutorials (with pictures!) to help you with a number 
     Self Publishing Your Roku Channel</a>
   </div>
   <div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>
+    <a href="/posts/2016/01/15/self-publish-firetv/">
+    Self Publishing Your Amazon Fire TV Channel</a>
+  </div>
+  <div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>
     <a href="/posts/2015/05/11/organizing-videos-for-roku/">
     Organizing Your Videos for Your Roku Channel</a>
   </div>
