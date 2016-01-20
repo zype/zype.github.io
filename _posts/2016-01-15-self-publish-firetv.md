@@ -29,6 +29,8 @@ In order to setup your app for Ads, Subscription,  or Purchase you’ll need to 
     - __In App Purchasing__ includes Subscription and Purchase for your Amazon app. The purchase is handled through Amazon and happens directly in the app. For more info see https://developer.amazon.com/public/apis/earn/in-app-purchasing.
     - Toggle this switch switch to enable In App Purchasing. If you are using Subscriptions you must Create a [New Plan](https://admin.zype.com/plans) with an Amazon ID in the Zype dashboard. Then, set up In App Purchasing items in the Amazon Dashboard. See the documentation below for more details.
 
+
+<hr id="subscriptions-zype">
 **Add Subscription Plans on Zype**
 
 1. Go to [Dashboard > Plans](https://admin.zype.com/plans).
@@ -43,6 +45,7 @@ You will need to set your videos to be either subscription or purchase.
 1. Go to __Dashboard > Videos > Edit > Video > Monetization Tab__ and
 toggle __Subscription Required__ or__ Purchase Required__ as appropriate.
 
+<hr id="submit">
 **Submit Your App On The Amazon Developer Console**
 
 * Go to the [Amazon Developer Console](https://developer.amazon.com/home.html)  and login or create an account.

@@ -6,8 +6,8 @@
 </description>
     <link>http://localhost:4000//</link>
     <atom:link href="http://localhost:4000//feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Thu, 14 Jan 2016 14:29:38 -0500</pubDate>
-    <lastBuildDate>Thu, 14 Jan 2016 14:29:38 -0500</lastBuildDate>
+    <pubDate>Thu, 14 Jan 2016 14:54:15 -0500</pubDate>
+    <lastBuildDate>Thu, 14 Jan 2016 14:54:15 -0500</lastBuildDate>
     <generator>Jekyll v2.3.0</generator>
     
       <item>
@@ -61,6 +61,8 @@
   &lt;li&gt;Go to &lt;strong&gt;Dashboard &amp;gt; Videos &amp;gt; Edit &amp;gt; Video &amp;gt; Monetization Tab&lt;/strong&gt; and
 toggle &lt;strong&gt;Subscription Required&lt;/strong&gt; or__ Purchase Required__ as appropriate.&lt;/li&gt;
 &lt;/ol&gt;
+
+&lt;hr id=&quot;submit&quot; /&gt;
 
 &lt;p&gt;&lt;strong&gt;Submit Your App On The Amazon Developer Console&lt;/strong&gt;&lt;/p&gt;
 

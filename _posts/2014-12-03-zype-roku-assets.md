@@ -23,7 +23,9 @@ icon set. They do not get loaded via a call to the Zype API:
 
 2. [Image Brand (Side Icon)](https://github.com/zype/zype-roku/blob/master/images/mm_icon_side_hd.png) - your small icon. HD is 108 x 69 pixels, SD is 80 x 46 pixels. PNG format.
 
-3. [Image Splash](https://github.com/zype/zype-roku/blob/master/images/splash_screen_hd.png) - the splash screen (what appears while your Roku Channel loads). 640 x 480 pixels. JPG format.
+3. [Image Splash SD](https://github.com/zype/zype-roku/blob/master/images/splash_screen_sd.png) - the splash screen (what appears while your Roku Channel loads) for SD screens. 720 x 480 pixels. JPG format.
+
+4. [Image Splash HD](https://github.com/zype/zype-roku/blob/master/images/splash_screen_hd.png) - the splash screen (what appears while your Roku Channel loads) for HD screens. 1280 x 720 pixels. JPG format.
 
 When publishing, you will also need a HD Poster that is a 290 x 218 JPG format and
 an SD Poster that is a 214 x 144 JPG format. We call that the Image Store in our Zype Roku App.
