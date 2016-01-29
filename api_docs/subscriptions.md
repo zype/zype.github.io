@@ -29,7 +29,6 @@ Content-Type: application/json
 
 <pre><code>{
   "response": [
-  {
     {
       "_id": "54579a714c616e0389010000",
       "_keywords": [
@@ -51,7 +50,6 @@ Content-Type: application/json
       "trial_period_days": 14,
       "updated_at": "2014-11-03T15:08:33.668Z"
     }
-  }
   ],
   "pagination": {
     current: 2,
