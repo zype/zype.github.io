@@ -105,7 +105,7 @@ to get an access token in return.</p>
 
 <hr />
 
-<pre><code> POST - https://login.zype.com/oauth/token/?client_id=client_id&amp;client_secret=client_secret&amp;email=email&amp;password=password&amp;grant_type=password
+<pre><code> POST - https://login.zype.com/oauth/token/?client_id=client_id&amp;client_secret=client_secret&amp;email=email&amp;password=password&amp;grant_type=client_credentials
 </code></pre>
 
 <h4 id="parameters">Parameters</h4>
@@ -141,7 +141,7 @@ to get an access token in return.</p>
     </tr>
     <tr>
       <td>grant_type</td>
-      <td>Grant Type. Use: ‘password’</td>
+      <td>Grant Type. Use: ‘client_credentials’</td>
       <td>String</td>
     </tr>
   </tbody>
