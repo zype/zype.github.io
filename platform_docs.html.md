@@ -60,6 +60,9 @@ Below are a bunch of short tutorials (with pictures!) to help you with a number 
     <div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>
       <a href="/posts/2015/11/03/analytics-tracking-partner-codes/">Analytics: Domains, Tracking Partners, and Tracking Codes</a>
     </div>
+    <div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>
+      <a href="/posts/2016/02/01/upload-search-widgets/">Upload and Search Embeddable Widgets</a>
+    </div>
 
   </div>
 
