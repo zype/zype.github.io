@@ -25,7 +25,7 @@ to get an access token in return.
 
 <hr />
 
-<pre><code> POST - https://login.zype.com/oauth/token/?client_id=client_id&client_secret=client_secret&email=email&password=password&grant_type=password
+<pre><code> POST - https://login.zype.com/oauth/token/?client_id=client_id&client_secret=client_secret&email=email&password=password&grant_type=client_credentials
 </code></pre>
 
 #### Parameters
@@ -36,7 +36,7 @@ client_id | Your Zype App's client id      | String
 client_secret | Your Zype App's client secret   | String
 username | The username (email) of the end user | String
 password | Password of the end user | String
-grant_type | Grant Type. Use: 'password' | String
+grant_type | Grant Type. Use: 'client_credentials' | String
 
 #### Response
 200
