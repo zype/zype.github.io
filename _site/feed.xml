@@ -4,10 +4,10 @@
     <title>Zype Dev Portal</title>
     <description>This is the devloper portal for Zype Media. Zype is Revenue and Reach Magic for Online Video. We help content owners deliver fully branded video experiences.
 </description>
-    <link>http://dev.zype.com//</link>
-    <atom:link href="http://dev.zype.com//feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Tue, 02 Feb 2016 10:55:46 -0500</pubDate>
-    <lastBuildDate>Tue, 02 Feb 2016 10:55:46 -0500</lastBuildDate>
+    <link>http://dev.zype.com/</link>
+    <atom:link href="http://dev.zype.com/feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Tue, 02 Feb 2016 11:05:57 -0500</pubDate>
+    <lastBuildDate>Tue, 02 Feb 2016 11:05:57 -0500</lastBuildDate>
     <generator>Jekyll v3.0.2</generator>
     
       <item>
@@ -20,7 +20,7 @@
 
 &lt;p&gt;&lt;em&gt;Note: You should only put this widget in a secure place on your website as it allows any user to upload content directly to your account.&lt;/em&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://dev.zype.com/assets/upload-search/upload-embed.png&quot; alt=&quot;Upload Embed&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://dev.zype.comassets/upload-search/upload-embed.png&quot; alt=&quot;Upload Embed&quot; /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;how-to-use-the-upload-embed&quot;&gt;How To Use the Upload Embed&lt;/h3&gt;
 
@@ -126,7 +126,7 @@
 
 &lt;p&gt;The search embed allows you to perform searches of your video library from your own website.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://dev.zype.com/assets/upload-search/search-embed.png&quot; alt=&quot;Search Embed&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://dev.zype.comassets/upload-search/search-embed.png&quot; alt=&quot;Search Embed&quot; /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;how-to-use-the-search-embed&quot;&gt;How To Use the Search Embed&lt;/h3&gt;
 
@@ -177,8 +177,8 @@
 &lt;/ol&gt;
 </description>
         <pubDate>Mon, 01 Feb 2016 05:37:55 -0500</pubDate>
-        <link>http://dev.zype.com//posts/2016/02/01/upload-search-widgets</link>
-        <guid isPermaLink="true">http://dev.zype.com//posts/2016/02/01/upload-search-widgets</guid>
+        <link>http://dev.zype.com/posts/2016/02/01/upload-search-widgets/</link>
+        <guid isPermaLink="true">http://dev.zype.com/posts/2016/02/01/upload-search-widgets/</guid>
         
         
         <category>developers</category>
@@ -249,7 +249,7 @@ toggle &lt;strong&gt;Subscription Required&lt;/strong&gt; or__ Purchase Required
   &lt;li&gt;Choose &lt;strong&gt;Mobile Web.&lt;/strong&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://dev.zype.com/assets/amazon_fire/mobile-web.png&quot; alt=&quot;Mobile Web&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://dev.zype.comassets/amazon_fire/mobile-web.png&quot; alt=&quot;Mobile Web&quot; /&gt;&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;Fill out the form and click &lt;strong&gt;Save.&lt;/strong&gt; You must complete every tab in the interface.&lt;/li&gt;
@@ -399,8 +399,8 @@ toggle &lt;strong&gt;Subscription Required&lt;/strong&gt; or__ Purchase Required
 &lt;p&gt;That’s it!&lt;/p&gt;
 </description>
         <pubDate>Fri, 15 Jan 2016 05:37:55 -0500</pubDate>
-        <link>http://dev.zype.com//posts/2016/01/15/self-publish-firetv</link>
-        <guid isPermaLink="true">http://dev.zype.com//posts/2016/01/15/self-publish-firetv</guid>
+        <link>http://dev.zype.com/posts/2016/01/15/self-publish-firetv/</link>
+        <guid isPermaLink="true">http://dev.zype.com/posts/2016/01/15/self-publish-firetv/</guid>
         
         
         <category>developers</category>
@@ -453,7 +453,7 @@ https://player.zype.com/embed/[video_id].html?autoplay=true&amp;amp;api_key=[api
 
 &lt;p&gt;To find the embed code for your video go to the Zype Dashboard &amp;gt; Video Library and then click the Video you’d like to edit. Go to the Embed Code tab on the top and you’ll see the video’s embed code.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://dev.zype.com/assets/tracking_partner/embed.png&quot; alt=&quot;embed code&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://dev.zype.comassets/tracking_partner/embed.png&quot; alt=&quot;embed code&quot; /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;iframe-or-javascript-embed-code&quot;&gt;iFrame or JavaScript Embed Code&lt;/h3&gt;
 
@@ -467,7 +467,7 @@ https://player.zype.com/embed/[video_id].html?autoplay=true&amp;amp;api_key=[api
 
 &lt;p&gt;If you have set up subscription, purchase, rental, or pass plans you can also add tracking_partner and tracking_code. First, grab your paywall embed code:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://dev.zype.com/assets/tracking_partner/paywall_embed.png&quot; alt=&quot;paywall embed code&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://dev.zype.comassets/tracking_partner/paywall_embed.png&quot; alt=&quot;paywall embed code&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;b&gt;Copy&lt;/b&gt; the paywall embed code. You’ll have to add &lt;b&gt;zype.tracking_partner=[tracking_partner]; zype.tracking_code=[tracking_code];&lt;/b&gt; in the second script tag. Be sure to add it before the zype.VideoEmbed() function. For example:&lt;/p&gt;
 
@@ -476,8 +476,8 @@ https://player.zype.com/embed/[video_id].html?autoplay=true&amp;amp;api_key=[api
 &lt;/code&gt;&lt;/p&gt;
 </description>
         <pubDate>Tue, 03 Nov 2015 05:04:55 -0500</pubDate>
-        <link>http://dev.zype.com//posts/2015/11/03/analytics-tracking-partner-codes</link>
-        <guid isPermaLink="true">http://dev.zype.com//posts/2015/11/03/analytics-tracking-partner-codes</guid>
+        <link>http://dev.zype.com/posts/2015/11/03/analytics-tracking-partner-codes/</link>
+        <guid isPermaLink="true">http://dev.zype.com/posts/2015/11/03/analytics-tracking-partner-codes/</guid>
         
         
         <category>developers</category>
@@ -492,46 +492,46 @@ you will need to create a featured playlist and a featured category on the Zype 
 of your Roku Channel displays your featured playlist while the remaining rows iterate
 through your the values in your featured category.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://dev.zype.com/assets/Categories,%20Playlists%20and%20Your%20Roku%20App/roku_playlist.png&quot; alt=&quot;playlist and categories&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://dev.zype.comassets/Categories,%20Playlists%20and%20Your%20Roku%20App/roku_playlist.png&quot; alt=&quot;playlist and categories&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Create your featured playlist&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;To create your featured playlist, navigate to the Playlists dashboard via the lefthand
 menu and click on “New Playlist”&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://dev.zype.com/assets/roku/playlist_1.png&quot; alt=&quot;playlist 1&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://dev.zype.comassets/roku/playlist_1.png&quot; alt=&quot;playlist 1&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Then, fill in the information for the playlist. The title will be what appears as the
 name of the video row on your Roku Channel. Make sure that you mark the playlist as active.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://dev.zype.com/assets/roku/playlist_2.png&quot; alt=&quot;playlist 2&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://dev.zype.comassets/roku/playlist_2.png&quot; alt=&quot;playlist 2&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Next, you need to add videos to your playlists. Go to the playlist and click “Add Videos.”
 Note, Roku can only play videos that are from Zype or Vimeo Pro. If you want this playlist
 to play on Roku, you will need to only add videos that have these video sources. You
 can order videos in your playlists by dragging the videos.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://dev.zype.com/assets/roku/playlist_2b.png&quot; alt=&quot;playlist 2b&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://dev.zype.comassets/roku/playlist_2b.png&quot; alt=&quot;playlist 2b&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Last, search for the videos that you would like to be included in your playlist. You
 can search for the videos by title in the search box.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://dev.zype.com/assets/roku/playlist_3.png&quot; alt=&quot;playlist 3&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://dev.zype.comassets/roku/playlist_3.png&quot; alt=&quot;playlist 3&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://dev.zype.com/assets/roku/playlist_2c.png&quot; alt=&quot;playlist 4&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://dev.zype.comassets/roku/playlist_2c.png&quot; alt=&quot;playlist 4&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Once you have a featured playlist, go to your Roku Channel in the Zype Platform and
 click on Edit Advanced Settings. In the “Main Configurations” tab, you can select
 the featured playlist. Click save changes.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://dev.zype.com/assets/roku/update_channel_playlist.png&quot; alt=&quot;category playlist update&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://dev.zype.comassets/roku/update_channel_playlist.png&quot; alt=&quot;category playlist update&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Create your featured category&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;To create your featured category, navigate to the Category dashboard via the lefthand
 menu and click on “New Category”&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://dev.zype.com/assets/roku/category_1.png&quot; alt=&quot;category 1&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://dev.zype.comassets/roku/category_1.png&quot; alt=&quot;category 1&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Then, fill in the information for your category. The values of the category are what get
 seen on your Roku. They are displayed in the order that are in the list. Each value
@@ -539,27 +539,27 @@ gets its own row on Roku. You can determine whether or not to prepend the catego
 to the value in your advanced Roku settings. You can order videos in your category by setting
 the episode number.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://dev.zype.com/assets/roku/category_2.png&quot; alt=&quot;category 2&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://dev.zype.comassets/roku/category_2.png&quot; alt=&quot;category 2&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Now that you have your category values, you will need to assign these values to each
 of your videos. Go to your video and select the metadata tab. Then, check the values
 that you want and click save. You can also mass assign categories from the Video Library screen.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://dev.zype.com/assets/roku/category_3.png&quot; alt=&quot;category 3&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://dev.zype.comassets/roku/category_3.png&quot; alt=&quot;category 3&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Once you have a featured category, go to your Roku Channel in the Zype Platform and
 click on Edit Advanced Settings. In the “Main Configurations” tab, you can select
 the featured category, and whether or not to prepend your category name.
 Click save changes.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://dev.zype.com/assets/roku/update_channel_playlist.png&quot; alt=&quot;category playlist update&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://dev.zype.comassets/roku/update_channel_playlist.png&quot; alt=&quot;category playlist update&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Reload your Roku Channel, you should see the first row be your featured playlist and the
 remaining rows be the your category values!&lt;/p&gt;
 </description>
         <pubDate>Mon, 11 May 2015 06:37:55 -0400</pubDate>
-        <link>http://dev.zype.com//posts/2015/05/11/organizing-videos-for-roku</link>
-        <guid isPermaLink="true">http://dev.zype.com//posts/2015/05/11/organizing-videos-for-roku</guid>
+        <link>http://dev.zype.com/posts/2015/05/11/organizing-videos-for-roku/</link>
+        <guid isPermaLink="true">http://dev.zype.com/posts/2015/05/11/organizing-videos-for-roku/</guid>
         
         
         <category>developers</category>
@@ -575,20 +575,20 @@ thumbnails from an external data source like YouTube or Vimeo.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Step 1:&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://dev.zype.com/assets/thumbnails/thumbnails_1.png&quot; alt=&quot;thumbnail 1&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://dev.zype.comassets/thumbnails/thumbnails_1.png&quot; alt=&quot;thumbnail 1&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;From your video library, click on the video that you want to change the thumbnail
 for and click on the “Thumbnails” tab.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Step 2:&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://dev.zype.com/assets/thumbnails/thumbnails_2.png&quot; alt=&quot;thumbnail 2&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://dev.zype.comassets/thumbnails/thumbnails_2.png&quot; alt=&quot;thumbnail 2&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Select the thumbnail that you want. The thumbnail will automatically be updated!&lt;/p&gt;
 </description>
         <pubDate>Thu, 09 Apr 2015 06:37:55 -0400</pubDate>
-        <link>http://dev.zype.com//posts/2015/04/09/change-thumbnails</link>
-        <guid isPermaLink="true">http://dev.zype.com//posts/2015/04/09/change-thumbnails</guid>
+        <link>http://dev.zype.com/posts/2015/04/09/change-thumbnails/</link>
+        <guid isPermaLink="true">http://dev.zype.com/posts/2015/04/09/change-thumbnails/</guid>
         
         
         <category>developers</category>
@@ -604,29 +604,29 @@ and following the photo tutorial below.&lt;/p&gt;
 
 &lt;p&gt;Go to &lt;a href=&quot;https://admin.zype.com/&quot;&gt;the Zype Platform&lt;/a&gt; and click on “Forgot your password.”&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://dev.zype.com/assets/password/forgot_password_1.png&quot; alt=&quot;forgot password 1&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://dev.zype.comassets/password/forgot_password_1.png&quot; alt=&quot;forgot password 1&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Step 2:&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;Fill in the email that you used to sign up for your Zype account.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://dev.zype.com/assets/password/forgot_password_2.png&quot; alt=&quot;forgot password 2&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://dev.zype.comassets/password/forgot_password_2.png&quot; alt=&quot;forgot password 2&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Step 3:&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;Receive an email from Zype and click on “Change my password.”&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://dev.zype.com/assets/password/forgot_password_3.png&quot; alt=&quot;forgot password 3&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://dev.zype.comassets/password/forgot_password_3.png&quot; alt=&quot;forgot password 3&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Step 4:&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;Enter new password and confirm your new password&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://dev.zype.com/assets/password/forgot_password_4.png&quot; alt=&quot;forgot password 4&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://dev.zype.comassets/password/forgot_password_4.png&quot; alt=&quot;forgot password 4&quot; /&gt;&lt;/p&gt;
 </description>
         <pubDate>Thu, 09 Apr 2015 06:37:55 -0400</pubDate>
-        <link>http://dev.zype.com//posts/2015/04/09/forgot-password</link>
-        <guid isPermaLink="true">http://dev.zype.com//posts/2015/04/09/forgot-password</guid>
+        <link>http://dev.zype.com/posts/2015/04/09/forgot-password/</link>
+        <guid isPermaLink="true">http://dev.zype.com/posts/2015/04/09/forgot-password/</guid>
         
         
         <category>developers</category>
@@ -641,12 +641,12 @@ video library as new videos.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Step 1: Add your video source and make sure that add videos is turned on&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://dev.zype.com/assets/video_sources/add_source.png&quot; alt=&quot;add video source&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://dev.zype.comassets/video_sources/add_source.png&quot; alt=&quot;add video source&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Step 2: Navigate to your Video Library, you should see new videos from your video source that
 are active! Note, videos will be added to your video library as they become available&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://dev.zype.com/assets/video_sources/video_library.png&quot; alt=&quot;video library&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://dev.zype.comassets/video_sources/video_library.png&quot; alt=&quot;video library&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Advanced Importing&lt;/strong&gt;&lt;/p&gt;
 
@@ -655,17 +655,17 @@ library or if you want to merge your video imports to videos preexisting in your
 turn add video ‘off’ when you create a video source and use the “Advanced Video Importing”
 option.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://dev.zype.com/assets/video_sources/add_source_not_auto.png&quot; alt=&quot;add video source not-auto&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://dev.zype.comassets/video_sources/add_source_not_auto.png&quot; alt=&quot;add video source not-auto&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Then, navigate to the video imports screen and click on the add button for the videos that you
 want to add to your video library or the merge button if you want to merge your video imports to
 preexisting videos in your video library.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://dev.zype.com/assets/video_sources/advanced_video_imports.png&quot; alt=&quot;advanced video importing&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://dev.zype.comassets/video_sources/advanced_video_imports.png&quot; alt=&quot;advanced video importing&quot; /&gt;&lt;/p&gt;
 </description>
         <pubDate>Sun, 15 Feb 2015 05:37:55 -0500</pubDate>
-        <link>http://dev.zype.com//posts/2015/02/15/importing-videos-from-third-party-source</link>
-        <guid isPermaLink="true">http://dev.zype.com//posts/2015/02/15/importing-videos-from-third-party-source</guid>
+        <link>http://dev.zype.com/posts/2015/02/15/importing-videos-from-third-party-source/</link>
+        <guid isPermaLink="true">http://dev.zype.com/posts/2015/02/15/importing-videos-from-third-party-source/</guid>
         
         
         <category>developers</category>
@@ -679,17 +679,17 @@ the button “Add to Library.” This will automatically add new videos to your 
 would like to merge videos into preexisting videos in your video library, you will need to click
 the merge chain for each video.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://dev.zype.com/assets/video_imports/bulk_add.png&quot; alt=&quot;add to library&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://dev.zype.comassets/video_imports/bulk_add.png&quot; alt=&quot;add to library&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;To bulk remove video imports from your video library, check the videos that you want to remove
 and click the button “Remove from Library.” Note, this does not delete the video, it only removes
 the chosen video import data source from your video.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://dev.zype.com/assets/video_imports/bulk_remove.png&quot; alt=&quot;remove from library&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://dev.zype.comassets/video_imports/bulk_remove.png&quot; alt=&quot;remove from library&quot; /&gt;&lt;/p&gt;
 </description>
         <pubDate>Sun, 15 Feb 2015 05:37:55 -0500</pubDate>
-        <link>http://dev.zype.com//posts/2015/02/15/bulk-video-importing</link>
-        <guid isPermaLink="true">http://dev.zype.com//posts/2015/02/15/bulk-video-importing</guid>
+        <link>http://dev.zype.com/posts/2015/02/15/bulk-video-importing/</link>
+        <guid isPermaLink="true">http://dev.zype.com/posts/2015/02/15/bulk-video-importing/</guid>
         
         
         <category>developers</category>
@@ -701,22 +701,22 @@ the chosen video import data source from your video.&lt;/p&gt;
         <description>&lt;p&gt;We have simplified the process of publishing a Roku Channel from the Zype Platform.
 The process now has three parts. First, you need to set up your channel.
 Then, Zype will build your Channel for you or you can
-&lt;a href=&quot;http://dev.zype.com/posts/2015/02/13/self-publish-roku/&quot;&gt;self-publish your Channel&lt;/a&gt;.&lt;/p&gt;
+&lt;a href=&quot;http://dev.zype.composts/2015/02/13/self-publish-roku/&quot;&gt;self-publish your Channel&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Step 1: Set Up Your Video Library and Channel&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;First, you will need to upload and transcode videos onto the Zype Platform.
 Currently, Roku Channels only support videos with a Zype video source.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://dev.zype.com/assets/Uploading Videos to the Zype Platform from the Web/upload_video_1.png&quot; alt=&quot;upload and transcode&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://dev.zype.comassets/Uploading Videos to the Zype Platform from the Web/upload_video_1.png&quot; alt=&quot;upload and transcode&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Second, you will need to set up your Roku Channel. Navigate to the Video Apps page&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://dev.zype.com/assets/Publishing Your Roku App/dashboard_to_video_app.png&quot; alt=&quot;video apps page&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://dev.zype.comassets/Publishing Your Roku App/dashboard_to_video_app.png&quot; alt=&quot;video apps page&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Click on Roku to set up a new Roku Channel for publishing&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://dev.zype.com/assets/Publishing Your Roku App/set_up_roku_app.png&quot; alt=&quot;Roku publishing&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://dev.zype.comassets/Publishing Your Roku App/set_up_roku_app.png&quot; alt=&quot;Roku publishing&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Set up your Roku Channel by supplying a title, subtitle, a channel image, and
 select a channel template. Zype will create multiple images from your one supplied
@@ -724,7 +724,7 @@ channel image including your channel logo, poster art, and loading screen.
 It is suggested to have a 640 px by 480 px PNG image because the image will be used
 in many different sizes.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://dev.zype.com/assets/Publishing Your Roku App/set_up_roku_screen.png&quot; alt=&quot;roku set up&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://dev.zype.comassets/Publishing Your Roku App/set_up_roku_screen.png&quot; alt=&quot;roku set up&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Step 2: Zype Builds Your Roku Channel&lt;/strong&gt;&lt;/p&gt;
 
@@ -732,19 +732,19 @@ in many different sizes.&lt;/p&gt;
 code for your Roku Channel. All you have to do is wait a couple of minutes!
 The page will automatically refresh once your Channel is ready.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://dev.zype.com/assets/Publishing Your Roku App/roku_bundling.png&quot; alt=&quot;roku bundling&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://dev.zype.comassets/Publishing Your Roku App/roku_bundling.png&quot; alt=&quot;roku bundling&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Step 3: Publish Channel&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;You can choose to either self-publish or have Zype publish your Roku Channel for you.
-If you choose to self publish &lt;a href=&quot;http://dev.zype.com/posts/2015/02/13/self-publish-roku/&quot;&gt;click here&lt;/a&gt;
+If you choose to self publish &lt;a href=&quot;http://dev.zype.composts/2015/02/13/self-publish-roku/&quot;&gt;click here&lt;/a&gt;
 to read our guide to self publish your Roku Channel.
 If you choose to have Zype publish your channel, you will be sent to a checkout
 page to redeem your publishing package or pay for a publishing package.
 Once you checkout, a member of the Zype team will package, QA, and submit your
 Roku Channel to the Roku Channel Store.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://dev.zype.com/assets/Publishing Your Roku App/roku_publishing.png&quot; alt=&quot;roku publishing options&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://dev.zype.comassets/Publishing Your Roku App/roku_publishing.png&quot; alt=&quot;roku publishing options&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Typically, once your Roku Channel is submitted to the Roku Channel Store, it takes
 3-4 weeks to get to the front of the QA queue and then another 1-2 weeks for approval.
@@ -756,12 +756,12 @@ you can create a private Roku Channel that can be shared immediately via url.&lt
 
 &lt;p&gt;The majority of settings for your Roku Channel are configured at run-time.
 Thus, you can edit Channel settings such as your featured playlist, your logos and
-themes without having to re-publish. &lt;a href=&quot;http://dev.zype.com/posts/2015/02/13/roku-advanced-settings/&quot;&gt;Click here&lt;/a&gt;
+themes without having to re-publish. &lt;a href=&quot;http://dev.zype.composts/2015/02/13/roku-advanced-settings/&quot;&gt;Click here&lt;/a&gt;
 to read how to edit your Roku Channel.&lt;/p&gt;
 </description>
         <pubDate>Fri, 13 Feb 2015 05:37:55 -0500</pubDate>
-        <link>http://dev.zype.com//posts/2015/02/13/zype-publish-roku</link>
-        <guid isPermaLink="true">http://dev.zype.com//posts/2015/02/13/zype-publish-roku</guid>
+        <link>http://dev.zype.com/posts/2015/02/13/zype-publish-roku/</link>
+        <guid isPermaLink="true">http://dev.zype.com/posts/2015/02/13/zype-publish-roku/</guid>
         
         
         <category>developers</category>
@@ -771,7 +771,7 @@ to read how to edit your Roku Channel.&lt;/p&gt;
       <item>
         <title>Self Publishing a Roku Channel on the Zype Platform</title>
         <description>&lt;p&gt;Before being ready to self-publish, you will need to set up your Roku Channel on the Zype
-Platform. &lt;a href=&quot;http://dev.zype.com/posts/2015/02/13/zype-publish-roku&quot;&gt;Click here&lt;/a&gt; to read up on
+Platform. &lt;a href=&quot;http://dev.zype.composts/2015/02/13/zype-publish-roku&quot;&gt;Click here&lt;/a&gt; to read up on
 how to set up your Roku Channel for publishing.
 To self-publish your Roku Channel, you will need to have a Roku device and be
 comfortable using the terminal. This tutorial is focused for those users who are
@@ -795,11 +795,11 @@ your Roku Channel into your Roku device.&lt;/p&gt;
 &lt;p&gt;Next, open up app.mk in your text editor of choice and change the ROKU_DEV_TARGET
 and DEVPASSWORD to match your Roku device.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://dev.zype.com/assets/Publishing Your Roku App/replace_appmk_vars.png&quot; alt=&quot;app.mk replacement&quot; /&gt;)&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://dev.zype.comassets/Publishing Your Roku App/replace_appmk_vars.png&quot; alt=&quot;app.mk replacement&quot; /&gt;)&lt;/p&gt;
 
 &lt;p&gt;Then, run make install inside the Roku Channel directory in your terminal to side load your Roku Channel to your Roku device.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://dev.zype.com/assets/Publishing Your Roku App/make_install.png&quot; alt=&quot;make install&quot; /&gt;)&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://dev.zype.comassets/Publishing Your Roku App/make_install.png&quot; alt=&quot;make install&quot; /&gt;)&lt;/p&gt;
 
 &lt;p&gt;If the command is successful, your Roku Channel will load automatically to your Roku Device.&lt;/p&gt;
 
@@ -825,8 +825,8 @@ You will have to be logged into your Roku Developer Account.&lt;/p&gt;
 if you have any questions or would like Zype to publish your Roku Channel for you!&lt;/em&gt;&lt;/p&gt;
 </description>
         <pubDate>Fri, 13 Feb 2015 05:37:55 -0500</pubDate>
-        <link>http://dev.zype.com//posts/2015/02/13/self-publish-roku</link>
-        <guid isPermaLink="true">http://dev.zype.com//posts/2015/02/13/self-publish-roku</guid>
+        <link>http://dev.zype.com/posts/2015/02/13/self-publish-roku/</link>
+        <guid isPermaLink="true">http://dev.zype.com/posts/2015/02/13/self-publish-roku/</guid>
         
         
         <category>developers</category>

@@ -11,7 +11,7 @@
 ">
 
     <link rel="stylesheet" href="/css/main.css">
-    <link rel="canonical" href="http://dev.zype.com//posts/2015/11/03/analytics-tracking-partner-codes">
+    <link rel="canonical" href="http://dev.zype.com/posts/2015/11/03/analytics-tracking-partner-codes/">
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 
     <!--[if lt IE 9]>
@@ -42,7 +42,7 @@
 
     <header id="header" style="overflow-y: scroll;">
   <div id="content">
-    <a href="/"><img src="http://dev.zype.com/assets/logo.png" alt="Zype" />
+    <a href="/"><img src="http://dev.zype.comassets/logo.png" alt="Zype" />
     <h1 id="title">Developer Portal</h1></a>
     <p>a knowledge base</p>
     <div class="hidden-mobile">
@@ -76,7 +76,7 @@ This is useful if you have specific campaigns or goals. For example, if your pla
 
 <p>The general format for usage is:</p>
 
-<p><code>
+<p><code class="highlighter-rouge">
 https://player.zype.com/embed/[video_id].html?autoplay=true&amp;api_key=[api_key]&amp;tracking_code=[tracking_code]&amp;tracking_partner=[tracking_partner]
 </code></p>
 
@@ -86,7 +86,7 @@ https://player.zype.com/embed/[video_id].html?autoplay=true&amp;api_key=[api_key
 
 <p>Let’s say you are embedding your videos on a site iWidgets. To track impressions by that partner you’d add tracking_partner=iwidgets to your Embed Code url:</p>
 
-<p><code>
+<p><code class="highlighter-rouge">
 https://player.zype.com/embed/[video_id].html?autoplay=true&amp;api_key=[api_key]&amp;tracking_partner=iwidgets
 </code></p>
 
@@ -94,11 +94,11 @@ https://player.zype.com/embed/[video_id].html?autoplay=true&amp;api_key=[api_key
 
 <p>If you’d like to get more details you can add a Tracking Code. Tracking Codes are grouped by Tracking Partner. For example, if the iWidgets site is placing your videos on the <b>home</b> page and on the <b>store</b> page you could track how each of these individually performs, by adding <b>tracking_code=home</b> and <b>tracking_code=store</b>. For example</p>
 
-<p><code>
+<p><code class="highlighter-rouge">
 https://player.zype.com/embed/[video_id].html?autoplay=true&amp;api_key=[api_key]&amp;tracking_partner=iwidgets&amp;tracking_code=home
 </code></p>
 
-<p><code>
+<p><code class="highlighter-rouge">
 https://player.zype.com/embed/[video_id].html?autoplay=true&amp;api_key=[api_key]&amp;tracking_partner=iwidgets&amp;tracking_code=store
 </code></p>
 
@@ -108,13 +108,13 @@ https://player.zype.com/embed/[video_id].html?autoplay=true&amp;api_key=[api_key
 
 <p>To find the embed code for your video go to the Zype Dashboard &gt; Video Library and then click the Video you’d like to edit. Go to the Embed Code tab on the top and you’ll see the video’s embed code.</p>
 
-<p><img src="http://dev.zype.com/assets/tracking_partner/embed.png" alt="embed code" /></p>
+<p><img src="http://dev.zype.comassets/tracking_partner/embed.png" alt="embed code" /></p>
 
 <h3 id="iframe-or-javascript-embed-code">iFrame or JavaScript Embed Code</h3>
 
 <p><b>Copy</b> the embed code. Then modify the <b>src</b> by adding the <b>tracking_partner</b> and <b>tracking_code</b> parameters. Note that you must always add the <b>tracking_partner</b>. The tracking_code is optional.</p>
 
-<p><code>
+<p><code class="highlighter-rouge">
 https://player.zype.com/embed/[video_id].html?autoplay=true&amp;api_key=[api_key]&amp;tracking_code=[tracking_code]&amp;tracking_partner=[tracking_partner]
 </code></p>
 
@@ -122,11 +122,11 @@ https://player.zype.com/embed/[video_id].html?autoplay=true&amp;api_key=[api_key
 
 <p>If you have set up subscription, purchase, rental, or pass plans you can also add tracking_partner and tracking_code. First, grab your paywall embed code:</p>
 
-<p><img src="http://dev.zype.com/assets/tracking_partner/paywall_embed.png" alt="paywall embed code" /></p>
+<p><img src="http://dev.zype.comassets/tracking_partner/paywall_embed.png" alt="paywall embed code" /></p>
 
 <p><b>Copy</b> the paywall embed code. You’ll have to add <b>zype.tracking_partner=[tracking_partner]; zype.tracking_code=[tracking_code];</b> in the second script tag. Be sure to add it before the zype.VideoEmbed() function. For example:</p>
 
-<p><code>
+<p><code class="highlighter-rouge">
 &lt;script type="text/javascript" src="https://play.zype.com/javascripts/subscription_embed.js"&gt;&lt;/script&gt;&lt;div id='zype_553297c169702d0885a4435b' style='width:100%; min-width:300px; max-width:560px;'&gt;&lt;/div&gt;&lt;script&gt;zype.siteId = 'F7DbcH2vVnvPtYRIY1Xq9z92Bypj90i2uEcudIqK8KhNl_y-xWQNIi2UfpfzZl3N'; zype.tracking_partner=[tracking_partner]; zype.tracking_code=[tracking_code]; zype.videoId = '553297c169702d0885a4435b';zype.videoEmbed('zype_553297c169702d0885a4435b');&lt;/script&gt;
 </code></p>
 
