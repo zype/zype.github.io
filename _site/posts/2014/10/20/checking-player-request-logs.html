@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html>
 
-<head>
+  <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>Zype Developer Portal | Platform Docs</title>
+    <title>Checking your DPT request logs</title>
     <meta name="description" content="This is the devloper portal for Zype Media. Zype is Revenue and Reach Magic for Online Video. We help content owners deliver fully branded video experiences.
 ">
 
     <link rel="stylesheet" href="/css/main.css">
-    <link rel="canonical" href="http://dev.zype.com//platform_docs/reports_and_analytics/">
+    <link rel="canonical" href="http://dev.zype.com//posts/2014/10/20/checking-player-request-logs">
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 
     <!--[if lt IE 9]>
@@ -38,72 +38,40 @@
 </head>
 
 
-<body>
+  <body>
 
-  <header id="header" style="overflow-y: scroll;">
+    <header id="header" style="overflow-y: scroll;">
   <div id="content">
     <a href="/"><img src="http://dev.zype.com/assets/logo.png" alt="Zype" />
-      <h1 id="title">Developer Portal</h1></a>
-      <p>a knowledge base</p>
+    <h1 id="title">Developer Portal</h1></a>
+    <p>a knowledge base</p>
+    <div class="hidden-mobile">
       <br>
-      <p class="category"><a href="/api_docs/intro/" style="color: #8acfef;">API Documentation</a></p>
-      <p class="category"><a href="/platform_docs/" style="color: #8acfef;">Platform Documentation</a></p>
-        <h4 class="api-header">Getting Started:</h4>
-          <p><a href="/platform_docs/overview/">Overview</a></p>
-          <p><a href="/platform_docs/adding_videos/">Adding Videos</a></p>
-          <p><a href="/platform_docs/creating_an_app/">Creating an App</a></p>
-          <p><a href="/platform_docs/embedding_a_player/">Embedding a Player</a></p>
-          <p><a href="/platform_docs/settings/">Settings</a></p>
-          <p><a href="/platform_docs/advertising/">Advertising</a></p>
-          <p><a href="/platform_docs/reports_and_analytics/">Reports and Analytics</a></p>
-          <p><a href="/platform_docs/video_troubleshooting/">Video Troubleshooting</a></p>
-        <h4 class="api-header">Learn About:</h4>
-          <p><a href="/platform_docs/videos/">Videos</a></p>
-          <p><a href="/platform_docs/apps/">Apps</a></p>
-          <p><a href="/platform_docs/player_rules/">Player Rules</a></p>
-          <p><a href="/platform_docs/playlists/">Playlists</a></p>
-          <p><a href="/platform_docs/categories/">Categories</a></p>
-          <p><a href="/platform_docs/assets/">Assets</a></p>
-          <p><a href="/platform_docs/consumers/">Consumers</a></p>
-          <p><a href="/platform_docs/plans/">Plans</a></p>
-          <p><a href="/platform_docs/subscriptions/">Subscriptions</a></p>
-          <p><a href="/platform_docs/purchase_and_rental/">Purchase and Rental</a></p>
-          <p><a href="/platform_docs/distribution/">Distribution</a></p>
-          <p><a href="/platform_docs/zobjects/">Zobjects</a></p>
-        <br>
-      <p class="category"><a href="/glossary/" style="color: #8acfef;">Glossary</a></p>
-      <p class="category"><a href="http://status.zype.com" style="color: #8acfef;">System Status</a></p>
-      <p class="category"><a href="/faq/" style="color: #8acfef;">FAQ</a></p>
+        <p class="category"><a href="/api_docs/intro/" style="color: #8acfef;">API Documentation</a></p>
+        <p class="category"><a href="/platform_docs/" style="color: #8acfef;">Platform Documentation</a></p>
+        <p class="category"><a href="/glossary/" style="color: #8acfef;">Glossary</a></p>
+        <p class="category"><a href="http://status.zype.com" style="color: #8acfef;">System Status</a></p>
+        <p class="category"><a href="/faq/" style="color: #8acfef;">FAQ</a></p>
       <br>
-      <div class="hidden-mobile">
-        © 2015 Zype Media Group
-      </div>
+      © 2015 Zype Media Group
     </div>
-  </header>
-
-
-  <section id="main">
-    <h2 id="reports-and-analytics-on-the-zype-platform">Reports and analytics on the Zype Platform</h2>
-<p>We know that it’s all about views at the end of the day. These guides are designed to walk you through the different reports you can generate and help you understand how to get the most out of your video content.</p>
-
-<div style="width: 100%;">
-  <div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>
-    <a href="#1">
-    Monitoring Your Views</a>
   </div>
-</div>
+</header>
 
-<hr id="1" />
 
-<h2 id="monitoring-your-views">Monitoring your views</h2>
-<p>In a previous post, we covered how to use Zype’s Dynamic Player Technology (DPT).
+    <section id="main">
+      <div class="post">
+  <h1 class="post-title">Checking your DPT request logs</h1>
+  <p class="post-meta">Oct 20, 2014</p>
+  <article class="post-content">
+    <p>In a previous post, we covered how to use Zype’s Dynamic Player Technology (DPT).
 In this post, we’ll be covering how to use the DPT logs to see what requests are being made for your video content.
 For example, let’s say you’ve uploaded a batch of new videos and after the first 30 days, you’d like to get an idea
 of who’s viewing your content and what times of the day are most popular for viewing.</p>
 
 <h3 id="where-can-i-find-my-logs">Where can I find my logs?</h3>
 
-<p>After you’ve uploaded some video content to the Zype Platform, log in through the <a href="http://admin.zype.com/">admin portal</a>
+<p>After you’ve uploaded some video content to the Zype platform, log in through the <a href="http://admin.zype.com/">admin portal</a>
 and navigate to the logs section under the settings dropdown menu. In this post, we’ll cover the request logs,
 so feel free to click on that link once you see the logs menu.</p>
 
@@ -167,7 +135,7 @@ Here are the most pertinent pieces of information:</p>
 
 <p>The request logs screen gives you a snapshot of the most recent requests by default.</p>
 
-<p>Sorting the request logs is easy: use the four dropdown menus to select your search parameters
+<p>Sorting the request logs is easy: use the four drop down menus to select your search parameters
 and then click on the search button.</p>
 
 <p><img src="http://dev.zype.com/assets/Monitoring Your Views/request_log_search_3.png" alt="searching logs" /></p>
@@ -175,15 +143,31 @@ and then click on the search button.</p>
 <p><em>Check our <a href="http://dev.zype.com/posts/2014/10/10/adding-zype-to-rails/">previous post</a>
 on how to set up your Rails App with the Zype Gem!</em></p>
 
-  </section>
+  </article>
+  <div id="disqus_thread"></div>
+  <script type="text/javascript">
+      /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+      var disqus_shortname = 'zypedev'; // required: replace example with your forum shortname
 
-  <footer id="footer">
+      /* * * DON'T EDIT BELOW THIS LINE * * */
+      (function() {
+          var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+          dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+
+    </section>
+
+    <footer id="footer">
   <p style="padding-top: 10px;">
     © 2015 Zype Media Group
   </p>
 </footer>
 
 
-</body>
+  </body>
 
 </html>

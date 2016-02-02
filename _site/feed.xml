@@ -6,9 +6,9 @@
 </description>
     <link>http://dev.zype.com//</link>
     <atom:link href="http://dev.zype.com//feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Tue, 02 Feb 2016 10:09:01 -0500</pubDate>
-    <lastBuildDate>Tue, 02 Feb 2016 10:09:01 -0500</lastBuildDate>
-    <generator>Jekyll v2.3.0</generator>
+    <pubDate>Tue, 02 Feb 2016 10:55:46 -0500</pubDate>
+    <lastBuildDate>Tue, 02 Feb 2016 10:55:46 -0500</lastBuildDate>
+    <generator>Jekyll v3.0.2</generator>
     
       <item>
         <title>Upload and Search Embeddable Widgets</title>
@@ -246,7 +246,7 @@ toggle &lt;strong&gt;Subscription Required&lt;/strong&gt; or__ Purchase Required
 &lt;ul&gt;
   &lt;li&gt;Go to the &lt;a href=&quot;https://developer.amazon.com/home.html&quot;&gt;Amazon Developer Console&lt;/a&gt;  and login or create an account.&lt;/li&gt;
   &lt;li&gt;Click &lt;strong&gt;Add New App.&lt;/strong&gt;&lt;/li&gt;
-  &lt;li&gt;Choose &lt;strong&gt;Mobile Web.&lt;/strong&gt; &lt;/li&gt;
+  &lt;li&gt;Choose &lt;strong&gt;Mobile Web.&lt;/strong&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;&lt;img src=&quot;http://dev.zype.com/assets/amazon_fire/mobile-web.png&quot; alt=&quot;Mobile Web&quot; /&gt;&lt;/p&gt;
@@ -317,7 +317,7 @@ toggle &lt;strong&gt;Subscription Required&lt;/strong&gt; or__ Purchase Required
   &lt;li&gt;Click &lt;strong&gt;Add a Subscription&lt;/strong&gt;.&lt;/li&gt;
   &lt;li&gt;&lt;strong&gt;General Information&lt;/strong&gt;
     &lt;ul&gt;
-      &lt;li&gt;&lt;strong&gt;Title:&lt;/strong&gt; 
+      &lt;li&gt;&lt;strong&gt;Title:&lt;/strong&gt;
         &lt;ul&gt;
           &lt;li&gt;Monthly Subscription (choose an appropriate title).&lt;/li&gt;
         &lt;/ul&gt;
@@ -373,7 +373,7 @@ toggle &lt;strong&gt;Subscription Required&lt;/strong&gt; or__ Purchase Required
     &lt;ul&gt;
       &lt;li&gt;&lt;strong&gt;Title&lt;/strong&gt;
         &lt;ul&gt;
-          &lt;li&gt;The title of your video &lt;/li&gt;
+          &lt;li&gt;The title of your video&lt;/li&gt;
         &lt;/ul&gt;
       &lt;/li&gt;
       &lt;li&gt;&lt;strong&gt;SKU&lt;/strong&gt;
@@ -421,7 +421,7 @@ This is useful if you have specific campaigns or goals. For example, if your pla
 
 &lt;p&gt;The general format for usage is:&lt;/p&gt;
 
-&lt;p&gt;&lt;code&gt;
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;
 https://player.zype.com/embed/[video_id].html?autoplay=true&amp;amp;api_key=[api_key]&amp;amp;tracking_code=[tracking_code]&amp;amp;tracking_partner=[tracking_partner]
 &lt;/code&gt;&lt;/p&gt;
 
@@ -431,7 +431,7 @@ https://player.zype.com/embed/[video_id].html?autoplay=true&amp;amp;api_key=[api
 
 &lt;p&gt;Let’s say you are embedding your videos on a site iWidgets. To track impressions by that partner you’d add tracking_partner=iwidgets to your Embed Code url:&lt;/p&gt;
 
-&lt;p&gt;&lt;code&gt;
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;
 https://player.zype.com/embed/[video_id].html?autoplay=true&amp;amp;api_key=[api_key]&amp;amp;tracking_partner=iwidgets
 &lt;/code&gt;&lt;/p&gt;
 
@@ -439,11 +439,11 @@ https://player.zype.com/embed/[video_id].html?autoplay=true&amp;amp;api_key=[api
 
 &lt;p&gt;If you’d like to get more details you can add a Tracking Code. Tracking Codes are grouped by Tracking Partner. For example, if the iWidgets site is placing your videos on the &lt;b&gt;home&lt;/b&gt; page and on the &lt;b&gt;store&lt;/b&gt; page you could track how each of these individually performs, by adding &lt;b&gt;tracking_code=home&lt;/b&gt; and &lt;b&gt;tracking_code=store&lt;/b&gt;. For example&lt;/p&gt;
 
-&lt;p&gt;&lt;code&gt;
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;
 https://player.zype.com/embed/[video_id].html?autoplay=true&amp;amp;api_key=[api_key]&amp;amp;tracking_partner=iwidgets&amp;amp;tracking_code=home
 &lt;/code&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;code&gt;
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;
 https://player.zype.com/embed/[video_id].html?autoplay=true&amp;amp;api_key=[api_key]&amp;amp;tracking_partner=iwidgets&amp;amp;tracking_code=store
 &lt;/code&gt;&lt;/p&gt;
 
@@ -459,7 +459,7 @@ https://player.zype.com/embed/[video_id].html?autoplay=true&amp;amp;api_key=[api
 
 &lt;p&gt;&lt;b&gt;Copy&lt;/b&gt; the embed code. Then modify the &lt;b&gt;src&lt;/b&gt; by adding the &lt;b&gt;tracking_partner&lt;/b&gt; and &lt;b&gt;tracking_code&lt;/b&gt; parameters. Note that you must always add the &lt;b&gt;tracking_partner&lt;/b&gt;. The tracking_code is optional.&lt;/p&gt;
 
-&lt;p&gt;&lt;code&gt;
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;
 https://player.zype.com/embed/[video_id].html?autoplay=true&amp;amp;api_key=[api_key]&amp;amp;tracking_code=[tracking_code]&amp;amp;tracking_partner=[tracking_partner]
 &lt;/code&gt;&lt;/p&gt;
 
@@ -471,7 +471,7 @@ https://player.zype.com/embed/[video_id].html?autoplay=true&amp;amp;api_key=[api
 
 &lt;p&gt;&lt;b&gt;Copy&lt;/b&gt; the paywall embed code. You’ll have to add &lt;b&gt;zype.tracking_partner=[tracking_partner]; zype.tracking_code=[tracking_code];&lt;/b&gt; in the second script tag. Be sure to add it before the zype.VideoEmbed() function. For example:&lt;/p&gt;
 
-&lt;p&gt;&lt;code&gt;
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;
 &amp;lt;script type=&quot;text/javascript&quot; src=&quot;https://play.zype.com/javascripts/subscription_embed.js&quot;&amp;gt;&amp;lt;/script&amp;gt;&amp;lt;div id=&#39;zype_553297c169702d0885a4435b&#39; style=&#39;width:100%; min-width:300px; max-width:560px;&#39;&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;script&amp;gt;zype.siteId = &#39;F7DbcH2vVnvPtYRIY1Xq9z92Bypj90i2uEcudIqK8KhNl_y-xWQNIi2UfpfzZl3N&#39;; zype.tracking_partner=[tracking_partner]; zype.tracking_code=[tracking_code]; zype.videoId = &#39;553297c169702d0885a4435b&#39;;zype.videoEmbed(&#39;zype_553297c169702d0885a4435b&#39;);&amp;lt;/script&amp;gt;
 &lt;/code&gt;&lt;/p&gt;
 </description>
@@ -567,6 +567,35 @@ remaining rows be the your category values!&lt;/p&gt;
       </item>
     
       <item>
+        <title>Change Video Thumbnails</title>
+        <description>&lt;p&gt;When you upload a video to the Zype Platform, Zype will create thumbnails for your video.
+To change your the thumbnail for your video, follow the steps below. Note, this is only
+to change your thumbnail from a video uploaded directly to the Zype Platform. It does not apply to
+thumbnails from an external data source like YouTube or Vimeo.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Step 1:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://dev.zype.com/assets/thumbnails/thumbnails_1.png&quot; alt=&quot;thumbnail 1&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;From your video library, click on the video that you want to change the thumbnail
+for and click on the “Thumbnails” tab.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Step 2:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://dev.zype.com/assets/thumbnails/thumbnails_2.png&quot; alt=&quot;thumbnail 2&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Select the thumbnail that you want. The thumbnail will automatically be updated!&lt;/p&gt;
+</description>
+        <pubDate>Thu, 09 Apr 2015 06:37:55 -0400</pubDate>
+        <link>http://dev.zype.com//posts/2015/04/09/change-thumbnails</link>
+        <guid isPermaLink="true">http://dev.zype.com//posts/2015/04/09/change-thumbnails</guid>
+        
+        
+        <category>developers</category>
+        
+      </item>
+    
+      <item>
         <title>Forgot Password</title>
         <description>&lt;p&gt;You can reset your password by going to &lt;a href=&quot;https://admin.zype.com/&quot;&gt;the Zype Platform&lt;/a&gt;
 and following the photo tutorial below.&lt;/p&gt;
@@ -598,35 +627,6 @@ and following the photo tutorial below.&lt;/p&gt;
         <pubDate>Thu, 09 Apr 2015 06:37:55 -0400</pubDate>
         <link>http://dev.zype.com//posts/2015/04/09/forgot-password</link>
         <guid isPermaLink="true">http://dev.zype.com//posts/2015/04/09/forgot-password</guid>
-        
-        
-        <category>developers</category>
-        
-      </item>
-    
-      <item>
-        <title>Change Video Thumbnails</title>
-        <description>&lt;p&gt;When you upload a video to the Zype Platform, Zype will create thumbnails for your video.
-To change your the thumbnail for your video, follow the steps below. Note, this is only
-to change your thumbnail from a video uploaded directly to the Zype Platform. It does not apply to
-thumbnails from an external data source like YouTube or Vimeo.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Step 1:&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://dev.zype.com/assets/thumbnails/thumbnails_1.png&quot; alt=&quot;thumbnail 1&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;From your video library, click on the video that you want to change the thumbnail
-for and click on the “Thumbnails” tab.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Step 2:&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://dev.zype.com/assets/thumbnails/thumbnails_2.png&quot; alt=&quot;thumbnail 2&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Select the thumbnail that you want. The thumbnail will automatically be updated!&lt;/p&gt;
-</description>
-        <pubDate>Thu, 09 Apr 2015 06:37:55 -0400</pubDate>
-        <link>http://dev.zype.com//posts/2015/04/09/change-thumbnails</link>
-        <guid isPermaLink="true">http://dev.zype.com//posts/2015/04/09/change-thumbnails</guid>
         
         
         <category>developers</category>
