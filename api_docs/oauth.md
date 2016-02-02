@@ -25,7 +25,7 @@ to get an access token in return.
 
 <hr />
 
-<pre><code> POST - https://login.zype.com/oauth/token/?client_id=client_id&client_secret=client_secret&username=email&password=password&grant_type=client_credentials
+<pre><code> POST - https://login.zype.com/oauth/token/?client_id=client_id&client_secret=client_secret&username=email&password=password&grant_type=password
 </code></pre>
 
 #### Parameters
