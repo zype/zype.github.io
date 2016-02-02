@@ -44,7 +44,7 @@ To get started using SVOD with Zype, login to your account and click on 'Monetiz
 
 Click 'Setup My Subscription Service' and follow the prompts to get everything set up.
 
-![stripe settings]({{site.url}}assets/subscription_setup/monetization.png)
+![stripe settings]({{site.url}}/assets/subscription_setup/monetization.png)
 
 Your subscription payments are processed by Stripe so you'll need a Stripe account to complete this process.
 
@@ -79,16 +79,16 @@ couponsEnabled | zype.couponsEnabled = true | Whether or not to have the coupon 
 You can provide coupon codes to offer discounts to future subscribers when they subscribe
 to your content.
 
-![coupon code]({{site.url}}assets/coupons/pay_with_coupons.png)
+![coupon code]({{site.url}}/assets/coupons/pay_with_coupons.png)
 
 Currently, to enable coupons, you need to do two things. First, you need to enable coupons
 on in the Zype Platform.
 
-![enable coupons]({{site.url}}assets/coupons/zype_enable.png)
+![enable coupons]({{site.url}}/assets/coupons/zype_enable.png)
 
 Then, you need to create your coupons on Stripe. To create coupons on Stripe, go to your Stripe Dashboard [coupon screen](https://dashboard.stripe.com/coupons) and click on "+ New".
 
-![add coupons]({{site.url}}assets/coupons/stripe_add_coupon.png)
+![add coupons]({{site.url}}/assets/coupons/stripe_add_coupon.png)
 
 This will pop up the form to create your coupon. There are multiple coupon combinations to
 choose from. You can choose to have a coupon be a percentage off or an amount off of your
@@ -96,7 +96,7 @@ subscription price. You can also choose to have a coupon be applied for one pay 
 monthly pay periods, or forever. In addition, you can choose to have a maximum number of times
 a coupon can be redeemed and you can choose to have a redemption deadline for your coupon.
 
-![add coupons]({{site.url}}assets/coupons/create_coupon.png)
+![add coupons]({{site.url}}/assets/coupons/create_coupon.png)
 
 When you fill out your coupon form in Stripe, keep track of your ID (Code). This is the
 coupon code that you can give to people who want to subscribe to your content.
@@ -115,7 +115,7 @@ You will need to [use our API](http://dev.zype.com/api_docs/subscriptions/) to c
 ## Viewing subscriptions
 To view subscriptions, go to the [subscriptions page](https://admin.zype.com/subscriptions).
 
-![viewing subscriptions]({{site.url}}assets/Connecting Stripe/consumer_details.png)
+![viewing subscriptions]({{site.url}}/assets/Connecting Stripe/consumer_details.png)
 
 You can search by subscription and see each subscription's consumer, plan, amount, currency,
 interval, trial period, and when it was created.
@@ -127,7 +127,7 @@ To cancel a subscription, click on the
 "Subscription" on the left hand menu and click on subscriptions to get to the [subscriptions page](https://admin.zype.com/subscriptions).
 Then, click the red button for the subscription that you want to cancel.
 
-![canceling a subscription]({{site.url}}assets/Connecting Stripe/delete_cust.png)
+![canceling a subscription]({{site.url}}/assets/Connecting Stripe/delete_cust.png)
 
 This will remove the subscription from Stripe.
 
@@ -140,7 +140,7 @@ In order to manage your subscription settings:
 - In the nav on the left, click <b>Make Money</b>.
 - Click the <b>Manage Subscription Settings</b> button.
 
-![Settings]({{site.url}}assets/Connecting Stripe/settings.png)
+![Settings]({{site.url}}/assets/Connecting Stripe/settings.png)
 
 ### Logo
 
@@ -174,4 +174,4 @@ This is what your customers will see on their credit card statement (22 characte
 
 By default we display a Zype logo at the bottom of your subscription embeds. To hide it, switch off this setting.
 
-![Powered by Zype]({{site.url}}assets/Connecting Stripe/powered-by-zype.jpg)
+![Powered by Zype]({{site.url}}/assets/Connecting Stripe/powered-by-zype.jpg)

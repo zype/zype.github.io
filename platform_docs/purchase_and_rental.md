@@ -36,7 +36,7 @@ To get started using Purchase & Rental with Zype, login to your account and clic
 
 Click ‘Enable Purchase & Rental’ and follow the prompts to get everything set up.
 
-![stripe settings]({{site.url}}assets/purchase_and_rental_setup/monetization.png)
+![stripe settings]({{site.url}}/assets/purchase_and_rental_setup/monetization.png)
 
 Your subscription payments can be processed by Stripe or Braintree so you’ll need a Stripe or Braintree account to complete this process.
 
@@ -53,11 +53,11 @@ When you return to the Monetization page, you’ll now see a breakdown of your p
 
 After you’ve set up your Stripe or Braintree info and completed the Purchase & Rental Setup Wizard from the previous step, you will be prompted to turn “purchase” or “rental” on for all of your videos. To manage these settings on each video, go to the “Video Library” in the sidebar nav and then go to the Edit Video section by clicking on the video you want to edit. Once in the Edit Video screen, click on the “Monetization” tab.
 
-![monetization tab]({{site.url}}assets/purchase_and_rental_setup/monetization-tab.png)
+![monetization tab]({{site.url}}/assets/purchase_and_rental_setup/monetization-tab.png)
 
 Once you click the monetization tab, you can edit the settings for your video. You can only enable one type of monetization per video at any given time. For example, if you enable subscription then you cannot enable purchase or rental and vice versa. This screen also lets you set the purchase or rental price for the individual video as well as setting the rental duration.
 
-![monetization tab detail]({{site.url}}assets/purchase_and_rental_setup/monetization-tab-detail.png)
+![monetization tab detail]({{site.url}}/assets/purchase_and_rental_setup/monetization-tab-detail.png)
 
 <hr id="publishing">
 ## Publishing Your Videos
@@ -66,7 +66,7 @@ To publish your videos on your website, simply grab the embed code from the “E
 
 Make sure the “Paywall” toggle is set to “ON” to enable the purchase, rental, or subscription paywalls in the player.
 
-![embed code]({{site.url}}assets/purchase_and_rental_setup/embed-code.png)
+![embed code]({{site.url}}/assets/purchase_and_rental_setup/embed-code.png)
 
 <hr id="overriding">
 ## Overriding the subscription embed
@@ -111,26 +111,26 @@ You are able to override the default embed settings on a per embed basis using J
 
 You can update your Purchase & Rental settings, view your consumers, or each individual transaction.
 
-![manage purchase]({{site.url}}assets/purchase_and_rental_setup/manage-purchase.png)
+![manage purchase]({{site.url}}/assets/purchase_and_rental_setup/manage-purchase.png)
 
 Click on “Manage Purchase & Rental Settings” to edit the default settings for your video business.
 
-![edit purchase]({{site.url}}assets/purchase_and_rental_setup/edit-purchase.png)
+![edit purchase]({{site.url}}/assets/purchase_and_rental_setup/edit-purchase.png)
 
 Click on “Consumers” to see a list of consumers that have purchased or rented your content. You can then easily edit the details or an individual consumer and see their unique activity:
 
-![consumer details]({{site.url}}assets/purchase_and_rental_setup/consumer-details.png)
+![consumer details]({{site.url}}/assets/purchase_and_rental_setup/consumer-details.png)
 
 Click “Transactions” to see a list of all your transactions:
 
-![transactions]({{site.url}}assets/purchase_and_rental_setup/transactions.jpg)
+![transactions]({{site.url}}/assets/purchase_and_rental_setup/transactions.jpg)
 
 <hr id="analytics">
 ## Purchase & Rental Analytics
 
 You can track how much revenue you’re generating easily on the Zype Platform. Just go to the Analytics section in the navbar and see your total monthly revenue, number of consumers, and engagement by video.
 
-![analytics]({{site.url}}assets/purchase_and_rental_setup/analytics.png)
+![analytics]({{site.url}}/assets/purchase_and_rental_setup/analytics.png)
 
 <hr id="purchase_rental_settings">
 
@@ -141,7 +141,7 @@ In order to manage your Purchase & Rental settings:
 - In the nav on the left, click <b>Make Money</b>.
 - Click the <b>Manage Purchase & Rental Settings</b> button.
 
-![settings]({{site.url}}assets/purchase_and_rental_setup/settings.png)
+![settings]({{site.url}}/assets/purchase_and_rental_setup/settings.png)
 
 ### Logo
 
@@ -159,7 +159,7 @@ If you have a TOS that users must agree to before subscribing, add a link to it 
 
 By default we display a Zype logo at the bottom of your subscription embeds. To hide it, switch off this setting.
 
-![Powered by Zype]({{site.url}}assets/Connecting Stripe/powered-by-zype.jpg)
+![Powered by Zype]({{site.url}}/assets/Connecting Stripe/powered-by-zype.jpg)
 
 ### Default Purchase Price
 

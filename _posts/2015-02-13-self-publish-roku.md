@@ -31,11 +31,11 @@ Zype will email you a bundled channel zip that contains the BrightScript code fo
 Next, open up app.mk in your text editor of choice and change the ROKU_DEV_TARGET
 and DEVPASSWORD to match your Roku device.
 
-![app.mk replacement]({{site.url}}assets/Publishing Your Roku App/replace_appmk_vars.png))
+![app.mk replacement]({{site.url}}/assets/Publishing Your Roku App/replace_appmk_vars.png))
 
 Then, run make install inside the Roku Channel directory in your terminal to side load your Roku Channel to your Roku device.
 
-![make install]({{site.url}}assets/Publishing Your Roku App/make_install.png))
+![make install]({{site.url}}/assets/Publishing Your Roku App/make_install.png))
 
 If the command is successful, your Roku Channel will load automatically to your Roku Device.
 

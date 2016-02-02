@@ -13,17 +13,17 @@ strategy to get all the playlists that we want to be displayed on the home page 
 
 **Step 1: Go to admin.zype.com/categories and click the create new category button**
 
-![new category]({{site.url}}assets/Playlist and Category/1.png)
+![new category]({{site.url}}/assets/Playlist and Category/1.png)
 
 **Step 2: Fill out the category title and category values. You can have multiple
 values (and you can always go back and edit these category values!)**
 
-![new category]({{site.url}}assets/Playlist and Category/2.png)
+![new category]({{site.url}}/assets/Playlist and Category/2.png)
 
 
 **Step 3: Create a playlist and assign it the Zone Category of home**
 
-![new category]({{site.url}}assets/Playlist and Category/3.png)
+![new category]({{site.url}}/assets/Playlist and Category/3.png)
 
 
 **Step 4: In your Rails App, query for playlists that have the category zone value of home.**

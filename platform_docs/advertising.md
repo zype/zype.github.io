@@ -14,7 +14,7 @@ In this guide, we’ll provide an overview of in-video display advertising so yo
 ### Background
 The online video ad ecosystem consists of multiple layers. The players involved are advertisers, ad networks such as AdSense who distribute ads, and ad servers such as DFP who allow you to host ads on your properties and choose which ads to display based on rules you set. These ads are ultimately embedded in your video player through VAST and/or VPAID tags, which pass information about the ads to display to the player - the equivalent of the embed code to place a video player on your website.
 
-![The video display advertising ecosystem]({{site.url}}assets/advertising.png)
+![The video display advertising ecosystem]({{site.url}}/assets/advertising.png)
 
 The video display advertising ecosystem
 In DFP, every space in which you display an advertisement is called an ‘ad unit’. Zype allows you to create an ad unit within your Zype video player to display ads, whether from DFP or another ad server. You may use any ad server or network that supports VAST/VPAID standards to show your ads through Zype, but for the purposes of this guide, we’ll be setting you up with AdSense to load ads and DFP to serve them in your video players.

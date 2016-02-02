@@ -19,7 +19,7 @@ locally and are a registered Roku developer.
 
 Log into your Roku developer account and click Manage My Channels
 
-![step 1]({{site.url}}assets/Publishing Your Roku App/1.png)
+![step 1]({{site.url}}/assets/Publishing Your Roku App/1.png)
 
 **Step 2**
 
@@ -27,26 +27,26 @@ Click add Private Channel. If you want to publish a Public Channel, click add Pu
 The steps are the same for private and public channels, except that you will need to
 give contact information in case Roku has questions when they are reviewing your app.
 
-![step 2]({{site.url}}assets/Publishing Your Roku App/2.png)
+![step 2]({{site.url}}/assets/Publishing Your Roku App/2.png)
 
 **Step 3**
 
 Fill out Channel Properties for your channel.
 
-![step 3]({{site.url}}assets/Publishing Your Roku App/3.png)
+![step 3]({{site.url}}/assets/Publishing Your Roku App/3.png)
 
 **Step 4**
 
 Fill our Channel Descriptions for your channel. You will need to have an HD Poster
 that is a 290 x 218 JPEG file and an SD Poster that is a 214 x 144 JPEG file.
 
-![step 4]({{site.url}}assets/Publishing Your Roku App/4.png)
+![step 4]({{site.url}}/assets/Publishing Your Roku App/4.png)
 
 **Step 5**
 
 You can optionally upload screenshots of your Roku Channel. Read the [Roku documentation](http://sdkdocs.roku.com/display/sdkdoc/Channel+Packaging+And+Publishing#ChannelPackagingAndPublishing-38GeneratingScreenshotsSincev31onRoku1andv43onRoku2) on how to generate a screenshot.
 
-![step 5]({{site.url}}assets/Publishing Your Roku App/5.png)
+![step 5]({{site.url}}/assets/Publishing Your Roku App/5.png)
 
 **Step 6**
 
@@ -56,7 +56,7 @@ Once you have downloaded your Roku Channel package, upload the application packa
 Roku channel on your individual Roku account.
 
 
-![step 6]({{site.url}}assets/Publishing Your Roku App/6.png)
+![step 6]({{site.url}}/assets/Publishing Your Roku App/6.png)
 
 **More tutorials in this series:**
 

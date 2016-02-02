@@ -26,7 +26,7 @@ One of the quickest ways to get up and running with Zype videos is to simply dro
 ## Embedding a player on your site
 We're happy to announce that the [Zype Platform](http://admin.zype.com) now grants you the power to "grab and go" with embed codes! Each video that you add to the platform has a snippet of code located under the **Embed Code** tab. You can navigate to the tab by finding a video that you want to embed and clicking on the edit button. The tab appears along the top of the menu.
 
-![embed code]({{site.url}}assets/embed_code/embed_code_tab.png)
+![embed code]({{site.url}}/assets/embed_code/embed_code_tab.png)
 
 ### Using the Embed Code
 
@@ -54,11 +54,11 @@ One of the ways that Zype defends your video content is by expiring our video UR
 
 If you want to edit your **Player Expiration** value, head over to your **Player Settings** by clicking on the gear at the top of the screen and clicking on settings, then click the **Player Settings** tab.
 
-![embed code]({{site.url}}assets/embed_code/settings_menu.png)
+![embed code]({{site.url}}/assets/embed_code/settings_menu.png)
 
 On the **Player Settings** tab, at the bottom of the page is a value for **Player Expiration,** the default is 300 seconds or 5 minutes. You can change this value by typing directly into the box or using the step arrows on the side. The minimum value is 0, which means that your video url's will never expire. The maximum value is 2592000 seconds or one month. Edit the value as needed and click **Save Changes.**
 
-![embed code]({{site.url}}assets/embed_code/player_expiration.png)
+![embed code]({{site.url}}/assets/embed_code/player_expiration.png)
 
 <hr id="3">
 
@@ -68,8 +68,8 @@ You can enable social sharing to allow viewers to easily share your videos on Fa
 
 Navigate to your [settings page](https://admin.zype.com/site/edit) and click on the "Player" tab.
 
-![social sharing 1]({{site.url}}assets/social_sharing/social_sharing_1.png)
+![social sharing 1]({{site.url}}/assets/social_sharing/social_sharing_1.png)
 
 Then, toggle "Player Sharing Enabled" on towards the button of the page.
 
-![social sharing 2]({{site.url}}assets/social_sharing/social_sharing_2.png)
+![social sharing 2]({{site.url}}/assets/social_sharing/social_sharing_2.png)

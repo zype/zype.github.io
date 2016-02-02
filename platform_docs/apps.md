@@ -55,15 +55,15 @@ Then, Zype will build your Channel for you or you can
 First, you will need to upload and transcode videos onto the Zype Platform.
 Currently, Roku Channels only support videos with a Zype video source.
 
-![upload and transcode]({{site.url}}assets/Uploading Videos to the Zype Platform from the Web/upload_video_1.png)
+![upload and transcode]({{site.url}}/assets/Uploading Videos to the Zype Platform from the Web/upload_video_1.png)
 
 Second, you will need to set up your Roku Channel. Navigate to the Video Apps page
 
-![video apps page]({{site.url}}assets/Publishing Your Roku App/dashboard_to_video_app.png)
+![video apps page]({{site.url}}/assets/Publishing Your Roku App/dashboard_to_video_app.png)
 
 Click on Roku to set up a new Roku Channel for publishing
 
-![Roku publishing]({{site.url}}assets/Publishing Your Roku App/set_up_roku_app.png)
+![Roku publishing]({{site.url}}/assets/Publishing Your Roku App/set_up_roku_app.png)
 
 Set up your Roku Channel by supplying a title, subtitle, a channel image, and
 select a channel template. Zype will create multiple images from your one supplied
@@ -71,7 +71,7 @@ channel image including your channel logo, poster art, and loading screen.
 It is suggested to have a 640 px by 480 px PNG image because the image will be used
 in many different sizes.
 
-![roku set up]({{site.url}}assets/Publishing Your Roku App/set_up_roku_screen.png)
+![roku set up]({{site.url}}/assets/Publishing Your Roku App/set_up_roku_screen.png)
 
 **Step 2: Zype Builds Your Roku Channel**
 
@@ -79,7 +79,7 @@ Once you set up your Channel, Zype will bundle the necessary images and prepare 
 code for your Roku Channel. All you have to do is wait a couple of minutes!
 The page will automatically refresh once your Channel is ready.
 
-![roku bundling]({{site.url}}assets/Publishing Your Roku App/roku_bundling.png)
+![roku bundling]({{site.url}}/assets/Publishing Your Roku App/roku_bundling.png)
 
 **Step 3: Publish Channel**
 
@@ -91,7 +91,7 @@ page to redeem your publishing package or pay for a publishing package.
 Once you checkout, a member of the Zype team will package, QA, and submit your
 Roku Channel to the Roku Channel Store.
 
-![roku publishing options]({{site.url}}assets/Publishing Your Roku App/roku_publishing.png)
+![roku publishing options]({{site.url}}/assets/Publishing Your Roku App/roku_publishing.png)
 
 Typically, once your Roku Channel is submitted to the Roku Channel Store, it takes
 3-4 weeks to get to the front of the QA queue and then another 1-2 weeks for approval.
@@ -135,11 +135,11 @@ Zype will email you a bundled channel zip that contains the BrightScript code fo
 Next, open up app.mk in your text editor of choice and change the ROKU_DEV_TARGET
 and DEVPASSWORD to match your Roku device.
 
-![app.mk replacement]({{site.url}}assets/Publishing Your Roku App/replace_appmk_vars.png))
+![app.mk replacement]({{site.url}}/assets/Publishing Your Roku App/replace_appmk_vars.png))
 
 Then, run make install inside the Roku Channel directory in your terminal to side load your Roku Channel to your Roku device.
 
-![make install]({{site.url}}assets/Publishing Your Roku App/make_install.png))
+![make install]({{site.url}}/assets/Publishing Your Roku App/make_install.png))
 
 If the command is successful, your Roku Channel will load automatically to your Roku Device.
 
@@ -173,7 +173,7 @@ Selecting a Channel Template and uploading a Channel Image takes most of the har
 work out of branding your Roku Channel. However, if you want to further specialize
 your Roku Channel, you can click on Edit Advanced Settings for your Roku Channel.
 
-![advanced settings btn]({{site.url}}assets/Publishing Your Roku App/roku_advanced_settings_btn.png)
+![advanced settings btn]({{site.url}}/assets/Publishing Your Roku App/roku_advanced_settings_btn.png)
 
 The Advanced Settings have a lot of options! The highest impact advanced settings
 that you can change are in the Main Configurations Tab and the Image Configurations Tab.
@@ -182,21 +182,21 @@ In particular, in the Main Configurations, you can change which playlist is to
 be featured at the top of your Roku Channel and you can change the category to
 iterate through for the rest of your Roku Channel.
 
-![main configs]({{site.url}}assets/Publishing Your Roku App/main_configs.png)
+![main configs]({{site.url}}/assets/Publishing Your Roku App/main_configs.png)
 
 In the Image Configurations, you can change the run time images such as your logo, slice images,
 and grid images. These images are grabbed through the Zype API each time your Roku
 Channel gets loaded, so you can upload a new image and refresh your Roku Channel to see
 it being changed in real time.
 
-![image configs]({{site.url}}assets/Publishing Your Roku App/image_configs.png)
+![image configs]({{site.url}}/assets/Publishing Your Roku App/image_configs.png)
 
 You can also change your Channel Build Details. Note, however, that if you change
 images in your Channel Build Details like your store or focus image, you will
 need to resubmit your Channel to the Roku Channel Store.
 If you have not yet submitted your Roku Channel, you will need to grab a new bundle of your Roku Channel.
 
-![image configs]({{site.url}}assets/Publishing Your Roku App/build_configs.png)
+![image configs]({{site.url}}/assets/Publishing Your Roku App/build_configs.png)
 
 <hr id='4'>
 
@@ -229,9 +229,9 @@ an SD Poster that is a 214 x 144 JPG format. We call that the Image Store in our
 
 These assets get loaded via a call to the Zype API everytime the Roku Channel gets loaded.
 
-![zype roku app]({{site.url}}assets/Creating an App/roku_info.png)
+![zype roku app]({{site.url}}/assets/Creating an App/roku_info.png)
 
-![zype roku app]({{site.url}}assets/Creating an App/more_roku_info.png)
+![zype roku app]({{site.url}}/assets/Creating an App/more_roku_info.png)
 
 1. Logo - logo used in the overhang. Suggested size is 125 x 104 pixels HD, 83 x 69 SD, PNG format.
 
@@ -257,7 +257,7 @@ republishing to the Roku Channel Store to make a change.
 
 We will be using screenshots from our sample Roku Channel to highlight what you can do.
 
-![playlists and categories]({{site.url}}assets/Categories, Playlists and Your Roku App/roku_playlist.png)
+![playlists and categories]({{site.url}}/assets/Categories, Playlists and Your Roku App/roku_playlist.png)
 
 **Featured Playlist**
 
@@ -275,7 +275,7 @@ category slider will be the next 'Genre', which is 'Comedy'.
 
 **Zobjects**
 
-![Zobjects in video detail]({{site.url}}assets/Categories, Playlists and Your Roku App/roku_zobject.png)
+![Zobjects in video detail]({{site.url}}/assets/Categories, Playlists and Your Roku App/roku_zobject.png)
 
 You also have the option to provide additional metadata about your videos in the video
 detail screen. You select one zobject to be above the description and one zobject to be
@@ -289,46 +289,46 @@ the Zobject 'Director' to be below the description.
 
 Before we start, lets look at what the end result of what your iPhone App will look like!
 
-![iphone preview]({{site.url}}assets/iphone/mockup.png)
+![iphone preview]({{site.url}}/assets/iphone/mockup.png)
 
 To configure your iPhone App using the Zype Platform, navigate to the Video Apps page and click
 on the iPhone logo.
 
-![select iphone]({{site.url}}assets/iphone/apps_screen.png)
+![select iphone]({{site.url}}/assets/iphone/apps_screen.png)
 
 Next, fill in the App Details. This includes the title, the version number, and the store icon.
 The store icon will be the icon that users click to on your iPhone screen to enter your app.
 
-![app details]({{site.url}}assets/iphone/app_details_screen.png)
+![app details]({{site.url}}/assets/iphone/app_details_screen.png)
 
 Then, fill out the Channel Information. The banner image is what appears at the top of your home
 screen. The larger banner is for higher quality displays. Check out the mock up of an iPhone App
 below to see where the banner gets displayed in the home screen.
 
-![channel screen]({{site.url}}assets/iphone/channel_screen.png)
+![channel screen]({{site.url}}/assets/iphone/channel_screen.png)
 
-![banner display]({{site.url}}assets/iphone/mockup-help.png)
+![banner display]({{site.url}}/assets/iphone/mockup-help.png)
 
 Next, add tiles. Tiles are what a user can click on in the app’s home screen to go to the appropriate page. An iPhone app can have up to 9 tiles.
 Tiles can include links to Twitter, Facebook, Google+, your blog, your personal website,
 favorites, videos, and messages. You can drag the tiles in the editor to change their order on
 the iPhone Screen. Check out the mock up to see where the tiles get displayed.
 
-![tile screen]({{site.url}}assets/iphone/tiles_screen.png)
+![tile screen]({{site.url}}/assets/iphone/tiles_screen.png)
 
-![tiles display]({{site.url}}assets/iphone/mockup-help.png)
+![tiles display]({{site.url}}/assets/iphone/mockup-help.png)
 
 If you would like to add a message to your users at this time, you can click on the Message tab
 and add a message.
 
-![message screen]({{site.url}}assets/iphone/message_screen.png)
+![message screen]({{site.url}}/assets/iphone/message_screen.png)
 
 Once you are finished, click save changes. You will be redirected to the iPhone App details
 screen where you will see a mock up of your channel home screen. You can either
 use Zype's [API documentation]({{site.url/api_docs/apps}}) to self-publish or have Zype publish
 for you!
 
-![iphone preview]({{site.url}}assets/iphone/iphone_show.png)
+![iphone preview]({{site.url}}/assets/iphone/iphone_show.png)
 
 <hr id='7'>
 
@@ -337,8 +337,8 @@ for you!
 To delete an app from the Zype Platform, navigate to your [video apps](https://admin.zype.com/apps)
 and click on the app that you want to delete.
 
-![delete app 1]({{site.url}}assets/apps/delete_1.png)
+![delete app 1]({{site.url}}/assets/apps/delete_1.png)
 
 Then, click on the delete button in the upper right hand corner.
 
-![delete app 2]({{site.url}}assets/apps/delete_2.png)
+![delete app 2]({{site.url}}/assets/apps/delete_2.png)

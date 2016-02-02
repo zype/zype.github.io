@@ -12,13 +12,13 @@ thumbnails from an external data source like YouTube or Vimeo.
 
 **Step 1:**
 
-![thumbnail 1]({{site.url}}assets/thumbnails/thumbnails_1.png)
+![thumbnail 1]({{site.url}}/assets/thumbnails/thumbnails_1.png)
 
 From your video library, click on the video that you want to change the thumbnail
 for and click on the "Thumbnails" tab.
 
 **Step 2:**
 
-![thumbnail 2]({{site.url}}assets/thumbnails/thumbnails_2.png)
+![thumbnail 2]({{site.url}}/assets/thumbnails/thumbnails_2.png)
 
 Select the thumbnail that you want. The thumbnail will automatically be updated!

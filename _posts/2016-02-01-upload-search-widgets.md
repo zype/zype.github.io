@@ -13,7 +13,7 @@ The Zype upload embeddable widget allows you to upload videos to the Zype platfo
 
 _Note: You should only put this widget in a secure place on your website as it allows any user to upload content directly to your account._
 
-![Upload Embed]({{site.url}}assets/upload-search/upload-embed.png)
+![Upload Embed]({{site.url}}/assets/upload-search/upload-embed.png)
 
 ### How To Use the Upload Embed
 
@@ -63,7 +63,7 @@ To increase the security of the upload embed you can restrict access to only cer
 
 The search embed allows you to perform searches of your video library from your own website.
 
-![Search Embed]({{site.url}}assets/upload-search/search-embed.png)
+![Search Embed]({{site.url}}/assets/upload-search/search-embed.png)
 
 ### How To Use the Search Embed
 

@@ -51,7 +51,7 @@ To enable Google Analytics integration select the 'Enable Google Analytics' opti
 
 You can optionally change the tracking object name. Most installations use the default name 'ga'. If you have not changed the name of the tracking object on your web destination you should use the default setting.
 
-![google analytics]({{site.url}}assets/Analytics/analytics.png)
+![google analytics]({{site.url}}/assets/Analytics/analytics.png)
 
 <hr id='3'>
 
@@ -59,7 +59,7 @@ You can optionally change the tracking object name. Most installations use the d
 
 After you've enabled Google Analytics integration and watched a few videos on your web destination you will start seeing the following events in your Google Analytics dashboard.
 
-![consumer information]({{site.url}}assets/Analytics/report.png)
+![consumer information]({{site.url}}/assets/Analytics/report.png)
 
 <p><strong>JW Player Video</strong>: This category contains events for starts, stops, resumes and buffers along with the name of the video.</p>
 <p><strong>JW Player Video Plays</strong>: This category contains play events along with the name of the video and the referring URL.</p>

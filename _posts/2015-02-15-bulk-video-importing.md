@@ -10,10 +10,10 @@ the button “Add to Library.” This will automatically add new videos to your 
 would like to merge videos into preexisting videos in your video library, you will need to click
 the merge chain for each video.
 
-![add to library]({{site.url}}assets/video_imports/bulk_add.png)
+![add to library]({{site.url}}/assets/video_imports/bulk_add.png)
 
 To bulk remove video imports from your video library, check the videos that you want to remove
 and click the button “Remove from Library.” Note, this does not delete the video, it only removes
 the chosen video import data source from your video.
 
-![remove from library]({{site.url}}assets/video_imports/bulk_remove.png)
+![remove from library]({{site.url}}/assets/video_imports/bulk_remove.png)

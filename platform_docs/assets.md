@@ -44,9 +44,9 @@ an SD Poster that is a 214 x 144 JPG format. We call that the Image Store in our
 
 These assets get loaded via a call to the Zype API every time the Roku Channel gets loaded.
 
-![zype roku app]({{site.url}}assets/Assets/roku1.png)
+![zype roku app]({{site.url}}/assets/Assets/roku1.png)
 
-![zype roku app]({{site.url}}assets/Assets/roku2.png)
+![zype roku app]({{site.url}}/assets/Assets/roku2.png)
 
 1. Logo - logo used in the overhang. Suggested size is 125 x 104 pixels HD, 83 x 69 SD, PNG format.
 

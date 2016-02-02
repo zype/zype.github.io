@@ -15,7 +15,7 @@ After you've uploaded some video content to the Zype platform, log in through th
 and navigate to the logs section under the settings dropdown menu. In this post, we'll cover the request logs,
 so feel free to click on that link once you see the logs menu.  
 
-![dpt logs navigation]({{site.url}}assets/Monitoring Your Views/log_navigation_1.png)
+![dpt logs navigation]({{site.url}}/assets/Monitoring Your Views/log_navigation_1.png)
 
 ### What type of information can I see in my request logs?
 
@@ -35,7 +35,7 @@ Status	| The status of the request
 Created | The date and time the request was created
 
 
-![dpt logs]({{site.url}}assets/Monitoring Your Views/request_logs.png)
+![dpt logs]({{site.url}}/assets/Monitoring Your Views/request_logs.png)
 
 ### How can I search the request logs data?
 
@@ -45,7 +45,7 @@ Sorting the request logs is easy: use the four drop down menus to select your se
 and then click on the search button.
 
 
-![searching logs]({{site.url}}assets/Monitoring Your Views/request_log_search_3.png)
+![searching logs]({{site.url}}/assets/Monitoring Your Views/request_log_search_3.png)
 
 
 *Check our [previous post](http://dev.zype.com/posts/2014/10/10/adding-zype-to-rails/)

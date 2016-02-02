@@ -11,7 +11,7 @@ We're rolling out a bunch of new ways to add video content to the Zype Platform,
 
 First, you'll need to download and set up the Zype CLI. You can find the tool on [gitHub](https://github.com/edla/zype-cli).
 
-![gitHub]({{site.url}}assets/Uploading Videos to Zype Using Our Ruby Gem/copy_clone.png)
+![gitHub]({{site.url}}/assets/Uploading Videos to Zype Using Our Ruby Gem/copy_clone.png)
 
 You'll need to clone down the repo, then run the following commands:
 
@@ -28,7 +28,7 @@ You can confirm that your installation succeeded by entering
 
 which will display a list of available commands for the Zype CLI. Remember this command in case you have questions about what the Zype CLI can do!
 
-![CLI Interface]({{site.url}}assets/Uploading Videos to Zype Using Our Ruby Gem/commands.png)
+![CLI Interface]({{site.url}}/assets/Uploading Videos to Zype Using Our Ruby Gem/commands.png)
 
 
 ### Logging in through the Zype CLI
@@ -58,10 +58,10 @@ If you have multiple subdirectories that contain videos, you can pass in a wildc
 
 Now sit back while we upload all of your videos and add them to the Zype Platform as video imports. Once we've imported all of your videos you will find them under the [Video Imports](https://admin.zype.com/video_imports) tab. The last step is to create new videos from the imports or add the video imports to videos you already have on the Zype Platform.
 
-![video imports]({{site.url}}assets/Uploading Videos to Zype Using Our Ruby Gem/imports.png)
+![video imports]({{site.url}}/assets/Uploading Videos to Zype Using Our Ruby Gem/imports.png)
 
 ### Confirm
 
 You can confirm that your videos were added by clicking on the videos tab and searching for the ones you've just added.
 
-![videos]({{site.url}}assets/Uploading Videos to Zype Using Our Ruby Gem/confirm.png)
+![videos]({{site.url}}/assets/Uploading Videos to Zype Using Our Ruby Gem/confirm.png)

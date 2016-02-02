@@ -29,4 +29,4 @@ At the core, our mission is to enable you to give your consumers what they want 
 
 We're glad you think so! Any and all feedback through our our intercom system on [the zype platform](https://admin.zype.com/).
 
-![intercom with zype]({{site.url}}assets/dash.png)
+![intercom with zype]({{site.url}}/assets/dash.png)

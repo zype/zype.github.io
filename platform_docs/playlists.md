@@ -54,11 +54,11 @@ videos. For an in-depth guide on how to create your Roku app, make sure you chec
 ## Search filters on the Zype Platform
 If you've been busy adding video content to the [Zype Platform](http://admin.zype.com) and creating playlists, you might be at the point where you've got a few pages of each. To help you better manage your content, we've added a set of filters to the videos and playlists pages:
 
-![video filtering]({{site.url}}assets/Search Filters on the Zype Platform/video_lib.png)
+![video filtering]({{site.url}}/assets/Search Filters on the Zype Platform/video_lib.png)
 
 <hr>
 
-![playlist filtering]({{site.url}}assets/Search Filters on the Zype Platform/playlist_search.png)
+![playlist filtering]({{site.url}}/assets/Search Filters on the Zype Platform/playlist_search.png)
 
 <hr>
 
@@ -81,7 +81,7 @@ additional content based on what your users are watching. The solution we've imp
 In this post, we'll be covering how to create a playlist of related videos that are recommended to a viewer
 based on what the video they're watching. Here's an example of the finished product:
 
-![related playlist]({{site.url}}assets/Related Playlists/related_playlists.png)
+![related playlist]({{site.url}}/assets/Related Playlists/related_playlists.png)
 
 *The related videos section is automatically created for each video on your site, but if you'd like to be more
 specific about which videos are displayed there, follow along as we set up a playlist of related videos.*
@@ -91,25 +91,25 @@ specific about which videos are displayed there, follow along as we set up a pla
 Setting up the playlist can be done from the [admin portal](http://admin.zype.com/). Navigate to the playlist
 section on the sidebar and and click "New Playlist". Follow through the menu and create a playlist (make sure it's active!).
 
-![playlist navigation]({{site.url}}assets/Related Playlists/playlist_navigation_2.png)
+![playlist navigation]({{site.url}}/assets/Related Playlists/playlist_navigation_2.png)
 
 ### How can I choose which videos are shown in the playlist?
 
 This is an easy one. Use the "Add Videos" button to select which videos will appear under the related videos section.
 
-![add videos navigation]({{site.url}}assets/Related Playlists/add_videos_playlist_3.png)
+![add videos navigation]({{site.url}}/assets/Related Playlists/add_videos_playlist_3.png)
 
 ### How can I choose which videos display the playlist?
 
 Choosing the videos that will have your playlist displayed is done through the playlist edit screen. You can get there
 quickly by clicking on the name of your playlist here:
 
-![edit your playlist]({{site.url}}assets/Related Playlists/save_your_playlist_4.png)
+![edit your playlist]({{site.url}}/assets/Related Playlists/save_your_playlist_4.png)
 
 Use our multiselector to search for the videos you want and click on them to move them into selected videos.
 Click "Save Changes" when you're done.
 
-![choose related videos]({{site.url}}assets/Related Playlists/choose_related_videos_5.png)
+![choose related videos]({{site.url}}/assets/Related Playlists/choose_related_videos_5.png)
 
 ### Let's confirm
 
@@ -135,7 +135,7 @@ republishing to the Roku Channel Store to make a change.
 
 We will be using screenshots from our sample Roku Channel to highlight what you can do.
 
-![playlists and categories]({{site.url}}assets/Categories, Playlists and Your Roku App/roku_playlist.png)
+![playlists and categories]({{site.url}}/assets/Categories, Playlists and Your Roku App/roku_playlist.png)
 
 **Featured playlist**
 
@@ -153,7 +153,7 @@ category slider will be the next 'Genre', which is 'Comedy'.
 
 **Zobjects**
 
-![Zobjects in video detail]({{site.url}}assets/Categories, Playlists and Your Roku App/roku_zobject.png)
+![Zobjects in video detail]({{site.url}}/assets/Categories, Playlists and Your Roku App/roku_zobject.png)
 
 You also have the option to provide additional metadata about your videos in the video
 detail screen. You select one Zobject to be above the description and one Zobject to be

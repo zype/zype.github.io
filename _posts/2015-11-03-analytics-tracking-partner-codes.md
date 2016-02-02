@@ -50,7 +50,7 @@ Note that we have also added tracking_partner=iwidgets to each of these urls.
 
 To find the embed code for your video go to the Zype Dashboard > Video Library and then click the Video you'd like to edit. Go to the Embed Code tab on the top and you'll see the video's embed code.
 
-![embed code]({{site.url}}assets/tracking_partner/embed.png)
+![embed code]({{site.url}}/assets/tracking_partner/embed.png)
 
 ### iFrame or JavaScript Embed Code ###
 
@@ -64,7 +64,7 @@ https://player.zype.com/embed/[video_id].html?autoplay=true&api_key=[api_key]&tr
 
 If you have set up subscription, purchase, rental, or pass plans you can also add tracking_partner and tracking_code. First, grab your paywall embed code:
 
-![paywall embed code]({{site.url}}assets/tracking_partner/paywall_embed.png)
+![paywall embed code]({{site.url}}/assets/tracking_partner/paywall_embed.png)
 
 <b>Copy</b> the paywall embed code. You'll have to add <b>zype.tracking_partner=[tracking_partner]; zype.tracking_code=[tracking_code];</b> in the second script tag. Be sure to add it before the zype.VideoEmbed() function. For example:
 

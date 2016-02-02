@@ -17,18 +17,18 @@ that you want to create player rules for.
 1\. Make sure you have imported your videos into your [video catalogue](https://admin.zype.com/video_imports)
 on the Zype Platform.
 
-![video imports]({{site.url}}assets/DPT/add_videos.png)
+![video imports]({{site.url}}/assets/DPT/add_videos.png)
 
 ### What you need to do in the Zype Platform
 
 1\. Visit the [Player Rule Page](https://admin.zype.com/player_rules) and click on New Player Rule
 
-![player rules]({{site.url}}assets/DPT/player_rule.png)
+![player rules]({{site.url}}/assets/DPT/player_rule.png)
 
 2\. Complete the Player Rules Form. You will need to know the countries and devices you want for your rule.
 Based on countries and devices, you will be given player options that can be served to the end user.
 
-![player rule form]({{site.url}}assets/DPT/player_rule_form.png)
+![player rule form]({{site.url}}/assets/DPT/player_rule_form.png)
 
 ### Using the API
 
@@ -44,7 +44,7 @@ given an end user's device and geolocation. Set dpt to equal true in your GET re
 
 2\. You can find your player key and api key using the [Zype Platform](https://admin.zype.com/site/api)
 
-![site keys]({{site.url}}assets/API/site_key.png)
+![site keys]({{site.url}}/assets/API/site_key.png)
 
 3a\. To make the API call to get the appropriate player
 {% highlight ruby %}

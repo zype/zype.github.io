@@ -52,7 +52,7 @@ toggle __Subscription Required__ or__ Purchase Required__ as appropriate.
 * Click __Add New App.__
 * Choose __Mobile Web.__ 
 
-![Mobile Web]({{site.url}}assets/amazon_fire/mobile-web.png)
+![Mobile Web]({{site.url}}/assets/amazon_fire/mobile-web.png)
 
 * Fill out the form and click __Save.__ You must complete every tab in the interface.
 * __Availability & Pricing__
