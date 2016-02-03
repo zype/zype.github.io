@@ -7,6 +7,8 @@ categories: developers
 
 Now you can easily add upload and search functionality directly on your own website. This allows you to use the power of the Zype platform with the ease of a CMS system on your own site.
 
+<iframe width="420" height="315" src="https://www.youtube.com/embed/fO0qoIkbM9E" frameborder="0" allowfullscreen></iframe>
+
 ## Upload Embed
 
 The Zype upload embeddable widget allows you to upload videos to the Zype platform from your own website.

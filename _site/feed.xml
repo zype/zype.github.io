@@ -6,13 +6,15 @@
 </description>
     <link>http://dev.zype.com/</link>
     <atom:link href="http://dev.zype.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Tue, 02 Feb 2016 14:15:38 -0500</pubDate>
-    <lastBuildDate>Tue, 02 Feb 2016 14:15:38 -0500</lastBuildDate>
+    <pubDate>Tue, 02 Feb 2016 20:01:00 -0500</pubDate>
+    <lastBuildDate>Tue, 02 Feb 2016 20:01:00 -0500</lastBuildDate>
     <generator>Jekyll v3.0.2</generator>
     
       <item>
         <title>Upload and Search Embeddable Widgets</title>
         <description>&lt;p&gt;Now you can easily add upload and search functionality directly on your own website. This allows you to use the power of the Zype platform with the ease of a CMS system on your own site.&lt;/p&gt;
+
+&lt;iframe width=&quot;420&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/fO0qoIkbM9E&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
 
 &lt;h2 id=&quot;upload-embed&quot;&gt;Upload Embed&lt;/h2&gt;
 
