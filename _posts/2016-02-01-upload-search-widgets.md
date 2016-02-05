@@ -7,7 +7,7 @@ categories: developers
 
 Now you can easily add upload and search functionality directly on your own website. This allows you to use the power of the Zype platform with the ease of a CMS system on your own site.
 
-<iframe width="420" height="315" src="https://www.youtube.com/embed/fO0qoIkbM9E" frameborder="0" allowfullscreen></iframe>
+<iframe allowfullscreen="allowfullscreen" frameborder="0" height="315" src="https://player.zype.com/embed/56b4e8b369702d0802b14000.html?autoplay=false&app_key=ePc03QlhcUwIzcykavPjyS7mcZv4HA8TxCUobbEVEkJ8zDQqYGeo7FdYUbdaYWks" width="560"></iframe>
 
 ## Upload Embed
 
