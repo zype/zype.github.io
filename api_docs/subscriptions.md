@@ -167,18 +167,32 @@ Content-Type: application/json
         "subscription",
         "test123"
       ],
-      "amount": "5.99",
+      "amount": "29.29",
+      "cancel_at_period_end": false,
+      "cancelled_at": null,
       "consumer_id": "54579a634c616e0389000000",
-      "created_at": "2014-11-03T15:08:33.668Z",
+      "coupon_code": null,
+      "created_at": "2015-04-30T21:35:25.718-04:00",
       "currency": "USD",
-      "deleted": false,
+      "current_period_end_at": null,
+      "current_period_start_at": null,
+      "deleted_at": null,
+      "discount_amount": null,
+      "discount_duration": null,
+      "discount_duration_months": null,
+      "discount_percent": null,
       "interval": "month",
-      "plan_id": "544813e74c616e0dc0000000",
-      "site_id": "53e8d7f869702d5b64010000",
-      "stripe_card_token": "tok_14umRWBZRS312G8xjfXD1zHQvP3",
-      "stripe_id": "sub_54wKXHYIaIj8812YgK",
-      "trial_period_days": 14,
-      "updated_at": "2014-11-03T15:08:33.668Z"
+      "interval_count": 1,
+      "mrr": null,
+      "plan_id": "554251d784502d0714ea1300",
+      "site_id": "54h76h4069702d523c000000",
+      "start_at": null,
+      "status": "active",
+      "stripe_card_token": null,
+      "stripe_id": "sub_5e7ddfHfsXs6",
+      "trial_period_days": 0,
+      "updated_at": "2015-04-30T21:35:25.718-04:00",
+      "plan_name": "6 Month Subscription"
     }
   }
 }
@@ -217,18 +231,32 @@ Content-Type: application/json
         "subscription",
         "test123"
       ],
-      "amount": "5.99",
+      "amount": "29.29",
+      "cancel_at_period_end": false,
+      "cancelled_at": null,
       "consumer_id": "54579a634c616e0389000000",
-      "created_at": "2014-11-03T15:08:33.668Z",
+      "coupon_code": null,
+      "created_at": "2015-04-30T21:35:25.718-04:00",
       "currency": "USD",
-      "deleted": false,
+      "current_period_end_at": null,
+      "current_period_start_at": null,
+      "deleted_at": null,
+      "discount_amount": null,
+      "discount_duration": null,
+      "discount_duration_months": null,
+      "discount_percent": null,
       "interval": "month",
-      "plan_id": "544813e74c616e0dc0000000",
-      "site_id": "53e8d7f869702d5b64010000",
-      "stripe_card_token": "tok_14umRWBZRS312G8xjfXD1zHQvP3",
-      "stripe_id": "sub_54wKXHYIaIj8812YgK",
-      "trial_period_days": 14,
-      "updated_at": "2014-11-03T15:08:33.668Z"
+      "interval_count": 1,
+      "mrr": null,
+      "plan_id": "554251d784502d0714ea1300",
+      "site_id": "54h76h4069702d523c000000",
+      "start_at": null,
+      "status": "active",
+      "stripe_card_token": null,
+      "stripe_id": "sub_5e7ddfHfsXs6",
+      "trial_period_days": 0,
+      "updated_at": "2015-04-30T21:35:25.718-04:00",
+      "plan_name": "6 Month Subscription"
     }
   }
 }
@@ -250,32 +278,5 @@ id        | String id of the Subscription to remove. Example: 5389352e69702d401b
 Content-Type: application/json
 
 #### Response
-200
-Content-Type: application/json
+204
 
-<pre><code>{
-  "response": {
-    {
-      "_id": "54579a714c616e0389010000",
-      "_keywords": [
-        "com",
-        "example",
-        "subscription",
-        "test123"
-      ],
-      "amount": "5.99",
-      "consumer_id": "54579a634c616e0389000000",
-      "created_at": "2014-11-03T15:08:33.668Z",
-      "currency": "USD",
-      "deleted": false,
-      "interval": "month",
-      "plan_id": "544813e74c616e0dc0000000",
-      "site_id": "53e8d7f869702d5b64010000",
-      "stripe_card_token": "tok_14umRWBZRS312G8xjfXD1zHQvP3",
-      "stripe_id": "sub_54wKXHYIaIj8812YgK",
-      "trial_period_days": 14,
-      "updated_at": "2014-11-03T15:08:33.668Z"
-    }
-  }
-}
-</code></pre>
