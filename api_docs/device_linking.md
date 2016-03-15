@@ -48,7 +48,8 @@ You will need to acquire a pin for this device.
       "pin_expiration"=>"2015-02-05T15:42:07.823-05:00",
       "site_id"=>"abc123",
       "updated_at"=>"2015-02-05T15:12:07.814-05:00",
-      "linked"=>false}
+      "linked"=>false,
+      "subscription_count"=>nil
     }
   }
 </code></pre>
@@ -57,6 +58,7 @@ Consumer id will be nil and linked will be false if device has not been linked t
 Note, pin expires every 30 minutes. You will need to reacquire the pin after 30 minutes.
 Consumer id will be the id of the consumer and linked will be true if device has been successfully
 linked to a Zype consumer.
+The subscription_count indicates the number of active subscriptions for the currently linked consumer.
 
 <hr>
 
