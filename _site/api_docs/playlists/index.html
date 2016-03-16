@@ -127,6 +127,11 @@ active=active&amp;keyword=keyword&amp;category=category
       <td>String</td>
     </tr>
     <tr>
+      <td>parent_id</td>
+      <td>Filters the records by their playlist parent id. Example: parent_id=556f397c69702d04c3cc4c01</td>
+      <td>String</td>
+    </tr>
+    <tr>
       <td>category</td>
       <td>An optional set of key value category pairs to filter the records returned by category. Example: category[color]=blue.</td>
       <td>Hash</td>
@@ -149,6 +154,7 @@ Content-Type: application/json</p>
       "active": true,
       "created_at": "2014-11-12T20:23:07.291-05:00",
       "description": "",
+      "parent_id": "556f397c69702d04c3cc4c01",
       "priority": 0,
       "related_video_ids": [],
       "site_id": "5463c68e69702d24db490000",

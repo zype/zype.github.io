@@ -22,6 +22,7 @@ page | The page number of records to return (zero indexed). Example: 0. | Number
 per_page | The number of records to return. Example: 10. | Number
 keyword | Filters the records returned by keyword. Example: comedy. | String
 active | Filters the records by whether active or not. Example: true. | String
+parent_id | Filters the records by their playlist parent id. Example: parent_id=556f397c69702d04c3cc4c01 | String
 category | An optional set of key value category pairs to filter the records returned by category. Example: category[color]=blue. | Hash
 
 #### Response
@@ -39,6 +40,7 @@ Content-Type: application/json
       "active": true,
       "created_at": "2014-11-12T20:23:07.291-05:00",
       "description": "",
+      "parent_id": "556f397c69702d04c3cc4c01",
       "priority": 0,
       "related_video_ids": [],
       "site_id": "5463c68e69702d24db490000",
