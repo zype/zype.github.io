@@ -21,7 +21,9 @@ Parameter | Function | Type
 page | The page number of records to return (zero indexed). Example: 0. | Number
 per_page | The number of records to return. Example: 10. | Number
 keyword | Filters the records returned by keyword. Example: comedy. | String
+q | Filters the records returned by keyword. Alias for 'keyword'. Example: comedy. | String
 active | Filters the records by whether active or not. Example: true. | String
+video_id | Finds the playlists that contain the video id. Example: 566ee4e84d656c8523050800. | String
 category | An optional set of key value category pairs to filter the records returned by category. Example: category[color]=blue. | Hash
 
 #### Response
@@ -31,22 +33,84 @@ Content-Type: application/json
 <pre><code>{
   "response": [
     {
-      "_id": "546407fb69702d76c1740000",
+      "_id": "5702dd60f2834722e2000012",
       "_keywords": [
+        "bundle",
         "featured",
-        "horror"
+        "videos"
       ],
       "active": true,
-      "created_at": "2014-11-12T20:23:07.291-05:00",
+      "auto_update_consumer_videos": true,
+      "created_at": "2016-04-04T17:32:16.072-04:00",
+      "deleted_at": null,
       "description": "",
+      "images": [
+        {
+          "_id": "57067547f2834709b000004f",
+          "caption": "",
+          "title": "",
+          "updated_at": "2016-04-07T10:57:12.083-04:00",
+          "url": "http://upload.dev.zype.com/5468fd6569702d17ee500000/video_image/57067547f2834709b000004f/1460041031/original.png?1460041031"
+        },
+        {
+          "_id": "57067547f2834709b0000050",
+          "caption": "",
+          "title": "",
+          "updated_at": "2016-04-07T10:57:12.085-04:00",
+          "url": "http://upload.dev.zype.com/5468fd6569702d17ee500000/video_image/57067547f2834709b0000050/1460041031/original.jpg?1460041031"
+        }
+      ],
+      "parent_id": null,
       "priority": 0,
+      "purchase_price": "5.0",
+      "purchase_required": false,
       "related_video_ids": [],
-      "site_id": "5463c68e69702d24db490000",
-      "title": "Featured Horror ",
-      "updated_at": "2014-11-12T20:23:07.291-05:00",
-      "playlist_item_count": 6
+      "rental_duration": 2,
+      "rental_price": "5.0",
+      "rental_required": false,
+      "site_id": "5468fd6569702d17ee500000",
+      "thumbnails": [
+        {
+          "aspect_ratio": 1.78,
+          "height": 240,
+          "name": null,
+          "url": "http://image.zype.com/5468fd6569702d17ee500000/playlist/5702dd60f2834722e2000012/custom_thumbnail/240.png?1460041006",
+          "width": 426
+        },
+        {
+          "aspect_ratio": 1.78,
+          "height": 480,
+          "name": null,
+          "url": "http://image.zype.com/5468fd6569702d17ee500000/playlist/5702dd60f2834722e2000012/custom_thumbnail/480.png?1460041006",
+          "width": 854
+        },
+        {
+          "aspect_ratio": 1.78,
+          "height": 720,
+          "name": null,
+          "url": "http://image.zype.com/5468fd6569702d17ee500000/playlist/5702dd60f2834722e2000012/custom_thumbnail/720.png?1460041006",
+          "width": 1280
+        },
+        {
+          "aspect_ratio": 1.78,
+          "height": 1080,
+          "name": null,
+          "url": "http://image.zype.com/5468fd6569702d17ee500000/playlist/5702dd60f2834722e2000012/custom_thumbnail/1080.png?1460041006",
+          "width": 1920
+        }
+      ],
+      "title": "Featured Videos Bundle",
+      "updated_at": "2016-04-07T10:57:12.088-04:00",
+      "playlist_item_count": 8
     }
-  ]
+  ],
+  "pagination": {
+    "current": 2,
+    "previous": 1,
+    "next": 3,
+    "per_page": 1,
+    "pages": 3
+  }
 }
 </code></pre>
 <hr>
@@ -114,20 +178,77 @@ Content-Type: application/json
 200
 Content-Type: application/json
 
-<pre><code>{  
-  "response":
-  {
-    "_id": "549082404c616e20e7290000",
-    "_keywords": ["playlist","sample"],
+<pre><code>{
+  "response": {
+    "_id": "5702dd60f2834722e2000012",
+    "_keywords": [
+      "bundle",
+      "featured",
+      "videos"
+    ],
     "active": true,
-    "created_at": "2014-12-16T14:04:32.666-05:00",
+    "auto_update_consumer_videos": true,
+    "created_at": "2016-04-04T17:32:16.072-04:00",
+    "deleted_at": null,
     "description": "",
+    "images": [
+      {
+        "_id": "57067547f2834709b000004f",
+        "caption": "",
+        "title": "",
+        "updated_at": "2016-04-07T10:57:12.083-04:00",
+        "url": "http://upload.dev.zype.com/5468fd6569702d17ee500000/video_image/57067547f2834709b000004f/1460041031/original.png?1460041031"
+      },
+      {
+        "_id": "57067547f2834709b0000050",
+        "caption": "",
+        "title": "",
+        "updated_at": "2016-04-07T10:57:12.085-04:00",
+        "url": "http://upload.dev.zype.com/5468fd6569702d17ee500000/video_image/57067547f2834709b0000050/1460041031/original.jpg?1460041031"
+      }
+    ],
+    "parent_id": null,
     "priority": 0,
+    "purchase_price": "5.0",
+    "purchase_required": false,
     "related_video_ids": [],
-    "site_id": "545932274c616e2359000000",
-    "title": "sample Playlist",
-    "updated_at": "2014-12-16T14:04:32.666-05:00",
-    "playlist_item_count": 4
+    "rental_duration": 2,
+    "rental_price": "5.0",
+    "rental_required": false,
+    "site_id": "5468fd6569702d17ee500000",
+    "thumbnails": [
+      {
+        "aspect_ratio": 1.78,
+        "height": 240,
+        "name": null,
+        "url": "http://image.zype.com/5468fd6569702d17ee500000/playlist/5702dd60f2834722e2000012/custom_thumbnail/240.png?1460041006",
+        "width": 426
+      },
+      {
+        "aspect_ratio": 1.78,
+        "height": 480,
+        "name": null,
+        "url": "http://image.zype.com/5468fd6569702d17ee500000/playlist/5702dd60f2834722e2000012/custom_thumbnail/480.png?1460041006",
+        "width": 854
+      },
+      {
+        "aspect_ratio": 1.78,
+        "height": 720,
+        "name": null,
+        "url": "http://image.zype.com/5468fd6569702d17ee500000/playlist/5702dd60f2834722e2000012/custom_thumbnail/720.png?1460041006",
+        "width": 1280
+      },
+      {
+        "aspect_ratio": 1.78,
+        "height": 1080,
+        "name": null,
+        "url": "http://image.zype.com/5468fd6569702d17ee500000/playlist/5702dd60f2834722e2000012/custom_thumbnail/1080.png?1460041006",
+        "width": 1920
+      }
+    ],
+    "title": "Featured Videos Bundle",
+    "updated_at": "2016-04-07T10:57:12.088-04:00",
+    "playlist_item_count": 8
   }
 }
 </code></pre>
@@ -343,14 +464,14 @@ Content-Type: application/json
 <hr>
 ### Remove Video from a Playlist
 <hr>
-<pre><code>PUT - https://api.zype.com/playlists/{id}/add_videos/&video_id=video_id
+<pre><code>PUT - https://api.zype.com/playlists/{id}/remove_videos/&video_id=video_id
 </code></pre>
 
 #### Parameters
 
 Parameter | Function | Type
 --------- | -------- | ----
-video_id  | ID of the video to add the playlist | String
+video_id  | ID of the video to remove from the playlist | String
 
 #### Request
 
