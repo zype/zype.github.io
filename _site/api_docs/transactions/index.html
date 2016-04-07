@@ -6,12 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>Zype Developer Portal | Subscriptions</title>
+    <title>Zype Developer Portal | Transactions</title>
     <meta name="description" content="This is the devloper portal for Zype Media. Zype is Revenue and Reach Magic for Online Video. We help content owners deliver fully branded video experiences.
 ">
 
     <link rel="stylesheet" href="/css/main.css">
-    <link rel="canonical" href="http://localhost:4000/api_docs/subscriptions/">
+    <link rel="canonical" href="http://localhost:4000/api_docs/transactions/">
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 
     <!--[if lt IE 9]>
@@ -108,14 +108,14 @@
 
 
     <section id="main">
-      <h2 id="subscriptions-collection">Subscriptions Collection</h2>
-<p>Lists all Subscriptions.</p>
+      <h2 id="transactions-collection">Transactions Collection</h2>
+<p>Lists all Transactions.</p>
 <hr />
 
-<h3 id="list-all-subscriptions">List all Subscriptions</h3>
+<h3 id="list-all-transactions">List all Transactions</h3>
 <hr />
 
-<pre><code>GET - https://api.zype.com/subscriptions/?page=page&amp;per_page=per_page
+<pre><code>GET - https://api.zype.com/transactions/?page=page&amp;per_page=per_page
 </code></pre>
 
 <h4 id="parameters">Parameters</h4>
@@ -141,17 +141,22 @@
     </tr>
     <tr>
       <td>q</td>
-      <td>A query string for searching for subscriptions</td>
+      <td>A query string for searching for transactions</td>
       <td>String</td>
     </tr>
     <tr>
       <td>id</td>
-      <td>Query for a subscription by id</td>
+      <td>Query for a transaction by id</td>
       <td>String</td>
     </tr>
     <tr>
       <td>id!</td>
-      <td>Exclude a subscription from the query</td>
+      <td>Exclude a transaction from the query</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>consumer_id</td>
+      <td>Query for a transaction by Consumer ID</td>
       <td>String</td>
     </tr>
   </tbody>
@@ -164,40 +169,28 @@ Content-Type: application/json</p>
 <pre><code>{
   "response": [
     {
-      "_id": "54579a714c616e0389010000",
-      "_keywords": [
-        "com",
-        "example",
-        "subscription",
-        "test123"
-      ],
-      "amount": "29.29",
-      "cancel_at_period_end": false,
-      "cancelled_at": null,
-      "consumer_id": "54579a634c616e0389000000",
-      "coupon_code": null,
-      "created_at": "2015-04-30T21:35:25.718-04:00",
+    "_id": "56de07fbf28347a322000010",
+    "_keywords": [
+      "example",
+      "test"
+    ],
+      "amount": "4.99",
+      "braintree_id": "5fqzgc",
+      "consumer_id": "56de07e0f28347a32200000e",
+      "created_at": "2016-03-07T18:00:11.069-05:00",
       "currency": "USD",
-      "current_period_end_at": null,
-      "current_period_start_at": null,
       "deleted_at": null,
-      "discount_amount": null,
-      "discount_duration": null,
-      "discount_duration_months": null,
-      "discount_percent": null,
-      "interval": "month",
-      "interval_count": 1,
-      "mrr": null,
-      "plan_id": "554251d784502d0714ea1300",
-      "site_id": "54h76h4069702d523c000000",
-      "start_at": null,
-      "status": "active",
-      "stripe_card_token": null,
-      "stripe_id": "sub_5e7ddfHfsXs6",
-      "trial_period_days": 0,
-      "updated_at": "2015-04-30T21:35:25.718-04:00",
-      "plan_name": "6 Month Subscription"
-    }
+      "description": "",
+      "expires_at": null,
+      "pass_plan_id": null,
+      "payment_nonce": "b74d90f6-4eb9-49b7-ab33-cdb350992d52",
+      "playlist_id": null,
+      "site_id": "5468fd6569702d17ee500000",
+      "status": "authorized",
+      "transaction_type": "purchase",
+      "updated_at": "2016-03-07T18:00:11.069-05:00",
+      "video_id": "553297a769702d081dca96b2"
+    },
   ],
   "pagination": {
     current: 2,
@@ -211,10 +204,10 @@ Content-Type: application/json</p>
 
 <hr />
 
-<h3 id="create-a-subscription">Create a Subscription</h3>
+<h3 id="create-a-transaction">Create a Transaction</h3>
 <hr />
 
-<pre><code>POST - https://api.zype.com/subscriptions/{subscription}
+<pre><code>POST - https://api.zype.com/transactions/{transaction}
 </code></pre>
 
 <h4 id="parameters-1">Parameters</h4>
@@ -229,27 +222,77 @@ Content-Type: application/json</p>
   </thead>
   <tbody>
     <tr>
-      <td>subscription</td>
-      <td>A set of key value pairs that describe the Subscription. Needs to include consumer_id and plan_id.</td>
+      <td>provider</td>
+      <td>Value must be either ‘stripe’ or ‘braintree’. Specifies whether you are using Stripe or Braintree for payments. <em>required</em></td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>transaction</td>
+      <td>A set of key value pairs that describe the Transaction. <em>required</em></td>
       <td>Hash</td>
     </tr>
     <tr>
       <td>consumer_id</td>
-      <td>The id of the consumer to be subscribed</td>
+      <td>The id of the consumer making the transaction. <em>required</em></td>
       <td>String</td>
     </tr>
     <tr>
-      <td>plan_id</td>
-      <td>The id of the plan the consumer is subscribing to</td>
+      <td>video_id</td>
+      <td>The id of the video the user is purchasing if purchasing a video. Required if the transaction is for a video.</td>
       <td>String</td>
     </tr>
     <tr>
-      <td>coupon_code</td>
-      <td>The code of the coupon, if used. This parameter is optional.</td>
+      <td>playlist_id</td>
+      <td>The id of the playlist the user is purchasing if purchasing a playlist. Required if the transaction is for a playlist.</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>pass_plan_id</td>
+      <td>The id of the pass plan the user is purchasing if purchasing a pass plan. Required if the transaction is for a pass plan.</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>payment_nonce</td>
+      <td>The payment nonce provided by Stripe or Braintree if using one of those platforms. <em>required</em></td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>amount</td>
+      <td>Must be formatted as a string included cent value, for example “1.99”. <em>required</em></td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>transaction_type</td>
+      <td>Must be either ‘purchase’ or ‘rental’. <em>required</em></td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>currency</td>
+      <td>Set currency type. This is optional. Default value is ‘USD’.</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>description</td>
+      <td>Description of transaction.</td>
       <td>String</td>
     </tr>
   </tbody>
 </table>
+
+<h3 id="example">Example</h3>
+
+<pre><code>{
+  "api_key": "YOUR_ADMIN_KEY",
+  "transaction": {
+    "consumer_id": "56fecbf1f28347637b000020",
+    "video_id": "56fbe4b5f28347c9f4000ae3",
+    "transaction_type": "purchase",
+    "amount": "4.99",
+    "payment_nonce": "YOUR_PAYMENT_NONCE"
+  },
+  "provider": "braintree"
+}
+</code></pre>
 
 <h4 id="response-1">Response</h4>
 <p>201
@@ -257,53 +300,39 @@ Content-Type: application/json</p>
 
 <pre><code>{
   "response": {
-    {
-      "_id": "54579a714c616e0389010000",
-      "_keywords": [
-        "com",
-        "example",
-        "subscription",
-        "test123"
-      ],
-      "amount": "29.29",
-      "cancel_at_period_end": false,
-      "cancelled_at": null,
-      "consumer_id": "54579a634c616e0389000000",
-      "coupon_code": null,
-      "created_at": "2015-04-30T21:35:25.718-04:00",
-      "currency": "USD",
-      "current_period_end_at": null,
-      "current_period_start_at": null,
-      "deleted_at": null,
-      "discount_amount": null,
-      "discount_duration": null,
-      "discount_duration_months": null,
-      "discount_percent": null,
-      "interval": "month",
-      "interval_count": 1,
-      "mrr": null,
-      "plan_id": "554251d784502d0714ea1300",
-      "site_id": "54h76h4069702d523c000000",
-      "start_at": null,
-      "status": "active",
-      "stripe_card_token": null,
-      "stripe_id": "sub_5e7ddfHfsXs6",
-      "trial_period_days": 0,
-      "updated_at": "2015-04-30T21:35:25.718-04:00",
-      "plan_name": "6 Month Subscription"
-    }
+    "_id": "5706b865f283477023000065",
+    "_keywords": [
+      "example",
+      "video"
+    ],
+    "amount": "4.99",
+    "braintree_id": "b5wkgx",
+    "consumer_id": "56fecbf1f28347637b000020",
+    "created_at": "2016-04-07T15:43:33.617-04:00",
+    "currency": "USD",
+    "deleted_at": null,
+    "description": null,
+    "expires_at": null,
+    "pass_plan_id": null,
+    "payment_nonce": "fake-valid-nonce",
+    "playlist_id": null,
+    "site_id": "5468fd6569702d17ee500000",
+    "status": "authorized",
+    "transaction_type": "purchase",
+    "updated_at": "2016-04-07T15:43:33.617-04:00",
+    "video_id": "56fbe4b5f28347c9f4000ae3"
   }
 }
 </code></pre>
 
-<h2 id="subscription">Subscription</h2>
-<p>Lists descriptive information about a Subscription</p>
+<h2 id="transaction">Transaction</h2>
+<p>Lists descriptive information about a Transaction</p>
 <hr />
 
-<h3 id="retrieve-a-subscription">Retrieve a Subscription</h3>
+<h3 id="retrieve-a-transaction">Retrieve a Transaction</h3>
 <hr />
 
-<pre><code>GET - https://api.zype.com/subscriptions/{id}
+<pre><code>GET - https://api.zype.com/transactions/{id}
 </code></pre>
 
 <h4 id="parameters-2">Parameters</h4>
@@ -319,7 +348,7 @@ Content-Type: application/json</p>
   <tbody>
     <tr>
       <td>id</td>
-      <td>String id of the Subscription to retrieve. Example: 5389352e69702d401b000000.</td>
+      <td>String id of the Transaction to retrieve. Example: 5389352e69702d401b000000.</td>
       <td>String</td>
     </tr>
   </tbody>
@@ -334,51 +363,37 @@ Content-Type: application/json</p>
 
 <pre><code>{
   "response": {
-    {
-      "_id": "54579a714c616e0389010000",
-      "_keywords": [
-        "com",
-        "example",
-        "subscription",
-        "test123"
-      ],
-      "amount": "29.29",
-      "cancel_at_period_end": false,
-      "cancelled_at": null,
-      "consumer_id": "54579a634c616e0389000000",
-      "coupon_code": null,
-      "created_at": "2015-04-30T21:35:25.718-04:00",
-      "currency": "USD",
-      "current_period_end_at": null,
-      "current_period_start_at": null,
-      "deleted_at": null,
-      "discount_amount": null,
-      "discount_duration": null,
-      "discount_duration_months": null,
-      "discount_percent": null,
-      "interval": "month",
-      "interval_count": 1,
-      "mrr": null,
-      "plan_id": "554251d784502d0714ea1300",
-      "site_id": "54h76h4069702d523c000000",
-      "start_at": null,
-      "status": "active",
-      "stripe_card_token": null,
-      "stripe_id": "sub_5e7ddfHfsXs6",
-      "trial_period_days": 0,
-      "updated_at": "2015-04-30T21:35:25.718-04:00",
-      "plan_name": "6 Month Subscription"
-    }
+    "_id": "5706b865f283477023000065",
+    "_keywords": [
+      "example",
+      "video"
+    ],
+    "amount": "4.99",
+    "braintree_id": "b5wkgx",
+    "consumer_id": "56fecbf1f28347637b000020",
+    "created_at": "2016-04-07T15:43:33.617-04:00",
+    "currency": "USD",
+    "deleted_at": null,
+    "description": null,
+    "expires_at": null,
+    "pass_plan_id": null,
+    "payment_nonce": "fake-valid-nonce",
+    "playlist_id": null,
+    "site_id": "5468fd6569702d17ee500000",
+    "status": "authorized",
+    "transaction_type": "purchase",
+    "updated_at": "2016-04-07T15:43:33.617-04:00",
+    "video_id": "56fbe4b5f28347c9f4000ae3"
   }
 }
 </code></pre>
 
 <hr />
 
-<h3 id="update-a-subscription">Update a Subscription</h3>
+<h3 id="update-a-transaction">Update a Transaction</h3>
 <hr />
 
-<pre><code>PUT - https://api.zype.com/subscriptions/{id}
+<pre><code>PUT - https://api.zype.com/transactions/{id}
 </code></pre>
 
 <h4 id="parameters-3">Parameters</h4>
@@ -393,18 +408,53 @@ Content-Type: application/json</p>
   </thead>
   <tbody>
     <tr>
-      <td>Subscription</td>
-      <td>A set of key value pairs that describe the subscription.</td>
+      <td>transaction</td>
+      <td>A set of key value pairs that describe the Transaction. <em>required</em></td>
       <td>Hash</td>
     </tr>
     <tr>
       <td>consumer_id</td>
-      <td>The id of the consumer</td>
+      <td>The id of the consumer.</td>
       <td>String</td>
     </tr>
     <tr>
-      <td>plan_id</td>
-      <td>The id of the plan</td>
+      <td>video_id</td>
+      <td>The id of the video.</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>playlist_id</td>
+      <td>The id of the playlist.</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>pass_plan_id</td>
+      <td>The id of the pass plan.</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>payment_nonce</td>
+      <td>The payment nonce.</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>amount</td>
+      <td>Must be formatted as a string included cent value, for example “1.99”.</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>transaction_type</td>
+      <td>Must be either ‘purchase’ or ‘rental’.</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>currency</td>
+      <td>The currency type.</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>description</td>
+      <td>Description of transaction.</td>
       <td>String</td>
     </tr>
   </tbody>
@@ -420,51 +470,38 @@ Content-Type: application/json</p>
 
 <pre><code>{
   "response": {
-    {
-      "_id": "54579a714c616e0389010000",
-      "_keywords": [
-        "com",
-        "example",
-        "subscription",
-        "test123"
-      ],
-      "amount": "29.29",
-      "cancel_at_period_end": false,
-      "cancelled_at": null,
-      "consumer_id": "54579a634c616e0389000000",
-      "coupon_code": null,
-      "created_at": "2015-04-30T21:35:25.718-04:00",
-      "currency": "USD",
-      "current_period_end_at": null,
-      "current_period_start_at": null,
-      "deleted_at": null,
-      "discount_amount": null,
-      "discount_duration": null,
-      "discount_duration_months": null,
-      "discount_percent": null,
-      "interval": "month",
-      "interval_count": 1,
-      "mrr": null,
-      "plan_id": "554251d784502d0714ea1300",
-      "site_id": "54h76h4069702d523c000000",
-      "start_at": null,
-      "status": "active",
-      "stripe_card_token": null,
-      "stripe_id": "sub_5e7ddfHfsXs6",
-      "trial_period_days": 0,
-      "updated_at": "2015-04-30T21:35:25.718-04:00",
-      "plan_name": "6 Month Subscription"
-    }
+    "_id": "5706b865f283477023000065",
+    "_keywords": [
+      "asdfasfds",
+      "com",
+      "lkjalskjdflkajs"
+    ],
+    "amount": "4.99",
+    "braintree_id": "b5wkgx",
+    "consumer_id": "56fecbf1f28347637b000020",
+    "created_at": "2016-04-07T15:43:33.617-04:00",
+    "currency": "USD",
+    "deleted_at": null,
+    "description": "My cool transaction",
+    "expires_at": null,
+    "pass_plan_id": null,
+    "payment_nonce": "fake-valid-nonced",
+    "playlist_id": null,
+    "site_id": "5468fd6569702d17ee500000",
+    "status": "authorized",
+    "transaction_type": "purchase",
+    "updated_at": "2016-04-07T15:51:17.275-04:00",
+    "video_id": "56fbe4b5f28347c9f4000ae3"
   }
 }
 </code></pre>
 
 <hr />
 
-<h3 id="remove-a-subscription">Remove a Subscription</h3>
+<h3 id="remove-a-transaction">Remove a Transaction</h3>
 <hr />
 
-<pre><code>DELETE - https://api.zype.com/subscriptions/{id}
+<pre><code>DELETE - https://api.zype.com/transactions/{id}
 </code></pre>
 
 <h4 id="parameters-4">Parameters</h4>
@@ -480,7 +517,7 @@ Content-Type: application/json</p>
   <tbody>
     <tr>
       <td>id</td>
-      <td>String id of the Subscription to remove. Example: 5389352e69702d401b000000.</td>
+      <td>String id of the Transaction to remove. Example: 5389352e69702d401b000000.</td>
       <td>String</td>
     </tr>
   </tbody>
