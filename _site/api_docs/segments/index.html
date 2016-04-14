@@ -110,7 +110,7 @@
       <h2 id="segments">Segments</h2>
 <hr />
 
-<h3 id="list-video-segments">List video segments</h3>
+<h3 id="list-segments">List Segments</h3>
 <pre>
 <b>GET</b> https://api.zype.com/videos/[id]/segments
 </pre>
@@ -128,7 +128,7 @@
   <tbody>
     <tr>
       <td>video_id</td>
-      <td>String ID of the Video. Example: 5389352e69702d401b000000.</td>
+      <td>String ID of the video. Example: 5389352e69702d401b000000.</td>
       <td>String</td>
     </tr>
   </tbody>
@@ -153,7 +153,7 @@
   <tbody>
     <tr>
       <td>video_id</td>
-      <td>String ID of the Video to which the segment belongs. Example: 5389352e69702d401b000000.</td>
+      <td>String ID of the video to which the segment belongs. Example: 5389352e69702d401b000000.</td>
       <td>String</td>
     </tr>
     <tr>
@@ -182,22 +182,22 @@
   </thead>
   <tbody>
     <tr>
-      <td>segment</td>
-      <td>A set of key value pairs that describe the segment. Example: segment[description]=description.</td>
-      <td>Hash</td>
+      <td>video_id</td>
+      <td>String ID of the video to which the segment belongs. Example: 5389352e69702d401b000000.</td>
+      <td>String</td>
     </tr>
     <tr>
-      <td>description</td>
+      <td>segment[description]</td>
       <td>The description for the video segment</td>
       <td>String</td>
     </tr>
     <tr>
-      <td>start</td>
+      <td>segment[start]</td>
       <td>The point in the video where the segment begins</td>
       <td>Integer</td>
     </tr>
     <tr>
-      <td>end</td>
+      <td>segment[end]</td>
       <td>The point in the video where the segment ends</td>
       <td>Integer</td>
     </tr>
@@ -222,31 +222,21 @@
   <tbody>
     <tr>
       <td>video_id</td>
-      <td>String ID of the Video to which the segment belongs. Example: 5389352e69702d401b000000.</td>
+      <td>String ID of the video to which the segment belongs. Example: 5389352e69702d401b000000.</td>
       <td>String</td>
     </tr>
     <tr>
-      <td>id</td>
-      <td>String ID of the segment to be updated. Example: 5389352e69702d401b000000.</td>
-      <td>String</td>
-    </tr>
-    <tr>
-      <td>segment</td>
-      <td>A set of key value pairs that describe the segment. Example: segment[description]=description.</td>
-      <td>Hash</td>
-    </tr>
-    <tr>
-      <td>description</td>
+      <td>segment[description]</td>
       <td>The description for the video segment</td>
       <td>String</td>
     </tr>
     <tr>
-      <td>start</td>
+      <td>segment[start]</td>
       <td>The point in the video where the segment begins</td>
       <td>Integer</td>
     </tr>
     <tr>
-      <td>end</td>
+      <td>segment[end]</td>
       <td>The point in the video where the segment ends</td>
       <td>Integer</td>
     </tr>
@@ -272,7 +262,7 @@
   <tbody>
     <tr>
       <td>video_id</td>
-      <td>String ID of the Video to which the segment belongs. Example: 5389352e69702d401b000000.</td>
+      <td>String ID of the video to which the segment belongs. Example: 5389352e69702d401b000000.</td>
       <td>String</td>
     </tr>
     <tr>

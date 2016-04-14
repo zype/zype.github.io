@@ -6,7 +6,7 @@ permalink: /api_docs/videos/
 
 ## Videos
 <hr />
-### List all Videos
+### List Videos
 <pre>
 <b>GET</b> https://api.zype.com/videos
 </pre>

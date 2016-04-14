@@ -6,7 +6,7 @@ permalink: /api_docs/segments/
 
 ## Segments
 <hr />
-### List video segments
+### List Segments
 <pre>
 <b>GET</b> https://api.zype.com/videos/[id]/segments
 </pre>
@@ -15,7 +15,7 @@ permalink: /api_docs/segments/
 
 Parameter | Function | Type
 --------- | -------- | ----
-video_id  | String ID of the Video. Example: 5389352e69702d401b000000. | String
+video_id  | String ID of the video. Example: 5389352e69702d401b000000. | String
 
 ###Retrieve a Segment
 <hr>
@@ -26,7 +26,7 @@ video_id  | String ID of the Video. Example: 5389352e69702d401b000000. | String
 
 Parameter | Function | Type
 --------- | -------- | ----
-video_id        | String ID of the Video to which the segment belongs. Example: 5389352e69702d401b000000. | String
+video_id        | String ID of the video to which the segment belongs. Example: 5389352e69702d401b000000. | String
 id        | String ID of the segment. Example: 5389352e69702d401b000000. | String
 
 ###Create a Segment
@@ -38,10 +38,10 @@ id        | String ID of the segment. Example: 5389352e69702d401b000000. | Strin
 
 Parameter | Function | Type
 --------- | -------- | ----
-segment | A set of key value pairs that describe the segment. Example: segment[description]=description. | Hash
-description | The description for the video segment | String
-start | The point in the video where the segment begins | Integer
-end | The point in the video where the segment ends | Integer
+video_id        | String ID of the video to which the segment belongs. Example: 5389352e69702d401b000000. | String
+segment[description] | The description for the video segment | String
+segment[start] | The point in the video where the segment begins | Integer
+segment[end] | The point in the video where the segment ends | Integer
 
 ###Update a Segment
 <hr>
@@ -51,12 +51,10 @@ end | The point in the video where the segment ends | Integer
 
 Parameter | Function | Type
 --------- | -------- | ----
-video_id  | String ID of the Video to which the segment belongs. Example: 5389352e69702d401b000000. | String
-id        | String ID of the segment to be updated. Example: 5389352e69702d401b000000. | String
-segment | A set of key value pairs that describe the segment. Example: segment[description]=description. | Hash
-description | The description for the video segment | String
-start | The point in the video where the segment begins | Integer
-end | The point in the video where the segment ends | Integer
+video_id        | String ID of the video to which the segment belongs. Example: 5389352e69702d401b000000. | String
+segment[description] | The description for the video segment | String
+segment[start] | The point in the video where the segment begins | Integer
+segment[end] | The point in the video where the segment ends | Integer
 
 ###Delete a Segment
 <hr>
@@ -67,7 +65,7 @@ end | The point in the video where the segment ends | Integer
 
 Parameter | Function | Type
 --------- | -------- | ----
-video_id       | String ID of the Video to which the segment belongs. Example: 5389352e69702d401b000000. | String
+video_id       | String ID of the video to which the segment belongs. Example: 5389352e69702d401b000000. | String
 id       | String ID of the segment to be deleted. Example: 5389352e69702d401b000000. | String
 
 ### Segment Object
