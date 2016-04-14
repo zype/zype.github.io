@@ -22,7 +22,7 @@ created_at | Filter the records returned by created date. You can use greater th
 crunchyroll_id   | Filter videos that have the specified Crunchyroll ID. | String
 dpt       | Only shows videos that are available to the end user based on device and country | Boolean
 hulu_id   | Filter videos that have the specified Hulu ID. | String
-id        | Query for a video by id | String
+id        | Query for a video by ID | String
 id!       | Exclude a video from the query | String
 order     | Order videos in ascending or descending order (Example: asc/desc) | String
 on_air    | Filter videos that are either on or off air. | Boolean
@@ -71,7 +71,7 @@ video[custom_thumbnail_url] | A URL where a custom thumbnail for the video can b
 
 Parameter | Function | Type
 --------- | -------- | ----
-id        | String id of the Video to retrieve. Example: 5389352e69702d401b000000. | String
+id        | String ID of the video to retrieve. Example: 5389352e69702d401b000000. | String
 
 ### Update a Video
 <hr>
@@ -99,6 +99,17 @@ video[discovery_url] | The URL where the video will be hosted, this field can be
 video[source_id] | An optional user specified identifier for a video | String
 video[custom_thumbnail_url] | A URL where a custom thumbnail for the video can be retrieved (JPEG, PNG or GIF) | String
 
+###Delete a Video
+<hr>
+<pre><b>DELETE</b> https://api.zype.com/videos/[id]
+</pre>
+
+#### Parameters
+
+Parameter | Function | Type
+--------- | -------- | ----
+id        | String ID of the video to delete. Example: 5389352e69702d401b000000. | String
+
 ### Add Zobject(s) to Video
 <hr>
 <pre><b>PUT</b> https://api.zype.com/videos/[id]/add_zobjects
@@ -108,7 +119,7 @@ video[custom_thumbnail_url] | A URL where a custom thumbnail for the video can b
 
 Parameter | Function | Type
 --------- | -------- | ----
-id        | String id of the Video. Example: 5389352e69702d401b000000. | String
+id        | String ID of the video. Example: 5389352e69702d401b000000. | String
 zobject_id | An array containing all of the zobject id's that you want to add to the video. | Array of Strings
 
 ### Remove Zobject(s) from Video
@@ -120,7 +131,7 @@ zobject_id | An array containing all of the zobject id's that you want to add to
 
 Parameter | Function | Type
 --------- | -------- | ----
-id        | String id of the Video. Example: 5389352e69702d401b000000. | String
+id        | String ID of the video. Example: 5389352e69702d401b000000. | String
 zobject_id | An array containing all of the zobject id's that you want to dissociate from the video. | Array of Strings
 
 ### Video Object

@@ -162,7 +162,7 @@
     </tr>
     <tr>
       <td>id</td>
-      <td>Query for a video by id</td>
+      <td>Query for a video by ID</td>
       <td>String</td>
     </tr>
     <tr>
@@ -351,7 +351,7 @@
   <tbody>
     <tr>
       <td>id</td>
-      <td>String id of the Video to retrieve. Example: 5389352e69702d401b000000.</td>
+      <td>String ID of the video to retrieve. Example: 5389352e69702d401b000000.</td>
       <td>String</td>
     </tr>
   </tbody>
@@ -457,10 +457,10 @@
   </tbody>
 </table>
 
-<h3 id="add-zobjects-to-video">Add Zobject(s) to Video</h3>
+<h3 id="delete-a-video">Delete a Video</h3>
 <hr />
 
-<pre><b>PUT</b> https://api.zype.com/videos/[id]/add_zobjects
+<pre><b>DELETE</b> https://api.zype.com/videos/[id]
 </pre>
 
 <h4 id="parameters-4">Parameters</h4>
@@ -476,7 +476,32 @@
   <tbody>
     <tr>
       <td>id</td>
-      <td>String id of the Video. Example: 5389352e69702d401b000000.</td>
+      <td>String ID of the video to delete. Example: 5389352e69702d401b000000.</td>
+      <td>String</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="add-zobjects-to-video">Add Zobject(s) to Video</h3>
+<hr />
+
+<pre><b>PUT</b> https://api.zype.com/videos/[id]/add_zobjects
+</pre>
+
+<h4 id="parameters-5">Parameters</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Function</th>
+      <th>Type</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>id</td>
+      <td>String ID of the video. Example: 5389352e69702d401b000000.</td>
       <td>String</td>
     </tr>
     <tr>
@@ -493,7 +518,7 @@
 <pre><b>PUT</b> https://api.zype.com/videos/[id]/remove_zobjects
 </pre>
 
-<h4 id="parameters-5">Parameters</h4>
+<h4 id="parameters-6">Parameters</h4>
 
 <table>
   <thead>
@@ -506,7 +531,7 @@
   <tbody>
     <tr>
       <td>id</td>
-      <td>String id of the Video. Example: 5389352e69702d401b000000.</td>
+      <td>String ID of the video. Example: 5389352e69702d401b000000.</td>
       <td>String</td>
     </tr>
     <tr>
