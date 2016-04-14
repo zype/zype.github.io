@@ -23,7 +23,7 @@ per_page | The number of records to return. Example: 10. | Number
 
 ###Retrieve a Category
 <hr>
-<pre><b>GET</b> https://api.zype.com/category/[id]
+<pre><b>GET</b> https://api.zype.com/categories/[id]
 </pre>
 
 #### Parameters
