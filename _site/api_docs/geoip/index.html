@@ -106,14 +106,13 @@
 
 
     <section id="main">
-      <h2 id="geoip-collection">GeoIP Collection</h2>
+      <h2 id="geoip">GeoIP</h2>
 <hr />
 
-<h3 id="retrive-an-ip-address">Retrive an IP Address</h3>
+<h3 id="retrieve-an-ip-address">Retrieve an IP Address</h3>
 <hr />
 
-<pre><code>GET - https://api.zype.com/geoip?ip_address=ip_address
-</code></pre>
+<pre><b>GET</b> https://api.zype.com/geoip</pre>
 
 <h4 id="parameters">Parameters</h4>
 
@@ -129,26 +128,24 @@
     <tr>
       <td>ip_address</td>
       <td>Defaults to IP of API caller if not provided Example: 255.255.255.255.</td>
-      <td>Integer</td>
+      <td>String</td>
     </tr>
   </tbody>
 </table>
 
-<h4 id="response">Response</h4>
-<p>200
-Content-Type: application/json</p>
-<pre><code>{
-  "response": {
-    "request": "108.29.95.21",
-    "ip": "108.29.95.21",
-    "country_code": 225,
-    "country_code2": "US",
-    "country_code3": "USA",
-    "country_name": "United States",
-    "continent_code": "NA"
-  }
+<h3 id="geoip-object">GeoIP Object</h3>
+
+<pre>
+{
+  "request": "108.29.95.21",
+  "ip": "108.29.95.21",
+  "country_code": 225,
+  "country_code2": "US",
+  "country_code3": "USA",
+  "country_name": "United States",
+  "continent_code": "NA"
 }
-</code></pre>
+</pre>
 
     </section>
 
