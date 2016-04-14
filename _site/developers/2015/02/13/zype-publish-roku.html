@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Publishing a Roku Channel on the Zype Platform</title>
+    <meta name="description" content="">
+
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="canonical" href="/developers/2015/02/13/zype-publish-roku.html">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-1376128-30', 'auto');
+    ga('create', 'UA-1376128-21', 'auto', {'name': 'global'});
+
+    ga('send', 'pageview');
+    ga('global.send', 'pageview');
+
+    </script>
+
+    <!-- Start of zypetrial Zendesk Widget script -->
+    <script>/*<![CDATA[*/window.zEmbed||function(e,t){var n,o,d,i,s,a=[],r=document.createElement("iframe");window.zEmbed=function(){a.push(arguments)},window.zE=window.zE||window.zEmbed,r.src="javascript:false",r.title="",r.role="presentation",(r.frameElement||r).style.cssText="display: none",d=document.getElementsByTagName("script"),d=d[d.length-1],d.parentNode.insertBefore(r,d),i=r.contentWindow,s=i.document;try{o=s}catch(c){n=document.domain,r.src='javascript:var d=document.open();d.domain="'+n+'";void(0);',o=s}o.open()._l=function(){var o=this.createElement("script");n&&(this.domain=n),o.id="js-iframe-async",o.src=e,this.t=+new Date,this.zendeskHost=t,this.zEQueue=a,this.body.appendChild(o)},o.write('<body onload="document._l();">'),o.close()}("https://assets.zendesk.com/embeddable_framework/main.js","zypetrial.zendesk.com");/*]]>*/</script>
+    <!-- End of zypetrial Zendesk Widget script -->
+    
+    <!-- Marketo -->
+    <script type="text/javascript">
+    (function() {
+      var didInit = false;
+      function initMunchkin() {
+        if(didInit === false) {
+          didInit = true;
+          Munchkin.init('627-DAI-818');
+        }
+      }
+      var s = document.createElement('script');
+      s.type = 'text/javascript';
+      s.async = true;
+      s.src = '//munchkin.marketo.net/munchkin.js';
+      s.onreadystatechange = function() {
+        if (this.readyState == 'complete' || this.readyState == 'loaded') {
+          initMunchkin();
+        }
+      };
+      s.onload = initMunchkin;
+      document.getElementsByTagName('head')[0].appendChild(s);
+    })();
+    </script>
+</head>
+
+
+  <body>
+
+    <header id="header" style="overflow-y: scroll;">
+  <div id="content">
+    <a href="/"><img src="/assets/logo.png" alt="Zype" />
+    <h1 id="title">Developer Portal</h1></a>
+    <p>a knowledge base</p>
+    <div class="hidden-mobile">
+      <br>
+        <p class="category"><a href="/api_docs/intro/" style="color: #8acfef;">API Documentation</a></p>
+        <p class="category"><a href="/platform_docs/" style="color: #8acfef;">Platform Documentation</a></p>
+        <p class="category"><a href="/glossary/" style="color: #8acfef;">Glossary</a></p>
+        <p class="category"><a href="http://status.zype.com" style="color: #8acfef;">System Status</a></p>
+        <p class="category"><a href="/faq/" style="color: #8acfef;">FAQ</a></p>
+      <br>
+      © 2016 Zype Inc.
+    </div>
+  </div>
+</header>
+
+
+    <section id="main">
+      <div class="post">
+  <h1 class="post-title">Publishing a Roku Channel on the Zype Platform</h1>
+  <p class="post-meta">Feb 13, 2015</p>
+  <article class="post-content">
+    <p>We have simplified the process of publishing a Roku Channel from the Zype Platform.
+The process now has three parts. First, you need to set up your channel.
+Then, Zype will build your Channel for you or you can
+<a href="posts/2015/02/13/self-publish-roku/">self-publish your Channel</a>.</p>
+
+<p><strong>Step 1: Set Up Your Video Library and Channel</strong></p>
+
+<p>First, you will need to upload and transcode videos onto the Zype Platform.
+Currently, Roku Channels only support videos with a Zype video source.</p>
+
+<p><img src="/assets/Uploading Videos to the Zype Platform from the Web/upload_video_1.png" alt="upload and transcode" /></p>
+
+<p>Second, you will need to set up your Roku Channel. Navigate to the Video Apps page</p>
+
+<p><img src="/assets/Publishing Your Roku App/dashboard_to_video_app.png" alt="video apps page" /></p>
+
+<p>Click on Roku to set up a new Roku Channel for publishing</p>
+
+<p><img src="/assets/Publishing Your Roku App/set_up_roku_app.png" alt="Roku publishing" /></p>
+
+<p>Set up your Roku Channel by supplying a title, subtitle, a channel image, and
+select a channel template. Zype will create multiple images from your one supplied
+channel image including your channel logo, poster art, and loading screen.
+It is suggested to have a 640 px by 480 px PNG image because the image will be used
+in many different sizes.</p>
+
+<p><img src="/assets/Publishing Your Roku App/set_up_roku_screen.png" alt="roku set up" /></p>
+
+<p><strong>Step 2: Zype Builds Your Roku Channel</strong></p>
+
+<p>Once you set up your Channel, Zype will bundle the necessary images and prepare the
+code for your Roku Channel. All you have to do is wait a couple of minutes!
+The page will automatically refresh once your Channel is ready.</p>
+
+<p><img src="/assets/Publishing Your Roku App/roku_bundling.png" alt="roku bundling" /></p>
+
+<p><strong>Step 3: Publish Channel</strong></p>
+
+<p>You can choose to either self-publish or have Zype publish your Roku Channel for you.
+If you choose to self publish <a href="posts/2015/02/13/self-publish-roku/">click here</a>
+to read our guide to self publish your Roku Channel.
+If you choose to have Zype publish your channel, you will be sent to a checkout
+page to redeem your publishing package or pay for a publishing package.
+Once you checkout, a member of the Zype team will package, QA, and submit your
+Roku Channel to the Roku Channel Store.</p>
+
+<p><img src="/assets/Publishing Your Roku App/roku_publishing.png" alt="roku publishing options" /></p>
+
+<p>Typically, once your Roku Channel is submitted to the Roku Channel Store, it takes
+3-4 weeks to get to the front of the QA queue and then another 1-2 weeks for approval.
+You should expect to wait atleast 4-6 weeks for your Roku Channel to be available
+on the Roku Channel Store. If you would like to immediately share your Roku Channel,
+you can create a private Roku Channel that can be shared immediately via url.</p>
+
+<p><strong>Step 4: Edit Channel Settings</strong></p>
+
+<p>The majority of settings for your Roku Channel are configured at run-time.
+Thus, you can edit Channel settings such as your featured playlist, your logos and
+themes without having to re-publish. <a href="posts/2015/02/13/roku-advanced-settings/">Click here</a>
+to read how to edit your Roku Channel.</p>
+
+  </article>
+  <div id="disqus_thread"></div>
+  <script type="text/javascript">
+      /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+      var disqus_shortname = 'zypedev'; // required: replace example with your forum shortname
+
+      /* * * DON'T EDIT BELOW THIS LINE * * */
+      (function() {
+          var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+          dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+
+    </section>
+
+    <footer id="footer">
+  <p style="padding-top: 10px;">
+    © 2016 Zype Inc.
+  </p>
+</footer>
+
+
+  </body>
+
+</html>

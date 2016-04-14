@@ -7,11 +7,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     <title>Zype Developer Portal | Videos</title>
-    <meta name="description" content="This is the devloper portal for Zype Media. Zype is Revenue and Reach Magic for Online Video. We help content owners deliver fully branded video experiences.
-">
+    <meta name="description" content="">
 
     <link rel="stylesheet" href="/css/main.css">
-    <link rel="canonical" href="http://dev.zype.com/api_docs/videos/">
+    <link rel="canonical" href="/api_docs/videos/">
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 
     <!--[if lt IE 9]>
@@ -66,7 +65,7 @@
 
       <header id="header" style="overflow-y: scroll;">
     <div id="content">
-      <a href="/"><img src="http://dev.zype.com/assets/logo.png" alt="Zype" />
+      <a href="/"><img src="/assets/logo.png" alt="Zype" />
       <h1 id="title">Developer Portal</h1></a>
       <p>a knowledge base</p>
       <br>
@@ -107,17 +106,13 @@
 
 
     <section id="main">
-      <h2 id="videos-collection">Videos Collection</h2>
-<p>Lists all Videos. Video information includes descriptive information about the video,
-but does not include player embed codes.</p>
+      <h2 id="videos">Videos</h2>
 <hr />
 
 <h3 id="list-all-videos">List all Videos</h3>
-<hr />
-
-<pre><code>GET - https://api.zype.com/videos?page=page&amp;per_page=per_page&amp;
-keyword=keyword&amp;status=status&amp;active=true&amp;type=type&amp;category=category
-</code></pre>
+<pre>
+<b>GET</b> https://api.zype.com/videos
+</pre>
 
 <h4 id="parameters">Parameters</h4>
 
@@ -131,48 +126,8 @@ keyword=keyword&amp;status=status&amp;active=true&amp;type=type&amp;category=cat
   </thead>
   <tbody>
     <tr>
-      <td>page</td>
-      <td>The page number of records to return (zero indexed). Example: 0.</td>
-      <td>Number</td>
-    </tr>
-    <tr>
-      <td>per_page</td>
-      <td>The number of records to return. Example: 10.</td>
-      <td>Number</td>
-    </tr>
-    <tr>
-      <td>q</td>
-      <td>A query string for searching for videos</td>
-      <td>String</td>
-    </tr>
-    <tr>
-      <td>keyword</td>
-      <td>Filters the records returned by keyword. Example: comedy.</td>
-      <td>String</td>
-    </tr>
-    <tr>
-      <td>status</td>
-      <td>Filters the records returned by status. Example: created.</td>
-      <td>String</td>
-    </tr>
-    <tr>
       <td>active</td>
       <td>Show active, inactive or all videos Example: true.</td>
-      <td>String</td>
-    </tr>
-    <tr>
-      <td>type</td>
-      <td>The type of videos to query. Example: Zype, Hulu, Youtube, Crunchyroll</td>
-      <td>String</td>
-    </tr>
-    <tr>
-      <td>id</td>
-      <td>Query for a video by id</td>
-      <td>String</td>
-    </tr>
-    <tr>
-      <td>id!</td>
-      <td>Exclude a video from the query</td>
       <td>String</td>
     </tr>
     <tr>
@@ -186,19 +141,49 @@ keyword=keyword&amp;status=status&amp;active=true&amp;type=type&amp;category=cat
       <td>Hash</td>
     </tr>
     <tr>
-      <td>zobject_id</td>
-      <td>Query for videos with a specific zobject associated with them</td>
-      <td>String</td>
-    </tr>
-    <tr>
-      <td>zobject_id!</td>
-      <td>Exclude videos with a specfific zobject associated with them</td>
-      <td>String</td>
-    </tr>
-    <tr>
       <td>created_at</td>
       <td>Filter the records returned by created date. You can use greater than or less than filters by adding a suffix: ‘.gt’, ‘.gte’, ‘.lt’, ‘lte’. Example: created_at.gte=2015-01-01</td>
       <td>Date</td>
+    </tr>
+    <tr>
+      <td>crunchyroll_id</td>
+      <td>Filter videos that have the specified Crunchyroll ID.</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>dpt</td>
+      <td>Only shows videos that are available to the end user based on device and country</td>
+      <td>Boolean</td>
+    </tr>
+    <tr>
+      <td>hulu_id</td>
+      <td>Filter videos that have the specified Hulu ID.</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>id</td>
+      <td>Query for a video by id</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>id!</td>
+      <td>Exclude a video from the query</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>order</td>
+      <td>Order videos in ascending or descending order (Example: asc/desc)</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>on_air</td>
+      <td>Filter videos that are either on or off air.</td>
+      <td>Boolean</td>
+    </tr>
+    <tr>
+      <td>mature_content</td>
+      <td>Filter videos that are flagged as mature content.</td>
+      <td>Boolean</td>
     </tr>
     <tr>
       <td>published_at</td>
@@ -206,32 +191,336 @@ keyword=keyword&amp;status=status&amp;active=true&amp;type=type&amp;category=cat
       <td>Date</td>
     </tr>
     <tr>
-      <td>dpt</td>
-      <td>Only shows videos that are available to the end user based on device and country</td>
-      <td>Boolean</td>
+      <td>q</td>
+      <td>A query string for searching for videos</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>sort</td>
+      <td>Sort videos on the specified field</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>source_id</td>
+      <td>Search for videos using an optional user provided source identifier.</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>type</td>
+      <td>The type of videos to query. Example: zype, hulu, youtube, crunchyroll</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>vimeo_id</td>
+      <td>Filter videos that have the specified Vimeo ID.</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>youtube_id</td>
+      <td>Filter videos that have the specified YouTube ID.</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>zobject_id</td>
+      <td>Include only videos that belong to the specified Zobject ID.</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>zobject_id!</td>
+      <td>Exclude videos that belong to the specified Zobject ID.</td>
+      <td>String</td>
     </tr>
   </tbody>
 </table>
 
-<h3 id="sorting">Sorting</h3>
+<h3 id="create-a-video">Create a Video</h3>
+<hr />
 
-<p>By default, videos are ordered by the time they get added to the Zype Platform.
-To change sorting, pass the parameter sort and the field that you want to sort on into your API call.
-You can also pass the order that you want to sort by (either ascending or descending).</p>
+<pre><b>POST</b> https://api.zype.com/videos</pre>
 
-<p>Example:</p>
+<h4 id="parameters-1">Parameters</h4>
 
-<pre><code>https://api.zype.com/videos?sort=published_at&amp;order=desc
+<table>
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Function</th>
+      <th>Type</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>video[title]</td>
+      <td>The title of the video</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>video[description]</td>
+      <td>The description of the video</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>video[short_description]</td>
+      <td>The description of the video</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>video[published_at]</td>
+      <td>The date and time that the video will appear to have been published</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>video[episode]</td>
+      <td>The video’s episode number</td>
+      <td>Integer</td>
+    </tr>
+    <tr>
+      <td>video[season]</td>
+      <td>The video’s season number</td>
+      <td>Integer</td>
+    </tr>
+    <tr>
+      <td>video[country]</td>
+      <td>The country the video was created in</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>video[active]</td>
+      <td>Whether or not the video is active</td>
+      <td>Boolean</td>
+    </tr>
+    <tr>
+      <td>video[featured]</td>
+      <td>Whether or not the video is featured</td>
+      <td>Boolean</td>
+    </tr>
+    <tr>
+      <td>video[keywords]</td>
+      <td>Keywords for the video</td>
+      <td>Array</td>
+    </tr>
+    <tr>
+      <td>video[subscription_required]</td>
+      <td>Whether or not the video requires a subscription to view</td>
+      <td>Boolean</td>
+    </tr>
+    <tr>
+      <td>video[subscription_required]</td>
+      <td>Whether or not the video requires a pass to view</td>
+      <td>Boolean</td>
+    </tr>
+    <tr>
+      <td>video[mature_content]</td>
+      <td>Whether or not the video requires the viewer to be 18+ to view</td>
+      <td>Boolean</td>
+    </tr>
+    <tr>
+      <td>video[discovery_url]</td>
+      <td>The URL where the video will be hosted, this field can be used in RSS distribution</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>video[source_id]</td>
+      <td>An optional user specified identifier for a video</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>video[custom_thumbnail_url]</td>
+      <td>A URL where a custom thumbnail for the video can be retrieved (JPEG, PNG or GIF)</td>
+      <td>String</td>
+    </tr>
+  </tbody>
+</table>
 
-https://api.zype.com/videos?sort=title&amp;order=asc
-</code></pre>
+<h3 id="retrieve-a-video">Retrieve a Video</h3>
+<hr />
 
-<h4 id="response">Response</h4>
-<p>200
-Content-Type: application/json</p>
+<pre><b>GET</b> https://api.zype.com/videos/[id]
+</pre>
 
-<pre><code>{
-  "response": [
+<h4 id="parameters-2">Parameters</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Function</th>
+      <th>Type</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>id</td>
+      <td>String id of the Video to retrieve. Example: 5389352e69702d401b000000.</td>
+      <td>String</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="update-a-video">Update a Video</h3>
+<hr />
+
+<pre><b>PUT</b> https://api.zype.com/videos/[id]
+</pre>
+
+<h4 id="parameters-3">Parameters</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Function</th>
+      <th>Type</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>video[title]</td>
+      <td>The title of the video</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>video[description]</td>
+      <td>The description of the video</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>video[short_description]</td>
+      <td>The description of the video</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>video[published_at]</td>
+      <td>The date and time that the video will appear to have been published</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>video[episode]</td>
+      <td>The video’s episode number</td>
+      <td>Integer</td>
+    </tr>
+    <tr>
+      <td>video[season]</td>
+      <td>The video’s season number</td>
+      <td>Integer</td>
+    </tr>
+    <tr>
+      <td>video[country]</td>
+      <td>The country the video was created in</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>video[active]</td>
+      <td>Whether or not the video is active</td>
+      <td>Boolean</td>
+    </tr>
+    <tr>
+      <td>video[featured]</td>
+      <td>Whether or not the video is featured</td>
+      <td>Boolean</td>
+    </tr>
+    <tr>
+      <td>video[keywords]</td>
+      <td>Keywords for the video</td>
+      <td>Array</td>
+    </tr>
+    <tr>
+      <td>video[subscription_required]</td>
+      <td>Whether or not the video requires a subscription to view</td>
+      <td>Boolean</td>
+    </tr>
+    <tr>
+      <td>video[subscription_required]</td>
+      <td>Whether or not the video requires a pass to view</td>
+      <td>Boolean</td>
+    </tr>
+    <tr>
+      <td>video[mature_content]</td>
+      <td>Whether or not the video requires the viewer to be 18+ to view</td>
+      <td>Boolean</td>
+    </tr>
+    <tr>
+      <td>video[discovery_url]</td>
+      <td>The URL where the video will be hosted, this field can be used in RSS distribution</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>video[source_id]</td>
+      <td>An optional user specified identifier for a video</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>video[custom_thumbnail_url]</td>
+      <td>A URL where a custom thumbnail for the video can be retrieved (JPEG, PNG or GIF)</td>
+      <td>String</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="add-zobjects-to-video">Add Zobject(s) to Video</h3>
+<hr />
+
+<pre><b>PUT</b> https://api.zype.com/videos/[id]/add_zobjects
+</pre>
+
+<h4 id="parameters-4">Parameters</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Function</th>
+      <th>Type</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>id</td>
+      <td>String id of the Video. Example: 5389352e69702d401b000000.</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>zobject_id</td>
+      <td>An array containing all of the zobject id’s that you want to add to the video.</td>
+      <td>Array of Strings</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="remove-zobjects-from-video">Remove Zobject(s) from Video</h3>
+<hr />
+
+<pre><b>PUT</b> https://api.zype.com/videos/[id]/remove_zobjects
+</pre>
+
+<h4 id="parameters-5">Parameters</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Function</th>
+      <th>Type</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>id</td>
+      <td>String id of the Video. Example: 5389352e69702d401b000000.</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>zobject_id</td>
+      <td>An array containing all of the zobject id’s that you want to dissociate from the video.</td>
+      <td>Array of Strings</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="video-object">Video Object</h3>
+
+<pre>
+[
   {
     "_id": "547b4dca69702d070dca0000",
     "active": true,
@@ -322,1029 +611,7 @@ Content-Type: application/json</p>
         "width": 480
       }
     ]
-}
-</code></pre>
-<hr />
-
-<h3 id="create-a-video">Create a Video</h3>
-<hr />
-
-<pre><code>POST - https://api.zype.com/videos?page=page&amp;per_page=per_page&amp;
-keyword=keyword&amp;status=status&amp;active=true&amp;type=type&amp;category=category
-</code></pre>
-
-<h4 id="parameters-1">Parameters</h4>
-
-<table>
-  <thead>
-    <tr>
-      <th>Parameter</th>
-      <th>Function</th>
-      <th>Type</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Video</td>
-      <td>A set of key value pairs that describe the video</td>
-      <td>Hash</td>
-    </tr>
-    <tr>
-      <td>title</td>
-      <td>The title of the video</td>
-      <td>String</td>
-    </tr>
-    <tr>
-      <td>description</td>
-      <td>The description of the video</td>
-      <td>String</td>
-    </tr>
-    <tr>
-      <td>published_at</td>
-      <td>The date and time that the video will appear to have been published</td>
-      <td>String</td>
-    </tr>
-    <tr>
-      <td>episode</td>
-      <td>The video’s episode number</td>
-      <td>Integer</td>
-    </tr>
-    <tr>
-      <td>season</td>
-      <td>The video’s season number</td>
-      <td>Integer</td>
-    </tr>
-    <tr>
-      <td>country</td>
-      <td>The country the video was created in</td>
-      <td>String</td>
-    </tr>
-    <tr>
-      <td>active</td>
-      <td>Whether or not the video is active</td>
-      <td>Boolean</td>
-    </tr>
-    <tr>
-      <td>featured</td>
-      <td>Whether or not the video is featured</td>
-      <td>Boolean</td>
-    </tr>
-    <tr>
-      <td>keywords</td>
-      <td>Keywords for the video</td>
-      <td>Array</td>
-    </tr>
-    <tr>
-      <td>subscription_required</td>
-      <td>Whether or not the video requires a subscription to view</td>
-      <td>Boolean</td>
-    </tr>
-    <tr>
-      <td>mature_content</td>
-      <td>Whether or not the video requires the viewer to be 18+ to view</td>
-      <td>Boolean</td>
-    </tr>
-  </tbody>
-</table>
-
-<h4 id="response-1">Response</h4>
-<p>201
-Content-Type: application/json</p>
-
-<pre><code>{
-  "response":
-  {
-    "_id": "549336916362613cf51f0000",
-    "active": true,
-    "country": nil,
-    "created_at": "2014-12-18T15:18:25.744-05:00",
-    "description": "Sample Description",
-    "discovery_url": "http://www.yoursite.com/video",
-    "duration": nil,
-    "episode": 1,
-    "featured": false,
-    "foreign_id": nil,
-    "keywords": [],
-    "segments": [],
-    "mature_content": false,
-    "published_at": nil,
-    "rating": 0.0,
-    "related_playlist_ids": [],
-    "request_count": 0,
-    "season": 1,
-    "site_id": "53c4296a69702d25ca000000",
-    "status": "created",
-    "subscription_required": false,
-    "title": "Sample Video Title",
-    "updated_at": "2014-12-18T15:18:25.744-05:00",
-    "zobject_ids": [],
-    "thumbnails": []
-  }
-}
-</code></pre>
-
-<h2 id="video">Video</h2>
-<p>Lists descriptive information about Videos</p>
-<hr />
-
-<h3 id="retrieve-a-video">Retrieve a Video</h3>
-<hr />
-
-<pre><code>GET - https://api.zype.com/videos/{id}
-</code></pre>
-
-<h4 id="parameters-2">Parameters</h4>
-
-<table>
-  <thead>
-    <tr>
-      <th>Parameter</th>
-      <th>Function</th>
-      <th>Type</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>id</td>
-      <td>String id of the Video to retrieve. Example: 5389352e69702d401b000000.</td>
-      <td>String</td>
-    </tr>
-  </tbody>
-</table>
-
-<h4 id="request">Request</h4>
-<p>Content-Type: application/json</p>
-
-<h4 id="response-2">Response</h4>
-<p>200
-Content-Type: application/json</p>
-
-<pre><code>{
-  "response":
-  {
-    "_id": "546529b669702d534fb00000",
-    "active": true,
-    "categories": [
-      {
-        "title": "Genre",
-        "value": [
-          "Adventure"
-        ]
-      },
-      {
-        "title": "Additional Videos from YouTube",
-        "value": []
-      },
-      {
-        "title": "series",
-        "value": []
-      }
-    ],
-    "country": "",
-    "created_at": "2014-11-13T16:59:18.970-05:00",
-    "description": "New trailer for Marvel's Avengers: The Age of Ultron!",
-    "discovery_url": "http://www.yoursite.com/video",
-    "duration": 151,
-    "episode": null,
-    "featured": true,
-    "foreign_id": null,
-    "keywords": [],
-    "segments": [],
-    "mature_content": false,
-    "published_at": "2014-11-13T16:57:02.000-05:00",
-    "rating": 0,
-    "related_playlist_ids": [],
-    "request_count": 39,
-    "season": null,
-    "site_id": "5463c68e69702d24db490000",
-    "status": "created",
-    "subscription_required": false,
-    "title": "Avengers: Age of Ultron",
-    "updated_at": "2014-12-17T23:00:14.215-05:00",
-    "zobject_ids": [],
-    "thumbnails": [
-      {
-      "aspect_ratio": null,
-      "height": 90,
-      "name": null,
-      "url": "https://i.ytimg.com/vi/Kno4FTxWycI/default.jpg",
-      "width": 120
-      },
-      {
-      "aspect_ratio": null,
-      "height": 180,
-      "name": null,
-      "url": "https://i.ytimg.com/vi/Kno4FTxWycI/mqdefault.jpg",
-      "width": 320
-      },
-      {
-        "aspect_ratio": null,
-        "height": 360,
-        "name": null,
-        "url": "https://i.ytimg.com/vi/Kno4FTxWycI/hqdefault.jpg",
-        "width": 480
-      }
-    ]
-  }
-}
-</code></pre>
-<hr />
-
-<h3 id="update-a-video">Update a Video</h3>
-<hr />
-
-<pre><code>PUT - https://api.zype.com/videos/{id}/&amp;video[parameter]=value
-</code></pre>
-
-<h4 id="parameters-3">Parameters</h4>
-
-<table>
-  <thead>
-    <tr>
-      <th>Parameter</th>
-      <th>Function</th>
-      <th>Type</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>video</td>
-      <td>A set of key value pairs that describe the video. Example: video[description]=description.</td>
-      <td>Hash</td>
-    </tr>
-    <tr>
-      <td>title</td>
-      <td>The title of the video</td>
-      <td>String</td>
-    </tr>
-    <tr>
-      <td>description</td>
-      <td>The description of the video</td>
-      <td>String</td>
-    </tr>
-    <tr>
-      <td>published_at</td>
-      <td>The date and time that the video will appear to have been published</td>
-      <td>String</td>
-    </tr>
-    <tr>
-      <td>episode</td>
-      <td>The video’s episode number</td>
-      <td>Integer</td>
-    </tr>
-    <tr>
-      <td>season</td>
-      <td>The video’s season number</td>
-      <td>Integer</td>
-    </tr>
-    <tr>
-      <td>country</td>
-      <td>The country the video was created in</td>
-      <td>String</td>
-    </tr>
-    <tr>
-      <td>active</td>
-      <td>Whether or not the video is active</td>
-      <td>Boolean</td>
-    </tr>
-    <tr>
-      <td>featured</td>
-      <td>Whether or not the video is featured</td>
-      <td>Boolean</td>
-    </tr>
-    <tr>
-      <td>keywords</td>
-      <td>Keywords for the video</td>
-      <td>Array</td>
-    </tr>
-    <tr>
-      <td>subscription_required</td>
-      <td>Whether or not the video requires a subscription to view</td>
-      <td>Boolean</td>
-    </tr>
-    <tr>
-      <td>mature_content</td>
-      <td>Whether or not the video requires the viewer to be 18+ to view</td>
-      <td>Boolean</td>
-    </tr>
-  </tbody>
-</table>
-
-<h4 id="request-1">Request</h4>
-
-<p>Content-Type: application/json</p>
-
-<h4 id="response-3">Response</h4>
-<p>201
-Content-Type: application/json</p>
-
-<pre><code>{
-  "response":
-  {
-    "_id": "549336916362613cf51f0000",
-    "active": true,
-    "country": nil,
-    "created_at": "2014-12-18T15:18:25.744-05:00",
-    "description": "Sample Description",
-    "discovery_url": "http://www.yoursite.com/video",
-    "duration": nil,
-    "episode": 1,
-    "featured": false,
-    "foreign_id": nil,
-    "keywords": [],
-    "mature_content": false,
-    "published_at": nil,
-    "rating": 0.0,
-    "related_playlist_ids": [],
-    "request_count": 0,
-    "season": 1,
-    "site_id": "53c4296a69702d25ca000000",
-    "status": "created",
-    "subscription_required": false,
-    "title": "Updated Video Title",
-    "updated_at": "2014-12-18T15:54:11.787-05:00",
-    "zobject_ids": [],
-    "thumbnails": []
-  }
-}
-</code></pre>
-
-<hr />
-
-<h3 id="list-the-segments-of-a-video">List the segments of a Video</h3>
-<hr />
-
-<pre><code>GET - https://api.zype.com/videos/{id}/segments
-</code></pre>
-
-<h4 id="parameters-4">Parameters</h4>
-
-<table>
-  <thead>
-    <tr>
-      <th>Parameter</th>
-      <th>Function</th>
-      <th>Type</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>id</td>
-      <td>String id of the Video. Example: 5389352e69702d401b000000.</td>
-      <td>String</td>
-    </tr>
-  </tbody>
-</table>
-
-<h4 id="request-2">Request</h4>
-<p>Content-Type: application/json</p>
-
-<h4 id="response-4">Response</h4>
-<p>200
-Content-Type: application/json</p>
-<pre><code>{
-  "response": [
-    {"_id": "54c6cbe56368726454050000",
-    "description": "theBest",
-    "end": 112,
-    "start": 90
-    }
-  ]
-}
-</code></pre>
-
-<hr />
-
-<h3 id="find-a-specific-segment">Find a specific segment</h3>
-<hr />
-
-<pre><code>GET - https://api.zype.com/videos/{id1}/segments/{id2}
-</code></pre>
-
-<h4 id="parameters-5">Parameters</h4>
-
-<table>
-  <thead>
-    <tr>
-      <th>Parameter</th>
-      <th>Function</th>
-      <th>Type</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>id1</td>
-      <td>String id of the Video to which the segment belongs. Example: 5389352e69702d401b000000.</td>
-      <td>String</td>
-    </tr>
-    <tr>
-      <td>id2</td>
-      <td>String id of the segment. Example: 5389352e69702d401b000000.</td>
-      <td>String</td>
-    </tr>
-  </tbody>
-</table>
-
-<h4 id="request-3">Request</h4>
-<p>Content-Type: application/json</p>
-
-<h4 id="response-5">Response</h4>
-<p>200
-Content-Type: application/json</p>
-<pre><code>{
-  "response": [
-    {"_id": "54c6cbe56368726454050000",
-    "description": "theBest",
-    "end": 112,
-    "start": 90
-    }
-  ]
-}
-</code></pre>
-
-<hr />
-
-<h3 id="add-segments-to-a-video">Add segments to a Video</h3>
-<hr />
-
-<pre><code>POST - https://api.zype.com/videos/{id}/segments
-</code></pre>
-
-<h4 id="parameters-6">Parameters</h4>
-
-<table>
-  <thead>
-    <tr>
-      <th>Parameter</th>
-      <th>Function</th>
-      <th>Type</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>segment</td>
-      <td>A set of key value pairs that describe the segment. Example: segment[description]=description.</td>
-      <td>Hash</td>
-    </tr>
-    <tr>
-      <td>description</td>
-      <td>The description for the video segment</td>
-      <td>String</td>
-    </tr>
-    <tr>
-      <td>start</td>
-      <td>The point in the video where the segment begins</td>
-      <td>Integer</td>
-    </tr>
-    <tr>
-      <td>end</td>
-      <td>The point in the video where the segment ends</td>
-      <td>Integer</td>
-    </tr>
-  </tbody>
-</table>
-
-<h4 id="request-4">Request</h4>
-<p>Content-Type: application/json</p>
-
-<h4 id="response-6">Response</h4>
-<p>201
-Content-Type: application/json</p>
-<pre><code>{
-  "response": [
-    {"_id": "54c6cbe56368726454050000",
-    "description": "Sample Description",
-    "end": 411,
-    "start": 380
-    }
-  ]
-}
-</code></pre>
-
-<hr />
-
-<h3 id="remove-segments-from-a-video">Remove segments from a Video</h3>
-<hr />
-
-<pre><code>DELETE - https://api.zype.com/videos/{id1}/segments/{id2}
-</code></pre>
-
-<h4 id="parameters-7">Parameters</h4>
-
-<table>
-  <thead>
-    <tr>
-      <th>Parameter</th>
-      <th>Function</th>
-      <th>Type</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>id1</td>
-      <td>String id of the Video to which the segment belongs. Example: 5389352e69702d401b000000.</td>
-      <td>String</td>
-    </tr>
-    <tr>
-      <td>id2</td>
-      <td>String id of the segment to be deleted. Example: 5389352e69702d401b000000.</td>
-      <td>String</td>
-    </tr>
-  </tbody>
-</table>
-
-<h4 id="request-5">Request</h4>
-<p>Content-Type: application/json</p>
-
-<h4 id="response-7">Response</h4>
-<p>204
-Content-Type: application/json</p>
-<pre><code>{
-  "response": No Content
-}
-</code></pre>
-
-<hr />
-
-<h3 id="update-segments-belonging-to-a-video">Update segments belonging to a video</h3>
-<hr />
-
-<pre><code>PUT - https://api.zype.com/videos/{id1}/segments/{id2}
-</code></pre>
-
-<h4 id="parameters-8">Parameters</h4>
-
-<table>
-  <thead>
-    <tr>
-      <th>Parameter</th>
-      <th>Function</th>
-      <th>Type</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>id1</td>
-      <td>String id of the Video to which the segment belongs. Example: 5389352e69702d401b000000.</td>
-      <td>String</td>
-    </tr>
-    <tr>
-      <td>id2</td>
-      <td>String id of the segment to be updated. Example: 5389352e69702d401b000000.</td>
-      <td>String</td>
-    </tr>
-    <tr>
-      <td>segment</td>
-      <td>A set of key value pairs that describe the segment. Example: segment[description]=description.</td>
-      <td>Hash</td>
-    </tr>
-    <tr>
-      <td>description</td>
-      <td>The description for the video segment</td>
-      <td>String</td>
-    </tr>
-    <tr>
-      <td>start</td>
-      <td>The point in the video where the segment begins</td>
-      <td>Integer</td>
-    </tr>
-    <tr>
-      <td>end</td>
-      <td>The point in the video where the segment ends</td>
-      <td>Integer</td>
-    </tr>
-  </tbody>
-</table>
-
-<h4 id="request-6">Request</h4>
-<p>Content-Type: application/json</p>
-
-<h4 id="response-8">Response</h4>
-<p>201
-Content-Type: application/json</p>
-<pre><code>{
-  "response": [
-    {"_id": "54c6cbe56368726454050000",
-    "description": "Sample Description",
-    "end": 411,
-    "start": 380
-    }
-  ]
-}
-</code></pre>
-
-<hr />
-
-<h3 id="associate-zobjects-with-a-video">Associate Zobjects with a Video</h3>
-<hr />
-
-<pre><code>PUT - https://api.zype.com/videos/{id}/add_zobjects&amp;zobject_id=[id00001, id00002]
-</code></pre>
-
-<h4 id="parameters-9">Parameters</h4>
-
-<table>
-  <thead>
-    <tr>
-      <th>Parameter</th>
-      <th>Function</th>
-      <th>Type</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>id</td>
-      <td>String id of the Video. Example: 5389352e69702d401b000000.</td>
-      <td>String</td>
-    </tr>
-    <tr>
-      <td>zobject_id</td>
-      <td>An array containing all of the zobject id’s that you want to add to the video.</td>
-      <td>Array of Strings</td>
-    </tr>
-  </tbody>
-</table>
-
-<h4 id="request-7">Request</h4>
-<p>Content-Type: application/json</p>
-
-<h4 id="response-9">Response</h4>
-<p>200
-Content-Type: application/json</p>
-<pre><code>{
-  "response": {
-    "_id": "549dc599636872c09d1a0000",
-    "active": false,
-    "country": nil,
-    "created_at": "2014-12-26T15:31:22.121-05:00",
-    "data_sources":
-    [
-      {"_id": "549dc59a636872c09d1b0000",
-      "active": true,
-      "duration": 493,
-      "status": "ready",
-      "youtube_id": "J7f26d-AIrM",
-      "thumbnails":
-        [
-          {"_id": "549dc594636872c09d150000",
-          "aspect_ratio": nil,
-          "height": 90,
-          "name": nil,
-          "url": "https://i.ytimg.com/vi/J7f26d-AIrM/default.jpg",
-          "width": 120},
-          {"_id": "549dc594636872c09d160000",
-          "aspect_ratio": nil,
-          "height": 180,
-          "name": nil,
-          "url": "https://i.ytimg.com/vi/J7f26d-AIrM/mqdefault.jpg",
-          "width": 320},
-          {"_id": "549dc594636872c09d170000",
-          "aspect_ratio": nil,
-          "height": 360,
-          "name": nil,
-          "url": "https://i.ytimg.com/vi/J7f26d-AIrM/hqdefault.jpg",
-          "width": 480},
-          {"_id": "549dc594636872c09d180000",
-          "aspect_ratio": nil,
-          "height": 480,
-          "name": nil,
-          "url": "https://i.ytimg.com/vi/J7f26d-AIrM/sddefault.jpg",
-          "width": 640},
-          {"_id": "549dc594636872c09d190000",
-          "aspect_ratio": nil,
-          "height": 720,
-          "name": nil,
-          "url": "https://i.ytimg.com/vi/J7f26d-AIrM/maxresdefault.jpg",
-          "width": 1280}
-        ]
-      }
-    ],
-    "description": "Conan brings the magic of the blues to Chicago's youngest, and most adorable generation.",
-    "discovery_url": "http://www.yoursite.com/video",
-    "duration": 493,
-    "episode": nil,
-    "featured": false,
-    "foreign_id": nil,
-    "keywords": [],
-    "mature_content": false,
-    "published_at": nil,
-    "rating": 0.0,
-    "related_playlist_ids": [],
-    "request_count": 0,
-    "season": nil,
-    "site_id": "549dc583636872c09d110000",
-    "status": "created",
-    "subscription_required": false,
-    "title": "Conan Writes Chicago Blues Songs With School Kids - CONAN on TBS",
-    "updated_at": "2014-12-26T16:20:46.324-05:00",
-    "zobject_ids": ["549dc72d636872c09d1f0000"],
-    "thumbnails":
-    [
-      {"aspect_ratio": nil, "height": 90, "name": nil, "url": "https://i.ytimg.com/vi/J7f26d-AIrM/default.jpg", "width": 120},
-      {"aspect_ratio": nil, "height": 180, "name": nil, "url": "https://i.ytimg.com/vi/J7f26d-AIrM/mqdefault.jpg", "width": 320},
-      {"aspect_ratio": nil, "height": 360, "name": nil, "url": "https://i.ytimg.com/vi/J7f26d-AIrM/hqdefault.jpg", "width": 480},
-      {"aspect_ratio": nil, "height": 480, "name": nil, "url": "https://i.ytimg.com/vi/J7f26d-AIrM/sddefault.jpg", "width": 640},
-      {"aspect_ratio": nil, "height": 720, "name": nil, "url": "https://i.ytimg.com/vi/J7f26d-AIrM/maxresdefault.jpg", "width": 1280}
-    ]
-  }
-}
-</code></pre>
-
-<hr />
-
-<h3 id="remove-associated-zobjects-from-a-video">Remove Associated Zobjects from a Video</h3>
-<hr />
-
-<pre><code>PUT - https://api.zype.com/videos/{id}/remove_zobjects&amp;zobject_id=[id00001, id00002]
-</code></pre>
-
-<h4 id="parameters-10">Parameters</h4>
-
-<table>
-  <thead>
-    <tr>
-      <th>Parameter</th>
-      <th>Function</th>
-      <th>Type</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>id</td>
-      <td>String id of the Video. Example: 5389352e69702d401b000000.</td>
-      <td>String</td>
-    </tr>
-    <tr>
-      <td>zobject_id</td>
-      <td>An array containing all of the zobject id’s that you want to dissociate from the video.</td>
-      <td>Array of Strings</td>
-    </tr>
-  </tbody>
-</table>
-
-<h4 id="request-8">Request</h4>
-<p>Content-Type: application/json</p>
-
-<h4 id="response-10">Response</h4>
-<p>200
-Content-Type: application/json</p>
-
-<pre><code>{
-  "response": {
-    "_id": "549dc599636872c09d1a0000",
-    "active": false,
-    "country": nil,
-    "created_at": "2014-12-26T15:31:22.121-05:00",
-    "data_sources":
-      [
-        {"_id": "549dc59a636872c09d1b0000",
-        "active": true,
-        "duration": 493,
-        "status": "ready",
-        "youtube_id": "J7f26d-AIrM",
-        "thumbnails":
-          [
-            {"_id": "549dc594636872c09d150000",
-            "aspect_ratio": nil,
-            "height": 90,
-            "name": nil,
-            "url": "https://i.ytimg.com/vi/J7f26d-AIrM/default.jpg",
-            "width": 120},
-            {"_id": "549dc594636872c09d160000",
-            "aspect_ratio": nil,
-            "height": 180,
-            "name": nil,
-            "url": "https://i.ytimg.com/vi/J7f26d-AIrM/mqdefault.jpg",
-            "width": 320},
-            {"_id": "549dc594636872c09d170000",
-            "aspect_ratio": nil,
-            "height": 360,
-            "name": nil,
-            "url": "https://i.ytimg.com/vi/J7f26d-AIrM/hqdefault.jpg",
-            "width": 480},
-            {"_id": "549dc594636872c09d180000",
-            "aspect_ratio": nil,
-            "height": 480,
-            "name": nil,
-            "url": "https://i.ytimg.com/vi/J7f26d-AIrM/sddefault.jpg",
-            "width": 640},
-            {"_id": "549dc594636872c09d190000",
-            "aspect_ratio": nil,
-            "height": 720,
-            "name": nil,
-            "url": "https://i.ytimg.com/vi/J7f26d-AIrM/maxresdefault.jpg",
-            "width": 1280}
-          ]
-        }
-      ],
-    "description": "Conan brings the magic of the blues to Chicago's youngest, and most adorable generation.",
-    "discovery_url": "http://www.yoursite.com/video",
-    "duration": 493,
-    "episode": nil,
-    "featured": false,
-    "foreign_id": nil,
-    "keywords": [],
-    "mature_content": false,
-    "published_at": nil,
-    "rating": 0.0,
-    "related_playlist_ids": [],
-    "request_count": 0,
-    "season": nil,
-    "site_id": "549dc583636872c09d110000",
-    "status": "created",
-    "subscription_required": false,
-    "title": "Conan Writes Chicago Blues Songs With School Kids - CONAN on TBS",
-    "updated_at": "2014-12-26T16:20:46.324-05:00",
-    "zobject_ids": [],
-  "thumbnails":
-  [
-    {"aspect_ratio": nil, "height": 90, "name": nil, "url": "https://i.ytimg.com/vi/J7f26d-AIrM/default.jpg", "width": 120},
-    {"aspect_ratio": nil, "height": 180, "name": nil, "url": "https://i.ytimg.com/vi/J7f26d-AIrM/mqdefault.jpg", "width": 320},
-    {"aspect_ratio": nil, "height": 360, "name": nil, "url": "https://i.ytimg.com/vi/J7f26d-AIrM/hqdefault.jpg", "width": 480},
-    {"aspect_ratio": nil, "height": 480, "name": nil, "url": "https://i.ytimg.com/vi/J7f26d-AIrM/sddefault.jpg", "width": 640},
-    {"aspect_ratio": nil, "height": 720, "name": nil, "url": "https://i.ytimg.com/vi/J7f26d-AIrM/maxresdefault.jpg", "width": 1280}
-    ]
-  }
-}
-</code></pre>
-
-<h3 id="distribute-a-video">Distribute a Video</h3>
-<hr />
-
-<pre><code>POST - https://api.zype.com/videos/{id}/distribute
-</code></pre>
-
-<h4 id="parameters-11">Parameters</h4>
-
-<table>
-  <thead>
-    <tr>
-      <th>Parameter</th>
-      <th>Function</th>
-      <th>Type</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>id</td>
-      <td>String id of the Video to publish. Example: 5389352e69702d401b000000.</td>
-      <td>String</td>
-    </tr>
-    <tr>
-      <td>endpoint</td>
-      <td>String id of the Distribution Endpoint where the video will be distributed.</td>
-      <td>String</td>
-    </tr>
-  </tbody>
-</table>
-
-<h4 id="request-9">Request</h4>
-<p>Content-Type: application/json</p>
-
-<h4 id="response-11">Response</h4>
-<p>200
-Content-Type: application/json</p>
-
-<pre><code>{
-  "response":
-  {
-    "_id": "546529b669702d534fb00000",
-    "active": true,
-    "categories": [
-      {
-        "title": "Genre",
-        "value": [
-          "Adventure"
-        ]
-      },
-      {
-        "title": "Additional Videos from YouTube",
-        "value": []
-      },
-      {
-        "title": "series",
-        "value": []
-      }
-    ],
-    "country": "",
-    "created_at": "2014-11-13T16:59:18.970-05:00",
-    "description": "New trailer for Marvel's Avengers: The Age of Ultron!",
-    "discovery_url": "http://www.yoursite.com/video",
-    "duration": 151,
-    "episode": null,
-    "featured": true,
-    "foreign_id": null,
-    "keywords": [],
-    "segments": [],
-    "mature_content": false,
-    "published_at": "2014-11-13T16:57:02.000-05:00",
-    "rating": 0,
-    "related_playlist_ids": [],
-    "request_count": 39,
-    "season": null,
-    "site_id": "5463c68e69702d24db490000",
-    "status": "created",
-    "subscription_required": false,
-    "title": "Avengers: Age of Ultron",
-    "updated_at": "2014-12-17T23:00:14.215-05:00",
-    "zobject_ids": [],
-    "thumbnails": [
-      {
-      "aspect_ratio": null,
-      "height": 90,
-      "name": null,
-      "url": "https://i.ytimg.com/vi/Kno4FTxWycI/default.jpg",
-      "width": 120
-      },
-      {
-      "aspect_ratio": null,
-      "height": 180,
-      "name": null,
-      "url": "https://i.ytimg.com/vi/Kno4FTxWycI/mqdefault.jpg",
-      "width": 320
-      },
-      {
-        "aspect_ratio": null,
-        "height": 360,
-        "name": null,
-        "url": "https://i.ytimg.com/vi/Kno4FTxWycI/hqdefault.jpg",
-        "width": 480
-      }
-    ]
-  }
-}
-</code></pre>
-
-<h2 id="player">Player</h2>
-<p>Lists player content. You need to supply your player key in addition to your API key.</p>
-<hr />
-
-<h3 id="retrieve-a-player">Retrieve a Player</h3>
-<hr />
-
-<pre><code>GET - https://api.zype.com/videos/{id}/player?autoplay=autoplay
-</code></pre>
-
-<h4 id="parameters-12">Parameters</h4>
-
-<table>
-  <thead>
-    <tr>
-      <th>Parameter</th>
-      <th>Function</th>
-      <th>Type</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>id</td>
-      <td>String id of the Video to retrieve. Example: 5389352e69702d401b000000.</td>
-      <td>String</td>
-    </tr>
-    <tr>
-      <td>autoplay</td>
-      <td>Optional boolean value to indicate whether the player should automatically start. Example: false.</td>
-      <td>Boolean</td>
-    </tr>
-  </tbody>
-</table>
-
-<h4 id="request-10">Request</h4>
-<p>Content-Type: application/json</p>
-
-<h4 id="response-12">Response</h4>
-<p>200
-Content-Type: application/json</p>
-
-<pre><code>{
-  "response":
-  {
-    "body": "&lt;div style=\"position: relative; padding-bottom: 56.25%; padding-top: 0; height: 0; overflow: hidden;\"&gt;\n&lt;iframe id=\"_video_546529b669702d534fb00000\" type=\"text/html\" src=\"https://www.youtube.com/embed/Kno4FTxWycI?autoplay=false&amp;showinfo=0&amp;modestbranding=1\" frameborder=\"0\" style=\"position: absolute; top: 0; left: 0; width: 100%; height: 100%;\"&gt;\n\n",
-    "device": {
-      "_id": "5429b1c569702d2f7c080000",
-      "description": "Accessed via desktop HTML5 web browser",
-      "name": "Desktop"
-    },
-    "revenue_model": {
-      "_id": "5429b1c269702d2f7c010000",
-      "description": "Advertising Video On Demand",
-      "name": "AVOD"
-    },
-    "player": {
-      "_id": "5429b1cb69702d2f7c1d0000",
-      "name": "Youtube Player"
-    },
-    "provider": {
-      "_id": "5429b1cb69702d2f7c1a0000",
-      "name": "Youtube"
-    },
-    "user_agent": {
-      "_id": "547e0d6569702d1bfaa00a00",
-      "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.71 Safari/537.36"
-    }
-  }
-}
-</code></pre>
+  </pre>
 
     </section>
 

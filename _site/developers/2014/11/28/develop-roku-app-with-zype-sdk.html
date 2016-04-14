@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Publishing a Roku Channel: Part II - Developing Your Roku App Using the Zype SDK</title>
+    <meta name="description" content="">
+
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="canonical" href="/developers/2014/11/28/develop-roku-app-with-zype-sdk.html">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-1376128-30', 'auto');
+    ga('create', 'UA-1376128-21', 'auto', {'name': 'global'});
+
+    ga('send', 'pageview');
+    ga('global.send', 'pageview');
+
+    </script>
+
+    <!-- Start of zypetrial Zendesk Widget script -->
+    <script>/*<![CDATA[*/window.zEmbed||function(e,t){var n,o,d,i,s,a=[],r=document.createElement("iframe");window.zEmbed=function(){a.push(arguments)},window.zE=window.zE||window.zEmbed,r.src="javascript:false",r.title="",r.role="presentation",(r.frameElement||r).style.cssText="display: none",d=document.getElementsByTagName("script"),d=d[d.length-1],d.parentNode.insertBefore(r,d),i=r.contentWindow,s=i.document;try{o=s}catch(c){n=document.domain,r.src='javascript:var d=document.open();d.domain="'+n+'";void(0);',o=s}o.open()._l=function(){var o=this.createElement("script");n&&(this.domain=n),o.id="js-iframe-async",o.src=e,this.t=+new Date,this.zendeskHost=t,this.zEQueue=a,this.body.appendChild(o)},o.write('<body onload="document._l();">'),o.close()}("https://assets.zendesk.com/embeddable_framework/main.js","zypetrial.zendesk.com");/*]]>*/</script>
+    <!-- End of zypetrial Zendesk Widget script -->
+    
+    <!-- Marketo -->
+    <script type="text/javascript">
+    (function() {
+      var didInit = false;
+      function initMunchkin() {
+        if(didInit === false) {
+          didInit = true;
+          Munchkin.init('627-DAI-818');
+        }
+      }
+      var s = document.createElement('script');
+      s.type = 'text/javascript';
+      s.async = true;
+      s.src = '//munchkin.marketo.net/munchkin.js';
+      s.onreadystatechange = function() {
+        if (this.readyState == 'complete' || this.readyState == 'loaded') {
+          initMunchkin();
+        }
+      };
+      s.onload = initMunchkin;
+      document.getElementsByTagName('head')[0].appendChild(s);
+    })();
+    </script>
+</head>
+
+
+  <body>
+
+    <header id="header" style="overflow-y: scroll;">
+  <div id="content">
+    <a href="/"><img src="/assets/logo.png" alt="Zype" />
+    <h1 id="title">Developer Portal</h1></a>
+    <p>a knowledge base</p>
+    <div class="hidden-mobile">
+      <br>
+        <p class="category"><a href="/api_docs/intro/" style="color: #8acfef;">API Documentation</a></p>
+        <p class="category"><a href="/platform_docs/" style="color: #8acfef;">Platform Documentation</a></p>
+        <p class="category"><a href="/glossary/" style="color: #8acfef;">Glossary</a></p>
+        <p class="category"><a href="http://status.zype.com" style="color: #8acfef;">System Status</a></p>
+        <p class="category"><a href="/faq/" style="color: #8acfef;">FAQ</a></p>
+      <br>
+      © 2016 Zype Inc.
+    </div>
+  </div>
+</header>
+
+
+    <section id="main">
+      <div class="post">
+  <h1 class="post-title">Publishing a Roku Channel: Part II - Developing Your Roku App Using the Zype SDK</h1>
+  <p class="post-meta">Nov 28, 2014</p>
+  <article class="post-content">
+    <p><strong>Note, this article is depreciated as of 2/13/15. To find an up to date version
+of publishing a Roku Channel, <a href="posts/2015/02/13/zype-publish-roku/">click here</a>.</strong></p>
+
+<p>In a <a href="http://dev.zype.com/posts/2014/11/25/create-roku-app-on-zype/">previous tutorial</a>,
+we described how to create a Roku App using the Zype Platform. In this tutorial,
+we will walk through how to develop a Roku app using the Zype SDK and testing it locally.</p>
+
+<p>To complete this tutorial, we expect that you know how to clone a repo on GitHub. You do
+not need to have prior experience with the <a href="http://sdkdocs.roku.com/display/sdkdoc/BrightScript+Language+Reference">BrightScript language</a>
+that Roku uses to create Roku Channels, but you should be comfortable with programming because
+you will need to update some variables within the cloned app and <a href="http://en.wikipedia.org/wiki/Telnet">telnet</a>.</p>
+
+<p>Moreover, you need to have a Roku available to test out your app and a developer account with Roku to publish the app. <a href="https://www.roku.com/developer">Register here</a> for a Roku developer account.</p>
+
+<p><strong>Step 1</strong></p>
+
+<p>You should have already created a Roku App on the Zype Platform. If you need help
+creating a Roku App from the Zype Platform, please read our <a href="http://dev.zype.com/posts/2014/11/25/create-roku-app-on-zype/">previous tutorial</a>.</p>
+
+<p><strong>Step 2</strong></p>
+
+<p>Now that you have a Roku App created on the Zype Platform, you will need to turn developer mode
+on for your Roku. This will allow you to test out your app before you publish it on your local Roku.</p>
+
+<p>To set up your Roku for developer mode, navigate to the home screen of your Roku
+and, with your Roku remote control, click the following:</p>
+
+<pre><code>Home 3x, Up 2x, Right, Left, Right, Left, Right.</code></pre>
+
+<p>On your Roku, you will be prompted to enter a developer password for the Roku device.
+Record the password that you enter because it will be used to load your channel in development mode.</p>
+
+<p>You will also need to record your Roku Player’s IP address. In your Roku, go to
+Settings &gt; Network to find it.</p>
+
+<p><strong>Step 3</strong></p>
+
+<p>Now that your Roku is set up for developer mode and you have recorded your Developer Password
+and your Roku Player’s IP address, you are set to grab the Zype Roku SDK from our GitHub account.</p>
+
+<p>Clone the repo <a href="http://github.com/zype/zype-roku">here</a>.</p>
+
+<p><strong>Step 4</strong></p>
+
+<p>Once you have the code on your computer, you will need to do 3 things to customize the Roku app
+for your own app.</p>
+
+<p>First, you need to open the app.mk file and set the ROKU_DEV_TARGET to your Roku Player’s IP
+address and set the DEVPASSWORD to your Developer Password.</p>
+
+<p>Second, you will need to change the hard coded keys/initialization variables that are
+located in source/objects/config.brs. You will be able to find your api_key, app_key, and
+player_key in the Zype Platform.</p>
+
+<p>Third, you need to make sure that the APPNAME in the Makefile matches the name of the Roku App’s directory that you cloned into. If you do not change anything from cloning, the Makefile and the
+directory name should both be zype-roku.</p>
+
+<p><strong>Step 5</strong></p>
+
+<p>Now, its time to test run your Roku App on your local Roku. Navigate to the Roku app’s directory in your computer’s terminal and run:</p>
+
+<pre><code>$ make install</code></pre>
+
+<p>This will build the app onto your local Roku. Once the build is finished, the channel will automatically load. Test to make sure everything works appropriately.</p>
+
+<p>Now that your Roku app is built, you will need to publish the app to the Roku Channel store.
+<a href="http://dev.zype.com/posts/2014/11/28/publish-roku-app/">Click here</a> to read how to publish your Roku App.</p>
+
+<p><strong>More tutorials in this series:</strong></p>
+
+<p>Part I: <a href="http://dev.zype.com/posts/2014/11/25/create-roku-app-on-zype/">Creating a Roku Channel using the Zype Platform</a></p>
+
+<p>Part III: <a href="http://dev.zype.com/posts/2014/11/28/publish-roku-app/">Publishing the Private Roku Channel</a></p>
+
+  </article>
+  <div id="disqus_thread"></div>
+  <script type="text/javascript">
+      /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+      var disqus_shortname = 'zypedev'; // required: replace example with your forum shortname
+
+      /* * * DON'T EDIT BELOW THIS LINE * * */
+      (function() {
+          var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+          dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+
+    </section>
+
+    <footer id="footer">
+  <p style="padding-top: 10px;">
+    © 2016 Zype Inc.
+  </p>
+</footer>
+
+
+  </body>
+
+</html>
