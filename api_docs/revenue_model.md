@@ -31,7 +31,7 @@ per_page | The number of records to return. Example: 10. | Number
 
 Parameter | Function | Type
 --------- | -------- | ----
-id | String ID of the revenue model to retrieve. Example: 5389352e69702d401b000000. | String
+id | ID of the revenue model to retrieve. Example: 5389352e69702d401b000000. | String
 
 ### Revenue Model Object
 

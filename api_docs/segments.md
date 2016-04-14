@@ -15,7 +15,7 @@ permalink: /api_docs/segments/
 
 Parameter | Function | Type
 --------- | -------- | ----
-video_id  | String ID of the video. Example: 5389352e69702d401b000000. | String
+video_id  | ID of the video. Example: 5389352e69702d401b000000. | String
 
 ###Retrieve a Segment
 <hr>
@@ -26,8 +26,8 @@ video_id  | String ID of the video. Example: 5389352e69702d401b000000. | String
 
 Parameter | Function | Type
 --------- | -------- | ----
-video_id        | String ID of the video to which the segment belongs. Example: 5389352e69702d401b000000. | String
-id        | String ID of the segment. Example: 5389352e69702d401b000000. | String
+video_id        | ID of the video to which the segment belongs. Example: 5389352e69702d401b000000. | String
+id        | ID of the segment. Example: 5389352e69702d401b000000. | String
 
 ###Create a Segment
 <hr>
@@ -38,7 +38,7 @@ id        | String ID of the segment. Example: 5389352e69702d401b000000. | Strin
 
 Parameter | Function | Type
 --------- | -------- | ----
-video_id        | String ID of the video to which the segment belongs. Example: 5389352e69702d401b000000. | String
+video_id        | ID of the video to which the segment belongs. Example: 5389352e69702d401b000000. | String
 segment[description] | The description for the video segment | String
 segment[start] | The point in the video where the segment begins | Integer
 segment[end] | The point in the video where the segment ends | Integer
@@ -51,7 +51,7 @@ segment[end] | The point in the video where the segment ends | Integer
 
 Parameter | Function | Type
 --------- | -------- | ----
-video_id        | String ID of the video to which the segment belongs. Example: 5389352e69702d401b000000. | String
+video_id        | ID of the video to which the segment belongs. Example: 5389352e69702d401b000000. | String
 segment[description] | The description for the video segment | String
 segment[start] | The point in the video where the segment begins | Integer
 segment[end] | The point in the video where the segment ends | Integer
@@ -65,8 +65,8 @@ segment[end] | The point in the video where the segment ends | Integer
 
 Parameter | Function | Type
 --------- | -------- | ----
-video_id       | String ID of the video to which the segment belongs. Example: 5389352e69702d401b000000. | String
-id       | String ID of the segment to be deleted. Example: 5389352e69702d401b000000. | String
+video_id       | ID of the video to which the segment belongs. Example: 5389352e69702d401b000000. | String
+id       | ID of the segment to be deleted. Example: 5389352e69702d401b000000. | String
 
 ### Segment Object
 

@@ -36,7 +36,7 @@ created_at | Filter the records returned by created date. You can use greater th
 
 Parameter | Function | Type
 --------- | -------- | ----
-id        | String ID of the category. Example: 5389352e69702d401b000000. | String
+id        | ID of the category. Example: 5389352e69702d401b000000. | String
 
 ###Create a Consumer
 <hr>
@@ -63,7 +63,7 @@ consumer[terms] | Boolean field to store if the consumer has agreed to terms and
 
 Parameter | Function | Type
 --------- | -------- | ----
-id | String ID of the consumer to update. Example: 540731274c616e047a000000. | String
+id | ID of the consumer to update. Example: 540731274c616e047a000000. | String
 consumer[email] | The consumer's email address. (must be unique) | string
 consumer[password] | The password for the consumer. The password is used for consumer authentication. | string
 consumer[name] | The name of the consumer. | string
@@ -83,7 +83,7 @@ consumer[remember_token] | The password token to use during remember login workf
 
 Parameter | Function | Type
 --------- | -------- | ----
-id | String ID of the consumer to be deleted. Example: 540731274c616e047a000000. | String
+id | ID of the consumer to be deleted. Example: 540731274c616e047a000000. | String
 
 ### Consumer Object
 

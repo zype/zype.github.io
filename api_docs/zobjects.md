@@ -125,7 +125,7 @@ Lists descriptive information about Zobjects.
 
 Parameter | Function | Type
 --------- | -------- | ----
-id | String id of the zobject to retrieve. Example: 5389352e69702d401b000000. | String
+id | ID of the zobject to retrieve. Example: 5389352e69702d401b000000. | String
 zobject_type | The title of the zobject type. Required. Example: card.  | String
 
 #### Response
@@ -171,7 +171,7 @@ Content-Type: application/json
 
 Parameter | Function | Type
 --------- | -------- | ----
-id | String id of the zobject to retrieve. Example: 5389352e69702d401b000000. | String
+id | ID of the zobject to retrieve. Example: 5389352e69702d401b000000. | String
 zobject   | A set of key value pairs that describe the zobject. | Hash
 
 
@@ -222,7 +222,7 @@ Content-Type: application/json
 
 Parameter | Function | Type
 --------- | -------- | ----
-id | String id of the zobject to retrieve. Example: 5389352e69702d401b000000. | String
+id | ID of the zobject to retrieve. Example: 5389352e69702d401b000000. | String
 zobject_type | The title of the zobject type. Required. Example: card.  | String
 video_id | An array containing the id's of the video you want to associate with this zobject | Array of Strings
 
@@ -261,7 +261,7 @@ Content-Type: application/json
 
 Parameter | Function | Type
 --------- | -------- | ----
-id | String id of the zobject to retrieve. Example: 5389352e69702d401b000000. | String
+id | ID of the zobject to retrieve. Example: 5389352e69702d401b000000. | String
 zobject_type | The title of the zobject type. Required. Example: card.  | String
 video_id | An array containing the id's of the videos you want to dissociate from this zobject | Array of Strings
 
@@ -301,7 +301,7 @@ Content-Type: application/json
 
 Parameter | Function | Type
 --------- | -------- | ----
-id | String id of the zobject to remove. Example: 5389352e69702d401b000000. | String
+id | ID of the zobject to remove. Example: 5389352e69702d401b000000. | String
 zobject_type | The title of the zobject type. Required. Example: card.  | String
 
 #### Request

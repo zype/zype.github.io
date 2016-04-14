@@ -148,7 +148,7 @@ Lists descriptive information about a Subscription
 
 Parameter | Function | Type
 --------- | -------- | ----
-id        | String id of the Subscription to retrieve. Example: 5389352e69702d401b000000. | String
+id        | ID of the Subscription to retrieve. Example: 5389352e69702d401b000000. | String
 
 #### Request
 Content-Type: application/json
@@ -272,7 +272,7 @@ Content-Type: application/json
 
 Parameter | Function | Type
 --------- | -------- | ----
-id        | String id of the Subscription to remove. Example: 5389352e69702d401b000000. | String
+id        | ID of the Subscription to remove. Example: 5389352e69702d401b000000. | String
 
 #### Request
 Content-Type: application/json

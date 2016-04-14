@@ -70,7 +70,7 @@ Lists descriptive information about a plan
 
 Parameter | Function | Type
 --------- | -------- | ----
-id        | String id of the Plan to retrieve. Example: 5389352e69702d401b000000. | String
+id        | ID of the Plan to retrieve. Example: 5389352e69702d401b000000. | String
 
 #### Request
 Content-Type: application/json

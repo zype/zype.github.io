@@ -71,7 +71,7 @@ video[custom_thumbnail_url] | A URL where a custom thumbnail for the video can b
 
 Parameter | Function | Type
 --------- | -------- | ----
-id        | String ID of the video to retrieve. Example: 5389352e69702d401b000000. | String
+id        | ID of the video to retrieve. Example: 5389352e69702d401b000000. | String
 
 ### Update a Video
 <hr>
@@ -108,7 +108,7 @@ video[custom_thumbnail_url] | A URL where a custom thumbnail for the video can b
 
 Parameter | Function | Type
 --------- | -------- | ----
-id        | String ID of the video to delete. Example: 5389352e69702d401b000000. | String
+id        | ID of the video to delete. Example: 5389352e69702d401b000000. | String
 
 ### Add Zobject(s) to Video
 <hr>
@@ -119,7 +119,7 @@ id        | String ID of the video to delete. Example: 5389352e69702d401b000000.
 
 Parameter | Function | Type
 --------- | -------- | ----
-id        | String ID of the video. Example: 5389352e69702d401b000000. | String
+id        | ID of the video. Example: 5389352e69702d401b000000. | String
 zobject_id | An array containing all of the zobject id's that you want to add to the video. | Array of Strings
 
 ### Remove Zobject(s) from Video
@@ -131,7 +131,7 @@ zobject_id | An array containing all of the zobject id's that you want to add to
 
 Parameter | Function | Type
 --------- | -------- | ----
-id        | String ID of the video. Example: 5389352e69702d401b000000. | String
+id        | ID of the video. Example: 5389352e69702d401b000000. | String
 zobject_id | An array containing all of the zobject id's that you want to dissociate from the video. | Array of Strings
 
 ### Video Object

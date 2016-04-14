@@ -105,7 +105,7 @@ Lists descriptive information about Playlist.
 
 Parameter | Function | Type
 --------- | -------- | ----
-id | String id of the Playlist to retrieve. Example: 5389352e69702d401b000000. | Number
+id | ID of the Playlist to retrieve. Example: 5389352e69702d401b000000. | Number
 
 #### Request
 Content-Type: application/json
@@ -143,7 +143,7 @@ Content-Type: application/json
 
 Parameter | Function | Type
 --------- | -------- | ----
-id | String id of the Playlist to retrieve. Example: 5389352e69702d401b000000. | String
+id | ID of the Playlist to retrieve. Example: 5389352e69702d401b000000. | String
 
 #### Request
 Content-Type: application/json
@@ -268,7 +268,7 @@ Content-Type: application/json
 
 Parameter | Function | Type
 --------- | -------- | ----
-id | String id of the Playlist to remove. Example: 5389352e69702d401b000000. | Number
+id | ID of the Playlist to remove. Example: 5389352e69702d401b000000. | Number
 
 #### Request
 Content-Type: application/json

@@ -66,7 +66,7 @@ Content-Type: application/json
 
 Parameter | Function | Type
 --------- | -------- | ----
-id | String id of the Distribution Endpoint to retrieve. Example: 5389352e69702d401b000000. | String
+id | ID of the Distribution Endpoint to retrieve. Example: 5389352e69702d401b000000. | String
 
 
 #### Response

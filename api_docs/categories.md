@@ -30,7 +30,7 @@ per_page | The number of records to return. Example: 10. | Number
 
 Parameter | Function | Type
 --------- | -------- | ----
-id        | String ID of the category. Example: 5389352e69702d401b000000. | String
+id        | ID of the category. Example: 5389352e69702d401b000000. | String
 
 ###Create a Category
 <hr>
@@ -52,7 +52,7 @@ category[values] | Values for the category | Array
 
 Parameter | Function | Type
 --------- | -------- | ----
-id | String id of the Category to update. Example: 540731274c616e047a000000. | String
+id | ID of the category to update. Example: 540731274c616e047a000000. | String
 category[title] | Title of the category | String
 category[values] | Values for the category | Array
 
@@ -65,7 +65,7 @@ category[values] | Values for the category | Array
 
 Parameter | Function | Type
 --------- | -------- | ----
-id | String id of the Category to be deleted. Example: 540731274c616e047a000000. | String
+id | ID of the category to be deleted. Example: 540731274c616e047a000000. | String
 
 ### Category Object
 

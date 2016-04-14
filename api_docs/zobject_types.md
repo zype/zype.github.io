@@ -109,7 +109,7 @@ Lists descriptive information about a Zobject type.
 
 Parameter | Function | Type
 --------- | -------- | ----
-id | String id of the Zobject Type to retrieve. Example: 5389352e69702d401b000000. | String
+id | ID of the Zobject Type to retrieve. Example: 5389352e69702d401b000000. | String
 
 #### Response
 200
@@ -204,7 +204,7 @@ Content-Type: application/json
 
 Parameter | Function | Type
 --------- | -------- | ----
-id | String id of the Zobject Type to remove. Example: 5389352e69702d401b000000. | String
+id | ID of the Zobject Type to remove. Example: 5389352e69702d401b000000. | String
 
 #### Response
 204
