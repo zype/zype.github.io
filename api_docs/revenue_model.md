@@ -5,113 +5,49 @@ permalink: /api_docs/revenue_models/
 ---
 
 ## Revenue Models
-<hr>
-### List all Revenue Models
-<hr>
-<pre><code>GET - https://api.zype.com/revenue_models?page=page&per_page=per_page&search=search
-</code></pre>
+<hr />
+### List Revenue Models
+<pre>
+<b>GET</b> https://api.zype.com/revenue_models
+</pre>
 
 #### Parameters
 
 Parameter | Function | Type
 --------- | -------- | ----
+id        | Query for a revenue model by ID | String
+id!       | Exclude a revenue model from the query | String
+q         | A query string for searching for revenue models | String
+title     | Filter revenue models by title | String
 page | The page number of records to return (zero indexed). Example: 0. | Number
 per_page | The number of records to return. Example: 10. | Number
-search | Performs a full text search for the term and returns records that match. Example: SVOD | String
 
-#### Response
-200
-Content-Type: application/json
-
-<pre><code>{
-  "response": [
-    {
-      "id": "54204802636261f298030000",
-      "keywords": [
-        "free"
-      ],
-      "created_at": "2014-09-22T16:02:10.785Z",
-      "description": "Free",
-      "name": "Free",
-      "updated_at": "2014-09-22T16:02:10.785Z"
-    },
-    {
-      "id": "54204802636261f298020000",
-      "keywords": [
-        "demand",
-        "subscription",
-        "svod",
-        "video"
-      ],
-      "created_at": "2014-09-22T16:02:10.783Z",
-      "description": "Subscription Video On Demand",
-      "name": "SVOD",
-      "updated_at": "2014-09-22T16:02:10.783Z"
-    },
-    {
-      "id": "54204802636261f298010000",
-      "keywords": [
-        "advertising",
-        "avod",
-        "demand",
-        "video"
-      ],
-      "created_at": "2014-09-22T16:02:10.781Z",
-      "description": "Advertising Video On Demand",
-      "name": "AVOD",
-      "updated_at": "2014-09-22T16:02:10.781Z"
-    },
-    {
-      "id": "54204802636261f298000000",
-      "keywords": [
-        "electronic",
-        "est",
-        "sell",
-        "through"
-      ],
-      "created_at": "2014-09-22T16:02:10.778Z",
-      "description": "Electronic sell-through",
-      "name": "EST",
-      "updated_at": "2014-09-22T16:02:10.778Z"
-    }
-    ],
-    "pagination": {
-      "current": 1,
-      "previous": null,
-      "next": null,
-      "per_page": 10,
-      "pages": 1
-  }
-}
-</code></pre>
-
+###Retrieve a Revenue Model
 <hr>
-### Retrieve a Revenue Model
-<hr>
-
-<pre><code>GET - https://api.zype.com/revenue_models/{id}
-</code></pre>
+<pre><b>GET</b> https://api.zype.com/revenue_models/[id]
+</pre>
 
 #### Parameters
 
 Parameter | Function | Type
 --------- | -------- | ----
-id | String id of the Revenue Model to retrieve. Example: 5389352e69702d401b000000. | String
+id | String ID of the revenue model to retrieve. Example: 5389352e69702d401b000000. | String
 
-#### Response
-200
-Content-Type: application/json
+### Revenue Model Object
 
-<pre><code>{
-  "response": {
-    "id": "54204802636261f298030000",
-    "keywords": [
-      "free"
-    ],
-    "created_at": "2014-09-22T16:02:10.785Z",
-    "description": "Free",
-    "name": "Free",
-    "updated_at": "2014-09-22T16:02:10.785Z"
-  }
+<pre>
+{
+  "_id": "5429b1c369702d2f7c040000",
+  "_keywords": [
+    "desktop"
+  ],
+  "created_at": "2014-09-29T15:23:47.302-04:00",
+  "image_content_type": "image/png",
+  "image_file_name": "desktop.png",
+  "image_file_size": 19347,
+  "image_fingerprint": "a661d27f5003bcf1523f75e3686f6b24",
+  "image_updated_at": "2014-09-29T15:23:47.099-04:00",
+  "name": "Desktop",
+  "updated_at": "2014-09-29T15:23:47.302-04:00"
 }
-</code></pre>
+</pre>

@@ -17,7 +17,7 @@ Parameter | Function | Type
 --------- | -------- | ----
 id        | Query for a device category by ID | String
 id!       | Exclude a device category from the query | String
-q         | A query string for searching for device_categories | String
+q         | A query string for searching for device categories | String
 title     | Filter device_categories by title | String
 page | The page number of records to return (zero indexed). Example: 0. | Number
 per_page | The number of records to return. Example: 10. | Number
