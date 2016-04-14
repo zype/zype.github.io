@@ -216,7 +216,7 @@ Content-Type: application/json</p>
   "response": [
     {
       "_id": "570d5704f28347c1fd000000",
-      "code": "SSTX3FTVSOHI4IHN",
+      "code": "123456",
       "created_at": "2016-04-12T16:14:21.015-04:00",
       "expiration_date": null,
       "plan_id": null,
@@ -226,7 +226,7 @@ Content-Type: application/json</p>
       "transaction_id": null,
       "updated_at": "2016-04-12T16:14:21.015-04:00",
       "video_id": "5708044df2834741870000e1",
-      "nice_code": "SSTX-3FTV-SOHI-4IHN",
+      "nice_code": "123-456",
       "available?": true,
       "redeemed?": false,
       "expired?": false,
@@ -321,7 +321,7 @@ Content-Type: application/json</p>
 {
   "response": {
     "_id": "570fc5ddf283471ac300000a",
-    "code": "IWBZOYC2VE63I8GD",
+    "code": "123456",
     "created_at": "2016-04-14T12:31:25.271-04:00",
     "expiration_date": "2017-02-20T00:00:00.000-05:00",
     "plan_id": null,
@@ -331,7 +331,7 @@ Content-Type: application/json</p>
     "transaction_id": null,
     "updated_at": "2016-04-14T12:31:25.271-04:00",
     "video_id": "570fb456f283471ac3000007",
-    "nice_code": "IWBZ-OYC2-VE63-I8GD",
+    "nice_code": "123-456",
     "available?": true,
     "redeemed?": false,
     "expired?": false,
@@ -385,7 +385,7 @@ Content-Type: application/json</p>
 {
   "response": {
     "_id": "570fc5ddf283471ac300000a",
-    "code": "IWBZOYC2VE63I8GD",
+    "code": "123456",
     "created_at": "2016-04-14T12:31:25.271-04:00",
     "expiration_date": "2017-02-20T00:00:00.000-05:00",
     "plan_id": null,
@@ -395,7 +395,7 @@ Content-Type: application/json</p>
     "transaction_id": null,
     "updated_at": "2016-04-14T12:31:25.271-04:00",
     "video_id": "570fb456f283471ac3000007",
-    "nice_code": "IWBZ-OYC2-VE63-I8GD",
+    "nice_code": "123-456",
     "available?": true,
     "redeemed?": false,
     "expired?": false,
@@ -473,7 +473,7 @@ Content-Type: application/json</p>
 {
   "response": {
     "_id": "570fc5ddf283471ac300000a",
-    "code": "IWBZOYC2VE63I8GD",
+    "code": "123456",
     "created_at": "2016-04-14T12:31:25.271-04:00",
     "expiration_date": "2017-02-21T00:00:00.000-05:00",
     "plan_id": null,
@@ -483,7 +483,7 @@ Content-Type: application/json</p>
     "transaction_id": null,
     "updated_at": "2016-04-14T12:33:47.913-04:00",
     "video_id": "570fb456f283471ac3000007",
-    "nice_code": "IWBZ-OYC2-VE63-I8GD",
+    "nice_code": "123-456",
     "available?": true,
     "redeemed?": false,
     "expired?": false,
@@ -513,7 +513,12 @@ Content-Type: application/json</p>
   <tbody>
     <tr>
       <td>id</td>
-      <td>String id of the Redemption Code to remove. Example: 5389352e69702d401b000000.</td>
+      <td>String id of the Redemption Code to remove. Example: 5389352e69702d401b000000. <em>required</em></td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>api_key</td>
+      <td>The Admin api key for the account. <em>required</em></td>
       <td>String</td>
     </tr>
   </tbody>
@@ -524,6 +529,44 @@ Content-Type: application/json</p>
 
 <h4 id="response-4">Response</h4>
 <p>204</p>
+
+<hr />
+
+<h3 id="redeem-a-redemption-code">Redeem a Redemption Code</h3>
+<hr />
+
+<pre><code>POST - https://api.zype.com/redemption_codes/redeem
+</code></pre>
+
+<h4 id="parameters-5">Parameters</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Function</th>
+      <th>Type</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>access_token</td>
+      <td>The access token of the authorized consumer. A consumer must have a valid access token to redeem a code. For more information on how to create an access token for a consumer, see the <a href="/api_docs/oauth/">OAuth documentation</a>. <em>required</em></td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>code</td>
+      <td>The code string for the redemption code. <em>required</em></td>
+      <td>String</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="request-3">Request</h4>
+<p>Content-Type: application/json</p>
+
+<h4 id="success-response">Success Response</h4>
+<p>200</p>
 
 
     </section>

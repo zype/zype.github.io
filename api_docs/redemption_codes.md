@@ -41,7 +41,7 @@ Content-Type: application/json
   "response": [
     {
       "_id": "570d5704f28347c1fd000000",
-      "code": "SSTX3FTVSOHI4IHN",
+      "code": "123456",
       "created_at": "2016-04-12T16:14:21.015-04:00",
       "expiration_date": null,
       "plan_id": null,
@@ -51,7 +51,7 @@ Content-Type: application/json
       "transaction_id": null,
       "updated_at": "2016-04-12T16:14:21.015-04:00",
       "video_id": "5708044df2834741870000e1",
-      "nice_code": "SSTX-3FTV-SOHI-4IHN",
+      "nice_code": "123-456",
       "available?": true,
       "redeemed?": false,
       "expired?": false,
@@ -108,7 +108,7 @@ Content-Type: application/json
 {
   "response": {
     "_id": "570fc5ddf283471ac300000a",
-    "code": "IWBZOYC2VE63I8GD",
+    "code": "123456",
     "created_at": "2016-04-14T12:31:25.271-04:00",
     "expiration_date": "2017-02-20T00:00:00.000-05:00",
     "plan_id": null,
@@ -118,7 +118,7 @@ Content-Type: application/json
     "transaction_id": null,
     "updated_at": "2016-04-14T12:31:25.271-04:00",
     "video_id": "570fb456f283471ac3000007",
-    "nice_code": "IWBZ-OYC2-VE63-I8GD",
+    "nice_code": "123-456",
     "available?": true,
     "redeemed?": false,
     "expired?": false,
@@ -153,7 +153,7 @@ Content-Type: application/json
 {
   "response": {
     "_id": "570fc5ddf283471ac300000a",
-    "code": "IWBZOYC2VE63I8GD",
+    "code": "123456",
     "created_at": "2016-04-14T12:31:25.271-04:00",
     "expiration_date": "2017-02-20T00:00:00.000-05:00",
     "plan_id": null,
@@ -163,7 +163,7 @@ Content-Type: application/json
     "transaction_id": null,
     "updated_at": "2016-04-14T12:31:25.271-04:00",
     "video_id": "570fb456f283471ac3000007",
-    "nice_code": "IWBZ-OYC2-VE63-I8GD",
+    "nice_code": "123-456",
     "available?": true,
     "redeemed?": false,
     "expired?": false,
@@ -203,7 +203,7 @@ Content-Type: application/json
 {
   "response": {
     "_id": "570fc5ddf283471ac300000a",
-    "code": "IWBZOYC2VE63I8GD",
+    "code": "123456",
     "created_at": "2016-04-14T12:31:25.271-04:00",
     "expiration_date": "2017-02-21T00:00:00.000-05:00",
     "plan_id": null,
@@ -213,7 +213,7 @@ Content-Type: application/json
     "transaction_id": null,
     "updated_at": "2016-04-14T12:33:47.913-04:00",
     "video_id": "570fb456f283471ac3000007",
-    "nice_code": "IWBZ-OYC2-VE63-I8GD",
+    "nice_code": "123-456",
     "available?": true,
     "redeemed?": false,
     "expired?": false,
@@ -232,11 +232,31 @@ Content-Type: application/json
 
 Parameter | Function | Type
 --------- | -------- | ----
-id        | String id of the Redemption Code to remove. Example: 5389352e69702d401b000000. | String
+id        | String id of the Redemption Code to remove. Example: 5389352e69702d401b000000. *required* | String
+api_key      | The Admin api key for the account. *required* | String
 
 #### Request
 Content-Type: application/json
 
 #### Response
 204
+
+<hr>
+### Redeem a Redemption Code
+<hr>
+<pre><code>POST - https://api.zype.com/redemption_codes/redeem
+</code></pre>
+
+#### Parameters
+
+Parameter | Function | Type
+--------- | -------- | ----
+access_token      | The access token of the authorized consumer. A consumer must have a valid access token to redeem a code. For more information on how to create an access token for a consumer, see the <a href="/api_docs/oauth/">OAuth documentation</a>. *required* | String
+code      | The code string for the redemption code. *required* | String
+
+#### Request
+Content-Type: application/json
+
+#### Success Response
+200
 
