@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>Zype Developer Portal | Devices</title>
+    <title>Zype Developer Portal | Device Categories</title>
     <meta name="description" content="">
 
     <link rel="stylesheet" href="/css/main.css">
-    <link rel="canonical" href="/api_docs/devices/">
+    <link rel="canonical" href="/api_docs/device category_categories/">
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 
     <!--[if lt IE 9]>
@@ -107,12 +107,12 @@
 
 
     <section id="main">
-      <h2 id="devices">Devices</h2>
+      <h2 id="device-categories">Device Categories</h2>
 <hr />
 
-<h3 id="list-devices">List Devices</h3>
+<h3 id="list-device-categories">List Device Categories</h3>
 <pre>
-<b>GET</b> https://api.zype.com/devices
+<b>GET</b> https://api.zype.com/device category_categories
 </pre>
 
 <h4 id="parameters">Parameters</h4>
@@ -128,22 +128,22 @@
   <tbody>
     <tr>
       <td>id</td>
-      <td>Query for a device by ID</td>
+      <td>Query for a device category by ID</td>
       <td>String</td>
     </tr>
     <tr>
       <td>id!</td>
-      <td>Exclude a device from the query</td>
+      <td>Exclude a device category from the query</td>
       <td>String</td>
     </tr>
     <tr>
       <td>q</td>
-      <td>A query string for searching for devices</td>
+      <td>A query string for searching for device category_categories</td>
       <td>String</td>
     </tr>
     <tr>
       <td>title</td>
-      <td>Filter devices by title</td>
+      <td>Filter device category_categories by title</td>
       <td>String</td>
     </tr>
     <tr>
@@ -159,10 +159,10 @@
   </tbody>
 </table>
 
-<h3 id="retrieve-a-device">Retrieve a Device</h3>
+<h3 id="retrieve-a-device-category">Retrieve a Device Category</h3>
 <hr />
 
-<pre><b>GET</b> https://api.zype.com/devices/[id]
+<pre><b>GET</b> https://api.zype.com/device category_categories/[id]
 </pre>
 
 <h4 id="parameters-1">Parameters</h4>
@@ -178,38 +178,28 @@
   <tbody>
     <tr>
       <td>id</td>
-      <td>String id of the device to retrieve. Example: 5389352e69702d401b000000.</td>
+      <td>String id of the device category to retrieve. Example: 5389352e69702d401b000000.</td>
       <td>String</td>
     </tr>
   </tbody>
 </table>
 
-<h3 id="device-object">Device Object</h3>
+<h3 id="device-category-object">Device Category Object</h3>
 
 <pre>
 {
-  "id": "54204805636261f298090000",
-  "keywords": [
-    "accessed",
-    "android",
-    "chrome",
-    "html5",
-    "via"
+  "_id": "5429b1c369702d2f7c040000",
+  "_keywords": [
+    "desktop"
   ],
-  "created_at": "2014-09-22T16:02:13.578Z",
-  "description": "Accessed via Chrome",
-  "device_category_id": "54204804636261f298050000",
+  "created_at": "2014-09-29T15:23:47.302-04:00",
   "image_content_type": "image/png",
-  "image_file_name": "mobile.png",
-  "image_file_size": 18671,
-  "image_fingerprint": "070c15b95b315a6f472a6efb6c3b898c",
-  "image_updated_at": "2014-09-22T16:02:13.558+00:00",
-  "name": "Chrome Android (HTML5)",
-  "player_ids": [
-    "54204808636261f298110000",
-    "54204808636261f298100000"
-  ],
-  "updated_at": "2014-09-22T16:02:13.578Z"
+  "image_file_name": "desktop.png",
+  "image_file_size": 19347,
+  "image_fingerprint": "a661d27f5003bcf1523f75e3686f6b24",
+  "image_updated_at": "2014-09-29T15:23:47.099-04:00",
+  "name": "Desktop",
+  "updated_at": "2014-09-29T15:23:47.302-04:00"
 }
 </pre>
 
