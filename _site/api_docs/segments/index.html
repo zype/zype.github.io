@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>Zype Developer Portal | Users</title>
+    <title>Zype Developer Portal | Segments</title>
     <meta name="description" content="">
 
     <link rel="stylesheet" href="/css/main.css">
-    <link rel="canonical" href="/api_docs/users/">
+    <link rel="canonical" href="/api_docs/segments/">
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 
     <!--[if lt IE 9]>
@@ -107,26 +107,192 @@
 
 
     <section id="main">
-      <h2 id="users">Users</h2>
+      <h2 id="segments">Segments</h2>
+<hr />
 
-<p>The Zype API is feature rich, so we want to provide you with a place to learn more about it. The documentation below will help you with a number of objects based around users.</p>
+<h3 id="list-video-segments">List video segments</h3>
+<pre>
+<b>GET</b> https://api.zype.com/videos/[id]/segments
+</pre>
 
-<div style="width: 100%; display: inline-flex;">
-  <div style="width: 50%;">
-    <div style="margin: 20px;">
-      <span class="fa fa-file-text" style="margin-right: 4px;"></span>
-      <a href="/api_docs/consumers/">Consumers</a>
-    </div>
-    <div style="margin: 20px;">
-      <span class="fa fa-file-text" style="margin-right: 4px;"></span>
-      <a href="/api_docs/plans/">Plans</a>
-    </div>
-    <div style="margin: 20px;">
-      <span class="fa fa-file-text" style="margin-right: 4px;"></span>
-      <a href="/api_docs/subscriptions/">Subscriptions</a>
-    </div>
-  </div>
-</div>
+<h4 id="parameters">Parameters</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Function</th>
+      <th>Type</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>video_id</td>
+      <td>String ID of the Video. Example: 5389352e69702d401b000000.</td>
+      <td>String</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="retrieve-a-segment">Retrieve a Segment</h3>
+<hr />
+
+<pre><b>GET</b> https://api.zype.com/videos/[video_id]/segments/[id]
+</pre>
+
+<h4 id="parameters-1">Parameters</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Function</th>
+      <th>Type</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>video_id</td>
+      <td>String ID of the Video to which the segment belongs. Example: 5389352e69702d401b000000.</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>id</td>
+      <td>String ID of the segment. Example: 5389352e69702d401b000000.</td>
+      <td>String</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="create-a-segment">Create a Segment</h3>
+<hr />
+
+<pre><b>POST</b> https://api.zype.com/videos/[video_id]/segments
+</pre>
+
+<h4 id="parameters-2">Parameters</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Function</th>
+      <th>Type</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>segment</td>
+      <td>A set of key value pairs that describe the segment. Example: segment[description]=description.</td>
+      <td>Hash</td>
+    </tr>
+    <tr>
+      <td>description</td>
+      <td>The description for the video segment</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>start</td>
+      <td>The point in the video where the segment begins</td>
+      <td>Integer</td>
+    </tr>
+    <tr>
+      <td>end</td>
+      <td>The point in the video where the segment ends</td>
+      <td>Integer</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="update-a-segment">Update a Segment</h3>
+<hr />
+
+<pre><b>PUT</b> https://api.zype.com/videos/[video_id]/segments/[id]</pre>
+
+<h4 id="parameters-3">Parameters</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Function</th>
+      <th>Type</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>video_id</td>
+      <td>String ID of the Video to which the segment belongs. Example: 5389352e69702d401b000000.</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>id</td>
+      <td>String ID of the segment to be updated. Example: 5389352e69702d401b000000.</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>segment</td>
+      <td>A set of key value pairs that describe the segment. Example: segment[description]=description.</td>
+      <td>Hash</td>
+    </tr>
+    <tr>
+      <td>description</td>
+      <td>The description for the video segment</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>start</td>
+      <td>The point in the video where the segment begins</td>
+      <td>Integer</td>
+    </tr>
+    <tr>
+      <td>end</td>
+      <td>The point in the video where the segment ends</td>
+      <td>Integer</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="delete-a-segment">Delete a Segment</h3>
+<hr />
+
+<pre><b>DELETE</b> https://api.zype.com/videos/[video_id]/segments/[id]
+</pre>
+
+<h4 id="parameters-4">Parameters</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Function</th>
+      <th>Type</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>video_id</td>
+      <td>String ID of the Video to which the segment belongs. Example: 5389352e69702d401b000000.</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>id</td>
+      <td>String ID of the segment to be deleted. Example: 5389352e69702d401b000000.</td>
+      <td>String</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="segment-object">Segment Object</h3>
+
+<pre>
+{
+  "_id": "54c6cbe56368726454050000",
+  "description": "theBest",
+  "end": 112,
+  "start": 90
+}
+</pre>
 
     </section>
 

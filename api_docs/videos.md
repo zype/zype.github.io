@@ -137,95 +137,95 @@ zobject_id | An array containing all of the zobject id's that you want to dissoc
 ### Video Object
 
 <pre>
-[
-  {
-    "_id": "547b4dca69702d070dca0000",
-    "active": true,
-    "categories": [
-      {
-        "title": "Additional Videos from YouTube",
-        "value": []
-      },
-      {
-        "title": "Genre",
-        "value": [
-          "Adventure"
-        ]
-      },
-      {
-        "title": "series",
-        "value": []
-      }
-    ],
-    "country": "",
-    "created_at": "2014-11-30T12:03:06.783-05:00",
-    "description": "A continuation of the saga created by George Lucas set thirty years after Star Wars: Episode VI - Return of the Jedi (1983).",
-    "discovery_url": "http://www.yoursite.com/video"
-    "duration": 91,
-    "episode": null,
-    "featured": false,
-    "foreign_id": null,
-    "keywords": [],
-    "segments": [],
-    "mature_content": false,
-    "published_at": "2014-11-30T12:01:32.000-05:00",
-    "rating": 0,
-    "related_playlist_ids": [
-      "5464084f69702d76c1770000"
-    ],
-    "request_count": 14,
-    "season": null,
-    "site_id": "5463c68e69702d24db490000",
-    "status": "created",
-    "subscription_required": false,
-    "title": "Star Wars: Episode VII - The Force Awakens Official Teaser Trailer",
-    "updated_at": "2014-12-17T23:00:03.649-05:00",
-    "video_zobjects": [
-      {
-        "_id": "547b4e6f69702d070dd30000",
-        "description": "",
-        "title": "Harrison Ford",
-        "zobject_type_title": "actor"
-      },
-      {
-        "_id": "547b4e9369702d070edc0000",
-        "description": "",
-        "title": "J.J. Abrams",
-        "zobject_type_title": "director"
-      },
-      {
-        "_id": "54808d6a69702d18b51d0000",
-        "description": "",
-        "title": "John Boyega",
-        "zobject_type_title": "actor"
-      }
-    ],
-    "zobject_ids": [
-      "547b4e6f69702d070dd30000",
-      "547b4e9369702d070edc0000",
-      "54808d6a69702d18b51d0000"
-    ],
-    "thumbnails": [
-      {
-        "aspect_ratio": null,
-        "height": 90,
-        "name": null,
-        "url": "https://i.ytimg.com/vi/PlFckE98xN4/default.jpg",
-        "width": 120
-      },
-      {
-        "aspect_ratio": null,
-        "height": 180,
-        "name": null,
-        "url": "https://i.ytimg.com/vi/PlFckE98xN4/mqdefault.jpg",
-        "width": 320
-      },
-      {
-        "aspect_ratio": null,
-        "height": 360,
-        "name": null,
-        "url": "https://i.ytimg.com/vi/PlFckE98xN4/hqdefault.jpg",
-        "width": 480
-      }
-    ]
-  </pre>
+{
+  "_id": "547b4dca69702d070dca0000",
+  "active": true,
+  "categories": [
+    {
+      "title": "Additional Videos from YouTube",
+      "value": []
+    },
+    {
+      "title": "Genre",
+      "value": [
+        "Adventure"
+      ]
+    },
+    {
+      "title": "series",
+      "value": []
+    }
+  ],
+  "country": "",
+  "created_at": "2014-11-30T12:03:06.783-05:00",
+  "description": "A continuation of the saga created by George Lucas set thirty years after Star Wars: Episode VI - Return of the Jedi (1983).",
+  "discovery_url": "http://www.yoursite.com/video"
+  "duration": 91,
+  "episode": null,
+  "featured": false,
+  "foreign_id": null,
+  "keywords": [],
+  "segments": [],
+  "mature_content": false,
+  "published_at": "2014-11-30T12:01:32.000-05:00",
+  "rating": 0,
+  "related_playlist_ids": [
+    "5464084f69702d76c1770000"
+  ],
+  "request_count": 14,
+  "season": null,
+  "site_id": "5463c68e69702d24db490000",
+  "status": "created",
+  "subscription_required": false,
+  "title": "Star Wars: Episode VII - The Force Awakens Official Teaser Trailer",
+  "updated_at": "2014-12-17T23:00:03.649-05:00",
+  "video_zobjects": [
+    {
+      "_id": "547b4e6f69702d070dd30000",
+      "description": "",
+      "title": "Harrison Ford",
+      "zobject_type_title": "actor"
+    },
+    {
+      "_id": "547b4e9369702d070edc0000",
+      "description": "",
+      "title": "J.J. Abrams",
+      "zobject_type_title": "director"
+    },
+    {
+      "_id": "54808d6a69702d18b51d0000",
+      "description": "",
+      "title": "John Boyega",
+      "zobject_type_title": "actor"
+    }
+  ],
+  "zobject_ids": [
+    "547b4e6f69702d070dd30000",
+    "547b4e9369702d070edc0000",
+    "54808d6a69702d18b51d0000"
+  ],
+  "thumbnails": [
+    {
+      "aspect_ratio": null,
+      "height": 90,
+      "name": null,
+      "url": "https://i.ytimg.com/vi/PlFckE98xN4/default.jpg",
+      "width": 120
+    },
+    {
+      "aspect_ratio": null,
+      "height": 180,
+      "name": null,
+      "url": "https://i.ytimg.com/vi/PlFckE98xN4/mqdefault.jpg",
+      "width": 320
+    },
+    {
+      "aspect_ratio": null,
+      "height": 360,
+      "name": null,
+      "url": "https://i.ytimg.com/vi/PlFckE98xN4/hqdefault.jpg",
+      "width": 480
+    }
+  ]
+}
+</pre>

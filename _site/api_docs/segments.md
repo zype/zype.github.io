@@ -27,7 +27,7 @@ Content-Type: application/json
 </pre>
 
 
-<hr>
+<hr>  
 ###Find a specific segment
 <hr>
 <pre>GET - https://api.zype.com/videos/{id1}/segments/{id2}
