@@ -7,11 +7,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     <title>Zype Developer Portal | Revenue Models</title>
-    <meta name="description" content="This is the devloper portal for Zype Media. Zype is Revenue and Reach Magic for Online Video. We help content owners deliver fully branded video experiences.
-">
+    <meta name="description" content="">
 
     <link rel="stylesheet" href="/css/main.css">
-    <link rel="canonical" href="http://dev.zype.com/api_docs/revenue_models/">
+    <link rel="canonical" href="/api_docs/revenue_models/">
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 
     <!--[if lt IE 9]>
@@ -66,7 +65,7 @@
 
       <header id="header" style="overflow-y: scroll;">
     <div id="content">
-      <a href="/"><img src="http://dev.zype.com/assets/logo.png" alt="Zype" />
+      <a href="/"><img src="/assets/logo.png" alt="Zype" />
       <h1 id="title">Developer Portal</h1></a>
       <p>a knowledge base</p>
       <br>
@@ -78,11 +77,11 @@
       <p><a href="/api_docs/apps/">Apps</a></p>
       <p><a href="/api_docs/devices/">Devices</a></p>
       <p><a href="/api_docs/device_categories/">Device Categories</a></p>
-      <p><a href="/api_docs/players/">Native Players</a></p>
+      <p><a href="/api_docs/players/">Players</a></p>
+      <p><a href="/api_docs/segments/">Segments</a></p>
       <p><a href="/api_docs/revenue_models/">Revenue Models</a></p>
       <p><a href="/api_docs/video_imports/">Video Imports</a></p>
       <p><a href="/api_docs/video_sources/">Video Sources</a></p>
-      <p><a href="/api_docs/distribution_endpoints/">Distribution Endpoints</a></p>
       <p><a href="/api_docs/geoip/">GeoIP</a></p>
       <a href="/api_docs/users/"><h4 class="api-header">Users</h4></a>
       <p><a href="/api_docs/consumers/">Consumers</a></p>
@@ -112,11 +111,10 @@
       <h2 id="revenue-models">Revenue Models</h2>
 <hr />
 
-<h3 id="list-all-revenue-models">List all Revenue Models</h3>
-<hr />
-
-<pre><code>GET - https://api.zype.com/revenue_models?page=page&amp;per_page=per_page&amp;search=search
-</code></pre>
+<h3 id="list-revenue-models">List Revenue Models</h3>
+<pre>
+<b>GET</b> https://api.zype.com/revenue_models
+</pre>
 
 <h4 id="parameters">Parameters</h4>
 
@@ -130,6 +128,26 @@
   </thead>
   <tbody>
     <tr>
+      <td>id</td>
+      <td>Query for a revenue model by ID</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>id!</td>
+      <td>Exclude a revenue model from the query</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>q</td>
+      <td>A query string for searching for revenue models</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>title</td>
+      <td>Filter revenue models by title</td>
+      <td>String</td>
+    </tr>
+    <tr>
       <td>page</td>
       <td>The page number of records to return (zero indexed). Example: 0.</td>
       <td>Number</td>
@@ -139,87 +157,14 @@
       <td>The number of records to return. Example: 10.</td>
       <td>Number</td>
     </tr>
-    <tr>
-      <td>search</td>
-      <td>Performs a full text search for the term and returns records that match. Example: SVOD</td>
-      <td>String</td>
-    </tr>
   </tbody>
 </table>
-
-<h4 id="response">Response</h4>
-<p>200
-Content-Type: application/json</p>
-
-<pre><code>{
-  "response": [
-    {
-      "id": "54204802636261f298030000",
-      "keywords": [
-        "free"
-      ],
-      "created_at": "2014-09-22T16:02:10.785Z",
-      "description": "Free",
-      "name": "Free",
-      "updated_at": "2014-09-22T16:02:10.785Z"
-    },
-    {
-      "id": "54204802636261f298020000",
-      "keywords": [
-        "demand",
-        "subscription",
-        "svod",
-        "video"
-      ],
-      "created_at": "2014-09-22T16:02:10.783Z",
-      "description": "Subscription Video On Demand",
-      "name": "SVOD",
-      "updated_at": "2014-09-22T16:02:10.783Z"
-    },
-    {
-      "id": "54204802636261f298010000",
-      "keywords": [
-        "advertising",
-        "avod",
-        "demand",
-        "video"
-      ],
-      "created_at": "2014-09-22T16:02:10.781Z",
-      "description": "Advertising Video On Demand",
-      "name": "AVOD",
-      "updated_at": "2014-09-22T16:02:10.781Z"
-    },
-    {
-      "id": "54204802636261f298000000",
-      "keywords": [
-        "electronic",
-        "est",
-        "sell",
-        "through"
-      ],
-      "created_at": "2014-09-22T16:02:10.778Z",
-      "description": "Electronic sell-through",
-      "name": "EST",
-      "updated_at": "2014-09-22T16:02:10.778Z"
-    }
-    ],
-    "pagination": {
-      "current": 1,
-      "previous": null,
-      "next": null,
-      "per_page": 10,
-      "pages": 1
-  }
-}
-</code></pre>
-
-<hr />
 
 <h3 id="retrieve-a-revenue-model">Retrieve a Revenue Model</h3>
 <hr />
 
-<pre><code>GET - https://api.zype.com/revenue_models/{id}
-</code></pre>
+<pre><b>GET</b> https://api.zype.com/revenue_models/[id]
+</pre>
 
 <h4 id="parameters-1">Parameters</h4>
 
@@ -234,29 +179,30 @@ Content-Type: application/json</p>
   <tbody>
     <tr>
       <td>id</td>
-      <td>String id of the Revenue Model to retrieve. Example: 5389352e69702d401b000000.</td>
+      <td>String ID of the revenue model to retrieve. Example: 5389352e69702d401b000000.</td>
       <td>String</td>
     </tr>
   </tbody>
 </table>
 
-<h4 id="response-1">Response</h4>
-<p>200
-Content-Type: application/json</p>
+<h3 id="revenue-model-object">Revenue Model Object</h3>
 
-<pre><code>{
-  "response": {
-    "id": "54204802636261f298030000",
-    "keywords": [
-      "free"
-    ],
-    "created_at": "2014-09-22T16:02:10.785Z",
-    "description": "Free",
-    "name": "Free",
-    "updated_at": "2014-09-22T16:02:10.785Z"
-  }
+<pre>
+{
+  "_id": "5429b1c369702d2f7c040000",
+  "_keywords": [
+    "desktop"
+  ],
+  "created_at": "2014-09-29T15:23:47.302-04:00",
+  "image_content_type": "image/png",
+  "image_file_name": "desktop.png",
+  "image_file_size": 19347,
+  "image_fingerprint": "a661d27f5003bcf1523f75e3686f6b24",
+  "image_updated_at": "2014-09-29T15:23:47.099-04:00",
+  "name": "Desktop",
+  "updated_at": "2014-09-29T15:23:47.302-04:00"
 }
-</code></pre>
+</pre>
 
     </section>
 

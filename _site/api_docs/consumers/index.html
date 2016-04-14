@@ -7,11 +7,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     <title>Zype Developer Portal | Consumers</title>
-    <meta name="description" content="This is the devloper portal for Zype Media. Zype is Revenue and Reach Magic for Online Video. We help content owners deliver fully branded video experiences.
-">
+    <meta name="description" content="">
 
     <link rel="stylesheet" href="/css/main.css">
-    <link rel="canonical" href="http://dev.zype.com/api_docs/consumers/">
+    <link rel="canonical" href="/api_docs/consumers/">
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 
     <!--[if lt IE 9]>
@@ -66,7 +65,7 @@
 
       <header id="header" style="overflow-y: scroll;">
     <div id="content">
-      <a href="/"><img src="http://dev.zype.com/assets/logo.png" alt="Zype" />
+      <a href="/"><img src="/assets/logo.png" alt="Zype" />
       <h1 id="title">Developer Portal</h1></a>
       <p>a knowledge base</p>
       <br>
@@ -78,11 +77,11 @@
       <p><a href="/api_docs/apps/">Apps</a></p>
       <p><a href="/api_docs/devices/">Devices</a></p>
       <p><a href="/api_docs/device_categories/">Device Categories</a></p>
-      <p><a href="/api_docs/players/">Native Players</a></p>
+      <p><a href="/api_docs/players/">Players</a></p>
+      <p><a href="/api_docs/segments/">Segments</a></p>
       <p><a href="/api_docs/revenue_models/">Revenue Models</a></p>
       <p><a href="/api_docs/video_imports/">Video Imports</a></p>
       <p><a href="/api_docs/video_sources/">Video Sources</a></p>
-      <p><a href="/api_docs/distribution_endpoints/">Distribution Endpoints</a></p>
       <p><a href="/api_docs/geoip/">GeoIP</a></p>
       <a href="/api_docs/users/"><h4 class="api-header">Users</h4></a>
       <p><a href="/api_docs/consumers/">Consumers</a></p>
@@ -109,15 +108,13 @@
 
 
     <section id="main">
-      <h2 id="consumers-collection">Consumers Collection</h2>
-<p>Lists all Consumers.</p>
+      <h2 id="consumers">Consumers</h2>
 <hr />
 
-<h3 id="list-all-consumers">List all Consumers</h3>
-<hr />
-
-<pre><code>GET - https://api.zype.com/consumers/?page=page&amp;per_page=per_page
-</code></pre>
+<h3 id="list-consumers">List Consumers</h3>
+<pre>
+<b>GET</b> https://api.zype.com/consumers
+</pre>
 
 <h4 id="parameters">Parameters</h4>
 
@@ -155,49 +152,44 @@
       <td>Exclude a consumer from the query</td>
       <td>String</td>
     </tr>
+    <tr>
+      <td>email</td>
+      <td>Filter consumers by email</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>rss_token</td>
+      <td>Filter consumers by RSS token</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>password_token</td>
+      <td>Filter consumers by password reset token</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>stripe_id</td>
+      <td>Filter consumers by Stripe ID</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>braintree_id</td>
+      <td>Filter consumers by Braintree ID</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>created_at</td>
+      <td>Filter the records returned by created date. You can use greater than or less than filters by adding a suffix: ‘.gt’, ‘.gte’, ‘.lt’, ‘lte’. Example: created_at.gte=2015-01-01</td>
+      <td>Date</td>
+    </tr>
   </tbody>
 </table>
 
-<h4 id="response">Response</h4>
-<p>200
-Content-Type: application/json</p>
-
-<pre><code>{
-  "response": [
-    {
-      "_id": "54579a634c616e0389000000",
-      "_keywords": [
-        "com",
-        "example",
-        "test123"
-      ],
-      "created_at": "2014-11-03T15:08:19.675Z",
-      "deleted_at": null,
-      "email": "test123@example.com",
-      "site_id": "53e8d7f869702d5b64010000",
-      "stripe_id": "cus_54wKapCMCaqd9b",
-      "subscription_count": 1,
-      "updated_at": "2014-11-03T15:08:19.675Z"
-    }
-  ],
-  "pagination":
-    {
-      "current": 1,
-      "previous": null,
-      "next": 2,
-      "per_page": 1,
-      "pages": 10
-    }
-}
-</code></pre>
-
+<h3 id="retrieve-a-consumer">Retrieve a Consumer</h3>
 <hr />
 
-<h3 id="create-a-consumer">Create a Consumer</h3>
-<hr />
-
-<pre><code>POST - https://api.zype.com/consumers/{consumer}
-</code></pre>
+<pre><b>GET</b> https://api.zype.com/category/[id]
+</pre>
 
 <h4 id="parameters-1">Parameters</h4>
 
@@ -211,49 +203,18 @@ Content-Type: application/json</p>
   </thead>
   <tbody>
     <tr>
-      <td>consumer</td>
-      <td>A set of key value pairs that describe the Consumer. Needs to include email.</td>
-      <td>Hash</td>
-    </tr>
-    <tr>
-      <td>email</td>
-      <td>The consumer’s email address (must be unique)</td>
-      <td>string</td>
+      <td>id</td>
+      <td>String ID of the category. Example: 5389352e69702d401b000000.</td>
+      <td>String</td>
     </tr>
   </tbody>
 </table>
 
-<h4 id="response-1">Response</h4>
-<p>201
-Content-Type: application/json</p>
-
-<pre><code> {
-  "response": {
-    "_id": "54579a634c616e0389000000",
-    "_keywords": [
-      "com",
-      "example",
-      "test123"
-    ],
-    "created_at": "2014-11-03T15:08:19.675Z",
-    "email": "test123@example.com",
-    "site_id": "53e8d7f869702d5b64010000",
-    "stripe_id": "cus_54wKapCMCaqd9b1235",
-    "subscription_count": 1,
-    "updated_at": "2014-11-03T15:08:19.675Z"
-  }
-}
-</code></pre>
-
-<h2 id="consumer">Consumer</h2>
-<p>Lists descriptive information about a Consumer</p>
+<h3 id="create-a-consumer">Create a Consumer</h3>
 <hr />
 
-<h3 id="retrieve-a-consumer">Retrieve a Consumer</h3>
-<hr />
-
-<pre><code>GET - https://api.zype.com/consumer/{id}
-</code></pre>
+<pre><b>POST</b> https://api.zype.com/consumers
+</pre>
 
 <h4 id="parameters-2">Parameters</h4>
 
@@ -267,46 +228,47 @@ Content-Type: application/json</p>
   </thead>
   <tbody>
     <tr>
-      <td>id</td>
-      <td>String id of the Consumer to retrieve. Example: 5389352e69702d401b000000.</td>
-      <td>String</td>
+      <td>consumer[email]</td>
+      <td>The consumer’s email address. (must be unique)</td>
+      <td>string</td>
+    </tr>
+    <tr>
+      <td>consumer[password]</td>
+      <td>The password for the consumer. The password is used for consumer authentication.</td>
+      <td>string</td>
+    </tr>
+    <tr>
+      <td>consumer[name]</td>
+      <td>The name of the consumer.</td>
+      <td>string</td>
+    </tr>
+    <tr>
+      <td>consumer[sex]</td>
+      <td>The gender of the consumer.</td>
+      <td>string</td>
+    </tr>
+    <tr>
+      <td>consumer[birthday]</td>
+      <td>The birthday of the consumer,</td>
+      <td>string</td>
+    </tr>
+    <tr>
+      <td>consumer[updates]</td>
+      <td>Boolean field to store if the consumer has agreed to receive updates.</td>
+      <td>Boolean</td>
+    </tr>
+    <tr>
+      <td>consumer[terms]</td>
+      <td>Boolean field to store if the consumer has agreed to terms and conditions.</td>
+      <td>Boolean</td>
     </tr>
   </tbody>
 </table>
 
-<h4 id="request">Request</h4>
-<p>Content-Type: application/json</p>
-
-<h4 id="response-2">Response</h4>
-<p>200
-Content-Type: application/json</p>
-
-<pre><code> {
-  "response": {
-    "_id": "54579a634c616e0389000000",
-    "_keywords": [
-      "com",
-      "example",
-      "test123"
-    ],
-    "created_at": "2014-11-03T15:08:19.675Z",
-    "deleted_at": null,
-    "email": "test123@example.com",
-    "site_id": "53e8d7f869702d5b64010000",
-    "stripe_id": "cus_54wKapCMCaqd9b1235",
-    "subscription_count": 1,
-    "updated_at": "2014-11-03T15:08:19.675Z"
-  }
-}
-</code></pre>
-
+<h3 id="update-a-consumer">Update a Consumer</h3>
 <hr />
 
-<h3 id="remove-a-consumer">Remove a Consumer</h3>
-<hr />
-
-<pre><code>DELETE - https://api.zype.com/consumers/{id}
-</code></pre>
+<pre><b>PUT</b> https://api.zype.com/consumers/[id]</pre>
 
 <h4 id="parameters-3">Parameters</h4>
 
@@ -321,19 +283,101 @@ Content-Type: application/json</p>
   <tbody>
     <tr>
       <td>id</td>
-      <td>String id of the Consumer to remove. Example: 5389352e69702d401b000000.</td>
+      <td>String ID of the consumer to update. Example: 540731274c616e047a000000.</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>consumer[email]</td>
+      <td>The consumer’s email address. (must be unique)</td>
+      <td>string</td>
+    </tr>
+    <tr>
+      <td>consumer[password]</td>
+      <td>The password for the consumer. The password is used for consumer authentication.</td>
+      <td>string</td>
+    </tr>
+    <tr>
+      <td>consumer[name]</td>
+      <td>The name of the consumer.</td>
+      <td>string</td>
+    </tr>
+    <tr>
+      <td>consumer[sex]</td>
+      <td>The gender of the consumer.</td>
+      <td>string</td>
+    </tr>
+    <tr>
+      <td>consumer[birthday]</td>
+      <td>The birthday of the consumer,</td>
+      <td>string</td>
+    </tr>
+    <tr>
+      <td>consumer[updates]</td>
+      <td>Boolean field to store if the consumer has agreed to receive updates.</td>
+      <td>Boolean</td>
+    </tr>
+    <tr>
+      <td>consumer[terms]</td>
+      <td>Boolean field to store if the consumer has agreed to terms and conditions.</td>
+      <td>Boolean</td>
+    </tr>
+    <tr>
+      <td>consumer[password_token]</td>
+      <td>The password token to use during password reset workflows.</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>consumer[remember_token]</td>
+      <td>The password token to use during remember login workflows.</td>
       <td>String</td>
     </tr>
   </tbody>
 </table>
 
-<h4 id="request-1">Request</h4>
-<p>Content-Type: application/json</p>
+<h3 id="delete-a-consumer">Delete a Consumer</h3>
+<hr />
 
-<h4 id="response-3">Response</h4>
-<p>204</p>
+<pre><b>DELETE</b> https://api.zype.com/consumers/[id]
+</pre>
 
-<p>No Content</p>
+<h4 id="parameters-4">Parameters</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Function</th>
+      <th>Type</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>id</td>
+      <td>String ID of the consumer to be deleted. Example: 540731274c616e047a000000.</td>
+      <td>String</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="consumer-object">Consumer Object</h3>
+
+<pre>
+{
+  "_id": "54579a634c616e0389000000",
+  "_keywords": [
+    "com",
+    "example",
+    "test123"
+  ],
+  "created_at": "2014-11-03T15:08:19.675Z",
+  "deleted_at": null,
+  "email": "test123@example.com",
+  "site_id": "53e8d7f869702d5b64010000",
+  "stripe_id": "cus_54wKapCMCaqd9b1235",
+  "subscription_count": 1,
+  "updated_at": "2014-11-03T15:08:19.675Z"
+}
+</pre>
 
     </section>
 
