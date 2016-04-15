@@ -80,7 +80,6 @@ subscription[cancelled_at] | If the subscription has already been cancelled at a
 subscription[cancel_at_period_end] | Set Stripe subscription to cancel at period end | String
 
 ### Delete a Subscription
-<hr>
 <pre><b>DELETE</b> https://api.zype.com/subscriptions/{id}
 </pre>
 
