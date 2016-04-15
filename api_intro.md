@@ -25,18 +25,35 @@ Our default is to support JSON formatting, however if you prefer XML use the Con
 
 ## Authentication
 
-There are two ways to authenticate to the Zype API. The first way to authenticate is
-to provide your API key in the request. To authenticate your requests, supply your API key in the X-ZYPE-API-KEY header.
+There are multiple ways to authenticate to the Zype API. Your Zype channels is automatically set up with API keys that you can integrate with, but you can also use app keys and consumer access tokens to autheticate as well.
 
-The second way to authenticate is to include your API key in the query param.
+### API Keys
 
-<pre>https://api.zype.com/videos/?api_key=[api_key]</pre>
-
-Currently, Zype provides three types of API Keys for you to use for authentication.
+Your Zype channel is automatically set up with the following API keys:
 
 - **Admin Key:** Admin keys have full access to your account and should not be distributed in video applications.
 - **Read Only Key:** Read only keys have limited access to your account and are not allowed to create or modify existing resources. Read only keys should be used when distributing a video application.
 - **Player Key:** Player keys have limited access to your account and are only allowed to issue player requests. Player keys should be used in embed codes for web applications.
+
+####Example:
+
+<pre><b>GET</b> https://api.zype.com/videos?api_key=[api_key]</pre>
+
+### App Keys
+
+App keys are automatically created when you set up new apps. App keys provide per app authentication so that each bundled app has separate credentials. App keys are automatically bundled using Zype app builders. App keys can be retrived from your app's detail page.
+
+####Example:
+
+<pre><b>GET</b> https://api.zype.com/videos?app_key=[app_key]</pre>
+
+### Access Tokens
+
+Access tokens provide per user authentication for API requests. Access tokens are time based tokens that are created using  OAuth. [Click here](/api_docs/oauth) for more information about using OAuth.
+
+####Example:
+
+<pre><b>GET</b> https://api.zype.com/videos?access_token=[access_token]</pre>
 
 <hr>
 
