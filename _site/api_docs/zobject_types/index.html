@@ -106,14 +106,13 @@
 
 
     <section id="main">
-      <h2 id="zobject-types-collection">Zobject Types Collection</h2>
+      <h2 id="zobject-types">Zobject Types</h2>
 <hr />
 
-<h3 id="list-all-zobject-types">List all Zobject Types</h3>
-<hr />
-
-<pre><code>GET - https://api.zype.com/zobject_types?page=page&amp;per_page=per_page&amp;keywords=keyword
-</code></pre>
+<h3 id="list-zobject-types">List Zobject Types</h3>
+<pre>
+<b>GET</b> https://api.zype.com/zobject_types
+</pre>
 
 <h4 id="parameters">Parameters</h4>
 
@@ -127,6 +126,16 @@
   </thead>
   <tbody>
     <tr>
+      <td>id</td>
+      <td>Query for a zobject type by ID</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>id!</td>
+      <td>Exclude a zobject type from the query</td>
+      <td>String</td>
+    </tr>
+    <tr>
       <td>page</td>
       <td>The page number of records to return (zero indexed). Example: 0.</td>
       <td>Number</td>
@@ -136,60 +145,14 @@
       <td>The number of records to return. Example: 10.</td>
       <td>Number</td>
     </tr>
-    <tr>
-      <td>keywords</td>
-      <td>Filters the records returned by keyword. Example: comedy.</td>
-      <td>String</td>
-    </tr>
   </tbody>
 </table>
 
-<h4 id="response">Response</h4>
-<p>200
-Content-Type: application/json</p>
-
-<pre><code>{
-  "response": [
-  {
-    "_id":"546cd8124c616e043d010000",
-    "_keywords": ["actor"],
-    "created_at": "2014-11-19T12:49:06.385-05:00",
-    "description": "",
-    "site_id": "545932274c616e2359000000",
-    "title": "actor",
-    "updated_at": "2014-11-19T12:49:06.385-05:00",
-    "videos_enabled": true,
-    "zobject_count": 2
-  },
-  {
-    "_id": "546cd8324c616e043d020000",
-    "_keywords": ["director"],
-    "created_at": "2014-11-19T12:49:38.521-05:00",
-    "description": "",
-    "site_id": "545932274c616e2359000000",
-    "title": "director",
-    "updated_at": "2014-11-19T12:49:38.521-05:00",
-    "videos_enabled": true,
-    "zobject_count": 2
-  }
-  ],
-  "pagination":
-  {
-    "current": 1,
-    "previous": null,
-    "next": null,
-    "per_page": 10,
-    "pages": 1
-  }
-}
-</code></pre>
+<h3 id="retrieve-a-zobject-type">Retrieve a Zobject Type</h3>
 <hr />
 
-<h3 id="create-a-zobject-type">Create a Zobject Type</h3>
-<hr />
-
-<pre><code>POST - https://api.zype.com/zobject_types?page=page&amp;per_page=per_page&amp;keywords=keyword
-</code></pre>
+<pre><b>GET</b> https://api.zype.com/zobject_types/[id]
+</pre>
 
 <h4 id="parameters-1">Parameters</h4>
 
@@ -203,48 +166,18 @@ Content-Type: application/json</p>
   </thead>
   <tbody>
     <tr>
-      <td>zobject_type</td>
-      <td>A set of key value pairs that describe the Zobject Type.</td>
-      <td>Hash</td>
+      <td>id</td>
+      <td>ID of the zobject type. Example: 5389352e69702d401b000000.</td>
+      <td>String</td>
     </tr>
   </tbody>
 </table>
 
-<h4 id="request">Request</h4>
-<p>Content-Type: application/json</p>
-
-<h4 id="response-1">Response</h4>
-<p>201
-Content-Type: application/json</p>
-
-<pre><code>{
-  "response": {
-    "_id":"54908d574c616e20e73b0000",
-    "_keywords":
-    [
-      "new",
-      "type",
-      "zobject"
-    ],
-    "created_at":"2014-12-16T14:51:51.302-05:00",
-    "description":null,
-    "site_id":"545932274c616e2359000000",
-    "title":"new zobject type!",
-    "updated_at":"2014-12-16T14:51:51.302-05:00",
-    "videos_enabled":true,
-    "zobject_count":0
-  }
-}
-</code></pre>
-
-<p>Lists descriptive information about a Zobject type.</p>
+<h3 id="create-a-zobject-type">Create a Zobject Type</h3>
 <hr />
 
-<h3 id="retrieve-a-zobject-type">Retrieve a Zobject Type</h3>
-<hr />
-
-<pre><code>GET - https://api.zype.com/zobject_types/{id}
-</code></pre>
+<pre><b>POST</b> https://api.zype.com/zobject_types
+</pre>
 
 <h4 id="parameters-2">Parameters</h4>
 
@@ -258,53 +191,47 @@ Content-Type: application/json</p>
   </thead>
   <tbody>
     <tr>
-      <td>id</td>
-      <td>ID of the Zobject Type to retrieve. Example: 5389352e69702d401b000000.</td>
+      <td>zobject_type[title]</td>
+      <td>Title of the zobject type. (must be unique)</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>zobject_type[description]</td>
+      <td>Description of the zobject type.</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>zobject_type[videos_enabled]</td>
+      <td>Indicates whether videos can be associated with instances of the zobject type.</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>zobject_type[zobject_attributes]</td>
+      <td>An indexed collection specifying the custom attributes for the zobject type.</td>
+      <td>Array</td>
+    </tr>
+    <tr>
+      <td>zobject_type[zobject_attributes][x][field_name]</td>
+      <td>Name of the zobject type custom attribute</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>zobject_type[zobject_attributes][x][field_type]</td>
+      <td>Type of the zobject type custom attribute. Example: integer</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>zobject_type[zobject_attributes][x][description]</td>
+      <td>Description of the zobject type custom attribute</td>
       <td>String</td>
     </tr>
   </tbody>
 </table>
 
-<h4 id="response-2">Response</h4>
-<p>200
-Content-Type: application/json</p>
-
-<pre><code>{
-  "response": [
-    {
-      "_id": "5464f94569702d5349720000",
-      "_keywords": [
-      "actor"
-      ],
-      "created_at": "2014-11-13T13:32:37.284-05:00",
-      "description": "",
-      "site_id": "5463c68e69702d24db490000",
-      "title": "actor",
-      "updated_at": "2014-11-14T14:14:12.757-05:00",
-      "videos_enabled": true,
-      "zobject_attributes": [
-        {
-          "_id": "5464f94569702d5349730000",
-          "created_at": "2014-11-13T13:32:37.284-05:00",
-          "description": "The actor's name.",
-          "field_name": "name",
-          "field_type": "String",
-          "show_list": true,
-          "updated_at": "2014-11-13T13:32:37.284-05:00"
-        }
-      ],
-      "zobject_count": 7
-    }
-  ]
-}
-</code></pre>
-<hr />
-
 <h3 id="update-a-zobject-type">Update a Zobject Type</h3>
 <hr />
 
-<pre><code>PUT - https://api.zype.com/zobject_types/{id}
-</code></pre>
+<pre><b>PUT</b> https://api.zype.com/zobject_types/[id]</pre>
 
 <h4 id="parameters-3">Parameters</h4>
 
@@ -318,56 +245,58 @@ Content-Type: application/json</p>
   </thead>
   <tbody>
     <tr>
-      <td>zobject_type</td>
-      <td>A set of key value pairs that describe the Zobject Type.</td>
-      <td>Hash</td>
+      <td>id</td>
+      <td>ID of the zobject type to update. Example: 540731274c616e047a000000.</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>zobject_type[title]</td>
+      <td>Title of the zobject type. (must be unique)</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>zobject_type[description]</td>
+      <td>Description of the zobject type.</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>zobject_type[videos_enabled]</td>
+      <td>Indicates whether videos can be associated with instances of the zobject type.</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>zobject_type[zobject_attributes]</td>
+      <td>An indexed collection specifying the custom attributes for the zobject type.</td>
+      <td>Array</td>
+    </tr>
+    <tr>
+      <td>zobject_type[zobject_attributes][x][id]</td>
+      <td>ID of the zobject type custom attribute to update</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>zobject_type[zobject_attributes][x][field_name]</td>
+      <td>Name of the zobject type custom attribute</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>zobject_type[zobject_attributes][x][field_type]</td>
+      <td>Type of the zobject type custom attribute. Example: integer</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>zobject_type[zobject_attributes][x][description]</td>
+      <td>Description of the zobject type custom attribute</td>
+      <td>String</td>
     </tr>
   </tbody>
 </table>
 
-<h4 id="request-1">Request</h4>
-<p>Content-Type: application/json</p>
-
-<h4 id="response-3">Response</h4>
-<p>201
-Content-Type: application/json</p>
-
-<pre><code>{
-  "response": [
-    {
-      "_id": "5464f94569702d5349720000",
-      "_keywords": [
-      "actor"
-      ],
-      "created_at": "2014-11-13T13:32:37.284-05:00",
-      "description": "",
-      "site_id": "5463c68e69702d24db490000",
-      "title": "actor",
-      "updated_at": "2014-11-14T14:14:12.757-05:00",
-      "videos_enabled": true,
-      "zobject_attributes": [
-      {
-        "_id": "5464f94569702d5349730000",
-        "created_at": "2014-11-13T13:32:37.284-05:00",
-        "description": "The actor's name.",
-        "field_name": "name",
-        "field_type": "String",
-        "show_list": true,
-        "updated_at": "2014-11-13T13:32:37.284-05:00"
-      }
-      ],
-      "zobject_count": 7
-    }
-  ]
-}
-</code></pre>
-<hr />
-
 <h3 id="delete-a-zobject-type">Delete a Zobject Type</h3>
 <hr />
 
-<pre><code>DELETE - https://api.zype.com/zobject_types/{id}
-</code></pre>
+<pre><b>DELETE</b> https://api.zype.com/zobject_types/[id]
+</pre>
 
 <h4 id="parameters-4">Parameters</h4>
 
@@ -382,16 +311,28 @@ Content-Type: application/json</p>
   <tbody>
     <tr>
       <td>id</td>
-      <td>ID of the Zobject Type to remove. Example: 5389352e69702d401b000000.</td>
+      <td>ID of the zobject type to be deleted. Example: 540731274c616e047a000000.</td>
       <td>String</td>
     </tr>
   </tbody>
 </table>
 
-<h4 id="response-4">Response</h4>
-<p>204</p>
+<h3 id="zobject-type-object">Zobject Type Object</h3>
 
-<p>No Content</p>
+<pre>
+{
+  "_id":"546cd8124c616e043d010000",
+  "_keywords": ["actor"],
+  "created_at": "2014-11-19T12:49:06.385-05:00",
+  "description": "",
+  "site_id": "545932274c616e2359000000",
+  "title": "actor",
+  "updated_at": "2014-11-19T12:49:06.385-05:00",
+  "videos_enabled": true,
+  "zobject_count": 2
+}
+</pre>
+
 
     </section>
 

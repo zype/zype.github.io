@@ -29,14 +29,14 @@ created_at | Filter the records returned by created date. You can use greater th
 
 ###Retrieve a Consumer
 <hr>
-<pre><b>GET</b> https://api.zype.com/category/[id]
+<pre><b>GET</b> https://api.zype.com/consumers/[id]
 </pre>
 
 #### Parameters
 
 Parameter | Function | Type
 --------- | -------- | ----
-id        | ID of the category. Example: 5389352e69702d401b000000. | String
+id        | ID of the consumer. Example: 5389352e69702d401b000000. | String
 
 ###Create a Consumer
 <hr>
@@ -47,11 +47,11 @@ id        | ID of the category. Example: 5389352e69702d401b000000. | String
 
 Parameter | Function | Type
 --------- | -------- | ----
-consumer[email] | The consumer's email address. (must be unique) | string
-consumer[password] | The password for the consumer. The password is used for consumer authentication. | string
-consumer[name] | The name of the consumer. | string
-consumer[sex] | The gender of the consumer. | string
-consumer[birthday] | The birthday of the consumer, | string
+consumer[email] | The consumer's email address. (must be unique) | String
+consumer[password] | The password for the consumer. The password is used for consumer authentication. | String
+consumer[name] | The name of the consumer. | String
+consumer[sex] | The gender of the consumer. | String
+consumer[birthday] | The birthday of the consumer, | String
 consumer[updates] | Boolean field to store if the consumer has agreed to receive updates. | Boolean
 consumer[terms] | Boolean field to store if the consumer has agreed to terms and conditions. | Boolean
 
@@ -64,11 +64,11 @@ consumer[terms] | Boolean field to store if the consumer has agreed to terms and
 Parameter | Function | Type
 --------- | -------- | ----
 id | ID of the consumer to update. Example: 540731274c616e047a000000. | String
-consumer[email] | The consumer's email address. (must be unique) | string
-consumer[password] | The password for the consumer. The password is used for consumer authentication. | string
-consumer[name] | The name of the consumer. | string
-consumer[sex] | The gender of the consumer. | string
-consumer[birthday] | The birthday of the consumer, | string
+consumer[email] | The consumer's email address. (must be unique) | String
+consumer[password] | The password for the consumer. The password is used for consumer authentication. | String
+consumer[name] | The name of the consumer. | String
+consumer[sex] | The gender of the consumer. | String
+consumer[birthday] | The birthday of the consumer, | String
 consumer[updates] | Boolean field to store if the consumer has agreed to receive updates. | Boolean
 consumer[terms] | Boolean field to store if the consumer has agreed to terms and conditions. | Boolean
 consumer[password_token] | The password token to use during password reset workflows. | String
