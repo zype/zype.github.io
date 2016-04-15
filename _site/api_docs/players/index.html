@@ -108,83 +108,89 @@
     <section id="main" class="api-docs">
       <h2 id="players">Players</h2>
 
-<p>For native players like iOS, Android, and OTT devices, Zype returns a JSON player response for you to use to play your video. The following are included in the player response: player manifest url, type of video file, ad tags, and subtitles.
-You should utilize best practices for the specific native device on how to insert your video files and ad tags. For reference,
+<p>Zype’s Dynamic Player Technology will automatically detect which device you are requesting a player from and deliver players based on your configured player rules.</p>
+
+<h3 id="web-players">Web Players</h3>
+
+<p>For web based players like desktop, iOS and Android browsers the Player API will return a JavaScript or Iframe player response that can be used to embed the player on a web page. For web based players not additional integration is required.</p>
+
+<h3 id="native-players">Native Players</h3>
+
+<p>For native devices like iOS, Android and OTT devices the Player API will return a JSON player response that can be used to play your videos. The JSON player response will include everything you need to play your video, including media files, advertising schedules and subtitles.</p>
+
+<p>You should utilize best practices for the specific native device on how to insert your video files and ad tags. For reference,
 please checkout <a href="https://github.com/zype/">Zype’s Github</a> for our open sourced SDKs.</p>
 
-<h3 id="what-to-expect-from-the-json-responses">What to expect from the JSON responses</h3>
+<hr />
 
-<p>Videos from the Zype Platform are in either “HLS” or “MP4” format. For advertising,
-the offset is the time in milliseconds from the start of the video for when the
-advertising is scheduled. You will need to parse the advertising tag natively. If there
-are subtitles, you will get the path and label of each subtitle.</p>
+<h3 id="retrieve-player">Retrieve Player</h3>
+<pre><b>GET</b> https://player.zype.com/embed/[video_id].[format]</pre>
 
-<h3 id="how-to-get-the-native-player-json">How to get the Native Player JSON</h3>
+<h4 id="parameters">Parameters</h4>
 
-<p>Because of Zype’s Dynamic Player Technology, the Zype Platform will automatically
-detect which device you are coming from to get your player. If you would like to
-get a different device response, or a native device response in a web browser, you will need to spoof the device.</p>
+<table>
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Function</th>
+      <th>Type</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>video_id</td>
+      <td>ID of the video to request a player (Example: 540731274c616e047a000000)</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>autoplay</td>
+      <td>Enable autoplay for web players (Default: false)</td>
+      <td>Boolean</td>
+    </tr>
+    <tr>
+      <td>audio</td>
+      <td>Request audio only player (Default: false)</td>
+      <td>Boolean</td>
+    </tr>
+    <tr>
+      <td>download</td>
+      <td>Request download only player (Default: false)</td>
+      <td>Boolean</td>
+    </tr>
+    <tr>
+      <td>format</td>
+      <td>The format for the player response. You can request Iframes, JavaScript or JSON players depending on device capabilities (Example: html, js, json)</td>
+      <td>String</td>
+    </tr>
+  </tbody>
+</table>
 
-<pre><code> <b>GET</b> https://player.zype.com/embed/{video_id}.json?api_key={api_key}
-</code></pre>
-
-<h4 id="roku-json-response">Roku JSON Response</h4>
-<pre><code>{
-  :outputs=&gt;
-    [
-      {
-        :url =&gt; "https://player.zype.com/manifest/abc123.m3u8",
-        :name =&gt; "hls"
-      }
-    ],
-  :advertising =&gt;
+<h3 id="player-object-json">Player Object (JSON)</h3>
+<pre>
+{
+  outputs: [
     {
-      :client =&gt; "vast",
-      :schedule =&gt; [
-        {
-          :offset =&gt; 0
-          :tag =&gt; "vast_tag"
-        }
-      ]
-    },
-    :subtitles =&gt;
-      [
-        {
-          :file =&gt; "http://u.zype.com/video/{video_id}/subtitles/English.srt?1432132167",
-          :label =&gt; "English"
-        }
-      ]
-  }
-</code></pre>
-
-<h4 id="ios-json-response">iOS JSON Response</h4>
-
-<pre><code>{
-  :files =&gt; [
-    {
-      :url =&gt; "https://player.zype.com/manifest/abc123.m3u8",
-      :name =&gt; "hls"
+      url: "https://player.zype.com/manifest/abc123.m3u8",
+      name: "hls"
     }
   ],
-  :advertising =&gt;
-    {
-      :client =&gt; "vast",
-      :schedule =&gt; [
-        {
-          :offset =&gt; 0
-          :tag =&gt; "vast_tag"
-        }
-      ]
-    }
-  :subtitles =&gt;
-    [
+  advertising: {
+    client: "vast",
+    schedule: [
       {
-        :file =&gt; "http://u.zype.com/video/{video_id}/subtitles/English.srt?1432132167",
-        :label =&gt; "English"
+        offset: 0
+        tag: "vast_tag"
       }
     ]
+  },
+  subtitles: [
+    {
+      file: "http://u.zype.com/video/{video_id}/subtitles/English.srt?1432132167",
+      label: "English"
+    }
+  ]
 }
-</code></pre>
+</pre>
 
     </section>
 

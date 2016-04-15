@@ -6,80 +6,57 @@ permalink: /api_docs/players/
 
 ## Players
 
-For native players like iOS, Android, and OTT devices, Zype returns a JSON player response for you to use to play your video. The following are included in the player response: player manifest url, type of video file, ad tags, and subtitles.
+Zype's Dynamic Player Technology will automatically detect which device you are requesting a player from and deliver players based on your configured player rules.
+
+### Web Players
+
+For web based players like desktop, iOS and Android browsers the Player API will return a JavaScript or Iframe player response that can be used to embed the player on a web page. For web based players not additional integration is required.
+
+### Native Players
+
+For native devices like iOS, Android and OTT devices the Player API will return a JSON player response that can be used to play your videos. The JSON player response will include everything you need to play your video, including media files, advertising schedules and subtitles.
+
 You should utilize best practices for the specific native device on how to insert your video files and ad tags. For reference,
 please checkout [Zype's Github](https://github.com/zype/) for our open sourced SDKs.
 
-### What to expect from the JSON responses
 
-Videos from the Zype Platform are in either "HLS" or "MP4" format. For advertising,
-the offset is the time in milliseconds from the start of the video for when the
-advertising is scheduled. You will need to parse the advertising tag natively. If there
-are subtitles, you will get the path and label of each subtitle.
+<hr>
+### Retrieve Player
+<pre><b>GET</b> https://player.zype.com/embed/[video_id].[format]</pre>
 
-### How to get the Native Player JSON
+#### Parameters
 
-Because of Zype's Dynamic Player Technology, the Zype Platform will automatically
-detect which device you are coming from to get your player. If you would like to
-get a different device response, or a native device response in a web browser, you will need to spoof the device.
+Parameter | Function | Type
+--------- | -------- | ----
+video_id | ID of the video to request a player (Example: 540731274c616e047a000000) | String
+autoplay | Enable autoplay for web players (Default: false) | Boolean
+audio | Request audio only player (Default: false) | Boolean
+download | Request download only player (Default: false) | Boolean
+format | The format for the player response. You can request Iframes, JavaScript or JSON players depending on device capabilities (Example: html, js, json) | String
 
-<pre><code> <b>GET</b> https://player.zype.com/embed/{video_id}.json?api_key={api_key}
-</code></pre>
-
-#### Roku JSON Response
-<pre><code>{
-  :outputs=>
-    [
-      {
-        :url => "https://player.zype.com/manifest/abc123.m3u8",
-        :name => "hls"
-      }
-    ],
-  :advertising =>
+### Player Object (JSON)
+<pre>
+{
+  outputs: [
     {
-      :client => "vast",
-      :schedule => [
-        {
-          :offset => 0
-          :tag => "vast_tag"
-        }
-      ]
-    },
-    :subtitles =>
-      [
-        {
-          :file => "http://u.zype.com/video/{video_id}/subtitles/English.srt?1432132167",
-          :label => "English"
-        }
-      ]
-  }
-</code></pre>
-
-#### iOS JSON Response
-
-<pre><code>{
-  :files => [
-    {
-      :url => "https://player.zype.com/manifest/abc123.m3u8",
-      :name => "hls"
+      url: "https://player.zype.com/manifest/abc123.m3u8",
+      name: "hls"
     }
   ],
-  :advertising =>
-    {
-      :client => "vast",
-      :schedule => [
-        {
-          :offset => 0
-          :tag => "vast_tag"
-        }
-      ]
-    }
-  :subtitles =>
-    [
+  advertising: {
+    client: "vast",
+    schedule: [
       {
-        :file => "http://u.zype.com/video/{video_id}/subtitles/English.srt?1432132167",
-        :label => "English"
+        offset: 0
+        tag: "vast_tag"
       }
     ]
+  },
+  subtitles: [
+    {
+      file: "http://u.zype.com/video/{video_id}/subtitles/English.srt?1432132167",
+      label: "English"
+    }
+  ]
 }
-</code></pre>
+</pre>
