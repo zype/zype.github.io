@@ -25,8 +25,8 @@ to get an access token in return.
 
 <hr />
 
-<pre><code> <b>POST</b> https://login.zype.com/oauth/token/?client_id=client_id&client_secret=client_secret&username=email&password=password&grant_type=password
-</code></pre>
+<pre> <b>POST</b> https://login.zype.com/oauth/token/?client_id=client_id&client_secret=client_secret&username=email&password=password&grant_type=password
+</pre>
 
 #### Parameters
 
@@ -42,14 +42,14 @@ grant_type | Grant Type. Use: 'password' | String
 200
 Content-Type: application/json
 
-<pre><code>{
+<pre>{
   "access_token":"abc123",
   "token_type":"bearer",
   "expires_in":7200,
   "refresh_token":"def456",
   "scope":"public"
 }
-</code></pre>
+</pre>
 
 #### Via authorization code grant flow
 
@@ -64,8 +64,8 @@ Note, the consumer id is found in the returned "resource_owner_id" value.
 
 <hr />
 
-<pre><b>GET</b> https://login.zype.com/oauth/token/info?access_token=access_token<code>
-</code></pre>
+<pre><b>GET</b> https://login.zype.com/oauth/token/info?access_token=access_token
+</pre>
 
 #### Parameters
 
@@ -77,7 +77,7 @@ access_token | The access token created via oauth | String
 200
 Content-Type: application/json
 
-<pre><code>{
+<pre>{
   "resource_owner_id": "abc123",
   "scopes": [
     "consumer"
@@ -88,7 +88,7 @@ Content-Type: application/json
     },
   "created_at": 1429544923
 }
-</code></pre>
+</pre>
 
 ### Refreshing an access token
 
@@ -96,8 +96,8 @@ Your access token will expire after 2 hours. To refresh your access token, post 
 
 <hr />
 
-<pre><code> <b>POST</b> https://api.zype.com/oauth/token/?client_id=client_id&client_secret=client_secret&refresh_token=refresh_token&grant_type=refresh_token
-</code></pre>
+<pre> <b>POST</b> https://api.zype.com/oauth/token/?client_id=client_id&client_secret=client_secret&refresh_token=refresh_token&grant_type=refresh_token
+</pre>
 
 #### Parameters
 
@@ -112,14 +112,14 @@ grant_type | Grant type. Use: 'refresh_token' | String
 200
 Content-Type: application/json
 
-<pre><code>{
+<pre>{
     "access_token":"abc123",
     "token_type":"bearer",
     "expires_in":30,
     "refresh_token":"def456",
     "scope":"public"
   }
-</code></pre>
+</pre>
 
 ### Authenticating an API request on the behalf of a consumer
 
@@ -127,8 +127,8 @@ To authenticate an API request on the behalf of a consumer, you can pass the acc
 into your API request with the access_token parameter. For example, see below how to
 request a player for a SVOD video using your access token.
 
-<pre><code> <b>GET</b> https://player.zype.com/embed/abc123.js?access_token=access_token
-</code></pre>
+<pre> <b>GET</b> https://player.zype.com/embed/abc123.js?access_token=access_token
+</pre>
 
 Parameter | Function | Type
 --------- | -------- | ----

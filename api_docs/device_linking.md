@@ -18,8 +18,8 @@ a Zype consumer to link her device, and link the device to the Zype consumer via
 
 You will first want to see if the current device id has been linked to a Zype consumer.
 <hr>
-<pre><code><b>GET</b> https://api.zype.com/pin/status/?linked_device_id=linked_device_id
-</code></pre>
+<pre><b>GET</b> https://api.zype.com/pin/status/?linked_device_id=linked_device_id
+</pre>
 
 #### Parameters
 
@@ -28,14 +28,14 @@ Parameter | Function | Type
 linked_device_id      | Unique id of the end user's device | String
 
 #### Response - Device has never been pinned.
-<pre><code>404</code></pre>
+<pre>404</pre>
 
 You will need to acquire a pin for this device.
 
 #### Response - Device has been pinned.
 
 200 Content-Type: application/json
-<pre><code>{
+<pre>{
   "response"=>
     {
       "_id"=>"1234abc",
@@ -52,7 +52,7 @@ You will need to acquire a pin for this device.
       "subscription_count"=>nil
     }
   }
-</code></pre>
+</pre>
 
 Consumer id will be nil and linked will be false if device has not been linked to a Zype consumer.
 Note, pin expires every 30 minutes. You will need to reacquire the pin after 30 minutes.
@@ -69,8 +69,8 @@ every 30 minutes. You will need to reacquire the pin after 30 minutes.
 
 <hr>
 
-<pre><code><b>POST</b> https://api.zype.com/pin/acquire/?linked_device_id=linked_device_id&type=type
-</code></pre>
+<pre><b>POST</b> https://api.zype.com/pin/acquire/?linked_device_id=linked_device_id&type=type
+</pre>
 
 #### Parameters
 
@@ -82,7 +82,7 @@ type | Type of device. Example: roku | String
 #### Response
 
 200 Content-Type: application/json
-<pre><code>{
+<pre>{
   "response"=>
     {
       "_id"=>"abc123",
@@ -98,7 +98,7 @@ type | Type of device. Example: roku | String
       "linked"=>false
       }
     }
-</code></pre>
+</pre>
 
 <hr>
 
@@ -108,8 +108,8 @@ Takes the pin and the consumer id and links the Zype consumer to the device.
 
 <hr>
 
-<pre><code> <b>PUT</b> https://api.zype.com/pin/link/?consumer_id=consumer_id&pin=pin
-</code></pre>
+<pre> <b>PUT</b> https://api.zype.com/pin/link/?consumer_id=consumer_id&pin=pin
+</pre>
 
 #### Parameters
 
@@ -122,7 +122,7 @@ pin | The acquired pin. Example: zabc123 | String
 
 200 Content-Type: application/json
 
-<pre><code>{
+<pre>{
   "response"=>
     {
       "_id"=>"abc123",
@@ -138,6 +138,6 @@ pin | The acquired pin. Example: zabc123 | String
         [ "test1""]
       }
     }
-</code></pre>
+</pre>
 
 <hr>

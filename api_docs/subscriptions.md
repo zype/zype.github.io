@@ -9,8 +9,8 @@ Lists all Subscriptions.
 <hr>
 ### List all Subscriptions
 <hr>
-<pre><code><b>GET</b> https://api.zype.com/subscriptions/?page=page&per_page=per_page
-</code></pre>
+<pre><b>GET</b> https://api.zype.com/subscriptions/?page=page&per_page=per_page
+</pre>
 
 #### Parameters
 
@@ -27,7 +27,7 @@ id!       | Exclude records by ID | String
 Content-Type: application/json
 
 
-<pre><code>{
+<pre>{
   "response": [
     {
       "_id": "54579a714c616e0389010000",
@@ -73,13 +73,13 @@ Content-Type: application/json
     pages: 1
   }
 }
-</code></pre>
+</pre>
 
 <hr>
 ### Create a Subscription
 <hr>
-<pre><code><b>POST</b> https://api.zype.com/subscriptions/{subscription}
-</code></pre>
+<pre><b>POST</b> https://api.zype.com/subscriptions/{subscription}
+</pre>
 
 #### Parameters
 
@@ -95,7 +95,7 @@ coupon_code | The code of the coupon, if used. This parameter is optional | Stri
 201
 Content-Type: application/json
 
-<pre><code>{
+<pre>{
   "response": {
     {
       "_id": "54579a714c616e0389010000",
@@ -134,15 +134,15 @@ Content-Type: application/json
     }
   }
 }
-</code></pre>
+</pre>
 
 ## Subscription
 Lists descriptive information about a Subscription
 <hr>
 ###Retrieve a Subscription
 <hr>
-<pre><code><b>GET</b> https://api.zype.com/subscriptions/{id}
-</code></pre>
+<pre><b>GET</b> https://api.zype.com/subscriptions/{id}
+</pre>
 
 #### Parameters
 
@@ -157,7 +157,7 @@ Content-Type: application/json
 200
 Content-Type: application/json
 
-<pre><code>{
+<pre>{
   "response": {
     {
       "_id": "54579a714c616e0389010000",
@@ -196,13 +196,13 @@ Content-Type: application/json
     }
   }
 }
-</code></pre>
+</pre>
 
 <hr>
 ### Update a Subscription
 <hr>
-<pre><code><b>PUT</b> https://api.zype.com/subscriptions/{id}
-</code></pre>
+<pre><b>PUT</b> https://api.zype.com/subscriptions/{id}
+</pre>
 
 #### Parameters
 
@@ -221,7 +221,7 @@ Content-Type: application/json
 201
 Content-Type: application/json
 
-<pre><code>{
+<pre>{
   "response": {
     {
       "_id": "54579a714c616e0389010000",
@@ -260,13 +260,13 @@ Content-Type: application/json
     }
   }
 }
-</code></pre>
+</pre>
 
 <hr>
 ### Remove a Subscription
 <hr>
-<pre><code><b>DELETE</b> https://api.zype.com/subscriptions/{id}
-</code></pre>
+<pre><b>DELETE</b> https://api.zype.com/subscriptions/{id}
+</pre>
 
 #### Parameters
 

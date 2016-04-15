@@ -9,10 +9,10 @@ Lists all Video Imports. Video Imports are created via video sources.
 <hr>
 ### List all Video Imports
 <hr>
-<pre><code><b>GET</b> https://api.zype.com/video_imports?page=page&per_page=per_page&
+<pre><b>GET</b> https://api.zype.com/video_imports?page=page&per_page=per_page&
 q=q&keyword=keyword&status=status&active=active&
 id=id&id!=id&video_source_id=video_source_id&q=q&keyword=keyword
-</code></pre>
+</pre>
 
 #### Parameters
 
@@ -33,7 +33,7 @@ video_source_id | Query by video source | String
 200
 Content-Type: application/json
 
-<pre><code>{
+<pre>{
   "response"=> [
     {
       "_id"=>"5499c02d4c616e0545000000",
@@ -66,18 +66,18 @@ Content-Type: application/json
     "youtube_id"=>"mTu4cXW9H_Q"
   }],
   "pagination"=>{"current"=>1, "previous"=>nil, "next"=>2, "per_page"=>1, "pages"=>500}}
-</code></pre>
+</pre>
 
 <hr>
 ### Retrieve a Video Import
 <hr>
-<pre><code><b>GET</b> https://api.zype.com/video_imports/{id}
-</code></pre>
+<pre><b>GET</b> https://api.zype.com/video_imports/{id}
+</pre>
 
 #### Response
 200
 Content-Type: application/json
-<pre><code>{
+<pre>{
   "response": {
     "_id": "5499c0334c616e0545bd0200",
     "active": true,
@@ -122,13 +122,13 @@ Content-Type: application/json
     }
   }
 
-</code></pre>
+</pre>
 
 <hr>
 ### Add Video from a Video Import
 <hr>
-<pre><code><b>PUT</b> https://api.zype.com/video_imports/{id}/add_video/&video_id=video_id
-</code></pre>
+<pre><b>PUT</b> https://api.zype.com/video_imports/{id}/add_video/&video_id=video_id
+</pre>
 
 #### Parameters
 
@@ -144,7 +144,7 @@ Content-Type: application/json
 201
 Content-Type: application/json
 
-<pre><code>{
+<pre>{
   "response"=> {
     "_id"=>"549b3e8a4c616e04f4040000",
     "active"=>false,
@@ -193,4 +193,4 @@ Content-Type: application/json
     ]
   }
 }
-</pre></code>
+</pre>

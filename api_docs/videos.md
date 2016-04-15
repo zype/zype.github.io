@@ -110,26 +110,24 @@ Parameter | Function | Type
 id        | ID of the record to delete (Example: 5389352e69702d401b000000) | String
 
 ### Add Zobject(s) to Video
-<pre><b>PUT</b> https://api.zype.com/videos/[id]/add_zobjects
-</pre>
+<pre><b>PUT</b> https://api.zype.com/videos/[id]/add_zobjects</pre>
 
 #### Parameters
 
 Parameter | Function | Type
 --------- | -------- | ----
 id        | ID of the record (Example: 5389352e69702d401b000000) | String
-zobject_id[] | An array containing all of the zobject id's that you want to add to the video | Array
+zobject_id[] | The zobject IDs to add | Array
 
 ### Remove Zobject(s) from Video
-<pre><b>PUT</b> https://api.zype.com/videos/[id]/remove_zobjects
-</pre>
+<pre><b>PUT</b> https://api.zype.com/videos/[id]/remove_zobjects</pre>
 
 #### Parameters
 
 Parameter | Function | Type
 --------- | -------- | ----
 id        | ID of the record (Example: 5389352e69702d401b000000) | String
-zobject_id[] | An array containing all of the zobject id's that you want to dissociate from the video | Array
+zobject_id[] | The zobject IDs to remove | Array
 
 ### Video Object
 

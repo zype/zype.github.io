@@ -113,10 +113,10 @@
 <h3 id="list-all-video-imports">List all Video Imports</h3>
 <hr />
 
-<pre><code><b>GET</b> https://api.zype.com/video_imports?page=page&amp;per_page=per_page&amp;
+<pre><b>GET</b> https://api.zype.com/video_imports?page=page&amp;per_page=per_page&amp;
 q=q&amp;keyword=keyword&amp;status=status&amp;active=active&amp;
 id=id&amp;id!=id&amp;video_source_id=video_source_id&amp;q=q&amp;keyword=keyword
-</code></pre>
+</pre>
 
 <h4 id="parameters">Parameters</h4>
 
@@ -181,7 +181,7 @@ id=id&amp;id!=id&amp;video_source_id=video_source_id&amp;q=q&amp;keyword=keyword
 <p>200
 Content-Type: application/json</p>
 
-<pre><code>{
+<pre>{
   "response"=&gt; [
     {
       "_id"=&gt;"5499c02d4c616e0545000000",
@@ -214,20 +214,20 @@ Content-Type: application/json</p>
     "youtube_id"=&gt;"mTu4cXW9H_Q"
   }],
   "pagination"=&gt;{"current"=&gt;1, "previous"=&gt;nil, "next"=&gt;2, "per_page"=&gt;1, "pages"=&gt;500}}
-</code></pre>
+</pre>
 
 <hr />
 
 <h3 id="retrieve-a-video-import">Retrieve a Video Import</h3>
 <hr />
 
-<pre><code><b>GET</b> https://api.zype.com/video_imports/{id}
-</code></pre>
+<pre><b>GET</b> https://api.zype.com/video_imports/{id}
+</pre>
 
 <h4 id="response-1">Response</h4>
 <p>200
 Content-Type: application/json</p>
-<pre><code>{
+<pre>{
   "response": {
     "_id": "5499c0334c616e0545bd0200",
     "active": true,
@@ -272,15 +272,15 @@ Content-Type: application/json</p>
     }
   }
 
-</code></pre>
+</pre>
 
 <hr />
 
 <h3 id="add-video-from-a-video-import">Add Video from a Video Import</h3>
 <hr />
 
-<pre><code><b>PUT</b> https://api.zype.com/video_imports/{id}/add_video/&amp;video_id=video_id
-</code></pre>
+<pre><b>PUT</b> https://api.zype.com/video_imports/{id}/add_video/&amp;video_id=video_id
+</pre>
 
 <h4 id="parameters-1">Parameters</h4>
 
@@ -309,7 +309,7 @@ Content-Type: application/json</p>
 <p>201
 Content-Type: application/json</p>
 
-<pre><code>{
+<pre>{
   "response"=&gt; {
     "_id"=&gt;"549b3e8a4c616e04f4040000",
     "active"=&gt;false,
@@ -358,7 +358,6 @@ Content-Type: application/json</p>
     ]
   }
 }
-</code>
 </pre>
 
     </section>

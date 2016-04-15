@@ -8,8 +8,8 @@ permalink: /api_docs/distribution_endpoints/
 <hr>
 ### List all Distribution Endpoints
 <hr>
-<pre><code><b>GET</b> https://api.zype.com/distribution_endpoints?page=page&per_page=per_page
-</code></pre>
+<pre><b>GET</b> https://api.zype.com/distribution_endpoints?page=page&per_page=per_page
+</pre>
 
 #### Parameters
 
@@ -22,7 +22,7 @@ per_page | The number of records to return (Example: 10) | Integer
 200
 Content-Type: application/json
 
-<pre><code>{
+<pre>{
 "response": [
     {
       "_id":"5536b4fc636261a7821b0000",
@@ -55,12 +55,12 @@ Content-Type: application/json
     "pages": 1
   }
 }
-</code></pre>
+</pre>
 
 ### Retrieve a Distribution Endpoint
 <hr>
-<pre><code><b>GET</b> https://api.zype.com/distribution_endpoints/{id}?page=page&per_page=per_page
-</code></pre>
+<pre><b>GET</b> https://api.zype.com/distribution_endpoints/{id}?page=page&per_page=per_page
+</pre>
 
 #### Parameters
 
@@ -73,7 +73,7 @@ id | ID of the record to retrieve (Example: 5389352e69702d401b000000) | String
 200
 Content-Type: application/json
 
-<pre><code>{
+<pre>{
 "response":
   {
     "_id": "5536b4fc636261a7821b0000",

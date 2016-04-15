@@ -128,8 +128,8 @@ to get an access token in return.</p>
 
 <hr />
 
-<pre><code> <b>POST</b> https://login.zype.com/oauth/token/?client_id=client_id&amp;client_secret=client_secret&amp;username=email&amp;password=password&amp;grant_type=password
-</code></pre>
+<pre> <b>POST</b> https://login.zype.com/oauth/token/?client_id=client_id&amp;client_secret=client_secret&amp;username=email&amp;password=password&amp;grant_type=password
+</pre>
 
 <h4 id="parameters">Parameters</h4>
 
@@ -174,14 +174,14 @@ to get an access token in return.</p>
 <p>200
 Content-Type: application/json</p>
 
-<pre><code>{
+<pre>{
   "access_token":"abc123",
   "token_type":"bearer",
   "expires_in":7200,
   "refresh_token":"def456",
   "scope":"public"
 }
-</code></pre>
+</pre>
 
 <h4 id="via-authorization-code-grant-flow">Via authorization code grant flow</h4>
 
@@ -196,8 +196,8 @@ Note, the consumer id is found in the returned “resource_owner_id” value.</p
 
 <hr />
 
-<pre><b>GET</b> https://login.zype.com/oauth/token/info?access_token=access_token<code>
-</code></pre>
+<pre><b>GET</b> https://login.zype.com/oauth/token/info?access_token=access_token
+</pre>
 
 <h4 id="parameters-1">Parameters</h4>
 
@@ -222,7 +222,7 @@ Note, the consumer id is found in the returned “resource_owner_id” value.</p
 <p>200
 Content-Type: application/json</p>
 
-<pre><code>{
+<pre>{
   "resource_owner_id": "abc123",
   "scopes": [
     "consumer"
@@ -233,7 +233,7 @@ Content-Type: application/json</p>
     },
   "created_at": 1429544923
 }
-</code></pre>
+</pre>
 
 <h3 id="refreshing-an-access-token">Refreshing an access token</h3>
 
@@ -241,8 +241,8 @@ Content-Type: application/json</p>
 
 <hr />
 
-<pre><code> <b>POST</b> https://api.zype.com/oauth/token/?client_id=client_id&amp;client_secret=client_secret&amp;refresh_token=refresh_token&amp;grant_type=refresh_token
-</code></pre>
+<pre> <b>POST</b> https://api.zype.com/oauth/token/?client_id=client_id&amp;client_secret=client_secret&amp;refresh_token=refresh_token&amp;grant_type=refresh_token
+</pre>
 
 <h4 id="parameters-2">Parameters</h4>
 
@@ -282,14 +282,14 @@ Content-Type: application/json</p>
 <p>200
 Content-Type: application/json</p>
 
-<pre><code>{
+<pre>{
     "access_token":"abc123",
     "token_type":"bearer",
     "expires_in":30,
     "refresh_token":"def456",
     "scope":"public"
   }
-</code></pre>
+</pre>
 
 <h3 id="authenticating-an-api-request-on-the-behalf-of-a-consumer">Authenticating an API request on the behalf of a consumer</h3>
 
@@ -297,8 +297,8 @@ Content-Type: application/json</p>
 into your API request with the access_token parameter. For example, see below how to
 request a player for a SVOD video using your access token.</p>
 
-<pre><code> <b>GET</b> https://player.zype.com/embed/abc123.js?access_token=access_token
-</code></pre>
+<pre> <b>GET</b> https://player.zype.com/embed/abc123.js?access_token=access_token
+</pre>
 
 <table>
   <thead>

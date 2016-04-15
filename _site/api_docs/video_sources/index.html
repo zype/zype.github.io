@@ -112,9 +112,9 @@
 <h3 id="list-all-video-sources">List all Video Sources</h3>
 <hr />
 
-<pre><code><b>GET</b> https://api.zype.com/video_sources?page=page&amp;per_page=per_page&amp;
+<pre><b>GET</b> https://api.zype.com/video_sources?page=page&amp;per_page=per_page&amp;
 keyword=keyword
-</code></pre>
+</pre>
 
 <h4 id="parameters">Parameters</h4>
 
@@ -164,7 +164,7 @@ keyword=keyword
 <p>200
 Content-Type: application/json</p>
 
-<pre><code>{
+<pre>{
   "response": [
   {
     "_id": "5468f40d4c616e0a770d0000",
@@ -225,15 +225,15 @@ Content-Type: application/json</p>
         "pages": 1
       }
     }
-</code></pre>
+</pre>
 
 <hr />
 
 <h3 id="create-a-video-source">Create a Video Source</h3>
 <hr />
 
-<pre><code><b>POST</b> https://api.zype.com/video_sources/?source=source&amp;video_source[attributes]=attributes
-</code></pre>
+<pre><b>POST</b> https://api.zype.com/video_sources/?source=source&amp;video_source[attributes]=attributes
+</pre>
 
 <table>
   <thead>
@@ -266,7 +266,7 @@ Content-Type: application/json</p>
 <p>201
 Content-Type: application/json</p>
 
-<pre><code>{
+<pre>{
   "response"=&gt;
   {
     "_id"=&gt;"549b4dac4c616e3a3e000000",
@@ -282,21 +282,21 @@ Content-Type: application/json</p>
     "video_count"=&gt;0
   }
 }
-</code></pre>
+</pre>
 
 <hr />
 
 <h3 id="retrieve-a-single-video-source">Retrieve a Single Video Source</h3>
 <hr />
 
-<pre><code><b>GET</b> https://api.zype.com/video_sources/{id}/
-</code></pre>
+<pre><b>GET</b> https://api.zype.com/video_sources/{id}/
+</pre>
 
 <h4 id="response-2">Response</h4>
 <p>200
 Content-Type: application/json</p>
 
-<pre><code>{
+<pre>{
   "response"=&gt;
     {
       "_id"=&gt;"549b4dac4c616e3a3e000000",
@@ -312,15 +312,15 @@ Content-Type: application/json</p>
       "video_count"=&gt;0
     }
 }
-</code></pre>
+</pre>
 
 <hr />
 
 <h3 id="update-a-video-source">Update a Video Source</h3>
 <hr />
 
-<pre><code><b>PUT</b> https://api.zype.com/video_sources/{id}/?video_source[attributes]=attributes
-</code></pre>
+<pre><b>PUT</b> https://api.zype.com/video_sources/{id}/?video_source[attributes]=attributes
+</pre>
 
 <table>
   <thead>
@@ -348,7 +348,7 @@ Content-Type: application/json</p>
 <p>201
 Content-Type: application/json</p>
 
-<pre><code>{
+<pre>{
   "response"=&gt;
   {
     "_id"=&gt;"549b4dac4c616e3a3e000000",
@@ -364,7 +364,7 @@ Content-Type: application/json</p>
     "video_count"=&gt;0
   }
 }
-</code></pre>
+</pre>
 
 <hr />
 
@@ -373,8 +373,8 @@ Content-Type: application/json</p>
 
 <p>Note, you cannot delete a Zype video source.</p>
 
-<pre><code><b>DELETE</b> https://api.zype.com/video_sources/{id}/
-</code></pre>
+<pre><b>DELETE</b> https://api.zype.com/video_sources/{id}/
+</pre>
 
 <h4 id="response-4">Response</h4>
 <p>204</p>

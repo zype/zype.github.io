@@ -9,8 +9,8 @@ Lists all plans.
 <hr>
 ### List all Plans
 <hr>
-<pre><code><b>GET</b> https://api.zype.com/plans/?page=page&per_page=per_page
-</code></pre>
+<pre><b>GET</b> https://api.zype.com/plans/?page=page&per_page=per_page
+</pre>
 
 #### Parameters
 
@@ -28,7 +28,7 @@ id!       | Exclude records by ID | String
 Content-Type: application/json
 
 
-<pre><code>{
+<pre>{
   "response": [
     {
       "_id": "544813e74c616e0dc0000000",
@@ -54,7 +54,7 @@ Content-Type: application/json
     "pages": 1
   }
 }
-</code></pre>
+</pre>
 
 <hr>
 
@@ -63,8 +63,8 @@ Lists descriptive information about a plan
 <hr>
 ###Retrieve a Plan
 <hr>
-<pre><code><b>GET</b> https://api.zype.com/plan/{id}
-</code></pre>
+<pre><b>GET</b> https://api.zype.com/plan/{id}
+</pre>
 
 #### Parameters
 
@@ -79,7 +79,7 @@ Content-Type: application/json
 200
 Content-Type: application/json
 
-<pre><code>{
+<pre>{
   "response": {
       "_id": "544813e74c616e0dc0000000",
       "_keywords": [],
@@ -97,4 +97,4 @@ Content-Type: application/json
     }
   }
 }
-</code></pre>
+</pre>

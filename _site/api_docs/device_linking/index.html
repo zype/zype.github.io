@@ -121,8 +121,8 @@ a Zype consumer to link her device, and link the device to the Zype consumer via
 <p>You will first want to see if the current device id has been linked to a Zype consumer.</p>
 <hr />
 
-<pre><code><b>GET</b> https://api.zype.com/pin/status/?linked_device_id=linked_device_id
-</code></pre>
+<pre><b>GET</b> https://api.zype.com/pin/status/?linked_device_id=linked_device_id
+</pre>
 
 <h4 id="parameters">Parameters</h4>
 
@@ -144,14 +144,14 @@ a Zype consumer to link her device, and link the device to the Zype consumer via
 </table>
 
 <h4 id="response---device-has-never-been-pinned">Response - Device has never been pinned.</h4>
-<pre><code>404</code></pre>
+<pre>404</pre>
 
 <p>You will need to acquire a pin for this device.</p>
 
 <h4 id="response---device-has-been-pinned">Response - Device has been pinned.</h4>
 
 <p>200 Content-Type: application/json</p>
-<pre><code>{
+<pre>{
   "response"=&gt;
     {
       "_id"=&gt;"1234abc",
@@ -168,7 +168,7 @@ a Zype consumer to link her device, and link the device to the Zype consumer via
       "subscription_count"=&gt;nil
     }
   }
-</code></pre>
+</pre>
 
 <p>Consumer id will be nil and linked will be false if device has not been linked to a Zype consumer.
 Note, pin expires every 30 minutes. You will need to reacquire the pin after 30 minutes.
@@ -185,8 +185,8 @@ every 30 minutes. You will need to reacquire the pin after 30 minutes.</p>
 
 <hr />
 
-<pre><code><b>POST</b> https://api.zype.com/pin/acquire/?linked_device_id=linked_device_id&amp;type=type
-</code></pre>
+<pre><b>POST</b> https://api.zype.com/pin/acquire/?linked_device_id=linked_device_id&amp;type=type
+</pre>
 
 <h4 id="parameters-1">Parameters</h4>
 
@@ -215,7 +215,7 @@ every 30 minutes. You will need to reacquire the pin after 30 minutes.</p>
 <h4 id="response">Response</h4>
 
 <p>200 Content-Type: application/json</p>
-<pre><code>{
+<pre>{
   "response"=&gt;
     {
       "_id"=&gt;"abc123",
@@ -231,7 +231,7 @@ every 30 minutes. You will need to reacquire the pin after 30 minutes.</p>
       "linked"=&gt;false
       }
     }
-</code></pre>
+</pre>
 
 <hr />
 
@@ -241,8 +241,8 @@ every 30 minutes. You will need to reacquire the pin after 30 minutes.</p>
 
 <hr />
 
-<pre><code> <b>PUT</b> https://api.zype.com/pin/link/?consumer_id=consumer_id&amp;pin=pin
-</code></pre>
+<pre> <b>PUT</b> https://api.zype.com/pin/link/?consumer_id=consumer_id&amp;pin=pin
+</pre>
 
 <h4 id="parameters-2">Parameters</h4>
 
@@ -272,7 +272,7 @@ every 30 minutes. You will need to reacquire the pin after 30 minutes.</p>
 
 <p>200 Content-Type: application/json</p>
 
-<pre><code>{
+<pre>{
   "response"=&gt;
     {
       "_id"=&gt;"abc123",
@@ -288,7 +288,7 @@ every 30 minutes. You will need to reacquire the pin after 30 minutes.</p>
         [ "test1""]
       }
     }
-</code></pre>
+</pre>
 
 <hr />
 

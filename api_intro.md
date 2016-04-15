@@ -30,7 +30,7 @@ to provide your API key in the request. To authenticate your requests, supply yo
 
 The second way to authenticate is to include your API key in the query param.
 
-<pre><code>https://api.zype.com/videos/?api_key=[api_key]</code></pre>
+<pre>https://api.zype.com/videos/?api_key=[api_key]</pre>
 
 Currently, Zype provides three types of API Keys for you to use for authentication.
 
@@ -90,7 +90,7 @@ Paging data is returned in the 'pagination' element on list requests. The follow
 
 Example:
 
-<pre><code>{
+<pre>{
     response: { ... },
     pagination: {
         current: 1,
@@ -100,7 +100,7 @@ Example:
         pages: 5
     }
 }
-</code></pre>
+</pre>
 <hr>
 
 ## Video Formats
