@@ -15,12 +15,15 @@ permalink: /api_docs/revenue_models/
 
 Parameter | Function | Type
 --------- | -------- | ----
+created_at | Filter the records returned by created date. You can use greater than or less than filters by adding a suffix: '.gt', '.gte', '.lt', 'lte'. Example: created_at.gte=2015-01-01 | Date
 id        | Query for a revenue model by ID | String
 id!       | Exclude a revenue model from the query | String
+order     | Order revenue models in ascending or descending order (Example: asc/desc) | String
+page      | The page number of records to return (zero indexed). Example: 0. | Number
+per_page  | The number of records to return. Example: 10. | Number
 q         | A query string for searching for revenue models | String
+sort      | Sort revenue models on the specified field | String
 title     | Filter revenue models by title | String
-page | The page number of records to return (zero indexed). Example: 0. | Number
-per_page | The number of records to return. Example: 10. | Number
 
 ###Retrieve a Revenue Model
 <pre><b>GET</b> https://api.zype.com/revenue_models/[id]

@@ -126,18 +126,18 @@
   </thead>
   <tbody>
     <tr>
-      <td>page</td>
-      <td>The page number of records to return (zero indexed). Example: 0.</td>
-      <td>Number</td>
+      <td>braintree_id</td>
+      <td>Filter consumers by Braintree ID</td>
+      <td>String</td>
     </tr>
     <tr>
-      <td>per_page</td>
-      <td>The number of records to return. Example: 10.</td>
-      <td>Number</td>
+      <td>created_at</td>
+      <td>Filter the records returned by created date. You can use greater than or less than filters by adding a suffix: ‘.gt’, ‘.gte’, ‘.lt’, ‘lte’. Example: created_at.gte=2015-01-01</td>
+      <td>Date</td>
     </tr>
     <tr>
-      <td>q</td>
-      <td>A query string for searching for consumers</td>
+      <td>email</td>
+      <td>Filter consumers by email</td>
       <td>String</td>
     </tr>
     <tr>
@@ -151,8 +151,23 @@
       <td>String</td>
     </tr>
     <tr>
-      <td>email</td>
-      <td>Filter consumers by email</td>
+      <td>page</td>
+      <td>The page number of records to return (zero indexed). Example: 0.</td>
+      <td>Number</td>
+    </tr>
+    <tr>
+      <td>password_token</td>
+      <td>Filter consumers by password reset token</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>per_page</td>
+      <td>The number of records to return. Example: 10.</td>
+      <td>Number</td>
+    </tr>
+    <tr>
+      <td>q</td>
+      <td>A query string for searching for consumers</td>
       <td>String</td>
     </tr>
     <tr>
@@ -161,24 +176,9 @@
       <td>String</td>
     </tr>
     <tr>
-      <td>password_token</td>
-      <td>Filter consumers by password reset token</td>
-      <td>String</td>
-    </tr>
-    <tr>
       <td>stripe_id</td>
       <td>Filter consumers by Stripe ID</td>
       <td>String</td>
-    </tr>
-    <tr>
-      <td>braintree_id</td>
-      <td>Filter consumers by Braintree ID</td>
-      <td>String</td>
-    </tr>
-    <tr>
-      <td>created_at</td>
-      <td>Filter the records returned by created date. You can use greater than or less than filters by adding a suffix: ‘.gt’, ‘.gte’, ‘.lt’, ‘lte’. Example: created_at.gte=2015-01-01</td>
-      <td>Date</td>
     </tr>
   </tbody>
 </table>

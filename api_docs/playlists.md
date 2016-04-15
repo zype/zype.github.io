@@ -24,6 +24,7 @@ page | The page number of records to return (zero indexed). Example: 0. | Number
 per_page | The number of records to return. Example: 10. | Number
 q         | A query string for searching for playlists. | String
 sort      | Sort playlists on the specified field | String
+title     | Filter playlists by title | String
 
 ### Create a Playlist
 <pre><b>POST</b> https://api.zype.com/playlists</pre>
@@ -93,7 +94,7 @@ video_id[]  | A comma separated list of video IDs to add to the playlist | Array
 Parameter | Function | Type
 --------- | -------- | ----
 id        | ID of the playlist. Example: 5389352e69702d401b000000. | String
-video_id[]  | A comma separated list of video IDs to remove from the playlist | Array
+video_id[]  | A comma separated list of video IDs to remove from the playlist | String
 
 ### Playlist Object
 

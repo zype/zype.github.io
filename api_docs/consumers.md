@@ -15,17 +15,17 @@ permalink: /api_docs/consumers/
 
 Parameter | Function | Type
 --------- | -------- | ----
-page      | The page number of records to return (zero indexed). Example: 0. | Number
-per_page  | The number of records to return. Example: 10. | Number
-q         | A query string for searching for consumers | String
-id        | Query for a consumer by id | String
-id!       | Exclude a consumer from the query | String
-email     | Filter consumers by email | String
-rss_token | Filter consumers by RSS token | String
-password_token | Filter consumers by password reset token | String
-stripe_id | Filter consumers by Stripe ID | String
 braintree_id | Filter consumers by Braintree ID | String
 created_at | Filter the records returned by created date. You can use greater than or less than filters by adding a suffix: '.gt', '.gte', '.lt', 'lte'. Example: created_at.gte=2015-01-01 | Date
+email     | Filter consumers by email | String
+id        | Query for a consumer by id | String
+id!       | Exclude a consumer from the query | String
+page      | The page number of records to return (zero indexed). Example: 0. | Number
+password_token | Filter consumers by password reset token | String
+per_page  | The number of records to return. Example: 10. | Number
+q         | A query string for searching for consumers | String
+rss_token | Filter consumers by RSS token | String
+stripe_id | Filter consumers by Stripe ID | String
 
 ###Retrieve a Consumer
 <pre><b>GET</b> https://api.zype.com/consumers/[id]

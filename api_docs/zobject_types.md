@@ -19,6 +19,8 @@ id        | Query for a zobject type by ID | String
 id!       | Exclude a zobject type from the query | String
 page | The page number of records to return (zero indexed). Example: 0. | Number
 per_page | The number of records to return. Example: 10. | Number
+q         | A query string for searching for zobject types | String
+
 
 ###Retrieve a Zobject Type
 <pre><b>GET</b> https://api.zype.com/zobject_types/[id]

@@ -15,12 +15,15 @@ permalink: /api_docs/devices/
 
 Parameter | Function | Type
 --------- | -------- | ----
+created_at | Filter the records returned by created date. You can use greater than or less than filters by adding a suffix: '.gt', '.gte', '.lt', 'lte'. Example: created_at.gte=2015-01-01 | Date
 id        | Query for a device by ID | String
 id!       | Exclude a device from the query | String
+order     | Order devices in ascending or descending order (Example: asc/desc) | String
+page      | The page number of records to return (zero indexed). Example: 0. | Number
+per_page  | The number of records to return. Example: 10. | Number
 q         | A query string for searching for devices | String
+sort      | Sort devices on the specified field | String
 title     | Filter devices by title | String
-page | The page number of records to return (zero indexed). Example: 0. | Number
-per_page | The number of records to return. Example: 10. | Number
 
 ###Retrieve a Device
 <pre><b>GET</b> https://api.zype.com/devices/[id]

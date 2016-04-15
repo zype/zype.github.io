@@ -17,10 +17,12 @@ Parameter | Function | Type
 --------- | -------- | ----
 id        | Query for a category by ID | String
 id!       | Exclude a category from the query | String
-q         | A query string for searching for categories | String
-title     | Filter categories by title | String
+order     | Order categories in ascending or descending order (Example: asc/desc) | String
 page | The page number of records to return (zero indexed). Example: 0. | Number
 per_page | The number of records to return. Example: 10. | Number
+q         | A query string for searching for categories | String
+sort      | Sort categories on the specified field | String
+title     | Filter categories by title | String
 
 ###Retrieve a Category
 <pre><b>GET</b> https://api.zype.com/categories/[id]

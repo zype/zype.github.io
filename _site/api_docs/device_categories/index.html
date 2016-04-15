@@ -126,23 +126,23 @@
   </thead>
   <tbody>
     <tr>
+      <td>created_at</td>
+      <td>Filter the records returned by created date. You can use greater than or less than filters by adding a suffix: ‘.gt’, ‘.gte’, ‘.lt’, ‘lte’. Example: created_at.gte=2015-01-01</td>
+      <td>Date</td>
+    </tr>
+    <tr>
       <td>id</td>
-      <td>Query for a device category by ID</td>
+      <td>Query for a device by ID</td>
       <td>String</td>
     </tr>
     <tr>
       <td>id!</td>
-      <td>Exclude a device category from the query</td>
+      <td>Exclude a device from the query</td>
       <td>String</td>
     </tr>
     <tr>
-      <td>q</td>
-      <td>A query string for searching for device categories</td>
-      <td>String</td>
-    </tr>
-    <tr>
-      <td>title</td>
-      <td>Filter device_categories by title</td>
+      <td>order</td>
+      <td>Order device categories in ascending or descending order (Example: asc/desc)</td>
       <td>String</td>
     </tr>
     <tr>
@@ -154,6 +154,21 @@
       <td>per_page</td>
       <td>The number of records to return. Example: 10.</td>
       <td>Number</td>
+    </tr>
+    <tr>
+      <td>q</td>
+      <td>A query string for searching for device categories</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>sort</td>
+      <td>Sort device categories on the specified field</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>title</td>
+      <td>Filter device categories by title</td>
+      <td>String</td>
     </tr>
   </tbody>
 </table>
