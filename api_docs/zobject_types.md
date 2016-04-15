@@ -15,11 +15,11 @@ permalink: /api_docs/zobject_types/
 
 Parameter | Function | Type
 --------- | -------- | ----
-id        | Query for a zobject type by ID | String
-id!       | Exclude a zobject type from the query | String
-page | The page number of records to return (zero indexed). Example: 0. | Number
-per_page | The number of records to return. Example: 10. | Number
-q         | A query string for searching for zobject types | String
+id        | Filter records by ID | String
+id!       | Exclude records by ID | String
+page | The page number of records to return (Example: 1) | Number
+per_page | The number of records to return (Example: 10) | Number
+q         | Filter records by keyword | String
 
 
 ###Retrieve a Zobject Type
@@ -30,7 +30,7 @@ q         | A query string for searching for zobject types | String
 
 Parameter | Function | Type
 --------- | -------- | ----
-id        | ID of the zobject type. Example: 5389352e69702d401b000000. | String
+id        | ID of the record (Example: 5389352e69702d401b000000) | String
 
 ###Create a Zobject Type
 <pre><b>POST</b> https://api.zype.com/zobject_types
@@ -40,10 +40,10 @@ id        | ID of the zobject type. Example: 5389352e69702d401b000000. | String
 
 Parameter | Function | Type
 --------- | -------- | ----
-zobject_type[title] | Title of the zobject type. (must be unique) | String
-zobject_type[description] | Description of the zobject type. | String
-zobject_type[videos_enabled] | Indicates whether videos can be associated with instances of the zobject type. | String
-zobject_type[zobject_attributes] | An indexed collection specifying the custom attributes for the zobject type. | Array
+zobject_type[title] | Title of the zobject type (must be unique) | String
+zobject_type[description] | Description of the zobject type | String
+zobject_type[videos_enabled] | Indicates whether videos can be associated with instances of the zobject type | String
+zobject_type[zobject_attributes] | An indexed collection specifying the custom attributes for the zobject type | Array
 zobject_type[zobject_attributes][x][field_name] | Name of the zobject type custom attribute | String
 zobject_type[zobject_attributes][x][field_type] | Type of the zobject type custom attribute. Example: integer | String
 zobject_type[zobject_attributes][x][description] | Description of the zobject type custom attribute | String
@@ -55,12 +55,12 @@ zobject_type[zobject_attributes][x][description] | Description of the zobject ty
 
 Parameter | Function | Type
 --------- | -------- | ----
-id | ID of the zobject type to update. Example: 540731274c616e047a000000. | String
-zobject_type[title] | Title of the zobject type. (must be unique) | String
-zobject_type[description] | Description of the zobject type. | String
-zobject_type[videos_enabled] | Indicates whether videos can be associated with instances of the zobject type. | String
-zobject_type[zobject_attributes] | An indexed collection specifying the custom attributes for the zobject type. | Array
-zobject_type[zobject_attributes][x][id] | ID of the zobject type custom attribute to update | String
+id | ID of the record to update. Example: 540731274c616e047a000000 | String
+zobject_type[title] | Title of the zobject type (must be unique) | String
+zobject_type[description] | Description of the zobject type | String
+zobject_type[videos_enabled] | Indicates whether videos can be associated with instances of the zobject type | String
+zobject_type[zobject_attributes] | An indexed collection specifying the custom attributes for the zobject type | Array
+zobject_type[zobject_attributes][x][id] | ID of the record to update | String
 zobject_type[zobject_attributes][x][field_name] | Name of the zobject type custom attribute | String
 zobject_type[zobject_attributes][x][field_type] | Type of the zobject type custom attribute. Example: integer | String
 zobject_type[zobject_attributes][x][description] | Description of the zobject type custom attribute | String
@@ -73,7 +73,7 @@ zobject_type[zobject_attributes][x][description] | Description of the zobject ty
 
 Parameter | Function | Type
 --------- | -------- | ----
-id | ID of the zobject type to be deleted. Example: 540731274c616e047a000000. | String
+id | ID of the record to be deleted. Example: 540731274c616e047a000000 | String
 
 ### Zobject Type Object
 

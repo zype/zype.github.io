@@ -1,5 +1,5 @@
 ---
-layout: api
+layout: api_intro
 title: Zype Developer Portal | API
 permalink: /api_docs/intro/
 ---

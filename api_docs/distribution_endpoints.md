@@ -15,8 +15,8 @@ permalink: /api_docs/distribution_endpoints/
 
 Parameter | Function | Type
 --------- | -------- | ----
-page | The page number of records to return (zero indexed). Example: 0. | Number
-per_page | The number of records to return. Example: 10. | Number
+page | The page number of records to return (Example: 1) | Number
+per_page | The number of records to return (Example: 10) | Number
 
 #### Response
 200
@@ -66,7 +66,7 @@ Content-Type: application/json
 
 Parameter | Function | Type
 --------- | -------- | ----
-id | ID of the Distribution Endpoint to retrieve. Example: 5389352e69702d401b000000. | String
+id | ID of the record to retrieve (Example: 5389352e69702d401b000000) | String
 
 
 #### Response

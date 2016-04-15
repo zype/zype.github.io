@@ -16,11 +16,11 @@ Lists all Subscriptions.
 
 Parameter | Function | Type
 --------- | -------- | ----
-page      | The page number of records to return (zero indexed). Example: 0. | Number
-per_page  | The number of records to return. Example: 10. | Number
-q         | A query string for searching for subscriptions | String
+page      | The page number of records to return (Example: 1) | Number
+per_page  | The number of records to return (Example: 10) | Number
+q         | Filter records by keyword | String
 id        | Query for a subscription by id | String
-id!       | Exclude a subscription from the query | String
+id!       | Exclude records by ID | String
 
 #### Response
 200
@@ -85,10 +85,10 @@ Content-Type: application/json
 
 Parameter | Function | Type
 --------- | -------- | ----
-subscription | A set of key value pairs that describe the Subscription. Needs to include consumer_id and plan_id. | Hash
+subscription | A set of key value pairs that describe the Subscription. Needs to include consumer_id and plan_id | Hash
 consumer_id | The id of the consumer to be subscribed | String
 plan_id | The id of the plan the consumer is subscribing to | String
-coupon_code | The code of the coupon, if used. This parameter is optional. | String
+coupon_code | The code of the coupon, if used. This parameter is optional | String
 
 
 #### Response
@@ -148,7 +148,7 @@ Lists descriptive information about a Subscription
 
 Parameter | Function | Type
 --------- | -------- | ----
-id        | ID of the Subscription to retrieve. Example: 5389352e69702d401b000000. | String
+id        | ID of the record to retrieve (Example: 5389352e69702d401b000000) | String
 
 #### Request
 Content-Type: application/json
@@ -208,7 +208,7 @@ Content-Type: application/json
 
 Parameter | Function | Type
 --------- | -------- | ----
-Subscription     | A set of key value pairs that describe the subscription. | Hash
+Subscription     | A set of key value pairs that describe the subscription | Hash
 consumer_id | The id of the consumer | String
 plan_id | The id of the plan | String
 
@@ -272,7 +272,7 @@ Content-Type: application/json
 
 Parameter | Function | Type
 --------- | -------- | ----
-id        | ID of the Subscription to remove. Example: 5389352e69702d401b000000. | String
+id        | ID of the record to delete (Example: 5389352e69702d401b000000) | String
 
 #### Request
 Content-Type: application/json

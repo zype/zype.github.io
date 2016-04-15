@@ -105,7 +105,7 @@
   </header>
 
 
-    <section id="main">
+    <section id="main" class="api-docs">
       <h2 id="playlists-collection">Playlists Collection</h2>
 
 <hr />
@@ -126,57 +126,57 @@
   <tbody>
     <tr>
       <td>active</td>
-      <td>Filters the records by whether active or not. Example: true.</td>
+      <td>Filter by active, inactive, or all records (Example: true)</td>
       <td>String</td>
     </tr>
     <tr>
       <td>category</td>
-      <td>An optional set of key value category pairs to filter the records returned by category. Example: category[color]=blue.</td>
+      <td>Filter records by category value (Example: category[color]=blue)</td>
       <td>Hash</td>
     </tr>
     <tr>
       <td>category!</td>
-      <td>Exclude a category from the query. Example: category![color] = blue</td>
+      <td>Exclude records by category value (Example: category![color]=blue)</td>
       <td>Hash</td>
     </tr>
     <tr>
       <td>id</td>
-      <td>Query for a category by ID</td>
+      <td>Filter records by ID</td>
       <td>String</td>
     </tr>
     <tr>
       <td>id!</td>
-      <td>Exclude a category from the query</td>
+      <td>Exclude records by ID</td>
       <td>String</td>
     </tr>
     <tr>
       <td>order</td>
-      <td>Order playlists in ascending or descending order (Example: asc/desc)</td>
+      <td>Sort records in ascending or descending order (Example: asc/desc)</td>
       <td>String</td>
     </tr>
     <tr>
       <td>page</td>
-      <td>The page number of records to return (zero indexed). Example: 0.</td>
+      <td>The page number of records to return (Example: 1)</td>
       <td>Number</td>
     </tr>
     <tr>
       <td>per_page</td>
-      <td>The number of records to return. Example: 10.</td>
+      <td>The number of records to return (Example: 10)</td>
       <td>Number</td>
     </tr>
     <tr>
       <td>q</td>
-      <td>A query string for searching for playlists.</td>
+      <td>Filter records by keyword</td>
       <td>String</td>
     </tr>
     <tr>
       <td>sort</td>
-      <td>Sort playlists on the specified field</td>
+      <td>Sort records on the specified field</td>
       <td>String</td>
     </tr>
     <tr>
       <td>title</td>
-      <td>Filter playlists by title</td>
+      <td>Filter records by title</td>
       <td>String</td>
     </tr>
   </tbody>
@@ -226,7 +226,7 @@
   <tbody>
     <tr>
       <td>id</td>
-      <td>ID of the Playlist to retrieve. Example: 5389352e69702d401b000000.</td>
+      <td>ID of the record to retrieve (Example: 5389352e69702d401b000000)</td>
       <td>Number</td>
     </tr>
   </tbody>
@@ -248,7 +248,7 @@
   <tbody>
     <tr>
       <td>id</td>
-      <td>ID of the playlist videos to retrieve. Example: 5389352e69702d401b000000.</td>
+      <td>ID of the record to retrieve (Example: 5389352e69702d401b000000)</td>
       <td>String</td>
     </tr>
   </tbody>
@@ -270,7 +270,7 @@
   <tbody>
     <tr>
       <td>id</td>
-      <td>ID of the playlist to update. Example: 540731274c616e047a000000.</td>
+      <td>ID of the record to update. Example: 540731274c616e047a000000</td>
       <td>String</td>
     </tr>
     <tr>
@@ -302,7 +302,7 @@
   <tbody>
     <tr>
       <td>id</td>
-      <td>ID of the Playlist to remove. Example: 5389352e69702d401b000000.</td>
+      <td>ID of the record to delete (Example: 5389352e69702d401b000000)</td>
       <td>Number</td>
     </tr>
   </tbody>
@@ -324,7 +324,7 @@
   <tbody>
     <tr>
       <td>id</td>
-      <td>ID of the playlist. Example: 5389352e69702d401b000000.</td>
+      <td>ID of the record (Example: 5389352e69702d401b000000)</td>
       <td>String</td>
     </tr>
     <tr>
@@ -352,7 +352,7 @@
   <tbody>
     <tr>
       <td>id</td>
-      <td>ID of the playlist. Example: 5389352e69702d401b000000.</td>
+      <td>ID of the record (Example: 5389352e69702d401b000000)</td>
       <td>String</td>
     </tr>
     <tr>

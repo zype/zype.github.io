@@ -14,17 +14,17 @@ permalink: /api_docs/playlists/
 
 Parameter | Function | Type
 --------- | -------- | ----
-active | Filters the records by whether active or not. Example: true. | String
-category | An optional set of key value category pairs to filter the records returned by category. Example: category[color]=blue. | Hash
-category! | Exclude a category from the query. Example: category![color] = blue | Hash
-id        | Query for a category by ID | String
-id!       | Exclude a category from the query | String
-order     | Order playlists in ascending or descending order (Example: asc/desc) | String
-page | The page number of records to return (zero indexed). Example: 0. | Number
-per_page | The number of records to return. Example: 10. | Number
-q         | A query string for searching for playlists. | String
-sort      | Sort playlists on the specified field | String
-title     | Filter playlists by title | String
+active | Filter by active, inactive, or all records (Example: true) | String
+category | Filter records by category value (Example: category[color]=blue) | Hash
+category! | Exclude records by category value (Example: category![color]=blue) | Hash
+id        | Filter records by ID | String
+id!       | Exclude records by ID | String
+order     | Sort records in ascending or descending order (Example: asc/desc) | String
+page | The page number of records to return (Example: 1) | Number
+per_page | The number of records to return (Example: 10) | Number
+q         | Filter records by keyword | String
+sort      | Sort records on the specified field | String
+title     | Filter records by title | String
 
 ### Create a Playlist
 <pre><b>POST</b> https://api.zype.com/playlists</pre>
@@ -44,7 +44,7 @@ playlist[description] | The description of the playlist | String
 
 Parameter | Function | Type
 --------- | -------- | ----
-id | ID of the Playlist to retrieve. Example: 5389352e69702d401b000000. | Number
+id | ID of the record to retrieve (Example: 5389352e69702d401b000000) | Number
 
 ### List Playlist Videos
 <pre><b>GET</b> https://api.zype.com/playlists/[id]/videos</pre>
@@ -53,7 +53,7 @@ id | ID of the Playlist to retrieve. Example: 5389352e69702d401b000000. | Number
 
 Parameter | Function | Type
 --------- | -------- | ----
-id | ID of the playlist videos to retrieve. Example: 5389352e69702d401b000000. | String
+id | ID of the record to retrieve (Example: 5389352e69702d401b000000) | String
 
 ### Update a Playlist
 <pre><b>PUT</b> https://api.zype.com/playlists/[id]</pre>
@@ -62,7 +62,7 @@ id | ID of the playlist videos to retrieve. Example: 5389352e69702d401b000000. |
 
 Parameter | Function | Type
 --------- | -------- | ----
-id | ID of the playlist to update. Example: 540731274c616e047a000000. | String
+id | ID of the record to update. Example: 540731274c616e047a000000 | String
 playlist[title] | The title of the playlist | String
 playlist[description] | The description of the playlist | String
 
@@ -73,7 +73,7 @@ playlist[description] | The description of the playlist | String
 
 Parameter | Function | Type
 --------- | -------- | ----
-id | ID of the Playlist to remove. Example: 5389352e69702d401b000000. | Number
+id | ID of the record to delete (Example: 5389352e69702d401b000000) | Number
 
 ### Add Video(s) to a Playlist
 <pre><b>PUT</b> https://api.zype.com/playlists/[id]/add_videos</pre>
@@ -82,7 +82,7 @@ id | ID of the Playlist to remove. Example: 5389352e69702d401b000000. | Number
 
 Parameter | Function | Type
 --------- | -------- | ----
-id        | ID of the playlist. Example: 5389352e69702d401b000000. | String
+id        | ID of the record (Example: 5389352e69702d401b000000) | String
 video_id[]  | A comma separated list of video IDs to add to the playlist | Array
 
 ### Remove Video(s) from a Playlist
@@ -93,7 +93,7 @@ video_id[]  | A comma separated list of video IDs to add to the playlist | Array
 
 Parameter | Function | Type
 --------- | -------- | ----
-id        | ID of the playlist. Example: 5389352e69702d401b000000. | String
+id        | ID of the record (Example: 5389352e69702d401b000000) | String
 video_id[]  | A comma separated list of video IDs to remove from the playlist | String
 
 ### Playlist Object

@@ -105,7 +105,7 @@
   </header>
 
 
-    <section id="main">
+    <section id="main" class="api-docs">
       <h2 id="subscriptions-collection">Subscriptions Collection</h2>
 <p>Lists all Subscriptions.</p>
 <hr />
@@ -129,17 +129,17 @@
   <tbody>
     <tr>
       <td>page</td>
-      <td>The page number of records to return (zero indexed). Example: 0.</td>
+      <td>The page number of records to return (Example: 1)</td>
       <td>Number</td>
     </tr>
     <tr>
       <td>per_page</td>
-      <td>The number of records to return. Example: 10.</td>
+      <td>The number of records to return (Example: 10)</td>
       <td>Number</td>
     </tr>
     <tr>
       <td>q</td>
-      <td>A query string for searching for subscriptions</td>
+      <td>Filter records by keyword</td>
       <td>String</td>
     </tr>
     <tr>
@@ -149,7 +149,7 @@
     </tr>
     <tr>
       <td>id!</td>
-      <td>Exclude a subscription from the query</td>
+      <td>Exclude records by ID</td>
       <td>String</td>
     </tr>
   </tbody>
@@ -228,7 +228,7 @@ Content-Type: application/json</p>
   <tbody>
     <tr>
       <td>subscription</td>
-      <td>A set of key value pairs that describe the Subscription. Needs to include consumer_id and plan_id.</td>
+      <td>A set of key value pairs that describe the Subscription. Needs to include consumer_id and plan_id</td>
       <td>Hash</td>
     </tr>
     <tr>
@@ -243,7 +243,7 @@ Content-Type: application/json</p>
     </tr>
     <tr>
       <td>coupon_code</td>
-      <td>The code of the coupon, if used. This parameter is optional.</td>
+      <td>The code of the coupon, if used. This parameter is optional</td>
       <td>String</td>
     </tr>
   </tbody>
@@ -317,7 +317,7 @@ Content-Type: application/json</p>
   <tbody>
     <tr>
       <td>id</td>
-      <td>ID of the Subscription to retrieve. Example: 5389352e69702d401b000000.</td>
+      <td>ID of the record to retrieve (Example: 5389352e69702d401b000000)</td>
       <td>String</td>
     </tr>
   </tbody>
@@ -392,7 +392,7 @@ Content-Type: application/json</p>
   <tbody>
     <tr>
       <td>Subscription</td>
-      <td>A set of key value pairs that describe the subscription.</td>
+      <td>A set of key value pairs that describe the subscription</td>
       <td>Hash</td>
     </tr>
     <tr>
@@ -478,7 +478,7 @@ Content-Type: application/json</p>
   <tbody>
     <tr>
       <td>id</td>
-      <td>ID of the Subscription to remove. Example: 5389352e69702d401b000000.</td>
+      <td>ID of the record to delete (Example: 5389352e69702d401b000000)</td>
       <td>String</td>
     </tr>
   </tbody>

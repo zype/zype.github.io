@@ -1,3 +1,4 @@
+
 ###List the segments of a Video
 <hr>
 <pre><b>GET</b> https://api.zype.com/videos/{id}/segments
@@ -7,7 +8,7 @@
 
 Parameter | Function | Type
 --------- | -------- | ----
-id        | ID of the Video. Example: 5389352e69702d401b000000. | String
+id        | ID of the Video (Example: 5389352e69702d401b000000) | String
 
 #### Request
 Content-Type: application/json
@@ -37,8 +38,8 @@ Content-Type: application/json
 
 Parameter | Function | Type
 --------- | -------- | ----
-id1        | ID of the Video to which the segment belongs. Example: 5389352e69702d401b000000. | String
-id2        | ID of the segment. Example: 5389352e69702d401b000000. | String
+id1        | ID of the Video to which the segment belongs (Example: 5389352e69702d401b000000) | String
+id2        | ID of the segment (Example: 5389352e69702d401b000000) | String
 
 #### Request
 Content-Type: application/json
@@ -67,7 +68,7 @@ Content-Type: application/json
 
 Parameter | Function | Type
 --------- | -------- | ----
-segment | A set of key value pairs that describe the segment. Example: segment[description]=description. | Hash
+segment | A set of key value pairs that describe the segment. Example: segment[description]=description | Hash
 description | The description for the video segment | String
 start | The point in the video where the segment begins | Integer
 end | The point in the video where the segment ends | Integer
@@ -99,8 +100,8 @@ Content-Type: application/json
 
 Parameter | Function | Type
 --------- | -------- | ----
-id1       | ID of the Video to which the segment belongs. Example: 5389352e69702d401b000000. | String
-id2       | ID of the segment to be deleted. Example: 5389352e69702d401b000000. | String
+id1       | ID of the Video to which the segment belongs (Example: 5389352e69702d401b000000) | String
+id2       | ID of the segment to be deleted (Example: 5389352e69702d401b000000) | String
 
 
 #### Request
@@ -124,9 +125,9 @@ Content-Type: application/json
 
 Parameter | Function | Type
 --------- | -------- | ----
-id1  | ID of the Video to which the segment belongs. Example: 5389352e69702d401b000000. | String
-id2        | ID of the segment to be updated. Example: 5389352e69702d401b000000. | String
-segment | A set of key value pairs that describe the segment. Example: segment[description]=description. | Hash
+id1  | ID of the Video to which the segment belongs (Example: 5389352e69702d401b000000) | String
+id2        | ID of the segment to be updated (Example: 5389352e69702d401b000000) | String
+segment | A set of key value pairs that describe the segment. Example: segment[description]=description | Hash
 description | The description for the video segment | String
 start | The point in the video where the segment begins | Integer
 end | The point in the video where the segment ends | Integer

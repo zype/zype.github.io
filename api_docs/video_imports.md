@@ -18,14 +18,14 @@ id=id&id!=id&video_source_id=video_source_id&q=q&keyword=keyword
 
 Parameter | Function | Type
 --------- | -------- | ----
-page      | The page number of records to return (zero indexed). Example: 0. | Number
-per_page  | The number of records to return. Example: 10. | Number
-q         | A query string for searching for video imports | String
-status    | Filters the records returned by status. Example: created. | String
-active    | Show active, inactive or all videos Example: true. | String
-type      | The type of video imports to query. Example: hulu, youtube, crunchyroll | String
+page      | The page number of records to return (Example: 1) | Number
+per_page  | The number of records to return (Example: 10) | Number
+q         | Filter records by keyword | String
+status    | Filters the records returned by status. Example: created | String
+active    | Filter by active, inactive, or all records (Example: true) | String
+type      | Filter records by type (Example: hulu, youtube, crunchyroll) | String
 id        | Query for a video import by id | String
-id!       | Exclude a video import from the query | String
+id!       | Exclude records by ID | String
 video_source_id | Query by video source | String
 
 
@@ -134,7 +134,7 @@ Content-Type: application/json
 
 Parameter | Function | Type
 --------- | -------- | ----
-video_id  | ID of the video to add the video import to a preexisting video (optional, if blank it creates a new video). | String
+video_id  | ID of a video to add video import to (Example: 5389352e69702d401b000000) | String
 
 #### Request
 

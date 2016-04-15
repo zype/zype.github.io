@@ -15,17 +15,17 @@ permalink: /api_docs/consumers/
 
 Parameter | Function | Type
 --------- | -------- | ----
-braintree_id | Filter consumers by Braintree ID | String
-created_at | Filter the records returned by created date. You can use greater than or less than filters by adding a suffix: '.gt', '.gte', '.lt', 'lte'. Example: created_at.gte=2015-01-01 | Date
-email     | Filter consumers by email | String
-id        | Query for a consumer by id | String
-id!       | Exclude a consumer from the query | String
-page      | The page number of records to return (zero indexed). Example: 0. | Number
-password_token | Filter consumers by password reset token | String
-per_page  | The number of records to return. Example: 10. | Number
-q         | A query string for searching for consumers | String
-rss_token | Filter consumers by RSS token | String
-stripe_id | Filter consumers by Stripe ID | String
+braintree_id | Filter records by Braintree ID | String
+created_at | Filter the records returned by created date. Greater or less than filters can be used by adding a suffix (Example: created_at.gte) | Date
+email     | Filter records by email | String
+id        | Filter records by ID | String
+id!       | Exclude records by ID | String
+page      | The page number of records to return (Example: 1) | Number
+password_token | Filter records by password reset token | String
+per_page  | The number of records to return (Example: 10) | Number
+q         | Filter records by keyword | String
+rss_token | Filter records by RSS token | String
+stripe_id | Filter records by Stripe ID | String
 
 ###Retrieve a Consumer
 <pre><b>GET</b> https://api.zype.com/consumers/[id]
@@ -35,7 +35,7 @@ stripe_id | Filter consumers by Stripe ID | String
 
 Parameter | Function | Type
 --------- | -------- | ----
-id        | ID of the consumer. Example: 5389352e69702d401b000000. | String
+id        | ID of the record (Example: 5389352e69702d401b000000) | String
 
 ###Create a Consumer
 <pre><b>POST</b> https://api.zype.com/consumers
@@ -45,13 +45,13 @@ id        | ID of the consumer. Example: 5389352e69702d401b000000. | String
 
 Parameter | Function | Type
 --------- | -------- | ----
-consumer[email] | The consumer's email address. (must be unique) | String
-consumer[password] | The password for the consumer. The password is used for consumer authentication. | String
-consumer[name] | The name of the consumer. | String
-consumer[sex] | The gender of the consumer. | String
+consumer[email] | The consumer's email address (must be unique) | String
+consumer[password] | The password for the consumer. The password is used for consumer authentication | String
+consumer[name] | The name of the consumer | String
+consumer[sex] | The gender of the consumer | String
 consumer[birthday] | The birthday of the consumer, | String
-consumer[updates] | Boolean field to store if the consumer has agreed to receive updates. | Boolean
-consumer[terms] | Boolean field to store if the consumer has agreed to terms and conditions. | Boolean
+consumer[updates] | Boolean field to store if the consumer has agreed to receive updates | Boolean
+consumer[terms] | Boolean field to store if the consumer has agreed to terms and conditions | Boolean
 
 ###Update a Consumer
 <pre><b>PUT</b> https://api.zype.com/consumers/[id]</pre>
@@ -60,16 +60,16 @@ consumer[terms] | Boolean field to store if the consumer has agreed to terms and
 
 Parameter | Function | Type
 --------- | -------- | ----
-id | ID of the consumer to update. Example: 540731274c616e047a000000. | String
-consumer[email] | The consumer's email address. (must be unique) | String
-consumer[password] | The password for the consumer. The password is used for consumer authentication. | String
-consumer[name] | The name of the consumer. | String
-consumer[sex] | The gender of the consumer. | String
+id | ID of the record to update. Example: 540731274c616e047a000000 | String
+consumer[email] | The consumer's email address (must be unique) | String
+consumer[password] | The password for the consumer. The password is used for consumer authentication | String
+consumer[name] | The name of the consumer | String
+consumer[sex] | The gender of the consumer | String
 consumer[birthday] | The birthday of the consumer, | String
-consumer[updates] | Boolean field to store if the consumer has agreed to receive updates. | Boolean
-consumer[terms] | Boolean field to store if the consumer has agreed to terms and conditions. | Boolean
-consumer[password_token] | The password token to use during password reset workflows. | String
-consumer[remember_token] | The password token to use during remember login workflows. | String
+consumer[updates] | Boolean field to store if the consumer has agreed to receive updates | Boolean
+consumer[terms] | Boolean field to store if the consumer has agreed to terms and conditions | Boolean
+consumer[password_token] | The password token to use during password reset workflows | String
+consumer[remember_token] | The password token to use during remember login workflows | String
 
 ###Delete a Consumer
 <pre><b>DELETE</b> https://api.zype.com/consumers/[id]
@@ -79,7 +79,7 @@ consumer[remember_token] | The password token to use during remember login workf
 
 Parameter | Function | Type
 --------- | -------- | ----
-id | ID of the consumer to be deleted. Example: 540731274c616e047a000000. | String
+id | ID of the record to be deleted. Example: 540731274c616e047a000000 | String
 
 ### Consumer Object
 

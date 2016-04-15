@@ -105,7 +105,7 @@
   </header>
 
 
-    <section id="main">
+    <section id="main" class="api-docs">
       <h2 id="videos">Videos</h2>
 <hr />
 
@@ -127,107 +127,117 @@
   <tbody>
     <tr>
       <td>active</td>
-      <td>Show active, inactive or all videos Example: true.</td>
+      <td>Filter by active, inactive, or all records (Example: true)</td>
       <td>String</td>
     </tr>
     <tr>
       <td>category</td>
-      <td>An optional set of key value category pairs to filter the records returned by category. Example: category[color]=blue.</td>
+      <td>Filter records by category value (Example: category[color]=blue)</td>
       <td>Hash</td>
     </tr>
     <tr>
       <td>category!</td>
-      <td>Exclude a category from the query. Example: category![color] = blue</td>
+      <td>Exclude records by category value (Example: category![color]=blue)</td>
       <td>Hash</td>
     </tr>
     <tr>
       <td>created_at</td>
-      <td>Filter the records returned by created date. You can use greater than or less than filters by adding a suffix: ‘.gt’, ‘.gte’, ‘.lt’, ‘lte’. Example: created_at.gte=2015-01-01</td>
+      <td>Filter records by created date. Greater or less than filters can be used by adding a suffix (Example: created_at.gte)</td>
       <td>Date</td>
     </tr>
     <tr>
       <td>crunchyroll_id</td>
-      <td>Filter videos that have the specified Crunchyroll ID.</td>
+      <td>Filter records by a Crunchyroll ID</td>
       <td>String</td>
     </tr>
     <tr>
       <td>dpt</td>
-      <td>Only shows videos that are available to the end user based on device and country</td>
+      <td>Filter records by DPT conditions (Geo-location and device restrictions)</td>
       <td>Boolean</td>
     </tr>
     <tr>
       <td>hulu_id</td>
-      <td>Filter videos that have the specified Hulu ID.</td>
+      <td>Filter records by a Hulu ID</td>
       <td>String</td>
     </tr>
     <tr>
       <td>id</td>
-      <td>Query for a video by ID</td>
+      <td>Filter records by ID</td>
       <td>String</td>
     </tr>
     <tr>
       <td>id!</td>
-      <td>Exclude a video from the query</td>
+      <td>Exclude records by ID</td>
       <td>String</td>
     </tr>
     <tr>
+      <td>mature_content</td>
+      <td>Filter records that are flagged as mature content</td>
+      <td>Boolean</td>
+    </tr>
+    <tr>
       <td>order</td>
-      <td>Order videos in ascending or descending order (Example: asc/desc)</td>
+      <td>Sort records in ascending or descending order (Example: asc/desc)</td>
       <td>String</td>
     </tr>
     <tr>
       <td>on_air</td>
-      <td>Filter videos that are either on or off air.</td>
+      <td>Filter records that are either on or off air</td>
       <td>Boolean</td>
     </tr>
     <tr>
-      <td>mature_content</td>
-      <td>Filter videos that are flagged as mature content.</td>
-      <td>Boolean</td>
+      <td>page</td>
+      <td>The page number of records to return (Example: 1)</td>
+      <td>Number</td>
+    </tr>
+    <tr>
+      <td>per_page</td>
+      <td>The number of records to return (Example: 10)</td>
+      <td>Number</td>
     </tr>
     <tr>
       <td>published_at</td>
-      <td>Filter the records returned by published date. You can use greater than or less than filters by adding a suffix: ‘.gt’, ‘.gte’, ‘.lt’, ‘lte’. Example: published_at.gte=2015-01-01</td>
+      <td>Filter records by published date. Greater or less than filters can be used by adding a suffix (Example: published_at.gte)</td>
       <td>Date</td>
     </tr>
     <tr>
       <td>q</td>
-      <td>A query string for searching for videos</td>
+      <td>Filter records by keyword</td>
       <td>String</td>
     </tr>
     <tr>
       <td>sort</td>
-      <td>Sort videos on the specified field</td>
+      <td>Sort records on the specified field</td>
       <td>String</td>
     </tr>
     <tr>
       <td>source_id</td>
-      <td>Search for videos using an optional user provided source identifier.</td>
+      <td>Filter records by an optional source identifier</td>
       <td>String</td>
     </tr>
     <tr>
       <td>type</td>
-      <td>The type of videos to query. Example: zype, hulu, youtube, crunchyroll</td>
+      <td>Filter records by type (Example: zype, hulu, youtube, crunchyroll)</td>
       <td>String</td>
     </tr>
     <tr>
       <td>vimeo_id</td>
-      <td>Filter videos that have the specified Vimeo ID.</td>
+      <td>Filter records by a Vimeo ID</td>
       <td>String</td>
     </tr>
     <tr>
       <td>youtube_id</td>
-      <td>Filter videos that have the specified YouTube ID.</td>
+      <td>Filter records by a YouTube ID</td>
       <td>String</td>
     </tr>
     <tr>
       <td>zobject_id</td>
-      <td>Include only videos that belong to the specified Zobject ID.</td>
+      <td>Filter records by Zobject ID</td>
       <td>String</td>
     </tr>
     <tr>
       <td>zobject_id!</td>
-      <td>Exclude videos that belong to the specified Zobject ID.</td>
+      <td>Exclude records by Zobject ID</td>
       <td>String</td>
     </tr>
   </tbody>
@@ -347,7 +357,7 @@
   <tbody>
     <tr>
       <td>id</td>
-      <td>ID of the video to retrieve. Example: 5389352e69702d401b000000.</td>
+      <td>ID of the record to retrieve (Example: 5389352e69702d401b000000)</td>
       <td>String</td>
     </tr>
   </tbody>
@@ -370,7 +380,7 @@
   <tbody>
     <tr>
       <td>id</td>
-      <td>ID of the video to update. Example: 540731274c616e047a000000.</td>
+      <td>ID of the record to update. Example: 540731274c616e047a000000</td>
       <td>String</td>
     </tr>
     <tr>
@@ -473,7 +483,7 @@
   <tbody>
     <tr>
       <td>id</td>
-      <td>ID of the video to delete. Example: 5389352e69702d401b000000.</td>
+      <td>ID of the record to delete (Example: 5389352e69702d401b000000)</td>
       <td>String</td>
     </tr>
   </tbody>
@@ -496,12 +506,12 @@
   <tbody>
     <tr>
       <td>id</td>
-      <td>ID of the video. Example: 5389352e69702d401b000000.</td>
+      <td>ID of the record (Example: 5389352e69702d401b000000)</td>
       <td>String</td>
     </tr>
     <tr>
       <td>zobject_id[]</td>
-      <td>An array containing all of the zobject id’s that you want to add to the video.</td>
+      <td>An array containing all of the zobject id’s that you want to add to the video</td>
       <td>Array</td>
     </tr>
   </tbody>
@@ -524,12 +534,12 @@
   <tbody>
     <tr>
       <td>id</td>
-      <td>ID of the video. Example: 5389352e69702d401b000000.</td>
+      <td>ID of the record (Example: 5389352e69702d401b000000)</td>
       <td>String</td>
     </tr>
     <tr>
       <td>zobject_id[]</td>
-      <td>An array containing all of the zobject id’s that you want to dissociate from the video.</td>
+      <td>An array containing all of the zobject id’s that you want to dissociate from the video</td>
       <td>Array</td>
     </tr>
   </tbody>

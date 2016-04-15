@@ -16,12 +16,12 @@ keyword=keyword
 
 Parameter | Function | Type
 --------- | -------- | ----
-page      | The page number of records to return (zero indexed). Example: 0. | Number
-per_page  | The number of records to return. Example: 10. | Number
-q         | A query string for searching for video sources | String
+page      | The page number of records to return (Example: 1) | Number
+per_page  | The number of records to return (Example: 10) | Number
+q         | Filter records by keyword | String
 type      | The type of video sources to query. Example: zype, hulu, youtube, crunchyroll | String
 id        | Query for a video source by id | String
-id!       | Exclude a video source from the query | String
+id!       | Exclude records by ID | String
 
 #### Response
 200

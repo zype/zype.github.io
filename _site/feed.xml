@@ -5,8 +5,8 @@
     <description></description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Thu, 14 Apr 2016 22:35:03 -0400</pubDate>
-    <lastBuildDate>Thu, 14 Apr 2016 22:35:03 -0400</lastBuildDate>
+    <pubDate>Fri, 15 Apr 2016 11:20:14 -0400</pubDate>
+    <lastBuildDate>Fri, 15 Apr 2016 11:20:14 -0400</lastBuildDate>
     <generator>Jekyll v3.0.2</generator>
     
       <item>
@@ -325,7 +325,7 @@ toggle &lt;strong&gt;Subscription Required&lt;/strong&gt; or__ Purchase Required
       &lt;/li&gt;
       &lt;li&gt;&lt;strong&gt;SKU:&lt;/strong&gt;
         &lt;ul&gt;
-          &lt;li&gt;This is the Plan’s Amazon ID you set up earlier on the Zype dashboard. (ie &lt;strong&gt;subscriptionMonthly-123&lt;/strong&gt;)&lt;/li&gt;
+          &lt;li&gt;This is the Plan’s Amazon ID you set up earlier on the Zype dashboard (ie &lt;strong&gt;subscriptionMonthly-123&lt;/strong&gt;)&lt;/li&gt;
           &lt;li&gt;&lt;strong&gt;Note: You must enter the Amazon ID from the Plan you set up in the Zype platform here. It must match exactly or subscriptions will not work.&lt;/strong&gt;&lt;/li&gt;
         &lt;/ul&gt;
       &lt;/li&gt;

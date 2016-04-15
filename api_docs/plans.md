@@ -16,11 +16,11 @@ Lists all plans.
 
 Parameter | Function | Type
 --------- | -------- | ----
-page      | The page number of records to return (zero indexed). Example: 0. | Number
-per_page  | The number of records to return. Example: 10. | Number
-q         | A query string for searching for plans | String
+page      | The page number of records to return (Example: 1) | Number
+per_page  | The number of records to return (Example: 10) | Number
+q         | Filter records by keyword | String
 id        | Query for a plan by id | String
-id!       | Exclude a plan from the query | String
+id!       | Exclude records by ID | String
 
 
 #### Response
@@ -70,7 +70,7 @@ Lists descriptive information about a plan
 
 Parameter | Function | Type
 --------- | -------- | ----
-id        | ID of the Plan to retrieve. Example: 5389352e69702d401b000000. | String
+id        | ID of the record to retrieve (Example: 5389352e69702d401b000000) | String
 
 #### Request
 Content-Type: application/json

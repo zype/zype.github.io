@@ -15,10 +15,10 @@ permalink: /api_docs/zobjects/
 
 Parameter | Function | Type
 --------- | -------- | ----
-zobject_type | The title of the zobject type. Required. Example: card. | String
-page      | The page number of records to return (zero indexed). Example: 0. | Number
-per_page  | The number of records to return. Example: 10. | Number
-keywords  | Filters the records returned by keyword. Example: comedy. | String
+zobject_type | The title of the zobject type. Required. Example: card | String
+page      | The page number of records to return (Example: 1) | Number
+per_page  | The number of records to return (Example: 10) | Number
+keywords  | Filters the records returned by keyword. Example: comedy | String
 
 #### Response
 200
@@ -74,7 +74,7 @@ Content-Type: application/json
 
 Parameter | Function | Type
 --------- | -------- | ----
-zobject | A set of key value pairs that describe the Zobject. | Hash
+zobject | A set of key value pairs that describe the Zobject | Hash
 
 #### Request
 Content-Type: application/json
@@ -125,7 +125,7 @@ Lists descriptive information about Zobjects.
 
 Parameter | Function | Type
 --------- | -------- | ----
-id | ID of the zobject to retrieve. Example: 5389352e69702d401b000000. | String
+id | ID of the record to retrieve (Example: 5389352e69702d401b000000) | String
 zobject_type | The title of the zobject type. Required. Example: card.  | String
 
 #### Response
@@ -171,8 +171,8 @@ Content-Type: application/json
 
 Parameter | Function | Type
 --------- | -------- | ----
-id | ID of the zobject to retrieve. Example: 5389352e69702d401b000000. | String
-zobject   | A set of key value pairs that describe the zobject. | Hash
+id | ID of the record to retrieve (Example: 5389352e69702d401b000000) | String
+zobject   | A set of key value pairs that describe the zobject | Hash
 
 
 #### Request
@@ -222,7 +222,7 @@ Content-Type: application/json
 
 Parameter | Function | Type
 --------- | -------- | ----
-id | ID of the zobject to retrieve. Example: 5389352e69702d401b000000. | String
+id | ID of the record to retrieve (Example: 5389352e69702d401b000000) | String
 zobject_type | The title of the zobject type. Required. Example: card.  | String
 video_id | An array containing the id's of the video you want to associate with this zobject | Array of Strings
 
@@ -261,7 +261,7 @@ Content-Type: application/json
 
 Parameter | Function | Type
 --------- | -------- | ----
-id | ID of the zobject to retrieve. Example: 5389352e69702d401b000000. | String
+id | ID of the record to retrieve (Example: 5389352e69702d401b000000) | String
 zobject_type | The title of the zobject type. Required. Example: card.  | String
 video_id | An array containing the id's of the videos you want to dissociate from this zobject | Array of Strings
 
@@ -301,7 +301,7 @@ Content-Type: application/json
 
 Parameter | Function | Type
 --------- | -------- | ----
-id | ID of the zobject to remove. Example: 5389352e69702d401b000000. | String
+id | ID of the record to delete (Example: 5389352e69702d401b000000) | String
 zobject_type | The title of the zobject type. Required. Example: card.  | String
 
 #### Request

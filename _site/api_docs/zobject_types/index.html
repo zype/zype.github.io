@@ -105,7 +105,7 @@
   </header>
 
 
-    <section id="main">
+    <section id="main" class="api-docs">
       <h2 id="zobject-types">Zobject Types</h2>
 <hr />
 
@@ -127,27 +127,27 @@
   <tbody>
     <tr>
       <td>id</td>
-      <td>Query for a zobject type by ID</td>
+      <td>Filter records by ID</td>
       <td>String</td>
     </tr>
     <tr>
       <td>id!</td>
-      <td>Exclude a zobject type from the query</td>
+      <td>Exclude records by ID</td>
       <td>String</td>
     </tr>
     <tr>
       <td>page</td>
-      <td>The page number of records to return (zero indexed). Example: 0.</td>
+      <td>The page number of records to return (Example: 1)</td>
       <td>Number</td>
     </tr>
     <tr>
       <td>per_page</td>
-      <td>The number of records to return. Example: 10.</td>
+      <td>The number of records to return (Example: 10)</td>
       <td>Number</td>
     </tr>
     <tr>
       <td>q</td>
-      <td>A query string for searching for zobject types</td>
+      <td>Filter records by keyword</td>
       <td>String</td>
     </tr>
   </tbody>
@@ -170,7 +170,7 @@
   <tbody>
     <tr>
       <td>id</td>
-      <td>ID of the zobject type. Example: 5389352e69702d401b000000.</td>
+      <td>ID of the record (Example: 5389352e69702d401b000000)</td>
       <td>String</td>
     </tr>
   </tbody>
@@ -193,22 +193,22 @@
   <tbody>
     <tr>
       <td>zobject_type[title]</td>
-      <td>Title of the zobject type. (must be unique)</td>
+      <td>Title of the zobject type (must be unique)</td>
       <td>String</td>
     </tr>
     <tr>
       <td>zobject_type[description]</td>
-      <td>Description of the zobject type.</td>
+      <td>Description of the zobject type</td>
       <td>String</td>
     </tr>
     <tr>
       <td>zobject_type[videos_enabled]</td>
-      <td>Indicates whether videos can be associated with instances of the zobject type.</td>
+      <td>Indicates whether videos can be associated with instances of the zobject type</td>
       <td>String</td>
     </tr>
     <tr>
       <td>zobject_type[zobject_attributes]</td>
-      <td>An indexed collection specifying the custom attributes for the zobject type.</td>
+      <td>An indexed collection specifying the custom attributes for the zobject type</td>
       <td>Array</td>
     </tr>
     <tr>
@@ -245,32 +245,32 @@
   <tbody>
     <tr>
       <td>id</td>
-      <td>ID of the zobject type to update. Example: 540731274c616e047a000000.</td>
+      <td>ID of the record to update. Example: 540731274c616e047a000000</td>
       <td>String</td>
     </tr>
     <tr>
       <td>zobject_type[title]</td>
-      <td>Title of the zobject type. (must be unique)</td>
+      <td>Title of the zobject type (must be unique)</td>
       <td>String</td>
     </tr>
     <tr>
       <td>zobject_type[description]</td>
-      <td>Description of the zobject type.</td>
+      <td>Description of the zobject type</td>
       <td>String</td>
     </tr>
     <tr>
       <td>zobject_type[videos_enabled]</td>
-      <td>Indicates whether videos can be associated with instances of the zobject type.</td>
+      <td>Indicates whether videos can be associated with instances of the zobject type</td>
       <td>String</td>
     </tr>
     <tr>
       <td>zobject_type[zobject_attributes]</td>
-      <td>An indexed collection specifying the custom attributes for the zobject type.</td>
+      <td>An indexed collection specifying the custom attributes for the zobject type</td>
       <td>Array</td>
     </tr>
     <tr>
       <td>zobject_type[zobject_attributes][x][id]</td>
-      <td>ID of the zobject type custom attribute to update</td>
+      <td>ID of the record to update</td>
       <td>String</td>
     </tr>
     <tr>
@@ -308,7 +308,7 @@
   <tbody>
     <tr>
       <td>id</td>
-      <td>ID of the zobject type to be deleted. Example: 540731274c616e047a000000.</td>
+      <td>ID of the record to be deleted. Example: 540731274c616e047a000000</td>
       <td>String</td>
     </tr>
   </tbody>

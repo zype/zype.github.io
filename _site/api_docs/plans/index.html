@@ -105,7 +105,7 @@
   </header>
 
 
-    <section id="main">
+    <section id="main" class="api-docs">
       <h2 id="plans-collection">Plans Collection</h2>
 <p>Lists all plans.</p>
 <hr />
@@ -129,17 +129,17 @@
   <tbody>
     <tr>
       <td>page</td>
-      <td>The page number of records to return (zero indexed). Example: 0.</td>
+      <td>The page number of records to return (Example: 1)</td>
       <td>Number</td>
     </tr>
     <tr>
       <td>per_page</td>
-      <td>The number of records to return. Example: 10.</td>
+      <td>The number of records to return (Example: 10)</td>
       <td>Number</td>
     </tr>
     <tr>
       <td>q</td>
-      <td>A query string for searching for plans</td>
+      <td>Filter records by keyword</td>
       <td>String</td>
     </tr>
     <tr>
@@ -149,7 +149,7 @@
     </tr>
     <tr>
       <td>id!</td>
-      <td>Exclude a plan from the query</td>
+      <td>Exclude records by ID</td>
       <td>String</td>
     </tr>
   </tbody>
@@ -212,7 +212,7 @@ Content-Type: application/json</p>
   <tbody>
     <tr>
       <td>id</td>
-      <td>ID of the Plan to retrieve. Example: 5389352e69702d401b000000.</td>
+      <td>ID of the record to retrieve (Example: 5389352e69702d401b000000)</td>
       <td>String</td>
     </tr>
   </tbody>

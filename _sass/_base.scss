@@ -90,6 +90,21 @@ th, td {
   text-align:left;
   padding:8px;
   border-bottom:1px solid #e5e5e5;
+  vertical-align: top;
+}
+
+th {
+  background-color: #f8f8f8;
+}
+
+.api-docs table td:first-child {
+  font-weight: bold;  
+  width: 125px;
+}
+
+.api-docs table td:last-child {
+  font-weight: bold;  
+  width: 75px;
 }
 
 dt {
