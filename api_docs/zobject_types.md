@@ -55,7 +55,7 @@ zobject_type[zobject_attributes][x][description] | Description of the zobject ty
 
 Parameter | Function | Type
 --------- | -------- | ----
-id | ID of the record to update. Example: 540731274c616e047a000000 | String
+id | ID of the record to update (Example: 540731274c616e047a000000) | String
 zobject_type[title] | Title of the zobject type (must be unique) | String
 zobject_type[description] | Description of the zobject type | String
 zobject_type[videos_enabled] | Indicates whether videos can be associated with instances of the zobject type | String

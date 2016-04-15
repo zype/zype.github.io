@@ -81,7 +81,7 @@ id        | ID of the record to retrieve (Example: 5389352e69702d401b000000) | S
 
 Parameter | Function | Type
 --------- | -------- | ----
-id | ID of the record to update. Example: 540731274c616e047a000000 | String
+id | ID of the record to update (Example: 540731274c616e047a000000) | String
 video[title] | The title of the video | String
 video[description] | The description of the video | String
 video[short_description] | The description of the video | String

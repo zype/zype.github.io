@@ -62,7 +62,7 @@ id | ID of the record to retrieve (Example: 5389352e69702d401b000000) | String
 
 Parameter | Function | Type
 --------- | -------- | ----
-id | ID of the record to update. Example: 540731274c616e047a000000 | String
+id | ID of the record to update (Example: 540731274c616e047a000000) | String
 playlist[title] | The title of the playlist | String
 playlist[description] | The description of the playlist | String
 

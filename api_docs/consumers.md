@@ -60,7 +60,7 @@ consumer[terms] | Boolean field to store if the consumer has agreed to terms and
 
 Parameter | Function | Type
 --------- | -------- | ----
-id | ID of the record to update. Example: 540731274c616e047a000000 | String
+id | ID of the record to update (Example: 540731274c616e047a000000) | String
 consumer[email] | The consumer's email address (must be unique) | String
 consumer[password] | The password for the consumer. The password is used for consumer authentication | String
 consumer[name] | The name of the consumer | String

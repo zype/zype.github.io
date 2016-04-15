@@ -52,7 +52,7 @@ category[values] | Values for the category | Array
 
 Parameter | Function | Type
 --------- | -------- | ----
-id | ID of the record to update. Example: 540731274c616e047a000000 | String
+id | ID of the record to update (Example: 540731274c616e047a000000) | String
 category[title] | Title of the category | String
 category[values] | Values for the category | Array
 
@@ -64,7 +64,7 @@ category[values] | Values for the category | Array
 
 Parameter | Function | Type
 --------- | -------- | ----
-id | ID of the record to be deleted. Example: 540731274c616e047a000000 | String
+id | ID of the record to delete (Example: 540731274c616e047a000000) | String
 
 ### Category Object
 
