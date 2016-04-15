@@ -23,7 +23,6 @@ page | The page number of records to return (zero indexed). Example: 0. | Number
 per_page | The number of records to return. Example: 10. | Number
 
 ###Retrieve a Category
-<hr>
 <pre><b>GET</b> https://api.zype.com/categories/[id]
 </pre>
 
@@ -34,7 +33,6 @@ Parameter | Function | Type
 id        | ID of the category. Example: 5389352e69702d401b000000. | String
 
 ###Create a Category
-<hr>
 <pre><b>POST</b> https://api.zype.com/categories
 </pre>
 
@@ -46,7 +44,6 @@ category[title] | Title of the category | String
 category[values] | Values for the category | Array
 
 ###Update a Category
-<hr>
 <pre><b>PUT</b> https://api.zype.com/categories/[id]</pre>
 
 #### Parameters
@@ -58,7 +55,6 @@ category[title] | Title of the category | String
 category[values] | Values for the category | Array
 
 ###Delete a Category
-<hr>
 <pre><b>DELETE</b> https://api.zype.com/categories/[id]
 </pre>
 

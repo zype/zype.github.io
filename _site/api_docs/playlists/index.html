@@ -111,8 +111,6 @@
 <hr />
 
 <h3 id="list-playlists">List Playlists</h3>
-<hr />
-
 <pre><b>GET</b> https://api.zype.com/playlists</pre>
 
 <h4 id="parameters">Parameters</h4>
@@ -180,8 +178,6 @@
 </table>
 
 <h3 id="create-a-playlist">Create a Playlist</h3>
-<hr />
-
 <pre><b>POST</b> https://api.zype.com/playlists</pre>
 
 <h4 id="parameters-1">Parameters</h4>
@@ -209,8 +205,6 @@
 </table>
 
 <h3 id="retrieve-a-playlist">Retrieve a Playlist</h3>
-<hr />
-
 <pre><b>GET</b> https://api.zype.com/playlists/[id]
 </pre>
 
@@ -234,8 +228,6 @@
 </table>
 
 <h3 id="list-playlist-videos">List Playlist Videos</h3>
-<hr />
-
 <pre><b>GET</b> https://api.zype.com/playlists/[id]/videos</pre>
 
 <h4 id="parameters-3">Parameters</h4>
@@ -258,8 +250,6 @@
 </table>
 
 <h3 id="update-a-playlist">Update a Playlist</h3>
-<hr />
-
 <pre><b>PUT</b> https://api.zype.com/playlists/[id]</pre>
 
 <h4 id="parameters-4">Parameters</h4>
@@ -292,8 +282,6 @@
 </table>
 
 <h3 id="delete-a-playlist">Delete a Playlist</h3>
-<hr />
-
 <pre><b>DELETE</b> https://api.zype.com/playlists/[id]</pre>
 
 <h4 id="parameters-5">Parameters</h4>
@@ -316,8 +304,6 @@
 </table>
 
 <h3 id="add-videos-to-a-playlist">Add Video(s) to a Playlist</h3>
-<hr />
-
 <pre><b>PUT</b> https://api.zype.com/playlists/[id]/add_videos</pre>
 
 <h4 id="parameters-6">Parameters</h4>
@@ -337,16 +323,14 @@
       <td>String</td>
     </tr>
     <tr>
-      <td>video_id</td>
+      <td>video_id[]</td>
       <td>A comma separated list of video IDs to add to the playlist</td>
-      <td>String</td>
+      <td>Array</td>
     </tr>
   </tbody>
 </table>
 
 <h3 id="remove-videos-from-a-playlist">Remove Video(s) from a Playlist</h3>
-<hr />
-
 <pre><b>PUT</b> https://api.zype.com/playlists/[id]/remove_videos
 </pre>
 
@@ -367,9 +351,9 @@
       <td>String</td>
     </tr>
     <tr>
-      <td>video_id</td>
+      <td>video_id[]</td>
       <td>A comma separated list of video IDs to remove from the playlist</td>
-      <td>String</td>
+      <td>Array</td>
     </tr>
   </tbody>
 </table>

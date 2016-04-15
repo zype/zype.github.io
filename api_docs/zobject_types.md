@@ -21,7 +21,6 @@ page | The page number of records to return (zero indexed). Example: 0. | Number
 per_page | The number of records to return. Example: 10. | Number
 
 ###Retrieve a Zobject Type
-<hr>
 <pre><b>GET</b> https://api.zype.com/zobject_types/[id]
 </pre>
 
@@ -32,7 +31,6 @@ Parameter | Function | Type
 id        | ID of the zobject type. Example: 5389352e69702d401b000000. | String
 
 ###Create a Zobject Type
-<hr>
 <pre><b>POST</b> https://api.zype.com/zobject_types
 </pre>
 
@@ -49,7 +47,6 @@ zobject_type[zobject_attributes][x][field_type] | Type of the zobject type custo
 zobject_type[zobject_attributes][x][description] | Description of the zobject type custom attribute | String
 
 ###Update a Zobject Type
-<hr>
 <pre><b>PUT</b> https://api.zype.com/zobject_types/[id]</pre>
 
 #### Parameters
@@ -67,7 +64,6 @@ zobject_type[zobject_attributes][x][field_type] | Type of the zobject type custo
 zobject_type[zobject_attributes][x][description] | Description of the zobject type custom attribute | String
 
 ###Delete a Zobject Type
-<hr>
 <pre><b>DELETE</b> https://api.zype.com/zobject_types/[id]
 </pre>
 

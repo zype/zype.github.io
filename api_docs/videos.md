@@ -38,7 +38,6 @@ zobject_id  | Include only videos that belong to the specified Zobject ID. | Str
 zobject_id! | Exclude videos that belong to the specified Zobject ID. | String
 
 ### Create a Video
-<hr>
 <pre><b>POST</b> https://api.zype.com/videos</pre>
 
 #### Parameters
@@ -63,7 +62,6 @@ video[source_id] | An optional user specified identifier for a video | String
 video[custom_thumbnail_url] | A URL where a custom thumbnail for the video can be retrieved (JPEG, PNG or GIF) | String
 
 ###Retrieve a Video
-<hr>
 <pre><b>GET</b> https://api.zype.com/videos/[id]
 </pre>
 
@@ -74,7 +72,6 @@ Parameter | Function | Type
 id        | ID of the video to retrieve. Example: 5389352e69702d401b000000. | String
 
 ### Update a Video
-<hr>
 <pre><b>PUT</b> https://api.zype.com/videos/[id]
 </pre>
 
@@ -101,7 +98,6 @@ video[source_id] | An optional user specified identifier for a video | String
 video[custom_thumbnail_url] | A URL where a custom thumbnail for the video can be retrieved (JPEG, PNG or GIF) | String
 
 ###Delete a Video
-<hr>
 <pre><b>DELETE</b> https://api.zype.com/videos/[id]
 </pre>
 
@@ -112,7 +108,6 @@ Parameter | Function | Type
 id        | ID of the video to delete. Example: 5389352e69702d401b000000. | String
 
 ### Add Zobject(s) to Video
-<hr>
 <pre><b>PUT</b> https://api.zype.com/videos/[id]/add_zobjects
 </pre>
 
@@ -121,10 +116,9 @@ id        | ID of the video to delete. Example: 5389352e69702d401b000000. | Stri
 Parameter | Function | Type
 --------- | -------- | ----
 id        | ID of the video. Example: 5389352e69702d401b000000. | String
-zobject_id | An array containing all of the zobject id's that you want to add to the video. | Array of Strings
+zobject_id[] | An array containing all of the zobject id's that you want to add to the video. | Array
 
 ### Remove Zobject(s) from Video
-<hr />
 <pre><b>PUT</b> https://api.zype.com/videos/[id]/remove_zobjects
 </pre>
 
@@ -133,7 +127,7 @@ zobject_id | An array containing all of the zobject id's that you want to add to
 Parameter | Function | Type
 --------- | -------- | ----
 id        | ID of the video. Example: 5389352e69702d401b000000. | String
-zobject_id | An array containing all of the zobject id's that you want to dissociate from the video. | Array of Strings
+zobject_id[] | An array containing all of the zobject id's that you want to dissociate from the video. | Array
 
 ### Video Object
 

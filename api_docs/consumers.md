@@ -28,7 +28,6 @@ braintree_id | Filter consumers by Braintree ID | String
 created_at | Filter the records returned by created date. You can use greater than or less than filters by adding a suffix: '.gt', '.gte', '.lt', 'lte'. Example: created_at.gte=2015-01-01 | Date
 
 ###Retrieve a Consumer
-<hr>
 <pre><b>GET</b> https://api.zype.com/consumers/[id]
 </pre>
 
@@ -39,7 +38,6 @@ Parameter | Function | Type
 id        | ID of the consumer. Example: 5389352e69702d401b000000. | String
 
 ###Create a Consumer
-<hr>
 <pre><b>POST</b> https://api.zype.com/consumers
 </pre>
 
@@ -56,7 +54,6 @@ consumer[updates] | Boolean field to store if the consumer has agreed to receive
 consumer[terms] | Boolean field to store if the consumer has agreed to terms and conditions. | Boolean
 
 ###Update a Consumer
-<hr>
 <pre><b>PUT</b> https://api.zype.com/consumers/[id]</pre>
 
 #### Parameters
@@ -75,7 +72,6 @@ consumer[password_token] | The password token to use during password reset workf
 consumer[remember_token] | The password token to use during remember login workflows. | String
 
 ###Delete a Consumer
-<hr>
 <pre><b>DELETE</b> https://api.zype.com/consumers/[id]
 </pre>
 

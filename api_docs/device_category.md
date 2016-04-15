@@ -23,7 +23,6 @@ page | The page number of records to return (zero indexed). Example: 0. | Number
 per_page | The number of records to return. Example: 10. | Number
 
 ###Retrieve a Device Category
-<hr>
 <pre><b>GET</b> https://api.zype.com/device_categories/[id]
 </pre>
 

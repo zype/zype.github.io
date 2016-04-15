@@ -8,7 +8,6 @@ permalink: /api_docs/playlists/
 
 <hr>
 ### List Playlists
-<hr>
 <pre><b>GET</b> https://api.zype.com/playlists</pre>
 
 #### Parameters
@@ -27,7 +26,6 @@ q         | A query string for searching for playlists. | String
 sort      | Sort playlists on the specified field | String
 
 ### Create a Playlist
-<hr>
 <pre><b>POST</b> https://api.zype.com/playlists</pre>
 
 #### Parameters
@@ -38,7 +36,6 @@ playlist[title] | The title of the playlist | String
 playlist[description] | The description of the playlist | String
 
 ### Retrieve a Playlist
-<hr>
 <pre><b>GET</b> https://api.zype.com/playlists/[id]
 </pre>
 
@@ -49,7 +46,6 @@ Parameter | Function | Type
 id | ID of the Playlist to retrieve. Example: 5389352e69702d401b000000. | Number
 
 ### List Playlist Videos
-<hr>
 <pre><b>GET</b> https://api.zype.com/playlists/[id]/videos</pre>
 
 #### Parameters
@@ -59,7 +55,6 @@ Parameter | Function | Type
 id | ID of the playlist videos to retrieve. Example: 5389352e69702d401b000000. | String
 
 ### Update a Playlist
-<hr>
 <pre><b>PUT</b> https://api.zype.com/playlists/[id]</pre>
 
 #### Parameters
@@ -71,7 +66,6 @@ playlist[title] | The title of the playlist | String
 playlist[description] | The description of the playlist | String
 
 ### Delete a Playlist
-<hr>
 <pre><b>DELETE</b> https://api.zype.com/playlists/[id]</pre>
 
 #### Parameters
@@ -81,7 +75,6 @@ Parameter | Function | Type
 id | ID of the Playlist to remove. Example: 5389352e69702d401b000000. | Number
 
 ### Add Video(s) to a Playlist
-<hr>
 <pre><b>PUT</b> https://api.zype.com/playlists/[id]/add_videos</pre>
 
 #### Parameters
@@ -89,10 +82,9 @@ id | ID of the Playlist to remove. Example: 5389352e69702d401b000000. | Number
 Parameter | Function | Type
 --------- | -------- | ----
 id        | ID of the playlist. Example: 5389352e69702d401b000000. | String
-video_id  | A comma separated list of video IDs to add to the playlist | String
+video_id[]  | A comma separated list of video IDs to add to the playlist | Array
 
 ### Remove Video(s) from a Playlist
-<hr>
 <pre><b>PUT</b> https://api.zype.com/playlists/[id]/remove_videos
 </pre>
 
@@ -101,7 +93,7 @@ video_id  | A comma separated list of video IDs to add to the playlist | String
 Parameter | Function | Type
 --------- | -------- | ----
 id        | ID of the playlist. Example: 5389352e69702d401b000000. | String
-video_id  | A comma separated list of video IDs to remove from the playlist | String
+video_id[]  | A comma separated list of video IDs to remove from the playlist | Array
 
 ### Playlist Object
 
