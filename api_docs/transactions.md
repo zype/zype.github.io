@@ -21,14 +21,6 @@ page | The page number of records to return (Example: 1) | Integer
 per_page | The number of records to return (Example: 10) | Integer
 q         | Filter records by keyword | String
 
-#### Response
-200
-Content-Type: application/json
-
-
-<pre><code>
-</code></pre>
-
 ### Create a Transaction
 <pre><code>POST - https://api.zype.com/transactions/{transaction}
 </code></pre>
@@ -90,37 +82,28 @@ id        | String id of the Transaction to remove. Example: 5389352e69702d401b0
 
 <pre>
 {
-  "response": [
-    {
-    "_id": "56de07fbf28347a322000010",
+  "response": {
+    "_id": "5706b865f283477023000065",
     "_keywords": [
       "example",
-      "test"
+      "video"
     ],
-      "amount": "4.99",
-      "braintree_id": "5fqzgc",
-      "consumer_id": "56de07e0f28347a32200000e",
-      "created_at": "2016-03-07T18:00:11.069-05:00",
-      "currency": "USD",
-      "deleted_at": null,
-      "description": "",
-      "expires_at": null,
-      "pass_plan_id": null,
-      "payment_nonce": "b74d90f6-4eb9-49b7-ab33-cdb350992d52",
-      "playlist_id": null,
-      "site_id": "5468fd6569702d17ee500000",
-      "status": "authorized",
-      "transaction_type": "purchase",
-      "updated_at": "2016-03-07T18:00:11.069-05:00",
-      "video_id": "553297a769702d081dca96b2"
-    },
-  ],
-  "pagination": {
-    current: 2,
-    previous: 1,
-    next: 3,
-    per_page: 10,
-    pages: 1
+    "amount": "4.99",
+    "braintree_id": "b5wkgx",
+    "consumer_id": "56fecbf1f28347637b000020",
+    "created_at": "2016-04-07T15:43:33.617-04:00",
+    "currency": "USD",
+    "deleted_at": null,
+    "description": null,
+    "expires_at": null,
+    "pass_plan_id": null,
+    "payment_nonce": "fake-valid-nonce",
+    "playlist_id": null,
+    "site_id": "5468fd6569702d17ee500000",
+    "status": "authorized",
+    "transaction_type": "purchase",
+    "updated_at": "2016-04-07T15:43:33.617-04:00",
+    "video_id": "56fbe4b5f28347c9f4000ae3"
   }
 }
 </pre>
