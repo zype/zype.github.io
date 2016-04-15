@@ -3,44 +3,61 @@ layout: api
 title: Zype Developer Portal | OAuth
 permalink: /api_docs/oauth/
 ---
-## Consumer OAuth
+## OAuth
+<hr>
+### Retrieving Client ID and Secret
 
-Zype provides an authentication mechanism for consumer authentication.
-You will need to create a consumer before you can authenticate her.
-Please [check out our consumer docs](http://dev.zype.com/api_docs/consumers/) to learn how to create a consumer. Once a consumer
-has been created, you will authenticate her to get an access token. This access
-token is then used to authenticate API requests on the behalf of your end user.
+Your client ID and secrets are provided by creating an application. Everyone application created in the Zype Platform has a unique client ID and secret.
 
-### Getting your client id and client secret
+### Retrieving an Access Token
 
-To make consumer authentication requests, you will need to use your client id and client secret keys.
-Please <a href='mailto:developers@zypemedia.com'>email Zype</a> to get your client id and client secret keys.
+The password grant flow allows you to pass in a user's username (email address) and password to get an access token in return.
 
-### Retrieving an access token
-
-#### Via password grant flow
-
-The password grant flow allows you to pass in a user's username (email address) and password
-to get an access token in return.
-
-<hr />
-
-<pre> <b>POST</b> https://login.zype.com/oauth/token/?client_id=client_id&client_secret=client_secret&username=email&password=password&grant_type=password
-</pre>
+<pre><b>POST</b> https://login.zype.com/oauth/token</pre>
 
 #### Parameters
 
 Parameter | Function | Type
 --------- | -------- | ----
-client_id | Your Zype App's client id      | String
-client_secret | Your Zype App's client secret   | String
-username | The username (email) of the end user | String
-password | Password of the end user | String
+client_id | The client ID for your Zype application      | String
+client_secret | The client secret for your Zype application   | String
+username | The username (email) of the consumer | String
+password | Password of the consumer | String
 grant_type | Grant Type. Use: 'password' | String
 
-#### Response
-200
-Content-Type: application/json
+### Retrieving Access Token Status
+<pre><b>GET</b> https://login.zype.com/oauth/token/info</pre>
+
+#### Parameters
+
+Parameter | Function | Type
+--------- | -------- | ----
+access_token | The access token created via OAuth | String
+
+### Refreshing an Access Token
+<pre><b>POST</b> https://api.zype.com/oauth/token</pre>
+
+#### Parameters
+
+Parameter | Function | Type
+--------- | -------- | ----
+client_id | The client ID for your Zype application      | String
+client_secret | The client secret for your Zype application   | String
+refresh_token | The refresh token returned when an access token is created | String
+grant_type | Grant type. Use: 'refresh_token' | String
+
+### Authentication Using Access Tokens
+
+To authenticate an API request on the behalf of a consumer, you can pass the access token
+into your API request with the access_token parameter. Note: Not all APIs are available for use by consumers.
+
+<pre><b>GET</b> https://api.zype.com/videos</pre>
+
+Parameter | Function | Type
+--------- | -------- | ----
+access_token | The access token retrieved via oauth | String
+
+### Access Token Object
 
 <pre>{
   "access_token":"abc123",
@@ -50,86 +67,3 @@ Content-Type: application/json
   "scope":"public"
 }
 </pre>
-
-#### Via authorization code grant flow
-
-We will be supporting the authorization code grant flow in the future. If you have a need for this type of
-oauth flow now, please <a href='mailto:developers@zype.com'>reach out</a>!
-
-### Getting access token metadata
-
-You can get additional metadata from your access token. This includes when the access token
-expires, when the access token was created, and the consumer id linked to the access token.
-Note, the consumer id is found in the returned "resource_owner_id" value.
-
-<hr />
-
-<pre><b>GET</b> https://login.zype.com/oauth/token/info?access_token=access_token
-</pre>
-
-#### Parameters
-
-Parameter | Function | Type
---------- | -------- | ----
-access_token | The access token created via oauth | String
-
-#### Response
-200
-Content-Type: application/json
-
-<pre>{
-  "resource_owner_id": "abc123",
-  "scopes": [
-    "consumer"
-    ],
-  "expires_in_seconds": 7026,
-  "application": {
-    "uid": "abc123"
-    },
-  "created_at": 1429544923
-}
-</pre>
-
-### Refreshing an access token
-
-Your access token will expire after 2 hours. To refresh your access token, post your refresh token and you will get a new access token in return.
-
-<hr />
-
-<pre> <b>POST</b> https://api.zype.com/oauth/token/?client_id=client_id&client_secret=client_secret&refresh_token=refresh_token&grant_type=refresh_token
-</pre>
-
-#### Parameters
-
-Parameter | Function | Type
---------- | -------- | ----
-client_id | Your Zype App's client id      | String
-client_secret | Your Zype App's client secret   | String
-refresh_token | Token that allows you to refresh your access token | String
-grant_type | Grant type. Use: 'refresh_token' | String
-
-#### Response
-200
-Content-Type: application/json
-
-<pre>{
-    "access_token":"abc123",
-    "token_type":"bearer",
-    "expires_in":30,
-    "refresh_token":"def456",
-    "scope":"public"
-  }
-</pre>
-
-### Authenticating an API request on the behalf of a consumer
-
-To authenticate an API request on the behalf of a consumer, you can pass the access token
-into your API request with the access_token parameter. For example, see below how to
-request a player for a SVOD video using your access token.
-
-<pre> <b>GET</b> https://player.zype.com/embed/abc123.js?access_token=access_token
-</pre>
-
-Parameter | Function | Type
---------- | -------- | ----
-access_token | The access token retrieved via oauth | String

@@ -106,30 +106,18 @@
 
 
     <section id="main" class="api-docs">
-      <h2 id="consumer-oauth">Consumer OAuth</h2>
-
-<p>Zype provides an authentication mechanism for consumer authentication.
-You will need to create a consumer before you can authenticate her.
-Please <a href="http://dev.zype.com/api_docs/consumers/">check out our consumer docs</a> to learn how to create a consumer. Once a consumer
-has been created, you will authenticate her to get an access token. This access
-token is then used to authenticate API requests on the behalf of your end user.</p>
-
-<h3 id="getting-your-client-id-and-client-secret">Getting your client id and client secret</h3>
-
-<p>To make consumer authentication requests, you will need to use your client id and client secret keys.
-Please <a href="mailto:developers@zypemedia.com">email Zype</a> to get your client id and client secret keys.</p>
-
-<h3 id="retrieving-an-access-token">Retrieving an access token</h3>
-
-<h4 id="via-password-grant-flow">Via password grant flow</h4>
-
-<p>The password grant flow allows you to pass in a user’s username (email address) and password
-to get an access token in return.</p>
-
+      <h2 id="oauth">OAuth</h2>
 <hr />
 
-<pre> <b>POST</b> https://login.zype.com/oauth/token/?client_id=client_id&amp;client_secret=client_secret&amp;username=email&amp;password=password&amp;grant_type=password
-</pre>
+<h3 id="retrieving-client-id-and-secret">Retrieving Client ID and Secret</h3>
+
+<p>Your client ID and secrets are provided by creating an application. Everyone application created in the Zype Platform has a unique client ID and secret.</p>
+
+<h3 id="retrieving-an-access-token">Retrieving an Access Token</h3>
+
+<p>The password grant flow allows you to pass in a user’s username (email address) and password to get an access token in return.</p>
+
+<pre><b>POST</b> https://login.zype.com/oauth/token</pre>
 
 <h4 id="parameters">Parameters</h4>
 
@@ -144,22 +132,22 @@ to get an access token in return.</p>
   <tbody>
     <tr>
       <td>client_id</td>
-      <td>Your Zype App’s client id</td>
+      <td>The client ID for your Zype application</td>
       <td>String</td>
     </tr>
     <tr>
       <td>client_secret</td>
-      <td>Your Zype App’s client secret</td>
+      <td>The client secret for your Zype application</td>
       <td>String</td>
     </tr>
     <tr>
       <td>username</td>
-      <td>The username (email) of the end user</td>
+      <td>The username (email) of the consumer</td>
       <td>String</td>
     </tr>
     <tr>
       <td>password</td>
-      <td>Password of the end user</td>
+      <td>Password of the consumer</td>
       <td>String</td>
     </tr>
     <tr>
@@ -170,34 +158,8 @@ to get an access token in return.</p>
   </tbody>
 </table>
 
-<h4 id="response">Response</h4>
-<p>200
-Content-Type: application/json</p>
-
-<pre>{
-  "access_token":"abc123",
-  "token_type":"bearer",
-  "expires_in":7200,
-  "refresh_token":"def456",
-  "scope":"public"
-}
-</pre>
-
-<h4 id="via-authorization-code-grant-flow">Via authorization code grant flow</h4>
-
-<p>We will be supporting the authorization code grant flow in the future. If you have a need for this type of
-oauth flow now, please <a href="mailto:developers@zype.com">reach out</a>!</p>
-
-<h3 id="getting-access-token-metadata">Getting access token metadata</h3>
-
-<p>You can get additional metadata from your access token. This includes when the access token
-expires, when the access token was created, and the consumer id linked to the access token.
-Note, the consumer id is found in the returned “resource_owner_id” value.</p>
-
-<hr />
-
-<pre><b>GET</b> https://login.zype.com/oauth/token/info?access_token=access_token
-</pre>
+<h3 id="retrieving-access-token-status">Retrieving Access Token Status</h3>
+<pre><b>GET</b> https://login.zype.com/oauth/token/info</pre>
 
 <h4 id="parameters-1">Parameters</h4>
 
@@ -212,37 +174,14 @@ Note, the consumer id is found in the returned “resource_owner_id” value.</p
   <tbody>
     <tr>
       <td>access_token</td>
-      <td>The access token created via oauth</td>
+      <td>The access token created via OAuth</td>
       <td>String</td>
     </tr>
   </tbody>
 </table>
 
-<h4 id="response-1">Response</h4>
-<p>200
-Content-Type: application/json</p>
-
-<pre>{
-  "resource_owner_id": "abc123",
-  "scopes": [
-    "consumer"
-    ],
-  "expires_in_seconds": 7026,
-  "application": {
-    "uid": "abc123"
-    },
-  "created_at": 1429544923
-}
-</pre>
-
-<h3 id="refreshing-an-access-token">Refreshing an access token</h3>
-
-<p>Your access token will expire after 2 hours. To refresh your access token, post your refresh token and you will get a new access token in return.</p>
-
-<hr />
-
-<pre> <b>POST</b> https://api.zype.com/oauth/token/?client_id=client_id&amp;client_secret=client_secret&amp;refresh_token=refresh_token&amp;grant_type=refresh_token
-</pre>
+<h3 id="refreshing-an-access-token">Refreshing an Access Token</h3>
+<pre><b>POST</b> https://api.zype.com/oauth/token</pre>
 
 <h4 id="parameters-2">Parameters</h4>
 
@@ -257,17 +196,17 @@ Content-Type: application/json</p>
   <tbody>
     <tr>
       <td>client_id</td>
-      <td>Your Zype App’s client id</td>
+      <td>The client ID for your Zype application</td>
       <td>String</td>
     </tr>
     <tr>
       <td>client_secret</td>
-      <td>Your Zype App’s client secret</td>
+      <td>The client secret for your Zype application</td>
       <td>String</td>
     </tr>
     <tr>
       <td>refresh_token</td>
-      <td>Token that allows you to refresh your access token</td>
+      <td>The refresh token returned when an access token is created</td>
       <td>String</td>
     </tr>
     <tr>
@@ -278,27 +217,12 @@ Content-Type: application/json</p>
   </tbody>
 </table>
 
-<h4 id="response-2">Response</h4>
-<p>200
-Content-Type: application/json</p>
-
-<pre>{
-    "access_token":"abc123",
-    "token_type":"bearer",
-    "expires_in":30,
-    "refresh_token":"def456",
-    "scope":"public"
-  }
-</pre>
-
-<h3 id="authenticating-an-api-request-on-the-behalf-of-a-consumer">Authenticating an API request on the behalf of a consumer</h3>
+<h3 id="authentication-using-access-tokens">Authentication Using Access Tokens</h3>
 
 <p>To authenticate an API request on the behalf of a consumer, you can pass the access token
-into your API request with the access_token parameter. For example, see below how to
-request a player for a SVOD video using your access token.</p>
+into your API request with the access_token parameter. Note: Not all APIs are available for use by consumers.</p>
 
-<pre> <b>GET</b> https://player.zype.com/embed/abc123.js?access_token=access_token
-</pre>
+<pre><b>GET</b> https://api.zype.com/videos</pre>
 
 <table>
   <thead>
@@ -316,6 +240,17 @@ request a player for a SVOD video using your access token.</p>
     </tr>
   </tbody>
 </table>
+
+<h3 id="access-token-object">Access Token Object</h3>
+
+<pre>{
+  "access_token":"abc123",
+  "token_type":"bearer",
+  "expires_in":7200,
+  "refresh_token":"def456",
+  "scope":"public"
+}
+</pre>
 
     </section>
 
