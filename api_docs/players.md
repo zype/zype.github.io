@@ -5,7 +5,7 @@ permalink: /api_docs/players/
 ---
 
 ## Players
-
+<hr />
 Zype's Dynamic Player Technology will automatically detect which device you are requesting a player from and deliver players based on your configured player rules.
 
 ### Web Players
@@ -19,8 +19,6 @@ For native devices like iOS, Android and OTT devices the Player API will return 
 You should utilize best practices for the specific native device on how to insert your video files and ad tags. For reference,
 please checkout [Zype's Github](https://github.com/zype/) for our open sourced SDKs.
 
-
-<hr>
 ### Retrieve Player
 <pre><b>GET</b> https://player.zype.com/embed/[video_id].[format]</pre>
 
