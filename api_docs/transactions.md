@@ -5,10 +5,8 @@ permalink: /api_docs/transactions/
 ---
 
 ## Transactions Collection
-Lists all Transactions.
 <hr>
-### List all Transactions
-<hr>
+### List Transactions
 <pre><code>GET - https://api.zype.com/transactions/?page=page&per_page=per_page
 </code></pre>
 
@@ -16,19 +14,82 @@ Lists all Transactions.
 
 Parameter | Function | Type
 --------- | -------- | ----
-page      | The page number of records to return (zero indexed). Example: 0. | Number
-per_page  | The number of records to return. Example: 10. | Number
-q         | A query string for searching for transactions | String
-id        | Query for a transaction by id | String
-id!       | Exclude a transaction from the query | String
-consumer_id        | Query for a transaction by Consumer ID | String
+consumer_id   | Filter records by a Consumer ID | String
+id        | Filter records by ID | String
+id!       | Exclude records by ID | String
+page | The page number of records to return (Example: 1) | Integer
+per_page | The number of records to return (Example: 10) | Integer
+q         | Filter records by keyword | String
 
 #### Response
 200
 Content-Type: application/json
 
 
-<pre><code>{
+<pre><code>
+</code></pre>
+
+### Create a Transaction
+<pre><code>POST - https://api.zype.com/transactions/{transaction}
+</code></pre>
+
+#### Parameters
+
+Parameter | Function | Type
+--------- | -------- | ----
+provider | Value must be either 'stripe' or 'braintree'. Specifies whether you are using Stripe or Braintree for payments. *required* | String
+transaction[consumer_id] | The id of the consumer making the transaction. *required* | String
+transaction[video_id] | The id of the video the user is purchasing if purchasing a video. Required if the transaction is for a video. | String
+transaction[playlist_id] | The id of the playlist the user is purchasing if purchasing a playlist. Required if the transaction is for a playlist. | String
+transaction[pass_plan_id] | The id of the pass plan the user is purchasing if purchasing a pass plan. Required if the transaction is for a pass plan. | String
+transaction[payment_nonce] | The payment nonce provided by Stripe or Braintree if using one of those platforms. *required* | String
+amount | Must be formatted as a string included cent value, for example "1.99". *required* | String
+transaction[transaction_type] | Must be either 'purchase' or 'rental'. *required* | String
+transaction[currency] | Set currency type. This is optional. Default value is 'USD'. | String
+description | Description of transaction. | String
+
+###Retrieve a Transaction
+<pre><code>GET - https://api.zype.com/transactions/{id}
+</code></pre>
+
+#### Parameters
+
+Parameter | Function | Type
+--------- | -------- | ----
+id        | String id of the Transaction to retrieve. Example: 5389352e69702d401b000000. | String
+
+### Update a Transaction
+<pre><code>PUT - https://api.zype.com/transactions/{id}
+</code></pre>
+
+#### Parameters
+
+Parameter | Function | Type
+--------- | -------- | ----
+transaction[consumer_id] | The id of the consumer. | String
+transaction[video_id] | The id of the video. | String
+transaction[playlist_id] | The id of the playlist. | String
+transaction[pass_plan_id] | The id of the pass plan. | String
+transaction[payment_nonce] | The payment nonce. | String
+transaction[amount] | Must be formatted as a string included cent value, for example "1.99".| String
+transaction[transaction_type] | Must be either 'purchase' or 'rental'. | String
+transaction[currency] | The currency type. | String
+transaction[description] | Description of transaction. | String
+
+### Delete a Transaction
+<pre><code>DELETE - https://api.zype.com/transactions/{id}
+</code></pre>
+
+#### Parameters
+
+Parameter | Function | Type
+--------- | -------- | ----
+id        | String id of the Transaction to remove. Example: 5389352e69702d401b000000. | String
+
+### Transaction Object
+
+<pre>
+{
   "response": [
     {
     "_id": "56de07fbf28347a322000010",
@@ -62,198 +123,4 @@ Content-Type: application/json
     pages: 1
   }
 }
-</code></pre>
-
-<hr>
-### Create a Transaction
-<hr>
-<pre><code>POST - https://api.zype.com/transactions/{transaction}
-</code></pre>
-
-#### Parameters
-
-Parameter | Function | Type
---------- | -------- | ----
-provider | Value must be either 'stripe' or 'braintree'. Specifies whether you are using Stripe or Braintree for payments. *required* | String
-transaction | A set of key value pairs that describe the Transaction. *required* | Hash
-consumer_id | The id of the consumer making the transaction. *required* | String
-video_id | The id of the video the user is purchasing if purchasing a video. Required if the transaction is for a video. | String
-playlist_id | The id of the playlist the user is purchasing if purchasing a playlist. Required if the transaction is for a playlist. | String
-pass_plan_id | The id of the pass plan the user is purchasing if purchasing a pass plan. Required if the transaction is for a pass plan. | String
-payment_nonce | The payment nonce provided by Stripe or Braintree if using one of those platforms. *required* | String
-amount | Must be formatted as a string included cent value, for example "1.99". *required* | String
-transaction_type | Must be either 'purchase' or 'rental'. *required* | String
-currency | Set currency type. This is optional. Default value is 'USD'. | String
-description | Description of transaction. | String
-
-### Example
-
-<pre><code>{
-  "api_key": "YOUR_ADMIN_KEY",
-  "transaction": {
-    "consumer_id": "56fecbf1f28347637b000020",
-    "video_id": "56fbe4b5f28347c9f4000ae3",
-    "transaction_type": "purchase",
-    "amount": "4.99",
-    "payment_nonce": "YOUR_PAYMENT_NONCE"
-  },
-  "provider": "braintree"
-}
-</code></pre>
-
-
-#### Response
-201
-Content-Type: application/json
-
-<pre><code>{
-  "response": {
-    "_id": "5706b865f283477023000065",
-    "_keywords": [
-      "example",
-      "video"
-    ],
-    "amount": "4.99",
-    "braintree_id": "b5wkgx",
-    "consumer_id": "56fecbf1f28347637b000020",
-    "created_at": "2016-04-07T15:43:33.617-04:00",
-    "currency": "USD",
-    "deleted_at": null,
-    "description": null,
-    "expires_at": null,
-    "pass_plan_id": null,
-    "payment_nonce": "fake-valid-nonce",
-    "playlist_id": null,
-    "site_id": "5468fd6569702d17ee500000",
-    "status": "authorized",
-    "transaction_type": "purchase",
-    "updated_at": "2016-04-07T15:43:33.617-04:00",
-    "video_id": "56fbe4b5f28347c9f4000ae3"
-  }
-}
-</code></pre>
-
-## Transaction
-Lists descriptive information about a Transaction
-<hr>
-###Retrieve a Transaction
-<hr>
-<pre><code>GET - https://api.zype.com/transactions/{id}
-</code></pre>
-
-#### Parameters
-
-Parameter | Function | Type
---------- | -------- | ----
-id        | String id of the Transaction to retrieve. Example: 5389352e69702d401b000000. | String
-
-#### Request
-Content-Type: application/json
-
-#### Response
-200
-Content-Type: application/json
-
-<pre><code>{
-  "response": {
-    "_id": "5706b865f283477023000065",
-    "_keywords": [
-      "example",
-      "video"
-    ],
-    "amount": "4.99",
-    "braintree_id": "b5wkgx",
-    "consumer_id": "56fecbf1f28347637b000020",
-    "created_at": "2016-04-07T15:43:33.617-04:00",
-    "currency": "USD",
-    "deleted_at": null,
-    "description": null,
-    "expires_at": null,
-    "pass_plan_id": null,
-    "payment_nonce": "fake-valid-nonce",
-    "playlist_id": null,
-    "site_id": "5468fd6569702d17ee500000",
-    "status": "authorized",
-    "transaction_type": "purchase",
-    "updated_at": "2016-04-07T15:43:33.617-04:00",
-    "video_id": "56fbe4b5f28347c9f4000ae3"
-  }
-}
-</code></pre>
-
-<hr>
-### Update a Transaction
-<hr>
-<pre><code>PUT - https://api.zype.com/transactions/{id}
-</code></pre>
-
-#### Parameters
-
-Parameter | Function | Type
---------- | -------- | ----
-transaction | A set of key value pairs that describe the Transaction. *required* | Hash
-consumer_id | The id of the consumer. | String
-video_id | The id of the video. | String
-playlist_id | The id of the playlist. | String
-pass_plan_id | The id of the pass plan. | String
-payment_nonce | The payment nonce. | String
-amount | Must be formatted as a string included cent value, for example "1.99".| String
-transaction_type | Must be either 'purchase' or 'rental'. | String
-currency | The currency type. | String
-description | Description of transaction. | String
-
-
-#### Request
-
-Content-Type: application/json
-
-#### Response
-201
-Content-Type: application/json
-
-<pre><code>{
-  "response": {
-    "_id": "5706b865f283477023000065",
-    "_keywords": [
-      "asdfasfds",
-      "com",
-      "lkjalskjdflkajs"
-    ],
-    "amount": "4.99",
-    "braintree_id": "b5wkgx",
-    "consumer_id": "56fecbf1f28347637b000020",
-    "created_at": "2016-04-07T15:43:33.617-04:00",
-    "currency": "USD",
-    "deleted_at": null,
-    "description": "My cool transaction",
-    "expires_at": null,
-    "pass_plan_id": null,
-    "payment_nonce": "fake-valid-nonced",
-    "playlist_id": null,
-    "site_id": "5468fd6569702d17ee500000",
-    "status": "authorized",
-    "transaction_type": "purchase",
-    "updated_at": "2016-04-07T15:51:17.275-04:00",
-    "video_id": "56fbe4b5f28347c9f4000ae3"
-  }
-}
-</code></pre>
-
-<hr>
-### Remove a Transaction
-<hr>
-<pre><code>DELETE - https://api.zype.com/transactions/{id}
-</code></pre>
-
-#### Parameters
-
-Parameter | Function | Type
---------- | -------- | ----
-id        | String id of the Transaction to remove. Example: 5389352e69702d401b000000. | String
-
-#### Request
-Content-Type: application/json
-
-#### Response
-204
-
+</pre>
