@@ -7,7 +7,6 @@ permalink: /api_docs/zobjects/
 ## Zobjects Collection
 <hr>
 ### List Zobjects
-<hr>
 <pre><b>GET</b> https://api.zype.com/zobjects</pre>
 
 #### Parameters
