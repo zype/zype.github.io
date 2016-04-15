@@ -107,14 +107,10 @@
 
     <section id="main" class="api-docs">
       <h2 id="plans-collection">Plans Collection</h2>
-<p>Lists all plans.</p>
 <hr />
 
-<h3 id="list-all-plans">List all Plans</h3>
-<hr />
-
-<pre><b>GET</b> https://api.zype.com/plans/?page=page&amp;per_page=per_page
-</pre>
+<h3 id="list-plans">List Plans</h3>
+<pre><b>GET</b> https://api.zype.com/plans</pre>
 
 <h4 id="parameters">Parameters</h4>
 
@@ -144,7 +140,7 @@
     </tr>
     <tr>
       <td>id</td>
-      <td>Query for a plan by id</td>
+      <td>Filter records by ID</td>
       <td>String</td>
     </tr>
     <tr>
@@ -155,49 +151,8 @@
   </tbody>
 </table>
 
-<h4 id="response">Response</h4>
-<p>200
-Content-Type: application/json</p>
-
-<pre>{
-  "response": [
-    {
-      "_id": "544813e74c616e0dc0000000",
-      "_keywords": [],
-      "active": true,
-      "amount": "7.99",
-      "created_at": "2014-10-22T20:30:31.792Z",
-      "currency": "USD",
-      "description": 'Description for the plan',
-      "interval": "month",
-      "name": "Zype Monthly Subscription",
-      "stripe_id": "zype-monthly",
-      "stripe_public_key": "pk_test_123456",
-      "trial_period_days": 0,
-      "updated_at": "2014-10-23T13:02:20.075Z"
-    }
-  ],
-  "pagination": {
-    "current": 1,
-    "previous": null,
-    "next": null,
-    "per_page": 1,
-    "pages": 1
-  }
-}
-</pre>
-
-<hr />
-
-<h2 id="plan">Plan</h2>
-<p>Lists descriptive information about a plan</p>
-<hr />
-
 <h3 id="retrieve-a-plan">Retrieve a Plan</h3>
-<hr />
-
-<pre><b>GET</b> https://api.zype.com/plan/{id}
-</pre>
+<pre><b>GET</b> https://api.zype.com/plans/[id]</pre>
 
 <h4 id="parameters-1">Parameters</h4>
 
@@ -218,30 +173,22 @@ Content-Type: application/json</p>
   </tbody>
 </table>
 
-<h4 id="request">Request</h4>
-<p>Content-Type: application/json</p>
-
-<h4 id="response-1">Response</h4>
-<p>200
-Content-Type: application/json</p>
-
-<pre>{
-  "response": {
-      "_id": "544813e74c616e0dc0000000",
-      "_keywords": [],
-      "active": true,
-      "amount": "7.99",
-      "created_at": "2014-10-22T20:30:31.792Z",
-      "currency": "USD",
-      "description": 'Description for the plan',
-      "interval": "month",
-      "name": "Zype Monthly Subscription",
-      "stripe_id": "zype-monthly",
-      "stripe_public_key": "abcde12345",
-      "trial_period_days": 0,
-      "updated_at": "2014-10-23T13:02:20.075Z"
-    }
-  }
+<h3 id="plan-object">Plan Object</h3>
+<pre>
+{
+  "_id": "544813e74c616e0dc0000000",
+  "_keywords": [],
+  "active": true,
+  "amount": "7.99",
+  "created_at": "2014-10-22T20:30:31.792Z",
+  "currency": "USD",
+  "description": 'Description for the plan',
+  "interval": "month",
+  "name": "Zype Monthly Subscription",
+  "stripe_id": "zype-monthly",
+  "stripe_public_key": "pk_test_123456",
+  "trial_period_days": 0,
+  "updated_at": "2014-10-23T13:02:20.075Z"
 }
 </pre>
 
