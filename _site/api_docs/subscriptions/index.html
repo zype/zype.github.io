@@ -89,6 +89,7 @@
       <p><a href="/api_docs/plans/">Plans</a></p>
       <p><a href="/api_docs/oauth/">OAuth</a></p>
       <p><a href="/api_docs/subscriptions/">Subscriptions</a></p>
+      <p><a href="/api_docs/transactions/">Transactions</a></p>
       <a href="/api_docs/zobject_docs/"><h4 class="api-header">Zobjects</h4></a>
       <p><a href="/api_docs/zobject_types/">Zobject Types</a></p>
       <p><a href="/api_docs/zobjects/">Zobjects</a></p>
@@ -107,13 +108,11 @@
 
     <section id="main" class="api-docs">
       <h2 id="subscriptions-collection">Subscriptions Collection</h2>
-<p>Lists all Subscriptions.</p>
 <hr />
 
-<h3 id="list-all-subscriptions">List all Subscriptions</h3>
-<hr />
-
-<pre><b>GET</b> https://api.zype.com/subscriptions/?page=page&amp;per_page=per_page
+<h3 id="list-subscriptions">List Subscriptions</h3>
+<pre>
+  <b>GET</b> https://api.zype.com/subscriptions/?page=page&amp;per_page=per_page
 </pre>
 
 <h4 id="parameters">Parameters</h4>
@@ -128,6 +127,36 @@
   </thead>
   <tbody>
     <tr>
+      <td>braintree_id</td>
+      <td>Filter records by a Braintree ID</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>consumer_id</td>
+      <td>Filter records by a Consumer ID</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>created_at</td>
+      <td>Filter records by created date. Greater or less than filters can be used by adding a suffix (Example: created_at.gte)</td>
+      <td>Date</td>
+    </tr>
+    <tr>
+      <td>id</td>
+      <td>Filter records by ID</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>id!</td>
+      <td>Exclude records by ID</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>order</td>
+      <td>Sort records in ascending or descending order (Example: asc/desc)</td>
+      <td>String</td>
+    </tr>
+    <tr>
       <td>page</td>
       <td>The page number of records to return (Example: 1)</td>
       <td>Integer</td>
@@ -138,81 +167,31 @@
       <td>Integer</td>
     </tr>
     <tr>
+      <td>plan_id</td>
+      <td>Filter records by a Plan ID</td>
+      <td>String</td>
+    </tr>
+    <tr>
       <td>q</td>
       <td>Filter records by keyword</td>
       <td>String</td>
     </tr>
     <tr>
-      <td>id</td>
-      <td>Query for a subscription by id</td>
+      <td>sort</td>
+      <td>Sort records on the specified field</td>
       <td>String</td>
     </tr>
     <tr>
-      <td>id!</td>
-      <td>Exclude records by ID</td>
+      <td>stripe_id</td>
+      <td>Filter records by a Stripe ID</td>
       <td>String</td>
     </tr>
   </tbody>
 </table>
 
-<h4 id="response">Response</h4>
-<p>200
-Content-Type: application/json</p>
-
-<pre>{
-  "response": [
-    {
-      "_id": "54579a714c616e0389010000",
-      "_keywords": [
-        "com",
-        "example",
-        "subscription",
-        "test123"
-      ],
-      "amount": "29.29",
-      "cancel_at_period_end": false,
-      "cancelled_at": null,
-      "consumer_id": "54579a634c616e0389000000",
-      "coupon_code": null,
-      "created_at": "2015-04-30T21:35:25.718-04:00",
-      "currency": "USD",
-      "current_period_end_at": null,
-      "current_period_start_at": null,
-      "deleted_at": null,
-      "discount_amount": null,
-      "discount_duration": null,
-      "discount_duration_months": null,
-      "discount_percent": null,
-      "interval": "month",
-      "interval_count": 1,
-      "mrr": null,
-      "plan_id": "554251d784502d0714ea1300",
-      "site_id": "54h76h4069702d523c000000",
-      "start_at": null,
-      "status": "active",
-      "stripe_card_token": null,
-      "stripe_id": "sub_5e7ddfHfsXs6",
-      "trial_period_days": 0,
-      "updated_at": "2015-04-30T21:35:25.718-04:00",
-      "plan_name": "6 Month Subscription"
-    }
-  ],
-  "pagination": {
-    current: 2,
-    previous: 1,
-    next: 3,
-    per_page: 10,
-    pages: 1
-  }
-}
-</pre>
-
-<hr />
-
 <h3 id="create-a-subscription">Create a Subscription</h3>
-<hr />
-
-<pre><b>POST</b> https://api.zype.com/subscriptions/{subscription}
+<pre>
+  <b>POST</b> https://api.zype.com/subscriptions/{subscription}
 </pre>
 
 <h4 id="parameters-1">Parameters</h4>
@@ -227,81 +206,61 @@ Content-Type: application/json</p>
   </thead>
   <tbody>
     <tr>
-      <td>subscription</td>
-      <td>A set of key value pairs that describe the Subscription. Needs to include consumer_id and plan_id</td>
-      <td>Hash</td>
-    </tr>
-    <tr>
-      <td>consumer_id</td>
-      <td>The id of the consumer to be subscribed</td>
+      <td>subscription[consumer_id]</td>
+      <td>The id of the consumer to be subscribed <em>required</em></td>
       <td>String</td>
     </tr>
     <tr>
-      <td>plan_id</td>
-      <td>The id of the plan the consumer is subscribing to</td>
+      <td>subscription[plan_id]</td>
+      <td>The id of the plan the consumer is subscribing to <em>required</em></td>
       <td>String</td>
     </tr>
     <tr>
-      <td>coupon_code</td>
-      <td>The code of the coupon, if used. This parameter is optional</td>
+      <td>subscription[coupon_code]</td>
+      <td>The code of the coupon, if used. This parameter is optional.</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>subscription[stripe_card_token]</td>
+      <td>The Stripe credit card token as generated by a Stripe payment form</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>subscription[stripe_id]</td>
+      <td>The id of a Stripe subscription that has already been fully created (used for reconciling the Zype dashboard with subscriptions that have been previously created)</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>subscription[braintree_payment_nonce]</td>
+      <td>The Braintree credit card payment nonce as generated by a Braintree payment form</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>subscription[braintree_id]</td>
+      <td>The id of a Braintree subscription that has already been fully created (used for reconciling the Zype dashboard with subscriptions that have been previously created)</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>subscription[status]</td>
+      <td>Valid values are ‘canceled’ or ‘active’. If left empty, ‘active’ will be the default value.</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>subscription[cancelled_at]</td>
+      <td>If the subscription has already been cancelled at a certain date (optional)</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>subscription[cancel_at_period_end]</td>
+      <td>Set Stripe subscription to cancel at period end (optional)</td>
       <td>String</td>
     </tr>
   </tbody>
 </table>
 
-<h4 id="response-1">Response</h4>
-<p>201
-Content-Type: application/json</p>
-
-<pre>{
-  "response": {
-    {
-      "_id": "54579a714c616e0389010000",
-      "_keywords": [
-        "com",
-        "example",
-        "subscription",
-        "test123"
-      ],
-      "amount": "29.29",
-      "cancel_at_period_end": false,
-      "cancelled_at": null,
-      "consumer_id": "54579a634c616e0389000000",
-      "coupon_code": null,
-      "created_at": "2015-04-30T21:35:25.718-04:00",
-      "currency": "USD",
-      "current_period_end_at": null,
-      "current_period_start_at": null,
-      "deleted_at": null,
-      "discount_amount": null,
-      "discount_duration": null,
-      "discount_duration_months": null,
-      "discount_percent": null,
-      "interval": "month",
-      "interval_count": 1,
-      "mrr": null,
-      "plan_id": "554251d784502d0714ea1300",
-      "site_id": "54h76h4069702d523c000000",
-      "start_at": null,
-      "status": "active",
-      "stripe_card_token": null,
-      "stripe_id": "sub_5e7ddfHfsXs6",
-      "trial_period_days": 0,
-      "updated_at": "2015-04-30T21:35:25.718-04:00",
-      "plan_name": "6 Month Subscription"
-    }
-  }
-}
-</pre>
-
-<h2 id="subscription">Subscription</h2>
-<p>Lists descriptive information about a Subscription</p>
-<hr />
-
 <h3 id="retrieve-a-subscription">Retrieve a Subscription</h3>
-<hr />
-
-<pre><b>GET</b> https://api.zype.com/subscriptions/{id}
+<pre>
+  <b>GET</b> https://api.zype.com/subscriptions/{id}
 </pre>
 
 <h4 id="parameters-2">Parameters</h4>
@@ -323,60 +282,9 @@ Content-Type: application/json</p>
   </tbody>
 </table>
 
-<h4 id="request">Request</h4>
-<p>Content-Type: application/json</p>
-
-<h4 id="response-2">Response</h4>
-<p>200
-Content-Type: application/json</p>
-
-<pre>{
-  "response": {
-    {
-      "_id": "54579a714c616e0389010000",
-      "_keywords": [
-        "com",
-        "example",
-        "subscription",
-        "test123"
-      ],
-      "amount": "29.29",
-      "cancel_at_period_end": false,
-      "cancelled_at": null,
-      "consumer_id": "54579a634c616e0389000000",
-      "coupon_code": null,
-      "created_at": "2015-04-30T21:35:25.718-04:00",
-      "currency": "USD",
-      "current_period_end_at": null,
-      "current_period_start_at": null,
-      "deleted_at": null,
-      "discount_amount": null,
-      "discount_duration": null,
-      "discount_duration_months": null,
-      "discount_percent": null,
-      "interval": "month",
-      "interval_count": 1,
-      "mrr": null,
-      "plan_id": "554251d784502d0714ea1300",
-      "site_id": "54h76h4069702d523c000000",
-      "start_at": null,
-      "status": "active",
-      "stripe_card_token": null,
-      "stripe_id": "sub_5e7ddfHfsXs6",
-      "trial_period_days": 0,
-      "updated_at": "2015-04-30T21:35:25.718-04:00",
-      "plan_name": "6 Month Subscription"
-    }
-  }
-}
-</pre>
-
-<hr />
-
 <h3 id="update-a-subscription">Update a Subscription</h3>
-<hr />
-
-<pre><b>PUT</b> https://api.zype.com/subscriptions/{id}
+<pre>
+  <b>PUT</b> https://api.zype.com/subscriptions/{id}
 </pre>
 
 <h4 id="parameters-3">Parameters</h4>
@@ -391,77 +299,59 @@ Content-Type: application/json</p>
   </thead>
   <tbody>
     <tr>
-      <td>Subscription</td>
-      <td>A set of key value pairs that describe the subscription</td>
-      <td>Hash</td>
-    </tr>
-    <tr>
-      <td>consumer_id</td>
+      <td>subscription[consumer_id]</td>
       <td>The id of the consumer</td>
       <td>String</td>
     </tr>
     <tr>
-      <td>plan_id</td>
-      <td>The id of the plan</td>
+      <td>subscription[plan_id]</td>
+      <td>The id of the plan the consumer is subscribing to</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>subscription[coupon_code]</td>
+      <td>The code of the coupon, if used</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>subscription[stripe_card_token]</td>
+      <td>The Stripe credit card token as generated by a Stripe payment form</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>subscription[stripe_id]</td>
+      <td>The id of a Stripe subscription that has already been fully created (used for reconciling the Zype dashboard with subscriptions that have been previously created)</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>subscription[braintree_payment_nonce]</td>
+      <td>The Braintree credit card payment nonce as generated by a Braintree payment form</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>subscription[braintree_id]</td>
+      <td>The id of a Braintree subscription that has already been fully created (used for reconciling the Zype dashboard with subscriptions that have been previously created)</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>subscription[status]</td>
+      <td>Valid values are ‘canceled’ or ‘active’</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>subscription[cancelled_at]</td>
+      <td>If the subscription has already been cancelled at a certain date</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>subscription[cancel_at_period_end]</td>
+      <td>Set Stripe subscription to cancel at period end</td>
       <td>String</td>
     </tr>
   </tbody>
 </table>
 
-<h4 id="request-1">Request</h4>
-
-<p>Content-Type: application/json</p>
-
-<h4 id="response-3">Response</h4>
-<p>201
-Content-Type: application/json</p>
-
-<pre>{
-  "response": {
-    {
-      "_id": "54579a714c616e0389010000",
-      "_keywords": [
-        "com",
-        "example",
-        "subscription",
-        "test123"
-      ],
-      "amount": "29.29",
-      "cancel_at_period_end": false,
-      "cancelled_at": null,
-      "consumer_id": "54579a634c616e0389000000",
-      "coupon_code": null,
-      "created_at": "2015-04-30T21:35:25.718-04:00",
-      "currency": "USD",
-      "current_period_end_at": null,
-      "current_period_start_at": null,
-      "deleted_at": null,
-      "discount_amount": null,
-      "discount_duration": null,
-      "discount_duration_months": null,
-      "discount_percent": null,
-      "interval": "month",
-      "interval_count": 1,
-      "mrr": null,
-      "plan_id": "554251d784502d0714ea1300",
-      "site_id": "54h76h4069702d523c000000",
-      "start_at": null,
-      "status": "active",
-      "stripe_card_token": null,
-      "stripe_id": "sub_5e7ddfHfsXs6",
-      "trial_period_days": 0,
-      "updated_at": "2015-04-30T21:35:25.718-04:00",
-      "plan_name": "6 Month Subscription"
-    }
-  }
-}
-</pre>
-
-<hr />
-
-<h3 id="remove-a-subscription">Remove a Subscription</h3>
-<hr />
-
+<h3 id="delete-a-subscription">Delete a Subscription</h3>
 <pre><b>DELETE</b> https://api.zype.com/subscriptions/{id}
 </pre>
 
@@ -484,12 +374,46 @@ Content-Type: application/json</p>
   </tbody>
 </table>
 
-<h4 id="request-2">Request</h4>
-<p>Content-Type: application/json</p>
+<h3 id="subscription-object">Subscription Object</h3>
 
-<h4 id="response-4">Response</h4>
-<p>204</p>
-
+<pre>
+  {
+    "response": {
+      "_id": "56fecbcbf28347637b00001e",
+      "_keywords": [
+        "braintree",
+        "com",
+        "month"
+      ],
+      "amount": "5.0",
+      "braintree_id": "6fh5yw",
+      "braintree_payment_nonce": "ff7f20cb-a7ca-44b0-92d9-3a298d1da184",
+      "cancel_at_period_end": false,
+      "cancelled_at": null,
+      "consumer_id": "56f99f18f2834738c800000b",
+      "coupon_code": null,
+      "created_at": "2016-04-01T15:28:11.970-04:00",
+      "currency": "USD",
+      "current_period_end_at": "2016-04-30T00:00:00.000-04:00",
+      "current_period_start_at": "2016-04-01T00:00:00.000-04:00",
+      "deleted_at": null,
+      "discount_amount": null,
+      "discount_duration": null,
+      "discount_duration_months": null,
+      "discount_percent": null,
+      "interval": "month",
+      "interval_count": 1,
+      "mrr": 5,
+      "plan_id": "5671a8394d656c49a7000000",
+      "site_id": "5468fd6569702d17ee500000",
+      "start_at": "2016-04-01T15:28:14.000-04:00",
+      "status": "active",
+      "trial_period_days": 0,
+      "updated_at": "2016-04-01T15:28:11.970-04:00",
+      "plan_name": "Braintree Month"
+    }
+  }
+</pre>
 
     </section>
 
