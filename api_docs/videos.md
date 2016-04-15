@@ -27,8 +27,8 @@ id!       | Exclude records by ID | String
 mature_content    | Filter records that are flagged as mature content | Boolean
 order     | Sort records in ascending or descending order (Example: asc/desc) | String
 on_air    | Filter records that are either on or off air | Boolean
-page | The page number of records to return (Example: 1) | Number
-per_page | The number of records to return (Example: 10) | Number
+page | The page number of records to return (Example: 1) | Integer
+per_page | The number of records to return (Example: 10) | Integer
 published_at | Filter records by published date. Greater or less than filters can be used by adding a suffix (Example: published_at.gte) | Date
 q         | Filter records by keyword | String
 sort      | Sort records on the specified field | String

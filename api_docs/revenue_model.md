@@ -19,8 +19,8 @@ created_at | Filter the records returned by created date. Greater or less than f
 id        | Filter records by ID | String
 id!       | Exclude records by ID | String
 order     | Sort records in ascending or descending order (Example: asc/desc) | String
-page      | The page number of records to return (Example: 1) | Number
-per_page  | The number of records to return (Example: 10) | Number
+page      | The page number of records to return (Example: 1) | Integer
+per_page  | The number of records to return (Example: 10) | Integer
 q         | Filter records by keyword | String
 sort      | Sort records on the specified field | String
 title     | Filter records by title | String

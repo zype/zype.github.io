@@ -18,8 +18,8 @@ id=id&id!=id&video_source_id=video_source_id&q=q&keyword=keyword
 
 Parameter | Function | Type
 --------- | -------- | ----
-page      | The page number of records to return (Example: 1) | Number
-per_page  | The number of records to return (Example: 10) | Number
+page      | The page number of records to return (Example: 1) | Integer
+per_page  | The number of records to return (Example: 10) | Integer
 q         | Filter records by keyword | String
 status    | Filters the records returned by status. Example: created | String
 active    | Filter by active, inactive, or all records (Example: true) | String

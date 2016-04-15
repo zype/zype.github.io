@@ -20,9 +20,9 @@ created_at | Filter the records returned by created date. Greater or less than f
 email     | Filter records by email | String
 id        | Filter records by ID | String
 id!       | Exclude records by ID | String
-page      | The page number of records to return (Example: 1) | Number
+page      | The page number of records to return (Example: 1) | Integer
 password_token | Filter records by password reset token | String
-per_page  | The number of records to return (Example: 10) | Number
+per_page  | The number of records to return (Example: 10) | Integer
 q         | Filter records by keyword | String
 rss_token | Filter records by RSS token | String
 stripe_id | Filter records by Stripe ID | String

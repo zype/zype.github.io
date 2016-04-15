@@ -20,8 +20,8 @@ category! | Exclude records by category value (Example: category![color]=blue) |
 id        | Filter records by ID | String
 id!       | Exclude records by ID | String
 order     | Sort records in ascending or descending order (Example: asc/desc) | String
-page | The page number of records to return (Example: 1) | Number
-per_page | The number of records to return (Example: 10) | Number
+page | The page number of records to return (Example: 1) | Integer
+per_page | The number of records to return (Example: 10) | Integer
 q         | Filter records by keyword | String
 sort      | Sort records on the specified field | String
 title     | Filter records by title | String
@@ -44,7 +44,7 @@ playlist[description] | The description of the playlist | String
 
 Parameter | Function | Type
 --------- | -------- | ----
-id | ID of the record to retrieve (Example: 5389352e69702d401b000000) | Number
+id | ID of the record to retrieve (Example: 5389352e69702d401b000000) | String
 
 ### List Playlist Videos
 <pre><b>GET</b> https://api.zype.com/playlists/[id]/videos</pre>
@@ -73,7 +73,7 @@ playlist[description] | The description of the playlist | String
 
 Parameter | Function | Type
 --------- | -------- | ----
-id | ID of the record to delete (Example: 5389352e69702d401b000000) | Number
+id | ID of the record to delete (Example: 5389352e69702d401b000000) | String
 
 ### Add Video(s) to a Playlist
 <pre><b>PUT</b> https://api.zype.com/playlists/[id]/add_videos</pre>

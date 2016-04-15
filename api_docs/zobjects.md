@@ -16,8 +16,8 @@ permalink: /api_docs/zobjects/
 Parameter | Function | Type
 --------- | -------- | ----
 zobject_type | The title of the zobject type. Required. Example: card | String
-page      | The page number of records to return (Example: 1) | Number
-per_page  | The number of records to return (Example: 10) | Number
+page      | The page number of records to return (Example: 1) | Integer
+per_page  | The number of records to return (Example: 10) | Integer
 keywords  | Filters the records returned by keyword. Example: comedy | String
 
 #### Response

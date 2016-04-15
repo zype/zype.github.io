@@ -15,8 +15,8 @@ permalink: /api_docs/distribution_endpoints/
 
 Parameter | Function | Type
 --------- | -------- | ----
-page | The page number of records to return (Example: 1) | Number
-per_page | The number of records to return (Example: 10) | Number
+page | The page number of records to return (Example: 1) | Integer
+per_page | The number of records to return (Example: 10) | Integer
 
 #### Response
 200
