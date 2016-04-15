@@ -41,7 +41,7 @@ id        | ID of the record (Example: 5389352e69702d401b000000) | String
 Parameter | Function | Type
 --------- | -------- | ----
 id        | ID of the record (Example: 5389352e69702d401b000000) | String
-video_id  | ID of a video to add video import to (Example: 5389352e69702d401b000000) | String
+video_id  | ID of a video to add the record to (Example: 5389352e69702d401b000000) | String
 
 ### Video Import Object
 <pre>
