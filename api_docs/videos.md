@@ -82,6 +82,7 @@ id        | ID of the video to retrieve. Example: 5389352e69702d401b000000. | St
 
 Parameter | Function | Type
 --------- | -------- | ----
+id | ID of the video to update. Example: 540731274c616e047a000000. | String
 video[title] | The title of the video | String
 video[description] | The description of the video | String
 video[short_description] | The description of the video | String

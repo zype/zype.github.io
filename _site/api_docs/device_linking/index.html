@@ -121,7 +121,7 @@ a Zype consumer to link her device, and link the device to the Zype consumer via
 <p>You will first want to see if the current device id has been linked to a Zype consumer.</p>
 <hr />
 
-<pre><code>GET - https://api.zype.com/pin/status/?linked_device_id=linked_device_id
+<pre><code><b>GET</b> https://api.zype.com/pin/status/?linked_device_id=linked_device_id
 </code></pre>
 
 <h4 id="parameters">Parameters</h4>
@@ -185,7 +185,7 @@ every 30 minutes. You will need to reacquire the pin after 30 minutes.</p>
 
 <hr />
 
-<pre><code>POST - https://api.zype.com/pin/acquire/?linked_device_id=linked_device_id&amp;type=type
+<pre><code><b>POST</b> https://api.zype.com/pin/acquire/?linked_device_id=linked_device_id&amp;type=type
 </code></pre>
 
 <h4 id="parameters-1">Parameters</h4>
@@ -241,7 +241,7 @@ every 30 minutes. You will need to reacquire the pin after 30 minutes.</p>
 
 <hr />
 
-<pre><code> PUT - https://api.zype.com/pin/link/?consumer_id=consumer_id&amp;pin=pin
+<pre><code> <b>PUT</b> https://api.zype.com/pin/link/?consumer_id=consumer_id&amp;pin=pin
 </code></pre>
 
 <h4 id="parameters-2">Parameters</h4>

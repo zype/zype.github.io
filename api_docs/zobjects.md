@@ -8,7 +8,7 @@ permalink: /api_docs/zobjects/
 <hr>
 ### List all Zobjects
 <hr>
-<pre><code>GET - https://api.zype.com/zobjects/?zobject_type=zobject_type&page=page&per_page=per_page&keywords=keyword
+<pre><code><b>GET</b> https://api.zype.com/zobjects/?zobject_type=zobject_type&page=page&per_page=per_page&keywords=keyword
 </code></pre>
 
 #### Parameters
@@ -67,7 +67,7 @@ Content-Type: application/json
 ### Create a Zobject
 <hr>
 
-<pre><code>POST - https://api.zype.com/zobjects?page=page&per_page=per_page&keywords=keyword
+<pre><code><b>POST</b> https://api.zype.com/zobjects?page=page&per_page=per_page&keywords=keyword
 </code></pre>
 
 #### Parameters
@@ -118,7 +118,7 @@ Lists descriptive information about Zobjects.
 <hr>
 ### Retrieve a Zobject
 <hr>
-<pre><code>GET - https://api.zype.com/zobjects/{id}/?zobject_type=zobject_type
+<pre><code><b>GET</b> https://api.zype.com/zobjects/{id}/?zobject_type=zobject_type
 </code></pre>
 
 #### Parameters
@@ -164,7 +164,7 @@ Content-Type: application/json
 ### Update a Zobject
 <hr>
 
-<pre><code>PUT - https://api.zype.com/zobjects/{id}
+<pre><code><b>PUT</b> https://api.zype.com/zobjects/{id}
 </code></pre>
 
 #### Parameters
@@ -215,7 +215,7 @@ Content-Type: application/json
 ### Associate Videos with a Zobject
 <hr>
 
-<pre><code>PUT - https://api.zype.com/zobjects/{id}/add_videos?zobject_type=type&video_id=[id00001, id00002]
+<pre><code><b>PUT</b> https://api.zype.com/zobjects/{id}/add_videos?zobject_type=type&video_id=[id00001, id00002]
 </code></pre>
 
 #### Parameters
@@ -254,7 +254,7 @@ Content-Type: application/json
 ### Remove Associated Videos from a Zobject
 <hr>
 
-<pre><code>PUT - https://api.zype.com/zobjects/{id}//remove_videos?zobject_type=type&video_id=[id00001, id00002]
+<pre><code><b>PUT</b> https://api.zype.com/zobjects/{id}//remove_videos?zobject_type=type&video_id=[id00001, id00002]
 </code></pre>
 
 #### Parameters
@@ -294,7 +294,7 @@ Content-Type: application/json
 <hr>
 ### Remove a Zobject
 <hr>
-<pre><code>DELETE - https://api.zype.com/zobjects/{id}/?zobject_type=type
+<pre><code><b>DELETE</b> https://api.zype.com/zobjects/{id}/?zobject_type=type
 </code></pre>
 
 #### Parameters

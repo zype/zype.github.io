@@ -9,7 +9,7 @@ Lists all plans.
 <hr>
 ### List all Plans
 <hr>
-<pre><code>GET - https://api.zype.com/plans/?page=page&per_page=per_page
+<pre><code><b>GET</b> https://api.zype.com/plans/?page=page&per_page=per_page
 </code></pre>
 
 #### Parameters
@@ -63,7 +63,7 @@ Lists descriptive information about a plan
 <hr>
 ###Retrieve a Plan
 <hr>
-<pre><code>GET - https://api.zype.com/plan/{id}
+<pre><code><b>GET</b> https://api.zype.com/plan/{id}
 </code></pre>
 
 #### Parameters

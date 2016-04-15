@@ -8,7 +8,7 @@ permalink: /api_docs/video_sources/
 <hr>
 ### List all Video Sources
 <hr>
-<pre><code>GET - https://api.zype.com/video_sources?page=page&per_page=per_page&
+<pre><code><b>GET</b> https://api.zype.com/video_sources?page=page&per_page=per_page&
 keyword=keyword
 </code></pre>
 
@@ -94,7 +94,7 @@ Content-Type: application/json
 <hr>
 ### Create a Video Source
 <hr>
-<pre><code>POST - https://api.zype.com/video_sources/?source=source&video_source[attributes]=attributes
+<pre><code><b>POST</b> https://api.zype.com/video_sources/?source=source&video_source[attributes]=attributes
 </code></pre>
 
 Parameter | Function | Type
@@ -129,7 +129,7 @@ Content-Type: application/json
 <hr>
 ### Retrieve a Single Video Source
 <hr>
-<pre><code>GET - https://api.zype.com/video_sources/{id}/
+<pre><code><b>GET</b> https://api.zype.com/video_sources/{id}/
 </code></pre>
 
 #### Response
@@ -157,7 +157,7 @@ Content-Type: application/json
 <hr>
 ### Update a Video Source
 <hr>
-<pre><code>PUT - https://api.zype.com/video_sources/{id}/?video_source[attributes]=attributes
+<pre><code><b>PUT</b> https://api.zype.com/video_sources/{id}/?video_source[attributes]=attributes
 </code></pre>
 
 Parameter | Function | Type
@@ -193,7 +193,7 @@ Content-Type: application/json
 <hr>
 Note, you cannot delete a Zype video source.
 
-<pre><code>DELETE - https://api.zype.com/video_sources/{id}/
+<pre><code><b>DELETE</b> https://api.zype.com/video_sources/{id}/
 </code></pre>
 
 #### Response

@@ -8,7 +8,7 @@ permalink: /api_docs/distribution_endpoints/
 <hr>
 ### List all Distribution Endpoints
 <hr>
-<pre><code>GET - https://api.zype.com/distribution_endpoints?page=page&per_page=per_page
+<pre><code><b>GET</b> https://api.zype.com/distribution_endpoints?page=page&per_page=per_page
 </code></pre>
 
 #### Parameters
@@ -59,7 +59,7 @@ Content-Type: application/json
 
 ### Retrieve a Distribution Endpoint
 <hr>
-<pre><code>GET - https://api.zype.com/distribution_endpoints/{id}?page=page&per_page=per_page
+<pre><code><b>GET</b> https://api.zype.com/distribution_endpoints/{id}?page=page&per_page=per_page
 </code></pre>
 
 #### Parameters

@@ -9,7 +9,7 @@ Lists all Video Imports. Video Imports are created via video sources.
 <hr>
 ### List all Video Imports
 <hr>
-<pre><code>GET - https://api.zype.com/video_imports?page=page&per_page=per_page&
+<pre><code><b>GET</b> https://api.zype.com/video_imports?page=page&per_page=per_page&
 q=q&keyword=keyword&status=status&active=active&
 id=id&id!=id&video_source_id=video_source_id&q=q&keyword=keyword
 </code></pre>
@@ -71,7 +71,7 @@ Content-Type: application/json
 <hr>
 ### Retrieve a Video Import
 <hr>
-<pre><code>GET - https://api.zype.com/video_imports/{id}
+<pre><code><b>GET</b> https://api.zype.com/video_imports/{id}
 </code></pre>
 
 #### Response
@@ -127,7 +127,7 @@ Content-Type: application/json
 <hr>
 ### Add Video from a Video Import
 <hr>
-<pre><code>PUT - https://api.zype.com/video_imports/{id}/add_video/&video_id=video_id
+<pre><code><b>PUT</b> https://api.zype.com/video_imports/{id}/add_video/&video_id=video_id
 </code></pre>
 
 #### Parameters

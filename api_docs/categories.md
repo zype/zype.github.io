@@ -17,6 +17,7 @@ Parameter | Function | Type
 --------- | -------- | ----
 id        | Query for a category by ID | String
 id!       | Exclude a category from the query | String
+q         | A query string for searching for categories | String
 title     | Filter categories by title | String
 page | The page number of records to return (zero indexed). Example: 0. | Number
 per_page | The number of records to return. Example: 10. | Number

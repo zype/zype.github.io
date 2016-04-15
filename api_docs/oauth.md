@@ -25,7 +25,7 @@ to get an access token in return.
 
 <hr />
 
-<pre><code> POST - https://login.zype.com/oauth/token/?client_id=client_id&client_secret=client_secret&username=email&password=password&grant_type=password
+<pre><code> <b>POST</b> https://login.zype.com/oauth/token/?client_id=client_id&client_secret=client_secret&username=email&password=password&grant_type=password
 </code></pre>
 
 #### Parameters
@@ -64,7 +64,7 @@ Note, the consumer id is found in the returned "resource_owner_id" value.
 
 <hr />
 
-<pre>GET - https://login.zype.com/oauth/token/info?access_token=access_token<code>
+<pre><b>GET</b> https://login.zype.com/oauth/token/info?access_token=access_token<code>
 </code></pre>
 
 #### Parameters
@@ -96,7 +96,7 @@ Your access token will expire after 2 hours. To refresh your access token, post 
 
 <hr />
 
-<pre><code> POST - https://api.zype.com/oauth/token/?client_id=client_id&client_secret=client_secret&refresh_token=refresh_token&grant_type=refresh_token
+<pre><code> <b>POST</b> https://api.zype.com/oauth/token/?client_id=client_id&client_secret=client_secret&refresh_token=refresh_token&grant_type=refresh_token
 </code></pre>
 
 #### Parameters
@@ -127,7 +127,7 @@ To authenticate an API request on the behalf of a consumer, you can pass the acc
 into your API request with the access_token parameter. For example, see below how to
 request a player for a SVOD video using your access token.
 
-<pre><code> GET - https://player.zype.com/embed/abc123.js?access_token=access_token
+<pre><code> <b>GET</b> https://player.zype.com/embed/abc123.js?access_token=access_token
 </code></pre>
 
 Parameter | Function | Type

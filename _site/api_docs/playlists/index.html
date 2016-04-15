@@ -108,15 +108,12 @@
     <section id="main">
       <h2 id="playlists-collection">Playlists Collection</h2>
 
-<p>Lists all Playlists. Playlist information includes descriptive information about the playlist.</p>
 <hr />
 
-<h3 id="list-all-playlists">List all Playlists</h3>
+<h3 id="list-playlists">List Playlists</h3>
 <hr />
 
-<pre><code>GET - https://api.zype.com/playlists?page=page&amp;per_page=per_page&amp;
-active=active&amp;keyword=keyword&amp;category=category
-</code></pre>
+<pre><b>GET</b> https://api.zype.com/playlists</pre>
 
 <h4 id="parameters">Parameters</h4>
 
@@ -130,6 +127,36 @@ active=active&amp;keyword=keyword&amp;category=category
   </thead>
   <tbody>
     <tr>
+      <td>active</td>
+      <td>Filters the records by whether active or not. Example: true.</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>category</td>
+      <td>An optional set of key value category pairs to filter the records returned by category. Example: category[color]=blue.</td>
+      <td>Hash</td>
+    </tr>
+    <tr>
+      <td>category!</td>
+      <td>Exclude a category from the query. Example: category![color] = blue</td>
+      <td>Hash</td>
+    </tr>
+    <tr>
+      <td>id</td>
+      <td>Query for a category by ID</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>id!</td>
+      <td>Exclude a category from the query</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>order</td>
+      <td>Order playlists in ascending or descending order (Example: asc/desc)</td>
+      <td>String</td>
+    </tr>
+    <tr>
       <td>page</td>
       <td>The page number of records to return (zero indexed). Example: 0.</td>
       <td>Number</td>
@@ -140,56 +167,22 @@ active=active&amp;keyword=keyword&amp;category=category
       <td>Number</td>
     </tr>
     <tr>
-      <td>keyword</td>
-      <td>Filters the records returned by keyword. Example: comedy.</td>
+      <td>q</td>
+      <td>A query string for searching for playlists.</td>
       <td>String</td>
     </tr>
     <tr>
-      <td>active</td>
-      <td>Filters the records by whether active or not. Example: true.</td>
+      <td>sort</td>
+      <td>Sort playlists on the specified field</td>
       <td>String</td>
-    </tr>
-    <tr>
-      <td>category</td>
-      <td>An optional set of key value category pairs to filter the records returned by category. Example: category[color]=blue.</td>
-      <td>Hash</td>
     </tr>
   </tbody>
 </table>
 
-<h4 id="response">Response</h4>
-<p>200
-Content-Type: application/json</p>
-
-<pre><code>{
-  "response": [
-    {
-      "_id": "546407fb69702d76c1740000",
-      "_keywords": [
-        "featured",
-        "horror"
-      ],
-      "active": true,
-      "created_at": "2014-11-12T20:23:07.291-05:00",
-      "description": "",
-      "priority": 0,
-      "related_video_ids": [],
-      "site_id": "5463c68e69702d24db490000",
-      "title": "Featured Horror ",
-      "updated_at": "2014-11-12T20:23:07.291-05:00",
-      "playlist_item_count": 6
-    }
-  ]
-}
-</code></pre>
-<hr />
-
 <h3 id="create-a-playlist">Create a Playlist</h3>
 <hr />
 
-<pre><code>POST - https://api.zype.com/playlists?page=page&amp;per_page=per_page&amp;
-active=active&amp;keyword=keyword&amp;category=category
-</code></pre>
+<pre><b>POST</b> https://api.zype.com/playlists</pre>
 
 <h4 id="parameters-1">Parameters</h4>
 
@@ -203,65 +196,23 @@ active=active&amp;keyword=keyword&amp;category=category
   </thead>
   <tbody>
     <tr>
-      <td>playlist</td>
-      <td>A set of key value pairs that describe the Playlist</td>
-      <td>Hash</td>
-    </tr>
-    <tr>
-      <td>title</td>
+      <td>playlist[title]</td>
       <td>The title of the playlist</td>
       <td>String</td>
     </tr>
     <tr>
-      <td>site_id</td>
-      <td>The id of the site the playlist belongs to</td>
+      <td>playlist[description]</td>
+      <td>The description of the playlist</td>
       <td>String</td>
-    </tr>
-    <tr>
-      <td>video_ids</td>
-      <td>A list of items within the playlist by video id</td>
-      <td>Array</td>
     </tr>
   </tbody>
 </table>
 
-<h4 id="request">Request</h4>
-
-<p>Content-Type: application/json</p>
-
-<h4 id="response-1">Response</h4>
-<p>201
-Content-Type: application/json</p>
-
-<pre><code>{
-  "response":
-  {  
-    "_id": "54908b5c4c616e20e73a0000",
-    "_keywords": ["active","best","playlist"],
-    "active": true,
-    "created_at": "2014-12-16T14:43:24.272-05:00",
-    "description": null,
-    "priority": null,
-    "related_video_ids": [],
-    "site_id": "545932274c616e2359000000",
-    "title": "The best active playlist!!",
-    "updated_at": "2014-12-16T14:43:24.272-05:00",
-    "playlist_item_count": 0
-  }
-}
-</code></pre>
-
-<h2 id="playlist">Playlist</h2>
-
-<p>Lists descriptive information about Playlist.</p>
-
-<hr />
-
 <h3 id="retrieve-a-playlist">Retrieve a Playlist</h3>
 <hr />
 
-<pre><code>GET - https://api.zype.com/playlists/{id}
-</code></pre>
+<pre><b>GET</b> https://api.zype.com/playlists/[id]
+</pre>
 
 <h4 id="parameters-2">Parameters</h4>
 
@@ -282,38 +233,10 @@ Content-Type: application/json</p>
   </tbody>
 </table>
 
-<h4 id="request-1">Request</h4>
-<p>Content-Type: application/json</p>
-
-<h4 id="response-2">Response</h4>
-<p>200
-Content-Type: application/json</p>
-
-<pre><code>{  
-  "response":
-  {
-    "_id": "549082404c616e20e7290000",
-    "_keywords": ["playlist","sample"],
-    "active": true,
-    "created_at": "2014-12-16T14:04:32.666-05:00",
-    "description": "",
-    "priority": 0,
-    "related_video_ids": [],
-    "site_id": "545932274c616e2359000000",
-    "title": "sample Playlist",
-    "updated_at": "2014-12-16T14:04:32.666-05:00",
-    "playlist_item_count": 4
-  }
-}
-</code></pre>
-
+<h3 id="list-playlist-videos">List Playlist Videos</h3>
 <hr />
 
-<h3 id="retrieve-videos-in-a-playlist">Retrieve Videos in a Playlist</h3>
-<hr />
-
-<pre><code>GET - https://api.zype.com/playlists/{id}/videos
-</code></pre>
+<pre><b>GET</b> https://api.zype.com/playlists/[id]/videos</pre>
 
 <h4 id="parameters-3">Parameters</h4>
 
@@ -328,89 +251,16 @@ Content-Type: application/json</p>
   <tbody>
     <tr>
       <td>id</td>
-      <td>ID of the Playlist to retrieve. Example: 5389352e69702d401b000000.</td>
+      <td>ID of the playlist videos to retrieve. Example: 5389352e69702d401b000000.</td>
       <td>String</td>
     </tr>
   </tbody>
 </table>
 
-<h4 id="request-2">Request</h4>
-<p>Content-Type: application/json</p>
-
-<h4 id="response-3">Response</h4>
-<p>200
-Content-Type: application/json</p>
-
-<pre><code>{
-  "response": [
-    {
-      "_id":"5481f66e4c616e06ec670000",
-      "active":true,
-      "categories":
-      [
-        {
-          "title":"Season",
-          "value":["1"]
-        },
-        {
-          "title":"Final sample",
-          "value":["everything"]
-        },
-        {
-          "title":"sample",
-          "value":["no","yes"]
-        }
-      ],
-      "country": "",
-      "created_at": "2014-12-05T13:16:14.280-05:00",
-      "description": "Music video by Taylor Swift performing #VEVOCertified, Pt. 3: Taylor Talks About Her Fans. (C) 2012 Big Machine Records, LLC.",  
-      "duration": 141,
-      "episode": null,
-      "featured": false,
-      "foreign_id": null,
-      "keywords": [],
-      "mature_content": false,
-      "published_at": "2012-10-29T11:45:07.000-04:00",
-      "rating": 0.0,
-      "related_playlist_ids": [],
-      "request_count": 0,
-      "season": null,
-      "site_id": "545932274c616e2359000000",
-      "status": "created",
-      "subscription_required": false,
-      "title": "#VEVOCertified, Pt. 3: Taylor Talks About Her Fans",
-      "updated_at": "2014-12-15T17:53:24.119-05:00",
-      "zobject_ids": [],
-      "thumbnails":
-      [
-        {
-          "aspect_ratio": null,
-          "height": 90,
-          "name": null,
-          "url": "https://i.ytimg.com/vi/ehLp0cjqkRk/default.jpg",
-          "width": 120
-        }
-      ]
-    }
-  ]
-  "pagination":
-  {
-    "current": 1,
-    "previous":null,
-    "next":null,
-    "per_page": 10,
-    "pages": 1
-  }
-}
-</code></pre>
-
-<hr />
-
 <h3 id="update-a-playlist">Update a Playlist</h3>
 <hr />
 
-<pre><code>PUT - https://api.zype.com/playlists/{id}
-</code></pre>
+<pre><b>PUT</b> https://api.zype.com/playlists/[id]</pre>
 
 <h4 id="parameters-4">Parameters</h4>
 
@@ -424,69 +274,27 @@ Content-Type: application/json</p>
   </thead>
   <tbody>
     <tr>
-      <td>playlist</td>
-      <td>A set of key value pairs that describe the Playlist</td>
-      <td>Hash</td>
+      <td>id</td>
+      <td>ID of the playlist to update. Example: 540731274c616e047a000000.</td>
+      <td>String</td>
     </tr>
     <tr>
-      <td>title</td>
+      <td>playlist[title]</td>
       <td>The title of the playlist</td>
       <td>String</td>
     </tr>
     <tr>
-      <td>site_id</td>
-      <td>The id of the site the playlist belongs to</td>
+      <td>playlist[description]</td>
+      <td>The description of the playlist</td>
       <td>String</td>
-    </tr>
-    <tr>
-      <td>video_ids</td>
-      <td>A list of items within the playlist by video id</td>
-      <td>Array</td>
-    </tr>
-    <tr>
-      <td>video_id</td>
-      <td>The id of a video to be repositioned within the playlist</td>
-      <td>String</td>
-    </tr>
-    <tr>
-      <td>position</td>
-      <td>The position that the video will now occupy within the playlist</td>
-      <td>Integer</td>
     </tr>
   </tbody>
 </table>
 
-<h4 id="request-3">Request</h4>
-<p>Content-Type: application/json</p>
-
-<h4 id="response-4">Response</h4>
-<p>201
-Content-Type: application/json</p>
-
-<pre><code>{
-  response:
-  {
-    "_id": "549082404c616e20e7290000",
-    "_keywords": ["playlist","sample"],
-    "active": true,
-    "created_at": "2014-12-16T14:04:32.666-05:00",
-    "description": "",
-    "priority": 0,
-    "related_video_ids": [],
-    "site_id": "545932274c616e2359000000",
-    "title": "Updated sample Playlist",
-    "updated_at": "2014-12-18T14:04:32.666-05:00",
-    "playlist_item_count": 4
-  }
-}
-</code></pre>
+<h3 id="delete-a-playlist">Delete a Playlist</h3>
 <hr />
 
-<h3 id="remove-a-playlist">Remove a Playlist</h3>
-<hr />
-
-<pre><code>DELETE - https://api.zype.com/playlists/{id}
-</code></pre>
+<pre><b>DELETE</b> https://api.zype.com/playlists/[id]</pre>
 
 <h4 id="parameters-5">Parameters</h4>
 
@@ -507,21 +315,10 @@ Content-Type: application/json</p>
   </tbody>
 </table>
 
-<h4 id="request-4">Request</h4>
-<p>Content-Type: application/json</p>
-
-<h4 id="response-5">Response</h4>
-<p>204</p>
-
-<p>No Content</p>
-
+<h3 id="add-videos-to-a-playlist">Add Video(s) to a Playlist</h3>
 <hr />
 
-<h3 id="add-video-to-a-playlist">Add Video to a Playlist</h3>
-<hr />
-
-<pre><code>PUT - https://api.zype.com/playlists/{id}/add_videos/&amp;video_id=video_id
-</code></pre>
+<pre><b>PUT</b> https://api.zype.com/playlists/[id]/add_videos</pre>
 
 <h4 id="parameters-6">Parameters</h4>
 
@@ -535,70 +332,23 @@ Content-Type: application/json</p>
   </thead>
   <tbody>
     <tr>
+      <td>id</td>
+      <td>ID of the playlist. Example: 5389352e69702d401b000000.</td>
+      <td>String</td>
+    </tr>
+    <tr>
       <td>video_id</td>
-      <td>ID of the video to add the playlist</td>
+      <td>A comma separated list of video IDs to add to the playlist</td>
       <td>String</td>
     </tr>
   </tbody>
 </table>
 
-<h4 id="request-5">Request</h4>
-
-<p>Content-Type: application/json</p>
-
-<h4 id="response-6">Response</h4>
-<p>201
-Content-Type: application/json</p>
-
-<pre><code>{
-  "response"=&gt; [
-    {
-      "_id"=&gt;"5499c6bc4c616e04b8120000",
-      "active"=&gt;true,
-      "country"=&gt;"",
-      "created_at"=&gt;"2014-12-23T14:47:09.079-05:00",
-      "description"=&gt;
-      "A staple of \"Bands To Watch\" lists far and wide, Alabama Shakes ...",
-      "duration"=&gt;665,
-      "episode"=&gt;nil,
-      "featured"=&gt;false,
-      "foreign_id"=&gt;nil,
-      "keywords"=&gt;[],
-      "mature_content"=&gt;false,
-      "published_at"=&gt;"2012-03-27T12:59:21.000-04:00",
-      "rating"=&gt;0.0,
-      "related_playlist_ids"=&gt;[],
-      "request_count"=&gt;0,
-      "season"=&gt;nil,
-      "site_id"=&gt;"5468f40d4c616e0a770c0000",
-      "status"=&gt;"created",
-      "subscription_required"=&gt;false,
-      "title"=&gt;"Alabama Shakes, Live In Concert: NPR Music's SXSW 2012 Showcase",
-      "updated_at"=&gt;"2014-12-24T17:57:15.731-05:00",
-      "zobject_ids"=&gt;[],
-      "thumbnails"=&gt;
-        [
-        {"aspect_ratio"=&gt;nil, "height"=&gt;90, "name"=&gt;nil, "url"=&gt;"https://i.ytimg.com/vi/eNa5wYXonbQ/default.jpg", "width"=&gt;120},
-        {"aspect_ratio"=&gt;nil, "height"=&gt;180, "name"=&gt;nil, "url"=&gt;"https://i.ytimg.com/vi/eNa5wYXonbQ/mqdefault.jpg", "width"=&gt;320},
-        {"aspect_ratio"=&gt;nil, "height"=&gt;360, "name"=&gt;nil, "url"=&gt;"https://i.ytimg.com/vi/eNa5wYXonbQ/hqdefault.jpg", "width"=&gt;480},
-        {"aspect_ratio"=&gt;nil, "height"=&gt;480, "name"=&gt;nil, "url"=&gt;"https://i.ytimg.com/vi/eNa5wYXonbQ/sddefault.jpg", "width"=&gt;640},
-        {"aspect_ratio"=&gt;nil, "height"=&gt;720, "name"=&gt;nil, "url"=&gt;"https://i.ytimg.com/vi/eNa5wYXonbQ/maxresdefault.jpg", "width"=&gt;1280}
-        ]
-      }
-    ],
-    "pagination"=&gt;{"current"=&gt;1, "previous"=&gt;nil, "next"=&gt;nil, "per_page"=&gt;25, "pages"=&gt;1}
-    }
-  }
-}
-</code></pre>
-
+<h3 id="remove-videos-from-a-playlist">Remove Video(s) from a Playlist</h3>
 <hr />
 
-<h3 id="remove-video-from-a-playlist">Remove Video from a Playlist</h3>
-<hr />
-
-<pre><code>PUT - https://api.zype.com/playlists/{id}/add_videos/&amp;video_id=video_id
-</code></pre>
+<pre><b>PUT</b> https://api.zype.com/playlists/[id]/remove_videos
+</pre>
 
 <h4 id="parameters-7">Parameters</h4>
 
@@ -612,29 +362,35 @@ Content-Type: application/json</p>
   </thead>
   <tbody>
     <tr>
+      <td>id</td>
+      <td>ID of the playlist. Example: 5389352e69702d401b000000.</td>
+      <td>String</td>
+    </tr>
+    <tr>
       <td>video_id</td>
-      <td>ID of the video to add the playlist</td>
+      <td>A comma separated list of video IDs to remove from the playlist</td>
       <td>String</td>
     </tr>
   </tbody>
 </table>
 
-<h4 id="request-6">Request</h4>
+<h3 id="playlist-object">Playlist Object</h3>
 
-<p>Content-Type: application/json</p>
-
-<h4 id="response-7">Response</h4>
-<p>201
-Content-Type: application/json</p>
-
-<pre><code>{
-  "response"=&gt;[],
-  "pagination"=&gt;
-  {
-    "current"=&gt;1, "previous"=&gt;nil, "next"=&gt;2, "per_page"=&gt;25, "pages"=&gt;0
-  }
+<pre>
+{  
+  "_id": "54908b5c4c616e20e73a0000",
+  "_keywords": ["active","best","playlist"],
+  "active": true,
+  "created_at": "2014-12-16T14:43:24.272-05:00",
+  "description": null,
+  "priority": null,
+  "related_video_ids": [],
+  "site_id": "545932274c616e2359000000",
+  "title": "The best active playlist!!",
+  "updated_at": "2014-12-16T14:43:24.272-05:00",
+  "playlist_item_count": 0
 }
-</code></pre>
+</pre>
 
     </section>
 

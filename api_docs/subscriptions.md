@@ -9,7 +9,7 @@ Lists all Subscriptions.
 <hr>
 ### List all Subscriptions
 <hr>
-<pre><code>GET - https://api.zype.com/subscriptions/?page=page&per_page=per_page
+<pre><code><b>GET</b> https://api.zype.com/subscriptions/?page=page&per_page=per_page
 </code></pre>
 
 #### Parameters
@@ -78,7 +78,7 @@ Content-Type: application/json
 <hr>
 ### Create a Subscription
 <hr>
-<pre><code>POST - https://api.zype.com/subscriptions/{subscription}
+<pre><code><b>POST</b> https://api.zype.com/subscriptions/{subscription}
 </code></pre>
 
 #### Parameters
@@ -141,7 +141,7 @@ Lists descriptive information about a Subscription
 <hr>
 ###Retrieve a Subscription
 <hr>
-<pre><code>GET - https://api.zype.com/subscriptions/{id}
+<pre><code><b>GET</b> https://api.zype.com/subscriptions/{id}
 </code></pre>
 
 #### Parameters
@@ -201,7 +201,7 @@ Content-Type: application/json
 <hr>
 ### Update a Subscription
 <hr>
-<pre><code>PUT - https://api.zype.com/subscriptions/{id}
+<pre><code><b>PUT</b> https://api.zype.com/subscriptions/{id}
 </code></pre>
 
 #### Parameters
@@ -265,7 +265,7 @@ Content-Type: application/json
 <hr>
 ### Remove a Subscription
 <hr>
-<pre><code>DELETE - https://api.zype.com/subscriptions/{id}
+<pre><code><b>DELETE</b> https://api.zype.com/subscriptions/{id}
 </code></pre>
 
 #### Parameters

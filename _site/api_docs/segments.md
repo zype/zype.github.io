@@ -1,6 +1,6 @@
 ###List the segments of a Video
 <hr>
-<pre>GET - https://api.zype.com/videos/{id}/segments
+<pre><b>GET</b> https://api.zype.com/videos/{id}/segments
 </pre>
 
 #### Parameters
@@ -30,7 +30,7 @@ Content-Type: application/json
 <hr>  
 ###Find a specific segment
 <hr>
-<pre>GET - https://api.zype.com/videos/{id1}/segments/{id2}
+<pre><b>GET</b> https://api.zype.com/videos/{id1}/segments/{id2}
 </pre>
 
 #### Parameters
@@ -60,7 +60,7 @@ Content-Type: application/json
 <hr>
 ###Add segments to a Video
 <hr>
-<pre>POST - https://api.zype.com/videos/{id}/segments
+<pre><b>POST</b> https://api.zype.com/videos/{id}/segments
 </pre>
 
 #### Parameters
@@ -92,7 +92,7 @@ Content-Type: application/json
 <hr>
 ###Remove segments from a Video
 <hr>
-<pre>DELETE - https://api.zype.com/videos/{id1}/segments/{id2}
+<pre><b>DELETE</b> https://api.zype.com/videos/{id1}/segments/{id2}
 </pre>
 
 #### Parameters
@@ -117,7 +117,7 @@ Content-Type: application/json
 <hr>
 ###Update segments belonging to a video
 <hr>
-<pre>PUT - https://api.zype.com/videos/{id1}/segments/{id2}
+<pre><b>PUT</b> https://api.zype.com/videos/{id1}/segments/{id2}
 </pre>
 
 #### Parameters
