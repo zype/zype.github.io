@@ -109,13 +109,10 @@
 
 
     <section id="main" class="api-docs">
-      <h2 id="redemption-codes-collection">Redemption Codes Collection</h2>
-<p>Lists all Redemption Codes.</p>
+      <h2 id="redemption-codes">Redemption Codes</h2>
 <hr />
 
-<h3 id="list-all-redemption-codes">List all Redemption Codes</h3>
-<hr />
-
+<h3 id="list-redemption-codes">List Redemption Codes</h3>
 <pre><code>GET - https://api.zype.com/redemption_codes/?page=page&amp;per_page=per_page
 </code></pre>
 
@@ -136,58 +133,8 @@
       <td>String</td>
     </tr>
     <tr>
-      <td>page</td>
-      <td>The page number of records to return (zero indexed). Example: 0.</td>
-      <td>Number</td>
-    </tr>
-    <tr>
-      <td>per_page</td>
-      <td>The number of records to return. Example: 10.</td>
-      <td>Number</td>
-    </tr>
-    <tr>
-      <td>id</td>
-      <td>Query for a redemption code by id</td>
-      <td>String</td>
-    </tr>
-    <tr>
-      <td>id!</td>
-      <td>Exclude a redemption code from the query</td>
-      <td>String</td>
-    </tr>
-    <tr>
       <td>code</td>
-      <td>Query for a redemption code by code</td>
-      <td>String</td>
-    </tr>
-    <tr>
-      <td>video_id</td>
-      <td>Query for a redemption code by video id string</td>
-      <td>String</td>
-    </tr>
-    <tr>
-      <td>playlist_id</td>
-      <td>Query for a redemption code by playlist id string</td>
-      <td>String</td>
-    </tr>
-    <tr>
-      <td>plan_id</td>
-      <td>Query for a redemption code by plan id string</td>
-      <td>String</td>
-    </tr>
-    <tr>
-      <td>pass_plan_id</td>
-      <td>Query for a redemption code by pass plan id string</td>
-      <td>String</td>
-    </tr>
-    <tr>
-      <td>transaction_id</td>
-      <td>Query for a redemption code by transaction id string</td>
-      <td>String</td>
-    </tr>
-    <tr>
-      <td>transaction_id</td>
-      <td>Query for a redemption code by transaction id string</td>
+      <td>Query for record by code</td>
       <td>String</td>
     </tr>
     <tr>
@@ -196,65 +143,74 @@
       <td>Date</td>
     </tr>
     <tr>
-      <td>updated_at</td>
-      <td>Filter the records returned by updated date. You can use greater than or less than filters by adding a suffix: ‘.gt’, ‘.gte’, ‘.lt’, ‘lte’. Example: updated_at.gte=2015-01-01</td>
-      <td>Date</td>
-    </tr>
-    <tr>
       <td>expiration_date</td>
       <td>Filter the records returned by expiration date. You can use greater than or less than filters by adding a suffix: ‘.gt’, ‘.gte’, ‘.lt’, ‘lte’. Example: expiration_date.gte=2015-01-01</td>
       <td>Date</td>
+    </tr>
+    <tr>
+      <td>id</td>
+      <td>Filter records by ID</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>id!</td>
+      <td>Exclude records by ID</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>page</td>
+      <td>The page number of records to return (Example: 1)</td>
+      <td>Integer</td>
+    </tr>
+    <tr>
+      <td>pass_plan_id</td>
+      <td>Filter records by a pass plan ID</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>per_page</td>
+      <td>The number of records to return (Example: 10)</td>
+      <td>Integer</td>
+    </tr>
+    <tr>
+      <td>plan_id</td>
+      <td>Filter records by a plan ID</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>playlist_id</td>
+      <td>Filter records by a playlist ID</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>q</td>
+      <td>Filter records by keyword</td>
+      <td>String</td>
     </tr>
     <tr>
       <td>redeemed_at</td>
       <td>Filter the records returned by redeemed at date. You can use greater than or less than filters by adding a suffix: ‘.gt’, ‘.gte’, ‘.lt’, ‘lte’. Example: redeemed_at.gte=2015-01-01</td>
       <td>Date</td>
     </tr>
+    <tr>
+      <td>transaction_id</td>
+      <td>Filter records by a transaction ID</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>updated_at</td>
+      <td>Filter the records returned by updated date. You can use greater than or less than filters by adding a suffix: ‘.gt’, ‘.gte’, ‘.lt’, ‘lte’. Example: updated_at.gte=2015-01-01</td>
+      <td>Date</td>
+    </tr>
+    <tr>
+      <td>video_id</td>
+      <td>Filter records by a video ID</td>
+      <td>String</td>
+    </tr>
   </tbody>
 </table>
 
-<h4 id="response">Response</h4>
-<p>200
-Content-Type: application/json</p>
-
-<pre><code>{
-  "response": [
-    {
-      "_id": "570d5704f28347c1fd000000",
-      "code": "123456",
-      "created_at": "2016-04-12T16:14:21.015-04:00",
-      "expiration_date": null,
-      "pass_plan_id": null,
-      "plan_id": null,
-      "playlist_id": null,
-      "redeemed_at": null,
-      "site_id": "5468fd6569702d17ee500000",
-      "transaction_id": null,
-      "updated_at": "2016-04-12T16:14:21.015-04:00",
-      "video_id": "5708044df2834741870000e1",
-      "nice_code": "123-456",
-      "available?": true,
-      "redeemed?": false,
-      "expired?": false,
-      "unassigned?": false
-    }
-  ],
-  "pagination": {
-    "current": 1,
-    "previous": null,
-    "next": null,
-    "per_page": 25,
-    "pages": 1
-  }
-}
-
-</code></pre>
-
-<hr />
-
 <h3 id="create-a-redemption-code">Create a Redemption Code</h3>
-<hr />
-
 <pre><code>POST - https://api.zype.com/redemption_codes/{redemption code}
 </code></pre>
 
@@ -275,90 +231,44 @@ Content-Type: application/json</p>
       <td>String</td>
     </tr>
     <tr>
-      <td>redemption code</td>
-      <td>A set of key value pairs that describe the Redemption Code. <em>required</em></td>
-      <td>Hash</td>
-    </tr>
-    <tr>
-      <td>code</td>
+      <td>redemption_code[code]</td>
       <td>Use this param to specify your own code. If no code is sent, one will automatically be generated.</td>
       <td>String</td>
     </tr>
     <tr>
-      <td>expiration_date</td>
+      <td>redemption_code[expiration_date]</td>
       <td>Expiration date for the redemption code. Example: 2017-01-15</td>
       <td>Date</td>
     </tr>
     <tr>
-      <td>video_id</td>
+      <td>redemption_code[video_id]</td>
       <td>The id of the video that the user will be entitled to upon redeeming the code. Required if the redemption code is for a video.</td>
       <td>String</td>
     </tr>
     <tr>
-      <td>playlist_id</td>
+      <td>redemption_code[playlist_id]</td>
       <td>The id of the playlist that the user will be entitled to upon redeeming the code. Required if the redemption code is for a playlist.</td>
       <td>String</td>
     </tr>
     <tr>
-      <td>plan_id</td>
+      <td>redemption_code[plan_id]</td>
       <td>The id of the subscription plan that the user will be subscribed to upon redeeming the code. Required if the redemption code is for a subscription.</td>
       <td>String</td>
     </tr>
     <tr>
-      <td>pass_plan_id</td>
+      <td>redemption_code[pass_plan_id]</td>
       <td>The id of the pass plan that the user will have access to upon redeeming the code. Required if the redemption code is for a pass plan.</td>
       <td>String</td>
     </tr>
   </tbody>
 </table>
 
-<h3 id="example">Example</h3>
-
-<pre><code>
-{
-  "api_key": "YOUR_ADMIN_KEY",
-  "redemption_code": {
-    "expiration_date": "2017-02-20",
-    "video_id": "570fb456f283471ac3000007"
-  }
-}
-</code></pre>
-
-<h4 id="response-1">Response</h4>
-<p>201
-Content-Type: application/json</p>
-
-<pre><code>
-{
-  "response": {
-    "_id": "570fc5ddf283471ac300000a",
-    "code": "123456",
-    "created_at": "2016-04-14T12:31:25.271-04:00",
-    "expiration_date": "2017-02-20T00:00:00.000-05:00",
-    "pass_plan_id": null,
-    "plan_id": null,
-    "playlist_id": null,
-    "redeemed_at": null,
-    "site_id": "5468fd6569702d17ee500000",
-    "transaction_id": null,
-    "updated_at": "2016-04-14T12:31:25.271-04:00",
-    "video_id": "570fb456f283471ac3000007",
-    "nice_code": "123-456",
-    "available?": true,
-    "redeemed?": false,
-    "expired?": false,
-    "unassigned?": false
-  }
-}
-</code></pre>
+<p>Note: A video_id, playlist_id, plan_id, <em>OR</em> pass_plan_id is required.</p>
 
 <h2 id="redemption-code">Redemption Code</h2>
 <p>Lists descriptive information about a Redemption Code</p>
-<hr />
 
 <h3 id="retrieve-a-redemption-code">Retrieve a Redemption Code</h3>
-<hr />
-
 <pre><code>GET - https://api.zype.com/redemption_codes/{id}
 </code></pre>
 
@@ -386,42 +296,7 @@ Content-Type: application/json</p>
   </tbody>
 </table>
 
-<h4 id="request">Request</h4>
-<p>Content-Type: application/json</p>
-
-<h4 id="response-2">Response</h4>
-<p>200
-Content-Type: application/json</p>
-
-<pre><code>
-{
-  "response": {
-    "_id": "570fc5ddf283471ac300000a",
-    "code": "123456",
-    "created_at": "2016-04-14T12:31:25.271-04:00",
-    "expiration_date": "2017-02-20T00:00:00.000-05:00",
-    "pass_plan_id": null,
-    "plan_id": null,
-    "playlist_id": null,
-    "redeemed_at": null,
-    "site_id": "5468fd6569702d17ee500000",
-    "transaction_id": null,
-    "updated_at": "2016-04-14T12:31:25.271-04:00",
-    "video_id": "570fb456f283471ac3000007",
-    "nice_code": "123-456",
-    "available?": true,
-    "redeemed?": false,
-    "expired?": false,
-    "unassigned?": false
-  }
-}
-</code></pre>
-
-<hr />
-
 <h3 id="update-a-redemption-code">Update a Redemption Code</h3>
-<hr />
-
 <pre><code>PUT - https://api.zype.com/redemption_codes/{id}
 </code></pre>
 
@@ -442,80 +317,39 @@ Content-Type: application/json</p>
       <td>String</td>
     </tr>
     <tr>
-      <td>redemption code</td>
-      <td>A set of key value pairs that describe the Redemption Code. <em>required</em></td>
-      <td>Hash</td>
-    </tr>
-    <tr>
-      <td>code</td>
+      <td>redemption_code[code]</td>
       <td>Use this param to specify your own code. If no code is sent, one will automatically be generated.</td>
       <td>String</td>
     </tr>
     <tr>
-      <td>expiration_date</td>
+      <td>redemption_code[expiration_date]</td>
       <td>Expiration date for the redemption code. Example: 2017-01-15</td>
       <td>Date</td>
     </tr>
     <tr>
-      <td>video_id</td>
+      <td>redemption_code[video_id]</td>
       <td>The id of the video that the user will be entitled to upon redeeming the code. Required if the redemption code is for a video.</td>
       <td>String</td>
     </tr>
     <tr>
-      <td>playlist_id</td>
+      <td>redemption_code[playlist_id]</td>
       <td>The id of the playlist that the user will be entitled to upon redeeming the code. Required if the redemption code is for a playlist.</td>
       <td>String</td>
     </tr>
     <tr>
-      <td>plan_id</td>
+      <td>redemption_code[plan_id]</td>
       <td>The id of the subscription plan that the user will be subscribed to upon redeeming the code. Required if the redemption code is for a subscription.</td>
       <td>String</td>
     </tr>
     <tr>
-      <td>pass_plan_id</td>
+      <td>redemption_code[pass_plan_id]</td>
       <td>The id of the pass plan that the user will have access to upon redeeming the code. Required if the redemption code is for a pass plan.</td>
       <td>String</td>
     </tr>
   </tbody>
 </table>
 
-<h4 id="request-1">Request</h4>
-
-<p>Content-Type: application/json</p>
-
-<h4 id="response-3">Response</h4>
-<p>201
-Content-Type: application/json</p>
-
-<pre><code>
-{
-  "response": {
-    "_id": "570fc5ddf283471ac300000a",
-    "code": "123456",
-    "created_at": "2016-04-14T12:31:25.271-04:00",
-    "expiration_date": "2017-02-21T00:00:00.000-05:00",
-    "pass_plan_id": null,
-    "plan_id": null,
-    "playlist_id": null,
-    "redeemed_at": null,
-    "site_id": "5468fd6569702d17ee500000",
-    "transaction_id": null,
-    "updated_at": "2016-04-14T12:33:47.913-04:00",
-    "video_id": "570fb456f283471ac3000007",
-    "nice_code": "123-456",
-    "available?": true,
-    "redeemed?": false,
-    "expired?": false,
-    "unassigned?": false
-  }
-}
-</code></pre>
-
-<hr />
-
 <h3 id="remove-a-redemption-code">Remove a Redemption Code</h3>
-<hr />
-
 <pre><code>DELETE - https://api.zype.com/redemption_codes/{id}
 </code></pre>
 
@@ -543,17 +377,7 @@ Content-Type: application/json</p>
   </tbody>
 </table>
 
-<h4 id="request-2">Request</h4>
-<p>Content-Type: application/json</p>
-
-<h4 id="response-4">Response</h4>
-<p>204</p>
-
-<hr />
-
 <h3 id="redeem-a-redemption-code">Redeem a Redemption Code</h3>
-<hr />
-
 <pre><code>POST - https://api.zype.com/redemption_codes/redeem
 </code></pre>
 
@@ -581,11 +405,34 @@ Content-Type: application/json</p>
   </tbody>
 </table>
 
-<h4 id="request-3">Request</h4>
-<p>Content-Type: application/json</p>
+<h3 id="redemption-code-object">Redemption Code Object</h3>
 
-<h4 id="success-response">Success Response</h4>
-<p>200</p>
+<pre>
+  {
+    "response": {
+      "_id": "57165ffff283475d1e000002",
+      "code": "RQMJQJB5JX5V6JQ5",
+      "content_title": "Chainsaws and Trampolines: America's Funniest Home Bloopers",
+      "content_type": "video",
+      "created_at": "2016-04-19T12:42:39.369-04:00",
+      "expiration_date": null,
+      "pass_plan_id": null,
+      "plan_id": null,
+      "playlist_id": null,
+      "redeemed_at": null,
+      "site_id": "5468fd6569702d17ee500000",
+      "transaction_id": null,
+      "updated_at": "2016-04-19T12:42:39.369-04:00",
+      "video_id": "570dabc8f28347ccfc02e939",
+      "nice_code": "RQMJ-QJB5-JX5V-6JQ5",
+      "available": true,
+      "redeemed": false,
+      "expired": false,
+      "as_qr_code_html_l": "...",
+      "as_qr_code_html_b": "..."
+    }
+  }
+</pre>
 
 
     </section>
