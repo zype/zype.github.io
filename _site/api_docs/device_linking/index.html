@@ -7,10 +7,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     <title>Zype Developer Portal | Device Linking</title>
-    <meta name="description" content="">
+    <meta name="description" content="This is the devloper portal for Zype Media. Zype is Revenue and Reach Magic for Online Video. We help content owners deliver fully branded video experiences.
+">
 
     <link rel="stylesheet" href="/css/main.css">
-    <link rel="canonical" href="/api_docs/device_linking/">
+    <link rel="canonical" href="http://dev.zype.com/api_docs/device_linking/">
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 
     <!--[if lt IE 9]>
@@ -34,7 +35,7 @@
     <!-- Start of zypetrial Zendesk Widget script -->
     <script>/*<![CDATA[*/window.zEmbed||function(e,t){var n,o,d,i,s,a=[],r=document.createElement("iframe");window.zEmbed=function(){a.push(arguments)},window.zE=window.zE||window.zEmbed,r.src="javascript:false",r.title="",r.role="presentation",(r.frameElement||r).style.cssText="display: none",d=document.getElementsByTagName("script"),d=d[d.length-1],d.parentNode.insertBefore(r,d),i=r.contentWindow,s=i.document;try{o=s}catch(c){n=document.domain,r.src='javascript:var d=document.open();d.domain="'+n+'";void(0);',o=s}o.open()._l=function(){var o=this.createElement("script");n&&(this.domain=n),o.id="js-iframe-async",o.src=e,this.t=+new Date,this.zendeskHost=t,this.zEQueue=a,this.body.appendChild(o)},o.write('<body onload="document._l();">'),o.close()}("https://assets.zendesk.com/embeddable_framework/main.js","zypetrial.zendesk.com");/*]]>*/</script>
     <!-- End of zypetrial Zendesk Widget script -->
-    
+
     <!-- Marketo -->
     <script type="text/javascript">
     (function() {
@@ -65,7 +66,7 @@
 
       <header id="header" style="overflow-y: scroll;">
     <div id="content">
-      <a href="/"><img src="/assets/logo.png" alt="Zype" />
+      <a href="/"><img src="http://dev.zype.com/assets/logo.png" alt="Zype" />
       <h1 id="title">Developer Portal</h1></a>
       <p>a knowledge base</p>
       <br>
@@ -107,24 +108,12 @@
   </header>
 
 
-    <section id="main">
-      <h2 id="link-consumer-to-a-device">Link Consumer to a Device</h2>
-
+    <section id="main" class="api-docs">
+      <h2 id="device-linking">Device Linking</h2>
 <hr />
 
-<p>You can use Zype to link a consumer to a device. At a high level, the Zype API
-can check to see if the device has been linked to a Zype consumer, can acquire a pin for
-a Zype consumer to link her device, and link the device to the Zype consumer via the acquired pin.</p>
-
-<hr />
-
-<h3 id="check-to-see-if-the-device-has-been-linked-to-a-consumer">Check to see if the device has been linked to a consumer</h3>
-
-<p>You will first want to see if the current device id has been linked to a Zype consumer.</p>
-<hr />
-
-<pre><code>GET - https://api.zype.com/pin/status/?linked_device_id=linked_device_id
-</code></pre>
+<h3 id="retrieve-device-pin">Retrieve Device Pin</h3>
+<pre><b>GET</b> https://api.zype.com/pin/status</pre>
 
 <h4 id="parameters">Parameters</h4>
 
@@ -139,56 +128,14 @@ a Zype consumer to link her device, and link the device to the Zype consumer via
   <tbody>
     <tr>
       <td>linked_device_id</td>
-      <td>Unique id of the end user’s device</td>
+      <td>Unique ID of the user’s device</td>
       <td>String</td>
     </tr>
   </tbody>
 </table>
 
-<h4 id="response---device-has-never-been-pinned">Response - Device has never been pinned.</h4>
-<pre><code>404</code></pre>
-
-<p>You will need to acquire a pin for this device.</p>
-
-<h4 id="response---device-has-been-pinned">Response - Device has been pinned.</h4>
-
-<p>200 Content-Type: application/json</p>
-<pre><code>{
-  "response"=&gt;
-    {
-      "_id"=&gt;"1234abc",
-      "consumer_id"=&gt;nil,
-      "created_at"=&gt;"2015-02-05T15:12:07.814-05:00",
-      "deleted_at"=&gt;nil,
-      "device_id"=&gt;"5429b1c769702d2f7c120000",
-      "linked_device_id"=&gt;"1234ABCXY",
-      "pin"=&gt;"znvm947",
-      "pin_expiration"=&gt;"2015-02-05T15:42:07.823-05:00",
-      "site_id"=&gt;"abc123",
-      "updated_at"=&gt;"2015-02-05T15:12:07.814-05:00",
-      "linked"=&gt;false,
-      "subscription_count"=&gt;nil
-    }
-  }
-</code></pre>
-
-<p>Consumer id will be nil and linked will be false if device has not been linked to a Zype consumer.
-Note, pin expires every 30 minutes. You will need to reacquire the pin after 30 minutes.
-Consumer id will be the id of the consumer and linked will be true if device has been successfully
-linked to a Zype consumer.
-The subscription_count indicates the number of active subscriptions for the currently linked consumer.</p>
-
-<hr />
-
-<h3 id="acquire-pin-for-a-device">Acquire pin for a device</h3>
-
-<p>Takes the linked device id and creates a 7 digit pin for the device. Note, pin expires
-every 30 minutes. You will need to reacquire the pin after 30 minutes.</p>
-
-<hr />
-
-<pre><code>POST - https://api.zype.com/pin/acquire/?linked_device_id=linked_device_id&amp;type=type
-</code></pre>
+<h3 id="create-device-pin">Create Device Pin</h3>
+<pre><b>POST</b> https://api.zype.com/pin/acquire</pre>
 
 <h4 id="parameters-1">Parameters</h4>
 
@@ -203,48 +150,15 @@ every 30 minutes. You will need to reacquire the pin after 30 minutes.</p>
   <tbody>
     <tr>
       <td>linked_device_id</td>
-      <td>Unique id of the end user’s device</td>
-      <td>String</td>
-    </tr>
-    <tr>
-      <td>type</td>
-      <td>Type of device. Example: roku</td>
+      <td>Unique ID of the user’s device</td>
       <td>String</td>
     </tr>
   </tbody>
 </table>
 
-<h4 id="response">Response</h4>
+<h3 id="link-device-pin">Link Device Pin</h3>
 
-<p>200 Content-Type: application/json</p>
-<pre><code>{
-  "response"=&gt;
-    {
-      "_id"=&gt;"abc123",
-      "consumer_id"=&gt;nil,
-      "created_at"=&gt;"2015-02-05T15:12:07.814-05:00",
-      "deleted_at"=&gt;nil,
-      "device_id"=&gt;"5429b1c769702d2f7c120000",
-      "linked_device_id"=&gt;"test2",
-      "pin"=&gt;"znvm947",
-      "pin_expiration"=&gt;"2015-02-05T15:42:07.824-05:00",
-      "site_id"=&gt;"abc123",
-      "updated_at"=&gt;"2015-02-05T15:12:07.814-05:00",
-      "linked"=&gt;false
-      }
-    }
-</code></pre>
-
-<hr />
-
-<h3 id="link-the-consumer-to-the-pinned-device">Link the consumer to the pinned device</h3>
-
-<p>Takes the pin and the consumer id and links the Zype consumer to the device.</p>
-
-<hr />
-
-<pre><code> PUT - https://api.zype.com/pin/link/?consumer_id=consumer_id&amp;pin=pin
-</code></pre>
+<pre><b>PUT</b> https://api.zype.com/pin/link</pre>
 
 <h4 id="parameters-2">Parameters</h4>
 
@@ -259,41 +173,35 @@ every 30 minutes. You will need to reacquire the pin after 30 minutes.</p>
   <tbody>
     <tr>
       <td>consumer_id</td>
-      <td>Zype id of your consumer</td>
+      <td>ID of the consumer to link</td>
       <td>String</td>
     </tr>
     <tr>
       <td>pin</td>
-      <td>The acquired pin. Example: zabc123</td>
+      <td>The value for the acquired device pin (Example: zabc123)</td>
       <td>String</td>
     </tr>
   </tbody>
 </table>
 
-<h4 id="response-1">Response</h4>
+<h3 id="device-pin-object">Device Pin Object</h3>
 
-<p>200 Content-Type: application/json</p>
-
-<pre><code>{
-  "response"=&gt;
-    {
-      "_id"=&gt;"abc123",
-      "_keywords"=&gt;["api", "com", "docs", "example"],
-      "created_at"=&gt;"2015-01-08T14:51:34.907-05:00",
-      "deleted_at"=&gt;nil,
-      "email"=&gt;"api-docs@example.com",
-      "site_id"=&gt;"abc123",
-      "stripe_id"=&gt;"cus_abc123",
-      "subscription_count"=&gt;1,
-      "updated_at"=&gt;"2015-01-08T14:51:34.907-05:00",
-      "linked_devices"=&gt;
-        [ "test1""]
-      }
-    }
-</code></pre>
-
-<hr />
-
+<pre>
+{
+  "_id": "57113fc6f283474159000004",
+  "consumer_id": null,
+  "created_at": "2016-04-15T15:23:50.198-04:00",
+  "deleted_at": null,
+  "device_id": null,
+  "linked_device_id": "sdkjafklsjdklfjasdf",
+  "pin": "zizm529",
+  "pin_expiration": "2016-04-15T15:53:50.195-04:00",
+  "site_id": "5468fd6569702d17ee500000",
+  "updated_at": "2016-04-15T15:23:50.198-04:00",
+  "linked": false,
+  "subscription_count": null
+}
+</pre>
 
     </section>
 

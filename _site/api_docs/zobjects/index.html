@@ -7,10 +7,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     <title>Zype Developer Portal | Zobjects</title>
-    <meta name="description" content="">
+    <meta name="description" content="This is the devloper portal for Zype Media. Zype is Revenue and Reach Magic for Online Video. We help content owners deliver fully branded video experiences.
+">
 
     <link rel="stylesheet" href="/css/main.css">
-    <link rel="canonical" href="/api_docs/zobjects/">
+    <link rel="canonical" href="http://dev.zype.com/api_docs/zobjects/">
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 
     <!--[if lt IE 9]>
@@ -34,7 +35,7 @@
     <!-- Start of zypetrial Zendesk Widget script -->
     <script>/*<![CDATA[*/window.zEmbed||function(e,t){var n,o,d,i,s,a=[],r=document.createElement("iframe");window.zEmbed=function(){a.push(arguments)},window.zE=window.zE||window.zEmbed,r.src="javascript:false",r.title="",r.role="presentation",(r.frameElement||r).style.cssText="display: none",d=document.getElementsByTagName("script"),d=d[d.length-1],d.parentNode.insertBefore(r,d),i=r.contentWindow,s=i.document;try{o=s}catch(c){n=document.domain,r.src='javascript:var d=document.open();d.domain="'+n+'";void(0);',o=s}o.open()._l=function(){var o=this.createElement("script");n&&(this.domain=n),o.id="js-iframe-async",o.src=e,this.t=+new Date,this.zendeskHost=t,this.zEQueue=a,this.body.appendChild(o)},o.write('<body onload="document._l();">'),o.close()}("https://assets.zendesk.com/embeddable_framework/main.js","zypetrial.zendesk.com");/*]]>*/</script>
     <!-- End of zypetrial Zendesk Widget script -->
-    
+
     <!-- Marketo -->
     <script type="text/javascript">
     (function() {
@@ -65,7 +66,7 @@
 
       <header id="header" style="overflow-y: scroll;">
     <div id="content">
-      <a href="/"><img src="/assets/logo.png" alt="Zype" />
+      <a href="/"><img src="http://dev.zype.com/assets/logo.png" alt="Zype" />
       <h1 id="title">Developer Portal</h1></a>
       <p>a knowledge base</p>
       <br>
@@ -107,15 +108,12 @@
   </header>
 
 
-    <section id="main">
+    <section id="main" class="api-docs">
       <h2 id="zobjects-collection">Zobjects Collection</h2>
 <hr />
 
-<h3 id="list-all-zobjects">List all Zobjects</h3>
-<hr />
-
-<pre><code>GET - https://api.zype.com/zobjects/?zobject_type=zobject_type&amp;page=page&amp;per_page=per_page&amp;keywords=keyword
-</code></pre>
+<h3 id="list-zobjects">List Zobjects</h3>
+<pre><b>GET</b> https://api.zype.com/zobjects</pre>
 
 <h4 id="parameters">Parameters</h4>
 
@@ -129,78 +127,45 @@
   </thead>
   <tbody>
     <tr>
-      <td>zobject_type</td>
-      <td>The title of the zobject type. Required. Example: card.</td>
+      <td>custom</td>
+      <td>Filter records by custom attribues (Example: color=blue)</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>order</td>
+      <td>Sort records in ascending or descending order (Example: asc/desc)</td>
       <td>String</td>
     </tr>
     <tr>
       <td>page</td>
-      <td>The page number of records to return (zero indexed). Example: 0.</td>
-      <td>Number</td>
+      <td>The page number of records to return (Example: 1)</td>
+      <td>Integer</td>
     </tr>
     <tr>
       <td>per_page</td>
-      <td>The number of records to return. Example: 10.</td>
-      <td>Number</td>
+      <td>The number of records to return (Example: 10)</td>
+      <td>Integer</td>
     </tr>
     <tr>
-      <td>keywords</td>
-      <td>Filters the records returned by keyword. Example: comedy.</td>
+      <td>q</td>
+      <td>Filter records by keyword</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>sort</td>
+      <td>Sort records on the specified field</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>zobject_type</td>
+      <td>The type of zobject (Example: guest)</td>
       <td>String</td>
     </tr>
   </tbody>
 </table>
 
-<h4 id="response">Response</h4>
-<p>200
-Content-Type: application/json</p>
-
-<pre><code>{
-  "response": [
-  {
-    "_id": "5464f99369702d5349750000",
-    "active": true,
-    "created_at": "2014-11-13T13:33:55.435-05:00",
-    "description": "",
-    "friendly_title": "steve-carell",
-    "keywords": [],
-    "name": "Steve Carell",
-    "site_id": "5463c68e69702d24db490000",
-    "title": "Steve Carell",
-    "updated_at": "2014-11-14T14:15:33.490-05:00",
-    "video_ids": [
-      "5463d2d369702d0ece500000"
-    ],
-    "zobject_type_id": "5464f94569702d5349720000",
-    "zobject_type_title": "actor"
-  },
-  {
-    "_id": "5464f92869702d7c9c540000",
-    "active": true,
-    "created_at": "2014-11-13T13:32:08.903-05:00",
-    "description": "",
-    "friendly_title": "jack-black",
-    "keywords": [],
-    "name": "Jack Black",
-    "site_id": "5463c68e69702d24db490000",
-    "title": "Jack Black",
-    "updated_at": "2014-11-14T14:15:33.497-05:00",
-    "video_ids": [
-      "5463d4df69702d51f1140000"
-    ],
-    "zobject_type_id": "5464f94569702d5349720000",
-    "zobject_type_title": "actor"
-    }
-  ]
-}
-</code></pre>
-<hr />
-
 <h3 id="create-a-zobject">Create a Zobject</h3>
-<hr />
-
-<pre><code>POST - https://api.zype.com/zobjects?page=page&amp;per_page=per_page&amp;keywords=keyword
-</code></pre>
+<pre><b>POST</b> https://api.zype.com/zobjects</pre>
 
 <h4 id="parameters-1">Parameters</h4>
 
@@ -214,59 +179,45 @@ Content-Type: application/json</p>
   </thead>
   <tbody>
     <tr>
-      <td>zobject</td>
-      <td>A set of key value pairs that describe the Zobject.</td>
-      <td>Hash</td>
+      <td>zobject_type</td>
+      <td>The type of zobject</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>zobject[active]</td>
+      <td>Whether or not the zobject is active</td>
+      <td>Boolean</td>
+    </tr>
+    <tr>
+      <td>zobject[custom]</td>
+      <td>Custom attributes for the zobject (Example: zobject[color]=blue)</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>zobject[description]</td>
+      <td>The description of the zobject</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>zobject[friendly_title]</td>
+      <td>The friendly title of the zobject</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>zobject[keywords]</td>
+      <td>Keywords for the zobject</td>
+      <td>Array</td>
+    </tr>
+    <tr>
+      <td>zobject[title]</td>
+      <td>The title of the zobject</td>
+      <td>String</td>
     </tr>
   </tbody>
 </table>
 
-<h4 id="request">Request</h4>
-<p>Content-Type: application/json</p>
-
-<h4 id="response-1">Response</h4>
-<p>201
-Content-Type: application/json</p>
-
-<pre><code>{
-  "response": {
-    "_id": "542b182c69702d73796d1100",
-    "active": true,
-    "alternate_name": "-",
-    "attack": 1500,
-    "created_at": "2014-09-30T20:53:00.926Z",
-    "defense": 800,
-    "description": null,
-    "featured": false,
-    "friendly_name": "blackland-fire-dragon",
-    "friendly_title": "blackland-fire-dragon",
-    "keywords": [],
-    "level": "4",
-    "rank": "-",
-    "site_id": "12345abcde",
-    "sort_order": 0,
-    "tgc_link": "http://www.db.yugioh-card.com/yugiohdb/card_search.action?ope=2&amp;cid=4016",
-    "title": "Blackland Fire Dragon",
-    "title_jp": "暗黒の竜王",
-    "tv_only": false,
-    "updated_at": "2014-09-30T20:53:00.926Z",
-    "video_ids": [],
-    "zobject_type_id": "53a4788c69702d5995630300",
-    "zobject_type_title": "card"
-  }
-}
-</code></pre>
-
-<h2 id="zobject">Zobject</h2>
-
-<p>Lists descriptive information about Zobjects.</p>
-<hr />
-
 <h3 id="retrieve-a-zobject">Retrieve a Zobject</h3>
-<hr />
-
-<pre><code>GET - https://api.zype.com/zobjects/{id}/?zobject_type=zobject_type
-</code></pre>
+<pre><b>GET</b> https://api.zype.com/zobjects/[id]</pre>
 
 <h4 id="parameters-2">Parameters</h4>
 
@@ -281,56 +232,19 @@ Content-Type: application/json</p>
   <tbody>
     <tr>
       <td>id</td>
-      <td>String id of the zobject to retrieve. Example: 5389352e69702d401b000000.</td>
+      <td>ID of the record to retrieve (Example: 5389352e69702d401b000000)</td>
       <td>String</td>
     </tr>
     <tr>
       <td>zobject_type</td>
-      <td>The title of the zobject type. Required. Example: card.</td>
+      <td>The type of zobject (Example: guest)</td>
       <td>String</td>
     </tr>
   </tbody>
 </table>
 
-<h4 id="response-2">Response</h4>
-<p>200
-Content-Type: application/json</p>
-
-<pre><code>{
-  "response": {
-    "_id": "542b182c69702d73796d1100",
-    "active": true,
-    "alternate_name": "-",
-    "attack": 1500,
-    "created_at": "2014-09-30T20:53:00.926Z",
-    "defense": 800,
-    "description": null,
-    "featured": false,
-    "friendly_name": "blackland-fire-dragon",
-    "friendly_title": "blackland-fire-dragon",
-    "keywords": [],
-    "level": "4",
-    "rank": "-",
-    "site_id": "12345abcde",
-    "sort_order": 0,
-    "tgc_link": "http://www.db.yugioh-card.com/yugiohdb/card_search.action?ope=2&amp;cid=4016",
-    "title": "Blackland Fire Dragon",
-    "title_jp": "暗黒の竜王",
-    "tv_only": false,
-    "updated_at": "2014-09-30T20:53:00.926Z",
-    "video_ids": [],
-    "zobject_type_id": "53a4788c69702d5995630300",
-    "zobject_type_title": "card"
-  }
-}
-</code></pre>
-<hr />
-
 <h3 id="update-a-zobject">Update a Zobject</h3>
-<hr />
-
-<pre><code>PUT - https://api.zype.com/zobjects/{id}
-</code></pre>
+<pre><b>PUT</b> https://api.zype.com/zobjects/[id]</pre>
 
 <h4 id="parameters-3">Parameters</h4>
 
@@ -345,60 +259,49 @@ Content-Type: application/json</p>
   <tbody>
     <tr>
       <td>id</td>
-      <td>String id of the zobject to retrieve. Example: 5389352e69702d401b000000.</td>
+      <td>ID of the record to update (Example: 540731274c616e047a000000)</td>
       <td>String</td>
     </tr>
     <tr>
-      <td>zobject</td>
-      <td>A set of key value pairs that describe the zobject.</td>
-      <td>Hash</td>
+      <td>zobject_type</td>
+      <td>The type of zobject</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>zobject[active]</td>
+      <td>Whether or not the zobject is active</td>
+      <td>Boolean</td>
+    </tr>
+    <tr>
+      <td>zobject[custom]</td>
+      <td>Custom attributes for the zobject (Example: zobject[color]=blue)</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>zobject[description]</td>
+      <td>The description of the zobject</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>zobject[friendly_title]</td>
+      <td>The friendly title of the zobject</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>zobject[keywords]</td>
+      <td>Keywords for the zobject</td>
+      <td>Array</td>
+    </tr>
+    <tr>
+      <td>zobject[title]</td>
+      <td>The title of the zobject</td>
+      <td>String</td>
     </tr>
   </tbody>
 </table>
 
-<h4 id="request-1">Request</h4>
-<p>Content-Type: application/json</p>
-
-<h4 id="response-3">Response</h4>
-<p>201
-Content-Type: application/json</p>
-
-<pre><code>{
-  "response": {
-    "_id": "542b182c69702d73796d1100",
-    "active": true,
-    "alternate_name": "-",
-    "attack": 1500,
-    "created_at": "2014-09-30T20:53:00.926Z",
-    "defense": 800,
-    "description": null,
-    "featured": false,
-    "friendly_name": "blackland-fire-dragon",
-    "friendly_title": "blackland-fire-dragon",
-    "keywords": [],
-    "level": "4",
-    "rank": "-",
-    "site_id": "12345abcde",
-    "sort_order": 0,
-    "tgc_link": "http://www.db.yugioh-card.com/yugiohdb/card_search.action?ope=2&amp;cid=4016",
-    "title": "Blackland Fire Dragon",
-    "title_jp": "暗黒の竜王",
-    "tv_only": false,
-    "updated_at": "2014-09-30T20:53:00.926Z",
-    "video_ids": [],
-    "zobject_type_id": "53a4788c69702d5995630300",
-    "zobject_type_title": "card"
-  }
-}
-</code></pre>
-
-<hr />
-
-<h3 id="associate-videos-with-a-zobject">Associate Videos with a Zobject</h3>
-<hr />
-
-<pre><code>PUT - https://api.zype.com/zobjects/{id}/add_videos?zobject_type=type&amp;video_id=[id00001, id00002]
-</code></pre>
+<h3 id="delete-a-zobject">Delete a Zobject</h3>
+<pre><b>DELETE</b> https://api.zype.com/zobjects/[id]</pre>
 
 <h4 id="parameters-4">Parameters</h4>
 
@@ -413,53 +316,19 @@ Content-Type: application/json</p>
   <tbody>
     <tr>
       <td>id</td>
-      <td>String id of the zobject to retrieve. Example: 5389352e69702d401b000000.</td>
+      <td>ID of the record to delete (Example: 5389352e69702d401b000000)</td>
       <td>String</td>
     </tr>
     <tr>
       <td>zobject_type</td>
-      <td>The title of the zobject type. Required. Example: card.</td>
+      <td>The type of zobject (Example: guest)</td>
       <td>String</td>
-    </tr>
-    <tr>
-      <td>video_id</td>
-      <td>An array containing the id’s of the video you want to associate with this zobject</td>
-      <td>Array of Strings</td>
     </tr>
   </tbody>
 </table>
 
-<h4 id="request-2">Request</h4>
-<p>Content-Type: application/json</p>
-
-<h4 id="response-4">Response</h4>
-<p>201
-Content-Type: application/json</p>
-<pre><code>{
-  "response": {
-    "_id": "549dc72d636872c09d1f0000",
-    "active": true,
-    "created_at": "2014-12-26T15:38:05.447-05:00",
-    "description": "",
-    "friendly_title": "jamie-foxx",
-    "keywords": [],
-    "site_id": "549dc583636872c09d110000",
-    "title": "Jamie Foxx",
-    "updated_at": "2014-12-26T16:40:03.670-05:00",
-    "video_ids": ["549dc599636872c09d1a0000"],
-    "zobject_type_id": "549dc71f636872c09d1d0000",
-    "zobject_type_title": "actor"
-  }
-}
-</code></pre>
-
-<hr />
-
-<h3 id="remove-associated-videos-from-a-zobject">Remove Associated Videos from a Zobject</h3>
-<hr />
-
-<pre><code>PUT - https://api.zype.com/zobjects/{id}//remove_videos?zobject_type=type&amp;video_id=[id00001, id00002]
-</code></pre>
+<h3 id="add-videoss-to-zobject">Add Videos(s) to Zobject</h3>
+<pre><b>PUT</b> https://api.zype.com/zobjects/[id]/add_videos</pre>
 
 <h4 id="parameters-5">Parameters</h4>
 
@@ -474,55 +343,24 @@ Content-Type: application/json</p>
   <tbody>
     <tr>
       <td>id</td>
-      <td>String id of the zobject to retrieve. Example: 5389352e69702d401b000000.</td>
+      <td>ID of the record (Example: 5389352e69702d401b000000)</td>
       <td>String</td>
+    </tr>
+    <tr>
+      <td>video_id[]</td>
+      <td>The video IDs to add</td>
+      <td>Array</td>
     </tr>
     <tr>
       <td>zobject_type</td>
-      <td>The title of the zobject type. Required. Example: card.</td>
+      <td>The type of zobject (Example: guest)</td>
       <td>String</td>
-    </tr>
-    <tr>
-      <td>video_id</td>
-      <td>An array containing the id’s of the videos you want to dissociate from this zobject</td>
-      <td>Array of Strings</td>
     </tr>
   </tbody>
 </table>
 
-<h4 id="request-3">Request</h4>
-<p>Content-Type: application/json</p>
-
-<h4 id="response-5">Response</h4>
-<p>200</p>
-
-<p>Content-Type: application/json</p>
-<pre><code>{
-  "response":
-  {
-    "_id": "549dc72d636872c09d1f0000",
-    "active": true,
-    "created_at": "2014-12-26T15:38:05.447-05:00",
-    "description": "",
-    "friendly_title": "jamie-foxx",
-    "keywords": [],
-    "site_id": "549dc583636872c09d110000",
-    "title": "Jamie Foxx",
-    "updated_at": "2014-12-26T16:45:30.419-05:00",
-    "video_ids": [],
-    "zobject_type_id": "549dc71f636872c09d1d0000",
-    "zobject_type_title": "actor"
-  }
-}
-</code></pre>
-
-<hr />
-
-<h3 id="remove-a-zobject">Remove a Zobject</h3>
-<hr />
-
-<pre><code>DELETE - https://api.zype.com/zobjects/{id}/?zobject_type=type
-</code></pre>
+<h3 id="remove-videoss-from-zobject">Remove Videos(s) from Zobject</h3>
+<pre><b>PUT</b> https://api.zype.com/zobjects/[id]/remove_videos</pre>
 
 <h4 id="parameters-6">Parameters</h4>
 
@@ -537,24 +375,39 @@ Content-Type: application/json</p>
   <tbody>
     <tr>
       <td>id</td>
-      <td>String id of the zobject to remove. Example: 5389352e69702d401b000000.</td>
+      <td>ID of the record (Example: 5389352e69702d401b000000)</td>
       <td>String</td>
     </tr>
     <tr>
+      <td>video_id[]</td>
+      <td>The video IDs to remove</td>
+      <td>Array</td>
+    </tr>
+    <tr>
       <td>zobject_type</td>
-      <td>The title of the zobject type. Required. Example: card.</td>
+      <td>The type of zobject (Example: guest)</td>
       <td>String</td>
     </tr>
   </tbody>
 </table>
 
-<h4 id="request-4">Request</h4>
-<p>Content-Type: application/json</p>
-
-<h4 id="response-6">Response</h4>
-<p>204</p>
-
-<p>No Content</p>
+<h3 id="zobject-object">Zobject Object</h3>
+<pre>
+{
+  "_id": "549dc72d636872c09d1f0000",
+  "active": true,
+  "created_at": "2014-12-26T15:38:05.447-05:00",
+  "description": "",
+  "friendly_title": "jamie-foxx",
+  "keywords": [],
+  "site_id": "549dc583636872c09d110000",
+  "title": "Jamie Foxx",
+  "updated_at": "2014-12-26T16:45:30.419-05:00",
+  "video_ids": [],
+  "zobject_type_id": "549dc71f636872c09d1d0000",
+  "zobject_type_title": "actor"
+}
+</pre>
 
     </section>
 

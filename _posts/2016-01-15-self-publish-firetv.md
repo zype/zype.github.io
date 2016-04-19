@@ -92,7 +92,7 @@ If you are using Subscriptions with In App Purchasing you must set up each subsc
     - __Title:__ 
         + Monthly Subscription (choose an appropriate title).
     - __SKU:__
-        + This is the Plan's Amazon ID you set up earlier on the Zype dashboard. (ie __subscriptionMonthly-123__)
+        + This is the Plan's Amazon ID you set up earlier on the Zype dashboard (ie __subscriptionMonthly-123__)
         + __Note: You must enter the Amazon ID from the Plan you set up in the Zype platform here. It must match exactly or subscriptions will not work.__
     - __Content delivery:__
         + No additional file required

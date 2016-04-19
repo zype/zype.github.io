@@ -7,7 +7,6 @@ permalink: /api_docs/geoip/
 ## GeoIP
 <hr>
 ### Retrieve an IP Address
-<hr>
 
 <pre><b>GET</b> https://api.zype.com/geoip</pre>
 
@@ -15,7 +14,7 @@ permalink: /api_docs/geoip/
 
 Parameter | Function | Type
 --------- | -------- | ----
-ip_address | Defaults to IP of API caller if not provided Example: 255.255.255.255. | String
+ip_address | Defaults to IP of API caller if not provided Example: 255.255.255.255 | String
 
 ### GeoIP Object
 

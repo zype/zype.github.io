@@ -15,15 +15,17 @@ permalink: /api_docs/device_categories/
 
 Parameter | Function | Type
 --------- | -------- | ----
-id        | Query for a device category by ID | String
-id!       | Exclude a device category from the query | String
-q         | A query string for searching for device categories | String
-title     | Filter device_categories by title | String
-page | The page number of records to return (zero indexed). Example: 0. | Number
-per_page | The number of records to return. Example: 10. | Number
+created_at | Filter the records returned by created date. Greater or less than filters can be used by adding a suffix (Example: created_at.gte) | Date
+id        | Filter records by ID | String
+id!       | Exclude records by ID | String
+order     | Sort records in ascending or descending order (Example: asc/desc) | String
+page      | The page number of records to return (Example: 1) | Integer
+per_page  | The number of records to return (Example: 10) | Integer
+q         | Filter records by keyword | String
+sort      | Sort records on the specified field | String
+title     | Filter records by title | String
 
 ###Retrieve a Device Category
-<hr>
 <pre><b>GET</b> https://api.zype.com/device_categories/[id]
 </pre>
 
@@ -31,7 +33,7 @@ per_page | The number of records to return. Example: 10. | Number
 
 Parameter | Function | Type
 --------- | -------- | ----
-id | String ID of the device category to retrieve. Example: 5389352e69702d401b000000. | String
+id | ID of the record to retrieve (Example: 5389352e69702d401b000000) | String
 
 ### Device Category Object
 

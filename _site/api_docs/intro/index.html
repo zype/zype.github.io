@@ -7,10 +7,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     <title>Zype Developer Portal | API</title>
-    <meta name="description" content="">
+    <meta name="description" content="This is the devloper portal for Zype Media. Zype is Revenue and Reach Magic for Online Video. We help content owners deliver fully branded video experiences.
+">
 
     <link rel="stylesheet" href="/css/main.css">
-    <link rel="canonical" href="/api_docs/intro/">
+    <link rel="canonical" href="http://dev.zype.com/api_docs/intro/">
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 
     <!--[if lt IE 9]>
@@ -34,7 +35,7 @@
     <!-- Start of zypetrial Zendesk Widget script -->
     <script>/*<![CDATA[*/window.zEmbed||function(e,t){var n,o,d,i,s,a=[],r=document.createElement("iframe");window.zEmbed=function(){a.push(arguments)},window.zE=window.zE||window.zEmbed,r.src="javascript:false",r.title="",r.role="presentation",(r.frameElement||r).style.cssText="display: none",d=document.getElementsByTagName("script"),d=d[d.length-1],d.parentNode.insertBefore(r,d),i=r.contentWindow,s=i.document;try{o=s}catch(c){n=document.domain,r.src='javascript:var d=document.open();d.domain="'+n+'";void(0);',o=s}o.open()._l=function(){var o=this.createElement("script");n&&(this.domain=n),o.id="js-iframe-async",o.src=e,this.t=+new Date,this.zendeskHost=t,this.zEQueue=a,this.body.appendChild(o)},o.write('<body onload="document._l();">'),o.close()}("https://assets.zendesk.com/embeddable_framework/main.js","zypetrial.zendesk.com");/*]]>*/</script>
     <!-- End of zypetrial Zendesk Widget script -->
-    
+
     <!-- Marketo -->
     <script type="text/javascript">
     (function() {
@@ -65,7 +66,7 @@
 
       <header id="header" style="overflow-y: scroll;">
     <div id="content">
-      <a href="/"><img src="/assets/logo.png" alt="Zype" />
+      <a href="/"><img src="http://dev.zype.com/assets/logo.png" alt="Zype" />
       <h1 id="title">Developer Portal</h1></a>
       <p>a knowledge base</p>
       <br>
@@ -129,20 +130,37 @@ In addition, this reference describes a number of related objects. The Zype API 
 
 <h2 id="authentication">Authentication</h2>
 
-<p>There are two ways to authenticate to the Zype API. The first way to authenticate is
-to provide your API key in the request. To authenticate your requests, supply your API key in the X-ZYPE-API-KEY header.</p>
+<p>There are multiple ways to authenticate to the Zype API. Your Zype channels is automatically set up with API keys that you can integrate with, but you can also use app keys and consumer access tokens to autheticate as well.</p>
 
-<p>The second way to authenticate is to include your API key in the query param.</p>
+<h3 id="api-keys">API Keys</h3>
 
-<pre><code>https://api.zype.com/videos/?api_key=[api_key]</code></pre>
-
-<p>Currently, Zype provides three types of API Keys for you to use for authentication.</p>
+<p>Your Zype channel is automatically set up with the following API keys:</p>
 
 <ul>
   <li><strong>Admin Key:</strong> Admin keys have full access to your account and should not be distributed in video applications.</li>
   <li><strong>Read Only Key:</strong> Read only keys have limited access to your account and are not allowed to create or modify existing resources. Read only keys should be used when distributing a video application.</li>
   <li><strong>Player Key:</strong> Player keys have limited access to your account and are only allowed to issue player requests. Player keys should be used in embed codes for web applications.</li>
 </ul>
+
+<h4 id="example">Example:</h4>
+
+<pre><b>GET</b> https://api.zype.com/videos?api_key=[api_key]</pre>
+
+<h3 id="app-keys">App Keys</h3>
+
+<p>App keys are automatically created when you set up new apps. App keys provide per app authentication so that each bundled app has separate credentials. App keys are automatically bundled using Zype app builders. App keys can be retrived from your app’s detail page.</p>
+
+<h4 id="example-1">Example:</h4>
+
+<pre><b>GET</b> https://api.zype.com/videos?app_key=[app_key]</pre>
+
+<h3 id="access-tokens">Access Tokens</h3>
+
+<p>Access tokens provide per user authentication for API requests. Access tokens are time based tokens that are created using  OAuth. <a href="/api_docs/oauth">Click here</a> for more information about using OAuth.</p>
+
+<h4 id="example-2">Example:</h4>
+
+<pre><b>GET</b> https://api.zype.com/videos?access_token=[access_token]</pre>
 
 <hr />
 
@@ -196,7 +214,7 @@ to provide your API key in the request. To authenticate your requests, supply yo
 
 <p>Example:</p>
 
-<pre><code>{
+<pre>{
     response: { ... },
     pagination: {
         current: 1,
@@ -206,7 +224,7 @@ to provide your API key in the request. To authenticate your requests, supply yo
         pages: 5
     }
 }
-</code></pre>
+</pre>
 <hr />
 
 <h2 id="video-formats">Video Formats</h2>

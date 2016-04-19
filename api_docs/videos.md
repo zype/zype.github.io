@@ -15,30 +15,31 @@ permalink: /api_docs/videos/
 
 Parameter | Function | Type
 --------- | -------- | ----
-active    | Show active, inactive or all videos Example: true. | String
-category  | An optional set of key value category pairs to filter the records returned by category. Example: category[color]=blue. | Hash
-category! | Exclude a category from the query. Example: category![color] = blue | Hash
-created_at | Filter the records returned by created date. You can use greater than or less than filters by adding a suffix: '.gt', '.gte', '.lt', 'lte'. Example: created_at.gte=2015-01-01 | Date
-crunchyroll_id   | Filter videos that have the specified Crunchyroll ID. | String
-dpt       | Only shows videos that are available to the end user based on device and country | Boolean
-hulu_id   | Filter videos that have the specified Hulu ID. | String
-id        | Query for a video by ID | String
-id!       | Exclude a video from the query | String
-order     | Order videos in ascending or descending order (Example: asc/desc) | String
-on_air    | Filter videos that are either on or off air. | Boolean
-mature_content    | Filter videos that are flagged as mature content. | Boolean
-published_at | Filter the records returned by published date. You can use greater than or less than filters by adding a suffix: '.gt', '.gte', '.lt', 'lte'. Example: published_at.gte=2015-01-01 | Date
-q         | A query string for searching for videos | String
-sort      | Sort videos on the specified field | String
-source_id | Search for videos using an optional user provided source identifier. | String
-type      | The type of videos to query. Example: zype, hulu, youtube, crunchyroll | String
-vimeo_id   | Filter videos that have the specified Vimeo ID. | String
-youtube_id   | Filter videos that have the specified YouTube ID. | String
-zobject_id  | Include only videos that belong to the specified Zobject ID. | String
-zobject_id! | Exclude videos that belong to the specified Zobject ID. | String
+active    | Filter by active, inactive, or all records (Example: true) | String
+category  | Filter records by category value (Example: category[color]=blue) | Hash
+category! | Exclude records by category value (Example: category![color]=blue) | Hash
+created_at | Filter records by created date. Greater or less than filters can be used by adding a suffix (Example: created_at.gte) | Date
+crunchyroll_id   | Filter records by a Crunchyroll ID | String
+dpt       | Filter records by DPT conditions (Geo-location and device restrictions) | Boolean
+hulu_id   | Filter records by a Hulu ID | String
+id        | Filter records by ID | String
+id!       | Exclude records by ID | String
+mature_content    | Filter records that are flagged as mature content | Boolean
+order     | Sort records in ascending or descending order (Example: asc/desc) | String
+on_air    | Filter records that are either on or off air | Boolean
+page | The page number of records to return (Example: 1) | Integer
+per_page | The number of records to return (Example: 10) | Integer
+published_at | Filter records by published date. Greater or less than filters can be used by adding a suffix (Example: published_at.gte) | Date
+q         | Filter records by keyword | String
+sort      | Sort records on the specified field | String
+source_id | Filter records by an optional source identifier | String
+type      | Filter records by type (Example: zype, hulu, youtube, crunchyroll) | String
+vimeo_id   | Filter records by a Vimeo ID | String
+youtube_id   | Filter records by a YouTube ID | String
+zobject_id  | Filter records by Zobject ID | String
+zobject_id! | Exclude records by Zobject ID | String
 
 ### Create a Video
-<hr>
 <pre><b>POST</b> https://api.zype.com/videos</pre>
 
 #### Parameters
@@ -63,7 +64,6 @@ video[source_id] | An optional user specified identifier for a video | String
 video[custom_thumbnail_url] | A URL where a custom thumbnail for the video can be retrieved (JPEG, PNG or GIF) | String
 
 ###Retrieve a Video
-<hr>
 <pre><b>GET</b> https://api.zype.com/videos/[id]
 </pre>
 
@@ -71,10 +71,9 @@ video[custom_thumbnail_url] | A URL where a custom thumbnail for the video can b
 
 Parameter | Function | Type
 --------- | -------- | ----
-id        | String ID of the video to retrieve. Example: 5389352e69702d401b000000. | String
+id        | ID of the record to retrieve (Example: 5389352e69702d401b000000) | String
 
 ### Update a Video
-<hr>
 <pre><b>PUT</b> https://api.zype.com/videos/[id]
 </pre>
 
@@ -82,6 +81,7 @@ id        | String ID of the video to retrieve. Example: 5389352e69702d401b00000
 
 Parameter | Function | Type
 --------- | -------- | ----
+id | ID of the record to update (Example: 540731274c616e047a000000) | String
 video[title] | The title of the video | String
 video[description] | The description of the video | String
 video[short_description] | The description of the video | String
@@ -100,7 +100,6 @@ video[source_id] | An optional user specified identifier for a video | String
 video[custom_thumbnail_url] | A URL where a custom thumbnail for the video can be retrieved (JPEG, PNG or GIF) | String
 
 ###Delete a Video
-<hr>
 <pre><b>DELETE</b> https://api.zype.com/videos/[id]
 </pre>
 
@@ -108,31 +107,27 @@ video[custom_thumbnail_url] | A URL where a custom thumbnail for the video can b
 
 Parameter | Function | Type
 --------- | -------- | ----
-id        | String ID of the video to delete. Example: 5389352e69702d401b000000. | String
+id        | ID of the record to delete (Example: 5389352e69702d401b000000) | String
 
 ### Add Zobject(s) to Video
-<hr>
-<pre><b>PUT</b> https://api.zype.com/videos/[id]/add_zobjects
-</pre>
+<pre><b>PUT</b> https://api.zype.com/videos/[id]/add_zobjects</pre>
 
 #### Parameters
 
 Parameter | Function | Type
 --------- | -------- | ----
-id        | String ID of the video. Example: 5389352e69702d401b000000. | String
-zobject_id | An array containing all of the zobject id's that you want to add to the video. | Array of Strings
+id        | ID of the record (Example: 5389352e69702d401b000000) | String
+zobject_id[] | The zobject IDs to add | Array
 
 ### Remove Zobject(s) from Video
-<hr />
-<pre><b>PUT</b> https://api.zype.com/videos/[id]/remove_zobjects
-</pre>
+<pre><b>PUT</b> https://api.zype.com/videos/[id]/remove_zobjects</pre>
 
 #### Parameters
 
 Parameter | Function | Type
 --------- | -------- | ----
-id        | String ID of the video. Example: 5389352e69702d401b000000. | String
-zobject_id | An array containing all of the zobject id's that you want to dissociate from the video. | Array of Strings
+id        | ID of the record (Example: 5389352e69702d401b000000) | String
+zobject_id[] | The zobject IDs to remove | Array
 
 ### Video Object
 

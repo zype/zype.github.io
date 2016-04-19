@@ -7,10 +7,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     <title>Zype Developer Portal | Device Categories</title>
-    <meta name="description" content="">
+    <meta name="description" content="This is the devloper portal for Zype Media. Zype is Revenue and Reach Magic for Online Video. We help content owners deliver fully branded video experiences.
+">
 
     <link rel="stylesheet" href="/css/main.css">
-    <link rel="canonical" href="/api_docs/device_categories/">
+    <link rel="canonical" href="http://dev.zype.com/api_docs/device_categories/">
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 
     <!--[if lt IE 9]>
@@ -34,7 +35,7 @@
     <!-- Start of zypetrial Zendesk Widget script -->
     <script>/*<![CDATA[*/window.zEmbed||function(e,t){var n,o,d,i,s,a=[],r=document.createElement("iframe");window.zEmbed=function(){a.push(arguments)},window.zE=window.zE||window.zEmbed,r.src="javascript:false",r.title="",r.role="presentation",(r.frameElement||r).style.cssText="display: none",d=document.getElementsByTagName("script"),d=d[d.length-1],d.parentNode.insertBefore(r,d),i=r.contentWindow,s=i.document;try{o=s}catch(c){n=document.domain,r.src='javascript:var d=document.open();d.domain="'+n+'";void(0);',o=s}o.open()._l=function(){var o=this.createElement("script");n&&(this.domain=n),o.id="js-iframe-async",o.src=e,this.t=+new Date,this.zendeskHost=t,this.zEQueue=a,this.body.appendChild(o)},o.write('<body onload="document._l();">'),o.close()}("https://assets.zendesk.com/embeddable_framework/main.js","zypetrial.zendesk.com");/*]]>*/</script>
     <!-- End of zypetrial Zendesk Widget script -->
-    
+
     <!-- Marketo -->
     <script type="text/javascript">
     (function() {
@@ -65,7 +66,7 @@
 
       <header id="header" style="overflow-y: scroll;">
     <div id="content">
-      <a href="/"><img src="/assets/logo.png" alt="Zype" />
+      <a href="/"><img src="http://dev.zype.com/assets/logo.png" alt="Zype" />
       <h1 id="title">Developer Portal</h1></a>
       <p>a knowledge base</p>
       <br>
@@ -107,7 +108,7 @@
   </header>
 
 
-    <section id="main">
+    <section id="main" class="api-docs">
       <h2 id="device-categories">Device Categories</h2>
 <hr />
 
@@ -128,41 +129,54 @@
   </thead>
   <tbody>
     <tr>
+      <td>created_at</td>
+      <td>Filter the records returned by created date. Greater or less than filters can be used by adding a suffix (Example: created_at.gte)</td>
+      <td>Date</td>
+    </tr>
+    <tr>
       <td>id</td>
-      <td>Query for a device category by ID</td>
+      <td>Filter records by ID</td>
       <td>String</td>
     </tr>
     <tr>
       <td>id!</td>
-      <td>Exclude a device category from the query</td>
+      <td>Exclude records by ID</td>
       <td>String</td>
     </tr>
     <tr>
-      <td>q</td>
-      <td>A query string for searching for device categories</td>
-      <td>String</td>
-    </tr>
-    <tr>
-      <td>title</td>
-      <td>Filter device_categories by title</td>
+      <td>order</td>
+      <td>Sort records in ascending or descending order (Example: asc/desc)</td>
       <td>String</td>
     </tr>
     <tr>
       <td>page</td>
-      <td>The page number of records to return (zero indexed). Example: 0.</td>
-      <td>Number</td>
+      <td>The page number of records to return (Example: 1)</td>
+      <td>Integer</td>
     </tr>
     <tr>
       <td>per_page</td>
-      <td>The number of records to return. Example: 10.</td>
-      <td>Number</td>
+      <td>The number of records to return (Example: 10)</td>
+      <td>Integer</td>
+    </tr>
+    <tr>
+      <td>q</td>
+      <td>Filter records by keyword</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>sort</td>
+      <td>Sort records on the specified field</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>title</td>
+      <td>Filter records by title</td>
+      <td>String</td>
     </tr>
   </tbody>
 </table>
 
 <h3 id="retrieve-a-device-category">Retrieve a Device Category</h3>
-<hr />
-
 <pre><b>GET</b> https://api.zype.com/device_categories/[id]
 </pre>
 
@@ -179,7 +193,7 @@
   <tbody>
     <tr>
       <td>id</td>
-      <td>String ID of the device category to retrieve. Example: 5389352e69702d401b000000.</td>
+      <td>ID of the record to retrieve (Example: 5389352e69702d401b000000)</td>
       <td>String</td>
     </tr>
   </tbody>

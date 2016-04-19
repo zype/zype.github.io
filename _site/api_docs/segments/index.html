@@ -7,10 +7,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     <title>Zype Developer Portal | Segments</title>
-    <meta name="description" content="">
+    <meta name="description" content="This is the devloper portal for Zype Media. Zype is Revenue and Reach Magic for Online Video. We help content owners deliver fully branded video experiences.
+">
 
     <link rel="stylesheet" href="/css/main.css">
-    <link rel="canonical" href="/api_docs/segments/">
+    <link rel="canonical" href="http://dev.zype.com/api_docs/segments/">
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 
     <!--[if lt IE 9]>
@@ -65,7 +66,7 @@
 
       <header id="header" style="overflow-y: scroll;">
     <div id="content">
-      <a href="/"><img src="/assets/logo.png" alt="Zype" />
+      <a href="/"><img src="http://dev.zype.com/assets/logo.png" alt="Zype" />
       <h1 id="title">Developer Portal</h1></a>
       <p>a knowledge base</p>
       <br>
@@ -89,6 +90,7 @@
       <p><a href="/api_docs/plans/">Plans</a></p>
       <p><a href="/api_docs/oauth/">OAuth</a></p>
       <p><a href="/api_docs/subscriptions/">Subscriptions</a></p>
+      <p><a href="/api_docs/transactions/">Transactions</a></p>
       <a href="/api_docs/zobject_docs/"><h4 class="api-header">Zobjects</h4></a>
       <p><a href="/api_docs/zobject_types/">Zobject Types</a></p>
       <p><a href="/api_docs/zobjects/">Zobjects</a></p>
@@ -105,7 +107,7 @@
   </header>
 
 
-    <section id="main">
+    <section id="main" class="api-docs">
       <h2 id="segments">Segments</h2>
 <hr />
 
@@ -127,15 +129,13 @@
   <tbody>
     <tr>
       <td>video_id</td>
-      <td>String ID of the video. Example: 5389352e69702d401b000000.</td>
+      <td>ID of the parent video (Example: 5389352e69702d401b000000)</td>
       <td>String</td>
     </tr>
   </tbody>
 </table>
 
 <h3 id="retrieve-a-segment">Retrieve a Segment</h3>
-<hr />
-
 <pre><b>GET</b> https://api.zype.com/videos/[video_id]/segments/[id]
 </pre>
 
@@ -152,20 +152,18 @@
   <tbody>
     <tr>
       <td>video_id</td>
-      <td>String ID of the video to which the segment belongs. Example: 5389352e69702d401b000000.</td>
+      <td>ID of the parent video (Example: 5389352e69702d401b000000)</td>
       <td>String</td>
     </tr>
     <tr>
       <td>id</td>
-      <td>String ID of the segment. Example: 5389352e69702d401b000000.</td>
+      <td>ID of the record (Example: 5389352e69702d401b000000)</td>
       <td>String</td>
     </tr>
   </tbody>
 </table>
 
 <h3 id="create-a-segment">Create a Segment</h3>
-<hr />
-
 <pre><b>POST</b> https://api.zype.com/videos/[video_id]/segments
 </pre>
 
@@ -182,7 +180,7 @@
   <tbody>
     <tr>
       <td>video_id</td>
-      <td>String ID of the video to which the segment belongs. Example: 5389352e69702d401b000000.</td>
+      <td>ID of the parent video (Example: 5389352e69702d401b000000)</td>
       <td>String</td>
     </tr>
     <tr>
@@ -204,8 +202,6 @@
 </table>
 
 <h3 id="update-a-segment">Update a Segment</h3>
-<hr />
-
 <pre><b>PUT</b> https://api.zype.com/videos/[video_id]/segments/[id]</pre>
 
 <h4 id="parameters-3">Parameters</h4>
@@ -221,7 +217,7 @@
   <tbody>
     <tr>
       <td>video_id</td>
-      <td>String ID of the video to which the segment belongs. Example: 5389352e69702d401b000000.</td>
+      <td>ID of the parent video (Example: 5389352e69702d401b000000)</td>
       <td>String</td>
     </tr>
     <tr>
@@ -243,8 +239,6 @@
 </table>
 
 <h3 id="delete-a-segment">Delete a Segment</h3>
-<hr />
-
 <pre><b>DELETE</b> https://api.zype.com/videos/[video_id]/segments/[id]
 </pre>
 
@@ -261,12 +255,12 @@
   <tbody>
     <tr>
       <td>video_id</td>
-      <td>String ID of the video to which the segment belongs. Example: 5389352e69702d401b000000.</td>
+      <td>ID of the parent video (Example: 5389352e69702d401b000000)</td>
       <td>String</td>
     </tr>
     <tr>
       <td>id</td>
-      <td>String ID of the segment to be deleted. Example: 5389352e69702d401b000000.</td>
+      <td>ID of the record to be deleted (Example: 5389352e69702d401b000000)</td>
       <td>String</td>
     </tr>
   </tbody>

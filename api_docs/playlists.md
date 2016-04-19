@@ -1,491 +1,162 @@
 ---
-layout: api
-title: Zype Developer Portal | Playlists
-permalink: /api_docs/playlists/
+layout: platform
+title: Zype Developer Portal | Platform Docs
+permalink: /platform_docs/playlists/
 ---
+## Playlists
+A playlist can have multiple videos and categories.
 
-## Playlists Collection
+<div style="width: 100%;">
+  <div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>
+    <a href="#1">
+    Categories and playlists on the Zype Platform</a>
+  </div>
+  <div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>
+    <a href="#2">
+    Search filters on the Zype Platform</a>
+  </div>
+  <div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>
+    <a href="#3">
+    Related playlists</a>
+  </div>
+  <div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>
+    <a href="#4">
+    Categories, playlists and your Roku app</a>
+  </div>
+</div>
 
-Lists all Playlists. Playlist information includes descriptive information about the playlist.
-<hr>
-### List all Playlists
-<hr>
-<pre><code>GET - https://api.zype.com/playlists?page=page&per_page=per_page&
-active=active&keyword=keyword&category=category
-</code></pre>
+<hr id="1">
 
-#### Parameters
+## Categories and playlists on the Zype Platform
+As you make your way through the [Zype Platform](http://admin.zype.com), you might have some
+questions about the differences between a playlist and a category. At the end of the day, both
+are used to return a set of videos, but they aren't exactly the same thing. This blog post
+will look at categories and playlists and help you better understand how and when to use them.
 
-Parameter | Function | Type
---------- | -------- | ----
-page | The page number of records to return (zero indexed). Example: 0. | Number
-per_page | The number of records to return. Example: 10. | Number
-keyword | Filters the records returned by keyword. Example: comedy. | String
-q | Filters the records returned by keyword. Alias for 'keyword'. Example: comedy. | String
-active | Filters the records by whether active or not. Example: true. | String
-video_id | Finds the playlists that contain the video id. Example: 566ee4e84d656c8523050800. | String
-category | An optional set of key value category pairs to filter the records returned by category. Example: category[color]=blue. | Hash
+### What are playlists and how do I use them?
+A playlist on the Zype Platform is a collection of videos that you assemble under a title.
+Common playlists might include: Trending Videos, Most Popular, Editor's Choice, etc. Playlists
+are great for when you want to create and curate, by hand, a set of videos that might not fall
+under a specific category.
 
-#### Response
-200
-Content-Type: application/json
+### What are categories and how do I use them?
+A category on the Zype Platform is a label that you can create and assign to any number of
+videos. Common categories for video content might include: Genre, Tag, Type, Season, Series,
+etc. Categories are more generic than playlists and can be mass assigned to videos in your
+[Video Library.](http://admin.zype.com/videos)
 
-<pre><code>{
-  "response": [
-    {
-      "_id": "5702dd60f2834722e2000012",
-      "_keywords": [
-        "bundle",
-        "featured",
-        "videos"
-      ],
-      "active": true,
-      "auto_update_consumer_videos": true,
-      "created_at": "2016-04-04T17:32:16.072-04:00",
-      "deleted_at": null,
-      "description": "",
-      "images": [
-        {
-          "_id": "57067547f2834709b000004f",
-          "caption": "",
-          "title": "",
-          "updated_at": "2016-04-07T10:57:12.083-04:00",
-          "url": "http://upload.dev.zype.com/5468fd6569702d17ee500000/video_image/57067547f2834709b000004f/1460041031/original.png?1460041031"
-        },
-        {
-          "_id": "57067547f2834709b0000050",
-          "caption": "",
-          "title": "",
-          "updated_at": "2016-04-07T10:57:12.085-04:00",
-          "url": "http://upload.dev.zype.com/5468fd6569702d17ee500000/video_image/57067547f2834709b0000050/1460041031/original.jpg?1460041031"
-        }
-      ],
-      "parent_id": null,
-      "priority": 0,
-      "purchase_price": "5.0",
-      "purchase_required": false,
-      "related_video_ids": [],
-      "rental_duration": 2,
-      "rental_price": "5.0",
-      "rental_required": false,
-      "site_id": "5468fd6569702d17ee500000",
-      "thumbnails": [
-        {
-          "aspect_ratio": 1.78,
-          "height": 240,
-          "name": null,
-          "url": "http://image.zype.com/5468fd6569702d17ee500000/playlist/5702dd60f2834722e2000012/custom_thumbnail/240.png?1460041006",
-          "width": 426
-        },
-        {
-          "aspect_ratio": 1.78,
-          "height": 480,
-          "name": null,
-          "url": "http://image.zype.com/5468fd6569702d17ee500000/playlist/5702dd60f2834722e2000012/custom_thumbnail/480.png?1460041006",
-          "width": 854
-        },
-        {
-          "aspect_ratio": 1.78,
-          "height": 720,
-          "name": null,
-          "url": "http://image.zype.com/5468fd6569702d17ee500000/playlist/5702dd60f2834722e2000012/custom_thumbnail/720.png?1460041006",
-          "width": 1280
-        },
-        {
-          "aspect_ratio": 1.78,
-          "height": 1080,
-          "name": null,
-          "url": "http://image.zype.com/5468fd6569702d17ee500000/playlist/5702dd60f2834722e2000012/custom_thumbnail/1080.png?1460041006",
-          "width": 1920
-        }
-      ],
-      "title": "Featured Videos Bundle",
-      "updated_at": "2016-04-07T10:57:12.088-04:00",
-      "playlist_item_count": 8
-    }
-  ],
-  "pagination": {
-    "current": 2,
-    "previous": 1,
-    "next": 3,
-    "per_page": 1,
-    "pages": 3
-  }
-}
-</code></pre>
-<hr>
-### Create a Playlist
-<hr>
-<pre><code>POST - https://api.zype.com/playlists?page=page&per_page=per_page&
-active=active&keyword=keyword&category=category
-</code></pre>
+### I'm using the Zype Platform to create a Roku app. What is the difference for me?
+Roku apps will treat categories and playlists the same, as they are both just a collection of
+videos. For an in-depth guide on how to create your Roku app, make sure you check out [this blog post](http://dev.zype.com/posts/2014/12/03/categories-playlists-Zobjects-roku/)
 
-#### Parameters
+<hr id="2">
 
-Parameter | Function | Type
---------- | -------- | ----
-playlist | A set of key value pairs that describe the Playlist | Hash
-title | The title of the playlist | String
-site_id | The id of the site the playlist belongs to | String
-video_ids | A list of items within the playlist by video id | Array
+## Search filters on the Zype Platform
+If you've been busy adding video content to the [Zype Platform](http://admin.zype.com) and creating playlists, you might be at the point where you've got a few pages of each. To help you better manage your content, we've added a set of filters to the videos and playlists pages:
 
-#### Request
-
-Content-Type: application/json
-
-#### Response
-201
-Content-Type: application/json
-
-<pre><code>{
-  "response":
-  {  
-    "_id": "54908b5c4c616e20e73a0000",
-    "_keywords": ["active","best","playlist"],
-    "active": true,
-    "created_at": "2014-12-16T14:43:24.272-05:00",
-    "description": null,
-    "priority": null,
-    "related_video_ids": [],
-    "site_id": "545932274c616e2359000000",
-    "title": "The best active playlist!!",
-    "updated_at": "2014-12-16T14:43:24.272-05:00",
-    "playlist_item_count": 0
-  }
-}
-</code></pre>
-
-## Playlist
-
-Lists descriptive information about Playlist.
-
-<hr>
-### Retrieve a Playlist
-<hr>
-<pre><code>GET - https://api.zype.com/playlists/{id}
-</code></pre>
-
-#### Parameters
-
-Parameter | Function | Type
---------- | -------- | ----
-id | String id of the Playlist to retrieve. Example: 5389352e69702d401b000000. | Number
-
-#### Request
-Content-Type: application/json
-
-#### Response
-200
-Content-Type: application/json
-
-<pre><code>{
-  "response": {
-    "_id": "5702dd60f2834722e2000012",
-    "_keywords": [
-      "bundle",
-      "featured",
-      "videos"
-    ],
-    "active": true,
-    "auto_update_consumer_videos": true,
-    "created_at": "2016-04-04T17:32:16.072-04:00",
-    "deleted_at": null,
-    "description": "",
-    "images": [
-      {
-        "_id": "57067547f2834709b000004f",
-        "caption": "",
-        "title": "",
-        "updated_at": "2016-04-07T10:57:12.083-04:00",
-        "url": "http://upload.dev.zype.com/5468fd6569702d17ee500000/video_image/57067547f2834709b000004f/1460041031/original.png?1460041031"
-      },
-      {
-        "_id": "57067547f2834709b0000050",
-        "caption": "",
-        "title": "",
-        "updated_at": "2016-04-07T10:57:12.085-04:00",
-        "url": "http://upload.dev.zype.com/5468fd6569702d17ee500000/video_image/57067547f2834709b0000050/1460041031/original.jpg?1460041031"
-      }
-    ],
-    "parent_id": null,
-    "priority": 0,
-    "purchase_price": "5.0",
-    "purchase_required": false,
-    "related_video_ids": [],
-    "rental_duration": 2,
-    "rental_price": "5.0",
-    "rental_required": false,
-    "site_id": "5468fd6569702d17ee500000",
-    "thumbnails": [
-      {
-        "aspect_ratio": 1.78,
-        "height": 240,
-        "name": null,
-        "url": "http://image.zype.com/5468fd6569702d17ee500000/playlist/5702dd60f2834722e2000012/custom_thumbnail/240.png?1460041006",
-        "width": 426
-      },
-      {
-        "aspect_ratio": 1.78,
-        "height": 480,
-        "name": null,
-        "url": "http://image.zype.com/5468fd6569702d17ee500000/playlist/5702dd60f2834722e2000012/custom_thumbnail/480.png?1460041006",
-        "width": 854
-      },
-      {
-        "aspect_ratio": 1.78,
-        "height": 720,
-        "name": null,
-        "url": "http://image.zype.com/5468fd6569702d17ee500000/playlist/5702dd60f2834722e2000012/custom_thumbnail/720.png?1460041006",
-        "width": 1280
-      },
-      {
-        "aspect_ratio": 1.78,
-        "height": 1080,
-        "name": null,
-        "url": "http://image.zype.com/5468fd6569702d17ee500000/playlist/5702dd60f2834722e2000012/custom_thumbnail/1080.png?1460041006",
-        "width": 1920
-      }
-    ],
-    "title": "Featured Videos Bundle",
-    "updated_at": "2016-04-07T10:57:12.088-04:00",
-    "playlist_item_count": 8
-  }
-}
-</code></pre>
+![video filtering]({{site.url}}/assets/Search Filters on the Zype Platform/video_lib.png)
 
 <hr>
 
-### Retrieve Videos in a Playlist
-<hr>
-<pre><code>GET - https://api.zype.com/playlists/{id}/videos
-</code></pre>
-
-#### Parameters
-
-Parameter | Function | Type
---------- | -------- | ----
-id | String id of the Playlist to retrieve. Example: 5389352e69702d401b000000. | String
-
-#### Request
-Content-Type: application/json
-
-#### Response
-200
-Content-Type: application/json
-
-<pre><code>{
-  "response": [
-    {
-      "_id":"5481f66e4c616e06ec670000",
-      "active":true,
-      "categories":
-      [
-        {
-          "title":"Season",
-          "value":["1"]
-        },
-        {
-          "title":"Final sample",
-          "value":["everything"]
-        },
-        {
-          "title":"sample",
-          "value":["no","yes"]
-        }
-      ],
-      "country": "",
-      "created_at": "2014-12-05T13:16:14.280-05:00",
-      "description": "Music video by Taylor Swift performing #VEVOCertified, Pt. 3: Taylor Talks About Her Fans. (C) 2012 Big Machine Records, LLC.",  
-      "duration": 141,
-      "episode": null,
-      "featured": false,
-      "foreign_id": null,
-      "keywords": [],
-      "mature_content": false,
-      "published_at": "2012-10-29T11:45:07.000-04:00",
-      "rating": 0.0,
-      "related_playlist_ids": [],
-      "request_count": 0,
-      "season": null,
-      "site_id": "545932274c616e2359000000",
-      "status": "created",
-      "subscription_required": false,
-      "title": "#VEVOCertified, Pt. 3: Taylor Talks About Her Fans",
-      "updated_at": "2014-12-15T17:53:24.119-05:00",
-      "zobject_ids": [],
-      "thumbnails":
-      [
-        {
-          "aspect_ratio": null,
-          "height": 90,
-          "name": null,
-          "url": "https://i.ytimg.com/vi/ehLp0cjqkRk/default.jpg",
-          "width": 120
-        }
-      ]
-    }
-  ]
-  "pagination":
-  {
-    "current": 1,
-    "previous":null,
-    "next":null,
-    "per_page": 10,
-    "pages": 1
-  }
-}
-</code></pre>
+![playlist filtering]({{site.url}}/assets/Search Filters on the Zype Platform/playlist_search.png)
 
 <hr>
 
+The filter buttons let you select as many parameters for your search as you'd like. Each button has a dropdown you can use to select a value to search by. The default search options are the categories you've created for your site and "Active" (whether or not the video is marked as active). You can create and manage your categories [here.](https://admin.zype.com/categories)
 
-### Update a Playlist
-<hr>
-<pre><code>PUT - https://api.zype.com/playlists/{id}
-</code></pre>
+Once you've selected all of the filters you want to use, click the search button to see the results.
 
-#### Parameters
+You can search by entering a search term, using the filters or both!
 
-Parameter | Function | Type
---------- | -------- | ----
-playlist | A set of key value pairs that describe the Playlist | Hash
-title | The title of the playlist | String
-site_id | The id of the site the playlist belongs to | String
-video_ids | A list of items within the playlist by video id | Array
-video_id | The id of a video to be repositioned within the playlist | String
-position | The position that the video will now occupy within the playlist | Integer
+If the filter buttons are grayed out, that's because you don't have any videos or playlists yet.
 
-#### Request
-Content-Type: application/json
+Check out our previous blog post on [defining categories and playlists](http://dev.zype.com/posts/2014/12/04/defining-categories-and-playlists/), if you have questions about getting started.
 
-#### Response
-201
-Content-Type: application/json
 
-<pre><code>{
-  response:
-  {
-    "_id": "549082404c616e20e7290000",
-    "_keywords": ["playlist","sample"],
-    "active": true,
-    "created_at": "2014-12-16T14:04:32.666-05:00",
-    "description": "",
-    "priority": 0,
-    "related_video_ids": [],
-    "site_id": "545932274c616e2359000000",
-    "title": "Updated sample Playlist",
-    "updated_at": "2014-12-18T14:04:32.666-05:00",
-    "playlist_item_count": 4
-  }
-}
-</code></pre>
-<hr>
-### Remove a Playlist
-<hr>
-<pre><code>DELETE - https://api.zype.com/playlists/{id}
-</code></pre>
+<hr id="3">
 
-#### Parameters
+## Related playlists
+Let's say you've already got some video content on your Zype destination site, but now you'd like to recommend
+additional content based on what your users are watching. The solution we've implemented is called related videos.
+In this post, we'll be covering how to create a playlist of related videos that are recommended to a viewer
+based on what the video they're watching. Here's an example of the finished product:
 
-Parameter | Function | Type
---------- | -------- | ----
-id | String id of the Playlist to remove. Example: 5389352e69702d401b000000. | Number
+![related playlist]({{site.url}}/assets/Related Playlists/related_playlists.png)
 
-#### Request
-Content-Type: application/json
+*The related videos section is automatically created for each video on your site, but if you'd like to be more
+specific about which videos are displayed there, follow along as we set up a playlist of related videos.*
 
-#### Response
-204
+### How do I set up a playlist of related videos?
 
-No Content
+Setting up the playlist can be done from the [admin portal](http://admin.zype.com/). Navigate to the playlist
+section on the sidebar and and click "New Playlist". Follow through the menu and create a playlist (make sure it's active!).
 
-<hr>
-### Add Video to a Playlist
-<hr>
-<pre><code>PUT - https://api.zype.com/playlists/{id}/add_videos/&video_id=video_id
-</code></pre>
+![playlist navigation]({{site.url}}/assets/Related Playlists/playlist_navigation_2.png)
 
-#### Parameters
+### How can I choose which videos are shown in the playlist?
 
-Parameter | Function | Type
---------- | -------- | ----
-video_id  | ID of the video to add the playlist | String
+This is an easy one. Use the "Add Videos" button to select which videos will appear under the related videos section.
 
-#### Request
+![add videos navigation]({{site.url}}/assets/Related Playlists/add_videos_playlist_3.png)
 
-Content-Type: application/json
+### How can I choose which videos display the playlist?
 
-#### Response
-201
-Content-Type: application/json
+Choosing the videos that will have your playlist displayed is done through the playlist edit screen. You can get there
+quickly by clicking on the name of your playlist here:
 
-<pre><code>{
-  "response"=> [
-    {
-      "_id"=>"5499c6bc4c616e04b8120000",
-      "active"=>true,
-      "country"=>"",
-      "created_at"=>"2014-12-23T14:47:09.079-05:00",
-      "description"=>
-      "A staple of \"Bands To Watch\" lists far and wide, Alabama Shakes ...",
-      "duration"=>665,
-      "episode"=>nil,
-      "featured"=>false,
-      "foreign_id"=>nil,
-      "keywords"=>[],
-      "mature_content"=>false,
-      "published_at"=>"2012-03-27T12:59:21.000-04:00",
-      "rating"=>0.0,
-      "related_playlist_ids"=>[],
-      "request_count"=>0,
-      "season"=>nil,
-      "site_id"=>"5468f40d4c616e0a770c0000",
-      "status"=>"created",
-      "subscription_required"=>false,
-      "title"=>"Alabama Shakes, Live In Concert: NPR Music's SXSW 2012 Showcase",
-      "updated_at"=>"2014-12-24T17:57:15.731-05:00",
-      "zobject_ids"=>[],
-      "thumbnails"=>
-        [
-        {"aspect_ratio"=>nil, "height"=>90, "name"=>nil, "url"=>"https://i.ytimg.com/vi/eNa5wYXonbQ/default.jpg", "width"=>120},
-        {"aspect_ratio"=>nil, "height"=>180, "name"=>nil, "url"=>"https://i.ytimg.com/vi/eNa5wYXonbQ/mqdefault.jpg", "width"=>320},
-        {"aspect_ratio"=>nil, "height"=>360, "name"=>nil, "url"=>"https://i.ytimg.com/vi/eNa5wYXonbQ/hqdefault.jpg", "width"=>480},
-        {"aspect_ratio"=>nil, "height"=>480, "name"=>nil, "url"=>"https://i.ytimg.com/vi/eNa5wYXonbQ/sddefault.jpg", "width"=>640},
-        {"aspect_ratio"=>nil, "height"=>720, "name"=>nil, "url"=>"https://i.ytimg.com/vi/eNa5wYXonbQ/maxresdefault.jpg", "width"=>1280}
-        ]
-      }
-    ],
-    "pagination"=>{"current"=>1, "previous"=>nil, "next"=>nil, "per_page"=>25, "pages"=>1}
-    }
-  }
-}
-</code></pre>
+![edit your playlist]({{site.url}}/assets/Related Playlists/save_your_playlist_4.png)
 
-<hr>
-### Remove Video from a Playlist
-<hr>
-<pre><code>PUT - https://api.zype.com/playlists/{id}/remove_videos/&video_id=video_id
-</code></pre>
+Use our multiselector to search for the videos you want and click on them to move them into selected videos.
+Click "Save Changes" when you're done.
 
-#### Parameters
+![choose related videos]({{site.url}}/assets/Related Playlists/choose_related_videos_5.png)
 
-Parameter | Function | Type
---------- | -------- | ----
-video_id  | ID of the video to remove from the playlist | String
+### Let's confirm
 
-#### Request
+You should take a second and make sure everything is going according to plan. Go to your site and view a video
+that you added to selected videos in the previous step. Below the video, under the section "Related Videos",
+you should see the playlist you just created and the first few videos you added. You can also update any of your
+current playlists to act as a playlist of related videos by following these same steps.
 
-Content-Type: application/json
 
-#### Response
-201
-Content-Type: application/json
+*Check our [previous post](http://dev.zype.com/posts/2014/10/10/adding-zype-to-rails/)
+on how to set up your Rails App with the Zype Gem!*
 
-<pre><code>{
-  "response"=>[],
-  "pagination"=>
-  {
-    "current"=>1, "previous"=>nil, "next"=>2, "per_page"=>25, "pages"=>0
-  }
-}
-</code></pre>
+
+<hr id="4">
+
+## Categories, playlists and your Roku app
+We aim to make the development process of a Roku Channel as easy as possible using
+our [Zype Roku SDK](https://github.com/zype/zype-roku). To do this, our sample Roku Channel
+focuses on three major components of the Zype Platform: playlists, categories, and Zobjects.
+Since the playlists, categories, and Zobjects are being pulled into your Roku Channel
+using the Zype API, they are all editable using the Zype Platform and do not require
+republishing to the Roku Channel Store to make a change.
+
+We will be using screenshots from our sample Roku Channel to highlight what you can do.
+
+![playlists and categories]({{site.url}}/assets/Categories, Playlists and Your Roku App/roku_playlist.png)
+
+**Featured playlist**
+
+The first slider of the home screen is the featured playlist. This can be any playlist
+that you have created using the Zype Platform. Note, only Zype videos will play.
+
+**Categories**
+
+Below the first slider are category sliders. Note that the category sliders and the featured playlist slider are identical.
+The only difference is how we are calling the Zype API to return us the videos in each slider.
+On the Zype Platform, you select a category that you want to iterate through for the rest
+of the home screen. In the picture above, we are iterating through the category 'Genre.'
+Thus, the first category slider is the 'Genre' with a value of 'Adventure' and the second
+category slider will be the next 'Genre', which is 'Comedy'.
+
+**Zobjects**
+
+![Zobjects in video detail]({{site.url}}/assets/Categories, Playlists and Your Roku App/roku_zobject.png)
+
+You also have the option to provide additional metadata about your videos in the video
+detail screen. You select one Zobject to be above the description and one Zobject to be
+below the description. In the example above, we selected the Zobject 'Actor' to be above the description
+and it lists the actors that we have associated with the video. Similarly, we selected
+the Zobject 'Director' to be below the description.

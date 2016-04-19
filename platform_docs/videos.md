@@ -130,8 +130,8 @@ Based on countries and devices, you will be given player options that can be ser
 You can query the Zype API to only show videos that dynamically conform to your DPT rules
 given an end user's device and geolocation. Set dpt to equal true in your GET request.
 
-<pre><code> GET - https://api.zype.com/videos?dpt=true
-</code></pre>
+<pre> <b>GET</b> https://api.zype.com/videos?dpt=true
+</pre>
 
 ### Using the Player API
 
@@ -336,12 +336,12 @@ Enter a name for your Vimeo video source (something to help you remember it!).
 
 You'll need to copy and paste a link to your Vimeo videos from a Group, Channel or User. Here are some quick example links:
 
-<pre><code>https://vimeo.com/channels/staffpicks
+<pre>https://vimeo.com/channels/staffpicks
 
 https://vimeo.com/user36554072/videos
 
 https://vimeo.com/groups/animation
-</code></pre>
+</pre>
 
 First, go to Vimeo and copy the link:
 
@@ -522,16 +522,16 @@ First, you'll need to download and set up the Zype CLI. You can find the tool on
 
 You'll need to clone down the repo, then run the following commands:
 
-<pre><code>$ gem build zype.gemspec
-</code></pre>
+<pre>$ gem build zype.gemspec
+</pre>
 
-<pre><code>$ gem install ./zype-1.0.0.gem
-</code></pre>
+<pre>$ gem install ./zype-1.0.0.gem
+</pre>
 
 You can confirm that your installation succeeded by entering
 
-<pre><code>$ zype
-</code></pre>
+<pre>$ zype
+</pre>
 
 which will display a list of available commands for the Zype CLI. Remember this command in case you have questions about what the Zype CLI can do!
 
@@ -544,8 +544,8 @@ Let's make sure that you can login and that your Zype CLI is linked to your inst
 
 Enter the command below:
 
-<pre><code>$ zype account:login
-</code></pre>
+<pre>$ zype account:login
+</pre>
 
 You'll be prompted to enter your Zype API Key. You can find this by logging in to the [Zype Platform](https://admin.zype.com) and clicking on API within the settings menu at the top of the screen. Grab your API key and enter it into the terminal to continue.
 You should use your admin api key.
@@ -556,13 +556,13 @@ You'll need to know which directory contains the videos you want to upload. Once
 
 If all of the files live in a single directory, run the following command, replacing the example directory ("/myDir/videos") with your own.
 
-<pre><code>$ zype video:upload --directory="/myDir/videos"
-</code></pre>
+<pre>$ zype video:upload --directory="/myDir/videos"
+</pre>
 
 If you have multiple subdirectories that contain videos, you can pass in a wildcard character (*) at the end of the parent directory to grab all of the videos within each subdirectory. Like this:
 
-<pre><code>$ zype video:upload --directory="/myDir/videos/*"
-</code></pre>
+<pre>$ zype video:upload --directory="/myDir/videos/*"
+</pre>
 
 Now sit back while we upload all of your videos and add them to the Zype Platform as video imports. Once we've imported all of your videos you will find them under the [Video Imports](https://admin.zype.com/video_imports) tab. The last step is to create new videos from the imports or add the video imports to videos you already have on the Zype Platform.
 

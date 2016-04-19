@@ -78,11 +78,11 @@
       <p><a href="/api_docs/apps/">Apps</a></p>
       <p><a href="/api_docs/devices/">Devices</a></p>
       <p><a href="/api_docs/device_categories/">Device Categories</a></p>
-      <p><a href="/api_docs/players/">Native Players</a></p>
+      <p><a href="/api_docs/players/">Players</a></p>
+      <p><a href="/api_docs/segments/">Segments</a></p>
       <p><a href="/api_docs/revenue_models/">Revenue Models</a></p>
       <p><a href="/api_docs/video_imports/">Video Imports</a></p>
       <p><a href="/api_docs/video_sources/">Video Sources</a></p>
-      <p><a href="/api_docs/distribution_endpoints/">Distribution Endpoints</a></p>
       <p><a href="/api_docs/geoip/">GeoIP</a></p>
       <a href="/api_docs/users/"><h4 class="api-header">Users</h4></a>
       <p><a href="/api_docs/consumers/">Consumers</a></p>
@@ -91,7 +91,6 @@
       <p><a href="/api_docs/oauth/">OAuth</a></p>
       <p><a href="/api_docs/subscriptions/">Subscriptions</a></p>
       <p><a href="/api_docs/transactions/">Transactions</a></p>
-      <p><a href="/api_docs/redemption_codes/">Redemption Codes</a></p>
       <a href="/api_docs/zobject_docs/"><h4 class="api-header">Zobjects</h4></a>
       <p><a href="/api_docs/zobject_types/">Zobject Types</a></p>
       <p><a href="/api_docs/zobjects/">Zobjects</a></p>
@@ -108,16 +107,13 @@
   </header>
 
 
-    <section id="main">
+    <section id="main" class="api-docs">
       <h2 id="transactions-collection">Transactions Collection</h2>
-<p>Lists all Transactions.</p>
 <hr />
 
-<h3 id="list-all-transactions">List all Transactions</h3>
-<hr />
-
-<pre><code>GET - https://api.zype.com/transactions/?page=page&amp;per_page=per_page
-</code></pre>
+<h3 id="list-transactions">List Transactions</h3>
+<pre><b>GET</b> https://api.zype.com/transactions
+</pre>
 
 <h4 id="parameters">Parameters</h4>
 
@@ -131,85 +127,41 @@
   </thead>
   <tbody>
     <tr>
-      <td>page</td>
-      <td>The page number of records to return (zero indexed). Example: 0.</td>
-      <td>Number</td>
-    </tr>
-    <tr>
-      <td>per_page</td>
-      <td>The number of records to return. Example: 10.</td>
-      <td>Number</td>
-    </tr>
-    <tr>
-      <td>q</td>
-      <td>A query string for searching for transactions</td>
+      <td>consumer_id</td>
+      <td>Filter records by a consumer ID</td>
       <td>String</td>
     </tr>
     <tr>
       <td>id</td>
-      <td>Query for a transaction by id</td>
+      <td>Filter records by ID</td>
       <td>String</td>
     </tr>
     <tr>
       <td>id!</td>
-      <td>Exclude a transaction from the query</td>
+      <td>Exclude records by ID</td>
       <td>String</td>
     </tr>
     <tr>
-      <td>consumer_id</td>
-      <td>Query for a transaction by Consumer ID</td>
+      <td>page</td>
+      <td>The page number of records to return (Example: 1)</td>
+      <td>Integer</td>
+    </tr>
+    <tr>
+      <td>per_page</td>
+      <td>The number of records to return (Example: 10)</td>
+      <td>Integer</td>
+    </tr>
+    <tr>
+      <td>q</td>
+      <td>Filter records by keyword</td>
       <td>String</td>
     </tr>
   </tbody>
 </table>
 
-<h4 id="response">Response</h4>
-<p>200
-Content-Type: application/json</p>
-
-<pre><code>{
-  "response": [
-    {
-    "_id": "56de07fbf28347a322000010",
-    "_keywords": [
-      "example",
-      "test"
-    ],
-      "amount": "4.99",
-      "braintree_id": "5fqzgc",
-      "consumer_id": "56de07e0f28347a32200000e",
-      "created_at": "2016-03-07T18:00:11.069-05:00",
-      "currency": "USD",
-      "deleted_at": null,
-      "description": "",
-      "expires_at": null,
-      "pass_plan_id": null,
-      "payment_nonce": "b74d90f6-4eb9-49b7-ab33-cdb350992d52",
-      "playlist_id": null,
-      "site_id": "5468fd6569702d17ee500000",
-      "status": "authorized",
-      "transaction_type": "purchase",
-      "updated_at": "2016-03-07T18:00:11.069-05:00",
-      "video_id": "553297a769702d081dca96b2"
-    },
-  ],
-  "pagination": {
-    current: 2,
-    previous: 1,
-    next: 3,
-    per_page: 10,
-    pages: 1
-  }
-}
-</code></pre>
-
-<hr />
-
 <h3 id="create-a-transaction">Create a Transaction</h3>
-<hr />
-
-<pre><code>POST - https://api.zype.com/transactions/{transaction}
-</code></pre>
+<pre><b>POST</b> https://api.zype.com/transactions/[id]
+</pre>
 
 <h4 id="parameters-1">Parameters</h4>
 
@@ -224,117 +176,60 @@ Content-Type: application/json</p>
   <tbody>
     <tr>
       <td>provider</td>
-      <td>Value must be either ‘stripe’ or ‘braintree’. Specifies whether you are using Stripe or Braintree for payments. <em>required</em></td>
+      <td>Value must be either ‘stripe’ or ‘braintree’. Specifies whether you are using Stripe or Braintree for payments</td>
       <td>String</td>
     </tr>
     <tr>
-      <td>transaction</td>
-      <td>A set of key value pairs that describe the Transaction. <em>required</em></td>
-      <td>Hash</td>
-    </tr>
-    <tr>
-      <td>consumer_id</td>
-      <td>The id of the consumer making the transaction. <em>required</em></td>
+      <td>transaction[amount]</td>
+      <td>Must be formatted as a string included cent value, for example “1.99”</td>
       <td>String</td>
     </tr>
     <tr>
-      <td>video_id</td>
-      <td>The id of the video the user is purchasing if purchasing a video. Required if the transaction is for a video.</td>
+      <td>transaction[currency]</td>
+      <td>Set currency type. This is optional. Default value is ‘USD’</td>
       <td>String</td>
     </tr>
     <tr>
-      <td>playlist_id</td>
-      <td>The id of the playlist the user is purchasing if purchasing a playlist. Required if the transaction is for a playlist.</td>
+      <td>transaction[consumer_id]</td>
+      <td>The ID of the consumer making the transaction</td>
       <td>String</td>
     </tr>
     <tr>
-      <td>pass_plan_id</td>
-      <td>The id of the pass plan the user is purchasing if purchasing a pass plan. Required if the transaction is for a pass plan.</td>
+      <td>transaction[description]</td>
+      <td>Description of transaction</td>
       <td>String</td>
     </tr>
     <tr>
-      <td>payment_nonce</td>
-      <td>The payment nonce provided by Stripe or Braintree if using one of those platforms. <em>required</em></td>
+      <td>transaction[pass_plan_id]</td>
+      <td>The ID of the pass plan the user is purchasing if purchasing a pass plan. Required if the transaction is for a pass plan</td>
       <td>String</td>
     </tr>
     <tr>
-      <td>amount</td>
-      <td>Must be formatted as a string included cent value, for example “1.99”. <em>required</em></td>
+      <td>transaction[payment_nonce]</td>
+      <td>The payment nonce provided by Stripe or Braintree if using one of those platforms</td>
       <td>String</td>
     </tr>
     <tr>
-      <td>transaction_type</td>
-      <td>Must be either ‘purchase’ or ‘rental’. <em>required</em></td>
+      <td>transaction[playlist_id]</td>
+      <td>The ID of the playlist the user is purchasing if purchasing a playlist. Required if the transaction is for a playlist</td>
       <td>String</td>
     </tr>
     <tr>
-      <td>currency</td>
-      <td>Set currency type. This is optional. Default value is ‘USD’.</td>
+      <td>transaction[transaction_type]</td>
+      <td>Must be either ‘purchase’ or ‘rental’</td>
       <td>String</td>
     </tr>
     <tr>
-      <td>description</td>
-      <td>Description of transaction.</td>
+      <td>transaction[video_id]</td>
+      <td>The ID of the video the user is purchasing if purchasing a video. Required if the transaction is for a video</td>
       <td>String</td>
     </tr>
   </tbody>
 </table>
 
-<h3 id="example">Example</h3>
-
-<pre><code>{
-  "api_key": "YOUR_ADMIN_KEY",
-  "transaction": {
-    "consumer_id": "56fecbf1f28347637b000020",
-    "video_id": "56fbe4b5f28347c9f4000ae3",
-    "transaction_type": "purchase",
-    "amount": "4.99",
-    "payment_nonce": "YOUR_PAYMENT_NONCE"
-  },
-  "provider": "braintree"
-}
-</code></pre>
-
-<h4 id="response-1">Response</h4>
-<p>201
-Content-Type: application/json</p>
-
-<pre><code>{
-  "response": {
-    "_id": "5706b865f283477023000065",
-    "_keywords": [
-      "example",
-      "video"
-    ],
-    "amount": "4.99",
-    "braintree_id": "b5wkgx",
-    "consumer_id": "56fecbf1f28347637b000020",
-    "created_at": "2016-04-07T15:43:33.617-04:00",
-    "currency": "USD",
-    "deleted_at": null,
-    "description": null,
-    "expires_at": null,
-    "pass_plan_id": null,
-    "payment_nonce": "fake-valid-nonce",
-    "playlist_id": null,
-    "site_id": "5468fd6569702d17ee500000",
-    "status": "authorized",
-    "transaction_type": "purchase",
-    "updated_at": "2016-04-07T15:43:33.617-04:00",
-    "video_id": "56fbe4b5f28347c9f4000ae3"
-  }
-}
-</code></pre>
-
-<h2 id="transaction">Transaction</h2>
-<p>Lists descriptive information about a Transaction</p>
-<hr />
-
 <h3 id="retrieve-a-transaction">Retrieve a Transaction</h3>
-<hr />
-
-<pre><code>GET - https://api.zype.com/transactions/{id}
-</code></pre>
+<pre><b>GET</b> https://api.zype.com/transactions/[id]
+</pre>
 
 <h4 id="parameters-2">Parameters</h4>
 
@@ -349,53 +244,15 @@ Content-Type: application/json</p>
   <tbody>
     <tr>
       <td>id</td>
-      <td>String id of the Transaction to retrieve. Example: 5389352e69702d401b000000.</td>
+      <td>ID of the record to retrieve (Example: 5389352e69702d401b000000)</td>
       <td>String</td>
     </tr>
   </tbody>
 </table>
 
-<h4 id="request">Request</h4>
-<p>Content-Type: application/json</p>
-
-<h4 id="response-2">Response</h4>
-<p>200
-Content-Type: application/json</p>
-
-<pre><code>{
-  "response": {
-    "_id": "5706b865f283477023000065",
-    "_keywords": [
-      "example",
-      "video"
-    ],
-    "amount": "4.99",
-    "braintree_id": "b5wkgx",
-    "consumer_id": "56fecbf1f28347637b000020",
-    "created_at": "2016-04-07T15:43:33.617-04:00",
-    "currency": "USD",
-    "deleted_at": null,
-    "description": null,
-    "expires_at": null,
-    "pass_plan_id": null,
-    "payment_nonce": "fake-valid-nonce",
-    "playlist_id": null,
-    "site_id": "5468fd6569702d17ee500000",
-    "status": "authorized",
-    "transaction_type": "purchase",
-    "updated_at": "2016-04-07T15:43:33.617-04:00",
-    "video_id": "56fbe4b5f28347c9f4000ae3"
-  }
-}
-</code></pre>
-
-<hr />
-
 <h3 id="update-a-transaction">Update a Transaction</h3>
-<hr />
-
-<pre><code>PUT - https://api.zype.com/transactions/{id}
-</code></pre>
+<pre><b>PUT</b> https://api.zype.com/transactions/[id]
+</pre>
 
 <h4 id="parameters-3">Parameters</h4>
 
@@ -409,101 +266,56 @@ Content-Type: application/json</p>
   </thead>
   <tbody>
     <tr>
-      <td>transaction</td>
-      <td>A set of key value pairs that describe the Transaction. <em>required</em></td>
-      <td>Hash</td>
-    </tr>
-    <tr>
-      <td>consumer_id</td>
-      <td>The id of the consumer.</td>
+      <td>transaction[consumer_id]</td>
+      <td>The ID of the consumer</td>
       <td>String</td>
     </tr>
     <tr>
-      <td>video_id</td>
-      <td>The id of the video.</td>
+      <td>transaction[video_id]</td>
+      <td>The ID of the video</td>
       <td>String</td>
     </tr>
     <tr>
-      <td>playlist_id</td>
-      <td>The id of the playlist.</td>
+      <td>transaction[playlist_id]</td>
+      <td>The ID of the playlist</td>
       <td>String</td>
     </tr>
     <tr>
-      <td>pass_plan_id</td>
-      <td>The id of the pass plan.</td>
+      <td>transaction[pass_plan_id]</td>
+      <td>The ID of the pass plan</td>
       <td>String</td>
     </tr>
     <tr>
-      <td>payment_nonce</td>
-      <td>The payment nonce.</td>
+      <td>transaction[payment_nonce]</td>
+      <td>The payment nonce</td>
       <td>String</td>
     </tr>
     <tr>
-      <td>amount</td>
+      <td>transaction[amount]</td>
       <td>Must be formatted as a string included cent value, for example “1.99”.</td>
       <td>String</td>
     </tr>
     <tr>
-      <td>transaction_type</td>
-      <td>Must be either ‘purchase’ or ‘rental’.</td>
+      <td>transaction[transaction_type]</td>
+      <td>Must be either ‘purchase’ or ‘rental’</td>
       <td>String</td>
     </tr>
     <tr>
-      <td>currency</td>
-      <td>The currency type.</td>
+      <td>transaction[currency]</td>
+      <td>The currency type</td>
       <td>String</td>
     </tr>
     <tr>
-      <td>description</td>
-      <td>Description of transaction.</td>
+      <td>transaction[description]</td>
+      <td>Description of transaction</td>
       <td>String</td>
     </tr>
   </tbody>
 </table>
 
-<h4 id="request-1">Request</h4>
-
-<p>Content-Type: application/json</p>
-
-<h4 id="response-3">Response</h4>
-<p>201
-Content-Type: application/json</p>
-
-<pre><code>{
-  "response": {
-    "_id": "5706b865f283477023000065",
-    "_keywords": [
-      "asdfasfds",
-      "com",
-      "lkjalskjdflkajs"
-    ],
-    "amount": "4.99",
-    "braintree_id": "b5wkgx",
-    "consumer_id": "56fecbf1f28347637b000020",
-    "created_at": "2016-04-07T15:43:33.617-04:00",
-    "currency": "USD",
-    "deleted_at": null,
-    "description": "My cool transaction",
-    "expires_at": null,
-    "pass_plan_id": null,
-    "payment_nonce": "fake-valid-nonced",
-    "playlist_id": null,
-    "site_id": "5468fd6569702d17ee500000",
-    "status": "authorized",
-    "transaction_type": "purchase",
-    "updated_at": "2016-04-07T15:51:17.275-04:00",
-    "video_id": "56fbe4b5f28347c9f4000ae3"
-  }
-}
-</code></pre>
-
-<hr />
-
-<h3 id="remove-a-transaction">Remove a Transaction</h3>
-<hr />
-
-<pre><code>DELETE - https://api.zype.com/transactions/{id}
-</code></pre>
+<h3 id="delete-a-transaction">Delete a Transaction</h3>
+<pre><b>DELETE</b> https://api.zype.com/transactions/[id]
+</pre>
 
 <h4 id="parameters-4">Parameters</h4>
 
@@ -518,18 +330,39 @@ Content-Type: application/json</p>
   <tbody>
     <tr>
       <td>id</td>
-      <td>String id of the Transaction to remove. Example: 5389352e69702d401b000000.</td>
+      <td>ID of the record to delete (Example: 5389352e69702d401b000000)</td>
       <td>String</td>
     </tr>
   </tbody>
 </table>
 
-<h4 id="request-2">Request</h4>
-<p>Content-Type: application/json</p>
+<h3 id="transaction-object">Transaction Object</h3>
 
-<h4 id="response-4">Response</h4>
-<p>204</p>
-
+<pre>
+{
+  "_id": "5706b865f283477023000065",
+  "_keywords": [
+    "example",
+    "video"
+  ],
+  "amount": "4.99",
+  "braintree_id": "b5wkgx",
+  "consumer_id": "56fecbf1f28347637b000020",
+  "created_at": "2016-04-07T15:43:33.617-04:00",
+  "currency": "USD",
+  "deleted_at": null,
+  "description": null,
+  "expires_at": null,
+  "pass_plan_id": null,
+  "payment_nonce": "fake-valid-nonce",
+  "playlist_id": null,
+  "site_id": "5468fd6569702d17ee500000",
+  "status": "authorized",
+  "transaction_type": "purchase",
+  "updated_at": "2016-04-07T15:43:33.617-04:00",
+  "video_id": "56fbe4b5f28347c9f4000ae3"
+}
+</pre>
 
     </section>
 

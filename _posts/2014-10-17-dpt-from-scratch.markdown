@@ -35,8 +35,8 @@ Based on countries and devices, you will be given player options that can be ser
 You can query the Zype API to only show videos that dynamically conform to your DPT rules
 given an end user's device and geolocation. Set dpt to equal true in your GET request.
 
-<pre><code> GET - https://api.zype.com/videos?dpt=true
-</code></pre>
+<pre> <b>GET</b> https://api.zype.com/videos?dpt=true
+</pre>
 
 ### Using the Player API
 

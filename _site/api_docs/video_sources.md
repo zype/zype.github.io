@@ -1,3 +1,4 @@
+
 ---
 layout: api
 title: Zype Developer Portal | Video Sources
@@ -21,6 +22,7 @@ id        | Query for a video source by id | String
 id!       | Exclude records by ID | String
 
 ### Retrieve a Video Source
+<hr>
 <pre><b>GET</b> https://api.zype.com/video_sources/[id]</pre>
 
 #### Parameters

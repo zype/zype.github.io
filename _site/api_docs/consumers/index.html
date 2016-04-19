@@ -7,10 +7,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     <title>Zype Developer Portal | Consumers</title>
-    <meta name="description" content="">
+    <meta name="description" content="This is the devloper portal for Zype Media. Zype is Revenue and Reach Magic for Online Video. We help content owners deliver fully branded video experiences.
+">
 
     <link rel="stylesheet" href="/css/main.css">
-    <link rel="canonical" href="/api_docs/consumers/">
+    <link rel="canonical" href="http://dev.zype.com/api_docs/consumers/">
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 
     <!--[if lt IE 9]>
@@ -34,7 +35,7 @@
     <!-- Start of zypetrial Zendesk Widget script -->
     <script>/*<![CDATA[*/window.zEmbed||function(e,t){var n,o,d,i,s,a=[],r=document.createElement("iframe");window.zEmbed=function(){a.push(arguments)},window.zE=window.zE||window.zEmbed,r.src="javascript:false",r.title="",r.role="presentation",(r.frameElement||r).style.cssText="display: none",d=document.getElementsByTagName("script"),d=d[d.length-1],d.parentNode.insertBefore(r,d),i=r.contentWindow,s=i.document;try{o=s}catch(c){n=document.domain,r.src='javascript:var d=document.open();d.domain="'+n+'";void(0);',o=s}o.open()._l=function(){var o=this.createElement("script");n&&(this.domain=n),o.id="js-iframe-async",o.src=e,this.t=+new Date,this.zendeskHost=t,this.zEQueue=a,this.body.appendChild(o)},o.write('<body onload="document._l();">'),o.close()}("https://assets.zendesk.com/embeddable_framework/main.js","zypetrial.zendesk.com");/*]]>*/</script>
     <!-- End of zypetrial Zendesk Widget script -->
-    
+
     <!-- Marketo -->
     <script type="text/javascript">
     (function() {
@@ -65,7 +66,7 @@
 
       <header id="header" style="overflow-y: scroll;">
     <div id="content">
-      <a href="/"><img src="/assets/logo.png" alt="Zype" />
+      <a href="/"><img src="http://dev.zype.com/assets/logo.png" alt="Zype" />
       <h1 id="title">Developer Portal</h1></a>
       <p>a knowledge base</p>
       <br>
@@ -107,7 +108,7 @@
   </header>
 
 
-    <section id="main">
+    <section id="main" class="api-docs">
       <h2 id="consumers">Consumers</h2>
 <hr />
 
@@ -128,67 +129,65 @@
   </thead>
   <tbody>
     <tr>
-      <td>page</td>
-      <td>The page number of records to return (zero indexed). Example: 0.</td>
-      <td>Number</td>
-    </tr>
-    <tr>
-      <td>per_page</td>
-      <td>The number of records to return. Example: 10.</td>
-      <td>Number</td>
-    </tr>
-    <tr>
-      <td>q</td>
-      <td>A query string for searching for consumers</td>
-      <td>String</td>
-    </tr>
-    <tr>
-      <td>id</td>
-      <td>Query for a consumer by id</td>
-      <td>String</td>
-    </tr>
-    <tr>
-      <td>id!</td>
-      <td>Exclude a consumer from the query</td>
-      <td>String</td>
-    </tr>
-    <tr>
-      <td>email</td>
-      <td>Filter consumers by email</td>
-      <td>String</td>
-    </tr>
-    <tr>
-      <td>rss_token</td>
-      <td>Filter consumers by RSS token</td>
-      <td>String</td>
-    </tr>
-    <tr>
-      <td>password_token</td>
-      <td>Filter consumers by password reset token</td>
-      <td>String</td>
-    </tr>
-    <tr>
-      <td>stripe_id</td>
-      <td>Filter consumers by Stripe ID</td>
-      <td>String</td>
-    </tr>
-    <tr>
       <td>braintree_id</td>
-      <td>Filter consumers by Braintree ID</td>
+      <td>Filter records by Braintree ID</td>
       <td>String</td>
     </tr>
     <tr>
       <td>created_at</td>
-      <td>Filter the records returned by created date. You can use greater than or less than filters by adding a suffix: ‘.gt’, ‘.gte’, ‘.lt’, ‘lte’. Example: created_at.gte=2015-01-01</td>
+      <td>Filter the records returned by created date. Greater or less than filters can be used by adding a suffix (Example: created_at.gte)</td>
       <td>Date</td>
+    </tr>
+    <tr>
+      <td>email</td>
+      <td>Filter records by email</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>id</td>
+      <td>Filter records by ID</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>id!</td>
+      <td>Exclude records by ID</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>page</td>
+      <td>The page number of records to return (Example: 1)</td>
+      <td>Integer</td>
+    </tr>
+    <tr>
+      <td>password_token</td>
+      <td>Filter records by password reset token</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>per_page</td>
+      <td>The number of records to return (Example: 10)</td>
+      <td>Integer</td>
+    </tr>
+    <tr>
+      <td>q</td>
+      <td>Filter records by keyword</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>rss_token</td>
+      <td>Filter records by RSS token</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>stripe_id</td>
+      <td>Filter records by Stripe ID</td>
+      <td>String</td>
     </tr>
   </tbody>
 </table>
 
 <h3 id="retrieve-a-consumer">Retrieve a Consumer</h3>
-<hr />
-
-<pre><b>GET</b> https://api.zype.com/category/[id]
+<pre><b>GET</b> https://api.zype.com/consumers/[id]
 </pre>
 
 <h4 id="parameters-1">Parameters</h4>
@@ -204,15 +203,13 @@
   <tbody>
     <tr>
       <td>id</td>
-      <td>String ID of the category. Example: 5389352e69702d401b000000.</td>
+      <td>ID of the record (Example: 5389352e69702d401b000000)</td>
       <td>String</td>
     </tr>
   </tbody>
 </table>
 
 <h3 id="create-a-consumer">Create a Consumer</h3>
-<hr />
-
 <pre><b>POST</b> https://api.zype.com/consumers
 </pre>
 
@@ -229,45 +226,43 @@
   <tbody>
     <tr>
       <td>consumer[email]</td>
-      <td>The consumer’s email address. (must be unique)</td>
-      <td>string</td>
+      <td>The consumer’s email address (must be unique)</td>
+      <td>String</td>
     </tr>
     <tr>
       <td>consumer[password]</td>
-      <td>The password for the consumer. The password is used for consumer authentication.</td>
-      <td>string</td>
+      <td>The password for the consumer. The password is used for consumer authentication</td>
+      <td>String</td>
     </tr>
     <tr>
       <td>consumer[name]</td>
-      <td>The name of the consumer.</td>
-      <td>string</td>
+      <td>The name of the consumer</td>
+      <td>String</td>
     </tr>
     <tr>
       <td>consumer[sex]</td>
-      <td>The gender of the consumer.</td>
-      <td>string</td>
+      <td>The gender of the consumer</td>
+      <td>String</td>
     </tr>
     <tr>
       <td>consumer[birthday]</td>
       <td>The birthday of the consumer,</td>
-      <td>string</td>
+      <td>String</td>
     </tr>
     <tr>
       <td>consumer[updates]</td>
-      <td>Boolean field to store if the consumer has agreed to receive updates.</td>
+      <td>Boolean field to store if the consumer has agreed to receive updates</td>
       <td>Boolean</td>
     </tr>
     <tr>
       <td>consumer[terms]</td>
-      <td>Boolean field to store if the consumer has agreed to terms and conditions.</td>
+      <td>Boolean field to store if the consumer has agreed to terms and conditions</td>
       <td>Boolean</td>
     </tr>
   </tbody>
 </table>
 
 <h3 id="update-a-consumer">Update a Consumer</h3>
-<hr />
-
 <pre><b>PUT</b> https://api.zype.com/consumers/[id]</pre>
 
 <h4 id="parameters-3">Parameters</h4>
@@ -283,60 +278,58 @@
   <tbody>
     <tr>
       <td>id</td>
-      <td>String ID of the consumer to update. Example: 540731274c616e047a000000.</td>
+      <td>ID of the record to update (Example: 540731274c616e047a000000)</td>
       <td>String</td>
     </tr>
     <tr>
       <td>consumer[email]</td>
-      <td>The consumer’s email address. (must be unique)</td>
-      <td>string</td>
+      <td>The consumer’s email address (must be unique)</td>
+      <td>String</td>
     </tr>
     <tr>
       <td>consumer[password]</td>
-      <td>The password for the consumer. The password is used for consumer authentication.</td>
-      <td>string</td>
+      <td>The password for the consumer. The password is used for consumer authentication</td>
+      <td>String</td>
     </tr>
     <tr>
       <td>consumer[name]</td>
-      <td>The name of the consumer.</td>
-      <td>string</td>
+      <td>The name of the consumer</td>
+      <td>String</td>
     </tr>
     <tr>
       <td>consumer[sex]</td>
-      <td>The gender of the consumer.</td>
-      <td>string</td>
+      <td>The gender of the consumer</td>
+      <td>String</td>
     </tr>
     <tr>
       <td>consumer[birthday]</td>
       <td>The birthday of the consumer,</td>
-      <td>string</td>
+      <td>String</td>
     </tr>
     <tr>
       <td>consumer[updates]</td>
-      <td>Boolean field to store if the consumer has agreed to receive updates.</td>
+      <td>Boolean field to store if the consumer has agreed to receive updates</td>
       <td>Boolean</td>
     </tr>
     <tr>
       <td>consumer[terms]</td>
-      <td>Boolean field to store if the consumer has agreed to terms and conditions.</td>
+      <td>Boolean field to store if the consumer has agreed to terms and conditions</td>
       <td>Boolean</td>
     </tr>
     <tr>
       <td>consumer[password_token]</td>
-      <td>The password token to use during password reset workflows.</td>
+      <td>The password token to use during password reset workflows</td>
       <td>String</td>
     </tr>
     <tr>
       <td>consumer[remember_token]</td>
-      <td>The password token to use during remember login workflows.</td>
+      <td>The password token to use during remember login workflows</td>
       <td>String</td>
     </tr>
   </tbody>
 </table>
 
 <h3 id="delete-a-consumer">Delete a Consumer</h3>
-<hr />
-
 <pre><b>DELETE</b> https://api.zype.com/consumers/[id]
 </pre>
 
@@ -353,7 +346,7 @@
   <tbody>
     <tr>
       <td>id</td>
-      <td>String ID of the consumer to be deleted. Example: 540731274c616e047a000000.</td>
+      <td>ID of the record to be deleted. Example: 540731274c616e047a000000</td>
       <td>String</td>
     </tr>
   </tbody>

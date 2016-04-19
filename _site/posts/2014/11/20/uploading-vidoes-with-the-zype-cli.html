@@ -74,16 +74,16 @@
 
 <p>You’ll need to clone down the repo, then run the following commands:</p>
 
-<pre><code>$ gem build zype.gemspec
-</code></pre>
+<pre>$ gem build zype.gemspec
+</pre>
 
-<pre><code>$ gem install ./zype-1.0.0.gem
-</code></pre>
+<pre>$ gem install ./zype-1.0.0.gem
+</pre>
 
 <p>You can confirm that your installation succeeded by entering</p>
 
-<pre><code>$ zype
-</code></pre>
+<pre>$ zype
+</pre>
 
 <p>which will display a list of available commands for the Zype CLI. Remember this command in case you have questions about what the Zype CLI can do!</p>
 
@@ -95,8 +95,8 @@
 
 <p>Enter the command below:</p>
 
-<pre><code>$ zype account:login
-</code></pre>
+<pre>$ zype account:login
+</pre>
 
 <p>You’ll be prompted to enter your Zype API Key. You can find this by logging in to the <a href="https://admin.zype.com">Zype Platform</a> and clicking on API within the settings menu at the top of the screen. Grab your API key and enter it into the terminal to continue.</p>
 
@@ -106,13 +106,13 @@
 
 <p>If all of the files live in a single directory, run the following command, replacing the example directory (“/myDir/videos”) with your own.</p>
 
-<pre><code>$ zype video:upload --directory="/myDir/videos"
-</code></pre>
+<pre>$ zype video:upload --directory="/myDir/videos"
+</pre>
 
 <p>If you have multiple subdirectories that contain videos, you can pass in a wildcard character (*) at the end of the parent directory to grab all of the videos within each subdirectory. Like this:</p>
 
-<pre><code>$ zype video:upload --directory="/myDir/videos/*"
-</code></pre>
+<pre>$ zype video:upload --directory="/myDir/videos/*"
+</pre>
 
 <p>Now sit back while we upload all of your videos and add them to the Zype Platform as video imports. Once we’ve imported all of your videos you will find them under the <a href="https://admin.zype.com/video_imports">Video Imports</a> tab. The last step is to create new videos from the imports or add the video imports to videos you already have on the Zype Platform.</p>
 

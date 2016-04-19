@@ -15,25 +15,26 @@ permalink: /api_docs/categories/
 
 Parameter | Function | Type
 --------- | -------- | ----
-id        | Query for a category by ID | String
-id!       | Exclude a category from the query | String
-title     | Filter categories by title | String
-page | The page number of records to return (zero indexed). Example: 0. | Number
-per_page | The number of records to return. Example: 10. | Number
+id        | Filter records by ID | String
+id!       | Exclude records by ID | String
+order     | Sort records in ascending or descending order (Example: asc/desc) | String
+page | The page number of records to return (Example: 1) | Integer
+per_page | The number of records to return (Example: 10) | Integer
+q         | Filter records by keyword | String
+sort      | Sort records on the specified field | String
+title     | Filter records by title | String
 
 ###Retrieve a Category
-<hr>
-<pre><b>GET</b> https://api.zype.com/category/[id]
+<pre><b>GET</b> https://api.zype.com/categories/[id]
 </pre>
 
 #### Parameters
 
 Parameter | Function | Type
 --------- | -------- | ----
-id        | String ID of the category. Example: 5389352e69702d401b000000. | String
+id        | ID of the record (Example: 5389352e69702d401b000000) | String
 
 ###Create a Category
-<hr>
 <pre><b>POST</b> https://api.zype.com/categories
 </pre>
 
@@ -45,19 +46,17 @@ category[title] | Title of the category | String
 category[values] | Values for the category | Array
 
 ###Update a Category
-<hr>
 <pre><b>PUT</b> https://api.zype.com/categories/[id]</pre>
 
 #### Parameters
 
 Parameter | Function | Type
 --------- | -------- | ----
-id | String id of the Category to update. Example: 540731274c616e047a000000. | String
+id | ID of the record to update (Example: 540731274c616e047a000000) | String
 category[title] | Title of the category | String
 category[values] | Values for the category | Array
 
 ###Delete a Category
-<hr>
 <pre><b>DELETE</b> https://api.zype.com/categories/[id]
 </pre>
 
@@ -65,7 +64,7 @@ category[values] | Values for the category | Array
 
 Parameter | Function | Type
 --------- | -------- | ----
-id | String id of the Category to be deleted. Example: 540731274c616e047a000000. | String
+id | ID of the record to delete (Example: 540731274c616e047a000000) | String
 
 ### Category Object
 

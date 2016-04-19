@@ -8,21 +8,21 @@ permalink: /api_docs/distribution_endpoints/
 <hr>
 ### List all Distribution Endpoints
 <hr>
-<pre><code>GET - https://api.zype.com/distribution_endpoints?page=page&per_page=per_page
-</code></pre>
+<pre><b>GET</b> https://api.zype.com/distribution_endpoints?page=page&per_page=per_page
+</pre>
 
 #### Parameters
 
 Parameter | Function | Type
 --------- | -------- | ----
-page | The page number of records to return (zero indexed). Example: 0. | Number
-per_page | The number of records to return. Example: 10. | Number
+page | The page number of records to return (Example: 1) | Integer
+per_page | The number of records to return (Example: 10) | Integer
 
 #### Response
 200
 Content-Type: application/json
 
-<pre><code>{
+<pre>{
 "response": [
     {
       "_id":"5536b4fc636261a7821b0000",
@@ -55,25 +55,25 @@ Content-Type: application/json
     "pages": 1
   }
 }
-</code></pre>
+</pre>
 
 ### Retrieve a Distribution Endpoint
 <hr>
-<pre><code>GET - https://api.zype.com/distribution_endpoints/{id}?page=page&per_page=per_page
-</code></pre>
+<pre><b>GET</b> https://api.zype.com/distribution_endpoints/{id}?page=page&per_page=per_page
+</pre>
 
 #### Parameters
 
 Parameter | Function | Type
 --------- | -------- | ----
-id | String id of the Distribution Endpoint to retrieve. Example: 5389352e69702d401b000000. | String
+id | ID of the record to retrieve (Example: 5389352e69702d401b000000) | String
 
 
 #### Response
 200
 Content-Type: application/json
 
-<pre><code>{
+<pre>{
 "response":
   {
     "_id": "5536b4fc636261a7821b0000",
