@@ -263,7 +263,62 @@
   </tbody>
 </table>
 
-<p>Note: A video_id, playlist_id, plan_id, <em>OR</em> pass_plan_id is required.</p>
+<p>Note: A video_id, playlist_id, plan_id, <em>OR</em> a pass_plan_id is required.</p>
+
+<h3 id="bulk-create-redemption-codes">Bulk Create Redemption Codes</h3>
+<pre><code>POST - https://api.zype.com/redemption_codes/bulk_create/{redemption_codes}
+</code></pre>
+
+<h4 id="parameters-2">Parameters</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Function</th>
+      <th>Type</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>api_key</td>
+      <td>The Admin api key for the account. <em>required</em></td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>amount</td>
+      <td>The number of codes to create. <em>required</em></td>
+      <td>Integer</td>
+    </tr>
+    <tr>
+      <td>redemption_codes[expiration_date]</td>
+      <td>Expiration date for the redemption code. Example: 2017-01-15</td>
+      <td>Date</td>
+    </tr>
+    <tr>
+      <td>redemption_codes[video_id]</td>
+      <td>The id of the video that the user will be entitled to upon redeeming the code. Required if the redemption codes are for a video.</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>redemption_codes[playlist_id]</td>
+      <td>The id of the playlist that the user will be entitled to upon redeeming the code. Required if the redemption codes are for a playlist.</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>redemption_codes[plan_id]</td>
+      <td>The id of the subscription plan that the user will be subscribed to upon redeeming the code. Required if the redemption codes are for a subscription.</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>redemption_codes[pass_plan_id]</td>
+      <td>The id of the pass plan that the user will have access to upon redeeming the code. Required if the redemption codes are for a pass plan.</td>
+      <td>String</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Note: A video_id, playlist_id, plan_id, <em>OR</em> a pass_plan_id is required.</p>
 
 <h2 id="redemption-code">Redemption Code</h2>
 <p>Lists descriptive information about a Redemption Code</p>
@@ -272,7 +327,7 @@
 <pre><code>GET - https://api.zype.com/redemption_codes/{id}
 </code></pre>
 
-<h4 id="parameters-2">Parameters</h4>
+<h4 id="parameters-3">Parameters</h4>
 
 <table>
   <thead>
@@ -300,7 +355,7 @@
 <pre><code>PUT - https://api.zype.com/redemption_codes/{id}
 </code></pre>
 
-<h4 id="parameters-3">Parameters</h4>
+<h4 id="parameters-4">Parameters</h4>
 
 <table>
   <thead>
@@ -353,7 +408,7 @@
 <pre><code>DELETE - https://api.zype.com/redemption_codes/{id}
 </code></pre>
 
-<h4 id="parameters-4">Parameters</h4>
+<h4 id="parameters-5">Parameters</h4>
 
 <table>
   <thead>
@@ -381,7 +436,7 @@
 <pre><code>POST - https://api.zype.com/redemption_codes/redeem
 </code></pre>
 
-<h4 id="parameters-5">Parameters</h4>
+<h4 id="parameters-6">Parameters</h4>
 
 <table>
   <thead>
@@ -412,7 +467,7 @@
     "response": {
       "_id": "57165ffff283475d1e000002",
       "code": "RQMJQJB5JX5V6JQ5",
-      "content_title": "Chainsaws and Trampolines: America's Funniest Home Bloopers",
+      "content_title": "Spaceballs 2: The Search For More Money",
       "content_type": "video",
       "created_at": "2016-04-19T12:42:39.369-04:00",
       "expiration_date": null,
