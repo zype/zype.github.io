@@ -47,7 +47,25 @@ redemption_code[playlist_id] | The id of the playlist that the user will be enti
 redemption_code[plan_id] | The id of the subscription plan that the user will be subscribed to upon redeeming the code. Required if the redemption code is for a subscription. | String
 redemption_code[pass_plan_id] | The id of the pass plan that the user will have access to upon redeeming the code. Required if the redemption code is for a pass plan. | String
 
-Note: A video_id, playlist_id, plan_id, *OR* pass_plan_id is required.
+Note: A video_id, playlist_id, plan_id, *OR* a pass_plan_id is required.
+
+### Bulk Create Redemption Codes
+<pre><code>POST - https://api.zype.com/redemption_codes/bulk_create/{redemption_codes}
+</code></pre>
+
+#### Parameters
+
+Parameter | Function | Type
+--------- | -------- | ----
+api_key      | The Admin api key for the account. *required* | String
+amount      | The number of codes to create. *required* | Integer
+redemption_codes[expiration_date] | Expiration date for the redemption code. Example: 2017-01-15 | Date
+redemption_codes[video_id] | The id of the video that the user will be entitled to upon redeeming the code. Required if the redemption codes are for a video. | String
+redemption_codes[playlist_id] | The id of the playlist that the user will be entitled to upon redeeming the code. Required if the redemption codes are for a playlist. | String
+redemption_codes[plan_id] | The id of the subscription plan that the user will be subscribed to upon redeeming the code. Required if the redemption codes are for a subscription. | String
+redemption_codes[pass_plan_id] | The id of the pass plan that the user will have access to upon redeeming the code. Required if the redemption codes are for a pass plan. | String
+
+Note: A video_id, playlist_id, plan_id, *OR* a pass_plan_id is required.
 
 ## Redemption Code
 Lists descriptive information about a Redemption Code
@@ -108,7 +126,7 @@ code      | The code string for the redemption code. *required* | String
     "response": {
       "_id": "57165ffff283475d1e000002",
       "code": "RQMJQJB5JX5V6JQ5",
-      "content_title": "Chainsaws and Trampolines: America's Funniest Home Bloopers",
+      "content_title": "Spaceballs 2: The Search For More Money",
       "content_type": "video",
       "created_at": "2016-04-19T12:42:39.369-04:00",
       "expiration_date": null,
