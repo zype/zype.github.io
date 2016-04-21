@@ -38,9 +38,9 @@ playlist[description] | The description of the playlist | String
 playlist[active] | Choose if the playlist should be active | Boolean
 playlist[priority] | Order priority relative to other playlists | Integer
 playlist[purchase_required] | Enable purchase for the playlist *edge feature* | Boolean
-playlist[purchase_price] | Purchase price for the playlist bundle *edge feature* | String
+playlist[purchase_price] | Purchase price for the playlist bundle, sent as a string, ie "4.99" *edge feature* | String
 playlist[rental_required] | Enable rental for the playlist *edge feature* | Boolean
-playlist[rental_price] | Rental price for the playlist bundle *edge feature* | Integer
+playlist[rental_price] | Rental price for the playlist bundle, sent as a string, ie "4.99" *edge feature* | String
 playlist[rental_duration] | Rental duration for the playlist, in days *edge feature* | Integer
 playlist[auto_update_consumer_videos] | Keep consumer video purchases and/or rentals in sync with playlist items. When videos are added to the playlist, also add them to a consumer's video purchase/rental list. *edge feature* | Boolean
 
@@ -76,9 +76,9 @@ playlist[description] | The description of the playlist | String
 playlist[active] | Choose if the playlist should be active | Boolean
 playlist[priority] | Order priority relative to other playlists | Integer
 playlist[purchase_required] | Enable purchase for the playlist *edge feature* | Boolean
-playlist[purchase_price] | Purchase price for the playlist bundle *edge feature* | String
+playlist[purchase_price] | Purchase price for the playlist bundle, sent as a string, ie "4.99" *edge feature* | String
 playlist[rental_required] | Enable rental for the playlist *edge feature* | Boolean
-playlist[rental_price] | Rental price for the playlist bundle *edge feature* | Integer
+playlist[rental_price] | Rental price for the playlist bundle, sent as a string, ie "4.99" *edge feature* | String
 playlist[rental_duration] | Rental duration for the playlist, in days *edge feature* | Integer
 playlist[auto_update_consumer_videos] | Keep consumer video purchases and/or rentals in sync with playlist items. When videos are added to the playlist, also add them to a consumer's video purchase/rental list. *edge feature* | Boolean
 
