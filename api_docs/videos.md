@@ -21,6 +21,7 @@ category! | Exclude records by category value (Example: category![color]=blue) |
 created_at | Filter records by created date. Greater or less than filters can be used by adding a suffix (Example: created_at.gte) | Date
 crunchyroll_id   | Filter records by a Crunchyroll ID | String
 dpt       | Filter records by DPT conditions (Geo-location and device restrictions) | Boolean
+friendly_title | Filter records by their SEO friendly title | String
 hulu_id   | Filter records by a Hulu ID | String
 id        | Filter records by ID | String
 id!       | Exclude records by ID | String

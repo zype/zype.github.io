@@ -17,6 +17,7 @@ Parameter | Function | Type
 --------- | -------- | ----
 id        | Filter records by ID | String
 id!       | Exclude records by ID | String
+friendly_title | Filter records by their SEO friendly title | String
 order     | Sort records in ascending or descending order (Example: asc/desc) | String
 page | The page number of records to return (Example: 1) | Integer
 per_page | The number of records to return (Example: 10) | Integer

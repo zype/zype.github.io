@@ -17,6 +17,7 @@ Parameter | Function | Type
 active | Filter by active, inactive, or all records (Example: true) | String
 category | Filter records by category value (Example: category[color]=blue) | Hash
 category! | Exclude records by category value (Example: category![color]=blue) | Hash
+friendly_title | Filter records by their SEO friendly title | String
 id        | Filter records by ID | String
 id!       | Exclude records by ID | String
 order     | Sort records in ascending or descending order (Example: asc/desc) | String
