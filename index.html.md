@@ -24,8 +24,15 @@ If you're a developer, you've come to the right place! Here we'll discuss the Zy
     </div>
   </a>
 
-  <a href="/glossary/">
+  <a href="/sdks/">
     <div class="homepage-tile end-of-row">
+      <span class="fa fa-cubes homepage-icon"></span>
+      <span class="homepage-text">Tools &amp; SDKs</span>
+    </div>
+  </a>
+
+  <a href="/glossary/">
+    <div class="homepage-tile">
       <span class="fa fa-book homepage-icon"></span>
       <span class="homepage-text">Zype Glossary</span>
     </div>
@@ -39,7 +46,7 @@ If you're a developer, you've come to the right place! Here we'll discuss the Zy
   </a>
 
   <a href="/faq/">
-    <div class="homepage-tile">
+    <div class="homepage-tile end-of-row">
       <span class="fa fa-question homepage-icon"></span>
       <span class="homepage-text">FAQ</span>
     </div>

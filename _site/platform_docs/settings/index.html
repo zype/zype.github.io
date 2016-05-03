@@ -11,8 +11,9 @@
 ">
 
     <link rel="stylesheet" href="/css/main.css">
-    <link rel="canonical" href="http://dev.zype.com/platform_docs/settings/">
+    <link rel="canonical" href="http://localhost:4000/platform_docs/settings/">
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="/assets/favicon.ico" />
 
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -35,7 +36,7 @@
     <!-- Start of zypetrial Zendesk Widget script -->
     <script>/*<![CDATA[*/window.zEmbed||function(e,t){var n,o,d,i,s,a=[],r=document.createElement("iframe");window.zEmbed=function(){a.push(arguments)},window.zE=window.zE||window.zEmbed,r.src="javascript:false",r.title="",r.role="presentation",(r.frameElement||r).style.cssText="display: none",d=document.getElementsByTagName("script"),d=d[d.length-1],d.parentNode.insertBefore(r,d),i=r.contentWindow,s=i.document;try{o=s}catch(c){n=document.domain,r.src='javascript:var d=document.open();d.domain="'+n+'";void(0);',o=s}o.open()._l=function(){var o=this.createElement("script");n&&(this.domain=n),o.id="js-iframe-async",o.src=e,this.t=+new Date,this.zendeskHost=t,this.zEQueue=a,this.body.appendChild(o)},o.write('<body onload="document._l();">'),o.close()}("https://assets.zendesk.com/embeddable_framework/main.js","zypetrial.zendesk.com");/*]]>*/</script>
     <!-- End of zypetrial Zendesk Widget script -->
-    
+
     <!-- Marketo -->
     <script type="text/javascript">
     (function() {
@@ -66,7 +67,7 @@
 
   <header id="header" style="overflow-y: scroll;">
   <div id="content">
-    <a href="/"><img src="http://dev.zype.com/assets/logo.png" alt="Zype" />
+    <a href="/"><img src="http://localhost:4000/assets/logo.png" alt="Zype" />
       <h1 id="title">Developer Portal</h1></a>
       <p>a knowledge base</p>
       <br>
@@ -95,6 +96,7 @@
           <p><a href="/platform_docs/distribution/">Distribution</a></p>
           <p><a href="/platform_docs/zobjects/">Zobjects</a></p>
         <br>
+      <p class="category"><a href="/sdks/" style="color: #8acfef;">SDKs</a></p>
       <p class="category"><a href="/glossary/" style="color: #8acfef;">Glossary</a></p>
       <p class="category"><a href="http://status.zype.com" style="color: #8acfef;">System Status</a></p>
       <p class="category"><a href="/faq/" style="color: #8acfef;">FAQ</a></p>
@@ -141,7 +143,7 @@ to create a Stripe Account. <a href="https://www.braintreepayments.com/signup">C
 create a Braintree Account. You will need to set up monetization on the Zype Platform
 to utilize Zype subscription services.</p>
 
-<p><img src="http://dev.zype.com/assets/settings/monetization.png" alt="monetization" /></p>
+<p><img src="http://localhost:4000/assets/settings/monetization.png" alt="monetization" /></p>
 
 <hr id="player_settings" />
 
@@ -150,7 +152,7 @@ to utilize Zype subscription services.</p>
 <p>You can configure settings for your player such as age gating, social sharing,
 google analytics tracking, and player expiration.</p>
 
-<p><img src="http://dev.zype.com/assets/settings/player_settings.png" alt="player setting" /></p>
+<p><img src="http://localhost:4000/assets/settings/player_settings.png" alt="player setting" /></p>
 
 <h3 id="age-gating">Age Gating</h3>
 
@@ -160,7 +162,7 @@ mature content. You can set mature content for each video in the video detail sc
 
 <p>Below is what age gating looks like:</p>
 
-<p><img src="http://dev.zype.com/assets/settings/age_gate.png" alt="mature content" /></p>
+<p><img src="http://localhost:4000/assets/settings/age_gate.png" alt="mature content" /></p>
 
 <h3 id="social-sharing">Social Sharing</h3>
 
@@ -169,7 +171,7 @@ will be able to easily share your video via Facebook, Twitter, or via email.</p>
 
 <p>Below is what social sharing looks like:</p>
 
-<p><img src="http://dev.zype.com/assets/settings/share_video.png" alt="social sharing" /></p>
+<p><img src="http://localhost:4000/assets/settings/share_video.png" alt="social sharing" /></p>
 
 <h3 id="google-analytics">Google Analytics</h3>
 
@@ -190,9 +192,9 @@ url expires, you can set expiration to 0.</p>
 
 <p>Navigate to your <a href="https://admin.zype.com/site/edit">settings page</a> and click on the “Player Branding” tab.</p>
 
-<p><img src="http://dev.zype.com/assets/player_logo/settings.png" alt="settings" /></p>
+<p><img src="http://localhost:4000/assets/player_logo/settings.png" alt="settings" /></p>
 
-<p><img src="http://dev.zype.com/assets/player_logo/player_branding.png" alt="player branding" /></p>
+<p><img src="http://localhost:4000/assets/player_logo/player_branding.png" alt="player branding" /></p>
 
 <p>Click on the upload button to add an image right from your local machine. There are a few recommendations that Zype has regarding the image you upload as the player logo or bug.</p>
 
@@ -200,19 +202,19 @@ url expires, you can set expiration to 0.</p>
 
 <p>2) The image should not be opaque, so that it doesn’t block the video content behind it. Zype recommends an opacity of 50%.</p>
 
-<p><img src="http://dev.zype.com/assets/player_logo/help.png" alt="upload" /></p>
+<p><img src="http://localhost:4000/assets/player_logo/help.png" alt="upload" /></p>
 
 <p>Once you’ve uploaded an image, use the form to configure how it will be positioned by choosing a position and margins. You can also add a URL to redirect viewers when they click your logo and choose whether or not to hide your logo when other player elements fade out.</p>
 
-<p><img src="http://dev.zype.com/assets/player_logo/player_logo.png" alt="preview" /></p>
+<p><img src="http://localhost:4000/assets/player_logo/player_logo.png" alt="preview" /></p>
 
 <p>Click the save changes button when complete to test out your new player logo.</p>
 
-<p><img src="http://dev.zype.com/assets/player_logo/save_changes.png" alt="save changes" /></p>
+<p><img src="http://localhost:4000/assets/player_logo/save_changes.png" alt="save changes" /></p>
 
 <p>If you’ve already uploaded a video to Zype, you can preview it from the video library to see your player logo in action.</p>
 
-<p><img src="http://dev.zype.com/assets/player_logo/confirm.png" alt="confirm" /></p>
+<p><img src="http://localhost:4000/assets/player_logo/confirm.png" alt="confirm" /></p>
 
 <hr id="player_messaging" />
 
@@ -231,11 +233,11 @@ The following are reasons that a video cannot be served:</p>
 <p>Zype has supplied smart defaults for each of the above scenarios. You can
 use the Settings Dashboard to customize these settings.</p>
 
-<p><img src="http://dev.zype.com/assets/settings/player_messaging.png" alt="player messaging" /></p>
+<p><img src="http://localhost:4000/assets/settings/player_messaging.png" alt="player messaging" /></p>
 
 <p>This is an example of a player message:</p>
 
-<p><img src="http://dev.zype.com/assets/settings/messaging_ex.png" alt="player message example" /></p>
+<p><img src="http://localhost:4000/assets/settings/messaging_ex.png" alt="player message example" /></p>
 
 <hr id="smtp" />
 
@@ -259,7 +261,7 @@ use the Settings Dashboard to customize these settings.</p>
 
 <p>To set these items on Zype go to <a href="https://admin.zype.com/site/edit">Settings</a> and click the SMTP tab. Enter the settings, then click Save Changes.</p>
 
-<p><img src="http://dev.zype.com/assets/settings/smtp.png" alt="SMTP Settings Example" /></p>
+<p><img src="http://localhost:4000/assets/settings/smtp.png" alt="SMTP Settings Example" /></p>
 
   </section>
 

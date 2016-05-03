@@ -4,7 +4,7 @@ body {
   margin: 0;
   padding: 0;
   font:14px/1.5 Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color:#777;
+  color:#333;
   font-weight:300;
 }
 
@@ -98,12 +98,12 @@ th {
 }
 
 .api-docs table td:first-child {
-  font-weight: bold;  
+  font-weight: bold;
   width: 125px;
 }
 
 .api-docs table td:last-child {
-  font-weight: bold;  
+  font-weight: bold;
   width: 75px;
 }
 
