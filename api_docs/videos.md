@@ -21,6 +21,7 @@ category! | Exclude records by category value (Example: category![color]=blue) |
 created_at | Filter records by created date. Greater or less than filters can be used by adding a suffix (Example: created_at.gte) | Date
 crunchyroll_id   | Filter records by a Crunchyroll ID | String
 dpt       | Filter records by DPT conditions (Geo-location and device restrictions) | Boolean
+friendly_title | Find records by URL friendly title for SEO purposes | String
 hulu_id   | Filter records by a Hulu ID | String
 id        | Filter records by ID | String
 id!       | Exclude records by ID | String
@@ -47,6 +48,7 @@ zobject_id! | Exclude records by Zobject ID | String
 Parameter | Function | Type
 --------- | -------- | ----
 video[title] | The title of the video | String
+video[friendly_title] | The URL friendly title of the video. Optional — if left blank, it will be generated automatically. | String
 video[description] | The description of the video | String
 video[short_description] | The description of the video | String
 video[published_at]  | The date and time that the video will appear to have been published | String
@@ -83,6 +85,7 @@ Parameter | Function | Type
 --------- | -------- | ----
 id | ID of the record to update (Example: 540731274c616e047a000000) | String
 video[title] | The title of the video | String
+video[friendly_title] | The URL friendly title of the video. | String
 video[description] | The description of the video | String
 video[short_description] | The description of the video | String
 video[published_at]  | The date and time that the video will appear to have been published | String
@@ -159,6 +162,7 @@ zobject_id[] | The zobject IDs to remove | Array
   "episode": null,
   "featured": false,
   "foreign_id": null,
+  "friendly_title": "star-wars-episode-vii-the-force-awakens-official-teaser-trailer",
   "keywords": [],
   "segments": [],
   "mature_content": false,

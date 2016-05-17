@@ -40,7 +40,7 @@ transaction[playlist_id] | The ID of the playlist the user is purchasing if purc
 transaction[transaction_type] | Must be either 'purchase' or 'rental' | String
 transaction[video_id] | The ID of the video the user is purchasing if purchasing a video. Required if the transaction is for a video | String
 
-###Retrieve a Transaction
+### Retrieve a Transaction
 <pre><b>GET</b> https://api.zype.com/transactions/[id]
 </pre>
 

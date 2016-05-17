@@ -91,6 +91,7 @@
       <p><a href="/api_docs/oauth/">OAuth</a></p>
       <p><a href="/api_docs/subscriptions/">Subscriptions</a></p>
       <p><a href="/api_docs/transactions/">Transactions</a></p>
+      <p><a href="/api_docs/redemption_codes/">Redemption Codes</a></p>
       <a href="/api_docs/zobject_docs/"><h4 class="api-header">Zobjects</h4></a>
       <p><a href="/api_docs/zobject_types/">Zobject Types</a></p>
       <p><a href="/api_docs/zobjects/">Zobjects</a></p>
@@ -156,6 +157,11 @@
       <td>dpt</td>
       <td>Filter records by DPT conditions (Geo-location and device restrictions)</td>
       <td>Boolean</td>
+    </tr>
+    <tr>
+      <td>friendly_title</td>
+      <td>Find records by URL friendly title for SEO purposes</td>
+      <td>String</td>
     </tr>
     <tr>
       <td>hulu_id</td>
@@ -262,6 +268,11 @@
     <tr>
       <td>video[title]</td>
       <td>The title of the video</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>video[friendly_title]</td>
+      <td>The URL friendly title of the video. Optional — if left blank, it will be generated automatically.</td>
       <td>String</td>
     </tr>
     <tr>
@@ -388,6 +399,11 @@
     <tr>
       <td>video[title]</td>
       <td>The title of the video</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>video[friendly_title]</td>
+      <td>The URL friendly title of the video.</td>
       <td>String</td>
     </tr>
     <tr>
@@ -575,6 +591,7 @@
   "episode": null,
   "featured": false,
   "foreign_id": null,
+  "friendly_title": "star-wars-episode-vii-the-force-awakens-official-teaser-trailer",
   "keywords": [],
   "segments": [],
   "mature_content": false,
