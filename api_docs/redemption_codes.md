@@ -7,7 +7,7 @@ permalink: /api_docs/redemption_codes/
 ## Redemption Codes
 <hr>
 ### List Redemption Codes
-<pre><code>GET - https://api.zype.com/redemption_codes/?page=page&per_page=per_page
+<pre><code><b>GET</b> https://api.zype.com/redemption_codes
 </code></pre>
 
 #### Parameters
@@ -32,7 +32,7 @@ updated_at | Filter the records returned by updated date. You can use greater th
 video_id        | Filter records by a video ID | String
 
 ### Create a Redemption Code
-<pre><code>POST - https://api.zype.com/redemption_codes/{redemption code}
+<pre><code><b>POST</b> https://api.zype.com/redemption_codes/[redemption_code]
 </code></pre>
 
 #### Parameters
@@ -50,7 +50,7 @@ redemption_code[pass_plan_id] | The id of the pass plan that the user will have 
 Note: A video_id, playlist_id, plan_id, *OR* a pass_plan_id is required.
 
 ### Bulk Create Redemption Codes
-<pre><code>POST - https://api.zype.com/redemption_codes/bulk_create/{redemption_codes}
+<pre><code><b>POST</b> https://api.zype.com/redemption_codes/bulk_create/[redemption_codes]
 </code></pre>
 
 #### Parameters
@@ -71,7 +71,7 @@ Note: A video_id, playlist_id, plan_id, *OR* a pass_plan_id is required.
 Lists descriptive information about a Redemption Code
 
 ### Retrieve a Redemption Code
-<pre><code>GET - https://api.zype.com/redemption_codes/{id}
+<pre><code><b>GET</b> https://api.zype.com/redemption_codes/[id]
 </code></pre>
 
 #### Parameters
@@ -82,7 +82,7 @@ id        | String id of the Redemption Code to retrieve. Example: 570fc5ddf2834
 api_key      | The Admin api key for the account. *required* | String
 
 ### Update a Redemption Code
-<pre><code>PUT - https://api.zype.com/redemption_codes/{id}
+<pre><code><b>PUT</b> https://api.zype.com/redemption_codes/[id]
 </code></pre>
 
 #### Parameters
@@ -98,7 +98,7 @@ redemption_code[plan_id] | The id of the subscription plan that the user will be
 redemption_code[pass_plan_id] | The id of the pass plan that the user will have access to upon redeeming the code. Required if the redemption code is for a pass plan. | String
 
 ### Remove a Redemption Code
-<pre><code>DELETE - https://api.zype.com/redemption_codes/{id}
+<pre><code><b>DELETE</b> https://api.zype.com/redemption_codes/[id]
 </code></pre>
 
 #### Parameters
@@ -109,7 +109,7 @@ id        | String id of the Redemption Code to remove. Example: 5389352e69702d4
 api_key      | The Admin api key for the account. *required* | String
 
 ### Redeem a Redemption Code
-<pre><code>POST - https://api.zype.com/redemption_codes/redeem
+<pre><code><b>POST</b> https://api.zype.com/redemption_codes/redeem
 </code></pre>
 
 #### Parameters
