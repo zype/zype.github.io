@@ -9,7 +9,139 @@
     <pubDate>Wed, 25 May 2016 19:16:52 -0400</pubDate>
     <lastBuildDate>Wed, 25 May 2016 19:16:52 -0400</lastBuildDate>
     <generator>Jekyll v3.0.2</generator>
-    
+
+      <item>
+        <title>Kaltura MRSS Import Format</title>
+        <description>&lt;p&gt;Below is an example of a Kaltura MRSS that is compatible with Zype. In order to properly import videos from Kaltura, you must format your feed to match this example.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-xml&quot; data-lang=&quot;xml&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;rss&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;xmlns:media=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;http://search.yahoo.com/mrss/&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;xmlns:dcterms=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;http://purl.org/dc/terms/&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;version=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;2.0&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;channel&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;title&amp;gt;&lt;/span&gt;Kaltura MRSS Format Example&lt;span class=&quot;nt&quot;&gt;&amp;lt;/title&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;link/&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;description/&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;item&amp;gt;&lt;/span&gt;
+            &lt;span class=&quot;nt&quot;&gt;&amp;lt;title&amp;gt;&lt;/span&gt;My Video 1&lt;span class=&quot;nt&quot;&gt;&amp;lt;/title&amp;gt;&lt;/span&gt;
+            &lt;span class=&quot;nt&quot;&gt;&amp;lt;guid&amp;gt;&lt;/span&gt;0_qwert&lt;span class=&quot;nt&quot;&gt;&amp;lt;/guid&amp;gt;&lt;/span&gt;
+            &lt;span class=&quot;nt&quot;&gt;&amp;lt;link&amp;gt;&lt;/span&gt;0_qwert&lt;span class=&quot;nt&quot;&gt;&amp;lt;/link&amp;gt;&lt;/span&gt;
+            &lt;span class=&quot;nt&quot;&gt;&amp;lt;pubDate&amp;gt;&lt;/span&gt;Mon, 16 May 2016 20:42:45&lt;span class=&quot;nt&quot;&gt;&amp;lt;/pubDate&amp;gt;&lt;/span&gt;
+            &lt;span class=&quot;nt&quot;&gt;&amp;lt;endDate/&amp;gt;&lt;/span&gt;
+            &lt;span class=&quot;nt&quot;&gt;&amp;lt;media:content&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;url=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;http://cdnapi.kaltura.com/p/123/sp/12300/playManifest/entryId/0_qwert/flavorId/0_4lidycd2/protocol/http/format/url/a.mp4?clientTag=feed:abcd&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;duration=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;31&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;width=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;1920&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;height=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;1080&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+                &lt;span class=&quot;nt&quot;&gt;&amp;lt;media:title&amp;gt;&lt;/span&gt;My Video 1&lt;span class=&quot;nt&quot;&gt;&amp;lt;/media:title&amp;gt;&lt;/span&gt;
+                &lt;span class=&quot;nt&quot;&gt;&amp;lt;media:description&amp;gt;&lt;/span&gt;Description text goes here&lt;span class=&quot;nt&quot;&gt;&amp;lt;/media:description&amp;gt;&lt;/span&gt;
+                &lt;span class=&quot;nt&quot;&gt;&amp;lt;media:keywords&amp;gt;&lt;/span&gt;example, video, kaltura, mrss&lt;span class=&quot;nt&quot;&gt;&amp;lt;/media:keywords&amp;gt;&lt;/span&gt;
+                &lt;span class=&quot;nt&quot;&gt;&amp;lt;media:thumbnail&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;url=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;http://kaltura-img.revnm.com/p/123/sp/12300/thumbnail/entry_id/0_qwert/version/100012/acv/202/width/1920/height/1080&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;width=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;1920&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;height=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;1080&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
+                &lt;span class=&quot;nt&quot;&gt;&amp;lt;media:category&amp;gt;&lt;/span&gt;
+                    Example Category
+                &lt;span class=&quot;nt&quot;&gt;&amp;lt;/media:category&amp;gt;&lt;/span&gt;
+                &lt;span class=&quot;nt&quot;&gt;&amp;lt;media:player&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;url=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;http://www.kaltura.com/kwidget/wid/_123/entry_id/0_qwert/ui_conf&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
+            &lt;span class=&quot;nt&quot;&gt;&amp;lt;/media:content&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;/item&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;item&amp;gt;&lt;/span&gt;
+            &lt;span class=&quot;nt&quot;&gt;&amp;lt;title&amp;gt;&lt;/span&gt;My Video 2&lt;span class=&quot;nt&quot;&gt;&amp;lt;/title&amp;gt;&lt;/span&gt;
+            &lt;span class=&quot;nt&quot;&gt;&amp;lt;guid&amp;gt;&lt;/span&gt;0_123abc&lt;span class=&quot;nt&quot;&gt;&amp;lt;/guid&amp;gt;&lt;/span&gt;
+            &lt;span class=&quot;nt&quot;&gt;&amp;lt;link&amp;gt;&lt;/span&gt;0_123abc&lt;span class=&quot;nt&quot;&gt;&amp;lt;/link&amp;gt;&lt;/span&gt;
+            &lt;span class=&quot;nt&quot;&gt;&amp;lt;pubDate&amp;gt;&lt;/span&gt;Mon, 16 May 2016 20:35:14&lt;span class=&quot;nt&quot;&gt;&amp;lt;/pubDate&amp;gt;&lt;/span&gt;
+            &lt;span class=&quot;nt&quot;&gt;&amp;lt;endDate/&amp;gt;&lt;/span&gt;
+            &lt;span class=&quot;nt&quot;&gt;&amp;lt;media:content&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;url=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;http://cdnapi.kaltura.com/p/123/sp/12300/playManifest/entryId/0_123abc/flavorId/0_thxezdy6/protocol/http/format/url/a.mp4?clientTag=feed:abcd&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;duration=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;52&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;width=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;1920&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;height=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;1080&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+                &lt;span class=&quot;nt&quot;&gt;&amp;lt;media:title&amp;gt;&lt;/span&gt;My Video 2&lt;span class=&quot;nt&quot;&gt;&amp;lt;/media:title&amp;gt;&lt;/span&gt;
+                &lt;span class=&quot;nt&quot;&gt;&amp;lt;media:description&amp;gt;&lt;/span&gt;Description text goes here&lt;span class=&quot;nt&quot;&gt;&amp;lt;/media:description&amp;gt;&lt;/span&gt;
+                &lt;span class=&quot;nt&quot;&gt;&amp;lt;media:keywords&amp;gt;&lt;/span&gt;example, video 2, kaltura, mrss&lt;span class=&quot;nt&quot;&gt;&amp;lt;/media:keywords&amp;gt;&lt;/span&gt;
+                &lt;span class=&quot;nt&quot;&gt;&amp;lt;media:thumbnail&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;url=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;http://kaltura-img.revnm.com/p/123/sp/12300/thumbnail/entry_id/0_123abc/version/100012/acv/212/width/1920/height/1080&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;width=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;1920&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;height=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;1080&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
+                &lt;span class=&quot;nt&quot;&gt;&amp;lt;media:category&amp;gt;&lt;/span&gt;
+                    Example Category
+                &lt;span class=&quot;nt&quot;&gt;&amp;lt;/media:category&amp;gt;&lt;/span&gt;
+                &lt;span class=&quot;nt&quot;&gt;&amp;lt;media:player&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;url=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;http://www.kaltura.com/kwidget/wid/_123/entry_id/0_123abc/ui_conf&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
+            &lt;span class=&quot;nt&quot;&gt;&amp;lt;/media:content&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;/item&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/channel&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/rss&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h3 id=&quot;explanation-of-kaltura-mrss-elements&quot;&gt;Explanation of Kaltura MRSS Elements&lt;/h3&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Element&lt;/th&gt;
+      &lt;th&gt;Function&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;channel:title&lt;/td&gt;
+      &lt;td&gt;Sets the title of the channel (the set of your video items). Zype will interpret this as the main category title. &lt;em&gt;required&lt;/em&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;item:guid&lt;/td&gt;
+      &lt;td&gt;The unique ID of the item &lt;em&gt;required&lt;/em&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;item:pubDate&lt;/td&gt;
+      &lt;td&gt;The publication date of the item &lt;em&gt;required&lt;/em&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;media:content:url&lt;/td&gt;
+      &lt;td&gt;The link to the mp4 of your video item &lt;em&gt;required&lt;/em&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;media:content:duration&lt;/td&gt;
+      &lt;td&gt;The duration in seconds of your video item &lt;em&gt;required&lt;/em&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;media:content:width&lt;/td&gt;
+      &lt;td&gt;The width in pixels of your video item &lt;em&gt;required&lt;/em&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;media:content:height&lt;/td&gt;
+      &lt;td&gt;The height in pixels of your video item &lt;em&gt;required&lt;/em&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;media:title&lt;/td&gt;
+      &lt;td&gt;The title of your video item &lt;em&gt;required&lt;/em&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;media:description&lt;/td&gt;
+      &lt;td&gt;The description of your video item&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;media:keywords&lt;/td&gt;
+      &lt;td&gt;The keywords to associate with your video item. Must be a comma-delimeted list&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;media:thumbnail:url&lt;/td&gt;
+      &lt;td&gt;The link to the jpg or png of your video thumbnail &lt;em&gt;required&lt;/em&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;media:thumbnail:width&lt;/td&gt;
+      &lt;td&gt;The width in pixels of your video thumbnail &lt;em&gt;required&lt;/em&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;media:thumbnail:height&lt;/td&gt;
+      &lt;td&gt;The height in pixels of your video thumbnail &lt;em&gt;required&lt;/em&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;media:category&lt;/td&gt;
+      &lt;td&gt;The category value of your video item. Will be categorized under the main category heading as set in the channel:title, or in another category if specified while importing&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;style type=&quot;text/css&quot;&gt;
+    figure.highlight {
+        margin-left: 0;
+        width: 1300px;
+    }
+&lt;/style&gt;
+
+</description>
+        <pubDate>Wed, 18 May 2016 06:37:55 -0400</pubDate>
+        <link>http://dev.zype.com/posts/2016/05/18/kaltura-mrss-import-format/</link>
+        <guid isPermaLink="true">http://dev.zype.com/posts/2016/05/18/kaltura-mrss-import-format/</guid>
+
+
+        <category>developers</category>
+
+      </item>
+
       <item>
         <title>Upload and Search Embeddable Widgets</title>
         <description>&lt;p&gt;Now you can easily add upload and search functionality directly on your own website. This allows you to use the power of the Zype platform with the ease of a CMS system on your own site.&lt;/p&gt;
@@ -181,12 +313,12 @@
         <pubDate>Mon, 01 Feb 2016 05:37:55 -0500</pubDate>
         <link>http://dev.zype.com/posts/2016/02/01/upload-search-widgets/</link>
         <guid isPermaLink="true">http://dev.zype.com/posts/2016/02/01/upload-search-widgets/</guid>
-        
-        
+
+
         <category>developers</category>
-        
+
       </item>
-    
+
       <item>
         <title>Publishing an Amazon Fire TV on the Zype Platform</title>
         <description>&lt;p&gt;Follow the steps below to setup your Amazon Fire TV app in the Zype Dashboard and submit your app to Amazon. You can also have Zype handle the app submission process.&lt;/p&gt;
@@ -403,12 +535,12 @@ toggle &lt;strong&gt;Subscription Required&lt;/strong&gt; or__ Purchase Required
         <pubDate>Fri, 15 Jan 2016 05:37:55 -0500</pubDate>
         <link>http://dev.zype.com/posts/2016/01/15/self-publish-firetv/</link>
         <guid isPermaLink="true">http://dev.zype.com/posts/2016/01/15/self-publish-firetv/</guid>
-        
-        
+
+
         <category>developers</category>
-        
+
       </item>
-    
+
       <item>
         <title>Analytics: Domains, Tracking Partners, and Tracking Codes</title>
         <description>&lt;h1 id=&quot;domains&quot;&gt;Domains&lt;/h1&gt;
@@ -480,12 +612,12 @@ https://player.zype.com/embed/[video_id].html?autoplay=true&amp;amp;api_key=[api
         <pubDate>Tue, 03 Nov 2015 05:04:55 -0500</pubDate>
         <link>http://dev.zype.com/posts/2015/11/03/analytics-tracking-partner-codes/</link>
         <guid isPermaLink="true">http://dev.zype.com/posts/2015/11/03/analytics-tracking-partner-codes/</guid>
-        
-        
+
+
         <category>developers</category>
-        
+
       </item>
-    
+
       <item>
         <title>Organizing your videos for your Roku Channel</title>
         <description>&lt;p&gt;Now that you have set up your Roku Channel and have tested the private channel, you
@@ -562,12 +694,12 @@ remaining rows be the your category values!&lt;/p&gt;
         <pubDate>Mon, 11 May 2015 06:37:55 -0400</pubDate>
         <link>http://dev.zype.com/posts/2015/05/11/organizing-videos-for-roku/</link>
         <guid isPermaLink="true">http://dev.zype.com/posts/2015/05/11/organizing-videos-for-roku/</guid>
-        
-        
+
+
         <category>developers</category>
-        
+
       </item>
-    
+
       <item>
         <title>Change Video Thumbnails</title>
         <description>&lt;p&gt;When you upload a video to the Zype Platform, Zype will create thumbnails for your video.
@@ -591,12 +723,12 @@ for and click on the “Thumbnails” tab.&lt;/p&gt;
         <pubDate>Thu, 09 Apr 2015 06:37:55 -0400</pubDate>
         <link>http://dev.zype.com/posts/2015/04/09/change-thumbnails/</link>
         <guid isPermaLink="true">http://dev.zype.com/posts/2015/04/09/change-thumbnails/</guid>
-        
-        
+
+
         <category>developers</category>
-        
+
       </item>
-    
+
       <item>
         <title>Forgot Password</title>
         <description>&lt;p&gt;You can reset your password by going to &lt;a href=&quot;https://admin.zype.com/&quot;&gt;the Zype Platform&lt;/a&gt;
@@ -629,12 +761,12 @@ and following the photo tutorial below.&lt;/p&gt;
         <pubDate>Thu, 09 Apr 2015 06:37:55 -0400</pubDate>
         <link>http://dev.zype.com/posts/2015/04/09/forgot-password/</link>
         <guid isPermaLink="true">http://dev.zype.com/posts/2015/04/09/forgot-password/</guid>
-        
-        
+
+
         <category>developers</category>
-        
+
       </item>
-    
+
       <item>
         <title>Importing Videos from a Third Party Source</title>
         <description>&lt;p&gt;We’ve made it easier to import your videos from third party sources like YouTube, Vimeo, or Hulu
@@ -668,12 +800,12 @@ preexisting videos in your video library.&lt;/p&gt;
         <pubDate>Sun, 15 Feb 2015 05:37:55 -0500</pubDate>
         <link>http://dev.zype.com/posts/2015/02/15/importing-videos-from-third-party-source/</link>
         <guid isPermaLink="true">http://dev.zype.com/posts/2015/02/15/importing-videos-from-third-party-source/</guid>
-        
-        
+
+
         <category>developers</category>
-        
+
       </item>
-    
+
       <item>
         <title>Bulk Video Importing</title>
         <description>&lt;p&gt;To bulk add video imports to your video library, check the videos that you want to add and click
@@ -692,12 +824,12 @@ the chosen video import data source from your video.&lt;/p&gt;
         <pubDate>Sun, 15 Feb 2015 05:37:55 -0500</pubDate>
         <link>http://dev.zype.com/posts/2015/02/15/bulk-video-importing/</link>
         <guid isPermaLink="true">http://dev.zype.com/posts/2015/02/15/bulk-video-importing/</guid>
-        
-        
+
+
         <category>developers</category>
-        
+
       </item>
-    
+
       <item>
         <title>Publishing a Roku Channel on the Zype Platform</title>
         <description>&lt;p&gt;We have simplified the process of publishing a Roku Channel from the Zype Platform.
@@ -764,76 +896,11 @@ to read how to edit your Roku Channel.&lt;/p&gt;
         <pubDate>Fri, 13 Feb 2015 05:37:55 -0500</pubDate>
         <link>http://dev.zype.com/posts/2015/02/13/zype-publish-roku/</link>
         <guid isPermaLink="true">http://dev.zype.com/posts/2015/02/13/zype-publish-roku/</guid>
-        
-        
+
+
         <category>developers</category>
-        
+
       </item>
-    
-      <item>
-        <title>Self Publishing a Roku Channel on the Zype Platform</title>
-        <description>&lt;p&gt;Before being ready to self-publish, you will need to set up your Roku Channel on the Zype
-Platform. &lt;a href=&quot;http://dev.zype.composts/2015/02/13/zype-publish-roku&quot;&gt;Click here&lt;/a&gt; to read up on
-how to set up your Roku Channel for publishing.
-To self-publish your Roku Channel, you will need to have a Roku device and be
-comfortable using the terminal. This tutorial is focused for those users who are
-on Mac or linux. If you are on Windows, you can follow along with the tutorial,
-but you will need to use the &lt;a href=&quot;http://sdkdocs.roku.com/display/sdkdoc/Eclipse+Plugin+Guide&quot;&gt;Eclipse BrightScript plug-in to package your Roku Channel&lt;/a&gt; (step 2).&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Step 1: Enable Roku Development Mode on Your Box&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;You will need to enable Roku Development Mode on your Roku device. Read through the &lt;a href=&quot;http://sdkdocs.roku.com/display/sdkdoc/Developer+Guide#DeveloperGuide-70LoadingandRunningyourApplicationWalkthrough&quot;&gt;Roku
-Documentation&lt;/a&gt;
-on how to load and run your Roku Channel.&lt;/p&gt;
-
-&lt;p&gt;Please store your ROKU_DEV_TARGET (the IP address
-of your Roku) and DEVPASSWORD (you will get to choose this when you set up your Roku Developer Device). You will need both of these to side load
-your Roku Channel into your Roku device.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Step 2: Unzip your bundled channel and test out locally (Mac/Linux)&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Zype will email you a bundled channel zip that contains the BrightScript code for your Roku Channel. You will need to unzip your channel and, in your terminal, navigate to the Roku code.&lt;/p&gt;
-
-&lt;p&gt;Next, open up app.mk in your text editor of choice and change the ROKU_DEV_TARGET
-and DEVPASSWORD to match your Roku device.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://dev.zype.com/assets/Publishing Your Roku App/replace_appmk_vars.png&quot; alt=&quot;app.mk replacement&quot; /&gt;)&lt;/p&gt;
-
-&lt;p&gt;Then, run make install inside the Roku Channel directory in your terminal to side load your Roku Channel to your Roku device.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://dev.zype.com/assets/Publishing Your Roku App/make_install.png&quot; alt=&quot;make install&quot; /&gt;)&lt;/p&gt;
-
-&lt;p&gt;If the command is successful, your Roku Channel will load automatically to your Roku Device.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Step 3: Package Your Roku Channel for Publishing&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;You will need to key your Roku Channel using your Roku device.
-Please read the official &lt;a href=&quot;http://sdkdocs.roku.com/display/sdkdoc/Channel+Packaging+And+Publishing#ChannelPackagingAndPublishing-30PackagingYourApplication&quot;&gt;Roku
-documentation&lt;/a&gt;
-on how to generate your key and key your device.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Step 4: Submit Your Roku Channel to the Roku Channel Store&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Now that you have a packaged Roku Channel, you will need to submit your Roku Channel to the Roku Channel Store. You can choose to either publish
-a private channel or a public channel. A private channel will be published right away, but is not searchable via the Roku Channel Store. You will
-be given a Channel URL that you can share to others to add your private channel. To publish a public channel, you will added to the Roku
-Publishing Queue for Roku QA. Based on high demand, it can take anywhere from 2 to 3 months to
-get approved by Roku into the Roku Channel Store.&lt;/p&gt;
-
-&lt;p&gt;Click &lt;a href=&quot;https://owner.roku.com/Developer/Apps&quot;&gt;here&lt;/a&gt; to submit your Roku Channel!
-You will have to be logged into your Roku Developer Account.&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;Please feel free to reach out to Zype using the question box &lt;a href=&quot;https://admin.zype.com/&quot;&gt;in the lower left hand corner&lt;/a&gt;
-if you have any questions or would like Zype to publish your Roku Channel for you!&lt;/em&gt;&lt;/p&gt;
-</description>
-        <pubDate>Fri, 13 Feb 2015 05:37:55 -0500</pubDate>
-        <link>http://dev.zype.com/posts/2015/02/13/self-publish-roku/</link>
-        <guid isPermaLink="true">http://dev.zype.com/posts/2015/02/13/self-publish-roku/</guid>
-        
-        
-        <category>developers</category>
-        
-      </item>
-    
   </channel>
 </rss>

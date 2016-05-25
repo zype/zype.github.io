@@ -147,12 +147,22 @@
     </tr>
     <tr>
       <td>username</td>
-      <td>The username (email) of the consumer</td>
+      <td>The username (email) of the consumer. <br /><em>Note: Password is required if username is used to authenticate.</em></td>
       <td>String</td>
     </tr>
     <tr>
       <td>password</td>
-      <td>Password of the consumer</td>
+      <td>Password of the consumer. <br /><em>Note: Required if using username to authenticate.</em></td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>linked_device_id</td>
+      <td>The linked device ID of the consumer. <br /><em>Note: Pin is required if linked device ID is used to authenticate.</em></td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>pin</td>
+      <td>The pin for the linked device. <br /><em>Note: Required if using linked device ID to authenticate.</em></td>
       <td>String</td>
     </tr>
     <tr>

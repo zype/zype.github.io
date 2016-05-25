@@ -21,8 +21,10 @@ Parameter | Function | Type
 --------- | -------- | ----
 client_id | The client ID for your Zype application      | String
 client_secret | The client secret for your Zype application   | String
-username | The username (email) of the consumer | String
-password | Password of the consumer | String
+username | The username (email) of the consumer. <br />*Note: Password is required if username is used to authenticate.* | String
+password | Password of the consumer. <br />*Note: Required if using username to authenticate.* | String
+linked_device_id | The linked device ID of the consumer. <br />*Note: Pin is required if linked device ID is used to authenticate.* | String
+pin | The pin for the linked device. <br />*Note: Required if using linked device ID to authenticate.* | String
 grant_type | Grant Type. Use: 'password' | String
 
 ### Retrieving Access Token Status
