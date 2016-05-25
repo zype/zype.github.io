@@ -437,6 +437,9 @@ header h4 {
 .player-img-holder img {
   width: 25px; }
 
+.light {
+  color: #777; }
+
 .highlight {
   background: #ffffff; }
 
