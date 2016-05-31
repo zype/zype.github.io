@@ -64,7 +64,7 @@ Below are a bunch of short tutorials (with pictures!) to help you with a number 
       <a href="/posts/2016/02/01/upload-search-widgets/">Upload and Search Embeddable Widgets</a>
     </div>
     <div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>
-      <a href="/posts/2016/05/18/kaltura-mrss-import-format/">Kaltura MRSS Import Format</a>
+      <a href="/posts/2016/05/31/mrss-import-format/">MRSS Import Format</a>
     </div>
 
   </div>
@@ -131,6 +131,9 @@ Below are a bunch of short tutorials (with pictures!) to help you with a number 
     <div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>
       <a href="/posts/2015/04/09/forgot-password/">
       Forgot Password</a>
+    </div>
+    <div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>
+      <a href="/posts/2016/05/18/kaltura-mrss-import-format/">Kaltura MRSS Import Format</a>
     </div>
   </div>
 </div>

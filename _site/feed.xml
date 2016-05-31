@@ -6,9 +6,141 @@
 </description>
     <link>http://dev.zype.com/</link>
     <atom:link href="http://dev.zype.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Wed, 25 May 2016 19:29:24 -0400</pubDate>
-    <lastBuildDate>Wed, 25 May 2016 19:29:24 -0400</lastBuildDate>
+    <pubDate>Tue, 31 May 2016 15:26:28 -0400</pubDate>
+    <lastBuildDate>Tue, 31 May 2016 15:26:28 -0400</lastBuildDate>
     <generator>Jekyll v3.0.2</generator>
+    
+      <item>
+        <title>MRSS Import Format</title>
+        <description>&lt;p&gt;Below is an example of a MRSS feed that is compatible with Zype. In order to properly import videos from an MRSS feed, you must format your feed to match this example.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-xml&quot; data-lang=&quot;xml&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;rss&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;xmlns:media=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;http://search.yahoo.com/mrss/&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;xmlns:dcterms=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;http://purl.org/dc/terms/&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;version=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;2.0&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;channel&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;title&amp;gt;&lt;/span&gt;MRSS Format Example&lt;span class=&quot;nt&quot;&gt;&amp;lt;/title&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;link/&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;description/&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;item&amp;gt;&lt;/span&gt;
+            &lt;span class=&quot;nt&quot;&gt;&amp;lt;title&amp;gt;&lt;/span&gt;My Video 1&lt;span class=&quot;nt&quot;&gt;&amp;lt;/title&amp;gt;&lt;/span&gt;
+            &lt;span class=&quot;nt&quot;&gt;&amp;lt;guid&amp;gt;&lt;/span&gt;0_qwert&lt;span class=&quot;nt&quot;&gt;&amp;lt;/guid&amp;gt;&lt;/span&gt;
+            &lt;span class=&quot;nt&quot;&gt;&amp;lt;link&amp;gt;&lt;/span&gt;0_qwert&lt;span class=&quot;nt&quot;&gt;&amp;lt;/link&amp;gt;&lt;/span&gt;
+            &lt;span class=&quot;nt&quot;&gt;&amp;lt;pubDate&amp;gt;&lt;/span&gt;Mon, 16 May 2016 20:42:45&lt;span class=&quot;nt&quot;&gt;&amp;lt;/pubDate&amp;gt;&lt;/span&gt;
+            &lt;span class=&quot;nt&quot;&gt;&amp;lt;endDate/&amp;gt;&lt;/span&gt;
+            &lt;span class=&quot;nt&quot;&gt;&amp;lt;media:content&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;url=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;http://www.mrss-example.com/p/123/sp/12300/playManifest/entryId/0_qwert/flavorId/0_4lidycd2/protocol/http/format/url/a.mp4?clientTag=feed:abcd&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;duration=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;31&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;width=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;1920&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;height=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;1080&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+                &lt;span class=&quot;nt&quot;&gt;&amp;lt;media:title&amp;gt;&lt;/span&gt;My Video 1&lt;span class=&quot;nt&quot;&gt;&amp;lt;/media:title&amp;gt;&lt;/span&gt;
+                &lt;span class=&quot;nt&quot;&gt;&amp;lt;media:description&amp;gt;&lt;/span&gt;Description text goes here&lt;span class=&quot;nt&quot;&gt;&amp;lt;/media:description&amp;gt;&lt;/span&gt;
+                &lt;span class=&quot;nt&quot;&gt;&amp;lt;media:keywords&amp;gt;&lt;/span&gt;example, video, mrss&lt;span class=&quot;nt&quot;&gt;&amp;lt;/media:keywords&amp;gt;&lt;/span&gt;
+                &lt;span class=&quot;nt&quot;&gt;&amp;lt;media:thumbnail&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;url=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;http://mrss-example-img.revnm.com/p/123/sp/12300/thumbnail/entry_id/0_qwert/version/100012/acv/202/width/1920/height/1080&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;width=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;1920&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;height=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;1080&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
+                &lt;span class=&quot;nt&quot;&gt;&amp;lt;media:category&amp;gt;&lt;/span&gt;
+                    Example Category
+                &lt;span class=&quot;nt&quot;&gt;&amp;lt;/media:category&amp;gt;&lt;/span&gt;
+                &lt;span class=&quot;nt&quot;&gt;&amp;lt;media:player&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;url=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;http://www.mrss-example.com/kwidget/wid/_123/entry_id/0_qwert/ui_conf&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
+            &lt;span class=&quot;nt&quot;&gt;&amp;lt;/media:content&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;/item&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;item&amp;gt;&lt;/span&gt;
+            &lt;span class=&quot;nt&quot;&gt;&amp;lt;title&amp;gt;&lt;/span&gt;My Video 2&lt;span class=&quot;nt&quot;&gt;&amp;lt;/title&amp;gt;&lt;/span&gt;
+            &lt;span class=&quot;nt&quot;&gt;&amp;lt;guid&amp;gt;&lt;/span&gt;0_123abc&lt;span class=&quot;nt&quot;&gt;&amp;lt;/guid&amp;gt;&lt;/span&gt;
+            &lt;span class=&quot;nt&quot;&gt;&amp;lt;link&amp;gt;&lt;/span&gt;0_123abc&lt;span class=&quot;nt&quot;&gt;&amp;lt;/link&amp;gt;&lt;/span&gt;
+            &lt;span class=&quot;nt&quot;&gt;&amp;lt;pubDate&amp;gt;&lt;/span&gt;Mon, 16 May 2016 20:35:14&lt;span class=&quot;nt&quot;&gt;&amp;lt;/pubDate&amp;gt;&lt;/span&gt;
+            &lt;span class=&quot;nt&quot;&gt;&amp;lt;endDate/&amp;gt;&lt;/span&gt;
+            &lt;span class=&quot;nt&quot;&gt;&amp;lt;media:content&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;url=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;http://www.mrss-example.com/p/123/sp/12300/playManifest/entryId/0_123abc/flavorId/0_thxezdy6/protocol/http/format/url/a.mp4?clientTag=feed:abcd&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;duration=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;52&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;width=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;1920&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;height=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;1080&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+                &lt;span class=&quot;nt&quot;&gt;&amp;lt;media:title&amp;gt;&lt;/span&gt;My Video 2&lt;span class=&quot;nt&quot;&gt;&amp;lt;/media:title&amp;gt;&lt;/span&gt;
+                &lt;span class=&quot;nt&quot;&gt;&amp;lt;media:description&amp;gt;&lt;/span&gt;Description text goes here&lt;span class=&quot;nt&quot;&gt;&amp;lt;/media:description&amp;gt;&lt;/span&gt;
+                &lt;span class=&quot;nt&quot;&gt;&amp;lt;media:keywords&amp;gt;&lt;/span&gt;example, video 2, mrss&lt;span class=&quot;nt&quot;&gt;&amp;lt;/media:keywords&amp;gt;&lt;/span&gt;
+                &lt;span class=&quot;nt&quot;&gt;&amp;lt;media:thumbnail&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;url=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;http://mrss-example-img.revnm.com/p/123/sp/12300/thumbnail/entry_id/0_123abc/version/100012/acv/212/width/1920/height/1080&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;width=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;1920&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;height=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;1080&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
+                &lt;span class=&quot;nt&quot;&gt;&amp;lt;media:category&amp;gt;&lt;/span&gt;
+                    Example Category
+                &lt;span class=&quot;nt&quot;&gt;&amp;lt;/media:category&amp;gt;&lt;/span&gt;
+                &lt;span class=&quot;nt&quot;&gt;&amp;lt;media:player&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;url=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;http://www.mrss-example.com/kwidget/wid/_123/entry_id/0_123abc/ui_conf&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
+            &lt;span class=&quot;nt&quot;&gt;&amp;lt;/media:content&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;/item&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/channel&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/rss&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h3 id=&quot;explanation-of-mrss-elements&quot;&gt;Explanation of MRSS Elements&lt;/h3&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Element&lt;/th&gt;
+      &lt;th&gt;Function&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;channel:title&lt;/td&gt;
+      &lt;td&gt;Sets the title of the channel (the set of your video items). Zype will interpret this as the main category title. &lt;em&gt;required&lt;/em&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;item:guid&lt;/td&gt;
+      &lt;td&gt;The unique ID of the item &lt;em&gt;required&lt;/em&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;item:pubDate&lt;/td&gt;
+      &lt;td&gt;The publication date of the item &lt;em&gt;required&lt;/em&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;media:content:url&lt;/td&gt;
+      &lt;td&gt;The link to the mp4 of your video item &lt;em&gt;required&lt;/em&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;media:content:duration&lt;/td&gt;
+      &lt;td&gt;The duration in seconds of your video item &lt;em&gt;required&lt;/em&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;media:content:width&lt;/td&gt;
+      &lt;td&gt;The width in pixels of your video item &lt;em&gt;required&lt;/em&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;media:content:height&lt;/td&gt;
+      &lt;td&gt;The height in pixels of your video item &lt;em&gt;required&lt;/em&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;media:title&lt;/td&gt;
+      &lt;td&gt;The title of your video item &lt;em&gt;required&lt;/em&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;media:description&lt;/td&gt;
+      &lt;td&gt;The description of your video item&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;media:keywords&lt;/td&gt;
+      &lt;td&gt;The keywords to associate with your video item. Must be a comma-delimeted list&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;media:thumbnail:url&lt;/td&gt;
+      &lt;td&gt;The link to the jpg or png of your video thumbnail &lt;em&gt;required&lt;/em&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;media:thumbnail:width&lt;/td&gt;
+      &lt;td&gt;The width in pixels of your video thumbnail &lt;em&gt;required&lt;/em&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;media:thumbnail:height&lt;/td&gt;
+      &lt;td&gt;The height in pixels of your video thumbnail &lt;em&gt;required&lt;/em&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;media:category&lt;/td&gt;
+      &lt;td&gt;The category value of your video item. Will be categorized under the main category heading as set in the channel:title, or in another category if specified while importing&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;style type=&quot;text/css&quot;&gt;
+    figure.highlight {
+        margin-left: 0;
+        width: 1300px;
+    }
+&lt;/style&gt;
+
+</description>
+        <pubDate>Tue, 31 May 2016 06:37:55 -0400</pubDate>
+        <link>http://dev.zype.com/posts/2016/05/31/mrss-import-format/</link>
+        <guid isPermaLink="true">http://dev.zype.com/posts/2016/05/31/mrss-import-format/</guid>
+        
+        
+        <category>developers</category>
+        
+      </item>
     
       <item>
         <title>Kaltura MRSS Import Format</title>
@@ -824,78 +956,6 @@ the chosen video import data source from your video.&lt;/p&gt;
         <pubDate>Sun, 15 Feb 2015 05:37:55 -0500</pubDate>
         <link>http://dev.zype.com/posts/2015/02/15/bulk-video-importing/</link>
         <guid isPermaLink="true">http://dev.zype.com/posts/2015/02/15/bulk-video-importing/</guid>
-        
-        
-        <category>developers</category>
-        
-      </item>
-    
-      <item>
-        <title>Publishing a Roku Channel on the Zype Platform</title>
-        <description>&lt;p&gt;We have simplified the process of publishing a Roku Channel from the Zype Platform.
-The process now has three parts. First, you need to set up your channel.
-Then, Zype will build your Channel for you or you can
-&lt;a href=&quot;http://dev.zype.composts/2015/02/13/self-publish-roku/&quot;&gt;self-publish your Channel&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Step 1: Set Up Your Video Library and Channel&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;First, you will need to upload and transcode videos onto the Zype Platform.
-Currently, Roku Channels only support videos with a Zype video source.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://dev.zype.com/assets/Uploading Videos to the Zype Platform from the Web/upload_video_1.png&quot; alt=&quot;upload and transcode&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Second, you will need to set up your Roku Channel. Navigate to the Video Apps page&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://dev.zype.com/assets/Publishing Your Roku App/dashboard_to_video_app.png&quot; alt=&quot;video apps page&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Click on Roku to set up a new Roku Channel for publishing&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://dev.zype.com/assets/Publishing Your Roku App/set_up_roku_app.png&quot; alt=&quot;Roku publishing&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Set up your Roku Channel by supplying a title, subtitle, a channel image, and
-select a channel template. Zype will create multiple images from your one supplied
-channel image including your channel logo, poster art, and loading screen.
-It is suggested to have a 640 px by 480 px PNG image because the image will be used
-in many different sizes.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://dev.zype.com/assets/Publishing Your Roku App/set_up_roku_screen.png&quot; alt=&quot;roku set up&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Step 2: Zype Builds Your Roku Channel&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Once you set up your Channel, Zype will bundle the necessary images and prepare the
-code for your Roku Channel. All you have to do is wait a couple of minutes!
-The page will automatically refresh once your Channel is ready.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://dev.zype.com/assets/Publishing Your Roku App/roku_bundling.png&quot; alt=&quot;roku bundling&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Step 3: Publish Channel&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;You can choose to either self-publish or have Zype publish your Roku Channel for you.
-If you choose to self publish &lt;a href=&quot;http://dev.zype.composts/2015/02/13/self-publish-roku/&quot;&gt;click here&lt;/a&gt;
-to read our guide to self publish your Roku Channel.
-If you choose to have Zype publish your channel, you will be sent to a checkout
-page to redeem your publishing package or pay for a publishing package.
-Once you checkout, a member of the Zype team will package, QA, and submit your
-Roku Channel to the Roku Channel Store.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://dev.zype.com/assets/Publishing Your Roku App/roku_publishing.png&quot; alt=&quot;roku publishing options&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Typically, once your Roku Channel is submitted to the Roku Channel Store, it takes
-3-4 weeks to get to the front of the QA queue and then another 1-2 weeks for approval.
-You should expect to wait atleast 4-6 weeks for your Roku Channel to be available
-on the Roku Channel Store. If you would like to immediately share your Roku Channel,
-you can create a private Roku Channel that can be shared immediately via url.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Step 4: Edit Channel Settings&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;The majority of settings for your Roku Channel are configured at run-time.
-Thus, you can edit Channel settings such as your featured playlist, your logos and
-themes without having to re-publish. &lt;a href=&quot;http://dev.zype.composts/2015/02/13/roku-advanced-settings/&quot;&gt;Click here&lt;/a&gt;
-to read how to edit your Roku Channel.&lt;/p&gt;
-</description>
-        <pubDate>Fri, 13 Feb 2015 05:37:55 -0500</pubDate>
-        <link>http://dev.zype.com/posts/2015/02/13/zype-publish-roku/</link>
-        <guid isPermaLink="true">http://dev.zype.com/posts/2015/02/13/zype-publish-roku/</guid>
         
         
         <category>developers</category>
