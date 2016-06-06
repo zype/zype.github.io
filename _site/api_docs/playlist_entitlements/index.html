@@ -6,12 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>Zype Developer Portal | Transactions</title>
+    <title>Zype Developer Portal | Playlists</title>
     <meta name="description" content="This is the devloper portal for Zype Media. Zype is Revenue and Reach Magic for Online Video. We help content owners deliver fully branded video experiences.
 ">
 
     <link rel="stylesheet" href="/css/main.css">
-    <link rel="canonical" href="http://localhost:4000/api_docs/transactions/">
+    <link rel="canonical" href="http://localhost:4000/api_docs/playlist_entitlements/">
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="shortcut icon" href="/assets/favicon.ico" />
 
@@ -113,12 +113,12 @@
 
 
     <section id="main" class="api-docs">
-      <h2 id="transactions-collection">Transactions Collection</h2>
+      <h2 id="playlist-entitlements">Playlist Entitlements</h2>
+
 <hr />
 
-<h3 id="list-transactions">List Transactions</h3>
-<pre><b>GET</b> https://api.zype.com/transactions
-</pre>
+<h3 id="list-playlist-entitlements">List Playlist Entitlements</h3>
+<pre><b>GET</b> https://api.zype.com/consumer/playlists</pre>
 
 <h4 id="parameters">Parameters</h4>
 
@@ -132,9 +132,19 @@
   </thead>
   <tbody>
     <tr>
-      <td>consumer_id</td>
-      <td>Filter records by a consumer ID</td>
+      <td>active</td>
+      <td>Filter by active, inactive, or all records (Example: true)</td>
       <td>String</td>
+    </tr>
+    <tr>
+      <td>category</td>
+      <td>Filter records by category value (Example: category[color]=blue)</td>
+      <td>Hash</td>
+    </tr>
+    <tr>
+      <td>category!</td>
+      <td>Exclude records by category value (Example: category![color]=blue)</td>
+      <td>Hash</td>
     </tr>
     <tr>
       <td>id</td>
@@ -144,6 +154,11 @@
     <tr>
       <td>id!</td>
       <td>Exclude records by ID</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>order</td>
+      <td>Sort records in ascending or descending order (Example: asc/desc)</td>
       <td>String</td>
     </tr>
     <tr>
@@ -161,211 +176,90 @@
       <td>Filter records by keyword</td>
       <td>String</td>
     </tr>
-  </tbody>
-</table>
-
-<h3 id="create-a-transaction">Create a Transaction</h3>
-<pre><b>POST</b> https://api.zype.com/transactions/[id]
-</pre>
-
-<h4 id="parameters-1">Parameters</h4>
-
-<table>
-  <thead>
     <tr>
-      <th>Parameter</th>
-      <th>Function</th>
-      <th>Type</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>provider</td>
-      <td>Value must be either ‘stripe’ or ‘braintree’. Specifies whether you are using Stripe or Braintree for payments</td>
+      <td>sort</td>
+      <td>Sort records on the specified field</td>
       <td>String</td>
     </tr>
     <tr>
-      <td>transaction[amount]</td>
-      <td>Must be formatted as a string included cent value, for example “1.99”</td>
-      <td>String</td>
-    </tr>
-    <tr>
-      <td>transaction[currency]</td>
-      <td>Set currency type. This is optional. Default value is ‘USD’</td>
-      <td>String</td>
-    </tr>
-    <tr>
-      <td>transaction[consumer_id]</td>
-      <td>The ID of the consumer making the transaction</td>
-      <td>String</td>
-    </tr>
-    <tr>
-      <td>transaction[description]</td>
-      <td>Description of transaction</td>
-      <td>String</td>
-    </tr>
-    <tr>
-      <td>transaction[pass_plan_id]</td>
-      <td>The ID of the pass plan the user is purchasing if purchasing a pass plan. Required if the transaction is for a pass plan</td>
-      <td>String</td>
-    </tr>
-    <tr>
-      <td>transaction[payment_nonce]</td>
-      <td>The payment nonce provided by Stripe or Braintree if using one of those platforms</td>
-      <td>String</td>
-    </tr>
-    <tr>
-      <td>transaction[playlist_id]</td>
-      <td>The ID of the playlist the user is purchasing if purchasing a playlist. Required if the transaction is for a playlist</td>
-      <td>String</td>
-    </tr>
-    <tr>
-      <td>transaction[transaction_type]</td>
-      <td>Must be either ‘purchase’ or ‘rental’</td>
-      <td>String</td>
-    </tr>
-    <tr>
-      <td>transaction[video_id]</td>
-      <td>The ID of the video the user is purchasing if purchasing a video. Required if the transaction is for a video</td>
+      <td>title</td>
+      <td>Filter records by title</td>
       <td>String</td>
     </tr>
   </tbody>
 </table>
 
-<h3 id="retrieve-a-transaction">Retrieve a Transaction</h3>
-<pre><b>GET</b> https://api.zype.com/transactions/[id]
-</pre>
-
-<h4 id="parameters-2">Parameters</h4>
-
-<table>
-  <thead>
-    <tr>
-      <th>Parameter</th>
-      <th>Function</th>
-      <th>Type</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>id</td>
-      <td>ID of the record to retrieve (Example: 5389352e69702d401b000000)</td>
-      <td>String</td>
-    </tr>
-  </tbody>
-</table>
-
-<h3 id="update-a-transaction">Update a Transaction</h3>
-<pre><b>PUT</b> https://api.zype.com/transactions/[id]
-</pre>
-
-<h4 id="parameters-3">Parameters</h4>
-
-<table>
-  <thead>
-    <tr>
-      <th>Parameter</th>
-      <th>Function</th>
-      <th>Type</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>transaction[consumer_id]</td>
-      <td>The ID of the consumer</td>
-      <td>String</td>
-    </tr>
-    <tr>
-      <td>transaction[video_id]</td>
-      <td>The ID of the video</td>
-      <td>String</td>
-    </tr>
-    <tr>
-      <td>transaction[playlist_id]</td>
-      <td>The ID of the playlist</td>
-      <td>String</td>
-    </tr>
-    <tr>
-      <td>transaction[pass_plan_id]</td>
-      <td>The ID of the pass plan</td>
-      <td>String</td>
-    </tr>
-    <tr>
-      <td>transaction[payment_nonce]</td>
-      <td>The payment nonce</td>
-      <td>String</td>
-    </tr>
-    <tr>
-      <td>transaction[amount]</td>
-      <td>Must be formatted as a string included cent value, for example “1.99”.</td>
-      <td>String</td>
-    </tr>
-    <tr>
-      <td>transaction[transaction_type]</td>
-      <td>Must be either ‘purchase’ or ‘rental’</td>
-      <td>String</td>
-    </tr>
-    <tr>
-      <td>transaction[currency]</td>
-      <td>The currency type</td>
-      <td>String</td>
-    </tr>
-    <tr>
-      <td>transaction[description]</td>
-      <td>Description of transaction</td>
-      <td>String</td>
-    </tr>
-  </tbody>
-</table>
-
-<h3 id="delete-a-transaction">Delete a Transaction</h3>
-<pre><b>DELETE</b> https://api.zype.com/transactions/[id]
-</pre>
-
-<h4 id="parameters-4">Parameters</h4>
-
-<table>
-  <thead>
-    <tr>
-      <th>Parameter</th>
-      <th>Function</th>
-      <th>Type</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>id</td>
-      <td>ID of the record to delete (Example: 5389352e69702d401b000000)</td>
-      <td>String</td>
-    </tr>
-  </tbody>
-</table>
-
-<h3 id="transaction-object">Transaction Object</h3>
+<h3 id="playlist-object">Playlist Object</h3>
 
 <pre>
 {
-  "_id": "5706b865f283477023000065",
-  "_keywords": [
-    "example",
-    "video"
-  ],
-  "amount": "4.99",
-  "braintree_id": "b5wkgx",
-  "consumer_id": "56fecbf1f28347637b000020",
-  "created_at": "2016-04-07T15:43:33.617-04:00",
-  "currency": "USD",
-  "deleted_at": null,
-  "description": null,
-  "expires_at": null,
-  "pass_plan_id": null,
-  "payment_nonce": "fake-valid-nonce",
-  "playlist_id": null,
-  "site_id": "5468fd6569702d17ee500000",
-  "status": "authorized",
-  "transaction_type": "purchase",
-  "updated_at": "2016-04-07T15:43:33.617-04:00",
-  "video_id": "56fbe4b5f28347c9f4000ae3"
+  "response": {
+    "_id": "5628f9354d656c46285b0000",
+    "_keywords": [
+      "bundle",
+      "featured",
+      "videos"
+    ],
+    "active": true,
+    "auto_update_consumer_videos": true,
+    "created_at": "2015-10-22T10:56:53.896-04:00",
+    "deleted_at": null,
+    "description": "",
+    "parent_id": "5628f99f4d656c46285c0000",
+    "priority": 0,
+    "purchase_price": "5.0",
+    "purchase_required": true,
+    "related_video_ids": [
+      "570daad0f283474187000669",
+      "570da6a0f28347ccfc002366"
+    ],
+    "rental_duration": 3,
+    "rental_price": "5.0",
+    "rental_required": true,
+    "site_id": "5468fd6569702d17ee500000",
+    "title": "Featured Videos Bundle",
+    "updated_at": "2016-04-21T13:43:06.965-04:00",
+    "images": [
+      {
+        "_id": "57191023f2834757dc000028",
+        "caption": "My caption",
+        "title": "Boxed Set",
+        "updated_at": "2016-04-21T13:38:44.834-04:00",
+        "url": "http://upload.dev.zype.com/5468fd6569702d17ee500000/video_image/57191023f2834757dc000028/1461260323/original.png?1461260323"
+      }
+    ],
+    "playlist_item_count": 1176,
+    "thumbnails": [
+      {
+        "aspect_ratio": 1.78,
+        "height": 240,
+        "name": null,
+        "url": "http://image.dev.zype.com/5468fd6569702d17ee500000/playlist/5628f9354d656c46285b0000/custom_thumbnail/240.png?1461254280",
+        "width": 426
+      },
+      {
+        "aspect_ratio": 1.78,
+        "height": 480,
+        "name": null,
+        "url": "http://image.dev.zype.com/5468fd6569702d17ee500000/playlist/5628f9354d656c46285b0000/custom_thumbnail/480.png?1461254280",
+        "width": 854
+      },
+      {
+        "aspect_ratio": 1.78,
+        "height": 720,
+        "name": null,
+        "url": "http://image.dev.zype.com/5468fd6569702d17ee500000/playlist/5628f9354d656c46285b0000/custom_thumbnail/720.png?1461254280",
+        "width": 1280
+      },
+      {
+        "aspect_ratio": 1.78,
+        "height": 1080,
+        "name": null,
+        "url": "http://image.dev.zype.com/5468fd6569702d17ee500000/playlist/5628f9354d656c46285b0000/custom_thumbnail/1080.png?1461254280",
+        "width": 1920
+      }
+    ]
+  }
 }
 </pre>
 
