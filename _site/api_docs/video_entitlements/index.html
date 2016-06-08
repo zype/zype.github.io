@@ -72,7 +72,7 @@
       <p class="light">a knowledge base</p>
       <br>
       <p class="category"><a href="/api_docs/intro/" style="color: #8acfef;">API Documentation</a></p>
-      <a href="/api_docs/zype_platform/"><h4 class="api-header">Zype Platform</h4></a>
+      <h4 class="api-header">Zype Platform</h4>
       <p><a href="/api_docs/videos/">Videos</a></p>
       <p><a href="/api_docs/playlists/">Playlists</a></p>
       <p><a href="/api_docs/categories/">Categories</a></p>
@@ -81,21 +81,21 @@
       <p><a href="/api_docs/device_categories/">Device Categories</a></p>
       <p><a href="/api_docs/players/">Players</a></p>
       <p><a href="/api_docs/segments/">Segments</a></p>
-      <p><a href="/api_docs/revenue_models/">Revenue Models</a></p>
       <p><a href="/api_docs/video_imports/">Video Imports</a></p>
       <p><a href="/api_docs/video_sources/">Video Sources</a></p>
-      <p><a href="/api_docs/geoip/">GeoIP</a></p>
-      <a href="/api_docs/users/"><h4 class="api-header">Users</h4></a>
+      <h4 class="api-header">Consumers</h4>
       <p><a href="/api_docs/consumers/">Consumers</a></p>
       <p><a href="/api_docs/device_linking/">Device Linking</a></p>
-      <p><a href="/api_docs/plans/">Plans</a></p>
       <p><a href="/api_docs/oauth/">OAuth</a></p>
-      <p><a href="/api_docs/subscriptions/">Subscriptions</a></p>
-      <p><a href="/api_docs/transactions/">Transactions</a></p>
-      <p><a href="/api_docs/redemption_codes/">Redemption Codes</a></p>
       <p><a href="/api_docs/video_entitlements/">Video Entitlements</a></p>
       <p><a href="/api_docs/playlist_entitlements/">Playlist Entitlements</a></p>
-      <a href="/api_docs/zobject_docs/"><h4 class="api-header">Zobjects</h4></a>
+      <h4 class="api-header">Monetization</h4>
+      <p><a href="/api_docs/subscriptions/">Subscriptions</a></p>
+      <p><a href="/api_docs/plans/">Plans</a></p>
+      <p><a href="/api_docs/transactions/">Transactions</a></p>
+      <p><a href="/api_docs/redemption_codes/">Redemption Codes</a></p>
+      <p><a href="/api_docs/revenue_models/">Revenue Models</a></p>      
+      <h4 class="api-header">Zobjects</h4>
       <p><a href="/api_docs/zobject_types/">Zobject Types</a></p>
       <p><a href="/api_docs/zobjects/">Zobjects</a></p>
       <br>
@@ -133,44 +133,14 @@
   </thead>
   <tbody>
     <tr>
-      <td>active</td>
-      <td>Filter by active, inactive, or all records (Example: true)</td>
-      <td>String</td>
-    </tr>
-    <tr>
-      <td>category</td>
-      <td>Filter records by category value (Example: category[color]=blue)</td>
-      <td>Hash</td>
-    </tr>
-    <tr>
-      <td>category!</td>
-      <td>Exclude records by category value (Example: category![color]=blue)</td>
-      <td>Hash</td>
-    </tr>
-    <tr>
       <td>created_at</td>
       <td>Filter records by created date. Greater or less than filters can be used by adding a suffix (Example: created_at.gte)</td>
       <td>Date</td>
     </tr>
     <tr>
-      <td>crunchyroll_id</td>
-      <td>Filter records by a Crunchyroll ID</td>
-      <td>String</td>
-    </tr>
-    <tr>
-      <td>dpt</td>
-      <td>Filter records by DPT conditions (Geo-location and device restrictions)</td>
-      <td>Boolean</td>
-    </tr>
-    <tr>
-      <td>friendly_title</td>
-      <td>Find records by URL friendly title for SEO purposes</td>
-      <td>String</td>
-    </tr>
-    <tr>
-      <td>hulu_id</td>
-      <td>Filter records by a Hulu ID</td>
-      <td>String</td>
+      <td>expires_at</td>
+      <td>Filter records by expire date. Greater or less than filters can be used by adding a suffix (Example: expires_at.gte)</td>
+      <td>Date</td>
     </tr>
     <tr>
       <td>id</td>
@@ -183,19 +153,9 @@
       <td>String</td>
     </tr>
     <tr>
-      <td>mature_content</td>
-      <td>Filter records that are flagged as mature content</td>
-      <td>Boolean</td>
-    </tr>
-    <tr>
       <td>order</td>
       <td>Sort records in ascending or descending order (Example: asc/desc)</td>
       <td>String</td>
-    </tr>
-    <tr>
-      <td>on_air</td>
-      <td>Filter records that are either on or off air</td>
-      <td>Boolean</td>
     </tr>
     <tr>
       <td>page</td>
@@ -208,147 +168,41 @@
       <td>Integer</td>
     </tr>
     <tr>
-      <td>published_at</td>
-      <td>Filter records by published date. Greater or less than filters can be used by adding a suffix (Example: published_at.gte)</td>
-      <td>Date</td>
-    </tr>
-    <tr>
       <td>q</td>
       <td>Filter records by keyword</td>
       <td>String</td>
     </tr>
     <tr>
-      <td>sort</td>
-      <td>Sort records on the specified field</td>
+      <td>transaction_id</td>
+      <td>Filter records by transaction ID</td>
       <td>String</td>
     </tr>
     <tr>
-      <td>source_id</td>
-      <td>Filter records by an optional source identifier</td>
+      <td>transaction_type</td>
+      <td>Filter records by the type of transaction that created the entitlement (Example: purchase)</td>
       <td>String</td>
     </tr>
     <tr>
-      <td>type</td>
-      <td>Filter records by type (Example: zype, hulu, youtube, crunchyroll)</td>
-      <td>String</td>
-    </tr>
-    <tr>
-      <td>vimeo_id</td>
-      <td>Filter records by a Vimeo ID</td>
-      <td>String</td>
-    </tr>
-    <tr>
-      <td>youtube_id</td>
-      <td>Filter records by a YouTube ID</td>
-      <td>String</td>
-    </tr>
-    <tr>
-      <td>zobject_id</td>
-      <td>Filter records by Zobject ID</td>
-      <td>String</td>
-    </tr>
-    <tr>
-      <td>zobject_id!</td>
-      <td>Exclude records by Zobject ID</td>
+      <td>video_id</td>
+      <td>Filter records by video ID</td>
       <td>String</td>
     </tr>
   </tbody>
 </table>
 
-<h3 id="video-object">Video Object</h3>
+<h3 id="video-entitlement-object">Video Entitlement Object</h3>
 
 <pre>
 {
-  "_id": "547b4dca69702d070dca0000",
-  "active": true,
-  "categories": [
-    {
-      "title": "Additional Videos from YouTube",
-      "value": []
-    },
-    {
-      "title": "Genre",
-      "value": [
-        "Adventure"
-      ]
-    },
-    {
-      "title": "series",
-      "value": []
-    }
-  ],
-  "country": "",
-  "created_at": "2014-11-30T12:03:06.783-05:00",
-  "description": "A continuation of the saga created by George Lucas set thirty years after Star Wars: Episode VI - Return of the Jedi (1983).",
-  "discovery_url": "http://www.yoursite.com/video"
-  "duration": 91,
-  "episode": null,
-  "featured": false,
-  "foreign_id": null,
-  "friendly_title": "star-wars-episode-vii-the-force-awakens-official-teaser-trailer",
-  "keywords": [],
-  "segments": [],
-  "mature_content": false,
-  "published_at": "2014-11-30T12:01:32.000-05:00",
-  "rating": 0,
-  "related_playlist_ids": [
-    "5464084f69702d76c1770000"
-  ],
-  "request_count": 14,
-  "season": null,
-  "site_id": "5463c68e69702d24db490000",
-  "status": "created",
-  "subscription_required": false,
-  "title": "Star Wars: Episode VII - The Force Awakens Official Teaser Trailer",
-  "updated_at": "2014-12-17T23:00:03.649-05:00",
-  "video_zobjects": [
-    {
-      "_id": "547b4e6f69702d070dd30000",
-      "description": "",
-      "title": "Harrison Ford",
-      "zobject_type_title": "actor"
-    },
-    {
-      "_id": "547b4e9369702d070edc0000",
-      "description": "",
-      "title": "J.J. Abrams",
-      "zobject_type_title": "director"
-    },
-    {
-      "_id": "54808d6a69702d18b51d0000",
-      "description": "",
-      "title": "John Boyega",
-      "zobject_type_title": "actor"
-    }
-  ],
-  "zobject_ids": [
-    "547b4e6f69702d070dd30000",
-    "547b4e9369702d070edc0000",
-    "54808d6a69702d18b51d0000"
-  ],
-  "thumbnails": [
-    {
-      "aspect_ratio": null,
-      "height": 90,
-      "name": null,
-      "url": "https://i.ytimg.com/vi/PlFckE98xN4/default.jpg",
-      "width": 120
-    },
-    {
-      "aspect_ratio": null,
-      "height": 180,
-      "name": null,
-      "url": "https://i.ytimg.com/vi/PlFckE98xN4/mqdefault.jpg",
-      "width": 320
-    },
-    {
-      "aspect_ratio": null,
-      "height": 360,
-      "name": null,
-      "url": "https://i.ytimg.com/vi/PlFckE98xN4/hqdefault.jpg",
-      "width": 480
-    }
-  ]
+  _id: "574df05109838853df000001",
+  consumer_id: "5543e4a269702d070d330600",
+  created_at: "2016-05-31T16:13:05.437-04:00",
+  expires_at: null,
+  transaction_id: '57214ac2098388d3a800000c',
+  transaction_type: 'purchase',
+  updated_at: "2016-05-31T16:13:05.437-04:00",
+  video_id: "574decf509838854f1000183",
+  video_title: "Sample Video"
 }
 </pre>
 
