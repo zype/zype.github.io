@@ -26,7 +26,7 @@ q         | Filter records by keyword | String
 transaction_id | Filter records by transaction ID | String
 transaction_type | Filter records by the type of transaction that created the entitlement (Example: purchase) | String
 
-### Video Entitlement Object
+### Playlist Entitlement Object
 
 <pre>
 {
