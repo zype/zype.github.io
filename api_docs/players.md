@@ -30,6 +30,7 @@ video_id | ID of the video to request a player (Example: 540731274c616e047a00000
 autoplay | Enable autoplay for web players (Default: false) | Boolean
 audio | Request audio only player (Default: false) | Boolean
 download | Request download only player (Default: false) | Boolean
+dvr | Enable DVR for Zype Live events (Default: true) | Boolean
 format | The format for the player response. You can request Iframes, JavaScript or JSON players depending on device capabilities (Example: html, js, json) | String
 
 ### Player Object (JSON)
