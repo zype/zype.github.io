@@ -17,7 +17,7 @@ Parameter | Function | Type
 --------- | -------- | ----
 playlist_id | Lists content rules for the playlist (Example: 5389352e69702d401b000001) | String
 
-###Retrieve a Content Rule
+### Retrieve a Content Rule
 <pre><b>GET</b> https://api.zype.com/playlists/[playlist_id]/content_rules/[id]
 </pre>
 
@@ -116,4 +116,3 @@ id | ID of the record to be deleted. Example: 540731274c616e047a000000 | String
   }
 }
 </pre>
-
