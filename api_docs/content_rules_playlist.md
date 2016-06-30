@@ -28,7 +28,7 @@ Parameter | Function | Type
 id        | ID of the record (Example: 5389352e69702d401b000000) | String
 playlist_id | Playlist ID the content rule is associated with (Example: 5389352e69702d401b000001) | String
 
-###Create a Content Rule for a Playlist
+### Create a Content Rule for a Playlist
 <pre><b>POST</b> https://api.zype.com/playlists/[playlist_id]/content_rules
 </pre>
 
@@ -67,7 +67,7 @@ content_rule[geographies[countries]] | An array of country abbreviation codes. F
 
 
 
-###Update a Content Rule
+### Update a Content Rule
 <pre><b>PUT</b> https://api.zype.com/playlists/[playlist_id]/content_rules/[id]</pre>
 
 #### Parameters
@@ -82,7 +82,7 @@ content_rule[stackable] | The gender of the content rule. Default *true* | Boole
 content_rule[policy] | 'allow' will allow the content to be accessed if the rule matches. ‘deny’ will deny the content from being accessed if the rule matches. Valid policies are "allow" or "deny". Default *"deny"* | String
 content_rule[geographies[countries]] | An array of country abbreviation codes. For example ["US", "GB"] | Array
 
-###Delete a Content Rule
+### Delete a Content Rule
 <pre><b>DELETE</b> https://api.zype.com/playlists/[playlist_id]/content_rules/[id]
 </pre>
 
