@@ -27,7 +27,7 @@ q         | Filter records by keyword | String
 rss_token | Filter records by RSS token | String
 stripe_id | Filter records by Stripe ID | String
 
-###Create a Consumer
+### Create a Consumer
 <pre><b>POST</b> https://api.zype.com/consumers
 </pre>
 
@@ -46,7 +46,7 @@ consumer[password_token] | The password token to use during password reset workf
 consumer[remember_token] | The password token to use during remember login workflows | String
 consumer[super_watcher] | Boolean field to indicate that a consumer is exempt from content rules | String
 
-###Retrieve a Consumer
+### Retrieve a Consumer
 <pre><b>GET</b> https://api.zype.com/consumers/[id]
 </pre>
 
@@ -56,7 +56,7 @@ Parameter | Function | Type
 --------- | -------- | ----
 id        | ID of the record (Example: 5389352e69702d401b000000) | String
 
-###Update a Consumer
+### Update a Consumer
 <pre><b>PUT</b> https://api.zype.com/consumers/[id]</pre>
 
 #### Parameters
@@ -75,7 +75,7 @@ consumer[password_token] | The password token to use during password reset workf
 consumer[remember_token] | The password token to use during remember login workflows | String
 consumer[super_watcher] | Boolean field to indicate that a consumer is exempt from content rules | String
 
-###Delete a Consumer
+### Delete a Consumer
 <pre><b>DELETE</b> https://api.zype.com/consumers/[id]
 </pre>
 

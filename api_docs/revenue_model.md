@@ -25,7 +25,7 @@ q         | Filter records by keyword | String
 sort      | Sort records on the specified field | String
 title     | Filter records by title | String
 
-###Retrieve a Revenue Model
+### Retrieve a Revenue Model
 <pre><b>GET</b> https://api.zype.com/revenue_models/[id]
 </pre>
 

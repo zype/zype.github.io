@@ -48,7 +48,7 @@ subscription[status] | Valid values are 'canceled' or 'active'. If left empty, '
 subscription[cancelled_at] | If the subscription has already been cancelled at a certain date (optional) | String
 subscription[cancel_at_period_end] | Set Stripe subscription to cancel at period end (optional) | String
 
-###Retrieve a Subscription
+### Retrieve a Subscription
 <pre>
   <b>GET</b> https://api.zype.com/subscriptions/{id}
 </pre>

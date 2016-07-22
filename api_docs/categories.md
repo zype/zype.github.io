@@ -24,7 +24,7 @@ q         | Filter records by keyword | String
 sort      | Sort records on the specified field | String
 title     | Filter records by title | String
 
-###Retrieve a Category
+### Retrieve a Category
 <pre><b>GET</b> https://api.zype.com/categories/[id]
 </pre>
 
@@ -34,7 +34,7 @@ Parameter | Function | Type
 --------- | -------- | ----
 id        | ID of the record (Example: 5389352e69702d401b000000) | String
 
-###Create a Category
+### Create a Category
 <pre><b>POST</b> https://api.zype.com/categories
 </pre>
 
@@ -45,7 +45,7 @@ Parameter | Function | Type
 category[title] | Title of the category | String
 category[values] | Values for the category | Array
 
-###Update a Category
+### Update a Category
 <pre><b>PUT</b> https://api.zype.com/categories/[id]</pre>
 
 #### Parameters
@@ -56,7 +56,7 @@ id | ID of the record to update (Example: 540731274c616e047a000000) | String
 category[title] | Title of the category | String
 category[values] | Values for the category | Array
 
-###Delete a Category
+### Delete a Category
 <pre><b>DELETE</b> https://api.zype.com/categories/[id]
 </pre>
 

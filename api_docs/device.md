@@ -25,7 +25,7 @@ q         | Filter records by keyword | String
 sort      | Sort records on the specified field | String
 title     | Filter records by title | String
 
-###Retrieve a Device
+### Retrieve a Device
 <pre><b>GET</b> https://api.zype.com/devices/[id]
 </pre>
 

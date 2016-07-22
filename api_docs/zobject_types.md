@@ -22,7 +22,7 @@ per_page | The number of records to return (Example: 10) | Integer
 q         | Filter records by keyword | String
 
 
-###Retrieve a Zobject Type
+### Retrieve a Zobject Type
 <pre><b>GET</b> https://api.zype.com/zobject_types/[id]
 </pre>
 
@@ -32,7 +32,7 @@ Parameter | Function | Type
 --------- | -------- | ----
 id        | ID of the record (Example: 5389352e69702d401b000000) | String
 
-###Create a Zobject Type
+### Create a Zobject Type
 <pre><b>POST</b> https://api.zype.com/zobject_types
 </pre>
 
@@ -48,7 +48,7 @@ zobject_type[zobject_attributes][x][field_name] | Name of the zobject type custo
 zobject_type[zobject_attributes][x][field_type] | Type of the zobject type custom attribute. Example: integer | String
 zobject_type[zobject_attributes][x][description] | Description of the zobject type custom attribute | String
 
-###Update a Zobject Type
+### Update a Zobject Type
 <pre><b>PUT</b> https://api.zype.com/zobject_types/[id]</pre>
 
 #### Parameters
@@ -65,7 +65,7 @@ zobject_type[zobject_attributes][x][field_name] | Name of the zobject type custo
 zobject_type[zobject_attributes][x][field_type] | Type of the zobject type custom attribute. Example: integer | String
 zobject_type[zobject_attributes][x][description] | Description of the zobject type custom attribute | String
 
-###Delete a Zobject Type
+### Delete a Zobject Type
 <pre><b>DELETE</b> https://api.zype.com/zobject_types/[id]
 </pre>
 

@@ -19,7 +19,7 @@ q         | Filter records by keyword | String
 id        | Filter records by ID | String
 id!       | Exclude records by ID | String
 
-###Retrieve a Plan
+### Retrieve a Plan
 <pre><b>GET</b> https://api.zype.com/plans/[id]</pre>
 
 #### Parameters
@@ -28,7 +28,7 @@ Parameter | Function | Type
 --------- | -------- | ----
 id        | ID of the record to retrieve (Example: 5389352e69702d401b000000) | String
 
-###Plan Object
+### Plan Object
 <pre>
 {
   "_id": "544813e74c616e0dc0000000",

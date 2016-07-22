@@ -65,7 +65,7 @@ video[discovery_url] | The URL where the video will be hosted, this field can be
 video[source_id] | An optional user specified identifier for a video | String
 video[custom_thumbnail_url] | A URL where a custom thumbnail for the video can be retrieved (JPEG, PNG or GIF) | String
 
-###Retrieve a Video
+### Retrieve a Video
 <pre><b>GET</b> https://api.zype.com/videos/[id]
 </pre>
 
@@ -102,7 +102,7 @@ video[discovery_url] | The URL where the video will be hosted, this field can be
 video[source_id] | An optional user specified identifier for a video | String
 video[custom_thumbnail_url] | A URL where a custom thumbnail for the video can be retrieved (JPEG, PNG or GIF) | String
 
-###Delete a Video
+### Delete a Video
 <pre><b>DELETE</b> https://api.zype.com/videos/[id]
 </pre>
 

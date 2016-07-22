@@ -37,7 +37,7 @@ consumer_id      | ID of the consumer to link | String
 pin | The value for the acquired device pin (Example: zabc123) | String
 
 
-###Device Pin Object
+### Device Pin Object
 
 <pre>
 {

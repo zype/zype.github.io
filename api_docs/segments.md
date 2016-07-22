@@ -17,7 +17,7 @@ Parameter | Function | Type
 --------- | -------- | ----
 video_id  | ID of the parent video (Example: 5389352e69702d401b000000) | String
 
-###Retrieve a Segment
+### Retrieve a Segment
 <pre><b>GET</b> https://api.zype.com/videos/[video_id]/segments/[id]
 </pre>
 
@@ -28,7 +28,7 @@ Parameter | Function | Type
 video_id        | ID of the parent video (Example: 5389352e69702d401b000000) | String
 id        | ID of the record (Example: 5389352e69702d401b000000) | String
 
-###Create a Segment
+### Create a Segment
 <pre><b>POST</b> https://api.zype.com/videos/[video_id]/segments
 </pre>
 
@@ -41,7 +41,7 @@ segment[description] | The description for the video segment | String
 segment[start] | The point in the video where the segment begins | Integer
 segment[end] | The point in the video where the segment ends | Integer
 
-###Update a Segment
+### Update a Segment
 <pre><b>PUT</b> https://api.zype.com/videos/[video_id]/segments/[id]</pre>
 
 #### Parameters
@@ -53,7 +53,7 @@ segment[description] | The description for the video segment | String
 segment[start] | The point in the video where the segment begins | Integer
 segment[end] | The point in the video where the segment ends | Integer
 
-###Delete a Segment
+### Delete a Segment
 <pre><b>DELETE</b> https://api.zype.com/videos/[video_id]/segments/[id]
 </pre>
 
