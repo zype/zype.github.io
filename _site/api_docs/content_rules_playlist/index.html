@@ -6,12 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>Zype Developer Portal | Zobjects</title>
+    <title>Zype Developer Portal | Playlist Content Rules</title>
     <meta name="description" content="This is the devloper portal for Zype Media. Zype is Revenue and Reach Magic for Online Video. We help content owners deliver fully branded video experiences.
 ">
 
     <link rel="stylesheet" href="/css/main.css">
-    <link rel="canonical" href="http://dev.zype.com/api_docs/zobject_docs/">
+    <link rel="canonical" href="http://dev.zype.com/api_docs/content_rules_playlist/">
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="shortcut icon" href="/assets/favicon.ico" />
 
@@ -117,22 +117,230 @@
 
 
     <section id="main" class="api-docs">
-      <h2 id="zobjects">Zobjects</h2>
+      <h2 id="playlist-content-rules">Playlist Content Rules</h2>
+<hr />
 
-<p>The Zype API is feature rich, so we want to provide you with a place to learn more about it. The documentation below will help you with a number of objects based around zobjects.</p>
+<h3 id="list-content-rules-for-playlist">List Content Rules For Playlist</h3>
+<pre>
+<b>GET</b> https://api.zype.com/playlists/[playlist_id]/content_rules
+</pre>
 
-<div style="width: 100%; display: inline-flex;">
-  <div style="width: 50%;">
-    <div style="margin: 20px;">
-      <span class="fa fa-file-text" style="margin-right: 4px;"></span>
-      <a href="http://dev.zype.com/api_docs/zobject_types/">Zobject Types</a>
-    </div>
-    <div style="margin: 20px;">
-      <span class="fa fa-file-text" style="margin-right: 4px;"></span>
-      <a href="http://dev.zype.com/api_docs/zobjects/">Zobjects</a>
-    </div>
-  </div>
-</div>
+<h4 id="parameters">Parameters</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Function</th>
+      <th>Type</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>playlist_id</td>
+      <td>Lists content rules for the playlist (Example: 5389352e69702d401b000001)</td>
+      <td>String</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="retrieve-a-content-rule">Retrieve a Content Rule</h3>
+<pre><b>GET</b> https://api.zype.com/playlists/[playlist_id]/content_rules/[id]
+</pre>
+
+<h4 id="parameters-1">Parameters</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Function</th>
+      <th>Type</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>id</td>
+      <td>ID of the record (Example: 5389352e69702d401b000000)</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>playlist_id</td>
+      <td>Playlist ID the content rule is associated with (Example: 5389352e69702d401b000001)</td>
+      <td>String</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="create-a-content-rule-for-a-playlist">Create a Content Rule for a Playlist</h3>
+<pre><b>POST</b> https://api.zype.com/playlists/[playlist_id]/content_rules
+</pre>
+
+<h4 id="parameters-2">Parameters</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Function</th>
+      <th>Type</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>playlist_id</td>
+      <td>Playlist ID the content rule is associated with (Example: 5389352e69702d401b000001)</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>content_rule[name]</td>
+      <td>The name for the content rule</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>content_rule[priority]</td>
+      <td>The priority of the content rule. Default <em>1</em></td>
+      <td>Integer</td>
+    </tr>
+    <tr>
+      <td>content_rule[stackable]</td>
+      <td>The gender of the content rule. Default <em>true</em></td>
+      <td>Boolean</td>
+    </tr>
+    <tr>
+      <td>content_rule[policy]</td>
+      <td>‘allow’ will allow the content to be accessed if the rule matches. ‘deny’ will deny the content from being accessed if the rule matches. Valid policies are “allow” or “deny”. Default <em>“deny”</em></td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>content_rule[geographies[countries]]</td>
+      <td>An array of country abbreviation codes. For example [“US”, “GB”]</td>
+      <td>Array</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="example-json-for-post-create">Example JSON for POST create</h4>
+
+<pre>
+  {
+    "api_key": "[ADMIN_KEY]",
+    "content_rule": {
+      "enabled": true,
+      "geographies": [
+        {
+          "countries": [
+            "GB"
+          ]
+        }
+      ],
+      "name": "My new content rule",
+      "policy": "deny",
+      "priority": 1,
+      "stackable": true
+    }
+  }
+</pre>
+
+<h3 id="update-a-content-rule">Update a Content Rule</h3>
+<pre><b>PUT</b> https://api.zype.com/playlists/[playlist_id]/content_rules/[id]</pre>
+
+<h4 id="parameters-3">Parameters</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Function</th>
+      <th>Type</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>id</td>
+      <td>ID of the record to update (Example: 540731274c616e047a000000)</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>playlist_id</td>
+      <td>Playlist ID the content rule is associated with (Example: 5389352e69702d401b000001)</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>content_rule[name]</td>
+      <td>The name for the content rule</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>content_rule[priority]</td>
+      <td>The priority of the content rule. Default <em>1</em></td>
+      <td>Integer</td>
+    </tr>
+    <tr>
+      <td>content_rule[stackable]</td>
+      <td>The gender of the content rule. Default <em>true</em></td>
+      <td>Boolean</td>
+    </tr>
+    <tr>
+      <td>content_rule[policy]</td>
+      <td>‘allow’ will allow the content to be accessed if the rule matches. ‘deny’ will deny the content from being accessed if the rule matches. Valid policies are “allow” or “deny”. Default <em>“deny”</em></td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>content_rule[geographies[countries]]</td>
+      <td>An array of country abbreviation codes. For example [“US”, “GB”]</td>
+      <td>Array</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="delete-a-content-rule">Delete a Content Rule</h3>
+<pre><b>DELETE</b> https://api.zype.com/playlists/[playlist_id]/content_rules/[id]
+</pre>
+
+<h4 id="parameters-4">Parameters</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Function</th>
+      <th>Type</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>id</td>
+      <td>ID of the record to be deleted. Example: 540731274c616e047a000000</td>
+      <td>String</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="content-rule-object">Content Rule Object</h3>
+
+<pre>
+{
+  "response": {
+    "_id": "577528faf283470887000009",
+    "created_at": "2016-06-30T10:13:14.555-04:00",
+    "enabled": true,
+    "geographies": [
+      {
+        "_id": "577529daf28347088700000a",
+        "countries": [
+          "GB"
+        ]
+      }
+    ],
+    "name": "My new content rule",
+    "policy": "deny",
+    "priority": 1,
+    "stackable": true,
+    "updated_at": "2016-06-30T10:16:58.651-04:00"
+  }
+}
+</pre>
 
     </section>
 
