@@ -27,16 +27,6 @@ q         | Filter records by keyword | String
 rss_token | Filter records by RSS token | String
 stripe_id | Filter records by Stripe ID | String
 
-###Retrieve a Consumer
-<pre><b>GET</b> https://api.zype.com/consumers/[id]
-</pre>
-
-#### Parameters
-
-Parameter | Function | Type
---------- | -------- | ----
-id        | ID of the record (Example: 5389352e69702d401b000000) | String
-
 ###Create a Consumer
 <pre><b>POST</b> https://api.zype.com/consumers
 </pre>
@@ -52,6 +42,19 @@ consumer[sex] | The gender of the consumer | String
 consumer[birthday] | The birthday of the consumer, | String
 consumer[updates] | Boolean field to store if the consumer has agreed to receive updates | Boolean
 consumer[terms] | Boolean field to store if the consumer has agreed to terms and conditions | Boolean
+consumer[password_token] | The password token to use during password reset workflows | String
+consumer[remember_token] | The password token to use during remember login workflows | String
+consumer[super_watcher] | Boolean field to indicate that a consumer is exempt from content rules | String
+
+###Retrieve a Consumer
+<pre><b>GET</b> https://api.zype.com/consumers/[id]
+</pre>
+
+#### Parameters
+
+Parameter | Function | Type
+--------- | -------- | ----
+id        | ID of the record (Example: 5389352e69702d401b000000) | String
 
 ###Update a Consumer
 <pre><b>PUT</b> https://api.zype.com/consumers/[id]</pre>
@@ -70,6 +73,7 @@ consumer[updates] | Boolean field to store if the consumer has agreed to receive
 consumer[terms] | Boolean field to store if the consumer has agreed to terms and conditions | Boolean
 consumer[password_token] | The password token to use during password reset workflows | String
 consumer[remember_token] | The password token to use during remember login workflows | String
+consumer[super_watcher] | Boolean field to indicate that a consumer is exempt from content rules | String
 
 ###Delete a Consumer
 <pre><b>DELETE</b> https://api.zype.com/consumers/[id]
