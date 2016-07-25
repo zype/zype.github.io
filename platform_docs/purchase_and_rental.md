@@ -101,8 +101,13 @@ You are able to override the default embed settings on a per embed basis using J
   </tr>
   <tr>
     <td>couponsEnabled</td>
-    <td>zype.couponsEnabled = true</td>
+    <td>zype.couponsEnabled = true;</td>
     <td>Whether or not to have the coupon code field on new subscription sign ups</td>
+  </tr>
+  <tr>
+    <td>dvr</td>
+    <td>zype.dvr = false;</td>
+    <td>If set to false will disable the dvr on live streams</td>
   </tr>
 </table>
 

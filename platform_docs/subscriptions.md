@@ -70,11 +70,12 @@ backgroundColor | zype.backgroundColor = '#264547'; | Hexcolor of background if 
 autoPlay | zype.autoPlay = true;   | Whether or not videos should autoplay
 appName | zype.appName = 'My app name'; | Name of your app
 showZype | zype.showZype = true; | Whether or not to show "Powered by Zype"
-couponsEnabled | zype.couponsEnabled = true | Whether or not to have the coupon code field on new subscription sign ups
-disableSubscription | zype.disableSubscription = true | If set will disable the subscription button on the widget
-disablePurchase | zype.disablePurchase = true | If set will disable the purchase button on the widget
-disableRental | zype.disableRental = true | If set will disable the rental button on the widget
-disablePass | zype.disablePass = true | If set will disable the pass plan button on the widget
+couponsEnabled | zype.couponsEnabled = true; | Whether or not to have the coupon code field on new subscription sign ups
+disableSubscription | zype.disableSubscription = true; | If set will disable the subscription button on the widget
+disablePurchase | zype.disablePurchase = true; | If set will disable the purchase button on the widget
+disableRental | zype.disableRental = true; | If set will disable the rental button on the widget
+disablePass | zype.disablePass = true; | If set will disable the pass plan button on the widget
+dvr | zype.dvr = false; | If set to false will disable the dvr on live streams
 
 <hr id='3'>
 
