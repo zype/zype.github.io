@@ -2,12 +2,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Zype Dev Portal</title>
-    <description>This is the devloper portal for Zype Media. Zype is Revenue and Reach Magic for Online Video. We help content owners deliver fully branded video experiences.
+    <description>This is the developer portal for Zype Media. We help content owners deliver fully branded video experiences.
 </description>
     <link>http://dev.zype.com/</link>
     <atom:link href="http://dev.zype.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Wed, 24 Aug 2016 14:42:23 -0400</pubDate>
-    <lastBuildDate>Wed, 24 Aug 2016 14:42:23 -0400</lastBuildDate>
+    <pubDate>Wed, 24 Aug 2016 14:45:46 -0400</pubDate>
+    <lastBuildDate>Wed, 24 Aug 2016 14:45:46 -0400</lastBuildDate>
     <generator>Jekyll v3.0.2</generator>
     
       <item>

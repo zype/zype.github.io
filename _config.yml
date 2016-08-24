@@ -2,7 +2,7 @@
 title: Zype Dev Portal
 email: developers@zype.com
 description: > # this means to ignore newlines until "baseurl:"
-  This is the devloper portal for Zype Media. Zype is Revenue and Reach Magic for Online Video. We help content owners deliver fully branded video experiences.
+  This is the developer portal for Zype Media. We help content owners deliver fully branded video experiences.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://dev.zype.com" # the base hostname & protocol for your site
 twitter_username: zype
