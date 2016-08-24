@@ -132,6 +132,18 @@ Parameter | Function | Type
 id        | ID of the record (Example: 5389352e69702d401b000000) | String
 zobject_id[] | The zobject IDs to remove | Array
 
+### Download Source File
+
+For Zype Hosted videos you can download the original source file.
+
+<pre><b>PUT</b> https://api.zype.com/videos/[id]/download</pre>
+
+#### Parameters
+
+Parameter | Function | Type
+--------- | -------- | ----
+id        | ID of the record (Example: 5389352e69702d401b000000) | String
+
 ### Video Object
 
 <pre>
@@ -226,5 +238,16 @@ zobject_id[] | The zobject IDs to remove | Array
       "width": 480
     }
   ]
+}
+</pre>
+
+### Download Object
+
+<pre>
+{
+  response: {
+    url: "https://zype-upload-prod.s3.amazonaws.com/uploads/57ae371e72289b0d7d00100e/upload.mp4?AWSAccessKeyId=AKIAJ246RBDWDIRI2DVA&Expires=1472064425&Signature=K8rgZ7X8A5ayqW1miUx%2FC4oxytM%3D",
+    filesize: 208169473
+  }
 }
 </pre>

@@ -569,6 +569,31 @@
   </tbody>
 </table>
 
+<h3 id="download-source-file">Download Source File</h3>
+
+<p>For Zype Hosted videos you can download the original source file.</p>
+
+<pre><b>PUT</b> https://api.zype.com/videos/[id]/download</pre>
+
+<h4 id="parameters-7">Parameters</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Function</th>
+      <th>Type</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>id</td>
+      <td>ID of the record (Example: 5389352e69702d401b000000)</td>
+      <td>String</td>
+    </tr>
+  </tbody>
+</table>
+
 <h3 id="video-object">Video Object</h3>
 
 <pre>
@@ -663,6 +688,17 @@
       "width": 480
     }
   ]
+}
+</pre>
+
+<h3 id="download-object">Download Object</h3>
+
+<pre>
+{
+  response: {
+    url: "https://zype-upload-prod.s3.amazonaws.com/uploads/57ae371e72289b0d7d00100e/upload.mp4?AWSAccessKeyId=AKIAJ246RBDWDIRI2DVA&amp;Expires=1472064425&amp;Signature=K8rgZ7X8A5ayqW1miUx%2FC4oxytM%3D",
+    filesize: 208169473
+  }
 }
 </pre>
 
