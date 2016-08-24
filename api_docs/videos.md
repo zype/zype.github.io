@@ -136,7 +136,7 @@ zobject_id[] | The zobject IDs to remove | Array
 
 For Zype Hosted videos you can download the original source file.
 
-<pre><b>PUT</b> https://api.zype.com/videos/[id]/download</pre>
+<pre><b>GET</b> https://api.zype.com/videos/[id]/download</pre>
 
 #### Parameters
 
