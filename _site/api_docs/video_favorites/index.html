@@ -6,12 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>Zype Developer Portal | Apps</title>
+    <title>Zype Developer Portal | Video Favorites</title>
     <meta name="description" content="This is the developer portal for Zype Media. We help content owners deliver fully branded video experiences.
 ">
 
     <link rel="stylesheet" href="/css/main.css">
-    <link rel="canonical" href="http://dev.zype.com/api_docs/apps/">
+    <link rel="canonical" href="http://dev.zype.com/api_docs/video_favorites/">
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="shortcut icon" href="/assets/favicon.ico" />
 
@@ -118,11 +118,55 @@
 
 
     <section id="main" class="api-docs">
-      <h2 id="apps">Apps</h2>
+      <h2 id="video-favorites">Video Favorites</h2>
 <hr />
 
-<h3 id="retrieve-app">Retrieve App</h3>
-<pre><b>GET</b> https://api.zype.com/app</pre>
+<h3 id="list-video-favorite-objects">List Video Favorite Objects</h3>
+<pre>
+<b>GET</b> https://api.zype.com/consumers/[consumer_id]/video_favorites
+</pre>
+
+<h4 id="macros">Macros</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Macro</th>
+      <th>Function</th>
+      <th>Type</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>[consumer_id]</td>
+      <td>ID of the customer object (Example: 5389321e69702d401b120000)</td>
+      <td>String</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="create-a-video-favorite-object">Create a Video Favorite Object</h3>
+<pre><b>POST</b> https://api.zype.com/consumers/[consumer_id]/video_favorites
+</pre>
+
+<h4 id="macros-1">Macros</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Macro</th>
+      <th>Function</th>
+      <th>Type</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>[consumer_id]</td>
+      <td>ID of the customer object (Example: 5389321e69702d401b120000)</td>
+      <td>String</td>
+    </tr>
+  </tbody>
+</table>
 
 <h4 id="parameters">Parameters</h4>
 
@@ -136,25 +180,51 @@
   </thead>
   <tbody>
     <tr>
-      <td>app_key</td>
-      <td>The app key</td>
+      <td>video_id</td>
+      <td>ID of the video objecct (Example: 56d7594a0f8asd081208e4)</td>
       <td>String</td>
     </tr>
   </tbody>
 </table>
 
-<h3 id="app-object">App Object</h3>
-<p>App profiles vary by the type of application.</p>
+<h3 id="delete-a-video-favorite-object">Delete a Video Favorite Object</h3>
+<pre><b>DELETE</b> https://api.zype.com/consumers/[consumer_id]/video_favorites/[video_favorite_id]
+</pre>
+
+<h4 id="macros-2">Macros</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Macro</th>
+      <th>Function</th>
+      <th>Type</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>[consumer_id]</td>
+      <td>ID of the customer object (Example: 5389321e69702d401b120000)</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>[video_favorite_id]</td>
+      <td>ID of the video favorite object (Example: 57cbb0a375jf9asd87011259)</td>
+      <td>String</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="video-favorite-object">Video Favorite Object</h3>
+
 <pre>
 {
-  "_id": "12345",
-  "active": true,
-  "app_type_id": "12345",
-  "site_id": "abc1234",
-  "store_id": "abc1234",
-  "title": "Roku Title",
-  "version": 1.0,
-  "store_icon_url": null
+  "_id": "57cbb1231c4f960kj2015812",
+  "consumer_id": "57cbg120e43f9aa981018199",
+  "created_at": "2016-09-04T01:26:59.480-04:00",
+  "deleted_at": null,
+  "updated_at": "2016-09-04T01:26:59.480-04:00",
+  "video_id": "56d7594a8f7aca08aabbc8e3"
 }
 </pre>
 
