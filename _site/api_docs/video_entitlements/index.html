@@ -119,6 +119,59 @@
 
     <section id="main" class="api-docs">
       <h2 id="video-entitlements">Video Entitlements</h2>
+
+<hr />
+
+<h3 id="check-video-entitlement">Check Video Entitlement</h3>
+
+<p>Check if a consumer has access to a video (entitled).</p>
+
+<pre>
+<b>GET</b> https://api.zype.com/videos/[video_id]/entitled
+</pre>
+
+<h4 id="macros">Macros</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Macro</th>
+      <th>Function</th>
+      <th>Type</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>video_id</td>
+      <td>Video object ID</td>
+      <td>String</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="parameters">Parameters</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Function</th>
+      <th>Type</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>access_token</td>
+      <td>OAuth token of a consumer</td>
+      <td>String</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="errors">Errors</h4>
+
+<p><strong>422</strong>: A consumer do not have permission to play this video</p>
+
 <hr />
 
 <h3 id="list-video-entitlements">List Video Entitlements</h3>
@@ -126,7 +179,7 @@
 <b>GET</b> https://api.zype.com/consumer/videos
 </pre>
 
-<h4 id="parameters">Parameters</h4>
+<h4 id="parameters-1">Parameters</h4>
 
 <table>
   <thead>
