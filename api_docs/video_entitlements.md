@@ -5,6 +5,33 @@ permalink: /api_docs/video_entitlements/
 ---
 
 ## Video Entitlements
+
+<hr />
+
+### Check Video Entitlement
+
+Check if a consumer has access to a video (entitled).
+
+<pre>
+<b>GET</b> https://api.zype.com/videos/[video_id]/entitled
+</pre>
+
+#### Macros
+
+Macro | Function | Type
+----- | -------- | ----
+video_id | Video object ID | String
+
+#### Parameters
+
+Parameter | Function | Type
+--------- | -------- | ----
+access_token | OAuth token of a consumer | String
+
+#### Errors
+
+**422**: A consumer do not have permission to play this video
+
 <hr />
 ### List Video Entitlements
 <pre>
