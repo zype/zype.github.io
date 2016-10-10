@@ -6,9 +6,9 @@
 </description>
     <link>http://dev.zype.com/</link>
     <atom:link href="http://dev.zype.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Fri, 16 Sep 2016 11:04:53 -0400</pubDate>
-    <lastBuildDate>Fri, 16 Sep 2016 11:04:53 -0400</lastBuildDate>
-    <generator>Jekyll v3.0.2</generator>
+    <pubDate>Mon, 10 Oct 2016 14:04:22 -0400</pubDate>
+    <lastBuildDate>Mon, 10 Oct 2016 14:04:22 -0400</lastBuildDate>
+    <generator>Jekyll v3.0.0</generator>
     
       <item>
         <title>MRSS Import Format</title>
@@ -687,7 +687,7 @@ This is useful if you have specific campaigns or goals. For example, if your pla
 
 &lt;p&gt;The general format for usage is:&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;
+&lt;p&gt;&lt;code&gt;
 https://player.zype.com/embed/[video_id].html?autoplay=true&amp;amp;api_key=[api_key]&amp;amp;tracking_code=[tracking_code]&amp;amp;tracking_partner=[tracking_partner]
 &lt;/code&gt;&lt;/p&gt;
 
@@ -697,7 +697,7 @@ https://player.zype.com/embed/[video_id].html?autoplay=true&amp;amp;api_key=[api
 
 &lt;p&gt;Let’s say you are embedding your videos on a site iWidgets. To track impressions by that partner you’d add tracking_partner=iwidgets to your Embed Code url:&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;
+&lt;p&gt;&lt;code&gt;
 https://player.zype.com/embed/[video_id].html?autoplay=true&amp;amp;api_key=[api_key]&amp;amp;tracking_partner=iwidgets
 &lt;/code&gt;&lt;/p&gt;
 
@@ -705,11 +705,11 @@ https://player.zype.com/embed/[video_id].html?autoplay=true&amp;amp;api_key=[api
 
 &lt;p&gt;If you’d like to get more details you can add a Tracking Code. Tracking Codes are grouped by Tracking Partner. For example, if the iWidgets site is placing your videos on the &lt;b&gt;home&lt;/b&gt; page and on the &lt;b&gt;store&lt;/b&gt; page you could track how each of these individually performs, by adding &lt;b&gt;tracking_code=home&lt;/b&gt; and &lt;b&gt;tracking_code=store&lt;/b&gt;. For example&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;
+&lt;p&gt;&lt;code&gt;
 https://player.zype.com/embed/[video_id].html?autoplay=true&amp;amp;api_key=[api_key]&amp;amp;tracking_partner=iwidgets&amp;amp;tracking_code=home
 &lt;/code&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;
+&lt;p&gt;&lt;code&gt;
 https://player.zype.com/embed/[video_id].html?autoplay=true&amp;amp;api_key=[api_key]&amp;amp;tracking_partner=iwidgets&amp;amp;tracking_code=store
 &lt;/code&gt;&lt;/p&gt;
 
@@ -725,7 +725,7 @@ https://player.zype.com/embed/[video_id].html?autoplay=true&amp;amp;api_key=[api
 
 &lt;p&gt;&lt;b&gt;Copy&lt;/b&gt; the embed code. Then modify the &lt;b&gt;src&lt;/b&gt; by adding the &lt;b&gt;tracking_partner&lt;/b&gt; and &lt;b&gt;tracking_code&lt;/b&gt; parameters. Note that you must always add the &lt;b&gt;tracking_partner&lt;/b&gt;. The tracking_code is optional.&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;
+&lt;p&gt;&lt;code&gt;
 https://player.zype.com/embed/[video_id].html?autoplay=true&amp;amp;api_key=[api_key]&amp;amp;tracking_code=[tracking_code]&amp;amp;tracking_partner=[tracking_partner]
 &lt;/code&gt;&lt;/p&gt;
 
@@ -737,7 +737,7 @@ https://player.zype.com/embed/[video_id].html?autoplay=true&amp;amp;api_key=[api
 
 &lt;p&gt;&lt;b&gt;Copy&lt;/b&gt; the paywall embed code. You’ll have to add &lt;b&gt;zype.tracking_partner=[tracking_partner]; zype.tracking_code=[tracking_code];&lt;/b&gt; in the second script tag. Be sure to add it before the zype.VideoEmbed() function. For example:&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;
+&lt;p&gt;&lt;code&gt;
 &amp;lt;script type=&quot;text/javascript&quot; src=&quot;https://play.zype.com/javascripts/subscription_embed.js&quot;&amp;gt;&amp;lt;/script&amp;gt;&amp;lt;div id=&#39;zype_553297c169702d0885a4435b&#39; style=&#39;width:100%; min-width:300px; max-width:560px;&#39;&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;script&amp;gt;zype.siteId = &#39;F7DbcH2vVnvPtYRIY1Xq9z92Bypj90i2uEcudIqK8KhNl_y-xWQNIi2UfpfzZl3N&#39;; zype.tracking_partner=[tracking_partner]; zype.tracking_code=[tracking_code]; zype.videoId = &#39;553297c169702d0885a4435b&#39;;zype.videoEmbed(&#39;zype_553297c169702d0885a4435b&#39;);&amp;lt;/script&amp;gt;
 &lt;/code&gt;&lt;/p&gt;
 </description>
