@@ -6,12 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>Zype Developer Portal | Zobjects</title>
-    <meta name="description" content="This is the developer portal for Zype Media. We help content owners deliver fully branded video experiences.
+    <title>Zype Developer Portal | Video Favorites</title>
+    <meta name="description" content="This is the devloper portal for Zype Media. Zype is Revenue and Reach Magic for Online Video. We help content owners deliver fully branded video experiences.
 ">
 
     <link rel="stylesheet" href="/css/main.css">
-    <link rel="canonical" href="http://dev.zype.com/api_docs/zobjects/">
+    <link rel="canonical" href="http://localhost:4000/api_docs/vide_favorites/">
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="shortcut icon" href="/assets/favicon.ico" />
 
@@ -67,7 +67,7 @@
 
       <header id="header" style="overflow-y: scroll;">
     <div id="content">
-      <a href="/"><img src="http://dev.zype.com/assets/logo.png" alt="Zype" />
+      <a href="/"><img src="http://localhost:4000/assets/logo.png" alt="Zype" />
       <h1 id="title">Developer Portal</h1></a>
       <p class="light">a knowledge base</p>
       <br>
@@ -118,11 +118,13 @@
 
 
     <section id="main" class="api-docs">
-      <h2 id="zobjects-collection">Zobjects Collection</h2>
+      <h2 id="consumers">Consumers</h2>
 <hr />
 
-<h3 id="list-zobjects">List Zobjects</h3>
-<pre><b>GET</b> https://api.zype.com/zobjects</pre>
+<h3 id="list-consumers">List Consumers</h3>
+<pre>
+<b>GET</b> https://api.zype.com/consumers
+</pre>
 
 <h4 id="parameters">Parameters</h4>
 
@@ -136,19 +138,39 @@
   </thead>
   <tbody>
     <tr>
-      <td>custom</td>
-      <td>Filter records by custom attribues (Example: color=blue)</td>
+      <td>braintree_id</td>
+      <td>Filter records by Braintree ID</td>
       <td>String</td>
     </tr>
     <tr>
-      <td>order</td>
-      <td>Sort records in ascending or descending order (Example: asc/desc)</td>
+      <td>created_at</td>
+      <td>Filter the records returned by created date. Greater or less than filters can be used by adding a suffix (Example: created_at.gte)</td>
+      <td>Date</td>
+    </tr>
+    <tr>
+      <td>email</td>
+      <td>Filter records by email</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>id</td>
+      <td>Filter records by ID</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>id!</td>
+      <td>Exclude records by ID</td>
       <td>String</td>
     </tr>
     <tr>
       <td>page</td>
       <td>The page number of records to return (Example: 1)</td>
       <td>Integer</td>
+    </tr>
+    <tr>
+      <td>password_token</td>
+      <td>Filter records by password reset token</td>
+      <td>String</td>
     </tr>
     <tr>
       <td>per_page</td>
@@ -161,20 +183,21 @@
       <td>String</td>
     </tr>
     <tr>
-      <td>sort</td>
-      <td>Sort records on the specified field</td>
+      <td>rss_token</td>
+      <td>Filter records by RSS token</td>
       <td>String</td>
     </tr>
     <tr>
-      <td>zobject_type</td>
-      <td>The type of zobject (Example: guest)</td>
+      <td>stripe_id</td>
+      <td>Filter records by Stripe ID</td>
       <td>String</td>
     </tr>
   </tbody>
 </table>
 
-<h3 id="create-a-zobject">Create a Zobject</h3>
-<pre><b>POST</b> https://api.zype.com/zobjects</pre>
+<h3 id="create-a-consumer">Create a Consumer</h3>
+<pre><b>POST</b> https://api.zype.com/consumers
+</pre>
 
 <h4 id="parameters-1">Parameters</h4>
 
@@ -188,45 +211,61 @@
   </thead>
   <tbody>
     <tr>
-      <td>zobject_type</td>
-      <td>The type of zobject</td>
+      <td>consumer[email]</td>
+      <td>The consumer’s email address (must be unique)</td>
       <td>String</td>
     </tr>
     <tr>
-      <td>zobject[active]</td>
-      <td>Whether or not the zobject is active</td>
+      <td>consumer[password]</td>
+      <td>The password for the consumer. The password is used for consumer authentication</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>consumer[name]</td>
+      <td>The name of the consumer</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>consumer[sex]</td>
+      <td>The gender of the consumer</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>consumer[birthday]</td>
+      <td>The birthday of the consumer,</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>consumer[updates]</td>
+      <td>Boolean field to store if the consumer has agreed to receive updates</td>
       <td>Boolean</td>
     </tr>
     <tr>
-      <td>zobject[custom]</td>
-      <td>Custom attributes for the zobject (Example: zobject[color]=blue)</td>
+      <td>consumer[terms]</td>
+      <td>Boolean field to store if the consumer has agreed to terms and conditions</td>
+      <td>Boolean</td>
+    </tr>
+    <tr>
+      <td>consumer[password_token]</td>
+      <td>The password token to use during password reset workflows</td>
       <td>String</td>
     </tr>
     <tr>
-      <td>zobject[description]</td>
-      <td>The description of the zobject</td>
+      <td>consumer[remember_token]</td>
+      <td>The password token to use during remember login workflows</td>
       <td>String</td>
     </tr>
     <tr>
-      <td>zobject[friendly_title]</td>
-      <td>The friendly title of the zobject</td>
-      <td>String</td>
-    </tr>
-    <tr>
-      <td>zobject[keywords]</td>
-      <td>Keywords for the zobject</td>
-      <td>Array</td>
-    </tr>
-    <tr>
-      <td>zobject[title]</td>
-      <td>The title of the zobject</td>
+      <td>consumer[super_watcher]</td>
+      <td>Boolean field to indicate that a consumer is exempt from content rules</td>
       <td>String</td>
     </tr>
   </tbody>
 </table>
 
-<h3 id="retrieve-a-zobject">Retrieve a Zobject</h3>
-<pre><b>GET</b> https://api.zype.com/zobjects/[id]</pre>
+<h3 id="retrieve-a-consumer">Retrieve a Consumer</h3>
+<pre><b>GET</b> https://api.zype.com/consumers/[id]
+</pre>
 
 <h4 id="parameters-2">Parameters</h4>
 
@@ -241,19 +280,14 @@
   <tbody>
     <tr>
       <td>id</td>
-      <td>ID of the record to retrieve (Example: 5389352e69702d401b000000)</td>
-      <td>String</td>
-    </tr>
-    <tr>
-      <td>zobject_type</td>
-      <td>The type of zobject (Example: guest)</td>
+      <td>ID of the record (Example: 5389352e69702d401b000000)</td>
       <td>String</td>
     </tr>
   </tbody>
 </table>
 
-<h3 id="update-a-zobject">Update a Zobject</h3>
-<pre><b>PUT</b> https://api.zype.com/zobjects/[id]</pre>
+<h3 id="update-a-consumer">Update a Consumer</h3>
+<pre><b>PUT</b> https://api.zype.com/consumers/[id]</pre>
 
 <h4 id="parameters-3">Parameters</h4>
 
@@ -272,45 +306,61 @@
       <td>String</td>
     </tr>
     <tr>
-      <td>zobject_type</td>
-      <td>The type of zobject</td>
+      <td>consumer[email]</td>
+      <td>The consumer’s email address (must be unique)</td>
       <td>String</td>
     </tr>
     <tr>
-      <td>zobject[active]</td>
-      <td>Whether or not the zobject is active</td>
+      <td>consumer[password]</td>
+      <td>The password for the consumer. The password is used for consumer authentication</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>consumer[name]</td>
+      <td>The name of the consumer</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>consumer[sex]</td>
+      <td>The gender of the consumer</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>consumer[birthday]</td>
+      <td>The birthday of the consumer,</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>consumer[updates]</td>
+      <td>Boolean field to store if the consumer has agreed to receive updates</td>
       <td>Boolean</td>
     </tr>
     <tr>
-      <td>zobject[custom]</td>
-      <td>Custom attributes for the zobject (Example: zobject[color]=blue)</td>
+      <td>consumer[terms]</td>
+      <td>Boolean field to store if the consumer has agreed to terms and conditions</td>
+      <td>Boolean</td>
+    </tr>
+    <tr>
+      <td>consumer[password_token]</td>
+      <td>The password token to use during password reset workflows</td>
       <td>String</td>
     </tr>
     <tr>
-      <td>zobject[description]</td>
-      <td>The description of the zobject</td>
+      <td>consumer[remember_token]</td>
+      <td>The password token to use during remember login workflows</td>
       <td>String</td>
     </tr>
     <tr>
-      <td>zobject[friendly_title]</td>
-      <td>The friendly title of the zobject</td>
-      <td>String</td>
-    </tr>
-    <tr>
-      <td>zobject[keywords]</td>
-      <td>Keywords for the zobject</td>
-      <td>Array</td>
-    </tr>
-    <tr>
-      <td>zobject[title]</td>
-      <td>The title of the zobject</td>
+      <td>consumer[super_watcher]</td>
+      <td>Boolean field to indicate that a consumer is exempt from content rules</td>
       <td>String</td>
     </tr>
   </tbody>
 </table>
 
-<h3 id="delete-a-zobject">Delete a Zobject</h3>
-<pre><b>DELETE</b> https://api.zype.com/zobjects/[id]</pre>
+<h3 id="delete-a-consumer">Delete a Consumer</h3>
+<pre><b>DELETE</b> https://api.zype.com/consumers/[id]
+</pre>
 
 <h4 id="parameters-4">Parameters</h4>
 
@@ -325,96 +375,29 @@
   <tbody>
     <tr>
       <td>id</td>
-      <td>ID of the record to delete (Example: 5389352e69702d401b000000)</td>
-      <td>String</td>
-    </tr>
-    <tr>
-      <td>zobject_type</td>
-      <td>The type of zobject (Example: guest)</td>
+      <td>ID of the record to be deleted. Example: 540731274c616e047a000000</td>
       <td>String</td>
     </tr>
   </tbody>
 </table>
 
-<h3 id="add-videoss-to-zobject">Add Videos(s) to Zobject</h3>
-<pre><b>PUT</b> https://api.zype.com/zobjects/[id]/add_videos</pre>
+<h3 id="consumer-object">Consumer Object</h3>
 
-<h4 id="parameters-5">Parameters</h4>
-
-<table>
-  <thead>
-    <tr>
-      <th>Parameter</th>
-      <th>Function</th>
-      <th>Type</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>id</td>
-      <td>ID of the record (Example: 5389352e69702d401b000000)</td>
-      <td>String</td>
-    </tr>
-    <tr>
-      <td>video_id[]</td>
-      <td>The video IDs to add</td>
-      <td>Array</td>
-    </tr>
-    <tr>
-      <td>zobject_type</td>
-      <td>The type of zobject (Example: guest)</td>
-      <td>String</td>
-    </tr>
-  </tbody>
-</table>
-
-<h3 id="remove-videoss-from-zobject">Remove Videos(s) from Zobject</h3>
-<pre><b>PUT</b> https://api.zype.com/zobjects/[id]/remove_videos</pre>
-
-<h4 id="parameters-6">Parameters</h4>
-
-<table>
-  <thead>
-    <tr>
-      <th>Parameter</th>
-      <th>Function</th>
-      <th>Type</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>id</td>
-      <td>ID of the record (Example: 5389352e69702d401b000000)</td>
-      <td>String</td>
-    </tr>
-    <tr>
-      <td>video_id[]</td>
-      <td>The video IDs to remove</td>
-      <td>Array</td>
-    </tr>
-    <tr>
-      <td>zobject_type</td>
-      <td>The type of zobject (Example: guest)</td>
-      <td>String</td>
-    </tr>
-  </tbody>
-</table>
-
-<h3 id="zobject-object">Zobject Object</h3>
 <pre>
 {
-  "_id": "549dc72d636872c09d1f0000",
-  "active": true,
-  "created_at": "2014-12-26T15:38:05.447-05:00",
-  "description": "",
-  "friendly_title": "jamie-foxx",
-  "keywords": [],
-  "site_id": "549dc583636872c09d110000",
-  "title": "Jamie Foxx",
-  "updated_at": "2014-12-26T16:45:30.419-05:00",
-  "video_ids": [],
-  "zobject_type_id": "549dc71f636872c09d1d0000",
-  "zobject_type_title": "actor"
+  "_id": "54579a634c616e0389000000",
+  "_keywords": [
+    "com",
+    "example",
+    "test123"
+  ],
+  "created_at": "2014-11-03T15:08:19.675Z",
+  "deleted_at": null,
+  "email": "test123@example.com",
+  "site_id": "53e8d7f869702d5b64010000",
+  "stripe_id": "cus_54wKapCMCaqd9b1235",
+  "subscription_count": 1,
+  "updated_at": "2014-11-03T15:08:19.675Z"
 }
 </pre>
 
