@@ -17,7 +17,7 @@ Parameter | Function | Type
 --------- | -------- | ----
 braintree_id   | Filter records by a Braintree ID | String
 consumer_id   | Filter records by a Consumer ID | String
-created_at | Filter records by created date. Greater or less than filters can be used by adding a suffix (Example: created_at.gte) | Date
+created_at | Filter records by created date using times in ISO8601 format (Example: 2017-01-01T00:00:00-00:00) or Unix timestamps (Example: 1483228800) <br />**Note**: Range filters can be applied by adding a suffix: '.gt', '.gte', '.lt', 'lte' (Example: created_at.gte) | Date
 id        | Filter records by ID | String
 id!       | Exclude records by ID | String
 order     | Sort records in ascending or descending order (Example: asc/desc) | String

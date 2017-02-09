@@ -16,8 +16,8 @@ Parameter | Function | Type
 --------- | -------- | ----
 api_key      | The Admin api key for the account. *required* | String
 code        | Query for record by code | String
-created_at | Filter the records returned by created date. You can use greater than or less than filters by adding a suffix: '.gt', '.gte', '.lt', 'lte'. Example: created_at.gte=2015-01-01 | Date
-expiration_date | Filter the records returned by expiration date. You can use greater than or less than filters by adding a suffix: '.gt', '.gte', '.lt', 'lte'. Example: expiration_date.gte=2015-01-01 | Date
+created_at | Filter records by created date using times in ISO8601 format (Example: 2017-01-01T00:00:00-00:00) or Unix timestamps (Example: 1483228800) <br />**Note**: Range filters can be applied by adding a suffix: '.gt', '.gte', '.lt', 'lte' (Example: created_at.gte) | Date
+expiration_date | Filter records by expiration date using times in ISO8601 format (Example: 2017-01-01T00:00:00-00:00) or Unix timestamps (Example: 1483228800) <br />**Note**: Range filters can be applied by adding a suffix: '.gt', '.gte', '.lt', 'lte' (Example: expiration_date.gte) | Date
 id        | Filter records by ID | String
 id!       | Exclude records by ID | String
 page | The page number of records to return (Example: 1) | Integer
@@ -26,9 +26,9 @@ per_page | The number of records to return (Example: 10) | Integer
 plan_id        | Filter records by a plan ID | String
 playlist_id        | Filter records by a playlist ID | String
 q         | Filter records by keyword | String
-redeemed_at | Filter the records returned by redeemed at date. You can use greater than or less than filters by adding a suffix: '.gt', '.gte', '.lt', 'lte'. Example: redeemed_at.gte=2015-01-01 | Date
+redeemed_at | Filter records by redeemed date using times in ISO8601 format (Example: 2017-01-01T00:00:00-00:00) or Unix timestamps (Example: 1483228800) <br />**Note**: Range filters can be applied by adding a suffix: '.gt', '.gte', '.lt', 'lte' (Example: redeemed_at.gte) | Date
 transaction_id        | Filter records by a transaction ID | String
-updated_at | Filter the records returned by updated date. You can use greater than or less than filters by adding a suffix: '.gt', '.gte', '.lt', 'lte'. Example: updated_at.gte=2015-01-01 | Date
+updated_at | Filter records by updated date using times in ISO8601 format (Example: 2017-01-01T00:00:00-00:00) or Unix timestamps (Example: 1483228800) <br />**Note**: Range filters can be applied by adding a suffix: '.gt', '.gte', '.lt', 'lte' (Example: updated_at.gte) | Date
 video_id        | Filter records by a video ID | String
 
 ### Create a Redemption Code

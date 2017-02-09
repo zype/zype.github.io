@@ -18,7 +18,7 @@ Parameter | Function | Type
 active    | Filter by active, inactive, or all records (Example: true) | String
 category  | Filter records by category value (Example: category[color]=blue) | Hash
 category! | Exclude records by category value (Example: category![color]=blue) | Hash
-created_at | Filter records by created date. Greater or less than filters can be used by adding a suffix (Example: created_at.gte) | Date
+created_at | Filter records by created date using times in ISO8601 format (Example: 2017-01-01T00:00:00-00:00) or Unix timestamps (Example: 1483228800) <br />**Note**: Range filters can be applied by adding a suffix: '.gt', '.gte', '.lt', 'lte' (Example: created_at.gte) | Date
 crunchyroll_id   | Filter records by a Crunchyroll ID | String
 dpt       | Filter records by DPT conditions (Geo-location and device restrictions) | Boolean
 friendly_title | Find records by URL friendly title for SEO purposes | String
@@ -30,7 +30,7 @@ order     | Sort records in ascending or descending order (Example: asc/desc) | 
 on_air    | Filter records that are either on or off air | Boolean
 page | The page number of records to return (Example: 1) | Integer
 per_page | The number of records to return (Example: 10) | Integer
-published_at | Filter records by published date. Greater or less than filters can be used by adding a suffix (Example: published_at.gte) | Date
+published_at | Filter records by published date using times in ISO8601 format (Example: 2017-01-01T00:00:00-00:00) or Unix timestamps (Example: 1483228800) <br />**Note**: Range filters can be applied by adding a suffix: '.gt', '.gte', '.lt', 'lte' (Example: published_at.gte) | Date
 q         | Filter records by keyword | String
 sort      | Sort records on the specified field | String
 source_id | Filter records by an optional source identifier | String

@@ -17,7 +17,7 @@ Parameter | Function | Type
 --------- | -------- | ----
 id        | Filter records by ID | String
 id!       | Exclude records by ID | String
-created_at | Filter records by created date. Greater or less than filters can be used by adding a suffix (Example: created_at.gte) | Date
+created_at | Filter records by created date using times in ISO8601 format (Example: 2017-01-01T00:00:00-00:00) or Unix timestamps (Example: 1483228800) <br />**Note**: Range filters can be applied by adding a suffix: '.gt', '.gte', '.lt', 'lte' (Example: created_at.gte) | Date
 order     | Sort records in ascending or descending order (Example: asc/desc) | String
 page | The page number of records to return (Example: 1) | Integer
 per_page | The number of records to return (Example: 10) | Integer
@@ -82,14 +82,14 @@ Parameter | Function | Type
 --------- | -------- | ----
 id        | Filter records by ID | String
 id!       | Exclude records by ID | String
-created_at | Filter records by created date. Greater or less than filters can be used by adding a suffix (Example: created_at.gte) | Date
-end_time | Filter records by end time. Greater or less than filters can be used by adding a suffix (Example: end_time.gte) | Date
+created_at | Filter records by created date using times in ISO8601 format (Example: 2017-01-01T00:00:00-00:00) or Unix timestamps (Example: 1483228800) <br />**Note**: Range filters can be applied by adding a suffix: '.gt', '.gte', '.lt', 'lte' (Example: created_at.gte) | Date
+end_time | Filter records by end time using times in ISO8601 format (Example: 2017-01-01T00:00:00-00:00) or Unix timestamps (Example: 1483228800) <br />**Note**: Range filters can be applied by adding a suffix: '.gt', '.gte', '.lt', 'lte' (Example: end_time.gte) | Date
 order     | Sort records in ascending or descending order (Example: asc/desc) | String
 page | The page number of records to return (Example: 1) | Integer
 per_page | The number of records to return (Example: 10) | Integer
 q         | Filter records by keyword | String
 sort      | Sort records on the specified field | String
-start_time | Filter records by start time. Greater or less than filters can be used by adding a suffix (Example: start_time.gte) | Date
+start_time | Filter records by start time using times in ISO8601 format (Example: 2017-01-01T00:00:00-00:00) or Unix timestamps (Example: 1483228800) <br />**Note**: Range filters can be applied by adding a suffix: '.gt', '.gte', '.lt', 'lte' (Example: start_time.gte) | Date
 title     | Filter records by title | String
 
 ### Program Guide Object
