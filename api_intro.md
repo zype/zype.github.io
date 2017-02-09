@@ -35,7 +35,7 @@ Your Zype channel is automatically set up with the following API keys:
 - **Read Only Key:** Read only keys have limited access to your account and are not allowed to create or modify existing resources. Read only keys should be used when distributing a video application.
 - **Player Key:** Player keys have limited access to your account and are only allowed to issue player requests. Player keys should be used in embed codes for web applications.
 
-####Example:
+#### Example:
 
 <pre><b>GET</b> https://api.zype.com/videos?api_key=[api_key]</pre>
 
@@ -43,7 +43,7 @@ Your Zype channel is automatically set up with the following API keys:
 
 App keys are automatically created when you set up new apps. App keys provide per app authentication so that each bundled app has separate credentials. App keys are automatically bundled using Zype app builders. App keys can be retrived from your app's detail page.
 
-####Example:
+#### Example:
 
 <pre><b>GET</b> https://api.zype.com/videos?app_key=[app_key]</pre>
 
@@ -51,7 +51,7 @@ App keys are automatically created when you set up new apps. App keys provide pe
 
 Access tokens provide per user authentication for API requests. Access tokens are time based tokens that are created using  OAuth. [Click here](/api_docs/oauth) for more information about using OAuth.
 
-####Example:
+#### Example:
 
 <pre><b>GET</b> https://api.zype.com/videos?access_token=[access_token]</pre>
 

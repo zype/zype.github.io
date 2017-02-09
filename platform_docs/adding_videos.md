@@ -3,7 +3,7 @@ layout: platform
 title: Zype Developer Portal | Platform Docs
 permalink: /platform_docs/adding_videos/
 ---
-##Adding videos to the Zype Platform
+## Adding videos to the Zype Platform
 You can add videos to your Zype Library in two different ways. The first way is to upload
 videos directly to the Zype Platform. The second way is to import videos from a third-party source such as YouTube, Hulu, or Crunchyroll. Videos that are uploaded will have a Zype
 video source, all other videos will have a video source from the respected third-party.

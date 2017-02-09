@@ -4,7 +4,7 @@ title: Zype Developer Portal | Zobjects
 permalink: /api_docs/zobject_docs/
 ---
 
-##Zobjects
+## Zobjects
 
 The Zype API is feature rich, so we want to provide you with a place to learn more about it. The documentation below will help you with a number of objects based around zobjects.
 

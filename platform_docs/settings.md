@@ -3,7 +3,7 @@ layout: platform
 title: Zype Developer Portal | Platform Docs
 permalink: /platform_docs/settings/
 ---
-##Settings Dashboard
+## Settings Dashboard
 You can use the settings dashboard to set your global configurations.
 
 <div style="margin: 20px;"><span class="fa fa-file-text" style="margin-right: 4px;"></span>
@@ -29,7 +29,7 @@ SMTP Settings</a>
 
 <hr id='monetization'>
 
-##Monetization
+## Monetization
 
 To integrate the Zype Platform with your Stripe or Braintree accounts, you need
 to enter your account settings from the respective platform. [Click here](https://dashboard.stripe.com/register)
@@ -41,14 +41,14 @@ to utilize Zype subscription services.
 
 <hr id='player_settings'>
 
-##Player Settings
+## Player Settings
 
 You can configure settings for your player such as age gating, social sharing,
 google analytics tracking, and player expiration.
 
 ![player setting]({{site.url}}/assets/settings/player_settings.png)
 
-###Age Gating
+### Age Gating
 
 If there is an age gate, viewers will have to enter their birthday before viewing.
 You can choose to have this for all videos or just for videos that you deem to be
@@ -58,7 +58,7 @@ Below is what age gating looks like:
 
 ![mature content]({{site.url}}/assets/settings/age_gate.png)
 
-###Social Sharing
+### Social Sharing
 
 You can toggle social sharing on for your videos. If social sharing is on, viewers
 will be able to easily share your video via Facebook, Twitter, or via email.
@@ -67,12 +67,12 @@ Below is what social sharing looks like:
 
 ![social sharing]({{site.url}}/assets/settings/share_video.png)
 
-###Google Analytics
+### Google Analytics
 
 You can add your Google Analytics tracker. We'll use the tracking object on your web site to deliver impression and completion data. To set up and find your Google Analytics
 Tracking Object, [check out Google's documentation](https://support.google.com/analytics/answer/1008080?hl=en).
 
-###Expiration
+### Expiration
 
 For security reasons, Zype recommends that the url for the player expires after 300 seconds (5
 minutes). You can choose to change this time. If you prefer to not have your player
@@ -113,7 +113,7 @@ If you've already uploaded a video to Zype, you can preview it from the video li
 
 <hr id='player_messaging'>
 
-##Player Messaging
+## Player Messaging
 Zype allows you to customize the messages a viewer sees if a video cannot be served
 The following are reasons that a video cannot be served:
 
@@ -135,7 +135,7 @@ This is an example of a player message:
 
 <hr id='smtp'>
 
-##SMTP Settings
+## SMTP Settings
 If you are using our Paywall Embed for Subscription, Purchase, or Rental, it is highly recommended that you use your own SMTP service for email delivery.
 
 Using your own SMTP service will allow for more reliable email sending for emails such as purchase/subscription confirmations, password reset emails, and other emails that our Paywall Embed will send on your behalf.

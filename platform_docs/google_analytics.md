@@ -3,7 +3,7 @@ layout: platform
 title: Zype Developer Portal | Google Analytics Integration
 permalink: /platform_docs/google_analytics/
 ---
-##Enabling Google Analytics integration
+## Enabling Google Analytics integration
 Zype Analytics can integrate with Google Analytics to deliver a consolidated source of analytics for your web destination.
 
 <div style="width: 100%;">

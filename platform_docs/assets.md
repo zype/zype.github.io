@@ -15,7 +15,7 @@ permalink: /platform_docs/assets/
 
 <hr id="1">
 
-##Adding assets to Your Roku app
+## Adding assets to Your Roku app
 Adding image assets to your Roku Channel allow your to make the channel your own!
 Using the Zype Platform and Zype API, you will be able to change the majority of
 images on the fly without having to republish your app. However, there are a few images
