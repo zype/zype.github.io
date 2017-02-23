@@ -37,6 +37,18 @@ consumer_id      | ID of the consumer to link | String
 pin | The value for the acquired device pin (Example: zabc123) | String
 
 
+### Unlink Device Pin
+
+<pre><b>PUT</b> https://api.zype.com/pin/unlink</pre>
+
+#### Parameters
+
+Parameter | Function | Type
+--------- | -------- | ----
+consumer_id      | ID of the consumer to link | String
+pin | The value for the acquired device pin (Example: zabc123) | String
+
+
 ### Device Pin Object
 
 <pre>
