@@ -31,7 +31,7 @@ Macro | Function | Type
 
 Parameter | Function | Type
 --------- | -------- | ----
-video_id | ID of the video objecct (Example: 56d7594a0f8asd081208e4)  | String
+video_id | ID of the video object (Example: 56d7594a0f8asd081208e4)  | String
 
 ### Delete a Video Favorite Object
 <pre><b>DELETE</b> https://api.zype.com/consumers/[consumer_id]/video_favorites/[video_favorite_id]

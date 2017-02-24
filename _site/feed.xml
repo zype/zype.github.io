@@ -6,8 +6,8 @@
 </description>
     <link>http://dev.zype.com/</link>
     <atom:link href="http://dev.zype.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Thu, 23 Feb 2017 09:50:46 -0300</pubDate>
-    <lastBuildDate>Thu, 23 Feb 2017 09:50:46 -0300</lastBuildDate>
+    <pubDate>Fri, 24 Feb 2017 11:09:25 -0500</pubDate>
+    <lastBuildDate>Fri, 24 Feb 2017 11:09:25 -0500</lastBuildDate>
     <generator>Jekyll v3.0.2</generator>
     
       <item>
@@ -133,7 +133,7 @@
 &lt;/style&gt;
 
 </description>
-        <pubDate>Tue, 31 May 2016 07:37:55 -0300</pubDate>
+        <pubDate>Tue, 31 May 2016 06:37:55 -0400</pubDate>
         <link>http://dev.zype.com/posts/2016/05/31/mrss-import-format/</link>
         <guid isPermaLink="true">http://dev.zype.com/posts/2016/05/31/mrss-import-format/</guid>
         
@@ -265,7 +265,7 @@
 &lt;/style&gt;
 
 </description>
-        <pubDate>Wed, 18 May 2016 07:37:55 -0300</pubDate>
+        <pubDate>Wed, 18 May 2016 06:37:55 -0400</pubDate>
         <link>http://dev.zype.com/posts/2016/05/18/kaltura-mrss-import-format/</link>
         <guid isPermaLink="true">http://dev.zype.com/posts/2016/05/18/kaltura-mrss-import-format/</guid>
         
@@ -442,7 +442,7 @@
   &lt;li&gt;In the Embed Domain Whitelist textarea add the domain of your website. For example enter &lt;strong&gt;mysite.com&lt;/strong&gt; (NOT http://mysite.com). Leaving this box empty will allow &lt;em&gt;all&lt;/em&gt; domains. For multiple values separate with a comma.&lt;/li&gt;
 &lt;/ol&gt;
 </description>
-        <pubDate>Mon, 01 Feb 2016 07:37:55 -0300</pubDate>
+        <pubDate>Mon, 01 Feb 2016 05:37:55 -0500</pubDate>
         <link>http://dev.zype.com/posts/2016/02/01/upload-search-widgets/</link>
         <guid isPermaLink="true">http://dev.zype.com/posts/2016/02/01/upload-search-widgets/</guid>
         
@@ -664,7 +664,7 @@ toggle &lt;strong&gt;Subscription Required&lt;/strong&gt; or__ Purchase Required
 
 &lt;p&gt;That’s it!&lt;/p&gt;
 </description>
-        <pubDate>Fri, 15 Jan 2016 07:37:55 -0300</pubDate>
+        <pubDate>Fri, 15 Jan 2016 05:37:55 -0500</pubDate>
         <link>http://dev.zype.com/posts/2016/01/15/self-publish-firetv/</link>
         <guid isPermaLink="true">http://dev.zype.com/posts/2016/01/15/self-publish-firetv/</guid>
         
@@ -741,7 +741,7 @@ https://player.zype.com/embed/[video_id].html?autoplay=true&amp;amp;api_key=[api
 &amp;lt;script type=&quot;text/javascript&quot; src=&quot;https://play.zype.com/javascripts/subscription_embed.js&quot;&amp;gt;&amp;lt;/script&amp;gt;&amp;lt;div id=&#39;zype_553297c169702d0885a4435b&#39; style=&#39;width:100%; min-width:300px; max-width:560px;&#39;&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;script&amp;gt;zype.siteId = &#39;F7DbcH2vVnvPtYRIY1Xq9z92Bypj90i2uEcudIqK8KhNl_y-xWQNIi2UfpfzZl3N&#39;; zype.tracking_partner=[tracking_partner]; zype.tracking_code=[tracking_code]; zype.videoId = &#39;553297c169702d0885a4435b&#39;;zype.videoEmbed(&#39;zype_553297c169702d0885a4435b&#39;);&amp;lt;/script&amp;gt;
 &lt;/code&gt;&lt;/p&gt;
 </description>
-        <pubDate>Tue, 03 Nov 2015 07:04:55 -0300</pubDate>
+        <pubDate>Tue, 03 Nov 2015 05:04:55 -0500</pubDate>
         <link>http://dev.zype.com/posts/2015/11/03/analytics-tracking-partner-codes/</link>
         <guid isPermaLink="true">http://dev.zype.com/posts/2015/11/03/analytics-tracking-partner-codes/</guid>
         
@@ -823,7 +823,7 @@ Click save changes.&lt;/p&gt;
 &lt;p&gt;Reload your Roku Channel, you should see the first row be your featured playlist and the
 remaining rows be the your category values!&lt;/p&gt;
 </description>
-        <pubDate>Mon, 11 May 2015 07:37:55 -0300</pubDate>
+        <pubDate>Mon, 11 May 2015 06:37:55 -0400</pubDate>
         <link>http://dev.zype.com/posts/2015/05/11/organizing-videos-for-roku/</link>
         <guid isPermaLink="true">http://dev.zype.com/posts/2015/05/11/organizing-videos-for-roku/</guid>
         
@@ -852,7 +852,7 @@ for and click on the “Thumbnails” tab.&lt;/p&gt;
 
 &lt;p&gt;Select the thumbnail that you want. The thumbnail will automatically be updated!&lt;/p&gt;
 </description>
-        <pubDate>Thu, 09 Apr 2015 07:37:55 -0300</pubDate>
+        <pubDate>Thu, 09 Apr 2015 06:37:55 -0400</pubDate>
         <link>http://dev.zype.com/posts/2015/04/09/change-thumbnails/</link>
         <guid isPermaLink="true">http://dev.zype.com/posts/2015/04/09/change-thumbnails/</guid>
         
@@ -890,7 +890,7 @@ and following the photo tutorial below.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;http://dev.zype.com/assets/password/forgot_password_4.png&quot; alt=&quot;forgot password 4&quot; /&gt;&lt;/p&gt;
 </description>
-        <pubDate>Thu, 09 Apr 2015 07:37:55 -0300</pubDate>
+        <pubDate>Thu, 09 Apr 2015 06:37:55 -0400</pubDate>
         <link>http://dev.zype.com/posts/2015/04/09/forgot-password/</link>
         <guid isPermaLink="true">http://dev.zype.com/posts/2015/04/09/forgot-password/</guid>
         
@@ -929,7 +929,7 @@ preexisting videos in your video library.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;http://dev.zype.com/assets/video_sources/advanced_video_imports.png&quot; alt=&quot;advanced video importing&quot; /&gt;&lt;/p&gt;
 </description>
-        <pubDate>Sun, 15 Feb 2015 07:37:55 -0300</pubDate>
+        <pubDate>Sun, 15 Feb 2015 05:37:55 -0500</pubDate>
         <link>http://dev.zype.com/posts/2015/02/15/importing-videos-from-third-party-source/</link>
         <guid isPermaLink="true">http://dev.zype.com/posts/2015/02/15/importing-videos-from-third-party-source/</guid>
         
@@ -953,7 +953,7 @@ the chosen video import data source from your video.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;http://dev.zype.com/assets/video_imports/bulk_remove.png&quot; alt=&quot;remove from library&quot; /&gt;&lt;/p&gt;
 </description>
-        <pubDate>Sun, 15 Feb 2015 07:37:55 -0300</pubDate>
+        <pubDate>Sun, 15 Feb 2015 05:37:55 -0500</pubDate>
         <link>http://dev.zype.com/posts/2015/02/15/bulk-video-importing/</link>
         <guid isPermaLink="true">http://dev.zype.com/posts/2015/02/15/bulk-video-importing/</guid>
         
