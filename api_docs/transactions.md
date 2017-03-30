@@ -22,7 +22,7 @@ per_page | The number of records to return (Example: 10) | Integer
 q         | Filter records by keyword | String
 
 ### Create a Transaction
-<pre><b>POST</b> https://api.zype.com/transactions/[id]
+<pre><b>POST</b> https://api.zype.com/transactions/
 </pre>
 
 #### Parameters
