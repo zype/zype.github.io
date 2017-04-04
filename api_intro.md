@@ -25,7 +25,7 @@ Our default is to support JSON formatting, however if you prefer XML use the Con
 
 ## Authentication
 
-There are multiple ways to authenticate to the Zype API. Your Zype channels is automatically set up with API keys that you can integrate with, but you can also use app keys and consumer access tokens to autheticate as well.
+There are multiple ways to authenticate to the Zype API. Your Zype channels is automatically set up with API keys that you can integrate with, but you can also use app keys and consumer access tokens to authenticate as well.
 
 ### API Keys
 
@@ -41,7 +41,7 @@ Your Zype channel is automatically set up with the following API keys:
 
 ### App Keys
 
-App keys are automatically created when you set up new apps. App keys provide per app authentication so that each bundled app has separate credentials. App keys are automatically bundled using Zype app builders. App keys can be retrived from your app's detail page.
+App keys are automatically created when you set up new apps. App keys provide per app authentication so that each bundled app has separate credentials. App keys are automatically bundled using Zype app builders. App keys can be retrieved from your app's detail page.
 
 #### Example:
 
@@ -49,7 +49,7 @@ App keys are automatically created when you set up new apps. App keys provide pe
 
 ### Access Tokens
 
-Access tokens provide per user authentication for API requests. Access tokens are time based tokens that are created using  OAuth. [Click here](/api_docs/oauth) for more information about using OAuth.
+Access tokens provide per user authentication for API requests. Access tokens are time based tokens that are created using OAuth. [Click here](/api_docs/oauth) for more information about using OAuth.
 
 #### Example:
 
