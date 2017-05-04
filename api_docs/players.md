@@ -18,7 +18,7 @@ For native devices like iOS, Android and OTT devices the Player API will return 
 
 Developers need to specify User-Agent for all requests that are coming from Native Players.
 
-Device | User-Agnet 
+Device | User-Agent 
 --------- | -------- 
 Android(Native) | zype android 
 Apple TV | zype tvos
