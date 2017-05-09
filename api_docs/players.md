@@ -10,14 +10,24 @@ Zype's Dynamic Player Technology will automatically detect which device you are 
 
 ### Web Players
 
-For web based players like desktop, iOS and Android browsers the Player API will return a JavaScript or Iframe player response that can be used to embed the player on a web page. For web based players not additional integration is required.
+For web based players like desktop, iOS and Android browsers the Player API will return a JavaScript or Iframe player response that can be used to embed the player on a web page. For web based players no additional integration is required.
 
 ### Native Players
 
-For native devices like iOS, Android and OTT devices the Player API will return a JSON player response that can be used to play your videos. The JSON player response will include everything you need to play your video, including media files, advertising schedules and subtitles.
+For native devices like iOS, Android and OTT set-top boxes, the Player API will return a JSON player response that can be used to play your videos. The JSON player response will include everything you need to play your video, including media files, advertising schedules and subtitles.
+
+Developers need to specify User-Agent for all requests that are coming from Native Players.
+
+Device | User-Agent 
+--------- | -------- 
+Android(Native) | zype android 
+Apple TV | zype tvos
+Fire TV | AmazonWebAppPlatform
+Roku | Roku
+iOS Native | cfnetwork
 
 You should utilize best practices for the specific native device on how to insert your video files and ad tags. For reference,
-please checkout [Zype's Github](https://github.com/zype/) for our open sourced SDKs.
+please check out [Zype's Github](https://github.com/zype/) for our open sourced SDKs.
 
 ### Retrieve Player
 <pre><b>GET</b> https://player.zype.com/embed/[video_id].[format]</pre>
