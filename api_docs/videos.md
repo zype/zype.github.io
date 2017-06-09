@@ -11,13 +11,13 @@ permalink: /api_docs/videos/
 The Videos API is used to query the videos managed in the Zype platform.
 
 * [List Videos](#list-videos)
-	* [Overview](#list-videos__overview)
-	* [Use Case](#list-videos__use-case)
-	* [Parameters](#list-videos__parameters)
+	* [Overview](#overview-1)
+	* [Use Case](#use-case-1)
+	* [Parameters](#parameters-1)
 * [Retrieve a Video](#retrieve-a-video)
-	* [Overview](#retrieve-a-video__overview)
-	* [Use Case](#retrieve-a-video__use-case)
-	* [Parameters](#retrieve-a-video__parameters)
+	* [Overview](#overview-2)
+	* [Use Case](#use-case-2)
+	* [Parameters](#parameters-2)
 * [Create a Video](#create-a-video)
 * [Update a Video](#update-a-video)
 * [Delete a Video](#delete-a-video)
@@ -27,21 +27,21 @@ The Videos API is used to query the videos managed in the Zype platform.
 * [Video Object (Example Response)](#video-object)
 * [Download Object (Example Response)](#download-object)
 
-## [List Videos](id:list-videos)
+## List Videos
 ```
 GET https://api.zype.com/videos
 ```
 
-### [Overview](id:list-videos__overview)
+### Overview
 Get an **array** of [video objects](#video-object) that meet the specified [parameters](#list-videos__paremeters).
 
 **Note:** To retrieve a single video by ID, the [Retrieve a Video](#retrieve-a-video) endpoint may be used rather than adding the `id` query parameter.
 
-### [Use Case](id:list-videos__use-case)
+### Use Case
 
 Use this endpoint when a list of videos is required.
 
-Examples: retrieve a list of recent videos (e.g., Netflix / Hulu homepages), a list of videos in the same category, or a list of videos from a certain date
+Examples: retrieve a list of recent videos (e.g., Netflix / Hulu homepages), a list of videos in the same category, or a list of videos from a certain date.
 
 ```
 // List Recent Videos
@@ -55,7 +55,7 @@ GET https://api.zype.com/videos?active=true&published_at.gte=2017-01-01T00:00:00
 ```
 
 
-### [Parameters](id:list-videos__parameters)
+### Parameters
 
 Parameter | Function | Type
 --------- | -------- | ----
@@ -86,14 +86,14 @@ zobject_id! | Exclude records by Zobject ID | String
 
 ---
 
-## [Retrieve a Video](id:retrieve-a-video)
+## Retrieve a Video
 ```
 GET https://api.zype.com/videos/[id]
 ```
-### [Overview](id:retrieve-a-video__overview)
+### Overview
 Get a single video by ID.
 
-### [Use Case](id:retrieve-a-video__use-case)
+### Use Case
 Use this endpoint when a single video's details are required.
 
 Example: a single video detail page where user interaction can occur. See the [Player API documentation](http://dev.zype.com/api_docs/players/) for how to load a video player.
@@ -107,20 +107,19 @@ GET https://player.zype.com/embed/[video_id].[format]
 
 ```
 
----
-### [Parameters](id:retrieve-a-video__parameters)
+### Parameters
 
 Parameter | Function | Type
 --------- | -------- | ----
 id        | ID of the record to retrieve (Example: `id=5389352e69702d401b000000`) | String
 
 ---
-## [Create a Video](id:create-a-video)
+## Create a Video
 ```
 POST https://api.zype.com/videos
 ```
 
-### [Parameters](id:create-a-video__parameters)
+### Parameters
 
 Parameter | Function | Type
 --------- | -------- | ----
@@ -143,12 +142,12 @@ video[source_id] | An optional user specified identifier for a video | String
 video[custom_thumbnail_url] | A URL where a custom thumbnail for the video can be retrieved (JPEG, PNG or GIF) | String
 
 ---
-## [Update a Video](id:update-a-video)
+## Update a Video
 ```
 PUT https://api.zype.com/videos/[id]
 ```
 
-### [Parameters](id:update-a-video__parameters)
+### Parameters
 
 Parameter | Function | Type
 --------- | -------- | ----
@@ -172,24 +171,24 @@ video[source_id] | An optional user specified identifier for a video | String
 video[custom_thumbnail_url] | A URL where a custom thumbnail for the video can be retrieved (JPEG, PNG or GIF) | String
 
 ---
-## [Delete a Video](id:delete-a-video)
+## Delete a Video
 ```
 DELETE https://api.zype.com/videos/[id]
 ```
 
-### [Parameters](id:delete-a-video__parameters)
+### Parameters
 
 Parameter | Function | Type
 --------- | -------- | ----
 id        | ID of the record to delete (Example: 5389352e69702d401b000000) | String
 
 ---
-## [Add Zobject(s) to Video](id:add-zobjects-to-video)
+## Add Zobject(s) to Video
 ```
 PUT https://api.zype.com/videos/[id]/add_zobjects
 ```
 
-### [Parameters](id:add-zobjects-to-video__parameters)
+### Parameters
 
 Parameter | Function | Type
 --------- | -------- | ----
@@ -197,12 +196,12 @@ id        | ID of the record (Example: 5389352e69702d401b000000) | String
 zobject_id[] | The zobject IDs to add | Array
 
 ---
-## [Remove Zobject(s) from Video](id:remove-zobjects-from-video)
+## Remove Zobject(s) from Video
 ```
 PUT https://api.zype.com/videos/[id]/remove_zobjects
 ```
 
-### [Parameters](id:remove-zobjects-from-video__parameters)
+### Parameters
 
 Parameter | Function | Type
 --------- | -------- | ----
@@ -210,7 +209,7 @@ id        | ID of the record (Example: 5389352e69702d401b000000) | String
 zobject_id[] | The zobject IDs to remove | Array
 
 ---
-## [Download Source File](id:download-source-file)
+## Download Source File
 
 For Zype Hosted videos you can download the original source file.
 
@@ -218,14 +217,14 @@ For Zype Hosted videos you can download the original source file.
 GET https://api.zype.com/videos/[id]/download
 ```
 
-### [Parameters](id:download-source-file__parameters)
+### Parameters
 
 Parameter | Function | Type
 --------- | -------- | ----
 id        | ID of the record (Example: 5389352e69702d401b000000) | String
 
 ---
-## [Video Object](id:video-object)
+## Video Object
 
 ```
 {
@@ -323,7 +322,7 @@ id        | ID of the record (Example: 5389352e69702d401b000000) | String
 ```
 
 ---
-## [Download Object](id:download-object)
+## Download Object
 
 ```
 {
