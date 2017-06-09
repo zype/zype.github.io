@@ -4,21 +4,65 @@ title: Zype Developer Portal | Videos
 permalink: /api_docs/videos/
 ---
 
-## Videos
-<hr />
-### List Videos
-<pre>
-<b>GET</b> https://api.zype.com/videos
-</pre>
+# Videos
+---
 
-#### Parameters
+## Overview
+The Videos API is used to query the videos managed in the Zype platform.
+
+* [List Videos](#list-videos)
+	* [Overview](#list-videos__overview)
+	* [Use Case](#list-videos__use-case)
+	* [Parameters](#list-videos__parameters)
+* [Retrieve a Video](#retrieve-a-video)
+	* [Overview](#retrieve-a-video__overview)
+	* [Use Case](#retrieve-a-video__use-case)
+	* [Parameters](#retrieve-a-video__parameters)
+* [Create a Video](#create-a-video)
+* [Update a Video](#update-a-video)
+* [Delete a Video](#delete-a-video)
+* [Add ZObject(s) To Video](#add-zobjects-to-video)
+* [Remove ZObject(s) From Video](#remove-zobjects-from-video)
+* [Download Source File](#download-source-file)
+* [Video Object (Example Response)](#video-object)
+* [Download Object (Example Response)](#download-object)
+
+## [List Videos](id:list-videos)
+```
+GET https://api.zype.com/videos
+```
+
+### [Overview](id:list-videos__overview)
+Get an **array** of [video objects](#video-object) that meet the specified [parameters](#list-videos__paremeters).
+
+**Note:** To retrieve a single video by ID, the [Retrieve a Video](#retrieve-a-video) endpoint may be used rather than adding the `id` query parameter.
+
+### [Use Case](id:list-videos__use-case)
+
+Use this endpoint when a list of videos is required.
+
+Examples: retrieve a list of recent videos (e.g., Netflix / Hulu homepages), a list of videos in the same category, or a list of videos from a certain date
+
+```
+// List Recent Videos
+GET https://api.zype.com/videos?active=true
+
+// List Videos By Category
+GET https://api.zype.com/videos?active=true&category[color]=blue
+
+// List Videos From Certain Date
+GET https://api.zype.com/videos?active=true&published_at.gte=2017-01-01T00:00:00-00:00
+```
+
+
+### [Parameters](id:list-videos__parameters)
 
 Parameter | Function | Type
 --------- | -------- | ----
-active    | Filter by active, inactive, or all records (Example: true) | String
-category  | Filter records by category value (Example: category[color]=blue) | Hash
-category! | Exclude records by category value (Example: category![color]=blue) | Hash
-created_at | Filter records by created date using times in ISO8601 format (Example: 2017-01-01T00:00:00-00:00) or Unix timestamps (Example: 1483228800) <br />**Note**: Range filters can be applied by adding a suffix: '.gt', '.gte', '.lt', 'lte' (Example: created_at.gte) | Date
+active    | Filter by active, inactive, or all records (Example: `active=true`, `active=false`, `active=all`) | String
+category  | Filter records by category value (Example: `category[color]=blue`) | Hash
+category! | Exclude records by category value (Example: `category![color]=blue`) | Hash
+created_at | Filter records by created date using times in ISO8601 format (Example: `2017-01-01T00:00:00-00:00`) or Unix timestamps (Example: `1483228800`) <br><br>**Note**: Range filters can be applied by adding a suffix: `.gt`, `.gte`, `.lt`, `.lte` (Example: `created_at.gte=2017-01-01T00:00:00-00:00`) | Date
 crunchyroll_id   | Filter records by a Crunchyroll ID | String
 dpt       | Filter records by DPT conditions (Geo-location and device restrictions) | Boolean
 friendly_title | Find records by URL friendly title for SEO purposes | String
@@ -26,29 +70,62 @@ hulu_id   | Filter records by a Hulu ID | String
 id        | Filter records by ID | String
 id!       | Exclude records by ID | String
 mature_content    | Filter records that are flagged as mature content | Boolean
-order     | Sort records in ascending or descending order (Example: asc/desc) | String
+order     | Sort records in ascending or descending order (Example: `order=asc`, `order=desc`) | String
 on_air    | Filter records that are either on or off air | Boolean
-page | The page number of records to return (Example: 1) | Integer
-per_page | The number of records to return (Example: 10) | Integer
-published_at | Filter records by published date using times in ISO8601 format (Example: 2017-01-01T00:00:00-00:00) or Unix timestamps (Example: 1483228800) <br />**Note**: Range filters can be applied by adding a suffix: '.gt', '.gte', '.lt', 'lte' (Example: published_at.gte) | Date
+page | The page number of records to return (Example: `page=1`) | Integer
+per_page | The number of records to return (Example: `per_page=10`) | Integer
+published_at | Filter records by published date using times in ISO8601 format (Example: `2017-01-01T00:00:00-00:00`) or Unix timestamps (Example: `1483228800`) <br><br>**Note**: Range filters can be applied by adding a suffix: `.gt`, `.gte`, `.lt`, `lte` (Example: `published_at.gte=2017-01-01T00:00:00-00:00`) | Date
 q         | Filter records by keyword | String
 sort      | Sort records on the specified field | String
 source_id | Filter records by an optional source identifier | String
-type      | Filter records by type (Example: zype, hulu, youtube, crunchyroll) | String
+type      | Filter records by type (Examples: `zype`, `hulu`, `youtube`, `crunchyroll`) | String
 vimeo_id   | Filter records by a Vimeo ID | String
 youtube_id   | Filter records by a YouTube ID | String
 zobject_id  | Filter records by Zobject ID | String
 zobject_id! | Exclude records by Zobject ID | String
 
-### Create a Video
-<pre><b>POST</b> https://api.zype.com/videos</pre>
+---
 
-#### Parameters
+## [Retrieve a Video](id:retrieve-a-video)
+```
+GET https://api.zype.com/videos/[id]
+```
+### [Overview](id:retrieve-a-video__overview)
+Get a single video by ID.
+
+### [Use Case](id:retrieve-a-video__use-case)
+Use this endpoint when a single video's details are required.
+
+Example: a single video detail page where user interaction can occur. See the [Player API documentation](http://dev.zype.com/api_docs/players/) for how to load a video player.
+
+```
+// Retrieve a Video
+GET https://api.zype.com/videos/5389352e69702d401b000000
+
+// Load the Video Player (see Player API documentation for more)
+GET https://player.zype.com/embed/[video_id].[format]
+
+```
+
+---
+### [Parameters](id:retrieve-a-video__parameters)
+
+Parameter | Function | Type
+--------- | -------- | ----
+id        | ID of the record to retrieve (Example: `id=5389352e69702d401b000000`) | String
+
+---
+## [Create a Video](id:create-a-video)
+```
+POST https://api.zype.com/videos
+```
+
+### [Parameters](id:create-a-video__parameters)
 
 Parameter | Function | Type
 --------- | -------- | ----
 video[title] | The title of the video | String
-video[friendly_title] | The URL friendly title of the video. Optional — if left blank, it will be generated automatically. | String
+video[friendly_title] | The URL friendly title of the video. **Optional** — if left blank, it will be generated automatically. | String
 video[description] | The description of the video | String
 video[short_description] | The description of the video | String
 video[published_at]  | The date and time that the video will appear to have been published | String
@@ -65,25 +142,17 @@ video[discovery_url] | The URL where the video will be hosted, this field can be
 video[source_id] | An optional user specified identifier for a video | String
 video[custom_thumbnail_url] | A URL where a custom thumbnail for the video can be retrieved (JPEG, PNG or GIF) | String
 
-### Retrieve a Video
-<pre><b>GET</b> https://api.zype.com/videos/[id]
-</pre>
+---
+## [Update a Video](id:update-a-video)
+```
+PUT https://api.zype.com/videos/[id]
+```
 
-#### Parameters
-
-Parameter | Function | Type
---------- | -------- | ----
-id        | ID of the record to retrieve (Example: 5389352e69702d401b000000) | String
-
-### Update a Video
-<pre><b>PUT</b> https://api.zype.com/videos/[id]
-</pre>
-
-#### Parameters
+### [Parameters](id:update-a-video__parameters)
 
 Parameter | Function | Type
 --------- | -------- | ----
-id | ID of the record to update (Example: 540731274c616e047a000000) | String
+id | ID of the record to update (Example: `id=540731274c616e047a000000`) | String
 video[title] | The title of the video | String
 video[friendly_title] | The URL friendly title of the video. | String
 video[description] | The description of the video | String
@@ -102,51 +171,63 @@ video[discovery_url] | The URL where the video will be hosted, this field can be
 video[source_id] | An optional user specified identifier for a video | String
 video[custom_thumbnail_url] | A URL where a custom thumbnail for the video can be retrieved (JPEG, PNG or GIF) | String
 
-### Delete a Video
-<pre><b>DELETE</b> https://api.zype.com/videos/[id]
-</pre>
+---
+## [Delete a Video](id:delete-a-video)
+```
+DELETE https://api.zype.com/videos/[id]
+```
 
-#### Parameters
+### [Parameters](id:delete-a-video__parameters)
 
 Parameter | Function | Type
 --------- | -------- | ----
 id        | ID of the record to delete (Example: 5389352e69702d401b000000) | String
 
-### Add Zobject(s) to Video
-<pre><b>PUT</b> https://api.zype.com/videos/[id]/add_zobjects</pre>
+---
+## [Add Zobject(s) to Video](id:add-zobjects-to-video)
+```
+PUT https://api.zype.com/videos/[id]/add_zobjects
+```
 
-#### Parameters
+### [Parameters](id:add-zobjects-to-video__parameters)
 
 Parameter | Function | Type
 --------- | -------- | ----
 id        | ID of the record (Example: 5389352e69702d401b000000) | String
 zobject_id[] | The zobject IDs to add | Array
 
-### Remove Zobject(s) from Video
-<pre><b>PUT</b> https://api.zype.com/videos/[id]/remove_zobjects</pre>
+---
+## [Remove Zobject(s) from Video](id:remove-zobjects-from-video)
+```
+PUT https://api.zype.com/videos/[id]/remove_zobjects
+```
 
-#### Parameters
+### [Parameters](id:remove-zobjects-from-video__parameters)
 
 Parameter | Function | Type
 --------- | -------- | ----
 id        | ID of the record (Example: 5389352e69702d401b000000) | String
 zobject_id[] | The zobject IDs to remove | Array
 
-### Download Source File
+---
+## [Download Source File](id:download-source-file)
 
 For Zype Hosted videos you can download the original source file.
 
-<pre><b>GET</b> https://api.zype.com/videos/[id]/download</pre>
+```
+GET https://api.zype.com/videos/[id]/download
+```
 
-#### Parameters
+### [Parameters](id:download-source-file__parameters)
 
 Parameter | Function | Type
 --------- | -------- | ----
 id        | ID of the record (Example: 5389352e69702d401b000000) | String
 
-### Video Object
+---
+## [Video Object](id:video-object)
 
-<pre>
+```
 {
   "_id": "547b4dca69702d070dca0000",
   "active": true,
@@ -239,15 +320,16 @@ id        | ID of the record (Example: 5389352e69702d401b000000) | String
     }
   ]
 }
-</pre>
+```
 
-### Download Object
+---
+## [Download Object](id:download-object)
 
-<pre>
+```
 {
   response: {
     url: "https://zype-upload-prod.s3.amazonaws.com/uploads/57ae371e72289b0d7d00100e/upload.mp4?AWSAccessKeyId=AKIAJ246RBDWDIRI2DVA&Expires=1472064425&Signature=K8rgZ7X8A5ayqW1miUx%2FC4oxytM%3D",
     filesize: 208169473
   }
 }
-</pre>
+```
