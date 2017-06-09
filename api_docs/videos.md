@@ -8,7 +8,7 @@ permalink: /api_docs/videos/
 ---
 
 ## Overview
-The Videos API is used to query the videos managed in the Zype platform.
+The Videos API is used to query, update, create, and delete videos in the Zype platform.
 
 * [List Videos](#list-videos)
 	* [Overview](#overview-1)
@@ -33,9 +33,9 @@ GET https://api.zype.com/videos
 ```
 
 ### Overview
-Get an **array** of [video objects](#video-object) that meet the specified [parameters](#list-videos__paremeters).
+Get an **array** of [video objects](#video-object) that meet the specified [parameters](#paremeters-1).
 
-**Note:** To retrieve a single video by ID, the [Retrieve a Video](#retrieve-a-video) endpoint may be used rather than adding the `id` query parameter.
+**Note:** To retrieve a single video by ID, the [Retrieve a Video](#retrieve-a-video) endpoint may be used rather than adding the `id` parameter.
 
 ### Use Case
 
@@ -62,7 +62,7 @@ Parameter | Function | Type
 active    | Filter by active, inactive, or all records (Example: `active=true`, `active=false`, `active=all`) | String
 category  | Filter records by category value (Example: `category[color]=blue`) | Hash
 category! | Exclude records by category value (Example: `category![color]=blue`) | Hash
-created_at | Filter records by created date using times in ISO8601 format (Example: `2017-01-01T00:00:00-00:00`) or Unix timestamps (Example: `1483228800`) <br><br>**Note**: Range filters can be applied by adding a suffix: `.gt`, `.gte`, `.lt`, `.lte` (Example: `created_at.gte=2017-01-01T00:00:00-00:00`) | Date
+created_at | Filter records by created date using times in ISO8601 format (Example: `2017-01-01T00:00:00-00:00`) or Unix timestamps (Example: `1483228800`). <br><br>**Note**: Range filters can be applied by adding a suffix: `.gt`, `.gte`, `.lt`, `.lte` (Example: `created_at.gte=2017-01-01T00:00:00-00:00`) | Date
 crunchyroll_id   | Filter records by a Crunchyroll ID | String
 dpt       | Filter records by DPT conditions (Geo-location and device restrictions) | Boolean
 friendly_title | Find records by URL friendly title for SEO purposes | String
@@ -74,7 +74,7 @@ order     | Sort records in ascending or descending order (Example: `order=asc`,
 on_air    | Filter records that are either on or off air | Boolean
 page | The page number of records to return (Example: `page=1`) | Integer
 per_page | The number of records to return (Example: `per_page=10`) | Integer
-published_at | Filter records by published date using times in ISO8601 format (Example: `2017-01-01T00:00:00-00:00`) or Unix timestamps (Example: `1483228800`) <br><br>**Note**: Range filters can be applied by adding a suffix: `.gt`, `.gte`, `.lt`, `lte` (Example: `published_at.gte=2017-01-01T00:00:00-00:00`) | Date
+published_at | Filter records by published date using times in ISO8601 format (Example: `2017-01-01T00:00:00-00:00`) or Unix timestamps (Example: `1483228800`) <br><br>**Note**: Range filters can be applied by adding a suffix: `.gt`, `.gte`, `.lt`, `.lte` (Example: `published_at.gte=2017-01-01T00:00:00-00:00`) | Date
 q         | Filter records by keyword | String
 sort      | Sort records on the specified field | String
 source_id | Filter records by an optional source identifier | String
@@ -104,7 +104,6 @@ GET https://api.zype.com/videos/5389352e69702d401b000000
 
 // Load the Video Player (see Player API documentation for more)
 GET https://player.zype.com/embed/[video_id].[format]
-
 ```
 
 ### Parameters
