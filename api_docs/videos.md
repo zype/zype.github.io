@@ -41,7 +41,7 @@ Get an **array** of [video objects](#video-object) that meet the specified [para
 
 Use this endpoint when a list of videos is required.
 
-Examples: retrieve a list of recent videos (e.g., Netflix / Hulu homepages), a list of videos in the same category, or a list of videos from a certain date.
+Examples: retrieve a list of recent videos, a list of videos from a specific category, or a list of videos from a certain date.
 
 ```
 // List Recent Videos
