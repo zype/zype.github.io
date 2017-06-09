@@ -11,6 +11,12 @@ permalink: /api_docs/video_favorites/
 ## Overview
 The Video Favorites API is used to query, create, and delete Video Favorites for [authenticated Consumers](http://dev.zype.com/api_docs/oauth).
 
+A Video Favorite is a collection of videos designated by a Consumer as "favorites". Much like bookmarking a web page, Video Favorites allow a Consumer to add and remove bookmarks for videos within an app for easy access at a later time.
+
+A Consumer's Video Favorites are stored in the Zype platform and are accessible from any endpoint the functionality has been implemented on. Video Favorites functionality can currently be found in the following Zype SDKs: iOS, Android, Roku, Amazon Fire TV, and Apple TV (local, on-device support only).
+
+Developers may implement Video Favorites on their endpoint of choice if they wish to allow Consumers to bookmark videos for easy access across all app endpoints.
+
 * [List Video Favorite Objects](#list-video-favorite-objects)
 * [Create a Video Favorite Object](#create-a-video-favorite-object)
 * [Delete a Video Favorite Object](#delete-a-video-favorite-object)
