@@ -57,7 +57,7 @@ Once you create a consumer in Zype, you’ll want to create a relational record 
 To create consumers via API, you will need to supply your admin API key in the API request. 
 
 Consumer API Endpoint
-POST - https://api.zype.com/consumers/ 
+POST - https://api.zype.com/consumers/
  
 Example Request:
 {% highlight xml %} 
@@ -82,7 +82,7 @@ Example Response:
   }
 }
 {% endhighlight %} 
-For a full listed of supported API commands please visit our API documentation: http://dev.zype.com/api_docs/consumers/ 
+For a full listed of supported API commands please visit our API documentation: [Zype Consumer API Documentation](http://dev.zype.com/api_docs/consumers/)
 
 
 ### Step 3: Create a subscription for a Zype consumer
@@ -130,10 +130,10 @@ Example Response:
 }
 {% endhighlight %} 
 For a full list of supported API commands please visit our API documentation: 
-http://dev.zype.com/api_docs/subscriptions/
+[Zype Subcription API Documentation](http://dev.zype.com/api_docs/subscriptions/)
 
 
 Reference Materials:
  
-API Documentation: http://dev.zype.com/api_docs/intro/ 
-API Keys: https://admin.zype.com/api_keys
+API Documentation: [Zype API Documentation](http://dev.zype.com/api_docs/intro/)
+API Keys: [Zype Property API Keys](https://admin.zype.com/api_keys)
