@@ -6,12 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>3rd Party Payment Provider & Subscription Management Quickstart</title>
+    <title>3rd Party Payment Provider & Subscription Management Quickstart | Common API Examples</title>
     <meta name="description" content="This is the devloper portal for Zype Media. Zype is Revenue and Reach Magic for Online Video. We help content owners deliver fully branded video experiences.
 ">
 
     <link rel="stylesheet" href="/css/main.css">
-    <link rel="canonical" href="http://localhost:4000/api_docs/3rd-party-CRM-integration/">
+    <link rel="canonical" href="http://localhost:4000/api_docs/3rd-party-crm-integration/">
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="shortcut icon" href="/assets/favicon.ico" />
 
@@ -65,32 +65,65 @@
 
   <body>
 
-    <header id="header" style="overflow-y: scroll;">
-  <div id="content">
-    <a href="/"><img src="http://localhost:4000/assets/logo.png" alt="Zype" />
-    <h1 id="title">Developer Portal</h1></a>
-    <p class="light">a knowledge base</p>
-    <div class="hidden-mobile">
+      <header id="header" style="overflow-y: scroll;">
+    <div id="content">
+      <a href="/"><img src="http://localhost:4000/assets/logo.png" alt="Zype" />
+      <h1 id="title">Developer Portal</h1></a>
+      <p class="light">a knowledge base</p>
       <br>
-        <p class="category"><a href="/api_docs/intro/" style="color: #8acfef;">API Documentation</a></p>
-        <p class="category"><a href="/platform_docs/" style="color: #8acfef;">Platform Documentation</a></p>
-        <p class="category"><a href="/sdks/" style="color: #8acfef;">SDKs</a></p>
-        <p class="category"><a href="/glossary/" style="color: #8acfef;">Glossary</a></p>
-        <p class="category"><a href="http://status.zype.com" style="color: #8acfef;">System Status</a></p>
-        <p class="category"><a href="/faq/" style="color: #8acfef;">FAQ</a></p>
+      <p class="category"><a href="/api_docs/intro/" style="color: #8acfef;">API Documentation</a></p>
+      <h4 class="api-header">Zype Platform</h4>
+      <p><a href="/api_docs/videos/">Videos</a></p>
+      <p><a href="/api_docs/playlists/">Playlists</a></p>
+      <p><a href="/api_docs/categories/">Categories</a></p>
+      <p><a href="/api_docs/apps/">Apps</a></p>
+      <p><a href="/api_docs/devices/">Devices</a></p>
+      <p><a href="/api_docs/device_categories/">Device Categories</a></p>
+      <p><a href="/api_docs/players/">Players</a></p>
+      <p><a href="/api_docs/segments/">Segments</a></p>
+      <p><a href="/api_docs/video_imports/">Video Imports</a></p>
+      <p><a href="/api_docs/video_sources/">Video Sources</a></p>
+      <h4 class="api-header">Content Rules</h4>
+      <p><a href="/api_docs/content_rules_category/">Category Content Rules</a></p>
+      <p><a href="/api_docs/content_rules_playlist/">Playlist Content Rules</a></p>
+      <p><a href="/api_docs/content_rules_video/">Video Content Rules</a></p>
+      <h4 class="api-header">Consumers</h4>
+      <p><a href="/api_docs/consumers/">Consumers</a></p>
+      <p><a href="/api_docs/device_linking/">Device Linking</a></p>
+      <p><a href="/api_docs/oauth/">OAuth</a></p>
+      <p><a href="/api_docs/video_entitlements/">Video Entitlements</a></p>
+      <p><a href="/api_docs/playlist_entitlements/">Playlist Entitlements</a></p>
+      <h4 class="api-header">Monetization</h4>
+      <p><a href="/api_docs/subscriptions/">Subscriptions</a></p>
+      <p><a href="/api_docs/plans/">Plans</a></p>
+      <p><a href="/api_docs/transactions/">Transactions</a></p>
+      <p><a href="/api_docs/redemption_codes/">Redemption Codes</a></p>
+      <p><a href="/api_docs/revenue_models/">Revenue Models</a></p>
+			<p><a href="/api_docs/video_favorites/">Video Favorites</a></p>
+      <h4 class="api-header">Zobjects</h4>
+      <p><a href="/api_docs/zobject_types/">Zobject Types</a></p>
+      <p><a href="/api_docs/zobjects/">Zobjects</a></p>
       <br>
-      <span class="light">&copy; 2017 Zype Inc.</span>
+      <h4 class="api-header">Common API Examples</h4>
+      <p><a href="/api_docs/3rd-party-crm-integration/">3rd Party CRM Integration</a></p>
+      <br>
+      <p class="category"><a href="/platform_docs/" style="color: #8acfef;">Platform Documentation</a></p>
+      <p class="category"><a href="/sdks/" style="color: #8acfef;">SDKs</a></p>
+      <p class="category"><a href="/glossary/" style="color: #8acfef;">Glossary</a></p>
+      <p class="category"><a href="http://status.zype.com" style="color: #8acfef;">System Status</a></p>
+      <p class="category"><a href="/faq/" style="color: #8acfef;">FAQ</a></p>
+      <br>
+      <div class="hidden-mobile light">
+        &copy; 2017 Zype Inc.
+      </div>
     </div>
-  </div>
-</header>
+  </header>
 
 
-    <section id="main">
-      <div class="post">
-  <h1 class="post-title">3rd Party Payment Provider & Subscription Management Quickstart</h1>
-  <p class="post-meta"></p>
-  <article class="post-content">
-    <p>What does this solution do?
+    <section id="main" class="api-docs">
+      <h1 id="3rd-party-payment-provider--subscription-management-quickstart">3rd Party Payment Provider &amp; Subscription Management Quickstart</h1>
+
+<p>What does this solution do?
 Zype provides an effective way of importing and managing an external database of consumers within the Zype platform. This is useful if you are using a 3rd party payment processor to sell subscriptions or a 3rd party CRM tool to manage your customer database and would also like to import and track these customers in the Zype platform.</p>
 
 <p>Once imported into the Zype platform, benefits include ensuring these customers have access to content across all of your distribution endpoints via Universal login.</p>
@@ -230,22 +263,6 @@ http://dev.zype.com/api_docs/subscriptions/</p>
 
 <p>API Documentation: http://dev.zype.com/api_docs/intro/ 
 API Keys: https://admin.zype.com/api_keys</p>
-
-  </article>
-  <div id="disqus_thread"></div>
-  <script type="text/javascript">
-      /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-      var disqus_shortname = 'zypedev'; // required: replace example with your forum shortname
-
-      /* * * DON'T EDIT BELOW THIS LINE * * */
-      (function() {
-          var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-          dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-      })();
-  </script>
-  <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-</div>
 
     </section>
 

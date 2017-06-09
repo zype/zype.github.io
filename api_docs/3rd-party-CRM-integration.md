@@ -1,8 +1,10 @@
 ---
-layout: post
-title:  "3rd Party Payment Provider & Subscription Management Quickstart"
-permalink:  /api_docs/3rd-party-CRM-integration/
+layout: api
+title:  "3rd Party Payment Provider & Subscription Management Quickstart | Common API Examples"
+permalink:  /api_docs/3rd-party-crm-integration/
 ---
+
+# 3rd Party Payment Provider & Subscription Management Quickstart
 
 What does this solution do?
 Zype provides an effective way of importing and managing an external database of consumers within the Zype platform. This is useful if you are using a 3rd party payment processor to sell subscriptions or a 3rd party CRM tool to manage your customer database and would also like to import and track these customers in the Zype platform.
