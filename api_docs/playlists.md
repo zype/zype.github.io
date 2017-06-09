@@ -185,3 +185,65 @@ video_id[]  | A comma separated list of video IDs to remove from the playlist | 
   }
 }
 </pre>
+
+## Category Playlists
+
+<hr>
+### Create
+
+<p>Creating a Category Playlist, is the same as creating a Playlist but setting its <strong>playlist_type</strong> with a <i>'category'</i> value. You should call the POST action:</p>
+
+<pre><b>POST</b> https://api.zype.com/playlists</pre>
+
+<p>with the following parameters:</p>
+
+Parameter | Function | Type
+--------- | -------- | ----
+playlist[playlist_type] | The playlist type to create. Accepted values: **manual**, **category** | String
+playlist[match_type] | Videos that should match with the categories selected. Accepted values: **any**, **all**. If match_type is *any*, videos to be added to the playlist should match *ANY* of the categories selected. If match_type is *all*, videos to be added to the playlist should match *ALL* of the categories selected. | String
+playlist[categories] | Categories that will be used to selected the proper videos to add into the playlist | Array
+
+<p>The <strong>playlist[categories]</strong> should contain an array of hashes. Every hash will represent a category to be added with the following parameters:</p>
+
+Parameter | Function | Type
+--------- | -------- | ----
+categories[category_id] | ID of the category that will be referenced | Integer
+categories[title] | Title of the category to be added | String
+playlist[values] | Values selected of the category referenced | Array
+
+<p>Here is an JSON example to be set as the body to create a Category Playlist:</p>
+<pre>
+{
+  "playlist": {
+    "title": "Category Playlist",
+    "playlist_type": "category",
+    "match_type": "any",
+    "categories": [
+      {
+        "category_id": "1234",
+        "title": "Category Title",
+        "value": [
+          "Category Value"
+        ]
+      }
+    ]
+  }
+}
+</pre>
+
+<p>Take into account that the <strong>category_id</strong> should be included into the site's categories. To get the list of categories, please go to the <a href="/api_docs/categories" target="none">categories documentation</a>. If a category with the selected <i>category_id</i> doesn't exists, you will get a <strong>422</strong> response with the following message:</p>
+
+<pre>
+{
+  "message": "Could not save playlist: Categories is invalid"
+}
+</pre>
+
+<hr>
+### Update
+
+<p>Updating a Category Playlist, is the same as updating a Playlist but changing its <strong>categories</strong>. You should call the PUT action:</p>
+
+<pre><b>PUT</b> https://api.zype.com/playlists/[id]</pre>
+
+<p>Take into account that <strong>updating</strong> a playlist categories will overwrite the current categories. So, if you want to keep your current categories and values, adding new ones, you should add them to the json body parameters. If you want to delete categories or values, you have to set the categories array only with the categories that you want for your playlist, obviating the ones that you don't need anymore</p>
