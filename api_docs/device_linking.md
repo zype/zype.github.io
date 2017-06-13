@@ -4,54 +4,66 @@ title: Zype Developer Portal | Device Linking
 permalink: /api_docs/device_linking/
 ---
 
-## Device Linking
-<hr>
-### Retrieve Device Pin
-<pre><b>GET</b> https://api.zype.com/pin/status</pre>
+# Device Linking
 
-#### Parameters
+---
 
-Parameter | Function | Type
---------- | -------- | ----
-linked_device_id      | Unique ID of the user's device | String
+## Retrieve Device Pin
 
+```
+GET https://api.zype.com/pin/status
+```
 
-### Create Device Pin
-<pre><b>POST</b> https://api.zype.com/pin/acquire</pre>
-
-#### Parameters
+### Parameters
 
 Parameter | Function | Type
 --------- | -------- | ----
-linked_device_id      | Unique ID of the user's device | String
-
-### Link Device Pin
-
-<pre><b>PUT</b> https://api.zype.com/pin/link</pre>
-
-#### Parameters
-
-Parameter | Function | Type
---------- | -------- | ----
-consumer_id      | ID of the consumer to link | String
-pin | The value for the acquired device pin (Example: zabc123) | String
+linked_device_id | Unique ID of the user's device | String
 
 
-### Unlink Device Pin
+## Create Device Pin
 
-<pre><b>PUT</b> https://api.zype.com/pin/unlink</pre>
+```
+POST https://api.zype.com/pin/acquire
+```
 
-#### Parameters
+### Parameters
 
 Parameter | Function | Type
 --------- | -------- | ----
-consumer_id      | ID of the consumer to link | String
-pin | The value for the acquired device pin (Example: zabc123) | String
+linked_device_id | Unique ID of the user's device | String
+
+## Link Device Pin
+
+```
+PUT https://api.zype.com/pin/link
+```
+
+### Parameters
+
+Parameter | Function | Type
+--------- | -------- | ----
+consumer_id | ID of the consumer to link | String
+pin | The value for the acquired device pin (Example: `zabc123`) | String
 
 
-### Device Pin Object
+## Unlink Device Pin
 
-<pre>
+```
+PUT https://api.zype.com/pin/unlink
+```
+
+### Parameters
+
+Parameter | Function | Type
+--------- | -------- | ----
+consumer_id | ID of the consumer to link | String
+pin | The value for the acquired device pin (Example: `zabc123`) | String
+
+
+## Device Pin Object
+
+```
 {
   "_id": "57113fc6f283474159000004",
   "consumer_id": null,
@@ -66,4 +78,4 @@ pin | The value for the acquired device pin (Example: zabc123) | String
   "linked": false,
   "subscription_count": null
 }
-</pre>
+```
