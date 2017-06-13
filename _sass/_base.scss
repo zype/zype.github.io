@@ -17,6 +17,10 @@ p, ul, ol, table, pre, dl {
   margin:0 0 20px;
 }
 
+ul li ul {
+  margin-bottom: 0;
+}
+
 h1, h2, h3 {
   line-height:1.1;
 }
@@ -66,18 +70,39 @@ blockquote {
   font-style:italic;
 }
 
+code {
+  font-size: 90%;
+  padding: 2px 4px;
+}
+
 code, pre {
+  color: #333;
   font-family:Monaco, Bitstream Vera Sans Mono, Lucida Console, Terminal, monospace;
-  color:#333;
   font-size:12px;
 }
 
 pre {
+  color:#333;
   padding:8px 15px;
   background: #f8f8f8;
   border-radius:5px;
-  border:1px solid #e5e5e5;
+  border:1px solid #ccc;
   overflow-x: auto;
+}
+
+pre code {
+  color: #333;
+  font-size: 100%;
+  padding: 0;
+}
+
+pre.highlight {
+  background: #f5f5f5 !important;
+}
+
+.highlighter-rouge {
+  background-color: #f9f2f4;
+  color: #c7254e;
 }
 
 table {
@@ -380,7 +405,7 @@ header {
 }
 
 #header {
-  background-color: #423e3e;
+  background-color: #414551;
   margin: 0px;
   height: 100%;
   width: 400px;
