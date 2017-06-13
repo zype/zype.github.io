@@ -18,6 +18,7 @@ The App endpoint is used to retrieve the custom settings and content associated 
 ```
 GET https://api.zype.com/app
 ```
+
 ### Overview
 Get settings, content, and details for an application created in the Zype platform.
 
