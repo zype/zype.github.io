@@ -188,12 +188,12 @@ video_id[]  | A comma separated list of video IDs to remove from the playlist | 
 
 ## Managing Playlist Relationships
 
-<p>To manage Playlist Relationships, we use the <strong>parent_id</strong> and <strong>priority</strong> fields of a playlist.</p>
+<p>Playlist Relationships allow you to create a parent / child relationship between two playlists. This is useful for nesting playlist content within OTT apps. For example, you could create a parent playlist called "Comedy" and nest child playlists undernearth called "Romantic Comedies" and "Slapstick Comedies" to provide a better user experience for your audience. To manage Playlist Relationships, we use the <strong>parent_id</strong> and <strong>priority</strong> fields of a playlist.</p>
 
 Parameter | Function | Type
 --------- | -------- | ----
-playlist[parent_id] | The parent playlist id. If this value is <strong>null</strong>, the playlist is a <strong>root</strong> playlist | String
-playlist[priority] | The <strong>priority</strong> of the playlist related with its siblings. Playlists are ordered ascending by priority | Integer
+playlist[parent_id] | The parent playlist id. If this value is <strong>null</strong>, the playlist is a <strong>root</strong> playlist and can be used as the primary playlist within an app where all your other playlists and videos are nested under | String
+playlist[priority] | The <strong>priority</strong> of the playlist related with its siblings. Playlists are ordered ascending by priority value | Integer
 
 <p>When creating or updating a Playlist:</p>
 
@@ -205,7 +205,7 @@ playlist[priority] | The <strong>priority</strong> of the playlist related with 
   </ul>
 </p>
 
-<p>To move the playlist to a new parent, you need to change its <strong>parent_id</strong> field to the id of the playlist you want to move it. If you want it to be a <strong>root</strong> playlist, then you have to set the parent_id fields as null or empty</p>
+<p>To nest a playlist under a new parent, you need to change its <strong>parent_id</strong> field to the id of the playlist you want to nest it under. If you want it to be a <strong>root</strong> playlist, then you have to set the parent_id field as null or empty</p>
 
 <hr>
 ### Create
