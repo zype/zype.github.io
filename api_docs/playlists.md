@@ -185,3 +185,104 @@ video_id[]  | A comma separated list of video IDs to remove from the playlist | 
   }
 }
 </pre>
+
+## Smart Ordering
+
+<p>Playlist smart ordering allow you to change the order of its videos by a sort options. The videos added or updated into a playlist with sort options, are sort automatically following that sort option<p>
+
+Parameter | Function | Type
+--------- | -------- | ----
+playlist[sort_options] | An array of sort options. Only two levels of sorting are accepted, and the videos are sort first by the first level, and second as the second level | Array
+
+<p>Every <strong>sort_option</strong> has three fields:</p>
+
+<p>
+  <ul>
+    <li><strong>direction:</strong> The direction to sort the results. It accepts two values: <strong>asc</strong> (ascending) and <strong>desc</strong> (descending) order.</li>
+    <li><strong>sort_by:</strong> The field name which will be taken into account to sort the results. It accepts the following values: <strong>created_at</strong>, <strong>published_at</strong>, and <strong>title</strong>.</li>
+    <li><strong>sort_by_type:</strong> The type of the field which will be taken into account to sort the results. It accepts the following values: <strong>date</strong>, <strong>datetime</strong>, <strong>string</strong>, <strong>integer</strong>, <strong>array</strong>, and <strong>boolean</strong>.</li>
+  </ul>
+</p>
+
+
+<hr>
+### Create
+
+<p><pre><b>POST</b> https://api.zype.com/playlists</pre></p>
+
+<p>Here is an JSON example to be set as the body to create a Playlist with <strong>one level</strong> smart ordering:</p>
+<pre>
+{
+  "playlist": {
+    "playlist title": "Title",
+    "sort_options": [
+      {
+        "direction": "desc",
+        "sort_by": "published_at",
+        "sort_by_type": "datetime"
+      }
+    ]
+  }
+}
+</pre>
+
+<p>And with <strong>two levels</strong> smart ordering:</p>
+<pre>
+{
+  "playlist": {
+    "playlist title": "Title",
+    "sort_options": [
+      {
+        "direction": "desc",
+        "sort_by": "published_at",
+        "sort_by_type": "datetime"
+      },
+      {
+        "direction": "asc",
+        "sort_by": "title",
+        "sort_by_type": "string"
+      }
+    ]
+  }
+}
+</pre>
+
+<hr>
+### Update
+
+<p><pre><b>PUT</b> https://api.zype.com/playlists/[id]</pre></p>
+
+<p>Here is an JSON example to be set as the body to update a Playlist with <strong>one level</strong> smart ordering:</p>
+<pre>
+{
+  "playlist": {
+    "sort_options": [
+      {
+        "direction": "desc",
+        "sort_by": "published_at",
+        "sort_by_type": "datetime"
+      }
+    ]
+  }
+}
+</pre>
+
+<p>And with <strong>two levels</strong> smart ordering:</p>
+<pre>
+{
+  "playlist": {
+    "sort_options": [
+      {
+        "direction": "desc",
+        "sort_by": "published_at",
+        "sort_by_type": "datetime"
+      },
+      {
+        "direction": "asc",
+        "sort_by": "title",
+        "sort_by_type": "string"
+      }
+    ]
+  }
+}
+</pre>
