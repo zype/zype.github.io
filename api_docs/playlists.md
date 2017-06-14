@@ -185,3 +185,54 @@ video_id[]  | A comma separated list of video IDs to remove from the playlist | 
   }
 }
 </pre>
+
+## Managing Playlist Relationships
+
+<p>To manage Playlist Relationships, we use the <strong>parent_id</strong> and <strong>priority</strong> fields of a playlist.</p>
+
+Parameter | Function | Type
+--------- | -------- | ----
+playlist[parent_id] | The parent playlist id. If this value is <strong>null</strong>, the playlist is a <strong>root</strong> playlist | String
+playlist[priority] | The <strong>priority</strong> of the playlist related with its siblings. Playlists are ordered ascending by priority | Integer
+
+<p>When creating or updating a Playlist:</p>
+
+<p>
+  <ul>
+    <li>If the <strong>parent_id</strong> and <strong>priority</strong> are not set, the playlist will be set as a <strong>root</strong> playlist with the highest <strong>priority</strong> value set.</li>
+    <li>If the <strong>parent_id</strong> is not set, but the <strong>priority</strong> is, then, the playlist will be set as a <strong>root</strong> playlist, and will be ordered by the <strong>priority</strong> value set. If there is another root playlist with the same priority, then it will be added after this playlist.</li>
+    <li>If the <strong>parent_id</strong> and <strong>priority</strong> are set, the playlist will be added as a child of the playlist with id <strong>parent_id</strong>, and will be ordered by the <strong>priority</strong> value set. If there is another sibling playlist with the same priority, then it will be added after the sibling.</li>
+  </ul>
+</p>
+
+<p>To move the playlist to a new parent, you need to change its <strong>parent_id</strong> field to the id of the playlist you want to move it. If you want it to be a <strong>root</strong> playlist, then you have to set the parent_id fields as null or empty</p>
+
+<hr>
+### Create
+
+<p><pre><b>POST</b> https://api.zype.com/playlists</pre></p>
+
+<p>Here is an JSON example to be set as the body to create a Playlist with a relationship:</p>
+<pre>
+{
+  "playlist": {
+    "parent_id": "abcd1234",
+    "priority": 1
+  }
+}
+</pre>
+
+<hr>
+### Update
+
+<p><pre><b>PUT</b> https://api.zype.com/playlists/[id]</pre></p>
+
+<p>Here is an JSON example to be set as the body to create a Playlist with a relationship:</p>
+<pre>
+{
+  "playlist": {
+    "parent_id": "abcd1234",
+    "priority": 1
+  }
+}
+</pre>
