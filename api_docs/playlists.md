@@ -188,7 +188,7 @@ video_id[]  | A comma separated list of video IDs to remove from the playlist | 
 
 ## Smart Ordering
 
-<p>Playlist smart ordering allow you to change the order of its videos by a sort options. The videos added or updated into a playlist with sort options, are sort automatically following that sort option<p>
+<p>Playlist smart ordering allow you to change the order of its videos by a sort options. The videos added or updated into a playlist with sort options, are sort automatically following that sort option</p>
 
 Parameter | Function | Type
 --------- | -------- | ----
@@ -204,8 +204,8 @@ playlist[sort_options] | An array of sort options. Only two levels of sorting ar
   </ul>
 </p>
 
-
 <hr>
+
 ### Create
 
 <p><pre><b>POST</b> https://api.zype.com/playlists</pre></p>
@@ -248,6 +248,7 @@ playlist[sort_options] | An array of sort options. Only two levels of sorting ar
 </pre>
 
 <hr>
+
 ### Update
 
 <p><pre><b>PUT</b> https://api.zype.com/playlists/[id]</pre></p>
