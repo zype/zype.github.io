@@ -207,6 +207,8 @@ playlist[priority] | The <strong>priority</strong> of the playlist related with 
 
 <p>To nest a playlist under a new parent, you need to change its <strong>parent_id</strong> field to the id of the playlist you want to nest it under. If you want it to be a <strong>root</strong> playlist, then you have to set the parent_id field as null or empty</p>
 
+<p>Also, take into account that 0 (zero) is the highest priority.</p>
+
 <hr>
 ### Create
 
@@ -234,5 +236,55 @@ playlist[priority] | The <strong>priority</strong> of the playlist related with 
     "parent_id": "abcd1234",
     "priority": 1
   }
+}
+</pre>
+
+### Relationships
+
+<p><pre><b>GET</b> https://api.zype.com/playlists/relationships</pre></p>
+
+<p>Returns the list of playlists and its relationships</p>
+
+<p>Here is an JSON example to returned:</p>
+<pre>
+{
+    "playlists": [
+        {
+            "id": "586124bfa54d7535cb001fc2",
+            "title": "Playlist A",
+            "priority": 0,
+            "playlists": [
+                {
+                    "id": "5942dde0a54d750e3b000042",
+                    "title": "Playlist A.1",
+                    "priority": 0
+                }
+            ]
+        },
+        {
+            "id": "58d1718aa54d750bf100002e",
+            "title": "Playlist B",
+            "priority": 1,
+            "playlists": [
+                {
+                    "id": "5942defea54d750e3b000045",
+                    "title": "Playlist B.1",
+                    "priority": 0,
+                    "playlists": [
+                        {
+                            "id": "586124bfa54d7535cb001fba",
+                            "title": "Playlist B.1.1",
+                            "priority": 0
+                        }
+                    ]
+                },
+                {
+                    "id": "586124bea54d7535cb001fb1",
+                    "title": "Playlist B.2",
+                    "priority": 1
+                }
+            ]
+        }
+    ]
 }
 </pre>
