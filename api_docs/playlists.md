@@ -188,11 +188,11 @@ video_id[]  | A comma separated list of video IDs to remove from the playlist | 
 
 ## Smart Ordering
 
-<p>Playlist smart ordering allow you to change the order of its videos by a sort options. The videos added or updated into a playlist with sort options, are sort automatically following that sort option</p>
+<p>Playlist smart ordering allows you to change the order of its videos by sort options. The videos added or updated into a playlist with sort options are sorted automatically following that sort option</p>
 
 Parameter | Function | Type
 --------- | -------- | ----
-playlist[sort_options] | An array of sort options. Only two levels of sorting are accepted, and the videos are sort first by the first level, and second as the second level | Array
+playlist[sort_options] | An array of sort options. Only two levels of sorting are accepted, and videos are sorted first by first level, and second by second level | Array
 
 <p>Every <strong>sort_option</strong> has three fields:</p>
 
