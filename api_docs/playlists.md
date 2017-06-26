@@ -188,7 +188,7 @@ video_id[]  | A comma separated list of video IDs to remove from the playlist | 
 
 ## Managing Playlist Relationships
 
-<p>Playlist Relationships allow you to create a parent / child relationship between two playlists. This is useful for nesting playlist content within OTT apps. For example, you could create a parent playlist called "Comedy" and nest child playlists undernearth called "Romantic Comedies" and "Slapstick Comedies" to provide a better user experience for your audience. To manage Playlist Relationships, we use the <strong>parent_id</strong> and <strong>priority</strong> fields of a playlist.</p>
+<p>Playlist Relationships allow you to create a parent / child relationship between two playlists. This is useful for nesting playlist content within OTT apps. For example, you could create a parent playlist called "Comedy" and nest child playlists underneath called "Romantic Comedies" and "Slapstick Comedies" to provide a better user experience for your audience. To manage Playlist Relationships, we use the <strong>parent_id</strong> and <strong>priority</strong> fields of a playlist.</p>
 
 Parameter | Function | Type
 --------- | -------- | ----
