@@ -231,9 +231,6 @@ To allow consumers with valid subscription plans to remove ads from videos, you 
 Parameter | Function | Type
 --------- | -------- | ----
 subscription_ads | Flag whether ads should be played when a subscription is present. Default: **true** | Boolean
-purchase_ads | Flag whether ads should be played when the video has been purchased. Default: **true** | Boolean
-rental_ads | Flag whether ads should be played when the video has been rented. Default: **true** | Boolean
-pass_ads | Flag whether ads should be played when a pass is present. Default: **true** | Boolean
 
 ## Video Object
 
