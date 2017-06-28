@@ -288,3 +288,11 @@ playlist[priority] | The <strong>priority</strong> of the playlist related with 
     ]
 }
 </pre>
+
+## Smart Ordering
+
+<p>Playlist smart ordering allows you to change the order of its videos by sort options. The videos added or updated into a playlist with sort options are sorted automatically following that sort option</p>
+
+Parameter | Function | Type
+--------- | -------- | ----
+playlist[sort_options] | An array of sort options. Only two levels of sorting are accepted, and videos are sorted first by first level, and second by second level | Array
