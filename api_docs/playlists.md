@@ -185,3 +185,106 @@ video_id[]  | A comma separated list of video IDs to remove from the playlist | 
   }
 }
 </pre>
+
+## Managing Playlist Relationships
+
+<p>Playlist Relationships allow you to create a parent / child relationship between two playlists. This is useful for nesting playlist content within OTT apps. For example, you could create a parent playlist called "Comedy" and nest child playlists underneath called "Romantic Comedies" and "Slapstick Comedies" to provide a better user experience for your audience. To manage Playlist Relationships, we use the <strong>parent_id</strong> and <strong>priority</strong> fields of a playlist.</p>
+
+Parameter | Function | Type
+--------- | -------- | ----
+playlist[parent_id] | The parent playlist id. If this value is <strong>null</strong>, the playlist is a <strong>root</strong> playlist and can be used as the primary playlist within an app where all your other playlists and videos are nested under | String
+playlist[priority] | The <strong>priority</strong> of the playlist related with its siblings. Playlists are ordered ascending by priority value | Integer
+
+<p>When creating or updating a Playlist:</p>
+
+<p>
+  <ul>
+    <li>If the <strong>parent_id</strong> and <strong>priority</strong> are not set, the playlist will be set as a <strong>root</strong> playlist with the highest <strong>priority</strong> value set.</li>
+    <li>If the <strong>parent_id</strong> is not set, but the <strong>priority</strong> is, then, the playlist will be set as a <strong>root</strong> playlist, and will be ordered by the <strong>priority</strong> value set. If there is another root playlist with the same priority, then it will be added after this playlist.</li>
+    <li>If the <strong>parent_id</strong> and <strong>priority</strong> are set, the playlist will be added as a child of the playlist with id <strong>parent_id</strong>, and will be ordered by the <strong>priority</strong> value set. If there is another sibling playlist with the same priority, then it will be added after the sibling.</li>
+  </ul>
+</p>
+
+<p>To nest a playlist under a new parent, you need to change its <strong>parent_id</strong> field to the id of the playlist you want to nest it under. If you want it to be a <strong>root</strong> playlist, then you have to set the parent_id field as null or empty</p>
+
+<p>Also, take into account that 0 (zero) is the highest priority.</p>
+
+<hr>
+### Create
+
+<p><pre><b>POST</b> https://api.zype.com/playlists</pre></p>
+
+<p>Here is an JSON example to be set as the body to create a Playlist with a relationship:</p>
+<pre>
+{
+  "playlist": {
+    "parent_id": "abcd1234",
+    "priority": 1
+  }
+}
+</pre>
+
+<hr>
+### Update
+
+<p><pre><b>PUT</b> https://api.zype.com/playlists/[id]</pre></p>
+
+<p>Here is an JSON example to be set as the body to create a Playlist with a relationship:</p>
+<pre>
+{
+  "playlist": {
+    "parent_id": "abcd1234",
+    "priority": 1
+  }
+}
+</pre>
+
+### Relationships
+
+<p><pre><b>GET</b> https://api.zype.com/playlists/relationships</pre></p>
+
+<p>Returns the list of playlists and its relationships</p>
+
+<p>Here is an JSON example to returned:</p>
+<pre>
+{
+    "playlists": [
+        {
+            "id": "586124bfa54d7535cb001fc2",
+            "title": "Playlist A",
+            "priority": 0,
+            "playlists": [
+                {
+                    "id": "5942dde0a54d750e3b000042",
+                    "title": "Playlist A.1",
+                    "priority": 0
+                }
+            ]
+        },
+        {
+            "id": "58d1718aa54d750bf100002e",
+            "title": "Playlist B",
+            "priority": 1,
+            "playlists": [
+                {
+                    "id": "5942defea54d750e3b000045",
+                    "title": "Playlist B.1",
+                    "priority": 0,
+                    "playlists": [
+                        {
+                            "id": "586124bfa54d7535cb001fba",
+                            "title": "Playlist B.1.1",
+                            "priority": 0
+                        }
+                    ]
+                },
+                {
+                    "id": "586124bea54d7535cb001fb1",
+                    "title": "Playlist B.2",
+                    "priority": 1
+                }
+            ]
+        }
+    ]
+}
+</pre>
