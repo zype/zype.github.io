@@ -291,8 +291,101 @@ playlist[priority] | The <strong>priority</strong> of the playlist related with 
 
 ## Smart Ordering
 
-<p>Playlist smart ordering allows you to change the order of its videos by sort options. The videos added or updated into a playlist with sort options are sorted automatically following that sort option</p>
+<p>Playlist smart ordering allows you to change the order of its videos by sort options. The videos added or updated into a playlist with sort options are sorted automatically following that sort option<p>
 
 Parameter | Function | Type
 --------- | -------- | ----
 playlist[sort_options] | An array of sort options. Only two levels of sorting are accepted, and videos are sorted first by first level, and second by second level | Array
+
+<p>Every <strong>sort_option</strong> has three fields:</p>
+
+<p>
+  <ul>
+    <li><strong>direction:</strong> The direction to sort the results. It accepts two values: <strong>asc</strong> (ascending - lowest to highest) and <strong>desc</strong> (descending - highest to lowest) order.</li>
+    <li><strong>sort_by:</strong> The field name which will be taken into account to sort the results. It accepts the following values: <strong>created_at</strong>, <strong>published_at</strong>, and <strong>title</strong>.</li>
+    <li><strong>sort_by_type:</strong> The type of the field which will be taken into account to sort the results. It accepts the following values: <strong>date</strong>, <strong>datetime</strong>, <strong>string</strong>, <strong>integer</strong>, <strong>array</strong>, and <strong>boolean</strong>. The difference between <strong>date</strong> and <strong>datetime</strong> is that <i>date</i> will only take the date part of the field, while <i>datetime</i> will take the date and time part of the field; so for example, for a date "01/01/2001 01:01:01", <i>date</i> will take only "01/01/2001" into account, while <i>datetime</i> will take the complete date "01/01/2001 01:01:01" into account.</li>
+  </ul>
+</p>
+
+
+<hr>
+### Create
+
+<p><pre><b>POST</b> https://api.zype.com/playlists</pre></p>
+
+<p>Here is an JSON example to be set as the body to create a Playlist with <strong>one level</strong> smart ordering:</p>
+<pre>
+{
+  "playlist": {
+    "playlist title": "Title",
+    "sort_options": [
+      {
+        "direction": "desc",
+        "sort_by": "published_at",
+        "sort_by_type": "datetime"
+      }
+    ]
+  }
+}
+</pre>
+
+<p>And with <strong>two levels</strong> smart ordering:</p>
+<pre>
+{
+  "playlist": {
+    "playlist title": "Title",
+    "sort_options": [
+      {
+        "direction": "desc",
+        "sort_by": "published_at",
+        "sort_by_type": "datetime"
+      },
+      {
+        "direction": "asc",
+        "sort_by": "title",
+        "sort_by_type": "string"
+      }
+    ]
+  }
+}
+</pre>
+
+<hr>
+### Update
+
+<p><pre><b>PUT</b> https://api.zype.com/playlists/[id]</pre></p>
+
+<p>Here is an JSON example to be set as the body to update a Playlist with <strong>one level</strong> smart ordering:</p>
+<pre>
+{
+  "playlist": {
+    "sort_options": [
+      {
+        "direction": "desc",
+        "sort_by": "published_at",
+        "sort_by_type": "datetime"
+      }
+    ]
+  }
+}
+</pre>
+
+<p>And with <strong>two levels</strong> smart ordering:</p>
+<pre>
+{
+  "playlist": {
+    "sort_options": [
+      {
+        "direction": "desc",
+        "sort_by": "published_at",
+        "sort_by_type": "datetime"
+      },
+      {
+        "direction": "asc",
+        "sort_by": "title",
+        "sort_by_type": "string"
+      }
+    ]
+  }
+}
+</pre>
