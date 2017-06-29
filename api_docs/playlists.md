@@ -85,6 +85,11 @@ playlist[categories][][id] | ID of the category assigned to the playlist if you 
 playlist[categories][][category_id] | ID of the main [Category](/api_docs/categories) you wish to add to the video | String
 playlist[categories][][title] | Title of the category assigned to the playlist | String
 playlist[categories][][value][] | List of values you wish to add to the category | Array
+playlist[images_attributes][][title] | Title of the image | String
+playlist[images_attributes][][caption] | Caption of the image | String
+playlist[images_attributes][][attachment] | Image as a file attachment
+playlist[images_attributes][][layout] | Must be one of 'poster' or 'square'. Default is 'landscape' | String
+playlist[images_attributes][][_destroy] | Pass in 'true' if you wish to remove an image | String
 
 ### Delete a Playlist
 <pre><b>DELETE</b> https://api.zype.com/playlists/[id]</pre>
