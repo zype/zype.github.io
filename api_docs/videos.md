@@ -230,7 +230,7 @@ To allow consumers with valid subscription plans to remove ads from videos, you 
 
 Parameter | Function | Type
 --------- | -------- | ----
-subscription_ads | Flag whether ads should be played when a subscription is present. Default: **true** | Boolean
+subscription_ads_enabled | Flag whether ads should be played when a subscription is present. Default: **true** | Boolean
 
 ## Video Object
 
