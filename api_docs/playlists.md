@@ -301,7 +301,7 @@ playlist[sort_options] | An array of sort options. Only two levels of sorting ar
 
 <p>
   <ul>
-    <li><strong>direction:</strong> The direction to sort the results. It accepts two values: <strong>asc</strong> (ascending) and <strong>desc</strong> (descending) order.</li>
+    <li><strong>direction:</strong> The direction to sort the results. It accepts two values: <strong>asc</strong> (ascending - lowest to highest) and <strong>desc</strong> (descending - highest to lowest) order.</li>
     <li><strong>sort_by:</strong> The field name which will be taken into account to sort the results. It accepts the following values: <strong>created_at</strong>, <strong>published_at</strong>, and <strong>title</strong>.</li>
     <li><strong>sort_by_type:</strong> The type of the field which will be taken into account to sort the results. It accepts the following values: <strong>date</strong>, <strong>datetime</strong>, <strong>string</strong>, <strong>integer</strong>, <strong>array</strong>, and <strong>boolean</strong>.</li>
   </ul>
