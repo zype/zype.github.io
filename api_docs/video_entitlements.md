@@ -30,7 +30,7 @@ access_token | OAuth token of a consumer | String
 
 #### Errors
 
-**422**: A consumer do not have permission to play this video
+**422**: A consumer does not have permission to play this video
 
 <hr />
 ### List Video Entitlements
@@ -53,6 +53,29 @@ q         | Filter records by keyword | String
 transaction_id | Filter records by transaction ID | String
 transaction_type | Filter records by the type of transaction that created the entitlement (Example: purchase) | String
 video_id | Filter records by video ID | String
+
+### List Video Entitlements for a specific Consumer
+<pre>
+<b>GET</b> https://api.zype.com/consumers/[consumer_id]/videos
+</pre>
+
+#### Parameters
+
+Parameter | Function | Type
+--------- | -------- | ----
+consumer_id | ID of the consumer whose video entitlements will be retrieved | String
+
+### Delete a Video Entitlement
+<pre>
+<b>DELETE</b> https://api.zype.com/consumers/[consumer_id]/videos/[id]
+</pre>
+
+#### Parameters
+
+Parameter | Function | Type
+--------- | -------- | ----
+consumer_id | ID of the consumer whose video entitlement will be deleted | String
+id | ID of the video entitlement | String
 
 ### Video Entitlement Object
 

@@ -26,6 +26,29 @@ q         | Filter records by keyword | String
 transaction_id | Filter records by transaction ID | String
 transaction_type | Filter records by the type of transaction that created the entitlement (Example: purchase) | String
 
+### List Playlist Entitlements for a specific Consumer
+<pre>
+<b>GET</b> https://api.zype.com/consumers/[consumer_id]/playlists
+</pre>
+
+#### Parameters
+
+Parameter | Function | Type
+--------- | -------- | ----
+consumer_id | ID of the consumer whose playlist entitlements will be retrieved | String
+
+### Delete a Playlist Entitlement
+<pre>
+<b>DELETE</b> https://api.zype.com/consumers/[consumer_id]/playlists/[id]
+</pre>
+
+#### Parameters
+
+Parameter | Function | Type
+--------- | -------- | ----
+consumer_id | ID of the consumer whose playlist entitlement will be deleted | String
+id | ID of the playlist entitlement | String
+
 ### Playlist Entitlement Object
 
 <pre>
