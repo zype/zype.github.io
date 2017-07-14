@@ -47,6 +47,7 @@ video_source[auto_add] | Automatically add new video imports to your video libra
 video_source[auto_activate] | Automatically activate new videos added to your video library | Boolean
 video_source[auto_deactivate] | Automatically deactivate video data sources that are absent from this feed that have been previously imported | Boolean
 video_source[sync_video_data_source] | Automatically update video source attributes such as thumbnails and video files | Boolean
+type | Specify the type of Video Source. Options are 'mrss', 'hulu', 'crunchyroll', 'kaltura', 'vimeo', 'vimeo_pro', 'youtube', 'youtube_playlist', 'youtube_video', 'zype', and 'zype_msl' | String
 
 ## Update a Video Source
 
