@@ -227,6 +227,15 @@ Parameter | Function | Type
 id        | ID of the record (Example: 5389352e69702d401b000000) | String
 
 ---
+
+## Allow subscription customers to remove ads from videos
+
+To allow consumers with valid subscription plans to remove ads from videos, you can create/update a video using the following parameters:
+
+Parameter | Function | Type
+--------- | -------- | ----
+subscription_ads_enabled | Flag whether ads should be played when a subscription is present. Setting to true will display ads for videos with ad timings, regardless of subscription status. Setting to false will disable ads for customers with valid subscriptions. Default: **true** | Boolean
+
 ## Video Object
 
 ```
