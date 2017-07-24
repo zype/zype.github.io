@@ -43,6 +43,7 @@ playlist[rental_required] | Enable rental for the playlist *edge feature* | Bool
 playlist[rental_price] | Rental price for the playlist bundle, sent as a string, ie "4.99" *edge feature* | String
 playlist[rental_duration] | Rental duration for the playlist, in days *edge feature* | Integer
 playlist[auto_update_consumer_videos] | Keep consumer video purchases and/or rentals in sync with playlist items. When videos are added to the playlist, also add them to a consumer's video purchase/rental list. *edge feature* | Boolean
+playlist[thumbnail_layout] | Preferred thumbnail layout for videos related to playlist. Options are 'landscape', 'poster', and 'square'. If left blank will default to 'landscape'. | String
 
 ### Retrieve a Playlist
 <pre><b>GET</b> https://api.zype.com/playlists/[id]
@@ -81,6 +82,7 @@ playlist[rental_required] | Enable rental for the playlist *edge feature* | Bool
 playlist[rental_price] | Rental price for the playlist bundle, sent as a string, ie "4.99" *edge feature* | String
 playlist[rental_duration] | Rental duration for the playlist, in days *edge feature* | Integer
 playlist[auto_update_consumer_videos] | Keep consumer video purchases and/or rentals in sync with playlist items. When videos are added to the playlist, also add them to a consumer's video purchase/rental list. *edge feature* | Boolean
+playlist[thumbnail_layout] | Update preferred thumbnail layout for videos related to playlist. Options are 'landscape', 'poster' and 'square'. | String
 playlist[categories][][id] | ID of the category assigned to the playlist if you are updating its values | String
 playlist[categories][][category_id] | ID of the main [Category](/api_docs/categories) you wish to add to the video | String
 playlist[categories][][title] | Title of the category assigned to the playlist | String
