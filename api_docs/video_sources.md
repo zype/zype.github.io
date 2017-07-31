@@ -48,6 +48,8 @@ video_source[auto_activate] | Automatically activate new videos added to your vi
 video_source[auto_deactivate] | Automatically deactivate video data sources that are absent from this feed that have been previously imported | Boolean
 video_source[sync_video_data_source] | Automatically update video source attributes such as thumbnails and video files | Boolean
 type | Specify the type of Video Source. Options are 'mrss', 'hulu', 'crunchyroll', 'kaltura', 'vimeo', 'vimeo_pro', 'youtube', 'youtube_playlist', 'youtube_video', 'zype', and 'zype_msl' | String
+video_source[import_from] | Exclude videos published before this date | Date
+video_source[import_to] | Exclude videos published after this date | Date
 
 ## Update a Video Source
 
@@ -74,11 +76,13 @@ video_source[auto_add] | Automatically add new video imports to your video libra
 video_source[auto_activate] | Automatically activate new videos added to your video library | Boolean
 video_source[auto_deactivate] | Automatically deactivate video data sources that are absent from this feed that have been previously imported | Boolean
 video_source[sync_video_data_source] | Automatically update video source attributes such as thumbnails and video files | Boolean
+video_source[import_from] | Exclude videos published before this date | Date
+video_source[import_to] | Exclude videos published after this date | Date
 
 ### Delete a Video Source
 <pre><b>DELETE</b> https://api.zype.com/video_sources/[id]</pre>
 
-#### Parameters  
+#### Parameters
 
 Parameter | Function | Type
 --------- | -------- | ----
