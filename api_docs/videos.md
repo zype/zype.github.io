@@ -172,6 +172,12 @@ video[categories_attributes][][id] | ID of the category assigned to the video if
 video[categories_attributes][][category_id] | ID of the main [Category](/api_docs/categories) you wish to add to the video | String
 video[categories_attributes][][title] | Title of the category assigned to the video | String
 video[categories_attributes][][value][] | List of values you wish to add to the category | Array
+video[images_attributes][][id] | Pass the ID of the image you wish to update on a given video (optional) | String
+video[images_attributes][][title] | Title of the image | String
+video[images_attributes][][caption] | Caption of the image | String
+video[images_attributes][][attachment] | Image as a file attachment
+video[images_attributes][][layout] | Must be one of 'poster' or 'square'. Default is 'landscape' | String
+video[images_attributes][][_destroy] | Pass in 'true' if you wish to remove an image | String
 
 ---
 ## Delete a Video
