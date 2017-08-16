@@ -19,6 +19,7 @@ expires_at | Filter records by expire date using times in ISO8601 format (Exampl
 id        | Filter records by ID | String
 id!       | Exclude records by ID | String
 order     | Sort records in ascending or descending order (Example: asc/desc) | String
+sort | Sort records on the specified field | String
 page | The page number of records to return (Example: 1) | Integer
 per_page | The number of records to return (Example: 10) | Integer
 playlist_id | Filter records by playlist ID | String
