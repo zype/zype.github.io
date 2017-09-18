@@ -38,6 +38,49 @@ Parameter | Function | Type
 --------- | -------- | ----
 consumer_id | ID of the consumer whose playlist entitlements will be retrieved | String
 
+### Create a Playlist Entitlement
+<pre>
+<b>POST</b> https://api.zype.com/consumers/[consumer_id]/playlists
+</pre>
+
+#### Parameters
+
+Parameter | Function | Type
+--------- | -------- | ----
+consumer_id | ID of the consumer whose playlist entitlement will be created | String
+entitlement[playlist_id] | ID of the [playlist](/api_docs/playlists) you wish the consumer to have access to | String
+entitlement[transaction_id] | ID of the transaction that happened to allow the consumer to have access to the Playlist | String
+entitlement[transaction_type] | Type of transaction (Example: purchase) | String
+entitlement[expires_at] | When the entitlement expires | Date
+
+### Retrieve a Playlist Entitlement
+<pre>
+<b>GET</b> https://api.zype.com/consumers/[consumer_id]/playlists/[id]
+</pre>
+
+#### Parameters
+
+Parameter | Function | Type
+--------- | -------- | ----
+consumer_id | ID of the consumer whose playlist entitlement will be retrieved | String
+id | ID of the record to retrieve | String
+
+### Update a Playlist Entitlement
+<pre>
+<b>PUT</b> https://api.zype.com/consumers/[consumer_id]/playlists/[id]
+</pre>
+
+#### Parameters
+
+Parameter | Function | Type
+--------- | -------- | ----
+consumer_id | ID of the consumer whose playlist entitlement will be updated | String
+id | ID of the record to update | String
+entitlement[playlist_id] | ID of the [playlist](/api_docs/playlists) you wish the consumer to have access to | String
+entitlement[transaction_id] | ID of the transaction that happened to allow the consumer to have access to the Playlist | String
+entitlement[transaction_type] | Type of transaction (Example: purchase) | String
+entitlement[expires_at] | When the entitlement expires | Date
+
 ### Delete a Playlist Entitlement
 <pre>
 <b>DELETE</b> https://api.zype.com/consumers/[consumer_id]/playlists/[id]
