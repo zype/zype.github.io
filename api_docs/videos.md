@@ -65,6 +65,7 @@ category! | Exclude records by category value (Example: `category![color]=blue`)
 created_at | Filter records by created date using times in ISO8601 format (Example: `2017-01-01T00:00:00-00:00`) or Unix timestamps (Example: `1483228800`). <br><br>**Note**: Range filters can be applied by adding a suffix: `.gt`, `.gte`, `.lt`, `.lte` (Example: `created_at.gte=2017-01-01T00:00:00-00:00`) | Date
 crunchyroll_id   | Filter records by a Crunchyroll ID | String
 dpt       | Filter records by DPT conditions (Geo-location and device restrictions) | Boolean
+featured  | Filter records that are featured | Boolean
 friendly_title | Find records by URL friendly title for SEO purposes | String
 hulu_id   | Filter records by a Hulu ID | String
 id        | Filter records by ID | String
