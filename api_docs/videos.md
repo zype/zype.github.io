@@ -179,7 +179,7 @@ video[images_attributes][][caption] | Caption of the image | String
 video[images_attributes][][attachment] | Image as a file attachment
 video[images_attributes][][layout] | Must be one of 'poster' or 'square'. Default is 'landscape' | String
 video[images_attributes][][_destroy] | Pass in 'true' if you wish to remove an image | String
-video[custom_attributes][][attribute_name] | List of custom attributes with values that you wish to update on a given video | Array
+video[custom_attributes][][attribute_name] | Pairs of custom attributes with values that you wish to update on a given video | Array
 
 ---
 ## Delete a Video
