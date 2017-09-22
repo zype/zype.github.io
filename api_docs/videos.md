@@ -140,7 +140,6 @@ video[mature_content] | Whether or not the video requires the viewer to be 18+ t
 video[discovery_url] | The URL where the video will be hosted, this field can be used in RSS distribution | String
 video[source_id] | An optional user specified identifier for a video | String
 video[custom_thumbnail_url] | A URL where a custom thumbnail for the video can be retrieved (JPEG, PNG or GIF) | String
-video[custom_attributes][][attribute_name] | List of custom attributes with values that you wish to add on the video | Array
 
 ---
 ## Update a Video
