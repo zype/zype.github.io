@@ -74,6 +74,7 @@
       <p class="category"><a href="/api_docs/intro/" style="color: #8acfef;">API Documentation</a></p>
       <h4 class="api-header">Zype Platform</h4>
       <p><a href="/api_docs/videos/">Videos</a></p>
+      <p><a href="/api_docs/subtitles/">Subtitles</a></p>
       <p><a href="/api_docs/playlists/">Playlists</a></p>
       <p><a href="/api_docs/categories/">Categories</a></p>
       <p><a href="/api_docs/apps/">Apps</a></p>
@@ -98,11 +99,15 @@
       <p><a href="/api_docs/plans/">Plans</a></p>
       <p><a href="/api_docs/transactions/">Transactions</a></p>
       <p><a href="/api_docs/redemption_codes/">Redemption Codes</a></p>
+      <p><a href="/api_docs/ad_tags/">Ad Tags</a></p>
       <p><a href="/api_docs/revenue_models/">Revenue Models</a></p>
 			<p><a href="/api_docs/video_favorites/">Video Favorites</a></p>
       <h4 class="api-header">Zobjects</h4>
       <p><a href="/api_docs/zobject_types/">Zobject Types</a></p>
       <p><a href="/api_docs/zobjects/">Zobjects</a></p>
+      <br>
+      <h4 class="api-header">Common API Examples</h4>
+      <p><a href="/api_docs/3rd-party-crm-integration/">3rd Party CRM Integration</a></p>
       <br>
       <p class="category"><a href="/platform_docs/" style="color: #8acfef;">Platform Documentation</a></p>
       <p class="category"><a href="/sdks/" style="color: #8acfef;">SDKs</a></p>
@@ -111,7 +116,7 @@
       <p class="category"><a href="/faq/" style="color: #8acfef;">FAQ</a></p>
       <br>
       <div class="hidden-mobile light">
-        © 2016 Zype Inc.
+        &copy; 2017 Zype Inc.
       </div>
     </div>
   </header>
@@ -125,14 +130,47 @@
 
 <h3 id="web-players">Web Players</h3>
 
-<p>For web based players like desktop, iOS and Android browsers the Player API will return a JavaScript or Iframe player response that can be used to embed the player on a web page. For web based players not additional integration is required.</p>
+<p>For web based players like desktop, iOS and Android browsers the Player API will return a JavaScript or Iframe player response that can be used to embed the player on a web page. For web based players no additional integration is required.</p>
 
 <h3 id="native-players">Native Players</h3>
 
-<p>For native devices like iOS, Android and OTT devices the Player API will return a JSON player response that can be used to play your videos. The JSON player response will include everything you need to play your video, including media files, advertising schedules and subtitles.</p>
+<p>For native devices like iOS, Android and OTT set-top boxes, the Player API will return a JSON player response that can be used to play your videos. The JSON player response will include everything you need to play your video, including media files, advertising schedules and subtitles.</p>
+
+<p>Developers need to specify User-Agent for all requests that are coming from Native Players.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Device</th>
+      <th>User-Agent</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Android(Native)</td>
+      <td>zype android</td>
+    </tr>
+    <tr>
+      <td>Apple TV</td>
+      <td>zype tvos</td>
+    </tr>
+    <tr>
+      <td>Fire TV</td>
+      <td>AmazonWebAppPlatform</td>
+    </tr>
+    <tr>
+      <td>Roku</td>
+      <td>Roku</td>
+    </tr>
+    <tr>
+      <td>iOS Native</td>
+      <td>cfnetwork</td>
+    </tr>
+  </tbody>
+</table>
 
 <p>You should utilize best practices for the specific native device on how to insert your video files and ad tags. For reference,
-please checkout <a href="https://github.com/zype/">Zype’s Github</a> for our open sourced SDKs.</p>
+please check out <a href="https://github.com/zype/">Zype’s Github</a> for our open sourced SDKs.</p>
 
 <h3 id="retrieve-player">Retrieve Player</h3>
 <pre><b>GET</b> https://player.zype.com/embed/[video_id].[format]</pre>
@@ -212,7 +250,7 @@ please checkout <a href="https://github.com/zype/">Zype’s Github</a> for our o
 
     <footer id="footer">
   <p style="padding-top: 10px;" class="light">
-    © 2016 Zype Inc.
+    &copy; 2017 Zype Inc.
   </p>
 </footer>
 

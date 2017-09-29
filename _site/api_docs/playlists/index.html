@@ -74,6 +74,7 @@
       <p class="category"><a href="/api_docs/intro/" style="color: #8acfef;">API Documentation</a></p>
       <h4 class="api-header">Zype Platform</h4>
       <p><a href="/api_docs/videos/">Videos</a></p>
+      <p><a href="/api_docs/subtitles/">Subtitles</a></p>
       <p><a href="/api_docs/playlists/">Playlists</a></p>
       <p><a href="/api_docs/categories/">Categories</a></p>
       <p><a href="/api_docs/apps/">Apps</a></p>
@@ -98,11 +99,15 @@
       <p><a href="/api_docs/plans/">Plans</a></p>
       <p><a href="/api_docs/transactions/">Transactions</a></p>
       <p><a href="/api_docs/redemption_codes/">Redemption Codes</a></p>
+      <p><a href="/api_docs/ad_tags/">Ad Tags</a></p>
       <p><a href="/api_docs/revenue_models/">Revenue Models</a></p>
 			<p><a href="/api_docs/video_favorites/">Video Favorites</a></p>
       <h4 class="api-header">Zobjects</h4>
       <p><a href="/api_docs/zobject_types/">Zobject Types</a></p>
       <p><a href="/api_docs/zobjects/">Zobjects</a></p>
+      <br>
+      <h4 class="api-header">Common API Examples</h4>
+      <p><a href="/api_docs/3rd-party-crm-integration/">3rd Party CRM Integration</a></p>
       <br>
       <p class="category"><a href="/platform_docs/" style="color: #8acfef;">Platform Documentation</a></p>
       <p class="category"><a href="/sdks/" style="color: #8acfef;">SDKs</a></p>
@@ -111,7 +116,7 @@
       <p class="category"><a href="/faq/" style="color: #8acfef;">FAQ</a></p>
       <br>
       <div class="hidden-mobile light">
-        © 2016 Zype Inc.
+        &copy; 2017 Zype Inc.
       </div>
     </div>
   </header>
@@ -258,6 +263,11 @@
       <td>Keep consumer video purchases and/or rentals in sync with playlist items. When videos are added to the playlist, also add them to a consumer’s video purchase/rental list. <em>edge feature</em></td>
       <td>Boolean</td>
     </tr>
+    <tr>
+      <td>playlist[thumbnail_layout]</td>
+      <td>Preferred thumbnail layout for videos related to playlist. Options are ‘landscape’, ‘poster’, and ‘square’. If left blank will default to ‘landscape’.</td>
+      <td>String</td>
+    </tr>
   </tbody>
 </table>
 
@@ -374,6 +384,61 @@
       <td>playlist[auto_update_consumer_videos]</td>
       <td>Keep consumer video purchases and/or rentals in sync with playlist items. When videos are added to the playlist, also add them to a consumer’s video purchase/rental list. <em>edge feature</em></td>
       <td>Boolean</td>
+    </tr>
+    <tr>
+      <td>playlist[thumbnail_layout]</td>
+      <td>Update preferred thumbnail layout for videos related to playlist. Options are ‘landscape’, ‘poster’ and ‘square’.</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>playlist[categories][][id]</td>
+      <td>ID of the category assigned to the playlist if you are updating its values</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>playlist[categories][][category_id]</td>
+      <td>ID of the main <a href="/api_docs/categories">Category</a> you wish to add to the video</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>playlist[categories][][title]</td>
+      <td>Title of the category assigned to the playlist</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>playlist[categories][][value][]</td>
+      <td>List of values you wish to add to the category</td>
+      <td>Array</td>
+    </tr>
+    <tr>
+      <td>playlist[images_attributes][][id]</td>
+      <td>Pass the ID of the image you wish to update on a given playlist (optional)</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>playlist[images_attributes][][title]</td>
+      <td>Title of the image</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>playlist[images_attributes][][caption]</td>
+      <td>Caption of the image</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>playlist[images_attributes][][attachment]</td>
+      <td>Image as a file attachment</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>playlist[images_attributes][][layout]</td>
+      <td>Must be one of ‘poster’ or ‘square’. Default is ‘landscape’</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>playlist[images_attributes][][_destroy]</td>
+      <td>Pass in ‘true’ if you wish to remove an image</td>
+      <td>String</td>
     </tr>
   </tbody>
 </table>
@@ -529,11 +594,341 @@
 }
 </pre>
 
+<h2 id="category-playlists">Category Playlists</h2>
+
+<hr />
+
+<h3 id="create">Create</h3>
+
+<p>Creating a Category Playlist, is the same as creating a Playlist but setting its <strong>playlist_type</strong> with a <i>'category'</i> value. You should call the POST action:</p>
+
+<pre><b>POST</b> https://api.zype.com/playlists</pre>
+
+<p>with the following parameters:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Function</th>
+      <th>Type</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>playlist[playlist_type]</td>
+      <td>The playlist type to create. Accepted values: <strong>manual</strong>, <strong>category</strong></td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>playlist[match_type]</td>
+      <td>Videos that should match with the categories selected. Accepted values: <strong>any</strong>, <strong>all</strong>. If match_type is <em>any</em>, videos to be added to the playlist should match <em>ANY</em> of the categories selected. If match_type is <em>all</em>, videos to be added to the playlist should match <em>ALL</em> of the categories selected.</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>playlist[categories]</td>
+      <td>Categories that will be used to selected the proper videos to add into the playlist</td>
+      <td>Array</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>The <strong>playlist[categories]</strong> should contain an array of hashes. Every hash will represent a category to be added with the following parameters:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Function</th>
+      <th>Type</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>categories[category_id]</td>
+      <td>ID of the category that will be referenced</td>
+      <td>Integer</td>
+    </tr>
+    <tr>
+      <td>categories[title]</td>
+      <td>Title of the category to be added</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>playlist[values]</td>
+      <td>Values selected of the category referenced</td>
+      <td>Array</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Here is an JSON example to be set as the body to create a Category Playlist:</p>
+<pre>
+{
+  "playlist": {
+    "title": "Category Playlist",
+    "playlist_type": "category",
+    "match_type": "any",
+    "categories": [
+      {
+        "category_id": "1234",
+        "title": "Category Title",
+        "value": [
+          "Category Value"
+        ]
+      }
+    ]
+  }
+}
+</pre>
+
+<p>Take into account that the <strong>category_id</strong> should be included into the site's categories. To get the list of categories, please go to the <a href="/api_docs/categories" target="none">categories documentation</a>. If a category with the selected <i>category_id</i> doesn't exists, you will get a <strong>422</strong> response with the following message:</p>
+
+<pre>
+{
+  "message": "Could not save playlist: Categories is invalid"
+}
+</pre>
+
+<hr />
+
+<h3 id="update">Update</h3>
+
+<p>Updating a Category Playlist, is the same as updating a Playlist but changing its <strong>categories</strong>. You should call the PUT action:</p>
+
+<pre><b>PUT</b> https://api.zype.com/playlists/[id]</pre>
+
+<p>Take into account that <strong>updating</strong> a playlist categories will overwrite the current categories. So, if you want to keep your current categories and values, adding new ones, you should add them to the json body parameters. If you want to delete categories or values, you have to set the categories array only with the categories that you want for your playlist, obviating the ones that you don't need anymore</p>
+
+<h2 id="managing-playlist-relationships">Managing Playlist Relationships</h2>
+
+<p>Playlist Relationships allow you to create a parent / child relationship between two playlists. This is useful for nesting playlist content within OTT apps. For example, you could create a parent playlist called "Comedy" and nest child playlists underneath called "Romantic Comedies" and "Slapstick Comedies" to provide a better user experience for your audience. To manage Playlist Relationships, we use the <strong>parent_id</strong> and <strong>priority</strong> fields of a playlist.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Function</th>
+      <th>Type</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>playlist[parent_id]</td>
+      <td>The parent playlist id. If this value is <strong>null</strong>, the playlist is a <strong>root</strong> playlist and can be used as the primary playlist within an app where all your other playlists and videos are nested under</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>playlist[priority]</td>
+      <td>The <strong>priority</strong> of the playlist related with its siblings. Playlists are ordered ascending by priority value</td>
+      <td>Integer</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>When creating or updating a Playlist:</p>
+
+<p>
+  <ul>
+    <li>If the <strong>parent_id</strong> and <strong>priority</strong> are not set, the playlist will be set as a <strong>root</strong> playlist with the highest <strong>priority</strong> value set.</li>
+    <li>If the <strong>parent_id</strong> is not set, but the <strong>priority</strong> is, then, the playlist will be set as a <strong>root</strong> playlist, and will be ordered by the <strong>priority</strong> value set. If there is another root playlist with the same priority, then it will be added after this playlist.</li>
+    <li>If the <strong>parent_id</strong> and <strong>priority</strong> are set, the playlist will be added as a child of the playlist with id <strong>parent_id</strong>, and will be ordered by the <strong>priority</strong> value set. If there is another sibling playlist with the same priority, then it will be added after the sibling.</li>
+  </ul>
+</p>
+
+<p>To nest a playlist under a new parent, you need to change its <strong>parent_id</strong> field to the id of the playlist you want to nest it under. If you want it to be a <strong>root</strong> playlist, then you have to set the parent_id field as null or empty</p>
+
+<p>Also, take into account that 0 (zero) is the highest priority.</p>
+
+<hr />
+
+<h3 id="create-1">Create</h3>
+
+<p><pre><b>POST</b> https://api.zype.com/playlists</pre></p>
+
+<p>Here is an JSON example to be set as the body to create a Playlist with a relationship:</p>
+<pre>
+{
+  "playlist": {
+    "parent_id": "abcd1234",
+    "priority": 1
+  }
+}
+</pre>
+
+<hr />
+
+<h3 id="update-1">Update</h3>
+
+<p><pre><b>PUT</b> https://api.zype.com/playlists/[id]</pre></p>
+
+<p>Here is an JSON example to be set as the body to create a Playlist with a relationship:</p>
+<pre>
+{
+  "playlist": {
+    "parent_id": "abcd1234",
+    "priority": 1
+  }
+}
+</pre>
+
+<h3 id="relationships">Relationships</h3>
+
+<p><pre><b>GET</b> https://api.zype.com/playlists/relationships</pre></p>
+
+<p>Returns the list of playlists and its relationships</p>
+
+<p>Here is an JSON example to returned:</p>
+<pre>
+{
+    "playlists": [
+        {
+            "id": "586124bfa54d7535cb001fc2",
+            "title": "Playlist A",
+            "priority": 0,
+            "playlists": [
+                {
+                    "id": "5942dde0a54d750e3b000042",
+                    "title": "Playlist A.1",
+                    "priority": 0
+                }
+            ]
+        },
+        {
+            "id": "58d1718aa54d750bf100002e",
+            "title": "Playlist B",
+            "priority": 1,
+            "playlists": [
+                {
+                    "id": "5942defea54d750e3b000045",
+                    "title": "Playlist B.1",
+                    "priority": 0,
+                    "playlists": [
+                        {
+                            "id": "586124bfa54d7535cb001fba",
+                            "title": "Playlist B.1.1",
+                            "priority": 0
+                        }
+                    ]
+                },
+                {
+                    "id": "586124bea54d7535cb001fb1",
+                    "title": "Playlist B.2",
+                    "priority": 1
+                }
+            ]
+        }
+    ]
+}
+</pre>
+
+<h2 id="smart-ordering">Smart Ordering</h2>
+
+<p>Playlist smart ordering allows you to change the order of its videos by sort options. The videos added or updated into a playlist with sort options are sorted automatically following that sort option<p>
+
+Parameter | Function | Type
+--------- | -------- | ----
+playlist[sort_options] | An array of sort options. Only two levels of sorting are accepted, and videos are sorted first by first level, and second by second level | Array
+
+<p>Every <strong>sort_option</strong> has three fields:</p>
+
+<p>
+  <ul>
+    <li><strong>direction:</strong> The direction to sort the results. It accepts two values: <strong>asc</strong> (ascending - lowest to highest) and <strong>desc</strong> (descending - highest to lowest) order.</li>
+    <li><strong>sort_by:</strong> The field name which will be taken into account to sort the results. It accepts the following values: <strong>created_at</strong>, <strong>published_at</strong>, and <strong>title</strong>.</li>
+    <li><strong>sort_by_type:</strong> The type of the field which will be taken into account to sort the results. It accepts the following values: <strong>date</strong>, <strong>datetime</strong>, <strong>string</strong>, <strong>integer</strong>, <strong>array</strong>, and <strong>boolean</strong>. The difference between <strong>date</strong> and <strong>datetime</strong> is that <i>date</i> will only take the date part of the field, while <i>datetime</i> will take the date and time part of the field; so for example, for a date "01/01/2001 01:01:01", <i>date</i> will take only "01/01/2001" into account, while <i>datetime</i> will take the complete date "01/01/2001 01:01:01" into account.</li>
+  </ul>
+</p>
+
+
+<hr />
+### Create
+
+<p><pre><b>POST</b> https://api.zype.com/playlists</pre></p>
+
+<p>Here is an JSON example to be set as the body to create a Playlist with <strong>one level</strong> smart ordering:</p>
+<pre>
+{
+  "playlist": {
+    "playlist title": "Title",
+    "sort_options": [
+      {
+        "direction": "desc",
+        "sort_by": "published_at",
+        "sort_by_type": "datetime"
+      }
+    ]
+  }
+}
+</pre>
+
+<p>And with <strong>two levels</strong> smart ordering:</p>
+<pre>
+{
+  "playlist": {
+    "playlist title": "Title",
+    "sort_options": [
+      {
+        "direction": "desc",
+        "sort_by": "published_at",
+        "sort_by_type": "datetime"
+      },
+      {
+        "direction": "asc",
+        "sort_by": "title",
+        "sort_by_type": "string"
+      }
+    ]
+  }
+}
+</pre>
+
+<hr />
+### Update
+
+<p><pre><b>PUT</b> https://api.zype.com/playlists/[id]</pre></p>
+
+<p>Here is an JSON example to be set as the body to update a Playlist with <strong>one level</strong> smart ordering:</p>
+<pre>
+{
+  "playlist": {
+    "sort_options": [
+      {
+        "direction": "desc",
+        "sort_by": "published_at",
+        "sort_by_type": "datetime"
+      }
+    ]
+  }
+}
+</pre>
+
+<p>And with <strong>two levels</strong> smart ordering:</p>
+<pre>
+{
+  "playlist": {
+    "sort_options": [
+      {
+        "direction": "desc",
+        "sort_by": "published_at",
+        "sort_by_type": "datetime"
+      },
+      {
+        "direction": "asc",
+        "sort_by": "title",
+        "sort_by_type": "string"
+      }
+    ]
+  }
+}
+</pre>
+</p></p>
+
     </section>
 
     <footer id="footer">
   <p style="padding-top: 10px;" class="light">
-    © 2016 Zype Inc.
+    &copy; 2017 Zype Inc.
   </p>
 </footer>
 
