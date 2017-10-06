@@ -48,6 +48,7 @@ format | The format for the player response. You can request Iframes, JavaScript
 {
   outputs: [
     {
+      master_manifest_url: "https://player.zype.com/manifest/master.m3u8",
       url: "https://player.zype.com/manifest/abc123.m3u8",
       name: "hls"
     }
@@ -69,3 +70,5 @@ format | The format for the player response. You can request Iframes, JavaScript
   ]
 }
 </pre>
+
+- master_manifest_url will be provided for Zype Live videos
