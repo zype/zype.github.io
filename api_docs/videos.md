@@ -128,6 +128,8 @@ video[friendly_title] | The URL friendly title of the video. **Optional** — if
 video[description] | The description of the video | String
 video[short_description] | The description of the video | String
 video[published_at]  | The date and time that the video will appear to have been published | String
+video[enable_at] | The date and time that the video will become active | String
+video[disable_at] | The date and time the video will become inactive | String
 video[episode] | The video's episode number | Integer
 video[season] | The video's season number | Integer
 video[country] | The country the video was created in | String
@@ -157,6 +159,8 @@ video[friendly_title] | The URL friendly title of the video. | String
 video[description] | The description of the video | String
 video[short_description] | The description of the video | String
 video[published_at]  | The date and time that the video will appear to have been published | String
+video[enable_at] | The date and time that the video will become active | String
+video[disable_at] | The date and time the video will become inactive | String
 video[episode] | The video's episode number | Integer
 video[season] | The video's season number | Integer
 video[country] | The country the video was created in | String
@@ -269,6 +273,8 @@ subscription_ads_enabled | Flag whether ads should be played when a subscription
   "country": "",
   "created_at": "2014-11-30T12:03:06.783-05:00",
   "description": "A continuation of the saga created by George Lucas set thirty years after Star Wars: Episode VI - Return of the Jedi (1983).",
+	"enable_at": null,
+	"disable_at": null,
   "discovery_url": "http://www.yoursite.com/video"
   "duration": 91,
   "episode": null,
