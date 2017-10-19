@@ -80,6 +80,7 @@ q         | Filter records by keyword | String
 sort      | Sort records on the specified field | String
 source_id | Filter records by an optional source identifier | String
 type      | Filter records by type (Examples: `zype`, `hulu`, `youtube`, `crunchyroll`) | String
+updated_at | Filter records by last updated date using times in ISO8601 format (Example: `2017-01-01T00:00:00-00:00`) or Unix timestamps (Example: `1483228800`). <br><br>**Note**: Range filters can be applied by adding a suffix: `.gt`, `.gte`, `.lt`, `.lte` (Example: `updated_at.gte=2017-01-01T00:00:00-00:00`) | Date
 vimeo_id   | Filter records by a Vimeo ID | String
 youtube_id   | Filter records by a YouTube ID | String
 zobject_id  | Filter records by Zobject ID | String
