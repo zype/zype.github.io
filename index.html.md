@@ -17,21 +17,21 @@ If you're a developer, you've come to the right place! Here we'll discuss the Zy
     </div>
   </a>
 
-  <a href="https://support.zype.com">
+  <a href="/platform_docs/">
     <div class="homepage-tile">
       <span class="fa fa-file-text homepage-icon"></span>
       <span class="homepage-text">Platform Docs</span>
     </div>
   </a>
 
-  <a href="https://support.zype.com/hc/en-us/categories/201978548-Applications">
+  <a href="/sdks/">
     <div class="homepage-tile end-of-row">
       <span class="fa fa-cubes homepage-icon"></span>
       <span class="homepage-text">Tools &amp; SDKs</span>
     </div>
   </a>
 
-  <a href="https://support.zype.com/hc/en-us/articles/216218128-Glossary-of-Zype-Terms">
+  <a href="/glossary/">
     <div class="homepage-tile">
       <span class="fa fa-book homepage-icon"></span>
       <span class="homepage-text">Zype Glossary</span>
@@ -45,7 +45,7 @@ If you're a developer, you've come to the right place! Here we'll discuss the Zy
     </div>
   </a>
 
-  <a href="https://support.zype.com/hc/en-us/categories/115001506808-FAQ">
+  <a href="/faq/">
     <div class="homepage-tile end-of-row">
       <span class="fa fa-question homepage-icon"></span>
       <span class="homepage-text">FAQ</span>
