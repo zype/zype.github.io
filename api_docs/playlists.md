@@ -44,6 +44,7 @@ playlist[rental_price] | Rental price for the playlist bundle, sent as a string,
 playlist[rental_duration] | Rental duration for the playlist, in days *edge feature* | Integer
 playlist[auto_update_consumer_videos] | Keep consumer video purchases and/or rentals in sync with playlist items. When videos are added to the playlist, also add them to a consumer's video purchase/rental list. *edge feature* | Boolean
 playlist[thumbnail_layout] | Preferred thumbnail layout for videos related to playlist. Options are 'landscape', 'poster', and 'square'. If left blank will default to 'landscape'. | String
+playlist[custom_thumbnail] | Image as a file attachment
 
 ### Retrieve a Playlist
 <pre><b>GET</b> https://api.zype.com/playlists/[id]
@@ -93,6 +94,8 @@ playlist[images_attributes][][caption] | Caption of the image | String
 playlist[images_attributes][][attachment] | Image as a file attachment
 playlist[images_attributes][][layout] | Must be one of 'poster' or 'square'. Default is 'landscape' | String
 playlist[images_attributes][][_destroy] | Pass in 'true' if you wish to remove an image | String
+playlist[custom_thumbnail] | Image as a file attachment
+playlist[delete_custom_thumbnail] | Pass in '1' if you wish to remove the custom thumbnail | String
 
 ### Delete a Playlist
 <pre><b>DELETE</b> https://api.zype.com/playlists/[id]</pre>
