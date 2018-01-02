@@ -6,9 +6,9 @@
 </description>
     <link>http://dev.zype.com/</link>
     <atom:link href="http://dev.zype.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Tue, 26 Sep 2017 12:18:27 -0300</pubDate>
-    <lastBuildDate>Tue, 26 Sep 2017 12:18:27 -0300</lastBuildDate>
-    <generator>Jekyll v3.0.2</generator>
+    <pubDate>Tue, 02 Jan 2018 17:50:31 -0500</pubDate>
+    <lastBuildDate>Tue, 02 Jan 2018 17:50:31 -0500</lastBuildDate>
+    <generator>Jekyll v3.6.2</generator>
     
       <item>
         <title>MRSS Import Format</title>
@@ -133,7 +133,7 @@
 &lt;/style&gt;
 
 </description>
-        <pubDate>Tue, 31 May 2016 07:37:55 -0300</pubDate>
+        <pubDate>Tue, 31 May 2016 06:37:55 -0400</pubDate>
         <link>http://dev.zype.com/posts/2016/05/31/mrss-import-format/</link>
         <guid isPermaLink="true">http://dev.zype.com/posts/2016/05/31/mrss-import-format/</guid>
         
@@ -265,7 +265,7 @@
 &lt;/style&gt;
 
 </description>
-        <pubDate>Wed, 18 May 2016 07:37:55 -0300</pubDate>
+        <pubDate>Wed, 18 May 2016 06:37:55 -0400</pubDate>
         <link>http://dev.zype.com/posts/2016/05/18/kaltura-mrss-import-format/</link>
         <guid isPermaLink="true">http://dev.zype.com/posts/2016/05/18/kaltura-mrss-import-format/</guid>
         
@@ -442,7 +442,7 @@
   &lt;li&gt;In the Embed Domain Whitelist textarea add the domain of your website. For example enter &lt;strong&gt;mysite.com&lt;/strong&gt; (NOT http://mysite.com). Leaving this box empty will allow &lt;em&gt;all&lt;/em&gt; domains. For multiple values separate with a comma.&lt;/li&gt;
 &lt;/ol&gt;
 </description>
-        <pubDate>Mon, 01 Feb 2016 08:37:55 -0200</pubDate>
+        <pubDate>Mon, 01 Feb 2016 05:37:55 -0500</pubDate>
         <link>http://dev.zype.com/posts/2016/02/01/upload-search-widgets/</link>
         <guid isPermaLink="true">http://dev.zype.com/posts/2016/02/01/upload-search-widgets/</guid>
         
@@ -664,7 +664,7 @@ toggle &lt;strong&gt;Subscription Required&lt;/strong&gt; or__ Purchase Required
 
 &lt;p&gt;That’s it!&lt;/p&gt;
 </description>
-        <pubDate>Fri, 15 Jan 2016 08:37:55 -0200</pubDate>
+        <pubDate>Fri, 15 Jan 2016 05:37:55 -0500</pubDate>
         <link>http://dev.zype.com/posts/2016/01/15/self-publish-firetv/</link>
         <guid isPermaLink="true">http://dev.zype.com/posts/2016/01/15/self-publish-firetv/</guid>
         
@@ -687,9 +687,8 @@ This is useful if you have specific campaigns or goals. For example, if your pla
 
 &lt;p&gt;The general format for usage is:&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;
-https://player.zype.com/embed/[video_id].html?autoplay=true&amp;amp;api_key=[api_key]&amp;amp;tracking_code=[tracking_code]&amp;amp;tracking_partner=[tracking_partner]
-&lt;/code&gt;&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;https://player.zype.com/embed/[video_id].html?autoplay=true&amp;amp;api_key=[api_key]&amp;amp;tracking_code=[tracking_code]&amp;amp;tracking_partner=[tracking_partner]
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Note that you must always add the &lt;b&gt;tracking_partner&lt;/b&gt;. The tracking_code is optional.&lt;/p&gt;
 
@@ -697,21 +696,18 @@ https://player.zype.com/embed/[video_id].html?autoplay=true&amp;amp;api_key=[api
 
 &lt;p&gt;Let’s say you are embedding your videos on a site iWidgets. To track impressions by that partner you’d add tracking_partner=iwidgets to your Embed Code url:&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;
-https://player.zype.com/embed/[video_id].html?autoplay=true&amp;amp;api_key=[api_key]&amp;amp;tracking_partner=iwidgets
-&lt;/code&gt;&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;https://player.zype.com/embed/[video_id].html?autoplay=true&amp;amp;api_key=[api_key]&amp;amp;tracking_partner=iwidgets
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h2 id=&quot;tracking-code&quot;&gt;Tracking Code&lt;/h2&gt;
 
 &lt;p&gt;If you’d like to get more details you can add a Tracking Code. Tracking Codes are grouped by Tracking Partner. For example, if the iWidgets site is placing your videos on the &lt;b&gt;home&lt;/b&gt; page and on the &lt;b&gt;store&lt;/b&gt; page you could track how each of these individually performs, by adding &lt;b&gt;tracking_code=home&lt;/b&gt; and &lt;b&gt;tracking_code=store&lt;/b&gt;. For example&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;
-https://player.zype.com/embed/[video_id].html?autoplay=true&amp;amp;api_key=[api_key]&amp;amp;tracking_partner=iwidgets&amp;amp;tracking_code=home
-&lt;/code&gt;&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;https://player.zype.com/embed/[video_id].html?autoplay=true&amp;amp;api_key=[api_key]&amp;amp;tracking_partner=iwidgets&amp;amp;tracking_code=home
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;
-https://player.zype.com/embed/[video_id].html?autoplay=true&amp;amp;api_key=[api_key]&amp;amp;tracking_partner=iwidgets&amp;amp;tracking_code=store
-&lt;/code&gt;&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;https://player.zype.com/embed/[video_id].html?autoplay=true&amp;amp;api_key=[api_key]&amp;amp;tracking_partner=iwidgets&amp;amp;tracking_code=store
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Note that we have also added tracking_partner=iwidgets to each of these urls.&lt;/p&gt;
 
@@ -725,9 +721,8 @@ https://player.zype.com/embed/[video_id].html?autoplay=true&amp;amp;api_key=[api
 
 &lt;p&gt;&lt;b&gt;Copy&lt;/b&gt; the embed code. Then modify the &lt;b&gt;src&lt;/b&gt; by adding the &lt;b&gt;tracking_partner&lt;/b&gt; and &lt;b&gt;tracking_code&lt;/b&gt; parameters. Note that you must always add the &lt;b&gt;tracking_partner&lt;/b&gt;. The tracking_code is optional.&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;
-https://player.zype.com/embed/[video_id].html?autoplay=true&amp;amp;api_key=[api_key]&amp;amp;tracking_code=[tracking_code]&amp;amp;tracking_partner=[tracking_partner]
-&lt;/code&gt;&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;https://player.zype.com/embed/[video_id].html?autoplay=true&amp;amp;api_key=[api_key]&amp;amp;tracking_code=[tracking_code]&amp;amp;tracking_partner=[tracking_partner]
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h3 id=&quot;paywall-embed-code&quot;&gt;Paywall Embed Code&lt;/h3&gt;
 
@@ -737,11 +732,10 @@ https://player.zype.com/embed/[video_id].html?autoplay=true&amp;amp;api_key=[api
 
 &lt;p&gt;&lt;b&gt;Copy&lt;/b&gt; the paywall embed code. You’ll have to add &lt;b&gt;zype.tracking_partner=[tracking_partner]; zype.tracking_code=[tracking_code];&lt;/b&gt; in the second script tag. Be sure to add it before the zype.VideoEmbed() function. For example:&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;
-&amp;lt;script type=&quot;text/javascript&quot; src=&quot;https://play.zype.com/javascripts/subscription_embed.js&quot;&amp;gt;&amp;lt;/script&amp;gt;&amp;lt;div id=&#39;zype_553297c169702d0885a4435b&#39; style=&#39;width:100%; min-width:300px; max-width:560px;&#39;&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;script&amp;gt;zype.siteId = &#39;F7DbcH2vVnvPtYRIY1Xq9z92Bypj90i2uEcudIqK8KhNl_y-xWQNIi2UfpfzZl3N&#39;; zype.tracking_partner=[tracking_partner]; zype.tracking_code=[tracking_code]; zype.videoId = &#39;553297c169702d0885a4435b&#39;;zype.videoEmbed(&#39;zype_553297c169702d0885a4435b&#39;);&amp;lt;/script&amp;gt;
-&lt;/code&gt;&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;script type=&quot;text/javascript&quot; src=&quot;https://play.zype.com/javascripts/subscription_embed.js&quot;&amp;gt;&amp;lt;/script&amp;gt;&amp;lt;div id='zype_553297c169702d0885a4435b' style='width:100%; min-width:300px; max-width:560px;'&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;script&amp;gt;zype.siteId = 'F7DbcH2vVnvPtYRIY1Xq9z92Bypj90i2uEcudIqK8KhNl_y-xWQNIi2UfpfzZl3N'; zype.tracking_partner=[tracking_partner]; zype.tracking_code=[tracking_code]; zype.videoId = '553297c169702d0885a4435b';zype.videoEmbed('zype_553297c169702d0885a4435b');&amp;lt;/script&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 </description>
-        <pubDate>Tue, 03 Nov 2015 08:04:55 -0200</pubDate>
+        <pubDate>Tue, 03 Nov 2015 05:04:55 -0500</pubDate>
         <link>http://dev.zype.com/posts/2015/11/03/analytics-tracking-partner-codes/</link>
         <guid isPermaLink="true">http://dev.zype.com/posts/2015/11/03/analytics-tracking-partner-codes/</guid>
         
@@ -823,7 +817,7 @@ Click save changes.&lt;/p&gt;
 &lt;p&gt;Reload your Roku Channel, you should see the first row be your featured playlist and the
 remaining rows be the your category values!&lt;/p&gt;
 </description>
-        <pubDate>Mon, 11 May 2015 07:37:55 -0300</pubDate>
+        <pubDate>Mon, 11 May 2015 06:37:55 -0400</pubDate>
         <link>http://dev.zype.com/posts/2015/05/11/organizing-videos-for-roku/</link>
         <guid isPermaLink="true">http://dev.zype.com/posts/2015/05/11/organizing-videos-for-roku/</guid>
         
@@ -852,7 +846,7 @@ for and click on the “Thumbnails” tab.&lt;/p&gt;
 
 &lt;p&gt;Select the thumbnail that you want. The thumbnail will automatically be updated!&lt;/p&gt;
 </description>
-        <pubDate>Thu, 09 Apr 2015 07:37:55 -0300</pubDate>
+        <pubDate>Thu, 09 Apr 2015 06:37:55 -0400</pubDate>
         <link>http://dev.zype.com/posts/2015/04/09/change-thumbnails/</link>
         <guid isPermaLink="true">http://dev.zype.com/posts/2015/04/09/change-thumbnails/</guid>
         
@@ -890,7 +884,7 @@ and following the photo tutorial below.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;http://dev.zype.com/assets/password/forgot_password_4.png&quot; alt=&quot;forgot password 4&quot; /&gt;&lt;/p&gt;
 </description>
-        <pubDate>Thu, 09 Apr 2015 07:37:55 -0300</pubDate>
+        <pubDate>Thu, 09 Apr 2015 06:37:55 -0400</pubDate>
         <link>http://dev.zype.com/posts/2015/04/09/forgot-password/</link>
         <guid isPermaLink="true">http://dev.zype.com/posts/2015/04/09/forgot-password/</guid>
         
@@ -929,7 +923,7 @@ preexisting videos in your video library.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;http://dev.zype.com/assets/video_sources/advanced_video_imports.png&quot; alt=&quot;advanced video importing&quot; /&gt;&lt;/p&gt;
 </description>
-        <pubDate>Sun, 15 Feb 2015 08:37:55 -0200</pubDate>
+        <pubDate>Sun, 15 Feb 2015 05:37:55 -0500</pubDate>
         <link>http://dev.zype.com/posts/2015/02/15/importing-videos-from-third-party-source/</link>
         <guid isPermaLink="true">http://dev.zype.com/posts/2015/02/15/importing-videos-from-third-party-source/</guid>
         
@@ -953,7 +947,7 @@ the chosen video import data source from your video.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;http://dev.zype.com/assets/video_imports/bulk_remove.png&quot; alt=&quot;remove from library&quot; /&gt;&lt;/p&gt;
 </description>
-        <pubDate>Sun, 15 Feb 2015 08:37:55 -0200</pubDate>
+        <pubDate>Sun, 15 Feb 2015 05:37:55 -0500</pubDate>
         <link>http://dev.zype.com/posts/2015/02/15/bulk-video-importing/</link>
         <guid isPermaLink="true">http://dev.zype.com/posts/2015/02/15/bulk-video-importing/</guid>
         

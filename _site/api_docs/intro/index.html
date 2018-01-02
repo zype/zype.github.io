@@ -81,6 +81,8 @@
       <p><a href="/api_docs/devices/">Devices</a></p>
       <p><a href="/api_docs/device_categories/">Device Categories</a></p>
       <p><a href="/api_docs/players/">Players</a></p>
+      <p><a href="/api_docs/manifests/">Manifests</a></p>
+      <p><a href="/api_docs/geoip/">GeoIP</a></p>
       <p><a href="/api_docs/segments/">Segments</a></p>
       <p><a href="/api_docs/video_imports/">Video Imports</a></p>
       <p><a href="/api_docs/video_sources/">Video Sources</a></p>
@@ -109,11 +111,11 @@
       <h4 class="api-header">Common API Examples</h4>
       <p><a href="/api_docs/3rd-party-crm-integration/">3rd Party CRM Integration</a></p>
       <br>
-      <p class="category"><a href="/platform_docs/" style="color: #8acfef;">Platform Documentation</a></p>
-      <p class="category"><a href="/sdks/" style="color: #8acfef;">SDKs</a></p>
-      <p class="category"><a href="/glossary/" style="color: #8acfef;">Glossary</a></p>
+      <p class="category"><a href="https://support.zype.com" style="color: #8acfef;">Platform Documentation</a></p>
+      <p class="category"><a href="https://support.zype.com/hc/en-us/categories/201978548-Applications" style="color: #8acfef;">SDKs</a></p>
+      <p class="category"><a href="https://support.zype.com/hc/en-us/articles/216218128-Glossary-of-Zype-Terms" style="color: #8acfef;">Glossary</a></p>
       <p class="category"><a href="http://status.zype.com" style="color: #8acfef;">System Status</a></p>
-      <p class="category"><a href="/faq/" style="color: #8acfef;">FAQ</a></p>
+      <p class="category"><a href="https://support.zype.com/hc/en-us/categories/115001506808-FAQ" style="color: #8acfef;">FAQ</a></p>
       <br>
       <div class="hidden-mobile light">
         &copy; 2017 Zype Inc.
@@ -182,19 +184,19 @@ In addition, this reference describes a number of related objects. The Zype API 
 
 <p>Zype uses conventional HTTP response codes to indicate success or failure of an API request. In general, codes in the 2xx range indicate success, codes in the 4xx range indicate an error that resulted from the provided information (e.g. a required r was missing, a charge failed, etc.), and codes in the 5xx range indicate an error with Zype’s servers.</p>
 
-<h3 id="ok">200 (OK)</h3>
+<h3 id="200-ok">200 (OK)</h3>
 <p>The request was processed successfully.</p>
 
-<h3 id="unauthorized">401 (Unauthorized)</h3>
+<h3 id="401-unauthorized">401 (Unauthorized)</h3>
 <p>The request could not be processed because no API key was provided, or the API key provided is invalid.</p>
 
-<h3 id="not-found">404 (Not Found)</h3>
+<h3 id="404-not-found">404 (Not Found)</h3>
 <p>The request could not be processed because the resource you are operating on could not be found.</p>
 
-<h3 id="unprocessable-entity">422 (Unprocessable Entity)</h3>
+<h3 id="422-unprocessable-entity">422 (Unprocessable Entity)</h3>
 <p>The request could not be processed due to a validation rule.</p>
 
-<h3 id="server-error">500 (Server Error)</h3>
+<h3 id="500-server-error">500 (Server Error)</h3>
 <p>The request could not be processed due to a error on Zype’s servers.</p>
 
 <h3 id="attributes">Attributes:</h3>
@@ -329,7 +331,7 @@ In addition, this reference describes a number of related objects. The Zype API 
 
 <p>Zype currently provides the following client libraries:</p>
 
-<h3 id="rubyhttpsgithubcomedlazype-cli"><a href="https://github.com/edla/zype-cli">Ruby</a></h3>
+<h3 id="ruby"><a href="https://github.com/edla/zype-cli">Ruby</a></h3>
 
 <p>If your platform of choice is not found above, you can create your own or use API code samples.</p>
 

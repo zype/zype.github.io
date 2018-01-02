@@ -81,6 +81,8 @@
       <p><a href="/api_docs/devices/">Devices</a></p>
       <p><a href="/api_docs/device_categories/">Device Categories</a></p>
       <p><a href="/api_docs/players/">Players</a></p>
+      <p><a href="/api_docs/manifests/">Manifests</a></p>
+      <p><a href="/api_docs/geoip/">GeoIP</a></p>
       <p><a href="/api_docs/segments/">Segments</a></p>
       <p><a href="/api_docs/video_imports/">Video Imports</a></p>
       <p><a href="/api_docs/video_sources/">Video Sources</a></p>
@@ -109,11 +111,11 @@
       <h4 class="api-header">Common API Examples</h4>
       <p><a href="/api_docs/3rd-party-crm-integration/">3rd Party CRM Integration</a></p>
       <br>
-      <p class="category"><a href="/platform_docs/" style="color: #8acfef;">Platform Documentation</a></p>
-      <p class="category"><a href="/sdks/" style="color: #8acfef;">SDKs</a></p>
-      <p class="category"><a href="/glossary/" style="color: #8acfef;">Glossary</a></p>
+      <p class="category"><a href="https://support.zype.com" style="color: #8acfef;">Platform Documentation</a></p>
+      <p class="category"><a href="https://support.zype.com/hc/en-us/categories/201978548-Applications" style="color: #8acfef;">SDKs</a></p>
+      <p class="category"><a href="https://support.zype.com/hc/en-us/articles/216218128-Glossary-of-Zype-Terms" style="color: #8acfef;">Glossary</a></p>
       <p class="category"><a href="http://status.zype.com" style="color: #8acfef;">System Status</a></p>
-      <p class="category"><a href="/faq/" style="color: #8acfef;">FAQ</a></p>
+      <p class="category"><a href="https://support.zype.com/hc/en-us/categories/115001506808-FAQ" style="color: #8acfef;">FAQ</a></p>
       <br>
       <div class="hidden-mobile light">
         &copy; 2017 Zype Inc.
@@ -155,9 +157,8 @@
 </ul>
 
 <h2 id="list-videos">List Videos</h2>
-<p><code class="highlighter-rouge">
-GET https://api.zype.com/videos
-</code></p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>GET https://api.zype.com/videos
+</code></pre></div></div>
 
 <h3 id="overview-1">Overview</h3>
 <p>Get an <strong>array</strong> of <a href="#video-object">video objects</a> that meet the specified <a href="#paremeters-1">parameters</a>.</p>
@@ -170,16 +171,15 @@ GET https://api.zype.com/videos
 
 <p>Examples: retrieve a list of recent videos, a list of videos from a specific category, or a list of videos from a certain date.</p>
 
-<p>```
-// List Recent Videos
-GET https://api.zype.com/videos?active=true</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// List Recent Videos
+GET https://api.zype.com/videos?active=true
 
-<p>// List Videos By Category
-GET https://api.zype.com/videos?active=true&amp;category[color]=blue</p>
+// List Videos By Category
+GET https://api.zype.com/videos?active=true&amp;category[color]=blue
 
-<p>// List Videos From Certain Date
+// List Videos From Certain Date
 GET https://api.zype.com/videos?active=true&amp;published_at.gte=2017-01-01T00:00:00-00:00
-```</p>
+</code></pre></div></div>
 
 <h3 id="parameters">Parameters</h3>
 
@@ -298,6 +298,11 @@ GET https://api.zype.com/videos?active=true&amp;published_at.gte=2017-01-01T00:0
       <td>String</td>
     </tr>
     <tr>
+      <td>updated_at</td>
+      <td>Filter records by last updated date using times in ISO8601 format (Example: <code class="highlighter-rouge">2017-01-01T00:00:00-00:00</code>) or Unix timestamps (Example: <code class="highlighter-rouge">1483228800</code>). <br /><br /><strong>Note</strong>: Range filters can be applied by adding a suffix: <code class="highlighter-rouge">.gt</code>, <code class="highlighter-rouge">.gte</code>, <code class="highlighter-rouge">.lt</code>, <code class="highlighter-rouge">.lte</code> (Example: <code class="highlighter-rouge">updated_at.gte=2017-01-01T00:00:00-00:00</code>)</td>
+      <td>Date</td>
+    </tr>
+    <tr>
       <td>vimeo_id</td>
       <td>Filter records by a Vimeo ID</td>
       <td>String</td>
@@ -323,24 +328,22 @@ GET https://api.zype.com/videos?active=true&amp;published_at.gte=2017-01-01T00:0
 <hr />
 
 <h2 id="retrieve-a-video">Retrieve a Video</h2>
-<p><code class="highlighter-rouge">
-GET https://api.zype.com/videos/[id]
-</code>
-### Overview
-Get a single video by ID.</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>GET https://api.zype.com/videos/[id]
+</code></pre></div></div>
+<h3 id="overview-2">Overview</h3>
+<p>Get a single video by ID.</p>
 
 <h3 id="use-case-1">Use Case</h3>
 <p>Use this endpoint when a single video’s details are required.</p>
 
 <p>Example: a single video detail page where user interaction can occur. See the <a href="http://dev.zype.com/api_docs/players/">Player API documentation</a> for how to load a video player.</p>
 
-<p>```
-// Retrieve a Video
-GET https://api.zype.com/videos/5389352e69702d401b000000</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// Retrieve a Video
+GET https://api.zype.com/videos/5389352e69702d401b000000
 
-<p>// Load the Video Player (see Player API documentation for more)
+// Load the Video Player (see Player API documentation for more)
 GET https://player.zype.com/embed/[video_id].[format]
-```</p>
+</code></pre></div></div>
 
 <h3 id="parameters-1">Parameters</h3>
 
@@ -362,10 +365,9 @@ GET https://player.zype.com/embed/[video_id].[format]
 </table>
 
 <hr />
-<p>## Create a Video
-<code class="highlighter-rouge">
-POST https://api.zype.com/videos
-</code></p>
+<h2 id="create-a-video">Create a Video</h2>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>POST https://api.zype.com/videos
+</code></pre></div></div>
 
 <h3 id="parameters-2">Parameters</h3>
 
@@ -401,6 +403,16 @@ POST https://api.zype.com/videos
     <tr>
       <td>video[published_at]</td>
       <td>The date and time that the video will appear to have been published</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>video[enable_at]</td>
+      <td>The date and time that the video will become active</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>video[disable_at]</td>
+      <td>The date and time the video will become inactive</td>
       <td>String</td>
     </tr>
     <tr>
@@ -467,10 +479,9 @@ POST https://api.zype.com/videos
 </table>
 
 <hr />
-<p>## Update a Video
-<code class="highlighter-rouge">
-PUT https://api.zype.com/videos/[id]
-</code></p>
+<h2 id="update-a-video">Update a Video</h2>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>PUT https://api.zype.com/videos/[id]
+</code></pre></div></div>
 
 <h3 id="parameters-3">Parameters</h3>
 
@@ -511,6 +522,16 @@ PUT https://api.zype.com/videos/[id]
     <tr>
       <td>video[published_at]</td>
       <td>The date and time that the video will appear to have been published</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>video[enable_at]</td>
+      <td>The date and time that the video will become active</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>video[disable_at]</td>
+      <td>The date and time the video will become inactive</td>
       <td>String</td>
     </tr>
     <tr>
@@ -623,14 +644,18 @@ PUT https://api.zype.com/videos/[id]
       <td>Pass in ‘true’ if you wish to remove an image</td>
       <td>String</td>
     </tr>
+    <tr>
+      <td>video[custom_attributes][][attribute_name]</td>
+      <td>Pairs of custom attributes with values that you wish to update on a given video</td>
+      <td>Array</td>
+    </tr>
   </tbody>
 </table>
 
 <hr />
-<p>## Delete a Video
-<code class="highlighter-rouge">
-DELETE https://api.zype.com/videos/[id]
-</code></p>
+<h2 id="delete-a-video">Delete a Video</h2>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>DELETE https://api.zype.com/videos/[id]
+</code></pre></div></div>
 
 <h3 id="parameters-4">Parameters</h3>
 
@@ -652,10 +677,9 @@ DELETE https://api.zype.com/videos/[id]
 </table>
 
 <hr />
-<p>## Add Zobject(s) to Video
-<code class="highlighter-rouge">
-PUT https://api.zype.com/videos/[id]/add_zobjects
-</code></p>
+<h2 id="add-zobjects-to-video">Add Zobject(s) to Video</h2>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>PUT https://api.zype.com/videos/[id]/add_zobjects
+</code></pre></div></div>
 
 <h3 id="parameters-5">Parameters</h3>
 
@@ -682,10 +706,9 @@ PUT https://api.zype.com/videos/[id]/add_zobjects
 </table>
 
 <hr />
-<p>## Remove Zobject(s) from Video
-<code class="highlighter-rouge">
-PUT https://api.zype.com/videos/[id]/remove_zobjects
-</code></p>
+<h2 id="remove-zobjects-from-video">Remove Zobject(s) from Video</h2>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>PUT https://api.zype.com/videos/[id]/remove_zobjects
+</code></pre></div></div>
 
 <h3 id="parameters-6">Parameters</h3>
 
@@ -712,13 +735,12 @@ PUT https://api.zype.com/videos/[id]/remove_zobjects
 </table>
 
 <hr />
-<p>## Download Source File</p>
+<h2 id="download-source-file">Download Source File</h2>
 
 <p>For Zype Hosted videos you can download the original source file.</p>
 
-<p><code class="highlighter-rouge">
-GET https://api.zype.com/videos/[id]/download
-</code></p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>GET https://api.zype.com/videos/[id]/download
+</code></pre></div></div>
 
 <h3 id="parameters-7">Parameters</h3>
 
@@ -764,112 +786,112 @@ GET https://api.zype.com/videos/[id]/download
 
 <h2 id="video-object">Video Object</h2>
 
-<p><code class="highlighter-rouge"><span class="w">
-</span><span class="p">{</span><span class="w">
-  </span><span class="nt">"_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"547b4dca69702d070dca0000"</span><span class="p">,</span><span class="w">
-  </span><span class="nt">"active"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
-  </span><span class="nt">"categories"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-    </span><span class="p">{</span><span class="w">
-      </span><span class="nt">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Additional Videos from YouTube"</span><span class="p">,</span><span class="w">
-      </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="p">[]</span><span class="w">
-    </span><span class="p">},</span><span class="w">
-    </span><span class="p">{</span><span class="w">
-      </span><span class="nt">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Genre"</span><span class="p">,</span><span class="w">
-      </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-        </span><span class="s2">"Adventure"</span><span class="w">
-      </span><span class="p">]</span><span class="w">
-    </span><span class="p">},</span><span class="w">
-    </span><span class="p">{</span><span class="w">
-      </span><span class="nt">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"series"</span><span class="p">,</span><span class="w">
-      </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="p">[]</span><span class="w">
-    </span><span class="p">}</span><span class="w">
-  </span><span class="p">],</span><span class="w">
-  </span><span class="nt">"country"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
-  </span><span class="nt">"created_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2014-11-30T12:03:06.783-05:00"</span><span class="p">,</span><span class="w">
-  </span><span class="nt">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"A continuation of the saga created by George Lucas set thirty years after Star Wars: Episode VI - Return of the Jedi (1983)."</span><span class="p">,</span><span class="w">
-  </span><span class="nt">"discovery_url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://www.yoursite.com/video"</span><span class="w">
-  </span><span class="s2">"duration"</span><span class="err">:</span><span class="w"> </span><span class="mi">91</span><span class="p">,</span><span class="w">
-  </span><span class="nt">"episode"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
-  </span><span class="nt">"featured"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
-  </span><span class="nt">"foreign_id"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
-  </span><span class="nt">"friendly_title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"star-wars-episode-vii-the-force-awakens-official-teaser-trailer"</span><span class="p">,</span><span class="w">
-  </span><span class="nt">"keywords"</span><span class="p">:</span><span class="w"> </span><span class="p">[],</span><span class="w">
-  </span><span class="nt">"segments"</span><span class="p">:</span><span class="w"> </span><span class="p">[],</span><span class="w">
-  </span><span class="nt">"mature_content"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
-  </span><span class="nt">"published_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2014-11-30T12:01:32.000-05:00"</span><span class="p">,</span><span class="w">
-  </span><span class="nt">"rating"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
-  </span><span class="nt">"related_playlist_ids"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-    </span><span class="s2">"5464084f69702d76c1770000"</span><span class="w">
-  </span><span class="p">],</span><span class="w">
-  </span><span class="nt">"request_count"</span><span class="p">:</span><span class="w"> </span><span class="mi">14</span><span class="p">,</span><span class="w">
-  </span><span class="nt">"season"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
-  </span><span class="nt">"site_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"5463c68e69702d24db490000"</span><span class="p">,</span><span class="w">
-  </span><span class="nt">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"created"</span><span class="p">,</span><span class="w">
-  </span><span class="nt">"subscription_required"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
-  </span><span class="nt">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Star Wars: Episode VII - The Force Awakens Official Teaser Trailer"</span><span class="p">,</span><span class="w">
-  </span><span class="nt">"updated_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2014-12-17T23:00:03.649-05:00"</span><span class="p">,</span><span class="w">
-  </span><span class="nt">"video_zobjects"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-    </span><span class="p">{</span><span class="w">
-      </span><span class="nt">"_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"547b4e6f69702d070dd30000"</span><span class="p">,</span><span class="w">
-      </span><span class="nt">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
-      </span><span class="nt">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Harrison Ford"</span><span class="p">,</span><span class="w">
-      </span><span class="nt">"zobject_type_title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"actor"</span><span class="w">
-    </span><span class="p">},</span><span class="w">
-    </span><span class="p">{</span><span class="w">
-      </span><span class="nt">"_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"547b4e9369702d070edc0000"</span><span class="p">,</span><span class="w">
-      </span><span class="nt">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
-      </span><span class="nt">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"J.J. Abrams"</span><span class="p">,</span><span class="w">
-      </span><span class="nt">"zobject_type_title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"director"</span><span class="w">
-    </span><span class="p">},</span><span class="w">
-    </span><span class="p">{</span><span class="w">
-      </span><span class="nt">"_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"54808d6a69702d18b51d0000"</span><span class="p">,</span><span class="w">
-      </span><span class="nt">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
-      </span><span class="nt">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"John Boyega"</span><span class="p">,</span><span class="w">
-      </span><span class="nt">"zobject_type_title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"actor"</span><span class="w">
-    </span><span class="p">}</span><span class="w">
-  </span><span class="p">],</span><span class="w">
-  </span><span class="nt">"zobject_ids"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-    </span><span class="s2">"547b4e6f69702d070dd30000"</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"547b4e9369702d070edc0000"</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"54808d6a69702d18b51d0000"</span><span class="w">
-  </span><span class="p">],</span><span class="w">
-  </span><span class="nt">"thumbnails"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-    </span><span class="p">{</span><span class="w">
-      </span><span class="nt">"aspect_ratio"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
-      </span><span class="nt">"height"</span><span class="p">:</span><span class="w"> </span><span class="mi">90</span><span class="p">,</span><span class="w">
-      </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
-      </span><span class="nt">"url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://i.ytimg.com/vi/PlFckE98xN4/default.jpg"</span><span class="p">,</span><span class="w">
-      </span><span class="nt">"width"</span><span class="p">:</span><span class="w"> </span><span class="mi">120</span><span class="w">
-    </span><span class="p">},</span><span class="w">
-    </span><span class="p">{</span><span class="w">
-      </span><span class="nt">"aspect_ratio"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
-      </span><span class="nt">"height"</span><span class="p">:</span><span class="w"> </span><span class="mi">180</span><span class="p">,</span><span class="w">
-      </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
-      </span><span class="nt">"url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://i.ytimg.com/vi/PlFckE98xN4/mqdefault.jpg"</span><span class="p">,</span><span class="w">
-      </span><span class="nt">"width"</span><span class="p">:</span><span class="w"> </span><span class="mi">320</span><span class="w">
-    </span><span class="p">},</span><span class="w">
-    </span><span class="p">{</span><span class="w">
-      </span><span class="nt">"aspect_ratio"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
-      </span><span class="nt">"height"</span><span class="p">:</span><span class="w"> </span><span class="mi">360</span><span class="p">,</span><span class="w">
-      </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
-      </span><span class="nt">"url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://i.ytimg.com/vi/PlFckE98xN4/hqdefault.jpg"</span><span class="p">,</span><span class="w">
-      </span><span class="nt">"width"</span><span class="p">:</span><span class="w"> </span><span class="mi">480</span><span class="w">
-    </span><span class="p">}</span><span class="w">
-  </span><span class="p">]</span><span class="w">
-</span><span class="p">}</span><span class="w">
-</span></code></p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
+  "_id": "547b4dca69702d070dca0000",
+  "active": true,
+  "categories": [
+    {
+      "title": "Additional Videos from YouTube",
+      "value": []
+    },
+    {
+      "title": "Genre",
+      "value": [
+        "Adventure"
+      ]
+    },
+    {
+      "title": "series",
+      "value": []
+    }
+  ],
+  "country": "",
+  "created_at": "2014-11-30T12:03:06.783-05:00",
+  "description": "A continuation of the saga created by George Lucas set thirty years after Star Wars: Episode VI - Return of the Jedi (1983).",
+	"enable_at": null,
+	"disable_at": null,
+  "discovery_url": "http://www.yoursite.com/video"
+  "duration": 91,
+  "episode": null,
+  "featured": false,
+  "foreign_id": null,
+  "friendly_title": "star-wars-episode-vii-the-force-awakens-official-teaser-trailer",
+  "keywords": [],
+  "segments": [],
+  "mature_content": false,
+  "published_at": "2014-11-30T12:01:32.000-05:00",
+  "rating": 0,
+  "related_playlist_ids": [
+    "5464084f69702d76c1770000"
+  ],
+  "request_count": 14,
+  "season": null,
+  "site_id": "5463c68e69702d24db490000",
+  "status": "created",
+  "subscription_required": false,
+  "title": "Star Wars: Episode VII - The Force Awakens Official Teaser Trailer",
+  "updated_at": "2014-12-17T23:00:03.649-05:00",
+  "video_zobjects": [
+    {
+      "_id": "547b4e6f69702d070dd30000",
+      "description": "",
+      "title": "Harrison Ford",
+      "zobject_type_title": "actor"
+    },
+    {
+      "_id": "547b4e9369702d070edc0000",
+      "description": "",
+      "title": "J.J. Abrams",
+      "zobject_type_title": "director"
+    },
+    {
+      "_id": "54808d6a69702d18b51d0000",
+      "description": "",
+      "title": "John Boyega",
+      "zobject_type_title": "actor"
+    }
+  ],
+  "zobject_ids": [
+    "547b4e6f69702d070dd30000",
+    "547b4e9369702d070edc0000",
+    "54808d6a69702d18b51d0000"
+  ],
+  "thumbnails": [
+    {
+      "aspect_ratio": null,
+      "height": 90,
+      "name": null,
+      "url": "https://i.ytimg.com/vi/PlFckE98xN4/default.jpg",
+      "width": 120
+    },
+    {
+      "aspect_ratio": null,
+      "height": 180,
+      "name": null,
+      "url": "https://i.ytimg.com/vi/PlFckE98xN4/mqdefault.jpg",
+      "width": 320
+    },
+    {
+      "aspect_ratio": null,
+      "height": 360,
+      "name": null,
+      "url": "https://i.ytimg.com/vi/PlFckE98xN4/hqdefault.jpg",
+      "width": 480
+    }
+  ]
+}
+</code></pre></div></div>
 
 <hr />
-<p>## Download Object</p>
+<h2 id="download-object">Download Object</h2>
 
-<p><code class="highlighter-rouge"><span class="w">
-</span><span class="p">{</span><span class="w">
-  </span><span class="err">response:</span><span class="w"> </span><span class="err">{</span><span class="w">
-    </span><span class="err">url:</span><span class="w"> </span><span class="nt">"https://zype-upload-prod.s3.amazonaws.com/uploads/57ae371e72289b0d7d00100e/upload.mp4?AWSAccessKeyId=AKIAJ246RBDWDIRI2DVA&amp;Expires=1472064425&amp;Signature=K8rgZ7X8A5ayqW1miUx%2FC4oxytM%3D"</span><span class="err">,</span><span class="w">
-    </span><span class="err">filesize</span><span class="p">:</span><span class="w"> </span><span class="mi">208169473</span><span class="w">
-  </span><span class="p">}</span><span class="w">
-</span><span class="err">}</span><span class="w">
-</span></code></p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
+  response: {
+    url: "https://zype-upload-prod.s3.amazonaws.com/uploads/57ae371e72289b0d7d00100e/upload.mp4?AWSAccessKeyId=AKIAJ246RBDWDIRI2DVA&amp;Expires=1472064425&amp;Signature=K8rgZ7X8A5ayqW1miUx%2FC4oxytM%3D",
+    filesize: 208169473
+  }
+}
+</code></pre></div></div>
 
     </section>
 

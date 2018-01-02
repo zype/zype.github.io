@@ -81,6 +81,8 @@
       <p><a href="/api_docs/devices/">Devices</a></p>
       <p><a href="/api_docs/device_categories/">Device Categories</a></p>
       <p><a href="/api_docs/players/">Players</a></p>
+      <p><a href="/api_docs/manifests/">Manifests</a></p>
+      <p><a href="/api_docs/geoip/">GeoIP</a></p>
       <p><a href="/api_docs/segments/">Segments</a></p>
       <p><a href="/api_docs/video_imports/">Video Imports</a></p>
       <p><a href="/api_docs/video_sources/">Video Sources</a></p>
@@ -109,11 +111,11 @@
       <h4 class="api-header">Common API Examples</h4>
       <p><a href="/api_docs/3rd-party-crm-integration/">3rd Party CRM Integration</a></p>
       <br>
-      <p class="category"><a href="/platform_docs/" style="color: #8acfef;">Platform Documentation</a></p>
-      <p class="category"><a href="/sdks/" style="color: #8acfef;">SDKs</a></p>
-      <p class="category"><a href="/glossary/" style="color: #8acfef;">Glossary</a></p>
+      <p class="category"><a href="https://support.zype.com" style="color: #8acfef;">Platform Documentation</a></p>
+      <p class="category"><a href="https://support.zype.com/hc/en-us/categories/201978548-Applications" style="color: #8acfef;">SDKs</a></p>
+      <p class="category"><a href="https://support.zype.com/hc/en-us/articles/216218128-Glossary-of-Zype-Terms" style="color: #8acfef;">Glossary</a></p>
       <p class="category"><a href="http://status.zype.com" style="color: #8acfef;">System Status</a></p>
-      <p class="category"><a href="/faq/" style="color: #8acfef;">FAQ</a></p>
+      <p class="category"><a href="https://support.zype.com/hc/en-us/categories/115001506808-FAQ" style="color: #8acfef;">FAQ</a></p>
       <br>
       <div class="hidden-mobile light">
         &copy; 2017 Zype Inc.
@@ -228,12 +230,134 @@
   </tbody>
 </table>
 
+<h3 id="create-a-playlist-entitlement">Create a Playlist Entitlement</h3>
+<pre>
+<b>POST</b> https://api.zype.com/consumers/[consumer_id]/playlists
+</pre>
+
+<h4 id="parameters-2">Parameters</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Function</th>
+      <th>Type</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>consumer_id</td>
+      <td>ID of the consumer whose playlist entitlement will be created</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>entitlement[playlist_id]</td>
+      <td>ID of the <a href="/api_docs/playlists">playlist</a> you wish the consumer to have access to</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>entitlement[transaction_id]</td>
+      <td>ID of the transaction that happened to allow the consumer to have access to the Playlist</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>entitlement[transaction_type]</td>
+      <td>Type of transaction (Example: purchase)</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>entitlement[expires_at]</td>
+      <td>When the entitlement expires</td>
+      <td>Date</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="retrieve-a-playlist-entitlement">Retrieve a Playlist Entitlement</h3>
+<pre>
+<b>GET</b> https://api.zype.com/consumers/[consumer_id]/playlists/[id]
+</pre>
+
+<h4 id="parameters-3">Parameters</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Function</th>
+      <th>Type</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>consumer_id</td>
+      <td>ID of the consumer whose playlist entitlement will be retrieved</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>id</td>
+      <td>ID of the record to retrieve</td>
+      <td>String</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="update-a-playlist-entitlement">Update a Playlist Entitlement</h3>
+<pre>
+<b>PUT</b> https://api.zype.com/consumers/[consumer_id]/playlists/[id]
+</pre>
+
+<h4 id="parameters-4">Parameters</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Function</th>
+      <th>Type</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>consumer_id</td>
+      <td>ID of the consumer whose playlist entitlement will be updated</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>id</td>
+      <td>ID of the record to update</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>entitlement[playlist_id]</td>
+      <td>ID of the <a href="/api_docs/playlists">playlist</a> you wish the consumer to have access to</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>entitlement[transaction_id]</td>
+      <td>ID of the transaction that happened to allow the consumer to have access to the Playlist</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>entitlement[transaction_type]</td>
+      <td>Type of transaction (Example: purchase)</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>entitlement[expires_at]</td>
+      <td>When the entitlement expires</td>
+      <td>Date</td>
+    </tr>
+  </tbody>
+</table>
+
 <h3 id="delete-a-playlist-entitlement">Delete a Playlist Entitlement</h3>
 <pre>
 <b>DELETE</b> https://api.zype.com/consumers/[consumer_id]/playlists/[id]
 </pre>
 
-<h4 id="parameters-2">Parameters</h4>
+<h4 id="parameters-5">Parameters</h4>
 
 <table>
   <thead>
