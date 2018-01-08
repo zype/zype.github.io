@@ -279,6 +279,16 @@
       <td>Set Stripe subscription to cancel at period end (optional)</td>
       <td>String</td>
     </tr>
+    <tr>
+      <td>subscription[current_period_start_at]</td>
+      <td>Set the beginning of the subscription period.<br /> <strong>Only applies to third party subscriptions</strong> (<em>third_party_id</em> field should be present).<br /> Either <em>current_period_start_at</em> or <em>current_period_end_at</em> should be set, <strong>but not both</strong>.</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>subscription[current_period_end_at]</td>
+      <td>Set the end of the subscription period.<br /><strong>Only applies to third party subscriptions</strong> (<em>third_party_id</em> field should be present). <br />Either <em>current_period_start_at</em> or <em>current_period_end_at</em> should be set, <strong>but not both</strong>.</td>
+      <td>String</td>
+    </tr>
   </tbody>
 </table>
 
@@ -370,6 +380,16 @@
     <tr>
       <td>subscription[cancel_at_period_end]</td>
       <td>Set Stripe subscription to cancel at period end</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>subscription[current_period_start_at]</td>
+      <td>Set the beginning of the subscription period.<br /> <strong>Only applies to third party subscriptions</strong> (<em>third_party_id</em> field should be present).<br /> Either <em>current_period_start_at</em> or <em>current_period_end_at</em> should be set, <strong>but not both</strong>.</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>subscription[current_period_end_at]</td>
+      <td>Set the end of the subscription period.<br /><strong>Only applies to third party subscriptions</strong> (<em>third_party_id</em> field should be present). <br />Either <em>current_period_start_at</em> or <em>current_period_end_at</em> should be set, <strong>but not both</strong>.</td>
       <td>String</td>
     </tr>
   </tbody>
