@@ -78,6 +78,7 @@
       <p><a href="/api_docs/categories/">Categories</a></p>
       <p><a href="/api_docs/apps/">Apps</a></p>
       <p><a href="/api_docs/subtitles/">Subtitles</a></p>
+      <p><a href="/api_docs/subtitle_playlists/">Subtitle Playlists</a></p>
       <p><a href="/api_docs/program_guides/">Program Guides</a></p>
       <p><a href="/api_docs/devices/">Devices</a></p>
       <p><a href="/api_docs/device_categories/">Device Categories</a></p>
@@ -476,10 +477,16 @@ GET https://player.zype.com/embed/[video_id].[format]
       <td>A URL where a custom thumbnail for the video can be retrieved (JPEG, PNG or GIF)</td>
       <td>String</td>
     </tr>
+    <tr>
+      <td>video[custom_thumbnail]</td>
+      <td>Image as a file attachment</td>
+      <td> </td>
+    </tr>
   </tbody>
 </table>
 
 <hr />
+
 <h2 id="update-a-video">Update a Video</h2>
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>PUT https://api.zype.com/videos/[id]
 </code></pre></div></div>
@@ -650,10 +657,21 @@ GET https://player.zype.com/embed/[video_id].[format]
       <td>Pairs of custom attributes with values that you wish to update on a given video</td>
       <td>Array</td>
     </tr>
+    <tr>
+      <td>video[custom_thumbnail]</td>
+      <td>Image as a file attachment</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>video[delete_custom_thumbnail]</td>
+      <td>Pass in ‘1’ if you wish to remove the custom thumbnail</td>
+      <td>String</td>
+    </tr>
   </tbody>
 </table>
 
 <hr />
+
 <h2 id="delete-a-video">Delete a Video</h2>
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>DELETE https://api.zype.com/videos/[id]
 </code></pre></div></div>
@@ -678,6 +696,7 @@ GET https://player.zype.com/embed/[video_id].[format]
 </table>
 
 <hr />
+
 <h2 id="add-zobjects-to-video">Add Zobject(s) to Video</h2>
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>PUT https://api.zype.com/videos/[id]/add_zobjects
 </code></pre></div></div>
@@ -707,6 +726,7 @@ GET https://player.zype.com/embed/[video_id].[format]
 </table>
 
 <hr />
+
 <h2 id="remove-zobjects-from-video">Remove Zobject(s) from Video</h2>
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>PUT https://api.zype.com/videos/[id]/remove_zobjects
 </code></pre></div></div>
@@ -736,6 +756,7 @@ GET https://player.zype.com/embed/[video_id].[format]
 </table>
 
 <hr />
+
 <h2 id="download-source-file">Download Source File</h2>
 
 <p>For Zype Hosted videos you can download the original source file.</p>

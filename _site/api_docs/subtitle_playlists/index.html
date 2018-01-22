@@ -6,12 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>Zype Developer Portal | Zobjects</title>
+    <title>Zype Developer Portal | Subtitle Playlists</title>
     <meta name="description" content="This is the devloper portal for Zype Media. Zype is Revenue and Reach Magic for Online Video. We help content owners deliver fully branded video experiences.
 ">
 
     <link rel="stylesheet" href="/css/main.css">
-    <link rel="canonical" href="http://localhost:4000/api_docs/zobjects/">
+    <link rel="canonical" href="http://localhost:4000/api_docs/subtitle_playlists/">
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="shortcut icon" href="/assets/favicon.ico" />
 
@@ -127,65 +127,29 @@
 
 
     <section id="main" class="api-docs">
-      <h2 id="zobjects-collection">Zobjects Collection</h2>
+      <h1 id="subtitle-playlists">Subtitle Playlists</h1>
 <hr />
 
-<h3 id="list-zobjects">List Zobjects</h3>
-<pre><b>GET</b> https://api.zype.com/zobjects</pre>
+<h2 id="overview">Overview</h2>
+<p>The Subtitle Playlists API allows users to integrate subtitles with HLS manifests from a Zype video source. It’s a simple way to add subtitles which will be supported in all platforms that implement the Apple HLS specification.</p>
 
-<h4 id="parameters">Parameters</h4>
+<p>Each Video can have many subtitles but they are limited to have only one subtitle of each language.</p>
 
-<table>
-  <thead>
-    <tr>
-      <th>Parameter</th>
-      <th>Function</th>
-      <th>Type</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>custom</td>
-      <td>Filter records by custom attribues (Example: color=blue)</td>
-      <td>String</td>
-    </tr>
-    <tr>
-      <td>order</td>
-      <td>Sort records in ascending or descending order (Example: asc/desc)</td>
-      <td>String</td>
-    </tr>
-    <tr>
-      <td>page</td>
-      <td>The page number of records to return (Example: 1)</td>
-      <td>Integer</td>
-    </tr>
-    <tr>
-      <td>per_page</td>
-      <td>The number of records to return (Example: 10)</td>
-      <td>Integer</td>
-    </tr>
-    <tr>
-      <td>q</td>
-      <td>Filter records by keyword</td>
-      <td>String</td>
-    </tr>
-    <tr>
-      <td>sort</td>
-      <td>Sort records on the specified field</td>
-      <td>String</td>
-    </tr>
-    <tr>
-      <td>zobject_type</td>
-      <td>The type of zobject (Example: guest)</td>
-      <td>String</td>
-    </tr>
-  </tbody>
-</table>
+<ul>
+  <li><a href="#create-a-subtitle-playlist">Create a Subtitle Playlist</a></li>
+  <li><a href="#delete-a-subtitle-playlist">Delete a Subtitle Playlist</a></li>
+</ul>
 
-<h3 id="create-a-zobject">Create a Zobject</h3>
-<pre><b>POST</b> https://api.zype.com/zobjects</pre>
+<h2 id="create-a-subtitle-playlist">Create a Subtitle Playlist</h2>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>POST https://api.zype.com/videos/[video_id]/subtitle_playlists
+</code></pre></div></div>
 
-<h4 id="parameters-1">Parameters</h4>
+<h3 id="overview-1">Overview</h3>
+<p>Creates segments of subtitles in the WEBVTT format based on the source subtitle provided.</p>
+
+<p><strong>Note:</strong> Source subtitles <strong>MUST</strong> be in the SRT or VTT formats.</p>
+
+<h3 id="parameters">Parameters</h3>
 
 <table>
   <thead>
@@ -197,47 +161,25 @@
   </thead>
   <tbody>
     <tr>
-      <td>zobject_type</td>
-      <td>The type of zobject</td>
+      <td>subtitle_playlist[source_url]</td>
+      <td>The URL for the source subtitle</td>
       <td>String</td>
     </tr>
     <tr>
-      <td>zobject[active]</td>
-      <td>Whether or not the zobject is active</td>
-      <td>Boolean</td>
-    </tr>
-    <tr>
-      <td>zobject[custom]</td>
-      <td>Custom attributes for the zobject (Example: zobject[color]=blue)</td>
-      <td>String</td>
-    </tr>
-    <tr>
-      <td>zobject[description]</td>
-      <td>The description of the zobject</td>
-      <td>String</td>
-    </tr>
-    <tr>
-      <td>zobject[friendly_title]</td>
-      <td>The friendly title of the zobject</td>
-      <td>String</td>
-    </tr>
-    <tr>
-      <td>zobject[keywords]</td>
-      <td>Keywords for the zobject</td>
-      <td>Array</td>
-    </tr>
-    <tr>
-      <td>zobject[title]</td>
-      <td>The title of the zobject</td>
+      <td>subtitle_playlist[language]</td>
+      <td>The language of the source subtitle provided (Examples: Chinese,English,Spanish).</td>
       <td>String</td>
     </tr>
   </tbody>
 </table>
 
-<h3 id="retrieve-a-zobject">Retrieve a Zobject</h3>
-<pre><b>GET</b> https://api.zype.com/zobjects/[id]</pre>
+<hr />
 
-<h4 id="parameters-2">Parameters</h4>
+<h2 id="delete-a-subtitle-playlist">Delete a Subtitle Playlist</h2>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>DELETE https://api.zype.com/videos/[video_id]/subtitle_playlists/[language_code]
+</code></pre></div></div>
+
+<h3 id="parameters-1">Parameters</h3>
 
 <table>
   <thead>
@@ -249,183 +191,19 @@
   </thead>
   <tbody>
     <tr>
-      <td>id</td>
-      <td>ID of the record to retrieve (Example: 5389352e69702d401b000000)</td>
+      <td>video_id</td>
+      <td>ID of the Video that contains the Subtitle Playlist (Example: 5389352e69702d401b000000)</td>
       <td>String</td>
     </tr>
     <tr>
-      <td>zobject_type</td>
-      <td>The type of zobject (Example: guest)</td>
-      <td>String</td>
+      <td>language_code</td>
+      <td>Abbrevation of the language of the subtitle you want to specify (Examples: en,es,pt,ru)</td>
+      <td> </td>
     </tr>
   </tbody>
 </table>
 
-<h3 id="update-a-zobject">Update a Zobject</h3>
-<pre><b>PUT</b> https://api.zype.com/zobjects/[id]</pre>
-
-<h4 id="parameters-3">Parameters</h4>
-
-<table>
-  <thead>
-    <tr>
-      <th>Parameter</th>
-      <th>Function</th>
-      <th>Type</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>id</td>
-      <td>ID of the record to update (Example: 540731274c616e047a000000)</td>
-      <td>String</td>
-    </tr>
-    <tr>
-      <td>zobject_type</td>
-      <td>The type of zobject</td>
-      <td>String</td>
-    </tr>
-    <tr>
-      <td>zobject[active]</td>
-      <td>Whether or not the zobject is active</td>
-      <td>Boolean</td>
-    </tr>
-    <tr>
-      <td>zobject[custom][custom_attribute]</td>
-      <td>Custom attributes for the zobject (Example: zobject[custom][color]=blue)</td>
-      <td>String</td>
-    </tr>
-    <tr>
-      <td>zobject[description]</td>
-      <td>The description of the zobject</td>
-      <td>String</td>
-    </tr>
-    <tr>
-      <td>zobject[friendly_title]</td>
-      <td>The friendly title of the zobject</td>
-      <td>String</td>
-    </tr>
-    <tr>
-      <td>zobject[keywords]</td>
-      <td>Keywords for the zobject</td>
-      <td>Array</td>
-    </tr>
-    <tr>
-      <td>zobject[title]</td>
-      <td>The title of the zobject</td>
-      <td>String</td>
-    </tr>
-  </tbody>
-</table>
-
-<h3 id="delete-a-zobject">Delete a Zobject</h3>
-<pre><b>DELETE</b> https://api.zype.com/zobjects/[id]</pre>
-
-<h4 id="parameters-4">Parameters</h4>
-
-<table>
-  <thead>
-    <tr>
-      <th>Parameter</th>
-      <th>Function</th>
-      <th>Type</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>id</td>
-      <td>ID of the record to delete (Example: 5389352e69702d401b000000)</td>
-      <td>String</td>
-    </tr>
-    <tr>
-      <td>zobject_type</td>
-      <td>The type of zobject (Example: guest)</td>
-      <td>String</td>
-    </tr>
-  </tbody>
-</table>
-
-<h3 id="add-videoss-to-zobject">Add Videos(s) to Zobject</h3>
-<pre><b>PUT</b> https://api.zype.com/zobjects/[id]/add_videos</pre>
-
-<h4 id="parameters-5">Parameters</h4>
-
-<table>
-  <thead>
-    <tr>
-      <th>Parameter</th>
-      <th>Function</th>
-      <th>Type</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>id</td>
-      <td>ID of the record (Example: 5389352e69702d401b000000)</td>
-      <td>String</td>
-    </tr>
-    <tr>
-      <td>video_id[]</td>
-      <td>The video IDs to add</td>
-      <td>Array</td>
-    </tr>
-    <tr>
-      <td>zobject_type</td>
-      <td>The type of zobject (Example: guest)</td>
-      <td>String</td>
-    </tr>
-  </tbody>
-</table>
-
-<h3 id="remove-videoss-from-zobject">Remove Videos(s) from Zobject</h3>
-<pre><b>PUT</b> https://api.zype.com/zobjects/[id]/remove_videos</pre>
-
-<h4 id="parameters-6">Parameters</h4>
-
-<table>
-  <thead>
-    <tr>
-      <th>Parameter</th>
-      <th>Function</th>
-      <th>Type</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>id</td>
-      <td>ID of the record (Example: 5389352e69702d401b000000)</td>
-      <td>String</td>
-    </tr>
-    <tr>
-      <td>video_id[]</td>
-      <td>The video IDs to remove</td>
-      <td>Array</td>
-    </tr>
-    <tr>
-      <td>zobject_type</td>
-      <td>The type of zobject (Example: guest)</td>
-      <td>String</td>
-    </tr>
-  </tbody>
-</table>
-
-<h3 id="zobject-object">Zobject Object</h3>
-<pre>
-{
-  "_id": "549dc72d636872c09d1f0000",
-  "active": true,
-  "created_at": "2014-12-26T15:38:05.447-05:00",
-  "description": "",
-  "friendly_title": "jamie-foxx",
-  "keywords": [],
-  "site_id": "549dc583636872c09d110000",
-  "title": "Jamie Foxx",
-  "updated_at": "2014-12-26T16:45:30.419-05:00",
-  "video_ids": [],
-  "zobject_type_id": "549dc71f636872c09d1d0000",
-  "zobject_type_title": "actor"
-}
-</pre>
+<hr />
 
     </section>
 
