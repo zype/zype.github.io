@@ -16,7 +16,8 @@ permalink: /api_docs/consumers/
 Parameter | Function | Type
 --------- | -------- | ----
 braintree_id | Filter records by Braintree ID | String
-created_at | Filter records by created date using times in ISO8601 format (Example: 2017-01-01T00:00:00-00:00) or Unix timestamps (Example: 1483228800) <br />**Note**: Range filters can be applied by adding a suffix: '.gt', '.gte', '.lt', 'lte' (Example: created_at.gte) | Date
+created_at, current_sign_in_at, last_sign_in_at | Filter records by date field using times in ISO8601 format (Example: 2017-01-01T00:00:00-00:00) or Unix timestamps (Example: 1483228800) <br />**Note**: Range filters can be applied by adding a suffix: '.gt', '.gte', '.lt', 'lte' (Example: created_at.gte) | Date
+last_sign_in_ip, current_sign_in_ip | Filter records by IP address | String
 email     | Filter records by email | String
 id        | Filter records by ID | String
 id!       | Exclude records by ID | String
@@ -26,6 +27,7 @@ per_page  | The number of records to return (Example: 10) | Integer
 q         | Filter records by keyword | String
 rss_token | Filter records by RSS token | String
 stripe_id | Filter records by Stripe ID | String
+sign_in_count | Filter records by sign in count <br />**Note**: Range filters can be applied by adding a suffix: ‘.gt’, ‘.gte’, ‘.lt’, ‘lte’ (Example: sign_in_count.gte) | Integer
 
 ### Create a Consumer
 <pre><b>POST</b> https://api.zype.com/consumers
