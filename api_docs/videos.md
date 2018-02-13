@@ -152,6 +152,8 @@ video[custom_thumbnail] | Image as a file attachment
 PUT https://api.zype.com/videos/[id]
 ```
 
+Note: When updating an array of objects (like `categories_attributes` and `images_attributes`] use `0` or whichever number corresponds to the resource you wish to update. It is index based and so will update the appropriate resource.
+
 ### Parameters
 
 Parameter | Function | Type
@@ -176,19 +178,20 @@ video[mature_content] | Whether or not the video requires the viewer to be 18+ t
 video[discovery_url] | The URL where the video will be hosted, this field can be used in RSS distribution | String
 video[source_id] | An optional user specified identifier for a video | String
 video[custom_thumbnail_url] | A URL where a custom thumbnail for the video can be retrieved (JPEG, PNG or GIF) | String
-video[categories_attributes][][id] | ID of the category assigned to the video if you are updating its values | String
-video[categories_attributes][][category_id] | ID of the main [Category](/api_docs/categories) you wish to add to the video | String
-video[categories_attributes][][title] | Title of the category assigned to the video | String
-video[categories_attributes][][value][] | List of values you wish to add to the category | Array
-video[images_attributes][][id] | Pass the ID of the image you wish to update on a given video (optional) | String
-video[images_attributes][][title] | Title of the image | String
-video[images_attributes][][caption] | Caption of the image | String
-video[images_attributes][][attachment] | Image as a file attachment
-video[images_attributes][][layout] | Must be one of 'poster' or 'square'. Default is 'landscape' | String
-video[images_attributes][][_destroy] | Pass in 'true' if you wish to remove an image | String
-video[custom_attributes][][attribute_name] | Pairs of custom attributes with values that you wish to update on a given video | Array
+video[categories_attributes][0][id] | ID of the category assigned to the video if you are updating its values | String
+video[categories_attributes][0][category_id] | ID of the main [Category](/api_docs/categories) you wish to add to the video | String
+video[categories_attributes][0][title] | Title of the category assigned to the video | String
+video[categories_attributes][0][value][] | List of values you wish to add to the category | Array
+video[images_attributes][0][id] | Pass the ID of the image you wish to update on a given video (optional) | String
+video[images_attributes][0][title] | Title of the image | String
+video[images_attributes][0][caption] | Caption of the image | String
+video[images_attributes][0][attachment] | Image as a file attachment
+video[images_attributes][0][layout] | Must be one of 'poster' or 'square'. Default is 'landscape' | String
+video[images_attributes][0][_destroy] | Pass in 'true' if you wish to remove an image | String
+video[custom_attributes][0][attribute_name] | Pairs of custom attributes with values that you wish to update on a given video | Array
 video[custom_thumbnail] | Image as a file attachment
 video[delete_custom_thumbnail] | Pass in '1' if you wish to remove the custom thumbnail | String
+
 
 ---
 

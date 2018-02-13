@@ -92,6 +92,8 @@ zobject_id! | Exclude records by Zobject ID | String
 ### Update a Playlist
 <pre><b>PUT</b> https://api.zype.com/playlists/[id]</pre>
 
+Note: When updating an array of objects (like `categories` and `images_attributes`] use `0` or whichever number corresponds to the resource you wish to update. It is index based and so will update the appropriate resource.
+
 #### Parameters
 
 Parameter | Function | Type
@@ -108,18 +110,19 @@ playlist[rental_price] | Rental price for the playlist bundle, sent as a string,
 playlist[rental_duration] | Rental duration for the playlist, in days *edge feature* | Integer
 playlist[auto_update_consumer_videos] | Keep consumer video purchases and/or rentals in sync with playlist items. When videos are added to the playlist, also add them to a consumer's video purchase/rental list. *edge feature* | Boolean
 playlist[thumbnail_layout] | Update preferred thumbnail layout for videos related to playlist. Options are 'landscape', 'poster' and 'square'. | String
-playlist[categories][][id] | ID of the category assigned to the playlist if you are updating its values | String
-playlist[categories][][category_id] | ID of the main [Category](/api_docs/categories) you wish to add to the video | String
-playlist[categories][][title] | Title of the category assigned to the playlist | String
-playlist[categories][][value][] | List of values you wish to add to the category | Array
-playlist[images_attributes][][id] | Pass the ID of the image you wish to update on a given playlist (optional) | String
-playlist[images_attributes][][title] | Title of the image | String
-playlist[images_attributes][][caption] | Caption of the image | String
-playlist[images_attributes][][attachment] | Image as a file attachment
-playlist[images_attributes][][layout] | Must be one of 'poster' or 'square'. Default is 'landscape' | String
-playlist[images_attributes][][_destroy] | Pass in 'true' if you wish to remove an image | String
+playlist[categories][0][id] | ID of the category assigned to the playlist if you are updating its values. | String
+playlist[categories][0][category_id] | ID of the main [Category](/api_docs/categories) you wish to add to the video | String
+playlist[categories][0][title] | Title of the category assigned to the playlist | String
+playlist[categories][0][value][] | List of values you wish to add to the category | Array
+playlist[images_attributes][0][id] | Pass the ID of the image you wish to update on a given playlist (optional). | String
+playlist[images_attributes][0][title] | Title of the image | String
+playlist[images_attributes][0][caption] | Caption of the image | String
+playlist[images_attributes][0][attachment] | Image as a file attachment
+playlist[images_attributes][0][layout] | Must be one of 'poster' or 'square'. Default is 'landscape' | String
+playlist[images_attributes][0][_destroy] | Pass in 'true' if you wish to remove an image | String
 playlist[custom_thumbnail] | Image as a file attachment
 playlist[delete_custom_thumbnail] | Pass in '1' if you wish to remove the custom thumbnail | String
+
 
 ### Delete a Playlist
 <pre><b>DELETE</b> https://api.zype.com/playlists/[id]</pre>
