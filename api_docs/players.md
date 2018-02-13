@@ -70,6 +70,15 @@ format | The format for the player response. You can request Iframes, JavaScript
       file: "http://u.zype.com/video/{video_id}/subtitles/English.srt?1432132167",
       label: "English"
     }
-  ]
+  ],
+  analytics: {
+    beacon: "https://ma1169-r.analytics.edgekey.net/config/beacon-10061.xml?enableGenericAPI=1",
+    dimensions: {
+      video_id: "5751d861b0cc5b0d24000fcf",
+      site_id: "571e32ef973e2807f601267a",
+      player_id: null,
+      device: null
+    }
+  }
 }
 ```
