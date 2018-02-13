@@ -80,6 +80,7 @@ q         | Filter records by keyword | String
 sort      | Sort records on the specified field | String
 source_id | Filter records by an optional source identifier | String
 type      | Filter records by type (Examples: `zype`, `hulu`, `youtube`, `crunchyroll`) | String
+updated_at | Filter records by last updated date using times in ISO8601 format (Example: `2017-01-01T00:00:00-00:00`) or Unix timestamps (Example: `1483228800`). <br><br>**Note**: Range filters can be applied by adding a suffix: `.gt`, `.gte`, `.lt`, `.lte` (Example: `updated_at.gte=2017-01-01T00:00:00-00:00`) | Date
 vimeo_id   | Filter records by a Vimeo ID | String
 youtube_id   | Filter records by a YouTube ID | String
 zobject_id  | Filter records by Zobject ID | String
@@ -128,6 +129,8 @@ video[friendly_title] | The URL friendly title of the video. **Optional** — if
 video[description] | The description of the video | String
 video[short_description] | The description of the video | String
 video[published_at]  | The date and time that the video will appear to have been published | String
+video[enable_at] | The date and time that the video will become active | String
+video[disable_at] | The date and time the video will become inactive | String
 video[episode] | The video's episode number | Integer
 video[season] | The video's season number | Integer
 video[country] | The country the video was created in | String
@@ -140,8 +143,10 @@ video[mature_content] | Whether or not the video requires the viewer to be 18+ t
 video[discovery_url] | The URL where the video will be hosted, this field can be used in RSS distribution | String
 video[source_id] | An optional user specified identifier for a video | String
 video[custom_thumbnail_url] | A URL where a custom thumbnail for the video can be retrieved (JPEG, PNG or GIF) | String
+video[custom_thumbnail] | Image as a file attachment
 
 ---
+
 ## Update a Video
 ```
 PUT https://api.zype.com/videos/[id]
@@ -157,6 +162,8 @@ video[friendly_title] | The URL friendly title of the video. | String
 video[description] | The description of the video | String
 video[short_description] | The description of the video | String
 video[published_at]  | The date and time that the video will appear to have been published | String
+video[enable_at] | The date and time that the video will become active | String
+video[disable_at] | The date and time the video will become inactive | String
 video[episode] | The video's episode number | Integer
 video[season] | The video's season number | Integer
 video[country] | The country the video was created in | String
@@ -180,8 +187,11 @@ video[images_attributes][][attachment] | Image as a file attachment
 video[images_attributes][][layout] | Must be one of 'poster' or 'square'. Default is 'landscape' | String
 video[images_attributes][][_destroy] | Pass in 'true' if you wish to remove an image | String
 video[custom_attributes][][attribute_name] | Pairs of custom attributes with values that you wish to update on a given video | Array
+video[custom_thumbnail] | Image as a file attachment
+video[delete_custom_thumbnail] | Pass in '1' if you wish to remove the custom thumbnail | String
 
 ---
+
 ## Delete a Video
 ```
 DELETE https://api.zype.com/videos/[id]
@@ -194,6 +204,7 @@ Parameter | Function | Type
 id        | ID of the record to delete (Example: 5389352e69702d401b000000) | String
 
 ---
+
 ## Add Zobject(s) to Video
 ```
 PUT https://api.zype.com/videos/[id]/add_zobjects
@@ -207,6 +218,7 @@ id        | ID of the record (Example: 5389352e69702d401b000000) | String
 zobject_id[] | The zobject IDs to add | Array
 
 ---
+
 ## Remove Zobject(s) from Video
 ```
 PUT https://api.zype.com/videos/[id]/remove_zobjects
@@ -220,6 +232,7 @@ id        | ID of the record (Example: 5389352e69702d401b000000) | String
 zobject_id[] | The zobject IDs to remove | Array
 
 ---
+
 ## Download Source File
 
 For Zype Hosted videos you can download the original source file.
@@ -269,6 +282,8 @@ subscription_ads_enabled | Flag whether ads should be played when a subscription
   "country": "",
   "created_at": "2014-11-30T12:03:06.783-05:00",
   "description": "A continuation of the saga created by George Lucas set thirty years after Star Wars: Episode VI - Return of the Jedi (1983).",
+	"enable_at": null,
+	"disable_at": null,
   "discovery_url": "http://www.yoursite.com/video"
   "duration": 91,
   "episode": null,

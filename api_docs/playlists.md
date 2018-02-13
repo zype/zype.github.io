@@ -44,6 +44,7 @@ playlist[rental_price] | Rental price for the playlist bundle, sent as a string,
 playlist[rental_duration] | Rental duration for the playlist, in days *edge feature* | Integer
 playlist[auto_update_consumer_videos] | Keep consumer video purchases and/or rentals in sync with playlist items. When videos are added to the playlist, also add them to a consumer's video purchase/rental list. *edge feature* | Boolean
 playlist[thumbnail_layout] | Preferred thumbnail layout for videos related to playlist. Options are 'landscape', 'poster', and 'square'. If left blank will default to 'landscape'. | String
+playlist[custom_thumbnail] | Image as a file attachment
 
 ### Retrieve a Playlist
 <pre><b>GET</b> https://api.zype.com/playlists/[id]
@@ -63,6 +64,30 @@ id | ID of the record to retrieve (Example: 5389352e69702d401b000000) | String
 Parameter | Function | Type
 --------- | -------- | ----
 id | ID of the record to retrieve (Example: 5389352e69702d401b000000) | String
+active    | Filter by active, inactive, or all records (Example: `active=true`, `active=false`, `active=all`) | String
+category  | Filter records by category value (Example: `category[color]=blue`) | Hash
+category! | Exclude records by category value (Example: `category![color]=blue`) | Hash
+created_at | Filter records by created date using times in ISO8601 format (Example: `2017-01-01T00:00:00-00:00`) or Unix timestamps (Example: `1483228800`). <br><br>**Note**: Range filters can be applied by adding a suffix: `.gt`, `.gte`, `.lt`, `.lte` (Example: `created_at.gte=2017-01-01T00:00:00-00:00`) | Date
+crunchyroll_id   | Filter records by a Crunchyroll ID | String
+dpt       | Filter records by DPT conditions (Geo-location and device restrictions) | Boolean
+featured  | Filter records that are featured | Boolean
+friendly_title | Find records by URL friendly title for SEO purposes | String
+hulu_id   | Filter records by a Hulu ID | String
+mature_content    | Filter records that are flagged as mature content | Boolean
+order     | Sort records in ascending or descending order (Example: `order=asc`, `order=desc`) | String
+on_air    | Filter records that are either on or off air | Boolean
+page | The page number of records to return (Example: `page=1`) | Integer
+per_page | The number of records to return (Example: `per_page=10`) | Integer
+published_at | Filter records by published date using times in ISO8601 format (Example: `2017-01-01T00:00:00-00:00`) or Unix timestamps (Example: `1483228800`) <br><br>**Note**: Range filters can be applied by adding a suffix: `.gt`, `.gte`, `.lt`, `.lte` (Example: `published_at.gte=2017-01-01T00:00:00-00:00`) | Date
+q         | Filter records by keyword | String
+sort      | Sort records on the specified field | String
+source_id | Filter records by an optional source identifier | String
+type      | Filter records by type (Examples: `zype`, `hulu`, `youtube`, `crunchyroll`) | String
+updated_at | Filter records by last updated date using times in ISO8601 format (Example: `2017-01-01T00:00:00-00:00`) or Unix timestamps (Example: `1483228800`). <br><br>**Note**: Range filters can be applied by adding a suffix: `.gt`, `.gte`, `.lt`, `.lte` (Example: `updated_at.gte=2017-01-01T00:00:00-00:00`) | Date
+vimeo_id   | Filter records by a Vimeo ID | String
+youtube_id   | Filter records by a YouTube ID | String
+zobject_id  | Filter records by Zobject ID | String
+zobject_id! | Exclude records by Zobject ID | String
 
 ### Update a Playlist
 <pre><b>PUT</b> https://api.zype.com/playlists/[id]</pre>
@@ -93,6 +118,8 @@ playlist[images_attributes][][caption] | Caption of the image | String
 playlist[images_attributes][][attachment] | Image as a file attachment
 playlist[images_attributes][][layout] | Must be one of 'poster' or 'square'. Default is 'landscape' | String
 playlist[images_attributes][][_destroy] | Pass in 'true' if you wish to remove an image | String
+playlist[custom_thumbnail] | Image as a file attachment
+playlist[delete_custom_thumbnail] | Pass in '1' if you wish to remove the custom thumbnail | String
 
 ### Delete a Playlist
 <pre><b>DELETE</b> https://api.zype.com/playlists/[id]</pre>

@@ -66,6 +66,49 @@ Parameter | Function | Type
 --------- | -------- | ----
 consumer_id | ID of the consumer whose video entitlements will be retrieved | String
 
+### Create a Video Entitlement
+<pre>
+<b>POST</b> https://api.zype.com/consumers/[consumer_id]/videos
+</pre>
+
+#### Parameters
+
+Parameter | Function | Type
+--------- | -------- | ----
+consumer_id | ID of the consumer whose video entitlement will be created | String
+entitlement[video_id] | ID of the [video](/api_docs/video) you wish the consumer to have access to | String
+entitlement[transaction_id] | ID of the transaction that happened to allow the consumer to have access to the video | String
+entitlement[transaction_type] | Type of transaction (Example: purchase) | String
+entitlement[expires_at] | When the entitlement expires | Date
+
+### Retrieve a Video Entitlement
+<pre>
+<b>GET</b> https://api.zype.com/consumers/[consumer_id]/videos/[id]
+</pre>
+
+#### Parameters
+
+Parameter | Function | Type
+--------- | -------- | ----
+consumer_id | ID of the consumer whose video entitlement will be retrieved | String
+id | ID of the record to retrieve | String
+
+### Update a Video Entitlement
+<pre>
+<b>PUT</b> https://api.zype.com/consumers/[consumer_id]/videos/[id]
+</pre>
+
+#### Parameters
+
+Parameter | Function | Type
+--------- | -------- | ----
+consumer_id | ID of the consumer whose video entitlement will be updated | String
+id | ID of the record to retrieve | String
+entitlement[video_id] | ID of the [video](/api_docs/videos) you wish the consumer to have access to | String
+entitlement[transaction_id] | ID of the transaction that happened to allow the consumer to have access to the video | String
+entitlement[transaction_type] | Type of transaction (Example: purchase) | String
+entitlement[expires_at] | When the entitlement expires | Date
+
 ### Delete a Video Entitlement
 <pre>
 <b>DELETE</b> https://api.zype.com/consumers/[consumer_id]/videos/[id]

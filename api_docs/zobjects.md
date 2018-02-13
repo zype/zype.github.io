@@ -56,7 +56,7 @@ Parameter | Function | Type
 id | ID of the record to update (Example: 540731274c616e047a000000) | String
 zobject_type | The type of zobject | String
 zobject[active] | Whether or not the zobject is active | Boolean
-zobject[custom]    | Custom attributes for the zobject (Example: zobject[color]=blue) | String
+zobject[custom][custom_attribute]    | Custom attributes for the zobject (Example: zobject[custom][color]=blue) | String
 zobject[description] | The description of the zobject | String
 zobject[friendly_title] | The friendly title of the zobject | String
 zobject[keywords] | Keywords for the zobject | Array
@@ -111,4 +111,4 @@ zobject_type | The type of zobject (Example: guest) | String
   "zobject_type_id": "549dc71f636872c09d1d0000",
   "zobject_type_title": "actor"
 }
-</pre>    
+</pre>
