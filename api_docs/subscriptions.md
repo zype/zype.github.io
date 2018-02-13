@@ -48,6 +48,8 @@ subscription[braintree_id] | The id of a Braintree subscription that has already
 subscription[status] | Valid values are 'canceled' or 'active'. If left empty, 'active' will be the default value. | String
 subscription[cancelled_at] | If the subscription has already been cancelled at a certain date (optional) | String
 subscription[cancel_at_period_end] | Set Stripe subscription to cancel at period end (optional) | String
+subscription[current_period_start_at] | Set the beginning of the subscription period.<br /> **Only applies to third party subscriptions** (*third_party_id* field should be present).<br /> Either *current_period_start_at* or *current_period_end_at* should be set, **but not both**. | String
+subscription[current_period_end_at] | Set the end of the subscription period.<br />**Only applies to third party subscriptions** (*third_party_id* field should be present). <br />Either *current_period_start_at* or *current_period_end_at* should be set, **but not both**. | String
 
 ### Retrieve a Subscription
 <pre>
@@ -79,6 +81,8 @@ subscription[braintree_id] | The id of a Braintree subscription that has already
 subscription[status] | Valid values are 'canceled' or 'active' | String
 subscription[cancelled_at] | If the subscription has already been cancelled at a certain date | String
 subscription[cancel_at_period_end] | Set Stripe subscription to cancel at period end | String
+subscription[current_period_start_at] | Set the beginning of the subscription period.<br /> **Only applies to third party subscriptions** (*third_party_id* field should be present).<br /> Either *current_period_start_at* or *current_period_end_at* should be set, **but not both**. | String
+subscription[current_period_end_at] | Set the end of the subscription period.<br />**Only applies to third party subscriptions** (*third_party_id* field should be present). <br />Either *current_period_start_at* or *current_period_end_at* should be set, **but not both**. | String
 
 ### Delete a Subscription
 <pre><b>DELETE</b> https://api.zype.com/subscriptions/{id}

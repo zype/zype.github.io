@@ -143,8 +143,10 @@ video[mature_content] | Whether or not the video requires the viewer to be 18+ t
 video[discovery_url] | The URL where the video will be hosted, this field can be used in RSS distribution | String
 video[source_id] | An optional user specified identifier for a video | String
 video[custom_thumbnail_url] | A URL where a custom thumbnail for the video can be retrieved (JPEG, PNG or GIF) | String
+video[custom_thumbnail] | Image as a file attachment
 
 ---
+
 ## Update a Video
 ```
 PUT https://api.zype.com/videos/[id]
@@ -187,8 +189,12 @@ video[images_attributes][0][attachment] | Image as a file attachment
 video[images_attributes][0][layout] | Must be one of 'poster' or 'square'. Default is 'landscape' | String
 video[images_attributes][0][_destroy] | Pass in 'true' if you wish to remove an image | String
 video[custom_attributes][0][attribute_name] | Pairs of custom attributes with values that you wish to update on a given video | Array
+video[custom_thumbnail] | Image as a file attachment
+video[delete_custom_thumbnail] | Pass in '1' if you wish to remove the custom thumbnail | String
+
 
 ---
+
 ## Delete a Video
 ```
 DELETE https://api.zype.com/videos/[id]
@@ -201,6 +207,7 @@ Parameter | Function | Type
 id        | ID of the record to delete (Example: 5389352e69702d401b000000) | String
 
 ---
+
 ## Add Zobject(s) to Video
 ```
 PUT https://api.zype.com/videos/[id]/add_zobjects
@@ -214,6 +221,7 @@ id        | ID of the record (Example: 5389352e69702d401b000000) | String
 zobject_id[] | The zobject IDs to add | Array
 
 ---
+
 ## Remove Zobject(s) from Video
 ```
 PUT https://api.zype.com/videos/[id]/remove_zobjects
@@ -227,6 +235,7 @@ id        | ID of the record (Example: 5389352e69702d401b000000) | String
 zobject_id[] | The zobject IDs to remove | Array
 
 ---
+
 ## Download Source File
 
 For Zype Hosted videos you can download the original source file.
