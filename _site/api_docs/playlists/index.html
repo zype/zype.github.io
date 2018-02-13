@@ -78,6 +78,7 @@
       <p><a href="/api_docs/categories/">Categories</a></p>
       <p><a href="/api_docs/apps/">Apps</a></p>
       <p><a href="/api_docs/subtitles/">Subtitles</a></p>
+      <p><a href="/api_docs/subtitle_playlists/">Subtitle Playlists</a></p>
       <p><a href="/api_docs/program_guides/">Program Guides</a></p>
       <p><a href="/api_docs/devices/">Devices</a></p>
       <p><a href="/api_docs/device_categories/">Device Categories</a></p>
@@ -271,6 +272,11 @@
       <td>Preferred thumbnail layout for videos related to playlist. Options are ‘landscape’, ‘poster’, and ‘square’. If left blank will default to ‘landscape’.</td>
       <td>String</td>
     </tr>
+    <tr>
+      <td>playlist[custom_thumbnail]</td>
+      <td>Image as a file attachment</td>
+      <td> </td>
+    </tr>
   </tbody>
 </table>
 
@@ -441,6 +447,16 @@
     <tr>
       <td>playlist[images_attributes][][_destroy]</td>
       <td>Pass in ‘true’ if you wish to remove an image</td>
+      <td>String</td>
+    </tr>
+    <tr>
+      <td>playlist[custom_thumbnail]</td>
+      <td>Image as a file attachment</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>playlist[delete_custom_thumbnail]</td>
+      <td>Pass in ‘1’ if you wish to remove the custom thumbnail</td>
       <td>String</td>
     </tr>
   </tbody>
