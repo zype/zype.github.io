@@ -8,15 +8,17 @@ permalink: /api_docs/subscriptions/
 <hr>
 ### List Subscriptions
 <pre>
-  <b>GET</b> https://api.zype.com/subscriptions/?page=page&per_page=per_page
+  <b>GET</b> https://api.zype.com/subscriptions/
 </pre>
 
 #### Parameters
 
 Parameter | Function | Type
 --------- | -------- | ----
-braintree_id   | Filter records by a Braintree ID | String
 consumer_id   | Filter records by a Consumer ID | String
+stripe_id   | Filter records by a Stripe ID | String
+braintree_id   | Filter records by a Braintree ID | String
+third_party_id | Filter records by a third party ID | String
 created_at | Filter records by created date using times in ISO8601 format (Example: 2017-01-01T00:00:00-00:00) or Unix timestamps (Example: 1483228800) <br />**Note**: Range filters can be applied by adding a suffix: '.gt', '.gte', '.lt', 'lte' (Example: created_at.gte) | Date
 id        | Filter records by ID | String
 id!       | Exclude records by ID | String
@@ -26,7 +28,6 @@ per_page | The number of records to return (Example: 10) | Integer
 plan_id   | Filter records by a Plan ID | String
 q         | Filter records by keyword | String
 sort      | Sort records on the specified field | String
-stripe_id   | Filter records by a Stripe ID | String
 
 ### Create a Subscription
 <pre>
