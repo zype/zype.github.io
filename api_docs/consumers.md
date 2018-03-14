@@ -103,6 +103,15 @@ id | ID of the record to be deleted. Example: 540731274c616e047a000000 | String
   "site_id": "53e8d7f869702d5b64010000",
   "stripe_id": "cus_54wKapCMCaqd9b1235",
   "subscription_count": 1,
+  "subscription_ids": ["5aa92bf7248f1c3e6e000000"],
+  "subscription_plans": [
+    {
+      "id":"5aa92602248f1c3fc8000000",
+      "name":"Silver Plan",
+      "entitlement_type":"tiered",
+      "subscription_id":"5aa92bf7248f1c3e6e000000"
+    }
+  ]
   "updated_at": "2014-11-03T15:08:19.675Z"
 }
 </pre>
