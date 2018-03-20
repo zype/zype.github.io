@@ -31,7 +31,7 @@ remember_token | The password token to use during remember login workflows. Filt
 rss_token | Filter records by RSS token | String
 stripe_id | Filter records by Stripe ID | String
 sign_in_count | Filter records by sign in count <br />**Note**: Range filters can be applied by adding a suffix: ‘.gt’, ‘.gte’, ‘.lt’, ‘lte’ (Example: sign_in_count.gte) | Integer
-terms | Boolean field to store if the consumer has agreed to receive updates | Boolean
+terms | Boolean field to store if the consumer has agreed to terms and conditions | Boolean
 updates | Boolean field to store if the consumer has agreed to receive updates | Boolean
 video_count | The number of videos a user is entitled to watch via purchase or pass plan. | Integer
 
