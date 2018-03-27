@@ -22,7 +22,7 @@ This API adheres to the (JSON API specs)[http://jsonapi.org/].
 #### How to Request Data
 <pre>
 curl https://analytics.zype.com/v1/stream_hours \
--d api_key=<api-key> \
+-d api_key=YOUR-API-KEY \
 -d filters[start_date_gte]='02-26-2018 00:00' \
 -d filters[device_name_eq]=FireTV \
 -d group_by[]=consumer_name
