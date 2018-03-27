@@ -25,6 +25,9 @@ per_page | The number of records to return (Example: 10) | Integer
 q         | Filter records by keyword | String
 sort      | Sort records on the specified field | String
 title     | Filter records by title | String
+title!     | Exclude records by title | String
+friendly_title | Filter records by playlist friendly title | String
+friendly_title! | Exclude records by playlist friendly title | String
 
 ### Create a Playlist
 <pre><b>POST</b> https://api.zype.com/playlists</pre>
