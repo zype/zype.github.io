@@ -4,7 +4,7 @@ title: Zype Developer Portal | Plans
 permalink: /api_docs/plans/
 ---
 
-## Plans Collection
+# Plans
 
 <hr>
 ### List Plans
@@ -20,6 +20,8 @@ q         | Filter records by keyword | String
 id        | Filter records by ID | String
 id!       | Exclude records by ID | String
 
+---
+
 ### Retrieve a Plan
 <pre><b>GET</b> https://api.zype.com/plans/[id]</pre>
 
@@ -29,10 +31,14 @@ Parameter | Function | Type
 --------- | -------- | ----
 id        | ID of the record to retrieve (Example: 5389352e69702d401b000000) | String
 
+---
+
 ## Create a Plan
 ```
 POST https://api.zype.com/plans
 ```
+
+Note: If a video is currently monetized with a purchase, rental, or pass plan, and your property does NOT support multiple monetization, then adding that video to a playlist within a tiered subscription will disable the existing purchase, rental, or pass plan paywall and switch the paywall monetization on the video to the tiered subscription plan.
 
 ### Parameters
 
@@ -90,6 +96,8 @@ PUT https://api.zype.com/plans/[id]/add_playlists
 
 Note: This operation will only add the specified Playlists to the Plan, it won't remove any of the
  existing Playlists associated to it
+
+Note: If a video is currently monetized with a purchase, rental, or pass plan, and your property does NOT support multiple monetization, then adding that video to a playlist within a tiered subscription will disable the existing purchase, rental, or pass plan paywall and switch the paywall monetization on the video to the tiered subscription plan.
 
 ### Parameters
 

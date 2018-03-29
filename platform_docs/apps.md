@@ -325,7 +325,7 @@ and add a message.
 
 Once you are finished, click save changes. You will be redirected to the iPhone App details
 screen where you will see a mock up of your channel home screen. You can either
-use Zype's [API documentation]({{site.url/api_docs/apps}}) to self-publish or have Zype publish
+use Zype's [API documentation]({{site.url}}/api_docs/apps) to self-publish or have Zype publish
 for you!
 
 ![iphone preview]({{site.url}}/assets/iphone/iphone_show.png)
