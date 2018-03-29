@@ -117,7 +117,7 @@ id        | ID of the record to delete (Example: 5389352e69702d401b000000) | Str
       "current_period_end_at": "2016-04-30T00:00:00.000-04:00",
       "current_period_start_at": "2016-04-01T00:00:00.000-04:00",
       "deleted_at": null,
-      "discount_`t": null,
+      "discount_amount": null,
       "discount_duration": null,
       "discount_duration_months": null,
       "discount_percent": null,
