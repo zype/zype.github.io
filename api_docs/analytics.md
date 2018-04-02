@@ -7,8 +7,7 @@ permalink: /api_docs/analytics/
 ## Analytics
 
 Zype's video analytics API allows you to run custom queries for stream hours and impressions data based on the following dimensions:
-  * date
-  * range
+  * date range
   * video
   * consumer
   * device type
