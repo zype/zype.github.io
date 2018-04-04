@@ -92,8 +92,8 @@ plan[stripe_id] | The Stripe Plan ID to use for this Plan - **Required for Strip
 plan[braintree_id] | The Braintree Plan ID to use for this Plan - **Required for Braintree Plans** | String
 plan[amazon_id] | The Amazon Plan ID to use for this Plan - **Required for Amazon Plans** | String
 plan[third_party_id] | An ID from a third-party payment gateway to use for this Plan | String
-plan[entitlement_type] | The entitlement type for this Plan, used to change configure a plan as global or tiered (*global,tiered*)
-plan[playlist_ids] | A list of Playlist IDs to associate with a Tiered Plan - **Required for** *entitlement_type: tiered* | Array
+plan[entitlement_type] | The entitlement type for this Subscription Plan, used to change the configuration of a plan to global or tiered (*global,tiered*)
+plan[playlist_ids] | A list of Playlist IDs to associate with a Tiered Subscription Plan - **Required for** *entitlement_type: tiered* | Array
 
 ---
 
