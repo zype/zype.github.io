@@ -13,21 +13,21 @@ If you're a developer, you've come to the right place! Here we'll discuss the Zy
   <a href="/api_docs/intro/">
     <div class="homepage-tile">
       <span class="fa fa-code homepage-icon"></span>
-      <span class="homepage-text">API Docs</span>
+      <span class="homepage-text">API Reference</span>
     </div>
   </a>
 
-  <a href="https://support.zype.com">
+  <a href="https://support.zype.com/hc/en-us/categories/115002426648-Developer-Tools-APIs-and-Plugins-">
     <div class="homepage-tile">
       <span class="fa fa-file-text homepage-icon"></span>
-      <span class="homepage-text">Platform Docs</span>
+      <span class="homepage-text">Developer Guides</span>
     </div>
   </a>
 
   <a href="https://support.zype.com/hc/en-us/categories/201978548-Applications">
     <div class="homepage-tile end-of-row">
       <span class="fa fa-cubes homepage-icon"></span>
-      <span class="homepage-text">Tools &amp; SDKs</span>
+      <span class="homepage-text">OTT Publishing Tools</span>
     </div>
   </a>
 
@@ -45,10 +45,10 @@ If you're a developer, you've come to the right place! Here we'll discuss the Zy
     </div>
   </a>
 
-  <a href="https://support.zype.com/hc/en-us/categories/115001506808-FAQ">
+  <a href="https://support.zype.com/hc/en-us">
     <div class="homepage-tile end-of-row">
       <span class="fa fa-question homepage-icon"></span>
-      <span class="homepage-text">FAQ</span>
+      <span class="homepage-text">User Documentation</span>
     </div>
   </a>
 </div>
