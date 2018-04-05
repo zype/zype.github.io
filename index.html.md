@@ -13,14 +13,14 @@ If you're a developer, you've come to the right place! Here we'll discuss the Zy
   <a href="/api_docs/intro/">
     <div class="homepage-tile">
       <span class="fa fa-code homepage-icon"></span>
-      <span class="homepage-text">API Docs</span>
+      <span class="homepage-text">API Reference Docs</span>
     </div>
   </a>
 
-  <a href="https://support.zype.com">
+  <a href="https://support.zype.com/hc/en-us/categories/115002426648-Developer-Tools-APIs-and-Plugins-">
     <div class="homepage-tile">
       <span class="fa fa-file-text homepage-icon"></span>
-      <span class="homepage-text">Platform Docs</span>
+      <span class="homepage-text">Developer Tools</span>
     </div>
   </a>
 
