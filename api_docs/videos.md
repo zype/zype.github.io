@@ -75,6 +75,8 @@ order     | Sort records in ascending or descending order (Example: `order=asc`,
 on_air    | Filter records that are either on or off air | Boolean
 page | The page number of records to return (Example: `page=1`) | Integer
 per_page | The number of records to return (Example: `per_page=10`) | Integer
+playlist_friendly_title | Filter records by a playlist's url-friendly title (Example: `playlist_friendly_title=my-friendly-title`) | String
+playlist_id | Filter records by a playlist's ID | String
 published_at | Filter records by published date using times in ISO8601 format (Example: `2017-01-01T00:00:00-00:00`) or Unix timestamps (Example: `1483228800`) <br><br>**Note**: Range filters can be applied by adding a suffix: `.gt`, `.gte`, `.lt`, `.lte` (Example: `published_at.gte=2017-01-01T00:00:00-00:00`) | Date
 q         | Filter records by keyword | String
 sort      | Sort records on the specified field | String
