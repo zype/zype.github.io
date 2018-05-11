@@ -355,6 +355,41 @@ subscription_ads_enabled | Flag whether ads should be played when a subscription
       "url": "https://i.ytimg.com/vi/PlFckE98xN4/hqdefault.jpg",
       "width": 480
     }
+  ],
+  "content_rules": [
+    {
+      "_id": "5aec790ea07e9b0010000012",
+      "created_at": "2015-05-04T11:15:26.723-05:00",
+      "geographies": [
+          {
+              "_id": "5aec790ea07e9b0010000013",
+              "countries": [
+                  "*",
+                  "MX"
+              ]
+          }
+      ],
+      "policy": "allow",
+      "priority": 1,
+      "updated_at": "2015-05-10T15:42:17.741-05:00"
+    },
+    {
+      "_id": "5aec6893a07e9b001000000a",
+      "created_at": "2015-05-04T10:05:07.347-05:00",
+      "geographies": [
+          {
+              "_id": "5aec6893a07e9b001000000b",
+              "countries": [
+                  "US",
+                  "GB",
+                  "AR"
+              ]
+          }
+      ],
+      "policy": "deny",
+      "priority": 2,
+      "updated_at": "2015-05-10T15:42:17.741-05:00"
+    }
   ]
 }
 ```
