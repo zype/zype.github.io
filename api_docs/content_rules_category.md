@@ -2,6 +2,7 @@
 layout: api
 title: Zype Developer Portal | Category Content Rules
 permalink: /api_docs/content_rules_category/
+redirect_to: https://docs.zype.com/reference#category-content-rules
 ---
 
 ## Category Content Rules

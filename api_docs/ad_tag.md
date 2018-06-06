@@ -2,6 +2,7 @@
 layout: api
 title: Zype Developer Portal | Ad Tags
 permalink: /api_docs/ad_tags/
+redirect_to: https://docs.zype.com/reference#ad-tags
 ---
 
 ## Ad Tags

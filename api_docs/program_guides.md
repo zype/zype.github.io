@@ -2,6 +2,7 @@
 layout: api
 title: Zype Developer Portal | Program Guides
 permalink: /api_docs/program_guides/
+redirect_to: https://docs.zype.com/reference#program-guides
 ---
 
 ## Program Guides

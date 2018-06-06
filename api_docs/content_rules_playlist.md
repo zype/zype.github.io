@@ -2,6 +2,7 @@
 layout: api
 title: Zype Developer Portal | Playlist Content Rules
 permalink: /api_docs/content_rules_playlist/
+redirect_to: https://docs.zype.com/reference#playlist-content-rules
 ---
 
 ## Playlist Content Rules

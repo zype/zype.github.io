@@ -2,6 +2,7 @@
 layout: api
 title: Zype Developer Portal | Analytics
 permalink: /api_docs/analytics/
+redirect_to: https://docs.zype.com/reference#stream-hours
 ---
 
 ## Analytics

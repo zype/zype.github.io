@@ -2,6 +2,7 @@
 layout: default
 title: Zype Developer Portal | Home
 permalink: /
+redirect_to: "https://docs.zype.com/"
 ---
 
 <h2 class="hidden-mobile">Welcome to the Zype Developer Portal</h2>

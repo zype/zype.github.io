@@ -2,6 +2,7 @@
 layout: api
 title: Zype Developer Portal | Videos
 permalink: /api_docs/subtitles/
+redirect_to: https://docs.zype.com/reference#subtitles
 ---
 
 # Subtitles
@@ -38,7 +39,7 @@ Get an **array** of [subtitle objects](#subtitle-object) from a specific video.
 
 Parameter | Function | Type
 --------- | -------- | ----
-video_id  | ID of the Video object that contains the subtitle (Example: `video_id=5389352e69702d401b000000`) | String 
+video_id  | ID of the Video object that contains the subtitle (Example: `video_id=5389352e69702d401b000000`) | String
 
 ## Retrieve a Subtitle
 ```
@@ -52,7 +53,7 @@ Get a single subtitle by ID.
 
 Parameter | Function | Type
 --------- | -------- | ----
-video_id  | ID of the Video object that contains the subtitle (Example: `video_id=5389352e69702d401b000000`) | String 
+video_id  | ID of the Video object that contains the subtitle (Example: `video_id=5389352e69702d401b000000`) | String
 id        | ID of the Subtitle record to retrieve (Example: `id=59c93e3a02eac40026000005`) | String
 
 ## Create a Subtitle

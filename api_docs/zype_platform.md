@@ -2,6 +2,7 @@
 layout: api
 title: Zype Developer Portal | Zype Platform
 permalink: /api_docs/zype_platform/
+redirect_to: https://docs.zype.com/v1.0/reference#welcome-to-the-zype-api-documentation
 ---
 
 ## Zype Platform

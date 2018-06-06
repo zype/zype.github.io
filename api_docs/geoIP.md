@@ -2,6 +2,7 @@
 layout: api
 title: Zype Developer Portal | GeoIP
 permalink: /api_docs/geoip/
+redirect_to: https://docs.zype.com/reference#geoip
 ---
 
 ## GeoIP

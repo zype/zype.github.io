@@ -2,6 +2,7 @@
 layout: api
 title: Zype Developer Portal | OAuth
 permalink: /api_docs/oauth/
+redirect_to: https://docs.zype.com/reference#oauth-1
 ---
 ## OAuth
 <hr>

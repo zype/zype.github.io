@@ -2,6 +2,7 @@
 layout: api
 title: Zype Developer Portal | Segments
 permalink: /api_docs/segments/
+redirect_to: https://docs.zype.com/reference#segments
 ---
 
 ## Segments

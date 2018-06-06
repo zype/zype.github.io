@@ -2,6 +2,7 @@
 layout: api
 title: Zype Developer Portal | Consumers
 permalink: /api_docs/consumers/
+redirect_to: https://docs.zype.com/reference#consumers
 ---
 
 ## Consumers

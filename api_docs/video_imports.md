@@ -2,6 +2,7 @@
 layout: api
 title: Zype Developer Portal | Video Imports
 permalink: /api_docs/video_imports/
+redirect_to: https://docs.zype.com/reference#video-imports
 ---
 
 ## Video Imports
@@ -49,7 +50,7 @@ video_id  | ID of a video to add the record to (Example: 5389352e69702d401b00000
   "_id": "5499c02d4c616e0545000000",
   "active": true,
   "created_at": "2014-12-23T14:19:09.369-05:00",
-  "description": 
+  "description":
     "She came to the Tiny Desk a little unsure, and left singing \"West Memphis\" with intensity and passion ...",
   "duration": 1195,
   "episode": nil,
@@ -59,7 +60,7 @@ video_id  | ID of a video to add the record to (Example: 5389352e69702d401b00000
   "season": nil,
   "site_id": "12345abcd",
   "status": "ready",
-  "thumbnails": 
+  "thumbnails":
   [
     {"aspect_ratio": nil,
     "height": 90,

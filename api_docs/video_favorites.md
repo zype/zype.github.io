@@ -2,6 +2,7 @@
 layout: api
 title: Zype Developer Portal | Video Favorites
 permalink: /api_docs/video_favorites/
+redirect_to: https://docs.zype.com/reference#video-favorites
 ---
 
 # Video Favorites
@@ -33,14 +34,14 @@ Get an **array** of Video Favorite Objects for the specified Consumer.
 ### Use Case
 Use this endpoint to retrieve and/or display a Consumer's Video Favorites.
 
-**Example 1**  
+**Example 1**
 List a Consumer's Video Favorites in one area of an app for convenient access.
 
 ```
 /**
  * List Consumer's Video Favorites
- * 
- * @NOTE Pseudocode 
+ *
+ * @NOTE Pseudocode
  */
 
 // Get Video Favorites
@@ -50,21 +51,21 @@ var video_favorites = GET https://api.zype.com/consumers/[consumer_id]/video_fav
 for (var i = 0; i < video_favorites.length; i++) {
   // Get the Video Favorite video_id
   var video_id = video_favorites[i].video_id;
-	
+
   // Get Video by ID
   var video = GET https://api.zype.com/videos/[video_id]
-  
+
   // Do something with retrieved video
 }
 ```
-**Example 2**  
+**Example 2**
 Visually designate a Consumer's Video Favorites inline with a [List Videos](http://dev.zype.com/api_docs/videos/#list-videos) query.
 
 ```
 /**
  * Display Video Favorites Inline
- * 
- * @NOTE Pseudocode 
+ *
+ * @NOTE Pseudocode
  */
 
 // Get Video Favorites
@@ -108,10 +109,10 @@ video_id | ID of the video object (Example: `56d7594a0f8asd081208e4`)  | String
 DELETE https://api.zype.com/consumers/[consumer_id]/video_favorites/[video_favorite_id]
 
 /**
- * @NOTE Some client-side languages / libraries (JavaScript, jQuery, etc.) 
+ * @NOTE Some client-side languages / libraries (JavaScript, jQuery, etc.)
  *       must use POST with `_method=delete` parameter and value specifed.
  */
- 
+
 POST https://api.zype.com/consumers/[consumer_id]/video_favorites/[video_favorite_id]?_method=delete
 ```
 

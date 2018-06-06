@@ -2,6 +2,7 @@
 layout: api
 title: Zype Developer Portal | Transactions
 permalink: /api_docs/transactions/
+redirect_to: https://docs.zype.com/reference#transactions
 ---
 
 ## Transactions Collection

@@ -2,6 +2,7 @@
 layout: api
 title: Zype Developer Portal | Categories
 permalink: /api_docs/categories/
+redirect_to: https://docs.zype.com/reference#categories
 ---
 
 ## Categories

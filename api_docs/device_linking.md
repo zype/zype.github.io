@@ -2,6 +2,7 @@
 layout: api
 title: Zype Developer Portal | Device Linking
 permalink: /api_docs/device_linking/
+redirect_to: https://docs.zype.com/reference#device-linking
 ---
 
 ## Device Linking

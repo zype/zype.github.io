@@ -2,6 +2,7 @@
 layout: api
 title: Zype Developer Portal | Apps
 permalink: /api_docs/apps/
+redirect_to: https://docs.zype.com/reference#apps
 ---
 
 # Apps
@@ -32,7 +33,7 @@ Parameter | Function | Type
 app_key   | The app key | String
 
 ## App Object
-App profiles vary by the type of application. 
+App profiles vary by the type of application.
 
 ```
 {

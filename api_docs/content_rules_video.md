@@ -2,6 +2,7 @@
 layout: api
 title: Zype Developer Portal | Video Content Rules
 permalink: /api_docs/content_rules_video/
+redirect_to: https://docs.zype.com/reference#video-content-rules
 ---
 
 ## Video Content Rules

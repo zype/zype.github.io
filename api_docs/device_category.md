@@ -2,6 +2,7 @@
 layout: api
 title: Zype Developer Portal | Device Categories
 permalink: /api_docs/device_categories/
+redirect_to: https://docs.zype.com/reference#device-categories
 ---
 
 ## Device Categories

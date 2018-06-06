@@ -2,6 +2,7 @@
 layout: api
 title: Zype Developer Portal | Zobject Types
 permalink: /api_docs/zobject_types/
+redirect_to: https://docs.zype.com/reference#zobject-types
 ---
 
 ## Zobject Types

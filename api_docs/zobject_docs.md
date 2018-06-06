@@ -2,6 +2,7 @@
 layout: api
 title: Zype Developer Portal | Zobjects
 permalink: /api_docs/zobject_docs/
+redirect_to: https://docs.zype.com/reference#zobject
 ---
 
 ## Zobjects

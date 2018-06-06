@@ -2,6 +2,7 @@
 layout: api
 title: Zype Developer Portal | Native Players
 permalink: /api_docs/players/
+redirect_to: https://docs.zype.com/reference#players
 ---
 
 # Players
@@ -19,9 +20,9 @@ For native devices like iOS, Android, and OTT set-top boxes, the Player API will
 
 Developers need to specify User-Agent for all requests that are coming from Native Players.
 
-Device | User-Agent 
---------- | -------- 
-Android (Native) | zype android 
+Device | User-Agent
+--------- | --------
+Android (Native) | zype android
 Apple TV | zype tvos
 Amazon Fire TV | AmazonWebAppPlatform
 Roku | Roku
