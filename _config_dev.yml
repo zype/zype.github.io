@@ -10,3 +10,5 @@ github_username:  zype
 permalink: '/posts/:year/:month/:day/:title/'
 # Build settings
 markdown: kramdown
+plugins:
+  - jekyll-redirect-from

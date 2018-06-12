@@ -2,6 +2,7 @@
 layout: api
 title: Zype Developer Portal | Subscription Plans
 permalink: /api_docs/plans/
+redirect_to: https://docs.zype.com/reference#plans
 ---
 
 # Subscription Plans

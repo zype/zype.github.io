@@ -2,6 +2,7 @@
 layout: api
 title: Zype Developer Portal | Video Entitlements
 permalink: /api_docs/video_entitlements/
+redirect_to: https://docs.zype.com/reference#video-entitlements
 ---
 
 ## Video Entitlements

@@ -2,6 +2,7 @@
 layout: api
 title: Zype Developer Portal | Subtitle Playlists
 permalink: /api_docs/subtitle_playlists/
+redirect_to: https://docs.zype.com/reference#subtitle-playlists
 ---
 
 # Subtitle Playlists

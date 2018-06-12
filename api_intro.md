@@ -2,6 +2,7 @@
 layout: api_intro
 title: Zype Developer Portal | API
 permalink: /api_docs/intro/
+redirect_to: https://docs.zype.com/reference
 ---
 
 ## Introduction

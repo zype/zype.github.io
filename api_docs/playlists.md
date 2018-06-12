@@ -2,6 +2,7 @@
 layout: api
 title: Zype Developer Portal | Playlists
 permalink: /api_docs/playlists/
+redirect_to: https://docs.zype.com/reference#playlists
 ---
 
 ## Playlists

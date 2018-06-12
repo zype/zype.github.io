@@ -2,6 +2,7 @@
 layout: api
 title: Zype Developer Portal | Revenue Models
 permalink: /api_docs/revenue_models/
+redirect_to: https://docs.zype.com/reference#revenue-models
 ---
 
 ## Revenue Models

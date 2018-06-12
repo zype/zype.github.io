@@ -2,6 +2,7 @@
 layout: api
 title: Zype Developer Portal | Redemption Codes
 permalink: /api_docs/redemption_codes/
+redirect_to: https://docs.zype.com/reference#redemption-codes
 ---
 
 ## Redemption Codes

@@ -2,6 +2,7 @@
 layout: api
 title: Zype Developer Portal | Videos
 permalink: /api_docs/videos/
+redirect_to: https://docs.zype.com/reference#videos
 ---
 
 # Videos

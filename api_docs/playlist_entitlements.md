@@ -2,6 +2,7 @@
 layout: api
 title: Zype Developer Portal | Playlists
 permalink: /api_docs/playlist_entitlements/
+redirect_to: https://docs.zype.com/reference#playlist-entitlements
 ---
 
 ## Playlist Entitlements

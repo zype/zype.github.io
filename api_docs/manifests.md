@@ -2,6 +2,7 @@
 layout: api
 title: Zype Developer Portal | Video Manifests
 permalink: /api_docs/manifests/
+redirect_to: https://docs.zype.com/reference#manifests
 ---
 
 ## Video Manifests Collection
