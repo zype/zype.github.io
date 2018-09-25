@@ -2,6 +2,7 @@
 layout: platform
 title: Zype Developer Portal | Platform Docs
 permalink: /platform_docs/assets/
+redirect_to: https://support.zype.com/hc/en-us/articles/360006539093
 ---
 
 ## Assets

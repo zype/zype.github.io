@@ -3,6 +3,7 @@ layout: post
 title:  "Adding Crunchyroll as a Video Source"
 date:   2014-11-19 10:37:55
 categories: admins
+redirect_to: https://support.zype.com/hc/en-us/articles/213452618
 ---
 
 We know you have a lot of video content and we know that you want it all to be available to your viewers through the Zype Platform. That's why we're proud to announce that you can now use [Crunchyroll](http://www.crunchyroll.com/) as a video source for videos on the Zype Platform!

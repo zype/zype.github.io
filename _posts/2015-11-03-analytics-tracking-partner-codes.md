@@ -3,6 +3,7 @@ layout: post
 title:  "Analytics: Domains, Tracking Partners, and Tracking Codes"
 date:   2015-11-03 10:04:55
 categories: developers
+redirect_to: https://support.zype.com/hc/en-us/categories/201978178-Analytics
 ---
 
 # Domains #

@@ -3,6 +3,7 @@ layout: post
 title:  "Zobjects in the Zype Platform"
 date:   2014-12-04 12:37:55
 categories: developers
+redirect_to: https://support.zype.com/hc/en-us/sections/115002657128-Metadata
 ---
 
 A central component of the Zype Platform is a 'Zobject.' A zobject is additional

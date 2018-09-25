@@ -3,6 +3,7 @@ layout: post
 title:  "Zype Assets for a Roku Channel"
 date:   2014-12-03 12:37:55
 categories: developers
+redirect_to: https://support.zype.com/hc/en-us/articles/216101428-Roku-App-Images
 ---
 
 Adding image assets to your Roku Channel allow your to make the channel your own!

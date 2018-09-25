@@ -3,6 +3,7 @@ layout: post
 title:  "Filtering Videos and Playlists"
 date:   2014-12-10 12:16:55
 categories: platform
+redirect_to: https://support.zype.com/hc/en-us/articles/115007299647-Library-Overview
 ---
 
 If you've been busy adding video content to the [Zype Platform](http://admin.zype.com) and creating playlists, you might be at the point where you've got a few pages of each. To help you better manage your content, we've added a set of filters to the videos and playlists pages:

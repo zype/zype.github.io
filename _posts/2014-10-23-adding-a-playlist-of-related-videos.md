@@ -3,6 +3,7 @@ layout: post
 title:  "Adding a playlist of related videos"
 date:   2014-10-23 06:37:55
 categories: videos
+redirect_to: https://support.zype.com/hc/en-us/articles/115009159068
 ---
 Let's say you've already got some video content on your zype destination site, but now you'd like to recommend
 additional content based on what your users are watching. The solution we've implemented is called related videos.

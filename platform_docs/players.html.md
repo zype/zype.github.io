@@ -2,6 +2,7 @@
 layout: player
 title: Zype Developer Portal | Platform Docs
 permalink: /platform_docs/players/
+redirect_to: https://support.zype.com/hc/en-us/categories/201978818-The-Zype-Player
 ---
 
 <h2 class="hidden-mobile">Zype Player Matrix</h2>

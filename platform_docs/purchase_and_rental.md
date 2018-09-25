@@ -2,6 +2,7 @@
 layout: platform
 title: Zype Developer Portal | Platform Docs
 permalink: /platform_docs/purchase_and_rental/
+redirect_to: https://support.zype.com/hc/en-us/sections/202974527-Purchases-Rentals-and-Pass-Plans
 ---
 # Purchase and Rental
 Purchase & Rental allows you to make money from your videos by selling or renting them to your consumers. The Zype Platform supports Stripe and Braintree for credit card processing of transactions. You can also use the Zype Transaction API to extend the functionality listed here. Contact us for more info.

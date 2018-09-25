@@ -3,6 +3,7 @@ layout: post
 title:  "MRSS Import Format"
 date:   2016-05-31 10:37:55
 categories: developers
+redirect_to: https://support.zype.com/hc/en-us/articles/115011037147
 ---
 
 Below is an example of a MRSS feed that is compatible with Zype. In order to properly import videos from an MRSS feed, you must format your feed to match this example.

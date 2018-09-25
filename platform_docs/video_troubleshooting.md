@@ -2,6 +2,7 @@
 layout: platform
 title: Zype Developer Portal | Platform Docs
 permalink: /platform_docs/video_troubleshooting/
+redirect_to: https://support.zype.com/hc/en-us/sections/115003587187-Video-Streaming-Questions-
 ---
 ## Video troubleshooting
 

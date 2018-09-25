@@ -3,6 +3,7 @@ layout: post
 title:  "Bulk Video Importing"
 date:   2015-02-15 10:37:55
 categories: developers
+redirect_to: https://support.zype.com/hc/en-us/sections/203009198-How-to-Import-to-Zype-From-a-Third-Party-Source
 ---
 
 To bulk add video imports to your video library, check the videos that you want to add and click
