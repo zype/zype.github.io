@@ -2,6 +2,7 @@
 layout: platform
 title: Zype Developer Portal | Platform Docs
 permalink: /platform_docs/overview/
+redirect_to: https://support.zype.com/hc/en-us/categories/201978098-Getting-Started
 ---
 ## Overview
 

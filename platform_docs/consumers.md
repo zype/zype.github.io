@@ -2,6 +2,7 @@
 layout: platform
 title: Zype Developer Portal | Platform Docs
 permalink: /platform_docs/consumers/
+redirect_to: https://support.zype.com/hc/en-us/articles/115010933567-Managing-Consumers
 ---
 ## Consumers
 Zype can manage the end users of your application.

@@ -2,6 +2,7 @@
 layout: platform
 title: Zype Developer Portal | Platform Docs
 permalink: /platform_docs/plans/
+redirect_to: https://support.zype.com/hc/en-us/sections/203010468-Subscription-Plans
 ---
 ## Plans
 To require your consumers to pay for access to your videos, you will need to create subscription plans.

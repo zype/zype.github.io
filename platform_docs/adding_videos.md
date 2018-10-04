@@ -2,6 +2,7 @@
 layout: platform
 title: Zype Developer Portal | Platform Docs
 permalink: /platform_docs/adding_videos/
+redirect_to: https://support.zype.com/hc/en-us/articles/214048487-Vimeo-PRO-Import
 ---
 ## Adding videos to the Zype Platform
 You can add videos to your Zype Library in two different ways. The first way is to upload

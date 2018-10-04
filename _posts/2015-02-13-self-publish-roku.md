@@ -3,6 +3,7 @@ layout: post
 title:  "Self Publishing a Roku Channel on the Zype Platform"
 date:   2015-02-13 10:37:55
 categories: developers
+redirect_to: https://support.zype.com/hc/en-us/sections/203733207-Roku
 ---
 
 Before being ready to self-publish, you will need to set up your Roku Channel on the Zype

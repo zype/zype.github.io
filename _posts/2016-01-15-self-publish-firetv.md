@@ -3,6 +3,7 @@ layout: post
 title:  "Publishing an Amazon Fire TV on the Zype Platform"
 date:   2016-01-15 10:37:55
 categories: developers
+redirect_to: https://support.zype.com/hc/en-us/sections/203733217-Amazon-Fire-TV-
 ---
 
 Follow the steps below to setup your Amazon Fire TV app in the Zype Dashboard and submit your app to Amazon. You can also have Zype handle the app submission process.

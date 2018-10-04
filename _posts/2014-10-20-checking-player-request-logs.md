@@ -3,6 +3,7 @@ layout: post
 title:  "Checking your DPT request logs"
 date:   2014-10-20 09:07:55
 categories: dpt
+redirect_to: https://support.zype.com/hc/en-us/articles/115010344127
 ---
 In a previous post, we covered how to use Zype’s Dynamic Player Technology (DPT).
 In this post, we'll be covering how to use the DPT logs to see what requests are being made for your video content.

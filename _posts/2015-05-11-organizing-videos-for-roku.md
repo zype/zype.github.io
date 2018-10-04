@@ -3,6 +3,7 @@ layout: post
 title:  "Organizing your videos for your Roku Channel"
 date:   2015-05-11 10:37:55
 categories: developers
+redirect_to: https://support.zype.com/hc/en-us/articles/115015726747-Introduction-to-Roku
 ---
 
 Now that you have set up your Roku Channel and have tested the private channel, you

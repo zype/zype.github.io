@@ -3,6 +3,7 @@ layout: post
 title:  "Advanced Settings for Your Roku Channel"
 date:   2015-02-13 10:37:55
 categories: developers
+redirect_to: https://support.zype.com/hc/en-us/articles/115010341848-Roku-App-Builder-Template
 ---
 
 Selecting a Channel Template and uploading a Channel Image takes most of the hard

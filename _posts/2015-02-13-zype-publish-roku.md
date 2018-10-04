@@ -3,6 +3,7 @@ layout: post
 title:  "Publishing a Roku Channel on the Zype Platform"
 date:   2015-02-13 10:37:55
 categories: developers
+redirect_to: https://support.zype.com/hc/en-us/sections/203733207-Roku
 ---
 
 We have simplified the process of publishing a Roku Channel from the Zype Platform.

@@ -3,6 +3,7 @@ layout: post
 title:  "Playlists, Categories, and Zobjects on Roku"
 date:   2014-12-03 10:37:55
 categories: developers
+redirect_to: https://support.zype.com/hc/en-us/articles/115015726747-Introduction-to-Roku
 ---
 
 We aim to make the development process of a Roku Channel as easy as possible using

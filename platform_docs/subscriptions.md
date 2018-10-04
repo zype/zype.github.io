@@ -2,6 +2,7 @@
 layout: platform
 title: Zype Developer Portal | Platform Docs
 permalink: /platform_docs/subscriptions/
+redirect_to: https://support.zype.com/hc/en-us/articles/115011146588-Managing-Subscribers
 ---
 ## Subscriptions
 Subscriptions combine consumers and plans and allow you to make money from your videos.

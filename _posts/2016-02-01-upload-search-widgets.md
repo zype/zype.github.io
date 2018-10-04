@@ -3,6 +3,7 @@ layout: post
 title:  "Upload and Search Embeddable Widgets"
 date:   2016-02-01 10:37:55
 categories: developers
+redirect_to: https://support.zype.com/hc/en-us/articles/216217868
 ---
 
 Now you can easily add upload and search functionality directly on your own website. This allows you to use the power of the Zype platform with the ease of a CMS system on your own site.

@@ -3,6 +3,7 @@ layout: post
 title:  "Sample Rails App using the Zype Platform and API"
 date:   2014-11-29 12:37:55
 categories: developers
+redirect_to: https://docs.zype.com
 ---
 
 We want to make the Zype Platform accessible to as many types of developers as possible. To do this,

@@ -3,6 +3,7 @@ layout: post
 title:  "Searching For A YouTube Channel in the Zype Platform"
 date:   2014-11-18 06:37:55
 categories: developers
+redirect_to: https://support.zype.com/hc/en-us/articles/213451848-YouTube-Import
 ---
 
 We simplified the process of searching for and importing a YouTube Channel into the Zype Platform.

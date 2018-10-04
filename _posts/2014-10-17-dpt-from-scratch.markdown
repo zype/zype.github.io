@@ -3,6 +3,7 @@ layout: post
 title:  "Using Zype's Dynamic Player Technology (DPT)"
 date:   2014-10-17 15:53:00
 categories: dpt
+redirect_to: https://support.zype.com/hc/en-us/articles/216034448-Setting-up-player-rules
 ---
 Zype’s DPT allows you to create player rules based on geography and device.
 For example, you could declare that end users will receive the Hulu Player if he

@@ -3,6 +3,7 @@ layout: post
 title:  "Defining Categories and Playlists"
 date:   2014-12-04 11:16:55
 categories: platform
+redirect_to: https://support.zype.com/hc/en-us/categories/115001507708-Manage-Content
 ---
 
 As you make your way through the [Zype Platform](http://admin.zype.com), you might have some

@@ -2,6 +2,7 @@
 layout: platform
 title: Zype Developer Portal | Platform Docs
 permalink: /platform_docs/settings/
+redirect_to: https://support.zype.com/hc/en-us/articles/115011310068
 ---
 ## Settings Dashboard
 You can use the settings dashboard to set your global configurations.

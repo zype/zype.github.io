@@ -2,6 +2,7 @@
 layout: platform
 title: Zype Developer Portal | Platform Docs
 permalink: /platform_docs/categories/
+redirect_to: https://support.zype.com/hc/en-us/sections/203764988-Categories-
 ---
 ## Categories
 Categories are a way to tag your videos and your playlists.

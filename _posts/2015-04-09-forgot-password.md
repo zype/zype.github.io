@@ -3,6 +3,7 @@ layout: post
 title:  "Forgot Password"
 date:   2015-04-09 10:37:55
 categories: developers
+redirect_to: https://support.zype.com/hc/en-us/articles/216121578
 ---
 
 You can reset your password by going to [the Zype Platform](https://admin.zype.com/)

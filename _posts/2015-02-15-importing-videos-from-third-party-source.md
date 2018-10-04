@@ -3,6 +3,7 @@ layout: post
 title:  "Importing Videos from a Third Party Source"
 date:   2015-02-15 10:37:55
 categories: developers
+redirect_to: https://support.zype.com/hc/en-us/sections/203009198-How-to-Import-to-Zype-From-a-Third-Party-Source
 ---
 
 We’ve made it easier to import your videos from third party sources like YouTube, Vimeo, or Hulu

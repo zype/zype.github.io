@@ -2,6 +2,7 @@
 layout: platform
 title: Zype Developer Portal | Platform Docs
 permalink: /platform_docs/apps/
+redirect_to: https://support.zype.com/hc/en-us/categories/201978548-Applications
 ---
 ## Apps
 The Zype Platform will help you configure apps that you will need to build and publish

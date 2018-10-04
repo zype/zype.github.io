@@ -2,6 +2,7 @@
 layout: platform
 title: Zype Developer Portal | Platform Docs
 permalink: /platform_docs/playlists/
+redirect_to: https://support.zype.com/hc/en-us/sections/115002572787-Playlists
 ---
 ## Playlists
 A playlist can have multiple videos and categories.
