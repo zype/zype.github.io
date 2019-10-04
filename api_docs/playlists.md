@@ -227,6 +227,20 @@ video_id[]  | A comma separated list of video IDs to remove from the playlist | 
         "url": "http://image.dev.zype.com/5468fd6569702d17ee500000/playlist/5628f9354d656c46285b0000/custom_thumbnail/1080.png?1461254280",
         "width": 1920
       }
+    ],
+    "content_rules": [
+      {
+        "created_at": "2018-05-10T07:36:56.128-04:00",
+        "geographies": [
+          {
+            "countries": [
+              "CA"
+            ]
+          }
+        ],
+        "policy": "deny",
+        "priority": 1
+      }
     ]
   }
 }
