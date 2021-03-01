@@ -49,6 +49,7 @@ playlist[rental_duration] | Rental duration for the playlist, in days *edge feat
 playlist[auto_update_consumer_videos] | Keep consumer video purchases and/or rentals in sync with playlist items. When videos are added to the playlist, also add them to a consumer's video purchase/rental list. *edge feature* | Boolean
 playlist[thumbnail_layout] | Preferred thumbnail layout for videos related to playlist. Options are 'landscape', 'poster', and 'square'. If left blank will default to 'landscape'. | String
 playlist[custom_thumbnail] | Image as a file attachment
+playllist[sync_source_type] | Must be one of 'videos' or 'sync_source_type'. Default is 'videos' | String
 
 ### Retrieve a Playlist
 <pre><b>GET</b> https://api.zype.com/playlists/[id]
@@ -126,6 +127,7 @@ playlist[images_attributes][0][layout] | Must be one of 'poster' or 'square'. De
 playlist[images_attributes][0][_destroy] | Pass in 'true' if you wish to remove an image | String
 playlist[custom_thumbnail] | Image as a file attachment
 playlist[delete_custom_thumbnail] | Pass in '1' if you wish to remove the custom thumbnail | String
+playllist[sync_source_type] | Must be one of 'videos' or 'sync_source_type'. Default is 'videos' | String
 
 
 ### Delete a Playlist
@@ -188,6 +190,7 @@ video_id[]  | A comma separated list of video IDs to remove from the playlist | 
     "site_id": "5468fd6569702d17ee500000",
     "title": "Featured Videos Bundle",
     "updated_at": "2016-04-21T13:43:06.965-04:00",
+    "sync_source_type": "videos",
     "images": [
       {
         "_id": "57191023f2834757dc000028",
